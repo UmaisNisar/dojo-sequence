@@ -90,7 +90,13 @@ async function fetchRows(wavuIds: string[]): Promise<Map<string, LiveRow>> {
       cargoquery?: { title: LiveRow }[];
     } = await res.json();
     if (json.error) throw new Error(json.error.info ?? "Wavu API error");
-    for (const row of json.cargoquery ?? []) rows.set(row.title.id, row.title);
+    for (const row of json.cargoquery ?? []) {
+      // Wavu can list one id twice: a blank string-header row alongside the real
+      // move row (e.g. Bryan-b+3). Always keep the row carrying frame data.
+      const existing = rows.get(row.title.id);
+      if (existing && existing.startup && !row.title.startup) continue;
+      rows.set(row.title.id, row.title);
+    }
   }
   return rows;
 }

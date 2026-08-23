@@ -61,6 +61,10 @@ async function fetchMoves(wavuIds) {
     const json = await res.json();
     if (json.error) throw new Error(`Wavu API error: ${json.error.info}`);
     for (const row of json.cargoquery ?? []) {
+      // Wavu can list the same id twice: a blank string-header row alongside the
+      // real move row (e.g. Bryan-b+3). Always keep the row carrying frame data.
+      const existing = results.get(row.title.id);
+      if (existing && existing.startup && !row.title.startup) continue;
       results.set(row.title.id, row.title);
     }
   }

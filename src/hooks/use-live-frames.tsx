@@ -35,10 +35,13 @@ export function LiveFramesProvider({ children }: { children: ReactNode }) {
     if (startedRef.current) return;
     startedRef.current = true;
 
-    let cancelled = false;
+    // No cancellation flag here on purpose. `startedRef` already guarantees the
+    // checks run exactly once per provider, so a cleanup that invalidated them
+    // would strand the UI on "checking" forever: under StrictMode's double
+    // invoke, pass one starts the fetches, the cleanup cancels them, and pass
+    // two skips re-starting because the ref is already set.
     const update = (characterId: string, state: LiveFramesState) => {
-      if (!cancelled)
-        setMap((m) => ({ ...m, [characterId]: state }));
+      setMap((m) => ({ ...m, [characterId]: state }));
     };
 
     for (const character of characters) {
@@ -88,10 +91,6 @@ export function LiveFramesProvider({ children }: { children: ReactNode }) {
           });
         });
     }
-
-    return () => {
-      cancelled = true;
-    };
   }, []);
 
   return (

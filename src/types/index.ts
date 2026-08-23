@@ -217,11 +217,12 @@ export interface MoveFrames {
   input: string;
   name: string;
   level: string;
-  /** Wavu-exact startup string (string moves store the listed hit's value). */
-  startup: string;
+  /** Wavu-exact startup string (string moves store the listed hit's value). Null for non-attacks such as a parry. */
+  startup: string | null;
   /** Human display when the wavu-exact startup is a string-continuation. */
   displayStartup?: string;
-  block: string;
+  /** Null when the move cannot be blocked at all (unblockables, parries). */
+  block: string | null;
   hit: string;
   ch: string | null;
   notes: string[];

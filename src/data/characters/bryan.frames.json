@@ -1,0 +1,1134 @@
+{
+  "characterId": "bryan",
+  "game": "Tekken 8",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-23",
+  "sources": [
+    {
+      "name": "Wavu Wiki",
+      "url": "https://wavu.wiki/t/Bryan"
+    },
+    {
+      "name": "TekkenDocs",
+      "url": "https://tekkendocs.com/t8/bryan"
+    }
+  ],
+  "moves": {
+    "jab": {
+      "wavuId": "Bryan-1",
+      "input": "1",
+      "name": "Jab",
+      "level": "h",
+      "startup": "i10",
+      "block": "+1",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "i10 high",
+        "+1 on block"
+      ]
+    },
+    "jab-2": {
+      "wavuId": "Bryan-1,2",
+      "input": "1,2",
+      "name": "Left Right Combo",
+      "level": ",h",
+      "startup": ",i12",
+      "displayStartup": "i12 (string)",
+      "block": "-3",
+      "hit": "+8",
+      "ch": "+9",
+      "notes": [
+        "jails from the first hit on block",
+        "CH +9"
+      ]
+    },
+    "jab-2-1": {
+      "wavuId": "Bryan-1,2,1",
+      "input": "1,2,1",
+      "name": "One Two Body Blow",
+      "level": ",m",
+      "startup": ",i19",
+      "displayStartup": "i19 (string)",
+      "block": "-6",
+      "hit": "+6",
+      "ch": "+30d",
+      "notes": [
+        "mid ender",
+        "combos from a 1st-hit CH",
+        "can be delayed 10f"
+      ]
+    },
+    "jab-2-3": {
+      "wavuId": "Bryan-1,2,3",
+      "input": "1,2,3",
+      "name": "One Two Low Kick",
+      "level": ",L",
+      "startup": ",i24",
+      "displayStartup": "i24 (string)",
+      "block": "-12",
+      "hit": "+2",
+      "ch": "+14a",
+      "notes": [
+        "low ender",
+        "the mixup partner to 1,2,1"
+      ]
+    },
+    "jab-2-4": {
+      "wavuId": "Bryan-1,2,4",
+      "input": "1,2,4",
+      "name": "One Two Neck Breaker",
+      "level": ",h",
+      "startup": ",i20",
+      "displayStartup": "i20 (string)",
+      "block": "-5",
+      "hit": "+20a (+11)",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "Balcony Break",
+        "interruptible with i2 after the 1st hit on block"
+      ]
+    },
+    "jab-4": {
+      "wavuId": "Bryan-1,4",
+      "input": "1,4",
+      "name": "Jab into Right Kick",
+      "level": ",h",
+      "startup": ",i15",
+      "displayStartup": "i15 (string)",
+      "block": "-7",
+      "hit": "+4",
+      "ch": null,
+      "notes": [
+        "his i10 punisher",
+        "jails from the 1st hit"
+      ]
+    },
+    "right": {
+      "wavuId": "Bryan-2",
+      "input": "2",
+      "name": "Right Punch",
+      "level": "h",
+      "startup": "i10",
+      "block": "+1",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "i10 high",
+        "+1 on block"
+      ]
+    },
+    "right-3": {
+      "wavuId": "Bryan-2,3",
+      "input": "2,3",
+      "name": "PK Combination",
+      "level": ",m",
+      "startup": ",i16",
+      "displayStartup": "i16 (string)",
+      "block": "-10",
+      "hit": "+6",
+      "ch": "+16a (+7)",
+      "notes": [
+        "his other i10 punisher",
+        "CH +16a"
+      ]
+    },
+    "kick-4": {
+      "wavuId": "Bryan-4",
+      "input": "4",
+      "name": "Right Kick",
+      "level": "h",
+      "startup": "i12",
+      "block": "-7",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "i12 high check"
+      ]
+    },
+    "kick-4-3": {
+      "wavuId": "Bryan-4,3",
+      "input": "4,3",
+      "name": "Right Kick into Spin",
+      "level": ",m",
+      "startup": ",i24~25",
+      "displayStartup": "i24~25 (string)",
+      "block": "-10",
+      "hit": "+2",
+      "ch": null,
+      "notes": [
+        "his -12 punisher"
+      ]
+    },
+    "kick-4-1": {
+      "wavuId": "Bryan-4,1",
+      "input": "4,1",
+      "name": "Viper Bite",
+      "level": ",h",
+      "startup": ",i23~24",
+      "displayStartup": "i23~24 (string)",
+      "block": "-1",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "core combo filler",
+        "-1 on block"
+      ]
+    },
+    "homing-1-2": {
+      "wavuId": "Bryan-1+2",
+      "input": "1+2",
+      "name": "Double Fist",
+      "level": "m",
+      "startup": "i17~18",
+      "block": "-7",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "homing mid",
+        "catches sidestep"
+      ]
+    },
+    "df1": {
+      "wavuId": "Bryan-DF+1",
+      "input": "df+1",
+      "name": "Elbow Jab",
+      "level": "m",
+      "startup": "i15",
+      "block": "-5",
+      "hit": "+1",
+      "ch": null,
+      "notes": [
+        "hold DF to access the 1,1,1 extensions"
+      ]
+    },
+    "df1-1": {
+      "wavuId": "Bryan-DF+1,1",
+      "input": "DF+1,1",
+      "name": "Vulcan Cannon (1st ext)",
+      "level": ",m",
+      "startup": ",i10",
+      "displayStartup": "i10 (string)",
+      "block": "-10",
+      "hit": "-4",
+      "ch": null,
+      "notes": [
+        "chip-pressure string",
+        "-10 on block"
+      ]
+    },
+    "df2": {
+      "wavuId": "Bryan-df+2",
+      "input": "df+2",
+      "name": "Elbow",
+      "level": "m",
+      "startup": "i13",
+      "block": "-6",
+      "hit": "+5",
+      "ch": null,
+      "notes": [
+        "i13 mid check"
+      ]
+    },
+    "df2-1": {
+      "wavuId": "Bryan-df+2,1",
+      "input": "df+2,1",
+      "name": "Blackout Combo",
+      "level": ",h",
+      "startup": ",i16",
+      "displayStartup": "i16 (string)",
+      "block": "-4",
+      "hit": "+5",
+      "ch": null,
+      "notes": [
+        "his -13 punisher",
+        "press b afterward to enter Sway"
+      ]
+    },
+    "d2": {
+      "wavuId": "Bryan-d+2",
+      "input": "d+2",
+      "name": "Body Blow",
+      "level": "m",
+      "startup": "i14~15",
+      "block": "-2",
+      "hit": "+8c",
+      "ch": null,
+      "notes": [
+        "-2 on block, +8 on crouching hit",
+        "hold D to stay crouched"
+      ]
+    },
+    "db2": {
+      "wavuId": "Bryan-db+2",
+      "input": "db+2",
+      "name": "Stomach Blow",
+      "level": "m",
+      "startup": "i15~17",
+      "block": "-6",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "-6 on block, +8 on hit"
+      ]
+    },
+    "three": {
+      "wavuId": "Bryan-3",
+      "input": "3",
+      "name": "Mid Kick",
+      "level": "m",
+      "startup": "i16",
+      "block": "-4",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "i16 mid, -4 on block"
+      ]
+    },
+    "side-kick": {
+      "wavuId": "Bryan-3+4",
+      "input": "3+4",
+      "name": "Middle Side Kick",
+      "level": "m",
+      "startup": "i18",
+      "block": "-13",
+      "hit": "+8",
+      "ch": "+59a",
+      "notes": [
+        "his keep-out button",
+        "CH +59a"
+      ]
+    },
+    "d3": {
+      "wavuId": "Bryan-d+3",
+      "input": "d+3",
+      "name": "Low Kick",
+      "level": "l",
+      "startup": "i16",
+      "block": "-11",
+      "hit": "+0",
+      "ch": null,
+      "notes": [
+        "i16 low, -11"
+      ]
+    },
+    "d3-2": {
+      "wavuId": "Bryan-d+3,2",
+      "input": "d+3,2",
+      "name": "Quick Low Screw Punch",
+      "level": ",h",
+      "startup": ",i21",
+      "displayStartup": "i21 (string)",
+      "block": "-7",
+      "hit": "+35a (+9)",
+      "ch": null,
+      "notes": [
+        "combos from a 1st-hit CH",
+        "+35a on hit"
+      ]
+    },
+    "d4": {
+      "wavuId": "Bryan-d+4",
+      "input": "d+4",
+      "name": "Low Kick (d+4)",
+      "level": "L",
+      "startup": "i15",
+      "block": "-11",
+      "hit": "+0",
+      "ch": null,
+      "notes": [
+        "i15 low keep-out check"
+      ]
+    },
+    "db3": {
+      "wavuId": "Bryan-db+3",
+      "input": "db+3",
+      "name": "Sweeper Kick",
+      "level": "L",
+      "startup": "i16~17",
+      "block": "-12",
+      "hit": "-1",
+      "ch": "+4",
+      "notes": [
+        "i16~17 low, CH +4"
+      ]
+    },
+    "d34": {
+      "wavuId": "Bryan-d+3+4",
+      "input": "d+3+4",
+      "name": "Low Knuckle",
+      "level": "l",
+      "startup": "i19",
+      "block": "-12",
+      "hit": "-1",
+      "ch": "+4",
+      "notes": [
+        "i19 low"
+      ]
+    },
+    "d34-2": {
+      "wavuId": "Bryan-d+3+4,2",
+      "input": "d+3+4,2",
+      "name": "Side Low Knuckle Whip",
+      "level": ",m",
+      "startup": ",i19",
+      "displayStartup": "i19 (string)",
+      "block": "-12",
+      "hit": "+14a (-3)",
+      "ch": null,
+      "notes": [
+        "combo filler"
+      ]
+    },
+    "db1-2": {
+      "wavuId": "Bryan-db+1+2",
+      "input": "db+1+2",
+      "name": "Crash Impact",
+      "level": "m,h",
+      "startup": "i15 i12",
+      "block": "-9",
+      "hit": "+4",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "jails from the 1st hit"
+      ]
+    },
+    "snake-edge": {
+      "wavuId": "Bryan-df+3",
+      "input": "df+3",
+      "name": "Snake Edge",
+      "level": "L",
+      "startup": "i29~30",
+      "block": "-26",
+      "hit": "+70a (+54)",
+      "ch": null,
+      "notes": [
+        "i29~30 homing low",
+        "launches on hit, -26 on block"
+      ]
+    },
+    "df4": {
+      "wavuId": "Bryan-df+4",
+      "input": "df+4",
+      "name": "Wolf Tail",
+      "level": "m",
+      "startup": "i22~24",
+      "block": "-6~-4",
+      "hit": "+19a",
+      "ch": null,
+      "notes": [
+        "i22~24 mid, only -6~-4 on block"
+      ]
+    },
+    "wedge": {
+      "wavuId": "Bryan-b,df+4",
+      "input": "b,df+4",
+      "name": "Wedge Driver",
+      "level": "l",
+      "startup": "i29",
+      "block": "-13",
+      "hit": "+14g",
+      "ch": "+29a",
+      "notes": [
+        "low",
+        "CH +29a",
+        "cancel with B"
+      ]
+    },
+    "b1": {
+      "wavuId": "Bryan-b+1",
+      "input": "b+1",
+      "name": "Chopping Elbow",
+      "level": "m",
+      "startup": "i20~21",
+      "block": "+4",
+      "hit": "+7c",
+      "ch": "+78a (+58)",
+      "notes": [
+        "+4 on block",
+        "CH +78a"
+      ]
+    },
+    "b2": {
+      "wavuId": "Bryan-b+2",
+      "input": "b+2",
+      "name": "Left Hook",
+      "level": "h",
+      "startup": "i17",
+      "block": "-7",
+      "hit": "+4",
+      "ch": "+53a",
+      "notes": [
+        "CH +53a",
+        "f+1 cancels into b+2,1 and f+4 into b+2,4"
+      ]
+    },
+    "b2-1": {
+      "wavuId": "Bryan-b+2,1",
+      "input": "b+2,1",
+      "name": "Hands of Doom (1st ext)",
+      "level": ",h",
+      "startup": ",i19",
+      "displayStartup": "i19 (string)",
+      "block": "+0",
+      "hit": "+55",
+      "ch": null,
+      "notes": [
+        "0 on block",
+        "core combo filler"
+      ]
+    },
+    "b2-4": {
+      "wavuId": "Bryan-b+2,4",
+      "input": "b+2,4",
+      "name": "Kickass Combo",
+      "level": ",m",
+      "startup": ",i30-31",
+      "displayStartup": "i30 (string)",
+      "block": "-5",
+      "hit": "+40a (+14)",
+      "ch": null,
+      "notes": [
+        "combo filler, +37a"
+      ]
+    },
+    "b3": {
+      "wavuId": "Bryan-b+3",
+      "input": "b+3",
+      "name": "Front Kick",
+      "level": "m",
+      "startup": "i19",
+      "block": "-7",
+      "hit": "+4",
+      "ch": null,
+      "notes": [
+        "press f to enter Slither Step at +1 on block"
+      ]
+    },
+    "b4": {
+      "wavuId": "Bryan-b+4",
+      "input": "b+4",
+      "name": "Knee Break",
+      "level": "m",
+      "startup": "i16",
+      "block": "-10",
+      "hit": "+15",
+      "ch": null,
+      "notes": [
+        "i16 mid",
+        "wall splat",
+        "his -16 punisher"
+      ]
+    },
+    "f2": {
+      "wavuId": "Bryan-f+2",
+      "input": "f+2",
+      "name": "Right Left",
+      "level": "m",
+      "startup": "i15",
+      "block": "-10",
+      "hit": "+1",
+      "ch": null,
+      "notes": [
+        "i15 mid string starter"
+      ]
+    },
+    "f2-1-4": {
+      "wavuId": "Bryan-f+2,1,4",
+      "input": "f+2,1,4",
+      "name": "Right Left into Spin Kick",
+      "level": ",m",
+      "startup": ",i18~19",
+      "displayStartup": "i18~19 (string)",
+      "block": "-13",
+      "hit": "+3a",
+      "ch": null,
+      "notes": [
+        "his -15 punisher",
+        "press 1+2 on hit to gain Snake Eyes"
+      ]
+    },
+    "f3": {
+      "wavuId": "Bryan-f+3",
+      "input": "f+3",
+      "name": "Knee Strike",
+      "level": "m",
+      "startup": "i16~18",
+      "block": "+0~+2",
+      "hit": "+4~+6",
+      "ch": "+50a",
+      "notes": [
+        "plus on block",
+        "CH +50a"
+      ]
+    },
+    "f4": {
+      "wavuId": "Bryan-f+4",
+      "input": "f+4",
+      "name": "Left Body Blow",
+      "level": "m",
+      "startup": "i18",
+      "block": "-9",
+      "hit": "+1",
+      "ch": null,
+      "notes": [
+        "i18 mid"
+      ]
+    },
+    "f4-1": {
+      "wavuId": "Bryan-f+4,1",
+      "input": "f+4,1",
+      "name": "Boa Crusher",
+      "level": ",m",
+      "startup": ",i25~26",
+      "displayStartup": "i25~26 (string)",
+      "block": "-13c",
+      "hit": "+40a (+32)",
+      "ch": null,
+      "notes": [
+        "his -18 and whiff punisher",
+        "+40a"
+      ]
+    },
+    "f1-2": {
+      "wavuId": "Bryan-f+1+2",
+      "input": "f+1+2",
+      "name": "Sidestep Elbow",
+      "level": "h",
+      "startup": "i20~21",
+      "block": "+1",
+      "hit": "+19d",
+      "ch": null,
+      "notes": [
+        "+1 on block",
+        "steps as it starts",
+        "combo filler"
+      ]
+    },
+    "jet-upper": {
+      "wavuId": "Bryan-f,n,b+2",
+      "input": "f,n,b+2",
+      "name": "Jet Uppercut",
+      "level": "h",
+      "startup": "i14~15",
+      "block": "-7",
+      "hit": "+43a (+33)",
+      "ch": null,
+      "notes": [
+        "i14 launcher, but it is a HIGH",
+        "can be buffered"
+      ]
+    },
+    "mach-breaker": {
+      "wavuId": "Bryan-f,F+2",
+      "input": "f,F+2",
+      "name": "Mach Breaker",
+      "level": "h",
+      "startup": "i13",
+      "block": "-9",
+      "hit": "+41d (-17)",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "i13 high",
+        "Balcony Break"
+      ]
+    },
+    "slash-kick": {
+      "wavuId": "Bryan-f,F+3",
+      "input": "f,F+3",
+      "name": "Slash Kick",
+      "level": "m",
+      "startup": "i24~25",
+      "block": "-13",
+      "hit": "+28a (-8)",
+      "ch": "+39a (-8)",
+      "notes": [
+        "press 1+2 on hit to gain Snake Eyes"
+      ]
+    },
+    "mach-kick": {
+      "wavuId": "Bryan-f,F+4",
+      "input": "f,F+4",
+      "name": "Mach Kick",
+      "level": "h",
+      "startup": "i16~19",
+      "block": "-9c~-6c",
+      "hit": "+15a",
+      "ch": null,
+      "notes": [
+        "homing high",
+        "the initial sidestep evades some attacks"
+      ]
+    },
+    "snake-slash": {
+      "wavuId": "Bryan-f,f,F+3",
+      "input": "f,f,F+3",
+      "name": "Snake Slash",
+      "level": "m",
+      "startup": "i22~25",
+      "block": "+6~+9",
+      "hit": "+13a (+3)",
+      "ch": null,
+      "notes": [
+        "plus on block out of a run"
+      ]
+    },
+    "orbital": {
+      "wavuId": "Bryan-uf+4",
+      "input": "uf+4",
+      "name": "Orbital Heel Kick",
+      "level": "m",
+      "startup": "i24~26",
+      "block": "-5",
+      "hit": "+26a",
+      "ch": null,
+      "notes": [
+        "jumping mid, only -5 on block"
+      ]
+    },
+    "uf1": {
+      "wavuId": "Bryan-uf+1",
+      "input": "uf+1",
+      "name": "Berserker Volley",
+      "level": "m",
+      "startup": "i20~21",
+      "block": "-13",
+      "hit": "+15a",
+      "ch": null,
+      "notes": [
+        "Power Crush",
+        "gains Snake Eyes on hit"
+      ]
+    },
+    "bullet-knee": {
+      "wavuId": "Bryan-uf+3+4",
+      "input": "uf+3+4",
+      "name": "Bullet Knee",
+      "level": "m",
+      "startup": "i16~17",
+      "block": "-7",
+      "hit": "+8a",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "gains Snake Eyes on hit"
+      ]
+    },
+    "ufn4": {
+      "wavuId": "Bryan-uf,n,4",
+      "input": "uf,n,4",
+      "name": "Delayed Rising Toe Kick",
+      "level": "m",
+      "startup": "i23~25",
+      "block": "-13",
+      "hit": "+32a (+22)",
+      "ch": null,
+      "notes": [
+        "the -25 stagger punish",
+        "the jump takes 9f"
+      ]
+    },
+    "uf2": {
+      "wavuId": "Bryan-uf+2",
+      "input": "uf+2",
+      "name": "Bloody War (1st)",
+      "level": "m",
+      "startup": "i13",
+      "block": "-10",
+      "hit": "+1",
+      "ch": null,
+      "notes": [
+        "mid string starter"
+      ]
+    },
+    "uf2-223": {
+      "wavuId": "Bryan-uf+2,2,2,3",
+      "input": "uf+2,2,2,3",
+      "name": "Bloody War",
+      "level": ",m",
+      "startup": ",i22~23",
+      "displayStartup": "i22~23 (string)",
+      "block": "-15",
+      "hit": "+30a (+12)",
+      "ch": null,
+      "notes": [
+        "his -13 punisher",
+        "works standing or crouching"
+      ]
+    },
+    "ws1": {
+      "wavuId": "Bryan-ws1",
+      "input": "ws1",
+      "name": "Left Upper",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-14",
+      "hit": "+35a (+25)",
+      "ch": null,
+      "notes": [
+        "i15 crouching launcher",
+        "-14 on block"
+      ]
+    },
+    "ws2": {
+      "wavuId": "Bryan-ws2",
+      "input": "ws2",
+      "name": "Fisherman Slam",
+      "level": "m,t",
+      "startup": "i19",
+      "block": "-10",
+      "hit": "+50a",
+      "ch": null,
+      "notes": [
+        "attack throw on standing hit"
+      ]
+    },
+    "ws3": {
+      "wavuId": "Bryan-ws3",
+      "input": "ws3",
+      "name": "High Knee Kick",
+      "level": "m",
+      "startup": "i12",
+      "block": "-10",
+      "hit": "+4",
+      "ch": "+33a (+27)",
+      "notes": [
+        "i12 crouching CH launcher"
+      ]
+    },
+    "ws4": {
+      "wavuId": "Bryan-ws4",
+      "input": "ws4",
+      "name": "Toe Smash",
+      "level": "m",
+      "startup": "i11~12",
+      "block": "-6",
+      "hit": "+5",
+      "ch": null,
+      "notes": [
+        "i11~12 crouching check, -6"
+      ]
+    },
+    "fc-df2-1": {
+      "wavuId": "Bryan-FC.df+2,1",
+      "input": "FC.df+2,1",
+      "name": "Snake Rampage",
+      "level": ",h",
+      "startup": "i22~23",
+      "block": "-8",
+      "hit": "+34a (+8)",
+      "ch": null,
+      "notes": [
+        "his -13 crouching punisher",
+        "wall splat"
+      ]
+    },
+    "fc-df4": {
+      "wavuId": "Bryan-FC.df+4",
+      "input": "FC.df+4",
+      "name": "Northern Cross",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-10",
+      "hit": "+13g",
+      "ch": "+25d",
+      "notes": [
+        "CH +25d"
+      ]
+    },
+    "ss1": {
+      "wavuId": "Bryan-SS.1",
+      "input": "SS.1",
+      "name": "Hellraiser",
+      "level": "h",
+      "startup": "i17~18",
+      "block": "-5",
+      "hit": "+15c",
+      "ch": null,
+      "notes": [
+        "sidestep high, CH +15c"
+      ]
+    },
+    "ss2-1": {
+      "wavuId": "Bryan-SS.2,1",
+      "input": "SS.2,1",
+      "name": "Snake Fang",
+      "level": ",h",
+      "startup": ",i21~22",
+      "displayStartup": "i21~22 (string)",
+      "block": "-9",
+      "hit": "+17cg",
+      "ch": null,
+      "notes": [
+        "Heat Engager off a sidestep"
+      ]
+    },
+    "swa1": {
+      "wavuId": "Bryan-SWA.1",
+      "input": "qcb+1",
+      "name": "Cannonball Straight",
+      "level": "h",
+      "startup": "i13~14",
+      "block": "+1",
+      "hit": "+19cg",
+      "ch": "+72a (+56)",
+      "notes": [
+        "Sway move (Wavu lists it as SWA.1)",
+        "+1 on block",
+        "CH +72a Tornado"
+      ]
+    },
+    "swa2": {
+      "wavuId": "Bryan-SWA.2",
+      "input": "qcb+2",
+      "name": "Smash",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-9",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "Sway mid, -9"
+      ]
+    },
+    "swa3": {
+      "wavuId": "Bryan-SWA.3",
+      "input": "qcb+3",
+      "name": "Hatchet Kick",
+      "level": "l",
+      "startup": "i19~20",
+      "block": "-13",
+      "hit": "+5",
+      "ch": "+25a",
+      "notes": [
+        "Sway low",
+        "CH +25a"
+      ]
+    },
+    "swa4": {
+      "wavuId": "Bryan-SWA.4",
+      "input": "qcb+4",
+      "name": "Soccer Kick",
+      "level": "M",
+      "startup": "i17~18",
+      "block": "-12",
+      "hit": "+31a (+21)",
+      "ch": null,
+      "notes": [
+        "Sway launcher, +31a on hit"
+      ]
+    },
+    "sls2": {
+      "wavuId": "Bryan-SLS.2",
+      "input": "qcf+2",
+      "name": "Cross Punch",
+      "level": "h",
+      "startup": "i15~16",
+      "block": "-6",
+      "hit": "+2",
+      "ch": null,
+      "notes": [
+        "Slither Step high, -6"
+      ]
+    },
+    "sls2-1": {
+      "wavuId": "Bryan-SLS.2,1",
+      "input": "qcf+2,1",
+      "name": "Cross Bazooka",
+      "level": ",m",
+      "startup": ",i15~16",
+      "displayStartup": "i15~16 (string)",
+      "block": "-11",
+      "hit": "+33a (+18)",
+      "ch": null,
+      "notes": [
+        "combo filler, +33a"
+      ]
+    },
+    "sls2-2": {
+      "wavuId": "Bryan-SLS.2,2",
+      "input": "qcf+2,2",
+      "name": "Cross Grenade",
+      "level": ",m",
+      "startup": ",i25",
+      "displayStartup": "i25 (string)",
+      "block": "-7",
+      "hit": "+14a",
+      "ch": null,
+      "notes": [
+        "floor-break combo ender"
+      ]
+    },
+    "sls2-4": {
+      "wavuId": "Bryan-SLS.2,4",
+      "input": "qcf+2,4",
+      "name": "Cross Bullet",
+      "level": ",m",
+      "startup": "i16~17",
+      "block": "-10",
+      "hit": "+5a",
+      "ch": null,
+      "notes": [
+        "gains Snake Eyes",
+        "combo filler"
+      ]
+    },
+    "sls4": {
+      "wavuId": "Bryan-SLS.4",
+      "input": "qcf+4",
+      "name": "Slither Kick",
+      "level": "m",
+      "startup": "i18",
+      "block": "-5",
+      "hit": "+1",
+      "ch": "+3",
+      "notes": [
+        "Slither Step mid, -5"
+      ]
+    },
+    "sls1-2": {
+      "wavuId": "Bryan-SLS.1+2",
+      "input": "qcf+1+2",
+      "name": "Requiem",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-9",
+      "hit": "+23a (+13)",
+      "ch": null,
+      "notes": [
+        "Heat Engager out of Slither Step"
+      ]
+    },
+    "taunt": {
+      "wavuId": "Bryan-1+3+4",
+      "input": "1+3+4",
+      "name": "Taunt",
+      "level": "m!",
+      "startup": "i28~31",
+      "block": null,
+      "hit": "+16",
+      "ch": null,
+      "notes": [
+        "cancellable on frames 1~31",
+        "grants Snake Eyes",
+        "-34 if left uncancelled"
+      ]
+    },
+    "sne2": {
+      "wavuId": "Bryan-3+4,SNE.2",
+      "input": "3+4,SNE.2",
+      "name": "Neo Soul Eraser",
+      "level": ",m",
+      "startup": ",i14~15",
+      "displayStartup": "i14~15 (string)",
+      "block": "-9",
+      "hit": "+25a (+20)",
+      "ch": null,
+      "notes": [
+        "consumes Snake Eyes",
+        "unparryable"
+      ]
+    },
+    "sne2-hold": {
+      "wavuId": "Bryan-3+4,SNE.2*",
+      "input": "3+4,SNE.2 (hold)",
+      "name": "Neo Soul Eraser Exceed",
+      "level": ",M",
+      "startup": ",i55~56",
+      "displayStartup": "i55~56 (string)",
+      "block": "+9g~+10g",
+      "hit": "+66a (+50)",
+      "ch": null,
+      "notes": [
+        "plus on block and wall splats on block"
+      ]
+    },
+    "sne-b1-2": {
+      "wavuId": "Bryan-SNE.b+1+2",
+      "input": "SNE.b+1+2",
+      "name": "Neo Murderous Strikes",
+      "level": "m,m",
+      "startup": "i20 i14",
+      "block": "+4",
+      "hit": "+33d (+25)",
+      "ch": null,
+      "notes": [
+        "+4 on block",
+        "consumes Snake Eyes"
+      ]
+    },
+    "sne-fc-df3": {
+      "wavuId": "Bryan-SNE.FC.df+3",
+      "input": "SNE.FC.df+3",
+      "name": "Neo Grim Reaper",
+      "level": "l",
+      "startup": "i20",
+      "block": "-13",
+      "hit": "+7",
+      "ch": "+25a",
+      "notes": [
+        "unparryable low",
+        "CH +25a"
+      ]
+    },
+    "sne-ff1-2": {
+      "wavuId": "Bryan-SNE.f,F+1+2",
+      "input": "SNE.f,F+1+2",
+      "name": "Neo Mach Breaker",
+      "level": "h",
+      "startup": "i13",
+      "block": "-9",
+      "hit": "+23a (+18)",
+      "ch": null,
+      "notes": [
+        "strong parry that auto-retaliates",
+        "costs 300f of Heat"
+      ]
+    },
+    "heat-smash": {
+      "wavuId": "Bryan-H.2+3",
+      "input": "H.2+3",
+      "name": "Notorious Monster",
+      "level": "m,m,t",
+      "startup": "i16, i18~19",
+      "block": "+9",
+      "hit": "-1d",
+      "ch": null,
+      "notes": [
+        "Heat Smash",
+        "+9 on block"
+      ]
+    },
+    "rage-art": {
+      "wavuId": "Bryan-R.df+1+2",
+      "input": "R.df+1+2",
+      "name": "Total Vandalization",
+      "level": "m,t",
+      "startup": "i20",
+      "block": "-18",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "Rage Art",
+        "Reversal Break"
+      ]
+    },
+    "parry": {
+      "wavuId": "Bryan-b+1+3",
+      "input": "b+1+3",
+      "name": "Punch Parry",
+      "level": "",
+      "startup": null,
+      "block": null,
+      "hit": "+31",
+      "ch": null,
+      "notes": [
+        "parries high and mid punches",
+        "parry state on frames 5~12"
+      ]
+    }
+  }
+}

@@ -71,12 +71,12 @@ function FrameRow({
       <dl className="mt-2.5 grid grid-cols-4 gap-2">
         <FrameCell
           label="Startup"
-          value={override?.startup ?? move.displayStartup ?? move.startup}
+          value={override?.startup ?? move.displayStartup ?? move.startup ?? "—"}
           liveUpdated={override?.startup !== undefined}
         />
         <FrameCell
           label="Block"
-          value={override?.block ?? move.block}
+          value={override?.block ?? move.block ?? "—"}
           liveUpdated={override?.block !== undefined}
           highlightPlus
         />

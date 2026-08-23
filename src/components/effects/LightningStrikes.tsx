@@ -165,7 +165,7 @@ function buildBoltStrike(
 
 /** Signature-move pages that get a permanent storm front. */
 const ELECTRIC_ROUTE =
-  /\/(?:kazuya\/.*\/item\/(?:ewgf-input|ewgf-consistency|ewgf-movement|fifty-fifty)|lars\/.*\/item\/(?:blue-bolt|sen-threats|len|den-cancel))$/;
+  /\/(?:kazuya\/.*\/item\/(?:ewgf-input|ewgf-consistency|ewgf-movement|fifty-fifty)|lars\/.*\/item\/(?:blue-bolt|sen-threats|len|den-cancel)|bryan\/.*\/item\/(?:taunt-jet-upper|taunt-mechanics|snake-edge|b1))$/;
 
 /** Seconds until the leader reaches ground — flash/burst fire then. */
 const DRAW_S = 0.11;
