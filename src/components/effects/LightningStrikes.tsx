@@ -1,21 +1,23 @@
 "use client";
 
 /**
- * Ambient lightning strike engine.
+ * Procedural lightning storm.
  *
- * - Bolts draw top-down in ~110ms with branch forks, a bright core over a
- *   blurred glow pass, at random positions on a random cadence; ~1/3 span the
- *   full viewport with a faint scene flash.
- * - ~25% of bolt strikes double-tap: a second bolt lands ~90ms later nearby.
- * - ~15% of ambient events are horizontal cloud-to-cloud arcs across the top.
- * - The background grid "energizes" around every strike — accent-colored grid
- *   lines glow through a radial mask at the impact point.
- * - Electric curriculum pages (EWGF items, the 50/50) are supercharged:
- *   strikes come more often and always full-height.
- * - The character select gets one guaranteed entrance strike behind the
- *   ready fighter's tile.
+ * Every bolt is GENERATED at strike time — a displaced random walk with
+ * elbow kinks and forking branches, built at actual pixel height (no
+ * stretched template shapes; no two strikes are ever identical). Bolts
+ * taper (thicker leader, thinner ground segment), flash a white-hot core
+ * for the first frames, and land somewhere real: the grid glow and impact
+ * burst anchor to the bolt's actual terminus, and the scene flash peaks at
+ * the moment the draw completes.
  *
- * Renders nothing under reduced motion (OS setting or in-app toggle).
+ * Pacing is a weather system, not a dice roll: long calms (with at most a
+ * distant, dim bolt) broken by 20–30s storm fronts of 3–5 strikes with one
+ * guaranteed full-height hit. Electric curriculum pages (EWGF items, the
+ * 50/50) are a permanent front — frequent, always full-height. The
+ * character select fires one guaranteed entrance strike.
+ *
+ * Renders nothing under reduced motion (OS or in-app toggle).
  * Debug: add `#strike` to any URL to fire every 1.5s.
  */
 
@@ -24,11 +26,23 @@ import { usePathname } from "next/navigation";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useReducedMotionSetting } from "@/hooks/use-progress";
 
-interface BoltSpec {
-  x: number;
-  variant: number;
-  flip: boolean;
-  /** Seconds after the strike starts (double-tap echo). */
+/* ------------------------------------------------------------------ */
+/* Geometry generation                                                 */
+/* ------------------------------------------------------------------ */
+
+interface RenderedBolt {
+  leftPx: number;
+  svgW: number;
+  svgH: number;
+  /** Tapered main channel: leader (top ~60%) and ground segment. */
+  pathTop: string;
+  pathBottom: string;
+  pathFull: string;
+  branches: string[];
+  /** Terminus in viewport px. */
+  endX: number;
+  endY: number;
+  /** Seconds after strike start (double-tap echo). */
   delay: number;
 }
 
@@ -36,52 +50,142 @@ interface Strike {
   id: number;
   kind: "bolt" | "arc";
   big: boolean;
-  bolts: BoltSpec[];
-  /** Arc geometry (kind === "arc"). */
-  arcX?: number;
-  arcWidth?: number;
-  arcFlip?: boolean;
-  /** Grid-glow epicenter, viewport percent. */
-  gridX: number;
-  gridY: number;
+  distant: boolean;
+  bolts: RenderedBolt[];
+  arc?: { leftPct: number; widthPct: number; flip: boolean };
+  /** Impact point in viewport px — grid glow + burst anchor here. */
+  impactX: number;
+  impactY: number;
 }
 
-/** Bolt geometry in a 100×600 box, stretched to strike height. */
-const BOLTS: { main: string; branches: string[] }[] = [
-  {
-    main: "M54 0 L44 88 L58 96 L38 210 L56 222 L30 370 L48 380 L36 470 L44 476 L28 600",
-    branches: [
-      "M58 96 L84 150 L76 154 L94 210",
-      "M56 222 L28 290 L36 296 L16 350",
-    ],
-  },
-  {
-    main: "M46 0 L58 70 L44 80 L64 190 L46 200 L66 320 L50 332 L70 440 L56 450 L72 600",
-    branches: [
-      "M44 80 L20 140 L28 146 L10 196",
-      "M50 332 L82 400 L74 406 L92 460",
-    ],
-  },
-  {
-    main: "M50 0 L40 60 L56 66 L34 160 L52 170 L26 280 L50 292 L34 400 L52 410 L40 520 L50 530 L38 600",
-    branches: [
-      "M56 66 L78 120 L70 126 L86 170",
-      "M50 292 L20 350 L30 356 L14 410",
-      "M52 410 L74 470 L66 476 L80 520",
-    ],
-  },
-];
+let strikeSeq = 1;
 
-/** Horizontal cloud-to-cloud arc in a 600×80 box. */
-const ARC_PATH =
-  "M0 52 L64 40 L70 54 L150 34 L158 48 L252 28 L260 42 L356 26 L366 40 L462 22 L472 36 L600 18";
-const ARC_BRANCH = "M260 42 L300 66 L292 70 L330 78";
+const SVG_W = 220;
 
-/** Curriculum pages where the electric IS the lesson. */
+/** Displaced random walk from top to `heightPx`, with kinks and branches. */
+function generateBolt(
+  xPct: number,
+  heightPx: number,
+  vw: number,
+  delay: number,
+): RenderedBolt {
+  const steps = Math.max(7, Math.round(heightPx / 55));
+  const stepY = heightPx / steps;
+  const amp = 15;
+
+  let x = SVG_W / 2 + (Math.random() * 30 - 15);
+  const verts: { x: number; y: number }[] = [{ x, y: 0 }];
+
+  for (let i = 1; i <= steps; i++) {
+    let y = stepY * i + (Math.random() * 10 - 5);
+    // Occasional elbow: a sharp lateral jog, the signature lightning kink.
+    if (Math.random() < 0.3 && i > 1 && i < steps) {
+      const kx = Math.min(
+        SVG_W - 16,
+        Math.max(16, x + (Math.random() < 0.5 ? -1 : 1) * (10 + Math.random() * 16)),
+      );
+      verts.push({ x: kx, y: y - stepY * 0.3 });
+      x = kx;
+    }
+    x = Math.min(SVG_W - 16, Math.max(16, x + (Math.random() * amp * 2 - amp)));
+    y = Math.min(heightPx, y);
+    verts.push({ x, y });
+  }
+  verts[verts.length - 1].y = heightPx;
+
+  const toPath = (vs: { x: number; y: number }[]) =>
+    vs.map((v, i) => `${i ? "L" : "M"}${v.x.toFixed(1)} ${v.y.toFixed(1)}`).join(" ");
+
+  // Branches fork off random mid-channel vertices, thinning away.
+  const branches: string[] = [];
+  const branchCount = 1 + Math.floor(Math.random() * 3);
+  for (let b = 0; b < branchCount; b++) {
+    const origin =
+      verts[2 + Math.floor(Math.random() * Math.max(1, verts.length - 5))];
+    let bx = origin.x;
+    let by = origin.y;
+    const dir = Math.random() < 0.5 ? -1 : 1;
+    const parts = [`M${bx.toFixed(1)} ${by.toFixed(1)}`];
+    const bSteps = 3 + Math.floor(Math.random() * 3);
+    for (let s = 0; s < bSteps; s++) {
+      bx += dir * (8 + Math.random() * 16) + (Math.random() * 8 - 4);
+      by += 14 + Math.random() * 26;
+      parts.push(`L${bx.toFixed(1)} ${by.toFixed(1)}`);
+    }
+    branches.push(parts.join(" "));
+  }
+
+  const splitIdx = Math.min(verts.length - 2, Math.ceil(verts.length * 0.62));
+  const end = verts[verts.length - 1];
+  const leftPx = (xPct / 100) * vw - SVG_W / 2;
+
+  return {
+    leftPx,
+    svgW: SVG_W,
+    svgH: heightPx,
+    pathTop: toPath(verts.slice(0, splitIdx + 1)),
+    pathBottom: toPath(verts.slice(splitIdx)),
+    pathFull: toPath(verts),
+    branches,
+    endX: leftPx + end.x,
+    endY: end.y,
+    delay,
+  };
+}
+
+function buildBoltStrike(
+  vw: number,
+  vh: number,
+  opts: { xPct?: number; big?: boolean; distant?: boolean; allowEcho?: boolean },
+): Strike {
+  const big = opts.big ?? false;
+  const distant = opts.distant ?? false;
+  const xPct = opts.xPct ?? 4 + Math.random() * 88;
+  const heightPx = big
+    ? vh
+    : vh * (0.3 + Math.random() * 0.25) * (distant ? 0.75 : 1);
+
+  const bolts = [generateBolt(xPct, heightPx, vw, 0)];
+  if ((opts.allowEcho ?? true) && !distant && Math.random() < 0.25) {
+    const echoX = Math.min(94, Math.max(2, xPct + (Math.random() < 0.5 ? -1 : 1) * (4 + Math.random() * 7)));
+    bolts.push(generateBolt(echoX, heightPx * (0.7 + Math.random() * 0.3), vw, 0.09));
+  }
+
+  return {
+    id: strikeSeq++,
+    kind: "bolt",
+    big,
+    distant,
+    bolts,
+    impactX: bolts[0].endX,
+    impactY: bolts[0].endY,
+  };
+}
+
+function buildArcStrike(vw: number, vh: number): Strike {
+  const leftPct = 4 + Math.random() * 40;
+  const widthPct = 34 + Math.random() * 22;
+  return {
+    id: strikeSeq++,
+    kind: "arc",
+    big: false,
+    distant: false,
+    bolts: [],
+    arc: { leftPct, widthPct, flip: Math.random() < 0.5 },
+    impactX: ((leftPct + widthPct / 2) / 100) * vw,
+    impactY: 0.07 * vh,
+  };
+}
+
+/* ------------------------------------------------------------------ */
+/* Component                                                           */
+/* ------------------------------------------------------------------ */
+
 const ELECTRIC_ROUTE =
   /\/item\/(ewgf-input|ewgf-consistency|ewgf-movement|fifty-fifty)$/;
 
-let strikeSeq = 1;
+/** Seconds until the leader reaches ground — flash/burst fire then. */
+const DRAW_S = 0.11;
 
 export function LightningStrikes() {
   const pathname = usePathname();
@@ -92,81 +196,71 @@ export function LightningStrikes() {
   const reduced = Boolean(osReduced) || appReduced;
   const supercharged = ELECTRIC_ROUTE.test(pathname);
 
-  /* Ambient scheduler. */
+  /* Weather system. */
   useEffect(() => {
     if (reduced) return;
     let alive = true;
     const timers = new Set<ReturnType<typeof setTimeout>>();
+    const at = (ms: number, fn: () => void) => {
+      const t = setTimeout(() => {
+        timers.delete(t);
+        if (alive) fn();
+      }, ms);
+      timers.add(t);
+    };
     const debug =
       typeof window !== "undefined" && window.location.hash.includes("strike");
 
-    const makeStrike = (): Strike => {
-      const kind: Strike["kind"] =
-        !supercharged && Math.random() < 0.15 ? "arc" : "bolt";
-      if (kind === "arc") {
-        const arcX = 4 + Math.random() * 40;
-        const arcWidth = 34 + Math.random() * 22;
-        return {
-          id: strikeSeq++,
-          kind,
-          big: false,
-          bolts: [],
-          arcX,
-          arcWidth,
-          arcFlip: Math.random() < 0.5,
-          gridX: arcX + arcWidth / 2,
-          gridY: 8,
-        };
-      }
-      const x = 4 + Math.random() * 88;
-      const big = supercharged || Math.random() < 0.35;
-      const bolts: BoltSpec[] = [
-        {
-          x,
-          variant: Math.floor(Math.random() * BOLTS.length),
-          flip: Math.random() < 0.5,
-          delay: 0,
-        },
-      ];
-      if (Math.random() < 0.25) {
-        bolts.push({
-          x: Math.min(94, Math.max(2, x + (Math.random() < 0.5 ? -1 : 1) * (4 + Math.random() * 6))),
-          variant: Math.floor(Math.random() * BOLTS.length),
-          flip: Math.random() < 0.5,
-          delay: 0.09,
+    const fire = (opts: { big?: boolean; distant?: boolean; arcAllowed?: boolean }) => {
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const strike =
+        (opts.arcAllowed ?? true) && !opts.big && !opts.distant && Math.random() < 0.18
+          ? buildArcStrike(vw, vh)
+          : buildBoltStrike(vw, vh, opts);
+      setStrike(strike);
+      at(1100, () => setStrike(null));
+    };
+
+    if (debug) {
+      const loop = () => at(1500, () => {
+        fire({ big: Math.random() < 0.5 });
+        loop();
+      });
+      loop();
+    } else if (supercharged) {
+      // Electric pages: a permanent storm front, always full-height.
+      const loop = (first: boolean) =>
+        at((first ? 1200 : 3500) + Math.random() * 5000, () => {
+          fire({ big: true });
+          loop(false);
         });
-      }
-      return {
-        id: strikeSeq++,
-        kind,
-        big,
-        bolts,
-        gridX: x,
-        gridY: big ? 55 + Math.random() * 30 : 20 + Math.random() * 25,
+      loop(true);
+    } else {
+      // Calm → front → calm. Calms may carry one distant, dim bolt.
+      const front = () => {
+        const count = 3 + Math.floor(Math.random() * 3);
+        const span = 20000 + Math.random() * 10000;
+        const bigIndex = Math.floor(Math.random() * count);
+        for (let i = 0; i < count; i++) {
+          at((span * (i + Math.random() * 0.6)) / count, () =>
+            fire({ big: i === bigIndex || Math.random() < 0.25 }),
+          );
+        }
+        at(span + 2000, () => calm(false));
       };
-    };
+      const calm = (first: boolean) => {
+        const duration = first
+          ? 5000 + Math.random() * 8000
+          : 55000 + Math.random() * 35000;
+        if (!first && Math.random() < 0.6) {
+          at(Math.random() * duration, () => fire({ distant: true, arcAllowed: false }));
+        }
+        at(duration, front);
+      };
+      calm(true);
+    }
 
-    const schedule = (first: boolean) => {
-      const delay = debug
-        ? 1500
-        : supercharged
-          ? (first ? 1200 : 3500) + Math.random() * 5000
-          : (first ? 3000 : 8000) + Math.random() * 14000;
-      const t = setTimeout(() => {
-        timers.delete(t);
-        if (!alive) return;
-        setStrike(makeStrike());
-        const clear = setTimeout(() => {
-          timers.delete(clear);
-          if (alive) setStrike(null);
-        }, 1000);
-        timers.add(clear);
-        schedule(false);
-      }, delay);
-      timers.add(t);
-    };
-
-    schedule(true);
     return () => {
       alive = false;
       for (const t of timers) clearTimeout(t);
@@ -184,16 +278,14 @@ export function LightningStrikes() {
     if (enteredRef.current) return;
     enteredRef.current = true;
     const t = setTimeout(() => {
-      setStrike({
-        id: strikeSeq++,
-        kind: "bolt",
-        big: true,
-        // Behind the ready fighter's tile (first in the grid).
-        bolts: [{ x: 13, variant: 0, flip: false, delay: 0 }],
-        gridX: 14,
-        gridY: 30,
-      });
-      setTimeout(() => setStrike(null), 1000);
+      setStrike(
+        buildBoltStrike(window.innerWidth, window.innerHeight, {
+          xPct: 13.5,
+          big: true,
+          allowEcho: false,
+        }),
+      );
+      setTimeout(() => setStrike(null), 1100);
     }, 650);
     return () => clearTimeout(t);
   }, [pathname, reduced]);
@@ -213,33 +305,68 @@ export function LightningStrikes() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.15 }}
           >
+            {/* Scene flash — peaks at impact, not at leader start */}
             {strike.big && (
               <motion.div
                 className="absolute inset-0 bg-accent"
                 initial={{ opacity: 0 }}
-                animate={{ opacity: [0, 0.06, 0.02, 0] }}
-                transition={{ duration: 0.55, times: [0, 0.12, 0.4, 1] }}
+                animate={{ opacity: [0, 0.07, 0.02, 0] }}
+                transition={{
+                  delay: DRAW_S,
+                  duration: 0.5,
+                  times: [0, 0.12, 0.4, 1],
+                }}
               />
             )}
 
-            {/* Energized grid around the impact */}
-            <motion.div
-              className="bg-grid-accent absolute inset-0"
-              style={{
-                WebkitMaskImage: `radial-gradient(circle 300px at ${strike.gridX}% ${strike.gridY}%, black, transparent 72%)`,
-                maskImage: `radial-gradient(circle 300px at ${strike.gridX}% ${strike.gridY}%, black, transparent 72%)`,
-              }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: [0, 0.55, 0.2, 0] }}
-              transition={{ duration: 0.8, times: [0, 0.15, 0.5, 1] }}
-            />
+            {/* Energized grid, anchored to the real terminus */}
+            {!strike.distant && (
+              <motion.div
+                className="bg-grid-accent absolute inset-0"
+                style={{
+                  WebkitMaskImage: `radial-gradient(circle ${strike.big ? 320 : 240}px at ${strike.impactX}px ${strike.impactY}px, black, transparent 72%)`,
+                  maskImage: `radial-gradient(circle ${strike.big ? 320 : 240}px at ${strike.impactX}px ${strike.impactY}px, black, transparent 72%)`,
+                }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: [0, 0.55, 0.2, 0] }}
+                transition={{
+                  delay: DRAW_S * 0.7,
+                  duration: 0.8,
+                  times: [0, 0.15, 0.5, 1],
+                }}
+              />
+            )}
+
+            {/* Impact burst at the terminus */}
+            {strike.kind === "bolt" && !strike.distant && (
+              <motion.div
+                className="absolute rounded-full"
+                style={{
+                  left: strike.impactX - (strike.big ? 70 : 45),
+                  top: strike.impactY - (strike.big ? 70 : 45),
+                  width: strike.big ? 140 : 90,
+                  height: strike.big ? 140 : 90,
+                  background:
+                    "radial-gradient(closest-side, rgba(167,139,250,0.55), rgba(139,92,246,0.18) 55%, transparent)",
+                }}
+                initial={{ opacity: 0, scale: 0.3 }}
+                animate={{ opacity: [0, 0.9, 0], scale: [0.3, 1.25, 1.45] }}
+                transition={{ delay: DRAW_S, duration: 0.45, times: [0, 0.25, 1] }}
+              />
+            )}
 
             {strike.kind === "bolt" &&
-              strike.bolts.map((b, i) => (
-                <Bolt key={i} spec={b} big={strike.big} echo={i > 0} />
+              strike.bolts.map((bolt, i) => (
+                <BoltSvg
+                  key={i}
+                  bolt={bolt}
+                  big={strike.big}
+                  distant={strike.distant}
+                  echo={i > 0}
+                />
               ))}
 
-            {strike.kind === "arc" && <CloudArc strike={strike} />}
+            {strike.kind === "arc" && strike.arc && <CloudArc arc={strike.arc} />}
           </motion.div>
         )}
       </AnimatePresence>
@@ -247,78 +374,125 @@ export function LightningStrikes() {
   );
 }
 
-function Bolt({
-  spec,
+/* ------------------------------------------------------------------ */
+/* Rendering                                                           */
+/* ------------------------------------------------------------------ */
+
+function BoltSvg({
+  bolt,
   big,
+  distant,
   echo,
 }: {
-  spec: BoltSpec;
+  bolt: RenderedBolt;
   big: boolean;
+  distant: boolean;
   echo: boolean;
 }) {
-  const bolt = BOLTS[spec.variant];
-  const peak = echo ? 0.6 : big ? 1 : 0.8;
+  const peak = (echo ? 0.6 : big ? 1 : 0.8) * (distant ? 0.35 : 1);
   const flicker = { opacity: [0, peak, peak * 0.5, peak * 0.85, 0] };
-  const flickerTransition = {
+  const flickerT = {
     duration: big ? 0.75 : 0.6,
     times: [0, 0.15, 0.45, 0.6, 1] as number[],
-    delay: spec.delay,
+    delay: bolt.delay,
   };
-  const draw = { duration: 0.11, ease: "easeIn" as const, delay: spec.delay };
+  const draw = { duration: DRAW_S, ease: "easeIn" as const, delay: bolt.delay };
+  const coreTopW = distant ? 1.3 : big ? 2.6 : 2;
+  const coreBottomW = distant ? 0.9 : big ? 1.6 : 1.2;
 
   return (
     <svg
       className="absolute top-0"
       style={{
-        left: `${spec.x}%`,
-        height: big ? "100%" : `${38 + spec.variant * 8}%`,
-        width: 130,
-        transform: spec.flip ? "scaleX(-1)" : undefined,
+        left: bolt.leftPx,
+        width: bolt.svgW,
+        height: bolt.svgH,
+        overflow: "visible",
+        filter: distant ? "blur(1px)" : undefined,
       }}
-      viewBox="0 0 100 600"
-      preserveAspectRatio="none"
+      viewBox={`0 0 ${bolt.svgW} ${bolt.svgH}`}
       fill="none"
     >
+      {/* Glow channel */}
       <motion.path
-        d={bolt.main}
+        d={bolt.pathFull}
         stroke="var(--accent)"
         strokeWidth={big ? 7 : 5}
         strokeLinejoin="round"
         strokeLinecap="round"
-        vectorEffect="non-scaling-stroke"
         style={{ filter: "blur(4px)" }}
         initial={{ pathLength: 0, opacity: 0 }}
         animate={{ pathLength: 1, ...flicker }}
-        transition={{ pathLength: draw, opacity: flickerTransition }}
+        transition={{ pathLength: draw, opacity: flickerT }}
       />
+      {/* Tapered core: leader, then thinner ground segment */}
       <motion.path
-        d={bolt.main}
+        d={bolt.pathTop}
         stroke="var(--accent-bright)"
-        strokeWidth={big ? 2.2 : 1.6}
+        strokeWidth={coreTopW}
         strokeLinejoin="round"
         strokeLinecap="round"
-        vectorEffect="non-scaling-stroke"
         initial={{ pathLength: 0, opacity: 0 }}
         animate={{ pathLength: 1, ...flicker }}
-        transition={{ pathLength: draw, opacity: flickerTransition }}
+        transition={{
+          pathLength: { duration: DRAW_S * 0.62, ease: "easeIn", delay: bolt.delay },
+          opacity: flickerT,
+        }}
       />
+      <motion.path
+        d={bolt.pathBottom}
+        stroke="var(--accent-bright)"
+        strokeWidth={coreBottomW}
+        strokeLinejoin="round"
+        strokeLinecap="round"
+        initial={{ pathLength: 0, opacity: 0 }}
+        animate={{ pathLength: 1, ...flicker }}
+        transition={{
+          pathLength: {
+            duration: DRAW_S * 0.38,
+            ease: "easeOut",
+            delay: bolt.delay + DRAW_S * 0.62,
+          },
+          opacity: flickerT,
+        }}
+      />
+      {/* White-hot core — spikes for the first frames, then hands off */}
+      {!distant && (
+        <motion.path
+          d={bolt.pathFull}
+          stroke="#f6f3ff"
+          strokeWidth={big ? 1.2 : 0.9}
+          strokeLinejoin="round"
+          strokeLinecap="round"
+          initial={{ pathLength: 0, opacity: 0 }}
+          animate={{ pathLength: 1, opacity: [0, peak, peak * 0.15, 0] }}
+          transition={{
+            pathLength: draw,
+            opacity: {
+              duration: 0.45,
+              times: [0, 0.14, 0.45, 1],
+              delay: bolt.delay,
+            },
+          }}
+        />
+      )}
+      {/* Branch forks, a beat behind the leader */}
       {bolt.branches.map((d, i) => (
         <motion.path
           key={i}
           d={d}
           stroke="var(--accent)"
-          strokeWidth={1.2}
+          strokeWidth={distant ? 0.8 : 1.2}
           strokeLinejoin="round"
           strokeLinecap="round"
-          vectorEffect="non-scaling-stroke"
           initial={{ pathLength: 0, opacity: 0 }}
-          animate={{ pathLength: 1, opacity: [0, 0.7, 0.3, 0] }}
+          animate={{ pathLength: 1, opacity: [0, peak * 0.7, peak * 0.3, 0] }}
           transition={{
-            pathLength: { duration: 0.09, ease: "easeIn", delay: spec.delay + 0.07 },
+            pathLength: { duration: 0.09, ease: "easeIn", delay: bolt.delay + 0.07 },
             opacity: {
               duration: 0.5,
               times: [0, 0.2, 0.6, 1],
-              delay: spec.delay + 0.07,
+              delay: bolt.delay + 0.07,
             },
           }}
         />
@@ -327,16 +501,24 @@ function Bolt({
   );
 }
 
-function CloudArc({ strike }: { strike: Strike }) {
+const ARC_PATH =
+  "M0 52 L64 40 L70 54 L150 34 L158 48 L252 28 L260 42 L356 26 L366 40 L462 22 L472 36 L600 18";
+const ARC_BRANCH = "M260 42 L300 66 L292 70 L330 78";
+
+function CloudArc({
+  arc,
+}: {
+  arc: { leftPct: number; widthPct: number; flip: boolean };
+}) {
   return (
     <svg
       className="absolute"
       style={{
-        left: `${strike.arcX}%`,
+        left: `${arc.leftPct}%`,
         top: "2%",
-        width: `${strike.arcWidth}%`,
+        width: `${arc.widthPct}%`,
         height: 90,
-        transform: strike.arcFlip ? "scaleX(-1)" : undefined,
+        transform: arc.flip ? "scaleX(-1)" : undefined,
       }}
       viewBox="0 0 600 80"
       preserveAspectRatio="none"
