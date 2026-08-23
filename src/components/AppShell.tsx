@@ -4,21 +4,13 @@ import { useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { MotionConfig } from "motion/react";
-import {
-  Zap,
-  Swords,
-  BarChart3,
-  Users,
-  Settings,
-  Sun,
-} from "lucide-react";
+import { Zap, Swords, Users, Settings, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useReducedMotionSetting } from "@/hooks/use-progress";
 
 const navItems = [
   { href: "/today", label: "Today", icon: Sun },
   { href: "/training", label: "Training", icon: Swords },
-  { href: "/progress", label: "Progress", icon: BarChart3 },
   { href: "/characters", label: "Characters", icon: Users },
   { href: "/settings", label: "Settings", icon: Settings },
 ] as const;
