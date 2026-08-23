@@ -23,7 +23,7 @@ import type {
 } from "@/types";
 import { emptyDrillProgress, emptyState, progressStore } from "@/lib/store";
 import { findItem, isDrillPassed } from "@/lib/progression";
-import { getCharacter } from "@/data/characters";
+import { characters, getCharacter } from "@/data/characters";
 
 interface ProgressState extends PersistedState {
   hydrated: boolean;
@@ -48,6 +48,7 @@ type Action =
   | { type: "dismiss-session-result" }
   | { type: "record-quiz-run"; characterId: string; score: number; avgMs: number | null }
   | { type: "set-reduced-motion"; value: boolean }
+  | { type: "set-active-character"; characterId: string }
   | { type: "import-characters"; characters: Record<string, CharacterProgress> }
   | { type: "reset-all" };
 
@@ -258,6 +259,9 @@ function reducer(state: ProgressState, action: Action): ProgressState {
       };
     }
 
+    case "set-active-character":
+      return { ...state, activeCharacterId: action.characterId };
+
     case "set-reduced-motion":
       return {
         ...state,
@@ -268,7 +272,12 @@ function reducer(state: ProgressState, action: Action): ProgressState {
       return { ...state, characters: action.characters, activeSession: null };
 
     case "reset-all":
-      return { ...emptyState(), hydrated: true, hydratedAt: state.hydratedAt };
+      return {
+        ...emptyState(),
+        activeCharacterId: state.activeCharacterId,
+        hydrated: true,
+        hydratedAt: state.hydratedAt,
+      };
   }
 }
 
@@ -299,6 +308,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     if (!state.hydrated) return;
     progressStore.save({
       schemaVersion: state.schemaVersion,
+      activeCharacterId: state.activeCharacterId,
       characters: state.characters,
       activeSession: state.activeSession,
       lastSessionResult: state.lastSessionResult,
@@ -328,6 +338,15 @@ export function useCharacterProgress(
 ): CharacterProgress | undefined {
   const { state } = useProgress();
   return state.characters[characterId];
+}
+
+/**
+ * The fighter currently being trained. Falls back to the first available
+ * character if the stored id no longer exists (e.g. after a data change).
+ */
+export function useActiveCharacter(): Character {
+  const { state } = useProgress();
+  return getCharacter(state.activeCharacterId) ?? characters[0];
 }
 
 export function useReducedMotionSetting(): boolean {

@@ -1,5 +1,6 @@
 import type { FrameDataSet } from "@/types";
 import kazuyaFrames from "./characters/kazuya.frames.json";
+import larsFrames from "./characters/lars.frames.json";
 
 /**
  * Frame-data registry — the ONLY place frame numbers live.
@@ -8,6 +9,7 @@ import kazuyaFrames from "./characters/kazuya.frames.json";
  */
 const frameData: Record<string, FrameDataSet> = {
   kazuya: kazuyaFrames as FrameDataSet,
+  lars: larsFrames as FrameDataSet,
 };
 
 export function getFrameData(characterId: string): FrameDataSet | undefined {

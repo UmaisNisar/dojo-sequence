@@ -243,6 +243,8 @@ export interface FrameDataSet {
 
 export interface PersistedState {
   schemaVersion: number;
+  /** The fighter the app is currently training — set on character select. */
+  activeCharacterId: string;
   characters: Record<string, CharacterProgress>;
   activeSession: Session | null;
   lastSessionResult: SessionResult | null;

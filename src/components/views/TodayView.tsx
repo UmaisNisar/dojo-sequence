@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { motion } from "motion/react";
 import { ArrowRight, Play, RotateCcw, Trophy } from "lucide-react";
 import type { Character, TrainingItem } from "@/types";
-import { useProgress } from "@/hooks/use-progress";
+import { useActiveCharacter, useProgress } from "@/hooks/use-progress";
 import {
   buildSessionItems,
   buildTodayPlan,
@@ -18,8 +18,9 @@ import { cn, formatRelativeTime, pad2 } from "@/lib/utils";
 import { Notation } from "@/components/Notation";
 import { ProgressBar } from "@/components/ProgressBar";
 
-export function TodayView({ character }: { character: Character }) {
+export function TodayView() {
   const { state, dispatch } = useProgress();
+  const character = useActiveCharacter();
   const router = useRouter();
   const progress = state.characters[character.id];
   const now = state.hydratedAt;

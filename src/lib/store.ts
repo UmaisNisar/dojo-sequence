@@ -6,6 +6,9 @@ import type {
 
 export const SCHEMA_VERSION = 1;
 
+/** Fallback fighter when no selection has been made yet. */
+const DEFAULT_CHARACTER_ID = "kazuya";
+
 const STORAGE_KEY = "dojo-sequence:state";
 
 export function emptyDrillProgress(): DrillProgress {
@@ -26,6 +29,7 @@ export function emptyDrillProgress(): DrillProgress {
 export function emptyState(): PersistedState {
   return {
     schemaVersion: SCHEMA_VERSION,
+    activeCharacterId: DEFAULT_CHARACTER_ID,
     characters: {},
     activeSession: null,
     lastSessionResult: null,
@@ -157,6 +161,10 @@ export function sanitizeState(raw: unknown): PersistedState {
             : null,
       };
     }
+  }
+
+  if (typeof raw.activeCharacterId === "string" && raw.activeCharacterId) {
+    state.activeCharacterId = raw.activeCharacterId;
   }
 
   if (isRecord(raw.settings)) {

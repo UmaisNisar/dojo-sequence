@@ -1,0 +1,775 @@
+{
+  "characterId": "lars",
+  "game": "Tekken 8",
+  "gameVersion": "v3.02 (Season 3)",
+  "verifiedAt": "2026-08-23",
+  "sources": [
+    {
+      "name": "Wavu Wiki",
+      "url": "https://wavu.wiki/t/Lars"
+    },
+    {
+      "name": "TekkenDocs",
+      "url": "https://tekkendocs.com/t8/lars"
+    }
+  ],
+  "moves": {
+    "jab": {
+      "wavuId": "Lars-1",
+      "input": "1",
+      "name": "Jab",
+      "level": "h",
+      "startup": "i10",
+      "block": "+1",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "your fastest button"
+      ]
+    },
+    "jab-12": {
+      "wavuId": "Lars-1,2",
+      "input": "1,2",
+      "name": "Left Right Combo",
+      "level": ",h",
+      "startup": ",i10",
+      "displayStartup": "i10 (string)",
+      "block": "-3",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "jails"
+      ]
+    },
+    "delta-slicer": {
+      "wavuId": "Lars-1,1,1",
+      "input": "1,1,1",
+      "name": "Delta Slicer",
+      "level": ",m",
+      "startup": ",i25~26",
+      "displayStartup": "i10 (string)",
+      "block": "-12",
+      "hit": "+17a",
+      "ch": null,
+      "notes": [
+        "heat engager"
+      ]
+    },
+    "ring-current": {
+      "wavuId": "Lars-2,1",
+      "input": "2,1",
+      "name": "Ring Current",
+      "level": ",m",
+      "startup": ",i20~21",
+      "displayStartup": "i10 (string)",
+      "block": "-6",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "10f punish",
+        "whiff punish"
+      ]
+    },
+    "df1": {
+      "wavuId": "Lars-df+1",
+      "input": "df+1",
+      "name": "Rising Uppercut",
+      "level": "m",
+      "startup": "i13",
+      "block": "-3",
+      "hit": "+5",
+      "ch": null,
+      "notes": [
+        "your money mid"
+      ]
+    },
+    "df2": {
+      "wavuId": "Lars-df+2",
+      "input": "df+2",
+      "name": "Flash Bullet",
+      "level": "m",
+      "startup": "i14",
+      "block": "-3",
+      "hit": "+9",
+      "ch": "+13c",
+      "notes": [
+        "transitions to SEN",
+        "elbow"
+      ]
+    },
+    "b1": {
+      "wavuId": "Lars-b+1",
+      "input": "b+1",
+      "name": "Chevron Slash",
+      "level": "m",
+      "startup": "i15~17",
+      "block": "-9",
+      "hit": "+4",
+      "ch": "+14a (+5)",
+      "notes": [
+        "homing",
+        "balcony break on CH"
+      ]
+    },
+    "b2-1": {
+      "wavuId": "Lars-b+2,1",
+      "input": "b+2,1",
+      "name": "Gilbert Smash",
+      "level": ",m",
+      "startup": ",i15",
+      "displayStartup": "i15 (string)",
+      "block": "-10",
+      "hit": "+4",
+      "ch": "+32a",
+      "notes": [
+        "CH launcher",
+        "delayable"
+      ]
+    },
+    "b3-4": {
+      "wavuId": "Lars-b+3,4",
+      "input": "b+3,4",
+      "name": "Impulse Plus",
+      "level": ",h",
+      "startup": ",i23~24",
+      "displayStartup": "i17 (string)",
+      "block": "-8",
+      "hit": "+19 (+10)",
+      "ch": null,
+      "notes": [
+        "whiff punish"
+      ]
+    },
+    "f4": {
+      "wavuId": "Lars-f+4",
+      "input": "f+4",
+      "name": "Knee Strike",
+      "level": "m",
+      "startup": "i17",
+      "block": "-9",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "mid pressure"
+      ]
+    },
+    "f1-2": {
+      "wavuId": "Lars-f+1,2",
+      "input": "f+1,2",
+      "name": "Flash Claw",
+      "level": ",m",
+      "startup": ",i12",
+      "displayStartup": "i13 (string)",
+      "block": "-5",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "13f punish",
+        "jails"
+      ]
+    },
+    "f1-2-3": {
+      "wavuId": "Lars-f+1,2,3",
+      "input": "f+1,2,3",
+      "name": "Flash Bang",
+      "level": ",m",
+      "startup": ",i24",
+      "displayStartup": "i13 (string)",
+      "block": "-5",
+      "hit": "+22c",
+      "ch": "+49a",
+      "notes": [
+        "CH launcher"
+      ]
+    },
+    "f2-1": {
+      "wavuId": "Lars-f+2,1",
+      "input": "f+2,1",
+      "name": "Charge Factor",
+      "level": ",h",
+      "startup": ",i13",
+      "displayStartup": "i12 (string)",
+      "block": "-5",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "12f punish"
+      ]
+    },
+    "f2-4": {
+      "wavuId": "Lars-f+2,4",
+      "input": "f+2,4",
+      "name": "Death Mask",
+      "level": ",h",
+      "startup": ",i18~19",
+      "displayStartup": "i12 (string)",
+      "block": "-12",
+      "hit": "+15 (+6)",
+      "ch": null,
+      "notes": [
+        "12f punish",
+        "damage"
+      ]
+    },
+    "f1plus4": {
+      "wavuId": "Lars-f+1+4",
+      "input": "f+1+4",
+      "name": "Power Slug",
+      "level": "m",
+      "startup": "i13~14",
+      "block": "-18",
+      "hit": "+18a (+8)",
+      "ch": null,
+      "notes": [
+        "13f launcher",
+        "whiff punish"
+      ]
+    },
+    "f1plus2": {
+      "wavuId": "Lars-f+1+2",
+      "input": "f+1+2",
+      "name": "Ark Blast",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-13",
+      "hit": "+28",
+      "ch": null,
+      "notes": [
+        "15f launch punish"
+      ]
+    },
+    "fnb21": {
+      "wavuId": "Lars-f,n,b+2,1",
+      "input": "f,n,b+2,1",
+      "name": "Blue Bolt",
+      "level": ",m",
+      "startup": ",i16",
+      "displayStartup": "i14 (string)",
+      "block": "-18",
+      "hit": "+47a (+39)",
+      "ch": null,
+      "notes": [
+        "14f launch punish",
+        "jails"
+      ]
+    },
+    "d3": {
+      "wavuId": "Lars-d+3",
+      "input": "d+3",
+      "name": "Low Kick",
+      "level": "l",
+      "startup": "i15",
+      "block": "-14",
+      "hit": "-3",
+      "ch": null,
+      "notes": [
+        "low poke"
+      ]
+    },
+    "db1": {
+      "wavuId": "Lars-db+1",
+      "input": "db+1",
+      "name": "Crouch Slice",
+      "level": "l",
+      "startup": "i17",
+      "block": "-12",
+      "hit": "-1",
+      "ch": null,
+      "notes": [
+        "low poke"
+      ]
+    },
+    "db4": {
+      "wavuId": "Lars-db+4",
+      "input": "db+4",
+      "name": "Shadow Cutter",
+      "level": "l",
+      "startup": "i20~21",
+      "block": "-26",
+      "hit": "+5c",
+      "ch": "+29a",
+      "notes": [
+        "big low",
+        "CH launcher"
+      ]
+    },
+    "d2": {
+      "wavuId": "Lars-d+2",
+      "input": "d+2",
+      "name": "Tactical Sword",
+      "level": "m",
+      "startup": "i18~19",
+      "block": "+0c",
+      "hit": "+8c",
+      "ch": "+30d",
+      "notes": [
+        "neutral on block",
+        "spike"
+      ]
+    },
+    "uf4": {
+      "wavuId": "Lars-uf+4",
+      "input": "uf+4",
+      "name": "Storm Axle",
+      "level": "m",
+      "startup": "i25~27",
+      "block": "-8",
+      "hit": "+42a",
+      "ch": null,
+      "notes": [
+        "launcher",
+        "low crush",
+        "slow (read, not a punish)"
+      ]
+    },
+    "uf3": {
+      "wavuId": "Lars-uf+3",
+      "input": "uf+3",
+      "name": "Lightning Screw",
+      "level": "m,m",
+      "startup": "i16~17,i15~18",
+      "block": "-26",
+      "hit": "+33a (+15)",
+      "ch": null,
+      "notes": [
+        "launcher",
+        "knee"
+      ]
+    },
+    "ws1": {
+      "wavuId": "Lars-ws1",
+      "input": "ws+1",
+      "name": "Streamer",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-12",
+      "hit": "+38a",
+      "ch": null,
+      "notes": [
+        "tornado",
+        "15f crouch launcher"
+      ]
+    },
+    "ws4": {
+      "wavuId": "Lars-ws4",
+      "input": "ws+4",
+      "name": "Shell Smash",
+      "level": "m",
+      "startup": "i11~12",
+      "block": "-6",
+      "hit": "+5",
+      "ch": null,
+      "notes": [
+        "11f crouch punish"
+      ]
+    },
+    "ws2-1": {
+      "wavuId": "Lars-ws2,1",
+      "input": "ws+2,1",
+      "name": "Multiplied Force",
+      "level": ",m",
+      "startup": ",i23~24",
+      "displayStartup": "i13 (string)",
+      "block": "-12c",
+      "hit": "+2c",
+      "ch": "+4d",
+      "notes": [
+        "13f crouch punish"
+      ]
+    },
+    "ws3": {
+      "wavuId": "Lars-ws3",
+      "input": "ws+3",
+      "name": "Tower Cannon",
+      "level": "h",
+      "startup": "i20",
+      "block": "+0",
+      "hit": "+21a (+15)",
+      "ch": null,
+      "notes": [
+        "launcher",
+        "into LEN with D"
+      ]
+    },
+    "ff2": {
+      "wavuId": "Lars-f,F+2",
+      "input": "f,F+2",
+      "name": "Surge Blast",
+      "level": "M",
+      "startup": "i21~22",
+      "block": "-13",
+      "hit": "+35a",
+      "ch": null,
+      "notes": [
+        "tornado",
+        "launcher",
+        "into SEN on hit"
+      ]
+    },
+    "fff1": {
+      "wavuId": "Lars-f,f,F+1",
+      "input": "f,f,F+1",
+      "name": "Flash Blade",
+      "level": "h",
+      "startup": "i18~20",
+      "block": "+4",
+      "hit": "+36a",
+      "ch": null,
+      "notes": [
+        "plus on block",
+        "launcher",
+        "balcony break"
+      ]
+    },
+    "fff3": {
+      "wavuId": "Lars-f,f,F+3",
+      "input": "f,f,F+3",
+      "name": "Red Sprite",
+      "level": "m",
+      "startup": "i20~26",
+      "block": "+6",
+      "hit": "+15a (+5)",
+      "ch": null,
+      "notes": [
+        "plus on block",
+        "balcony break"
+      ]
+    },
+    "ffplus1plus2": {
+      "wavuId": "Lars-f,F+1+2",
+      "input": "f,F+1+2",
+      "name": "Elbow Corona",
+      "level": "m",
+      "startup": "i16~17",
+      "block": "-9",
+      "hit": "+14 (+5)",
+      "ch": "+59a (+39)",
+      "notes": [
+        "CH launcher"
+      ]
+    },
+    "df3-3": {
+      "wavuId": "Lars-df+3,3",
+      "input": "df+3,3",
+      "name": "Outpost Blitz",
+      "level": ",m",
+      "startup": ",i25~26",
+      "displayStartup": "i16 (string)",
+      "block": "-15",
+      "hit": "+29a (+14a)",
+      "ch": null,
+      "notes": [
+        "launcher on hit"
+      ]
+    },
+    "db2-3": {
+      "wavuId": "Lars-db+2,3",
+      "input": "db+2,3",
+      "name": "HE Combination",
+      "level": ",m",
+      "startup": ",i19",
+      "displayStartup": "i15 (string)",
+      "block": "-13",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "tornado",
+        "wall crush"
+      ]
+    },
+    "threeplusfour": {
+      "wavuId": "Lars-3+4",
+      "input": "3+4",
+      "name": "Electric Jolt",
+      "level": "m",
+      "startup": "i17~18",
+      "block": "-8",
+      "hit": "+17d",
+      "ch": null,
+      "notes": [
+        "heat engager"
+      ]
+    },
+    "den1": {
+      "wavuId": "Lars-DEN.1",
+      "input": "DEN.1",
+      "name": "Dynamic Jab",
+      "level": "h",
+      "startup": "i11~12",
+      "block": "+1",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "plus on block",
+        "into SEN with F"
+      ]
+    },
+    "den1-2": {
+      "wavuId": "Lars-DEN.1,2",
+      "input": "DEN.1,2",
+      "name": "Double Barrel",
+      "level": ",h",
+      "startup": ",i14~15",
+      "displayStartup": "i11 (string)",
+      "block": "-6",
+      "hit": "+21c",
+      "ch": null,
+      "notes": [
+        "heat engager"
+      ]
+    },
+    "den2": {
+      "wavuId": "Lars-DEN.2",
+      "input": "DEN.2",
+      "name": "Rimfire",
+      "level": "M",
+      "startup": "i17~19",
+      "block": "-7",
+      "hit": "+7",
+      "ch": "+62a",
+      "notes": [
+        "CH launcher",
+        "jab evasion",
+        "into Avalanche Flip with UF"
+      ]
+    },
+    "den3": {
+      "wavuId": "Lars-DEN.3",
+      "input": "DEN.3",
+      "name": "Bow Shock",
+      "level": "m",
+      "startup": "i22~23",
+      "block": "+5",
+      "hit": "+5",
+      "ch": null,
+      "notes": [
+        "heat engager",
+        "homing",
+        "plus on block"
+      ]
+    },
+    "den4": {
+      "wavuId": "Lars-DEN.4",
+      "input": "DEN.4",
+      "name": "Legionnaire's Shot",
+      "level": "l",
+      "startup": "i23~25",
+      "block": "-12",
+      "hit": "+1",
+      "ch": null,
+      "notes": [
+        "low"
+      ]
+    },
+    "den34": {
+      "wavuId": "Lars-DEN.3+4",
+      "input": "DEN.3+4",
+      "name": "Stack Up",
+      "level": "L",
+      "startup": "i22~23",
+      "block": "-14",
+      "hit": "-3",
+      "ch": "+5c",
+      "notes": [
+        "low"
+      ]
+    },
+    "den12": {
+      "wavuId": "Lars-DEN.1+2",
+      "input": "DEN.1+2",
+      "name": "Into the Storm",
+      "level": "h",
+      "startup": "i12~13",
+      "block": "-1",
+      "hit": "+29a",
+      "ch": null,
+      "notes": [
+        "tornado",
+        "launcher"
+      ]
+    },
+    "sen1": {
+      "wavuId": "Lars-SEN.1",
+      "input": "SEN.1",
+      "name": "Lightning Thrust",
+      "level": "m",
+      "startup": "i12~13",
+      "block": "-9",
+      "hit": "+23a (+13)",
+      "ch": null,
+      "notes": [
+        "heat engager",
+        "launcher",
+        "balcony break"
+      ]
+    },
+    "sen2": {
+      "wavuId": "Lars-SEN.2",
+      "input": "SEN.2",
+      "name": "Turbine Hook",
+      "level": "L",
+      "startup": "i17~19",
+      "block": "-12",
+      "hit": "+6c",
+      "ch": "+27d",
+      "notes": [
+        "tornado",
+        "low"
+      ]
+    },
+    "sen3": {
+      "wavuId": "Lars-SEN.3",
+      "input": "SEN.3",
+      "name": "Rising Storm",
+      "level": "M",
+      "startup": "i14~16",
+      "block": "-13",
+      "hit": "+29a (+19)",
+      "ch": null,
+      "notes": [
+        "launcher",
+        "low crush"
+      ]
+    },
+    "sen4": {
+      "wavuId": "Lars-SEN.4",
+      "input": "SEN.4",
+      "name": "Electric Volley",
+      "level": "h",
+      "startup": "i17~18",
+      "block": "+4",
+      "hit": "+31a",
+      "ch": null,
+      "notes": [
+        "plus on block",
+        "homing",
+        "launcher"
+      ]
+    },
+    "sen1plus2": {
+      "wavuId": "Lars-SEN.1+2",
+      "input": "SEN.1+2",
+      "name": "Entangling Ejector",
+      "level": "m",
+      "startup": "i14~16",
+      "block": "-14",
+      "hit": "+20a (+13)",
+      "ch": null,
+      "notes": [
+        "tornado",
+        "power crush",
+        "combo filler"
+      ]
+    },
+    "sen34": {
+      "wavuId": "Lars-SEN.3+4",
+      "input": "SEN.3+4",
+      "name": "Lightning Axle",
+      "level": "m,m",
+      "startup": "i13~14,i18~19",
+      "block": "+0c",
+      "hit": "+22d (-13)",
+      "ch": null,
+      "notes": [
+        "neutral on block"
+      ]
+    },
+    "len1": {
+      "wavuId": "Lars-LEN.1",
+      "input": "LEN.1",
+      "name": "Blasting Smack",
+      "level": "L",
+      "startup": "i16~17",
+      "block": "-12",
+      "hit": "+4c",
+      "ch": null,
+      "notes": [
+        "low"
+      ]
+    },
+    "len2": {
+      "wavuId": "Lars-LEN.2",
+      "input": "LEN.2",
+      "name": "Rising Force",
+      "level": "m",
+      "startup": "i16~17",
+      "block": "-9",
+      "hit": "+25 (+15)",
+      "ch": null,
+      "notes": [
+        "tornado",
+        "powers up in heat"
+      ]
+    },
+    "heat-burst": {
+      "wavuId": "Lars-2+3",
+      "input": "2+3",
+      "name": "Heat Burst",
+      "level": "m",
+      "startup": "i16",
+      "block": "+1",
+      "hit": "+2c",
+      "ch": null,
+      "notes": [
+        "heat burst",
+        "plus on block"
+      ]
+    },
+    "heat-smash": {
+      "wavuId": "Lars-H.2+3",
+      "input": "H.2+3",
+      "name": "Thunderbird Descent",
+      "level": "m,M",
+      "startup": "i18~19, i38~41",
+      "block": "+12c",
+      "hit": "+0d / +81a",
+      "ch": null,
+      "notes": [
+        "heat smash",
+        "very plus on block"
+      ]
+    },
+    "rage-art": {
+      "wavuId": "Lars-df+1+2",
+      "input": "R.df+1+2",
+      "name": "Zeus Unlimited",
+      "level": "m,t",
+      "startup": "i20",
+      "block": "-18",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "rage art",
+        "reversal break"
+      ]
+    },
+    "uf1": {
+      "wavuId": "Lars-uf+1",
+      "input": "uf+1",
+      "name": "Alternating Current",
+      "level": "m,m",
+      "startup": "i15,i25",
+      "block": "-12",
+      "hit": "+3",
+      "ch": null,
+      "notes": [
+        "new in Season 3",
+        "tracks his weak side",
+        "into LEN on hit"
+      ]
+    },
+    "fcdf2": {
+      "wavuId": "Lars-FC.df+2",
+      "input": "FC.df+2",
+      "name": "Power Spike",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-8",
+      "hit": "+5",
+      "ch": "+63a",
+      "notes": [
+        "crouching CH launcher"
+      ]
+    }
+  }
+}

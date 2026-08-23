@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { motion } from "motion/react";
 import {
   Bird,
+  CloudLightning,
   Coffee,
   Cross,
   Crosshair,
@@ -47,6 +48,7 @@ interface Tile {
  */
 const characterIcons: Record<string, LucideIcon> = {
   kazuya: Zap, // the Electric
+  lars: CloudLightning, // Lightning Storm
   jin: Flame, // flame motif
   reina: Tornado, // Taido spins
   "devil-jin": Feather, // black wings
@@ -77,7 +79,7 @@ function monogram(name: string): string {
 }
 
 export function CharacterSelectView() {
-  const { state } = useProgress();
+  const { state, dispatch } = useProgress();
   const router = useRouter();
 
   const tiles: Tile[] = useMemo(
@@ -104,10 +106,14 @@ export function CharacterSelectView() {
 
   const focused = tiles.find((t) => t.id === focusedId) ?? tiles[0];
 
-  const kazuya = characters[0];
+  // Readout reflects whichever available fighter is under the cursor.
+  const focusedCharacter = characters.find((c) => c.id === focusedId) ?? null;
   const summary = useMemo(
-    () => summarizeCharacter(kazuya, state.characters[kazuya.id]),
-    [kazuya, state.characters],
+    () =>
+      focusedCharacter
+        ? summarizeCharacter(focusedCharacter, state.characters[focusedCharacter.id])
+        : null,
+    [focusedCharacter, state.characters],
   );
 
   const choose = (tile: Tile) => {
@@ -118,6 +124,7 @@ export function CharacterSelectView() {
     }
     if (selectedId) return;
     setSelectedId(tile.id);
+    dispatch({ type: "set-active-character", characterId: tile.id });
     // Let the select flash play before entering the dojo.
     window.setTimeout(() => router.push("/today"), 450);
   };
@@ -140,7 +147,7 @@ export function CharacterSelectView() {
           Choose your fighter
         </h1>
         <p className="mt-2 text-sm text-muted">
-          One fighter, one strict curriculum. More guides are on the way.
+          Each fighter is a full curriculum, taught in strict order. More on the way.
         </p>
       </motion.header>
 
@@ -276,7 +283,7 @@ export function CharacterSelectView() {
           </p>
         </div>
         <div className="shrink-0 pb-1 text-right">
-          {focused?.available ? (
+          {focused?.available && summary ? (
             <>
               <p className="microlabel text-accent-bright">
                 {rankFor(summary.learnedCount, summary.totalCount).name}
@@ -292,7 +299,7 @@ export function CharacterSelectView() {
                       : 0
                   }
                   height={5}
-                  label="Kazuya progress"
+                  label={`${focused.name} progress`}
                 />
               </div>
               <p className="microlabel mt-2 text-faint">Select to enter the dojo</p>

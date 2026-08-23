@@ -163,8 +163,9 @@ function buildBoltStrike(
 /* Component                                                           */
 /* ------------------------------------------------------------------ */
 
+/** Signature-move pages that get a permanent storm front. */
 const ELECTRIC_ROUTE =
-  /\/item\/(ewgf-input|ewgf-consistency|ewgf-movement|fifty-fifty)$/;
+  /\/(?:kazuya\/.*\/item\/(?:ewgf-input|ewgf-consistency|ewgf-movement|fifty-fifty)|lars\/.*\/item\/(?:blue-bolt|sen-threats|len|den-cancel))$/;
 
 /** Seconds until the leader reaches ground — flash/burst fire then. */
 const DRAW_S = 0.11;

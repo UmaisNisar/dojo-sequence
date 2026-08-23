@@ -14,16 +14,13 @@ import { useLiveFrames } from "@/hooks/use-live-frames";
 import { buildExport, downloadJson, parseImport } from "@/lib/export";
 import { getFrameData } from "@/data/frames";
 import { ProvenanceFooter } from "@/components/FrameDataPanel";
-import { defaultCharacterId } from "@/data/characters";
+import { characters } from "@/data/characters";
 import { cn } from "@/lib/utils";
-
-const kazuyaFrames = getFrameData(defaultCharacterId);
 
 type Notice = { kind: "success" | "error"; message: string } | null;
 
 export function SettingsView() {
   const { state, dispatch } = useProgress();
-  const liveFrames = useLiveFrames(defaultCharacterId);
   const [notice, setNotice] = useState<Notice>(null);
   const [confirmReset, setConfirmReset] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -171,16 +168,15 @@ export function SettingsView() {
             anywhere. Dojo Sequence is a fan-made training tool and is not
             affiliated with Bandai Namco.
           </p>
-          {kazuyaFrames && (
-            <div className="mt-4 overflow-hidden rounded-lg border border-border">
-              <ProvenanceFooter
-                set={kazuyaFrames}
+          <div className="mt-4 flex flex-col gap-2">
+            {characters.map((c) => (
+              <CharacterProvenance
+                key={c.id}
+                characterId={c.id}
                 now={state.hydratedAt}
-                live={liveFrames}
-                className="border-t-0"
               />
-            </div>
-          )}
+            ))}
+          </div>
         </div>
       </div>
 
@@ -196,6 +192,24 @@ export function SettingsView() {
           setNotice({ kind: "success", message: "All progress has been reset." });
         }}
       />
+    </div>
+  );
+}
+
+/** Frame-data provenance + live-check status for one character. */
+function CharacterProvenance({
+  characterId,
+  now,
+}: {
+  characterId: string;
+  now: number;
+}) {
+  const live = useLiveFrames(characterId);
+  const set = getFrameData(characterId);
+  if (!set) return null;
+  return (
+    <div className="overflow-hidden rounded-lg border border-border">
+      <ProvenanceFooter set={set} now={now} live={live} className="border-t-0" />
     </div>
   );
 }

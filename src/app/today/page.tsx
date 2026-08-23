@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import { getCharacter, defaultCharacterId } from "@/data/characters";
 import { TodayView } from "@/components/views/TodayView";
-import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Today",
@@ -9,7 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function TodayPage() {
-  const character = getCharacter(defaultCharacterId);
-  if (!character) notFound();
-  return <TodayView character={character} />;
+  return <TodayView />;
 }

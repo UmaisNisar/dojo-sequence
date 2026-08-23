@@ -10,7 +10,7 @@ import { summarizeCharacter } from "@/lib/progression";
 import { ProgressBar } from "@/components/ProgressBar";
 
 export function CharactersView() {
-  const { state } = useProgress();
+  const { state, dispatch } = useProgress();
 
   const available = useMemo(
     () =>
@@ -44,9 +44,20 @@ export function CharactersView() {
           >
             <Link
               href={`/training/${character.id}`}
+              onClick={() =>
+                dispatch({
+                  type: "set-active-character",
+                  characterId: character.id,
+                })
+              }
               className="group flex h-full flex-col rounded-xl border border-accent/40 bg-surface p-5 transition-colors hover:border-accent sm:p-6"
             >
-              <p className="microlabel">{character.style}</p>
+              <div className="flex items-center justify-between gap-2">
+                <p className="microlabel">{character.style}</p>
+                {state.activeCharacterId === character.id && (
+                  <span className="microlabel text-accent-bright">training</span>
+                )}
+              </div>
               <h2 className="mt-1 text-3xl font-bold uppercase tracking-tight">
                 {character.name}
               </h2>
