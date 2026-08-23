@@ -4,7 +4,7 @@ import "./globals.css";
 import { ProgressProvider } from "@/hooks/use-progress";
 import { LiveFramesProvider } from "@/hooks/use-live-frames";
 import { AppShell } from "@/components/AppShell";
-import { AmbientLightning } from "@/components/effects/AmbientLightning";
+import { LightningStrikes } from "@/components/effects/LightningStrikes";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,9 +44,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="relative min-h-full flex flex-col">
         <div aria-hidden className="bg-grid pointer-events-none absolute inset-x-0 top-0 h-[420px]" />
-        <AmbientLightning />
         <ProgressProvider>
           <LiveFramesProvider>
+            <LightningStrikes />
             <AppShell>{children}</AppShell>
           </LiveFramesProvider>
         </ProgressProvider>

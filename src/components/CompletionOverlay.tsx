@@ -4,6 +4,47 @@ import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 import { Check } from "lucide-react";
 
+/** Single ceremonial bolt striking down behind the completion content. */
+function CeremonyBolt() {
+  return (
+    <svg
+      aria-hidden
+      className="pointer-events-none absolute inset-x-0 top-0 mx-auto h-full w-40"
+      viewBox="0 0 100 600"
+      preserveAspectRatio="none"
+      fill="none"
+    >
+      <motion.path
+        d="M56 0 L44 110 L60 120 L36 260 L54 272 L40 400 L52 408 L38 600"
+        stroke="var(--accent)"
+        strokeWidth={6}
+        strokeLinejoin="round"
+        vectorEffect="non-scaling-stroke"
+        style={{ filter: "blur(5px)" }}
+        initial={{ pathLength: 0, opacity: 0 }}
+        animate={{ pathLength: 1, opacity: [0, 0.5, 0.15, 0.3, 0] }}
+        transition={{
+          pathLength: { duration: 0.14, ease: "easeIn" },
+          opacity: { duration: 1.1, times: [0, 0.12, 0.4, 0.55, 1] },
+        }}
+      />
+      <motion.path
+        d="M56 0 L44 110 L60 120 L36 260 L54 272 L40 400 L52 408 L38 600"
+        stroke="var(--accent-bright)"
+        strokeWidth={1.8}
+        strokeLinejoin="round"
+        vectorEffect="non-scaling-stroke"
+        initial={{ pathLength: 0, opacity: 0 }}
+        animate={{ pathLength: 1, opacity: [0, 0.9, 0.3, 0.6, 0] }}
+        transition={{
+          pathLength: { duration: 0.14, ease: "easeIn" },
+          opacity: { duration: 1.1, times: [0, 0.12, 0.4, 0.55, 1] },
+        }}
+      />
+    </svg>
+  );
+}
+
 /** Stage name slamming in letter by letter, K.O.-screen energy. */
 function SlamTitle({ text }: { text: string }) {
   const letters = [...text];
@@ -99,6 +140,7 @@ export function CompletionOverlay({
           aria-modal="true"
           aria-label={stageComplete ? "Stage complete" : "Drill passed"}
         >
+          <CeremonyBolt />
           <motion.div
             className="w-full max-w-sm text-center"
             initial={{ opacity: 0, y: 14, scale: 0.97 }}

@@ -126,42 +126,6 @@ html[data-reduced-motion="true"] *::after {
 /* reduced-motion kill switch (duration ~0, one iteration) hides them. */
 /* ------------------------------------------------------------------ */
 
-/* Occasional lightning arc flicker. */
-@keyframes arc-flicker {
-  0%,
-  95.5%,
-  100% {
-    opacity: 0;
-  }
-  96% {
-    opacity: 0.65;
-  }
-  96.6% {
-    opacity: 0.1;
-  }
-  97.2% {
-    opacity: 0.45;
-  }
-  98.2% {
-    opacity: 0;
-  }
-}
-
-.arc {
-  opacity: 0;
-  animation: arc-flicker 11s linear infinite;
-}
-
-.arc-slow {
-  animation-duration: 17s;
-  animation-delay: 6s;
-}
-
-.arc-fast {
-  animation-duration: 8s;
-  animation-delay: 2.5s;
-}
-
 /* Scanline sweep across the focused select tile. */
 @keyframes scanline {
   0% {
