@@ -126,6 +126,14 @@ html[data-reduced-motion="true"] *::after {
 /* reduced-motion kill switch (duration ~0, one iteration) hides them. */
 /* ------------------------------------------------------------------ */
 
+/* Accent-colored grid used for the "energized" flash around a strike. */
+.bg-grid-accent {
+  background-image:
+    linear-gradient(to right, rgba(167, 139, 250, 0.5) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(167, 139, 250, 0.5) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
 /* Scanline sweep across the focused select tile. */
 @keyframes scanline {
   0% {

@@ -1,11 +1,10 @@
-import type { Metadata } from "next";
-import { CharactersView } from "@/components/views/CharactersView";
+import { redirect } from "next/navigation";
+import { defaultCharacterId } from "@/data/characters";
 
-export const metadata: Metadata = {
-  title: "Training",
-  description: "Pick a character to train.",
-};
-
+/**
+ * "Training" goes straight to your active curriculum — the roster lives
+ * under /characters.
+ */
 export default function TrainingPage() {
-  return <CharactersView />;
+  redirect(`/training/${defaultCharacterId}`);
 }

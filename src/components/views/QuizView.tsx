@@ -175,6 +175,7 @@ export function QuizView({ character }: { character: Character }) {
           run={run}
           phase={phase}
           remainingMs={remainingMs}
+          lastReactionMs={answers[answers.length - 1]?.reactionMs ?? null}
           onAnswer={answer}
           onNext={next}
         />
@@ -196,12 +197,14 @@ function QuestionCard({
   run,
   phase,
   remainingMs,
+  lastReactionMs,
   onAnswer,
   onNext,
 }: {
   run: RunQuestion[];
   phase: Extract<Phase, { name: "question" } | { name: "feedback" }>;
   remainingMs: number;
+  lastReactionMs: number | null;
   onAnswer: (i: number) => void;
   onNext: () => void;
 }) {
@@ -278,8 +281,11 @@ function QuestionCard({
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mt-4 rounded-xl border border-border bg-surface p-4"
+            className="relative mt-4 overflow-hidden rounded-xl border border-border bg-surface p-4"
           >
+            {picked === q.correctIndex && (
+              <CorrectArc reactionMs={lastReactionMs} />
+            )}
             <p
               className={cn(
                 "flex items-center gap-1.5 text-sm font-bold uppercase tracking-wider",
@@ -316,6 +322,57 @@ function QuestionCard({
         )}
       </div>
     </div>
+  );
+}
+
+/**
+ * Electric arc across the feedback card on a correct answer — faster
+ * reactions earn a longer, brighter arc.
+ */
+function CorrectArc({ reactionMs }: { reactionMs: number | null }) {
+  // 0 = slow, 1 = decent, 2 = instant recognition.
+  const tier = reactionMs === null ? 0 : reactionMs < 1200 ? 2 : reactionMs < 2500 ? 1 : 0;
+  const width = ["45%", "70%", "100%"][tier];
+  const peak = [0.45, 0.65, 0.95][tier];
+  return (
+    <svg
+      aria-hidden
+      className="pointer-events-none absolute left-0 top-0 h-5"
+      style={{ width }}
+      viewBox="0 0 600 40"
+      preserveAspectRatio="none"
+      fill="none"
+    >
+      <motion.path
+        d="M0 26 L70 20 L76 30 L170 16 L178 26 L280 14 L288 24 L390 12 L400 22 L500 10 L510 20 L600 8"
+        stroke="var(--accent)"
+        strokeWidth={4}
+        strokeLinejoin="round"
+        strokeLinecap="round"
+        vectorEffect="non-scaling-stroke"
+        style={{ filter: "blur(3px)" }}
+        initial={{ pathLength: 0, opacity: 0 }}
+        animate={{ pathLength: 1, opacity: [0, peak * 0.6, peak * 0.25, 0] }}
+        transition={{
+          pathLength: { duration: 0.12, ease: "easeIn" },
+          opacity: { duration: 0.7, times: [0, 0.2, 0.55, 1] },
+        }}
+      />
+      <motion.path
+        d="M0 26 L70 20 L76 30 L170 16 L178 26 L280 14 L288 24 L390 12 L400 22 L500 10 L510 20 L600 8"
+        stroke="var(--accent-bright)"
+        strokeWidth={1.4}
+        strokeLinejoin="round"
+        strokeLinecap="round"
+        vectorEffect="non-scaling-stroke"
+        initial={{ pathLength: 0, opacity: 0 }}
+        animate={{ pathLength: 1, opacity: [0, peak, peak * 0.4, 0] }}
+        transition={{
+          pathLength: { duration: 0.12, ease: "easeIn" },
+          opacity: { duration: 0.7, times: [0, 0.2, 0.55, 1] },
+        }}
+      />
+    </svg>
   );
 }
 
