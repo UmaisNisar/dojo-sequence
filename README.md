@@ -2,6 +2,8 @@
 
 **A structured training curriculum for learning Tekken 8 characters.**
 
+**Live: [dojo-sequence.vercel.app](https://dojo-sequence.vercel.app)**
+
 Instead of dumping a 100-move list on you, Dojo Sequence teaches a character as
 a strict, ordered curriculum: **learn → drill → pass → unlock the next skill**.
 
