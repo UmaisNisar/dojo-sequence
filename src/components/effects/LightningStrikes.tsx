@@ -48,11 +48,9 @@ interface RenderedBolt {
 
 interface Strike {
   id: number;
-  kind: "bolt" | "arc";
   big: boolean;
   distant: boolean;
   bolts: RenderedBolt[];
-  arc?: { leftPct: number; widthPct: number; flip: boolean };
   /** Impact point in viewport px — grid glow + burst anchor here. */
   impactX: number;
   impactY: number;
@@ -153,27 +151,11 @@ function buildBoltStrike(
 
   return {
     id: strikeSeq++,
-    kind: "bolt",
     big,
     distant,
     bolts,
     impactX: bolts[0].endX,
     impactY: bolts[0].endY,
-  };
-}
-
-function buildArcStrike(vw: number, vh: number): Strike {
-  const leftPct = 4 + Math.random() * 40;
-  const widthPct = 34 + Math.random() * 22;
-  return {
-    id: strikeSeq++,
-    kind: "arc",
-    big: false,
-    distant: false,
-    bolts: [],
-    arc: { leftPct, widthPct, flip: Math.random() < 0.5 },
-    impactX: ((leftPct + widthPct / 2) / 100) * vw,
-    impactY: 0.07 * vh,
   };
 }
 
@@ -211,14 +193,8 @@ export function LightningStrikes() {
     const debug =
       typeof window !== "undefined" && window.location.hash.includes("strike");
 
-    const fire = (opts: { big?: boolean; distant?: boolean; arcAllowed?: boolean }) => {
-      const vw = window.innerWidth;
-      const vh = window.innerHeight;
-      const strike =
-        (opts.arcAllowed ?? true) && !opts.big && !opts.distant && Math.random() < 0.18
-          ? buildArcStrike(vw, vh)
-          : buildBoltStrike(vw, vh, opts);
-      setStrike(strike);
+    const fire = (opts: { big?: boolean; distant?: boolean }) => {
+      setStrike(buildBoltStrike(window.innerWidth, window.innerHeight, opts));
       at(1100, () => setStrike(null));
     };
 
@@ -254,7 +230,7 @@ export function LightningStrikes() {
           ? 5000 + Math.random() * 8000
           : 55000 + Math.random() * 35000;
         if (!first && Math.random() < 0.6) {
-          at(Math.random() * duration, () => fire({ distant: true, arcAllowed: false }));
+          at(Math.random() * duration, () => fire({ distant: true }));
         }
         at(duration, front);
       };
@@ -338,7 +314,7 @@ export function LightningStrikes() {
             )}
 
             {/* Impact burst at the terminus */}
-            {strike.kind === "bolt" && !strike.distant && (
+            {!strike.distant && (
               <motion.div
                 className="absolute rounded-full"
                 style={{
@@ -355,18 +331,15 @@ export function LightningStrikes() {
               />
             )}
 
-            {strike.kind === "bolt" &&
-              strike.bolts.map((bolt, i) => (
-                <BoltSvg
-                  key={i}
-                  bolt={bolt}
-                  big={strike.big}
-                  distant={strike.distant}
-                  echo={i > 0}
-                />
-              ))}
-
-            {strike.kind === "arc" && strike.arc && <CloudArc arc={strike.arc} />}
+            {strike.bolts.map((bolt, i) => (
+              <BoltSvg
+                key={i}
+                bolt={bolt}
+                big={strike.big}
+                distant={strike.distant}
+                echo={i > 0}
+              />
+            ))}
           </motion.div>
         )}
       </AnimatePresence>
@@ -497,76 +470,6 @@ function BoltSvg({
           }}
         />
       ))}
-    </svg>
-  );
-}
-
-const ARC_PATH =
-  "M0 52 L64 40 L70 54 L150 34 L158 48 L252 28 L260 42 L356 26 L366 40 L462 22 L472 36 L600 18";
-const ARC_BRANCH = "M260 42 L300 66 L292 70 L330 78";
-
-function CloudArc({
-  arc,
-}: {
-  arc: { leftPct: number; widthPct: number; flip: boolean };
-}) {
-  return (
-    <svg
-      className="absolute"
-      style={{
-        left: `${arc.leftPct}%`,
-        top: "2%",
-        width: `${arc.widthPct}%`,
-        height: 90,
-        transform: arc.flip ? "scaleX(-1)" : undefined,
-      }}
-      viewBox="0 0 600 80"
-      preserveAspectRatio="none"
-      fill="none"
-    >
-      <motion.path
-        d={ARC_PATH}
-        stroke="var(--accent)"
-        strokeWidth={5}
-        strokeLinejoin="round"
-        strokeLinecap="round"
-        vectorEffect="non-scaling-stroke"
-        style={{ filter: "blur(4px)" }}
-        initial={{ pathLength: 0, opacity: 0 }}
-        animate={{ pathLength: 1, opacity: [0, 0.55, 0.25, 0.45, 0] }}
-        transition={{
-          pathLength: { duration: 0.14, ease: "easeIn" },
-          opacity: { duration: 0.7, times: [0, 0.15, 0.45, 0.6, 1] },
-        }}
-      />
-      <motion.path
-        d={ARC_PATH}
-        stroke="var(--accent-bright)"
-        strokeWidth={1.5}
-        strokeLinejoin="round"
-        strokeLinecap="round"
-        vectorEffect="non-scaling-stroke"
-        initial={{ pathLength: 0, opacity: 0 }}
-        animate={{ pathLength: 1, opacity: [0, 0.8, 0.35, 0.65, 0] }}
-        transition={{
-          pathLength: { duration: 0.14, ease: "easeIn" },
-          opacity: { duration: 0.7, times: [0, 0.15, 0.45, 0.6, 1] },
-        }}
-      />
-      <motion.path
-        d={ARC_BRANCH}
-        stroke="var(--accent)"
-        strokeWidth={1.1}
-        strokeLinejoin="round"
-        strokeLinecap="round"
-        vectorEffect="non-scaling-stroke"
-        initial={{ pathLength: 0, opacity: 0 }}
-        animate={{ pathLength: 1, opacity: [0, 0.6, 0.25, 0] }}
-        transition={{
-          pathLength: { duration: 0.1, ease: "easeIn", delay: 0.08 },
-          opacity: { duration: 0.45, times: [0, 0.2, 0.6, 1], delay: 0.08 },
-        }}
-      />
     </svg>
   );
 }
