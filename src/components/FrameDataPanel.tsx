@@ -82,7 +82,7 @@ function FrameRow({
         />
         <FrameCell
           label="Hit"
-          value={override?.hit ?? move.hit}
+          value={override?.hit ?? move.hit ?? "—"}
           liveUpdated={override?.hit !== undefined}
         />
         <FrameCell

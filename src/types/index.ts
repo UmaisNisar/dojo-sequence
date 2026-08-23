@@ -223,7 +223,8 @@ export interface MoveFrames {
   displayStartup?: string;
   /** Null when the move cannot be blocked at all (unblockables, parries). */
   block: string | null;
-  hit: string;
+  /** Null for non-attacks that have no hit frames of their own. */
+  hit: string | null;
   ch: string | null;
   notes: string[];
 }

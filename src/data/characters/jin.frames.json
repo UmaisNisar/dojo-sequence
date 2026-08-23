@@ -1,0 +1,1380 @@
+{
+  "characterId": "jin",
+  "game": "Tekken 8",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-23",
+  "sources": [
+    {
+      "name": "Wavu Wiki",
+      "url": "https://wavu.wiki/t/Jin"
+    },
+    {
+      "name": "TekkenDocs",
+      "url": "https://tekkendocs.com/t8/jin"
+    }
+  ],
+  "moves": {
+    "jab": {
+      "wavuId": "Jin-1",
+      "input": "1",
+      "name": "Jab",
+      "level": "h",
+      "startup": "i10",
+      "block": "+1",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "i10 high",
+        "+1 on block"
+      ]
+    },
+    "jab-2": {
+      "wavuId": "Jin-1,2",
+      "input": "1,2",
+      "name": "Left Right Combo",
+      "level": ",h",
+      "startup": ",i10",
+      "displayStartup": "i10 (string)",
+      "block": "-3",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "-3 on block",
+        "the root of three enders"
+      ]
+    },
+    "jab-2-1": {
+      "wavuId": "Jin-1,2,1",
+      "input": "1,2,1",
+      "name": "Left Right into Black Wing Rondo",
+      "level": ",m",
+      "startup": ",i20~22",
+      "displayStartup": "i20~22 (string)",
+      "block": "-16",
+      "hit": "+31a (+21)",
+      "ch": null,
+      "notes": [
+        "launches",
+        "his back-turned punisher",
+        "-16 on block"
+      ]
+    },
+    "jab-2-3": {
+      "wavuId": "Jin-1,2,3",
+      "input": "1,2,3",
+      "name": "Left Right into Axe Kick",
+      "level": ",m",
+      "startup": ",i24~26",
+      "displayStartup": "i24~26 (string)",
+      "block": "+0",
+      "hit": "+31d",
+      "ch": null,
+      "notes": [
+        "0 on block"
+      ]
+    },
+    "jab-2-4": {
+      "wavuId": "Jin-1,2,4",
+      "input": "1,2,4",
+      "name": "Left Right into Spinning Hook Kick",
+      "level": ",h",
+      "startup": ",i20~22",
+      "displayStartup": "i20~22 (string)",
+      "block": "-4",
+      "hit": "+23a (+14)",
+      "ch": null,
+      "notes": [
+        "-4 on block"
+      ]
+    },
+    "jab-3": {
+      "wavuId": "Jin-1,3",
+      "input": "1,3",
+      "name": "Left Jab into Single Low",
+      "level": ",L",
+      "startup": ",i16~17",
+      "displayStartup": "i16~17 (string)",
+      "block": "-12",
+      "hit": "-1",
+      "ch": null,
+      "notes": [
+        "low ender"
+      ]
+    },
+    "jab-3-4": {
+      "wavuId": "Jin-1,3,4",
+      "input": "1,3,4",
+      "name": "Left Jab into Double Low",
+      "level": ",l",
+      "startup": ",i23",
+      "displayStartup": "i23 (string)",
+      "block": "-13",
+      "hit": "+3",
+      "ch": "+29a",
+      "notes": [
+        "low",
+        "CH +29a"
+      ]
+    },
+    "right": {
+      "wavuId": "Jin-2",
+      "input": "2",
+      "name": "Right Jab",
+      "level": "h",
+      "startup": "i10",
+      "block": "+0",
+      "hit": "+9",
+      "ch": null,
+      "notes": [
+        "i10 high"
+      ]
+    },
+    "right-1": {
+      "wavuId": "Jin-2,1",
+      "input": "2,1",
+      "name": "Double Thrust",
+      "level": ",m",
+      "startup": ",i16~17",
+      "displayStartup": "i16~17 (string)",
+      "block": "-3",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "-3 on block"
+      ]
+    },
+    "right-1-4": {
+      "wavuId": "Jin-2,1,4",
+      "input": "2,1,4",
+      "name": "Double Thrust into Roundhouse",
+      "level": ",m",
+      "startup": ",i18~20",
+      "displayStartup": "i18~20 (string)",
+      "block": "-10",
+      "hit": "+3",
+      "ch": "+16a (+7)",
+      "notes": [
+        "delayable",
+        "CH +16a"
+      ]
+    },
+    "right-1-4-4": {
+      "wavuId": "Jin-2,1,4~4",
+      "input": "2,1,4~4",
+      "name": "Double Thrust into Low Trick Kick",
+      "level": ",l",
+      "startup": ",i20~21",
+      "displayStartup": "i20~21 (string)",
+      "block": "-12",
+      "hit": "+16a",
+      "ch": null,
+      "notes": [
+        "the low branch of the same string"
+      ]
+    },
+    "switchblade": {
+      "wavuId": "Jin-2,4",
+      "input": "2,4",
+      "name": "Switchblade",
+      "level": ",h",
+      "startup": ",i24~27",
+      "displayStartup": "i24~27 (string)",
+      "block": "-13",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "his i10 punisher",
+        "wall splat",
+        "the ender is a duckable high"
+      ]
+    },
+    "kick3": {
+      "wavuId": "Jin-3",
+      "input": "3",
+      "name": "Left Roundhouse (3)",
+      "level": "h",
+      "startup": "i14",
+      "block": "-7",
+      "hit": "+4",
+      "ch": null,
+      "notes": [
+        "i14 high"
+      ]
+    },
+    "kick3-1": {
+      "wavuId": "Jin-3,1",
+      "input": "3,1",
+      "name": "Left Roundhouse into Jab",
+      "level": ",h",
+      "startup": ",i20",
+      "displayStartup": "i20 (string)",
+      "block": "-1",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "press F afterwards to enter Zenshin at +4"
+      ]
+    },
+    "kick3-1-4": {
+      "wavuId": "Jin-3,1,4",
+      "input": "3,1,4",
+      "name": "Kishin Rekko",
+      "level": ",l",
+      "startup": ",i18",
+      "displayStartup": "i18 (string)",
+      "block": "-13",
+      "hit": "+3",
+      "ch": "+29a",
+      "notes": [
+        "low ender",
+        "CH +29a"
+      ]
+    },
+    "kick4": {
+      "wavuId": "Jin-4",
+      "input": "4",
+      "name": "High Right Roundhouse",
+      "level": "h",
+      "startup": "i13~14",
+      "block": "-9",
+      "hit": "+10g",
+      "ch": "+13c",
+      "notes": [
+        "fast homing high",
+        "CH +13c"
+      ]
+    },
+    "kick4-3": {
+      "wavuId": "Jin-4~3",
+      "input": "4~3",
+      "name": "Spinning Flare Kick",
+      "level": "M",
+      "startup": "i24~34",
+      "block": "-11~-2",
+      "hit": "+2a~+12a",
+      "ch": null,
+      "notes": [
+        "the mid follow-up"
+      ]
+    },
+    "one-two-heat": {
+      "wavuId": "Jin-1+2",
+      "input": "1+2",
+      "name": "Median Line Destruction",
+      "level": "m,m,m",
+      "startup": "i13 i8 i12",
+      "block": "-14",
+      "hit": "+12a (+3)",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "Balcony Break"
+      ]
+    },
+    "f1-2": {
+      "wavuId": "Jin-f+1+2",
+      "input": "f+1+2",
+      "name": "Double Chamber Punch",
+      "level": "h,h",
+      "startup": "i14 i9~10",
+      "block": "-6",
+      "hit": "+21a (+11)",
+      "ch": null,
+      "notes": [
+        "his -14 punisher"
+      ]
+    },
+    "df1": {
+      "wavuId": "Jin-df+1",
+      "input": "df+1",
+      "name": "Mid Left Punch",
+      "level": "m",
+      "startup": "i13~14",
+      "block": "-3",
+      "hit": "+4",
+      "ch": "+6",
+      "notes": [
+        "i13 mid check at only -3"
+      ]
+    },
+    "df1-4": {
+      "wavuId": "Jin-df+1,4",
+      "input": "df+1,4",
+      "name": "Mid Left Punch into High Roundhouse",
+      "level": ",h",
+      "startup": ",i18~21",
+      "displayStartup": "i18~21 (string)",
+      "block": "-9",
+      "hit": "+10g",
+      "ch": "+17a (+8)",
+      "notes": [
+        "his -13 punisher",
+        "CH +17a"
+      ]
+    },
+    "df1-4-4": {
+      "wavuId": "Jin-df+1,4~4",
+      "input": "df+1,4~4",
+      "name": "Mid Left Punch into Mid Sidekick",
+      "level": ",m",
+      "startup": ",i20",
+      "displayStartup": "i20 (string)",
+      "block": "-12",
+      "hit": "+10a (+1)",
+      "ch": null,
+      "notes": [
+        "the mid branch of the same string"
+      ]
+    },
+    "df2": {
+      "wavuId": "Jin-df+2",
+      "input": "df+2",
+      "name": "Fiendish Rend",
+      "level": "m",
+      "startup": "i16~17",
+      "block": "-9",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "enters Breaking Step with df"
+      ]
+    },
+    "df3": {
+      "wavuId": "Jin-df+3",
+      "input": "df+3",
+      "name": "Left Roundhouse",
+      "level": "m",
+      "startup": "i12",
+      "block": "-8",
+      "hit": "+3",
+      "ch": null,
+      "notes": [
+        "i12 mid"
+      ]
+    },
+    "df3-3": {
+      "wavuId": "Jin-df+3~3",
+      "input": "df+3~3",
+      "name": "Brazilian Kick",
+      "level": "m",
+      "startup": "i23~i24",
+      "block": "+6c",
+      "hit": "+13c",
+      "ch": null,
+      "notes": [
+        "plus on block",
+        "enters Breaking Step with df"
+      ]
+    },
+    "df4": {
+      "wavuId": "Jin-df+4",
+      "input": "df+4",
+      "name": "Right Spinning Axe Kick",
+      "level": "m",
+      "startup": "i20~i21",
+      "block": "+0",
+      "hit": "+8c",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "0 on block",
+        "Spike"
+      ]
+    },
+    "b1": {
+      "wavuId": "Jin-b+1",
+      "input": "b+1",
+      "name": "Left Uppercut",
+      "level": "h",
+      "startup": "i12",
+      "block": "-9",
+      "hit": "+2",
+      "ch": null,
+      "notes": [
+        "i12 high"
+      ]
+    },
+    "b1-2": {
+      "wavuId": "Jin-b+1,2",
+      "input": "b+1,2",
+      "name": "Shun Maten",
+      "level": ",h",
+      "startup": ",i22~24",
+      "displayStartup": "i22~24 (string)",
+      "block": "-10",
+      "hit": "+32a (+17)",
+      "ch": null,
+      "notes": [
+        "his -12 punisher",
+        "+32a on hit"
+      ]
+    },
+    "b2": {
+      "wavuId": "Jin-b+2",
+      "input": "b+2",
+      "name": "Left Elbow",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-11",
+      "hit": "+0",
+      "ch": null,
+      "notes": [
+        "i15 mid"
+      ]
+    },
+    "b2-1": {
+      "wavuId": "Jin-b+2,1",
+      "input": "b+2,1",
+      "name": "Shun Masatsu",
+      "level": ",m",
+      "startup": ",i14~15",
+      "displayStartup": "i14~15 (string)",
+      "block": "-9",
+      "hit": "+2",
+      "ch": null,
+      "notes": [
+        "mid check and whiff punisher"
+      ]
+    },
+    "b3": {
+      "wavuId": "Jin-b+3",
+      "input": "b+3",
+      "name": "Left Knee",
+      "level": "m",
+      "startup": "i16",
+      "block": "-6",
+      "hit": "+5",
+      "ch": null,
+      "notes": [
+        "mid check",
+        "press F to enter Zenshin"
+      ]
+    },
+    "b3-2": {
+      "wavuId": "Jin-b+3,2",
+      "input": "b+3,2",
+      "name": "Left Knee into Right Thrust",
+      "level": ",m",
+      "startup": ",i19~20",
+      "displayStartup": "i19~20 (string)",
+      "block": "-9",
+      "hit": "+9g +21w",
+      "ch": null,
+      "notes": [
+        "combo ender",
+        "+21 on wall hit"
+      ]
+    },
+    "b4": {
+      "wavuId": "Jin-b+4",
+      "input": "b+4",
+      "name": "Spinning Sidekick",
+      "level": "m",
+      "startup": "i17~18",
+      "block": "-7",
+      "hit": "+15a",
+      "ch": null,
+      "notes": [
+        "i17 mid, +15a on hit"
+      ]
+    },
+    "f3": {
+      "wavuId": "Jin-f+3",
+      "input": "f+3",
+      "name": "Left Sidekick",
+      "level": "m",
+      "startup": "i14",
+      "block": "-16",
+      "hit": "-5",
+      "ch": null,
+      "notes": [
+        "-16 on block on its own — always continue the string"
+      ]
+    },
+    "f3-1": {
+      "wavuId": "Jin-f+3,1",
+      "input": "f+3,1",
+      "name": "Tanden Nidan-uchi",
+      "level": ",m",
+      "startup": ",i22",
+      "displayStartup": "i22 (string)",
+      "block": "-12",
+      "hit": "+4",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "his other -14 punisher"
+      ]
+    },
+    "f3-3": {
+      "wavuId": "Jin-f+3,3",
+      "input": "f+3,3",
+      "name": "Left Sidekick into Stinger",
+      "level": ",h",
+      "startup": ",i20",
+      "displayStartup": "i20 (string)",
+      "block": "-8",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "press F to enter Zenshin"
+      ]
+    },
+    "f4": {
+      "wavuId": "Jin-f+4",
+      "input": "f+4",
+      "name": "Front Thrust Kick",
+      "level": "m",
+      "startup": "i16-17",
+      "block": "-8",
+      "hit": "+4",
+      "ch": "+42a",
+      "notes": [
+        "safe keep-out mid",
+        "CH +42a launcher"
+      ]
+    },
+    "ff2": {
+      "wavuId": "Jin-f,F+2",
+      "input": "f,F+2",
+      "name": "Demon's Paw",
+      "level": "m",
+      "startup": "i14~15",
+      "block": "-8",
+      "hit": "+15a (+6)",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "long-range safe mid approach"
+      ]
+    },
+    "ff3": {
+      "wavuId": "Jin-f,F+3",
+      "input": "f,F+3",
+      "name": "Left Axe Kick",
+      "level": "m",
+      "startup": "i23~i25",
+      "block": "-4",
+      "hit": "+24a",
+      "ch": null,
+      "notes": [
+        "a mid launcher that is only -4 on block"
+      ]
+    },
+    "ff3-1": {
+      "wavuId": "Jin-f,F+3,1",
+      "input": "f,F+3,1",
+      "name": "Left Axe Kick into Left Jab",
+      "level": ",h",
+      "startup": ",i15",
+      "displayStartup": "i15 (string)",
+      "block": "+1",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "+1 on block"
+      ]
+    },
+    "ff4": {
+      "wavuId": "Jin-f,F+4",
+      "input": "f,F+4",
+      "name": "Battery Sidekick",
+      "level": "m",
+      "startup": "i17~i18",
+      "block": "-7",
+      "hit": "+22a (+12)",
+      "ch": null,
+      "notes": [
+        "i17 mid, +22a on hit"
+      ]
+    },
+    "fff3": {
+      "wavuId": "Jin-f,f,F+3",
+      "input": "f,f,F+3",
+      "name": "Leaping Side Kick",
+      "level": "m",
+      "startup": "i22~i23",
+      "block": "+6",
+      "hit": "+13a~+14a (+3~+4)",
+      "ch": null,
+      "notes": [
+        "plus on block from a run"
+      ]
+    },
+    "bf2": {
+      "wavuId": "Jin-b,f+2",
+      "input": "b,f+2",
+      "name": "Demon Slayer",
+      "level": "m",
+      "startup": "i15~i16",
+      "block": "-7",
+      "hit": "+4",
+      "ch": null,
+      "notes": [
+        "i15 mid string starter"
+      ]
+    },
+    "bf2-1": {
+      "wavuId": "Jin-b,f+2,1",
+      "input": "b,f+2,1",
+      "name": "Demon Slayer into Jab",
+      "level": ",h",
+      "startup": ",i21",
+      "displayStartup": "i21 (string)",
+      "block": "-5",
+      "hit": "+6",
+      "ch": "+9",
+      "notes": [
+        "-5 on block"
+      ]
+    },
+    "bf2-1-2": {
+      "wavuId": "Jin-b,f+2,1,2",
+      "input": "b,f+2,1,2",
+      "name": "Evil Intent",
+      "level": ",m",
+      "startup": ",i19~20",
+      "displayStartup": "i19~20 (string)",
+      "block": "-5",
+      "hit": "+18a (+9)",
+      "ch": "+50a (+3)",
+      "notes": [
+        "CH +50a"
+      ]
+    },
+    "bf2-1-df2": {
+      "wavuId": "Jin-b,f+2,1,df+2",
+      "input": "b,f+2,1,df+2",
+      "name": "Geyser",
+      "level": ",M",
+      "startup": ",i28~29",
+      "displayStartup": "i28~29 (string)",
+      "block": "-14",
+      "hit": "+37a (+27)",
+      "ch": null,
+      "notes": [
+        "wall combo ender",
+        "+37a"
+      ]
+    },
+    "bf2-3": {
+      "wavuId": "Jin-b,f+2,3",
+      "input": "b,f+2,3",
+      "name": "Keito",
+      "level": ",m",
+      "startup": ",i25",
+      "displayStartup": "i25 (string)",
+      "block": "-9",
+      "hit": "+6",
+      "ch": "+59a",
+      "notes": [
+        "core combo filler",
+        "press F to enter Zenshin at +2"
+      ]
+    },
+    "uf2": {
+      "wavuId": "Jin-uf+2",
+      "input": "uf+2",
+      "name": "Evading Middle Strike",
+      "level": "m",
+      "startup": "i15~i16",
+      "block": "-10~-9",
+      "hit": "+6~+7",
+      "ch": "+19a (+10)",
+      "notes": [
+        "CH +19a"
+      ]
+    },
+    "uf3": {
+      "wavuId": "Jin-uf+3",
+      "input": "uf+3",
+      "name": "Left Spinning Jump Kick",
+      "level": "m",
+      "startup": "i22~23",
+      "block": "-9",
+      "hit": "+6",
+      "ch": "+59a",
+      "notes": [
+        "CH +59a"
+      ]
+    },
+    "uf4": {
+      "wavuId": "Jin-uf+4",
+      "input": "uf+4",
+      "name": "Front Jump Kick",
+      "level": "m",
+      "startup": "i15~17",
+      "block": "-13",
+      "hit": "+33a (+23a)",
+      "ch": null,
+      "notes": [
+        "his hopkick",
+        "i15 launcher, -13 on block"
+      ]
+    },
+    "ub4": {
+      "wavuId": "Jin-ub+4",
+      "input": "ub+4",
+      "name": "Rising Uppercut",
+      "level": "m",
+      "startup": "i15~17",
+      "block": "-13",
+      "hit": "+19a (+9)",
+      "ch": "+33a (+23a)",
+      "notes": [
+        "+19a on hit, CH +33a"
+      ]
+    },
+    "ufn4": {
+      "wavuId": "Jin-uf,n,4",
+      "input": "uf,n,4",
+      "name": "Delayed Rising Toe Kick",
+      "level": "m",
+      "startup": "i23~i25",
+      "block": "-13",
+      "hit": "+32a (+22a)",
+      "ch": null,
+      "notes": [
+        "the stagger punish"
+      ]
+    },
+    "d34": {
+      "wavuId": "Jin-d+3+4",
+      "input": "d+3+4",
+      "name": "Double Lift Kick",
+      "level": "m,m",
+      "startup": "i15 i10~12",
+      "block": "-19",
+      "hit": "+32a (+22)",
+      "ch": null,
+      "notes": [
+        "his -15 launch punish",
+        "-19 on block"
+      ]
+    },
+    "d3-4": {
+      "wavuId": "Jin-d+3,4",
+      "input": "d+3,4",
+      "name": "Knee Popper",
+      "level": ",h",
+      "startup": ",i20~21",
+      "displayStartup": "i20~21 (string)",
+      "block": "-11",
+      "hit": "-3",
+      "ch": null,
+      "notes": [
+        "string starter"
+      ]
+    },
+    "d3-4-3": {
+      "wavuId": "Jin-d+3,4,3",
+      "input": "d+3,4,3",
+      "name": "Kazama Style Three-Quarter Kick",
+      "level": ",m",
+      "startup": ",i24~25",
+      "displayStartup": "i24~25 (string)",
+      "block": "-12",
+      "hit": "+31d (+23)",
+      "ch": null,
+      "notes": [
+        "CH combo ender"
+      ]
+    },
+    "d2": {
+      "wavuId": "Jin-d+2",
+      "input": "d+2",
+      "name": "Scourge",
+      "level": "L",
+      "startup": "i22~23",
+      "block": "-14",
+      "hit": "+4c",
+      "ch": "+25d",
+      "notes": [
+        "his power low",
+        "CH +25d",
+        "somewhat reactable"
+      ]
+    },
+    "d3": {
+      "wavuId": "Jin-d+3",
+      "input": "d+3",
+      "name": "Left Low Kick",
+      "level": "l",
+      "startup": "i15~16",
+      "block": "-14",
+      "hit": "-3",
+      "ch": null,
+      "notes": [
+        "i15 low"
+      ]
+    },
+    "d4": {
+      "wavuId": "Jin-d+4",
+      "input": "d+4",
+      "name": "Right Sweep",
+      "level": "L",
+      "startup": "i16~17",
+      "block": "-12",
+      "hit": "-1",
+      "ch": null,
+      "notes": [
+        "i16 low"
+      ]
+    },
+    "db1": {
+      "wavuId": "Jin-db+1",
+      "input": "db+1",
+      "name": "Crouch Jab",
+      "level": "sl",
+      "startup": "i10",
+      "block": "-5",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "i10 special low",
+        "his remapped d+1"
+      ]
+    },
+    "db2": {
+      "wavuId": "Jin-db+2",
+      "input": "db+2",
+      "name": "Left Body Blow",
+      "level": "m",
+      "startup": "i16",
+      "block": "-10",
+      "hit": "-4",
+      "ch": null,
+      "notes": [
+        "i16 mid"
+      ]
+    },
+    "db2-2": {
+      "wavuId": "Jin-db+2,2",
+      "input": "db+2,2",
+      "name": "Left Body Blow into Jab",
+      "level": ",h",
+      "startup": ",i8",
+      "displayStartup": "i8 (string)",
+      "block": "-12",
+      "hit": "-7",
+      "ch": "+43a",
+      "notes": [
+        "CH +43a launcher"
+      ]
+    },
+    "db2-2-3": {
+      "wavuId": "Jin-db+2,2,3",
+      "input": "db+2,2,3",
+      "name": "Savage Sword",
+      "level": ",m",
+      "startup": ",i35~i36",
+      "displayStartup": "i35~36 (string)",
+      "block": "-9",
+      "hit": "+20a",
+      "ch": null,
+      "notes": [
+        "wall combo ender"
+      ]
+    },
+    "db3": {
+      "wavuId": "Jin-db+3",
+      "input": "db+3",
+      "name": "Left Spinning Back Kick",
+      "level": "h",
+      "startup": "i19~i21",
+      "block": "-10~-8",
+      "hit": "+17a",
+      "ch": null,
+      "notes": [
+        "high",
+        "+17a on hit"
+      ]
+    },
+    "db4": {
+      "wavuId": "Jin-db+4",
+      "input": "db+4",
+      "name": "Right Low Roundhouse",
+      "level": "l",
+      "startup": "i20~21",
+      "block": "-13",
+      "hit": "+3",
+      "ch": "+13g",
+      "notes": [
+        "his stature-kick low",
+        "CH +13g"
+      ]
+    },
+    "fc-df4": {
+      "wavuId": "Jin-FC.df+4",
+      "input": "FC.df+4",
+      "name": "Right Sweep (crouching)",
+      "level": "L",
+      "startup": "i21~i22",
+      "block": "-26",
+      "hit": "+2c",
+      "ch": "+69a (+53)",
+      "notes": [
+        "CH +69a",
+        "-26 on block",
+        "enters Zenshin with F on hit"
+      ]
+    },
+    "whf": {
+      "wavuId": "Jin-CD.df+2",
+      "input": "f,n,d,df+2",
+      "name": "Wind Hook Fist",
+      "level": "h",
+      "startup": "i11~12",
+      "block": "-10",
+      "hit": "+74a (+58)",
+      "ch": null,
+      "notes": [
+        "the non-electric version — i11 but -10 on block",
+        "becomes EWHF in Heat"
+      ]
+    },
+    "ewhf": {
+      "wavuId": "Jin-CD.df${justFrame}2",
+      "input": "f,n,d,df+2 (just frame)",
+      "name": "Electric Wind Hook Fist",
+      "level": "h",
+      "startup": "i11~i12",
+      "block": "+5~+6",
+      "hit": "+76a (+60)",
+      "ch": null,
+      "notes": [
+        "i11 launcher that is PLUS on block",
+        "the defining Jin move"
+      ]
+    },
+    "tu": {
+      "wavuId": "Jin-CD.df+1",
+      "input": "f,n,d,df+1",
+      "name": "Thrusting Uppercut",
+      "level": "m",
+      "startup": "i16~i17",
+      "block": "-13",
+      "hit": "+32a (+22)",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "jab evasion",
+        "becomes electric in Heat"
+      ]
+    },
+    "etu": {
+      "wavuId": "Jin-CD.df${justFrame}1",
+      "input": "f,n,d,df+1 (just frame)",
+      "name": "Electric Thrusting Uppercut",
+      "level": "M",
+      "startup": "i16~i17",
+      "block": "-13",
+      "hit": "+36a (+26)",
+      "ch": null,
+      "notes": [
+        "the just-frame version",
+        "+36a"
+      ]
+    },
+    "cd-df4": {
+      "wavuId": "Jin-CD.DF+4",
+      "input": "f,n,d,DF+4",
+      "name": "Depraved Savagery (1st)",
+      "level": "l",
+      "startup": "i20~i21",
+      "block": "-31",
+      "hit": "+8c",
+      "ch": null,
+      "notes": [
+        "the wavedash low",
+        "-31 on block on its own"
+      ]
+    },
+    "cd-df4-2": {
+      "wavuId": "Jin-CD.DF+4,2",
+      "input": "f,n,d,DF+4,2",
+      "name": "Depraved Savagery",
+      "level": ",M",
+      "startup": ",i31~i32",
+      "displayStartup": "i31~32 (string)",
+      "block": "-16",
+      "hit": "+21a",
+      "ch": null,
+      "notes": [
+        "the full power low",
+        "+21a on hit"
+      ]
+    },
+    "ws1": {
+      "wavuId": "Jin-ws1",
+      "input": "ws1",
+      "name": "Solar Plexus Strike",
+      "level": "m",
+      "startup": "i13~i14",
+      "block": "-6",
+      "hit": "+5",
+      "ch": null,
+      "notes": [
+        "i13 crouching mid"
+      ]
+    },
+    "ws1-2": {
+      "wavuId": "Jin-ws1,2",
+      "input": "ws1,2",
+      "name": "Twin Lancer",
+      "level": ",m",
+      "startup": ",i19~20",
+      "displayStartup": "i19~20 (string)",
+      "block": "-8",
+      "hit": "+3c",
+      "ch": null,
+      "notes": [
+        "his -13 crouching punisher"
+      ]
+    },
+    "ws1-3-3": {
+      "wavuId": "Jin-ws1,3~3",
+      "input": "ws1,3~3",
+      "name": "Solar Plexus into Brazilian Kick",
+      "level": ",m",
+      "startup": ",i23~i24",
+      "displayStartup": "i23~24 (string)",
+      "block": "+6",
+      "hit": "+13c",
+      "ch": null,
+      "notes": [
+        "plus on block"
+      ]
+    },
+    "ws2": {
+      "wavuId": "Jin-ws2",
+      "input": "ws2",
+      "name": "Crouching Uppercut",
+      "level": "m",
+      "startup": "i14~15",
+      "block": "-12",
+      "hit": "+39a (+29)",
+      "ch": null,
+      "notes": [
+        "i14 crouching LAUNCHER",
+        "wall splat"
+      ]
+    },
+    "ws3": {
+      "wavuId": "Jin-ws3",
+      "input": "ws3",
+      "name": "Bamboo Splitter",
+      "level": "m",
+      "startup": "i16~18",
+      "block": "-9",
+      "hit": "+10g",
+      "ch": "+22a",
+      "notes": [
+        "CH +22a"
+      ]
+    },
+    "ws4": {
+      "wavuId": "Jin-ws4",
+      "input": "ws4",
+      "name": "Rising Toe Kick",
+      "level": "m",
+      "startup": "i11~12",
+      "block": "-3",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "i11 crouching check at only -3"
+      ]
+    },
+    "ws4-4": {
+      "wavuId": "Jin-ws4,4",
+      "input": "ws4,4",
+      "name": "Double Cross Kicks",
+      "level": ",h",
+      "startup": ",i19~20",
+      "displayStartup": "i19~20 (string)",
+      "block": "-7",
+      "hit": "+4",
+      "ch": null,
+      "notes": [
+        "his -11 crouching punisher"
+      ]
+    },
+    "zen1": {
+      "wavuId": "Jin-ZEN.1",
+      "input": "ZEN.1",
+      "name": "Zenshin Jab",
+      "level": "m",
+      "startup": "i16~i17",
+      "block": "-3",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "-3 on block",
+        "the core combo filler"
+      ]
+    },
+    "zen1-2": {
+      "wavuId": "Jin-ZEN.1,2",
+      "input": "ZEN.1,2",
+      "name": "Brimstone Bite",
+      "level": ",m",
+      "startup": ",i23~24",
+      "displayStartup": "i23~24 (string)",
+      "block": "-14",
+      "hit": "+32a (+6)",
+      "ch": null,
+      "notes": [
+        "Heat Engager out of Zenshin"
+      ]
+    },
+    "zen1-3": {
+      "wavuId": "Jin-ZEN.1,3",
+      "input": "ZEN.1,3",
+      "name": "Kazama Style Leg Strike Flurry",
+      "level": ",h,t",
+      "startup": ",i24~25",
+      "displayStartup": "i24~25 (string)",
+      "block": "-9",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "attack-throw combo ender"
+      ]
+    },
+    "zen1plus2": {
+      "wavuId": "Jin-ZEN.1+2",
+      "input": "ZEN.1+2",
+      "name": "Karmic Epicenter",
+      "level": "L,t",
+      "startup": "i21, i61",
+      "block": "-14",
+      "hit": "+4",
+      "ch": null,
+      "notes": [
+        "low attack throw",
+        "Wall Crush"
+      ]
+    },
+    "zen2": {
+      "wavuId": "Jin-ZEN.2",
+      "input": "ZEN.2",
+      "name": "Fiendish Claw",
+      "level": "h",
+      "startup": "i18~i19",
+      "block": "-5",
+      "hit": "+17a (+8)",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "only -5 on block"
+      ]
+    },
+    "zen3": {
+      "wavuId": "Jin-ZEN.3",
+      "input": "ZEN.3",
+      "name": "Halberd Heel",
+      "level": "m",
+      "startup": "i17~i18",
+      "block": "-9",
+      "hit": "+10g",
+      "ch": "+22a",
+      "notes": [
+        "mid",
+        "CH +22a"
+      ]
+    },
+    "zen34": {
+      "wavuId": "Jin-ZEN.3+4",
+      "input": "ZEN.3+4",
+      "name": "Black Wing Bolt",
+      "level": "h",
+      "startup": "i21~27",
+      "block": "+9g~+15g",
+      "hit": "+19a (+9)",
+      "ch": null,
+      "notes": [
+        "hugely plus on block, but a high"
+      ]
+    },
+    "zen4": {
+      "wavuId": "Jin-ZEN.4",
+      "input": "ZEN.4",
+      "name": "Corpse Crusher",
+      "level": "M",
+      "startup": "i27~i33",
+      "block": "+2~+8",
+      "hit": "+17d~+23d",
+      "ch": null,
+      "notes": [
+        "plus on block mid"
+      ]
+    },
+    "zen-u1": {
+      "wavuId": "Jin-ZEN.u+1",
+      "input": "ZEN.u+1",
+      "name": "Black Wing Rondo",
+      "level": "m",
+      "startup": "i14~i16",
+      "block": "-16",
+      "hit": "+31a (+21)",
+      "ch": null,
+      "notes": [
+        "the Tornado move in every bread-and-butter"
+      ]
+    },
+    "sabaki": {
+      "wavuId": "Jin-b+1+2",
+      "input": "b+1+2",
+      "name": "Suigetsu Strike",
+      "level": "m",
+      "startup": "i23~24",
+      "block": "-12",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "his sabaki"
+      ]
+    },
+    "power-crush": {
+      "wavuId": "Jin-d+1",
+      "input": "d+1",
+      "name": "Corpse Thrust",
+      "level": "m,t",
+      "startup": "i21",
+      "block": "-13",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "Power Crush",
+        "attack throw on standing hit"
+      ]
+    },
+    "power-stance": {
+      "wavuId": "Jin-db+1+2",
+      "input": "db+1+2",
+      "name": "Power Stance",
+      "level": "M",
+      "startup": "i19~34",
+      "block": "-11~+4",
+      "hit": "+17g~+32g",
+      "ch": null,
+      "notes": [
+        "unparryable",
+        "opponent recovers crouching",
+        "powers up in Heat"
+      ]
+    },
+    "heat-burst": {
+      "wavuId": "Jin-2+3",
+      "input": "2+3",
+      "name": "Heat Burst",
+      "level": "m",
+      "startup": "i16",
+      "block": "+1",
+      "hit": "+2c",
+      "ch": null,
+      "notes": [
+        "+1 on block"
+      ]
+    },
+    "heat-smash": {
+      "wavuId": "Jin-H.2+3",
+      "input": "H.2+3",
+      "name": "Hellfire Trespass Slayer",
+      "level": "m,h,m",
+      "startup": "i15~16",
+      "block": "+3",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "Heat Smash",
+        "plus on block and auto-transitions to Crouch Dash"
+      ]
+    },
+    "heat-smash-4": {
+      "wavuId": "Jin-H.2+3,4",
+      "input": "H.2+3,4",
+      "name": "Hellfire Darkside Slayer",
+      "level": "m,h,m",
+      "startup": "i15~16",
+      "block": "+9",
+      "hit": "+32a (-4)",
+      "ch": null,
+      "notes": [
+        "+9 on block",
+        "jails from the first hit"
+      ]
+    },
+    "h-power-stance": {
+      "wavuId": "Jin-H.db+1+2",
+      "input": "H.db+1+2",
+      "name": "Awakened Power Stance",
+      "level": "M",
+      "startup": "i19~34",
+      "block": "+4",
+      "hit": "+23g~+38g",
+      "ch": null,
+      "notes": [
+        "plus on block",
+        "transitions to the DVS stance"
+      ]
+    },
+    "dvs1": {
+      "wavuId": "Jin-DVS.1",
+      "input": "DVS.1",
+      "name": "Awakened Thunder God Fist",
+      "level": "m",
+      "startup": "i20~22",
+      "block": "-9",
+      "hit": "+36d",
+      "ch": null,
+      "notes": [
+        "Heat-only Mishima move"
+      ]
+    },
+    "dvs2": {
+      "wavuId": "Jin-DVS.2",
+      "input": "DVS.2",
+      "name": "Awakened Wind God Fist",
+      "level": "sm",
+      "startup": "i11~12",
+      "block": "+4",
+      "hit": "+38a (+28)",
+      "ch": null,
+      "notes": [
+        "Heat-only electric",
+        "+4 on block"
+      ]
+    },
+    "dvs3": {
+      "wavuId": "Jin-DVS.3",
+      "input": "DVS.3",
+      "name": "Awakened Demon's Hoof",
+      "level": "M",
+      "startup": "i26~28",
+      "block": "+2c",
+      "hit": "+22a",
+      "ch": null,
+      "notes": [
+        "Heat-only",
+        "plus on block"
+      ]
+    },
+    "rage-art": {
+      "wavuId": "Jin-R.df+1+2",
+      "input": "R.df+1+2",
+      "name": "Polar Demon Gouge",
+      "level": "m,t",
+      "startup": "i20",
+      "block": "-18",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "Rage Art",
+        "Reversal Break"
+      ]
+    }
+  }
+}
