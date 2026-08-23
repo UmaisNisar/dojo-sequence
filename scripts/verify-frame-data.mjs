@@ -1,0 +1,143 @@
+/**
+ * Frame-data patch verifier.
+ *
+ * Diffs every move in src/data/characters/*.frames.json against Wavu Wiki's
+ * live Cargo database (the same dataset TekkenDocs mirrors). Run after every
+ * Tekken patch:
+ *
+ *   npm run verify:frames
+ *
+ * Exit 0  = table matches the live database.
+ * Exit 1  = drift detected — the report lists exactly which values changed.
+ *           Update the JSON (and bump gameVersion/verifiedAt), then re-run.
+ *
+ * Startup values for multi-hit strings are reported as warnings only (Wavu
+ * stores per-hit startups on string rows); block/hit/CH are strict failures.
+ */
+
+import { readdirSync, readFileSync } from "node:fs";
+import { join, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const DATA_DIR = join(
+  dirname(fileURLToPath(import.meta.url)),
+  "..",
+  "src",
+  "data",
+  "characters",
+);
+
+const API = "https://wavu.wiki/w/api.php";
+
+/** Strip wiki markup wavu embeds in values: [[Page|+59a]] → +59a, &gt; → >. */
+function normalize(value) {
+  if (value === null || value === undefined) return null;
+  return String(value)
+    .replace(/\[\[[^\]|]*\|([^\]]*)\]\]/g, "$1")
+    .replace(/\[\[([^\]]*)\]\]/g, "$1")
+    .replace(/&gt;/g, ">")
+    .replace(/&amp;/g, "&")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+async function fetchMoves(wavuIds) {
+  const results = new Map();
+  // Batch to keep the WHERE clause reasonable.
+  for (let i = 0; i < wavuIds.length; i += 20) {
+    const batch = wavuIds.slice(i, i + 20);
+    const where = `id IN (${batch.map((id) => `'${id.replace(/'/g, "''")}'`).join(",")})`;
+    const url = new URL(API);
+    url.searchParams.set("action", "cargoquery");
+    url.searchParams.set("tables", "Move");
+    url.searchParams.set("fields", "id,startup,block,hit,ch,target");
+    url.searchParams.set("where", where);
+    url.searchParams.set("limit", "50");
+    url.searchParams.set("format", "json");
+    const res = await fetch(url, {
+      headers: { "User-Agent": "dojo-sequence-frame-verifier" },
+    });
+    if (!res.ok) throw new Error(`Wavu API ${res.status} for batch ${i / 20}`);
+    const json = await res.json();
+    if (json.error) throw new Error(`Wavu API error: ${json.error.info}`);
+    for (const row of json.cargoquery ?? []) {
+      results.set(row.title.id, row.title);
+    }
+  }
+  return results;
+}
+
+function compareMove(key, local, live) {
+  const failures = [];
+  const warnings = [];
+  const isString = local.wavuId.split("-").slice(1).join("-").includes(",");
+
+  const checks = [
+    ["block", local.block, normalize(live.block), false],
+    ["hit", local.hit, normalize(live.hit), false],
+    ["ch", local.ch, normalize(live.ch), false],
+    ["startup", local.startup, normalize(live.startup), isString],
+  ];
+
+  for (const [field, ours, theirs, warnOnly] of checks) {
+    const a = normalize(ours);
+    const b = theirs;
+    if ((a ?? "") === (b ?? "")) continue;
+    const line = `${key} (${local.input}) ${field}: ours "${a ?? "—"}" vs live "${b ?? "—"}"`;
+    (warnOnly ? warnings : failures).push(line);
+  }
+  return { failures, warnings };
+}
+
+let totalFailures = 0;
+let totalWarnings = 0;
+let totalChecked = 0;
+
+const files = readdirSync(DATA_DIR).filter((f) => f.endsWith(".frames.json"));
+if (files.length === 0) {
+  console.error("No *.frames.json files found.");
+  process.exit(1);
+}
+
+for (const file of files) {
+  const set = JSON.parse(readFileSync(join(DATA_DIR, file), "utf8"));
+  const entries = Object.entries(set.moves);
+  console.log(
+    `\n■ ${set.characterId} — ${entries.length} moves (stated: ${set.game} ${set.gameVersion}, verified ${set.verifiedAt})`,
+  );
+
+  const live = await fetchMoves(entries.map(([, m]) => m.wavuId));
+
+  for (const [key, move] of entries) {
+    totalChecked++;
+    const row = live.get(move.wavuId);
+    if (!row) {
+      totalFailures++;
+      console.log(`  ✗ ${key}: wavu id "${move.wavuId}" not found — renamed or removed in a patch?`);
+      continue;
+    }
+    const { failures, warnings } = compareMove(key, move, row);
+    for (const f of failures) {
+      totalFailures++;
+      console.log(`  ✗ ${f}`);
+    }
+    for (const w of warnings) {
+      totalWarnings++;
+      console.log(`  ⚠ ${w} (string-row startup — informational)`);
+    }
+    if (failures.length === 0 && warnings.length === 0) {
+      console.log(`  ✓ ${key} (${move.input})`);
+    }
+  }
+}
+
+console.log(
+  `\n${totalChecked} moves checked · ${totalFailures} mismatches · ${totalWarnings} warnings`,
+);
+if (totalFailures > 0) {
+  console.log(
+    "\nDrift detected. Update the affected values in the *.frames.json table,\nre-verify prose that cites them, bump gameVersion/verifiedAt, and re-run.",
+  );
+  process.exit(1);
+}
+console.log("Frame table matches the live Wavu database.");

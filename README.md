@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dojo Sequence
 
-## Getting Started
+**A structured training curriculum for learning Tekken 8 characters.**
 
-First, run the development server:
+Instead of dumping a 100-move list on you, Dojo Sequence teaches a character as
+a strict, ordered curriculum: **learn → drill → pass → unlock the next skill**.
+
+Ships with a complete **Kazuya** curriculum — 45 training items across 8 stages
+(Movement → Core Pokes → Launchers & Counterhits → Punishment → Core Combos →
+Mixups & Pressure → Defense → Gameplan), with frame data cross-verified against
+[TekkenDocs](https://tekkendocs.com/t8/kazuya) and
+[Wavu Wiki](https://wavu.wiki/t/Kazuya) (Season 3), and execution tips written
+specifically for leverless/hitbox players.
+
+## Features
+
+- **Today screen** — always answers "what should I practice right now?"
+- **Session mode** — a fast, focused loop over your next items + retention reps
+- **Measurable drills** — consecutive reps, total reps, accuracy sets, timed
+  holds, and concept checklists; an item only becomes *Learned* when its pass
+  condition is genuinely met
+- **Linear unlocks** — stages (and items within them) unlock in strict order;
+  locked content stays visible so you always see the road ahead
+- **Retention** — already-learned items resurface based on how stale they are
+- **Progress that survives** — everything persists in `localStorage`, with
+  validated JSON export/import
+- **Fully responsive** — designed for a phone next to your controller
+- **Accessible** — keyboard navigable, screen-reader status messaging, honors
+  `prefers-reduced-motion` plus an in-app reduce-motion toggle
+
+## Stack
+
+Next.js (App Router, Server Components, fully static output) · React ·
+TypeScript · Tailwind CSS · Motion (`motion/react`) · Lucide icons.
+**No backend** — no accounts, no database, no API. Everything runs in the
+browser.
+
+## Develop
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev    # http://localhost:3000
+npm run build  # production build (fully static)
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deploy
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Push to GitHub and import into [Vercel](https://vercel.com) — zero
+configuration required. Every route is prerendered static HTML.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Add a character
 
-## Learn More
+1. Create `src/data/characters/<name>.ts` exporting a `Character`
+2. Register it in `src/data/characters/index.ts`
 
-To learn more about Next.js, take a look at the following resources:
+The UI, progression engine, routing, and persistence are all
+character-agnostic.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Frame data accuracy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Frame numbers live in exactly one place per character:
+`src/data/characters/<name>.frames.json` — a table stamped with the game
+version, verification date, and sources. The UI renders frame panels from this
+table (nothing is hand-typed into components), always states which patch it
+was verified against, and warns the user automatically when the data is old
+enough that a patch has plausibly shipped.
 
-## Deploy on Vercel
+**While the app is open**, it background-checks the bundled table against Wavu
+Wiki's live database (MediaWiki's anonymous CORS API) at most once per day.
+Values a patch changed render live in the frame panels — highlighted and
+labeled — and the provenance line reports the check result. Offline, the app
+falls back to bundled values with the normal staleness warning. Live values
+pass a strict sanitizer before they can render.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**After every Tekken patch** (to re-baseline the bundled table, prose, and
+quiz answers):
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run verify:frames
+```
+
+This diffs the entire table against the same live database and reports exactly
+which values drifted. Update the JSON, re-check any prose that cites the
+changed values, bump `gameVersion` / `verifiedAt`, re-run until green, and
+redeploy.
+
+## Architecture
+
+```
+src/
+  app/         # App Router routes (all static; dynamic segments via generateStaticParams)
+  components/  # UI components + views
+  data/        # character curricula (static, typed)
+  hooks/       # ProgressProvider (single reducer owns all state)
+  lib/         # progression engine, persistence store, import/export validation
+  types/       # domain models: Character → Stage → TrainingItem → Drill
+```
+
+Progression rules (unlocks, pass conditions, session planning, retention
+scoring) live in `src/lib/progression.ts` — components never re-implement them.
+`localStorage` access is isolated behind `src/lib/store.ts`, and every byte
+read from storage or an imported file is validated before it touches app state.
+
+---
+
+Dojo Sequence is a fan-made training tool and is not affiliated with Bandai
+Namco. Frame data can shift between patches — when in doubt, verify in-game.
