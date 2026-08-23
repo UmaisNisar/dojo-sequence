@@ -1,0 +1,1490 @@
+{
+  "characterId": "king",
+  "game": "Tekken 8",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-23",
+  "sources": [
+    {
+      "name": "Wavu Wiki",
+      "url": "https://wavu.wiki/t/King"
+    },
+    {
+      "name": "TekkenDocs",
+      "url": "https://tekkendocs.com/t8/king"
+    }
+  ],
+  "moves": {
+    "jab": {
+      "wavuId": "King-1",
+      "input": "1",
+      "name": "Jab",
+      "level": "h",
+      "startup": "i10",
+      "block": "+1",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "i10 high",
+        "+1 on block"
+      ]
+    },
+    "jab-2": {
+      "wavuId": "King-1,2",
+      "input": "1,2",
+      "name": "Palm Strike",
+      "level": ",h",
+      "startup": ",i10~12",
+      "displayStartup": "i10~12 (string)",
+      "block": "-3",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "-3 on block",
+        "a listed whiff punisher"
+      ]
+    },
+    "jab-2-1": {
+      "wavuId": "King-1,2,1",
+      "input": "1,2,1",
+      "name": "Palm Strike Uppercut",
+      "level": ",m",
+      "startup": ",i24~25",
+      "displayStartup": "i24~25 (string)",
+      "block": "-4",
+      "hit": "+5",
+      "ch": "+10",
+      "notes": [
+        "only -4 on block"
+      ]
+    },
+    "jab-2-1-throw": {
+      "wavuId": "King-1,2,1,2+4",
+      "input": "1,2,1,2+4",
+      "name": "Palm Strike Uppercut into Suplex",
+      "level": ",t",
+      "startup": ",i26~28",
+      "displayStartup": "i26~28 (string)",
+      "block": "-3",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "a throw ender on a jab string"
+      ]
+    },
+    "right": {
+      "wavuId": "King-2",
+      "input": "2",
+      "name": "Right Jab",
+      "level": "h",
+      "startup": "i10",
+      "block": "+1",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "i10 high"
+      ]
+    },
+    "right-1": {
+      "wavuId": "King-2,1",
+      "input": "2,1",
+      "name": "Right Jab into Uppercut",
+      "level": ",m",
+      "startup": ",i23~24",
+      "displayStartup": "i23~24 (string)",
+      "block": "-3",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "his i10 punisher, and only -3 on block"
+      ]
+    },
+    "kick3": {
+      "wavuId": "King-3",
+      "input": "3",
+      "name": "Left Kick",
+      "level": "h",
+      "startup": "i15~16",
+      "block": "-9",
+      "hit": "+2",
+      "ch": null,
+      "notes": [
+        "i15 high"
+      ]
+    },
+    "kick3-2-2": {
+      "wavuId": "King-3,2,2",
+      "input": "3,2,2",
+      "name": "Stampede Crush",
+      "level": ",m",
+      "startup": ",i23~24",
+      "displayStartup": "i23~24 (string)",
+      "block": "-13",
+      "hit": "+17g",
+      "ch": null,
+      "notes": [
+        "wall ender",
+        "+17g on hit"
+      ]
+    },
+    "stampede-hold": {
+      "wavuId": "King-3,2,2*",
+      "input": "3,2,2 (hold)",
+      "name": "Stampede Crush (charged)",
+      "level": ",m",
+      "startup": ",i34~35",
+      "displayStartup": "i34~35 (string)",
+      "block": "+9c",
+      "hit": "+25a (+15)",
+      "ch": null,
+      "notes": [
+        "+9c ON BLOCK when charged"
+      ]
+    },
+    "kick4": {
+      "wavuId": "King-4",
+      "input": "4",
+      "name": "Right Kick",
+      "level": "h",
+      "startup": "i13",
+      "block": "-5",
+      "hit": "+6",
+      "ch": "+31d",
+      "notes": [
+        "i13 high",
+        "CH +31d",
+        "core combo filler"
+      ]
+    },
+    "df1": {
+      "wavuId": "King-df+1",
+      "input": "df+1",
+      "name": "Elbow",
+      "level": "m",
+      "startup": "i14~15",
+      "block": "-1",
+      "hit": "+3",
+      "ch": null,
+      "notes": [
+        "his mid check — i14 at only -1 on block"
+      ]
+    },
+    "df1-2": {
+      "wavuId": "King-df+1,2",
+      "input": "df+1,2",
+      "name": "Elbow Sting",
+      "level": ",m",
+      "startup": ",i20~21",
+      "displayStartup": "i20~21 (string)",
+      "block": "-10",
+      "hit": "+5",
+      "ch": null,
+      "notes": [
+        "mid ender"
+      ]
+    },
+    "df2": {
+      "wavuId": "King-df+2",
+      "input": "df+2",
+      "name": "Mid Punch",
+      "level": "m",
+      "startup": "i13",
+      "block": "-6",
+      "hit": "+4",
+      "ch": null,
+      "notes": [
+        "i13 mid, -6"
+      ]
+    },
+    "df2-1": {
+      "wavuId": "King-df+2,1",
+      "input": "df+2,1",
+      "name": "Double Hook Disaster",
+      "level": ",h",
+      "startup": ",i20~21",
+      "displayStartup": "i20~21 (string)",
+      "block": "-4",
+      "hit": "+24a",
+      "ch": null,
+      "notes": [
+        "i13 CH launcher",
+        "only -4 on block"
+      ]
+    },
+    "df3": {
+      "wavuId": "King-df+3",
+      "input": "df+3",
+      "name": "Mid Kick",
+      "level": "m",
+      "startup": "i14",
+      "block": "-9",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "i14 mid"
+      ]
+    },
+    "df3-4": {
+      "wavuId": "King-df+3,4",
+      "input": "df+3,4",
+      "name": "Lasso Kick",
+      "level": ",h",
+      "startup": ",i30",
+      "displayStartup": "i30 (string)",
+      "block": "+0",
+      "hit": "+28d",
+      "ch": null,
+      "notes": [
+        "0 on block"
+      ]
+    },
+    "df4": {
+      "wavuId": "King-df+4",
+      "input": "df+4",
+      "name": "Low Kick",
+      "level": "l",
+      "startup": "i14~15",
+      "block": "-14",
+      "hit": "-3",
+      "ch": null,
+      "notes": [
+        "i14 low"
+      ]
+    },
+    "df4-3": {
+      "wavuId": "King-df+4,3",
+      "input": "df+4,3",
+      "name": "Low Kick into High",
+      "level": ",h",
+      "startup": ",i22",
+      "displayStartup": "i22 (string)",
+      "block": "-5",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "the core combo filler",
+        "-5 on block"
+      ]
+    },
+    "df4-3-4": {
+      "wavuId": "King-df+4,3,4",
+      "input": "df+4,3,4",
+      "name": "Mincer",
+      "level": ",m",
+      "startup": ",i28~29",
+      "displayStartup": "i28~29 (string)",
+      "block": "-15",
+      "hit": "+6a (-3)",
+      "ch": "+47a (+16)",
+      "notes": [
+        "CH +47a"
+      ]
+    },
+    "df4-3-d4": {
+      "wavuId": "King-df+4,3,d+4",
+      "input": "df+4,3,d+4",
+      "name": "Mincer Low",
+      "level": ",L",
+      "startup": ",i33~35",
+      "displayStartup": "i33~35 (string)",
+      "block": "-10d",
+      "hit": "-8a",
+      "ch": "+22a",
+      "notes": [
+        "the low branch",
+        "CH +22a"
+      ]
+    },
+    "b1": {
+      "wavuId": "King-b+1",
+      "input": "b+1",
+      "name": "Quick Hook",
+      "level": "h",
+      "startup": "i12",
+      "block": "-8",
+      "hit": "+3",
+      "ch": "+3s",
+      "notes": [
+        "i12 high"
+      ]
+    },
+    "b1-2": {
+      "wavuId": "King-b+1,2",
+      "input": "b+1,2",
+      "name": "Quick Hook into Uppercut",
+      "level": ",h",
+      "startup": ",i19~20",
+      "displayStartup": "i19~20 (string)",
+      "block": "-13",
+      "hit": "+5",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "LAUNCHES for +70a if b+1 counter-hits"
+      ]
+    },
+    "b2": {
+      "wavuId": "King-b+2",
+      "input": "b+2",
+      "name": "Chupacabra",
+      "level": "h",
+      "startup": "i14",
+      "block": "-5",
+      "hit": "+1",
+      "ch": null,
+      "notes": [
+        "i14 high"
+      ]
+    },
+    "b2-1": {
+      "wavuId": "King-b+2,1",
+      "input": "b+2,1",
+      "name": "Spinning Back Elbow",
+      "level": ",h",
+      "startup": ",i20~21",
+      "displayStartup": "i20~21 (string)",
+      "block": "-9",
+      "hit": "+19a (+10)",
+      "ch": null,
+      "notes": [
+        "his -14 punisher",
+        "wall splat"
+      ]
+    },
+    "b2-1plus2": {
+      "wavuId": "King-b+2,1+2",
+      "input": "b+2,1+2",
+      "name": "Head Butt",
+      "level": ",h",
+      "startup": ",i24~25",
+      "displayStartup": "i24~25 (string)",
+      "block": "+2c",
+      "hit": "+22a",
+      "ch": null,
+      "notes": [
+        "+2c on block"
+      ]
+    },
+    "b2-4": {
+      "wavuId": "King-b+2,4",
+      "input": "b+2,4",
+      "name": "Olympia Slam",
+      "level": ",m,t",
+      "startup": ",i21",
+      "displayStartup": "i21 (string)",
+      "block": "-8",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "combo filler into a throw"
+      ]
+    },
+    "b3": {
+      "wavuId": "King-b+3",
+      "input": "b+3",
+      "name": "Toll Kick",
+      "level": "h",
+      "startup": "i16~18",
+      "block": "-10",
+      "hit": "+13d",
+      "ch": null,
+      "notes": [
+        "combo filler",
+        "+13d on hit"
+      ]
+    },
+    "b3-throw": {
+      "wavuId": "King-b+3:1+2",
+      "input": "b+3:1+2",
+      "name": "Guillotine Drop",
+      "level": ",t",
+      "startup": null,
+      "block": null,
+      "hit": "-7d",
+      "ch": null,
+      "notes": [
+        "his -16 punisher",
+        "input 1+2 during frames 2~17 of b+3"
+      ]
+    },
+    "b4": {
+      "wavuId": "King-b+4",
+      "input": "b+4",
+      "name": "Disgraceful Kick",
+      "level": "h",
+      "startup": "i17~21",
+      "block": "+2",
+      "hit": "+14gc",
+      "ch": null,
+      "notes": [
+        "+2 on block"
+      ]
+    },
+    "f1plus2": {
+      "wavuId": "King-f+1+2",
+      "input": "f+1+2",
+      "name": "Shadow Lariat",
+      "level": "h",
+      "startup": "i16~17",
+      "block": "+0~+1",
+      "hit": "+10d",
+      "ch": null,
+      "notes": [
+        "plus on block",
+        "combo filler"
+      ]
+    },
+    "f1plus4": {
+      "wavuId": "King-f+1+4",
+      "input": "f+1+4",
+      "name": "Body Check",
+      "level": "m",
+      "startup": "i17~19",
+      "block": "+3",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "+3 on block"
+      ]
+    },
+    "f2": {
+      "wavuId": "King-f+2",
+      "input": "f+2",
+      "name": "Elbow",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-11",
+      "hit": "+2",
+      "ch": null,
+      "notes": [
+        "i15 mid"
+      ]
+    },
+    "f2-1": {
+      "wavuId": "King-f+2,1",
+      "input": "f+2,1",
+      "name": "Elbow Impact",
+      "level": ",h",
+      "startup": ",i15~16",
+      "displayStartup": "i15~16 (string)",
+      "block": "-9",
+      "hit": "+16a",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "his -15 punisher"
+      ]
+    },
+    "f2plus3": {
+      "wavuId": "King-f+2+3",
+      "input": "f+2+3",
+      "name": "Shoulder Tackle",
+      "level": "m",
+      "startup": "i20~24",
+      "block": "-5",
+      "hit": "+8a (-1)",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "only -5 on block"
+      ]
+    },
+    "f2-d1-2": {
+      "wavuId": "King-f+2,d+1,2",
+      "input": "f+2,d+1,2",
+      "name": "Jaguar Smash Combo",
+      "level": ",m",
+      "startup": ",i22~23",
+      "displayStartup": "i22~23 (string)",
+      "block": "-15",
+      "hit": "+27a (+17)",
+      "ch": null,
+      "notes": [
+        "his back-turned punisher"
+      ]
+    },
+    "f3": {
+      "wavuId": "King-f+3",
+      "input": "f+3",
+      "name": "Front Kick",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-8",
+      "hit": "+1",
+      "ch": "+9",
+      "notes": [
+        "i15 mid, -8"
+      ]
+    },
+    "f3-throw": {
+      "wavuId": "King-f+3,1+2",
+      "input": "f+3,1+2",
+      "name": "Front Kick into DDT",
+      "level": ",t",
+      "startup": null,
+      "block": null,
+      "hit": "-5d",
+      "ch": null,
+      "notes": [
+        "input 1+2 during frames 2~20 of f+3",
+        "catches grounded opponents"
+      ]
+    },
+    "f4": {
+      "wavuId": "King-f+4",
+      "input": "f+4",
+      "name": "Rolling Sobat",
+      "level": "m",
+      "startup": "i18~20",
+      "block": "-9",
+      "hit": "+12a (+3)",
+      "ch": null,
+      "notes": [
+        "homing mid",
+        "Balcony Break"
+      ]
+    },
+    "ff1": {
+      "wavuId": "King-f,F+1",
+      "input": "f,F+1",
+      "name": "Jaguar Hook",
+      "level": "m",
+      "startup": "i20~21",
+      "block": "-5",
+      "hit": "+14g",
+      "ch": "+38d",
+      "notes": [
+        "homing mid",
+        "CH +38d",
+        "only -5 on block"
+      ]
+    },
+    "ff2": {
+      "wavuId": "King-f,F+2",
+      "input": "f,F+2",
+      "name": "Beast Elbow",
+      "level": "m",
+      "startup": "i31~32",
+      "block": "+7",
+      "hit": "+12c",
+      "ch": null,
+      "notes": [
+        "+7 ON BLOCK"
+      ]
+    },
+    "ff4": {
+      "wavuId": "King-f,F+4",
+      "input": "f,F+4",
+      "name": "Konvict Kick",
+      "level": "m,(t)",
+      "startup": "i15",
+      "block": "-15",
+      "hit": "+14a(+4)",
+      "ch": "+1d",
+      "notes": [
+        "wall carry tool"
+      ]
+    },
+    "fff3": {
+      "wavuId": "King-f,f,F+3",
+      "input": "f,f,F+3",
+      "name": "Strong Knee",
+      "level": "m",
+      "startup": "i20~25",
+      "block": "+3",
+      "hit": "+30(+22)",
+      "ch": null,
+      "notes": [
+        "+3 on block from a run"
+      ]
+    },
+    "fff3plus4": {
+      "wavuId": "King-f,f,F+3+4",
+      "input": "f,f,F+3+4",
+      "name": "Running Exploder",
+      "level": "m",
+      "startup": "i28~34",
+      "block": "+17",
+      "hit": "+32d(-26)",
+      "ch": null,
+      "notes": [
+        "+17 on block"
+      ]
+    },
+    "ffn1plus2": {
+      "wavuId": "King-f,f,n,1+2",
+      "input": "f,f,n,1+2",
+      "name": "Lay Off",
+      "level": "m",
+      "startup": "i9",
+      "block": "+0",
+      "hit": "+7s",
+      "ch": "+18s",
+      "notes": [
+        "i9 mid out of a run"
+      ]
+    },
+    "ffn2": {
+      "wavuId": "King-f,f,n,2",
+      "input": "f,f,n,2",
+      "name": "Stomach Smash",
+      "level": "L,(t)",
+      "startup": "i18",
+      "block": "-13",
+      "hit": "+5s/(0d)",
+      "ch": null,
+      "notes": [
+        "the running low"
+      ]
+    },
+    "uf4": {
+      "wavuId": "King-uf+4",
+      "input": "uf+4",
+      "name": "Jumping Knee Lift",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-13",
+      "hit": "+33a (+23)",
+      "ch": null,
+      "notes": [
+        "his hopkick",
+        "i15 launcher, -13"
+      ]
+    },
+    "uf3plus4": {
+      "wavuId": "King-uf+3+4",
+      "input": "uf+3+4",
+      "name": "Sole Crusher",
+      "level": "m",
+      "startup": "i22~23",
+      "block": "-12",
+      "hit": "+25g",
+      "ch": null,
+      "notes": [
+        "combo filler",
+        "+25g"
+      ]
+    },
+    "uf1": {
+      "wavuId": "King-uf+1",
+      "input": "uf+1",
+      "name": "Water Parting Chop",
+      "level": "h",
+      "startup": "i20~23",
+      "block": "-3",
+      "hit": "+36a (+27)",
+      "ch": null,
+      "notes": [
+        "+36a on hit"
+      ]
+    },
+    "ub4": {
+      "wavuId": "King-ub+4",
+      "input": "ub+4",
+      "name": "Rising Kick",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-13",
+      "hit": "+19a (+9)",
+      "ch": "+33a (+23)",
+      "notes": [
+        "CH +33a"
+      ]
+    },
+    "ufn4": {
+      "wavuId": "King-uf,n,4",
+      "input": "uf,n,4",
+      "name": "Delayed Rising Toe Kick",
+      "level": "m",
+      "startup": "i23~25",
+      "block": "-13",
+      "hit": "+32a (+22)",
+      "ch": null,
+      "notes": [
+        "+32a launcher"
+      ]
+    },
+    "u1plus2": {
+      "wavuId": "King-u+1+2",
+      "input": "u+1+2",
+      "name": "Capital Punishment",
+      "level": "m",
+      "startup": "i35~36",
+      "block": "+2c",
+      "hit": "+22a",
+      "ch": null,
+      "notes": [
+        "+2c on block",
+        "+22a on hit"
+      ]
+    },
+    "d1": {
+      "wavuId": "King-d+1",
+      "input": "d+1",
+      "name": "Crouch Jab",
+      "level": "sl",
+      "startup": "i10",
+      "block": "-5",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "i10 special low"
+      ]
+    },
+    "d2": {
+      "wavuId": "King-d+2",
+      "input": "d+2",
+      "name": "Crouch Punch",
+      "level": "sl",
+      "startup": "i11",
+      "block": "-4",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "i11 special low, -4"
+      ]
+    },
+    "d1plus2": {
+      "wavuId": "King-d+1+2",
+      "input": "d+1+2",
+      "name": "Atlas Hammer",
+      "level": "m",
+      "startup": "i23",
+      "block": "-24",
+      "hit": "+45a (+35)",
+      "ch": null,
+      "notes": [
+        "+45a launcher but -24 on block"
+      ]
+    },
+    "d3": {
+      "wavuId": "King-d+3",
+      "input": "d+3",
+      "name": "Stomp",
+      "level": "L",
+      "startup": "i17",
+      "block": "-12",
+      "hit": "+1",
+      "ch": null,
+      "notes": [
+        "his stature kick",
+        "the -17 grounded punish"
+      ]
+    },
+    "d4": {
+      "wavuId": "King-d+4",
+      "input": "d+4",
+      "name": "Low Kick",
+      "level": "l",
+      "startup": "i14",
+      "block": "-15",
+      "hit": "-4",
+      "ch": null,
+      "notes": [
+        "i14 low"
+      ]
+    },
+    "d2plus3": {
+      "wavuId": "King-d+2+3",
+      "input": "d+2+3",
+      "name": "Corporate Elbow",
+      "level": "M",
+      "startup": "i30~35",
+      "block": "-8~-3",
+      "hit": "+0c~+5c",
+      "ch": null,
+      "notes": [
+        "the -33 grounded punish"
+      ]
+    },
+    "d3plus4": {
+      "wavuId": "King-d+3+4",
+      "input": "d+3+4",
+      "name": "Stagger Kicks (1st)",
+      "level": "L",
+      "startup": "i16",
+      "block": "-25",
+      "hit": "-9",
+      "ch": null,
+      "notes": [
+        "-25 on block on its own"
+      ]
+    },
+    "db2": {
+      "wavuId": "King-db+2",
+      "input": "db+2",
+      "name": "Brain Chop",
+      "level": "m",
+      "startup": "i25~26",
+      "block": "-5c",
+      "hit": "+19a",
+      "ch": null,
+      "notes": [
+        "-5c on block",
+        "+19a launcher"
+      ]
+    },
+    "db3": {
+      "wavuId": "King-db+3",
+      "input": "db+3",
+      "name": "Crouching Low Kick",
+      "level": "L",
+      "startup": "i23",
+      "block": "-14",
+      "hit": "+4c",
+      "ch": "+25a",
+      "notes": [
+        "his shadow-cutter low",
+        "CH +25a"
+      ]
+    },
+    "db4": {
+      "wavuId": "King-db+4",
+      "input": "db+4",
+      "name": "Low Drop Kick",
+      "level": "L",
+      "startup": "i29~31",
+      "block": "-17a",
+      "hit": "-3d",
+      "ch": "+27d",
+      "notes": [
+        "CH +27d"
+      ]
+    },
+    "db1plus2-2": {
+      "wavuId": "King-db+1+2,2",
+      "input": "db+1+2,2",
+      "name": "Muscle Armor into Emerald Elbow",
+      "level": ",t",
+      "startup": ",i15~16",
+      "displayStartup": "i15~16 (string)",
+      "block": "-9",
+      "hit": "+35g",
+      "ch": null,
+      "notes": [
+        "Heat Engager out of the power crush"
+      ]
+    },
+    "ws1": {
+      "wavuId": "King-ws1",
+      "input": "ws1",
+      "name": "Rising Punch",
+      "level": "m",
+      "startup": "i10~11",
+      "block": "-3",
+      "hit": "+4s",
+      "ch": null,
+      "notes": [
+        "i10 out of crouch"
+      ]
+    },
+    "ws2": {
+      "wavuId": "King-ws2",
+      "input": "ws2",
+      "name": "Rising Uppercut",
+      "level": "m",
+      "startup": "i14",
+      "block": "-9",
+      "hit": "+1s",
+      "ch": null,
+      "notes": [
+        "i14 mid"
+      ]
+    },
+    "ws2-2": {
+      "wavuId": "King-ws2,2",
+      "input": "ws2,2",
+      "name": "Round Trip Chop",
+      "level": ",m",
+      "startup": "i15~16",
+      "block": "-12",
+      "hit": "+12g",
+      "ch": null,
+      "notes": [
+        "his -14 crouching punisher",
+        "wall splat",
+        "goes to Jaguar Sprint on hit"
+      ]
+    },
+    "ws3": {
+      "wavuId": "King-ws3",
+      "input": "ws3",
+      "name": "Rising High",
+      "level": "h",
+      "startup": "i16",
+      "block": "0",
+      "hit": "+22a(+12)",
+      "ch": null,
+      "notes": [
+        "0 on block",
+        "+22a on hit"
+      ]
+    },
+    "ws4": {
+      "wavuId": "King-ws4",
+      "input": "ws4",
+      "name": "Toe Smash",
+      "level": "m",
+      "startup": "i11~12",
+      "block": "-6",
+      "hit": "+5",
+      "ch": null,
+      "notes": [
+        "his -11 crouching punisher, -6 on block"
+      ]
+    },
+    "ws1plus2": {
+      "wavuId": "King-ws1+2",
+      "input": "ws1+2",
+      "name": "Snap Uppercut",
+      "level": "m",
+      "startup": "i18~19",
+      "block": "-10",
+      "hit": "+35a(+25)",
+      "ch": null,
+      "notes": [
+        "his -18 crouching punisher",
+        "+35a"
+      ]
+    },
+    "fc-df1": {
+      "wavuId": "King-FC.df+1",
+      "input": "FC.df+1",
+      "name": "Leg Breaker",
+      "level": "L",
+      "startup": "i32~34",
+      "block": "-12",
+      "hit": "+73a(+57)",
+      "ch": null,
+      "notes": [
+        "a low that LAUNCHES for +73a",
+        "-12 on block"
+      ]
+    },
+    "fc-df2": {
+      "wavuId": "King-FC.df+2",
+      "input": "FC.df+2",
+      "name": "Body Blow",
+      "level": "m",
+      "startup": "i15",
+      "block": "-14",
+      "hit": "+56a",
+      "ch": null,
+      "notes": [
+        "i15 crouching launcher",
+        "crumples on hit"
+      ]
+    },
+    "cd-df4": {
+      "wavuId": "King-CD.DF+4",
+      "input": "CD.DF+4",
+      "name": "Knee Lift",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-9",
+      "hit": "+49a(+18)",
+      "ch": "+53a",
+      "notes": [
+        "+49a on hit out of Beast Step"
+      ]
+    },
+    "cd-df1plus2": {
+      "wavuId": "King-CD.DF+1+2",
+      "input": "CD.DF+1+2",
+      "name": "Black Bomb",
+      "level": "M",
+      "startup": "i20~23",
+      "block": "-5c",
+      "hit": "+16d",
+      "ch": "+52a",
+      "notes": [
+        "CH +52a"
+      ]
+    },
+    "giant-swing": {
+      "wavuId": "King-f,hcf+1",
+      "input": "f,hcf+1",
+      "name": "Giant Swing",
+      "level": "t",
+      "startup": "i10",
+      "block": "-13",
+      "hit": "-22d(-50)",
+      "ch": null,
+      "notes": [
+        "breaks with 1",
+        "45 damage, 50 on a perfect (bluespark) input",
+        "homing in Heat"
+      ]
+    },
+    "tomahawk": {
+      "wavuId": "King-f,f,F+2+4",
+      "input": "f,f,F+2+4",
+      "name": "Tomahawk (Shining Wizard)",
+      "level": "t",
+      "startup": "i10",
+      "block": "-5",
+      "hit": "+1d",
+      "ch": null,
+      "notes": [
+        "breaks with 1+2",
+        "only -5 on block",
+        "40 damage, 45 on bluespark"
+      ]
+    },
+    "tijuana": {
+      "wavuId": "King-f,hcf+2",
+      "input": "f,hcf+2",
+      "name": "Tijuana Twister",
+      "level": "t",
+      "startup": "i12~14",
+      "block": "-6",
+      "hit": "+1d",
+      "ch": null,
+      "notes": [
+        "breaks with 2",
+        "50 damage, 55 on bluespark"
+      ]
+    },
+    "muscle-buster": {
+      "wavuId": "King-qcb+1+2",
+      "input": "qcb+1+2",
+      "name": "Muscle Buster",
+      "level": "t",
+      "startup": "i11",
+      "block": "-6",
+      "hit": "-6d",
+      "ch": null,
+      "notes": [
+        "breaks with 1+2",
+        "Floor Break",
+        "50 damage"
+      ]
+    },
+    "pile-driver": {
+      "wavuId": "King-qcf+1",
+      "input": "qcf+1",
+      "name": "Pile Driver",
+      "level": "t",
+      "startup": "i11",
+      "block": "-2/-7",
+      "hit": "+8d",
+      "ch": null,
+      "notes": [
+        "breaks with 1",
+        "leads to the PD follow-up throws"
+      ]
+    },
+    "tombstone": {
+      "wavuId": "King-db,n,f+2+4",
+      "input": "db,n,f+2+4",
+      "name": "Tombstone Pile Driver",
+      "level": "t",
+      "startup": "i11",
+      "block": "-2",
+      "hit": "-1d",
+      "ch": null,
+      "notes": [
+        "breaks with 2",
+        "Floor Break",
+        "53 damage"
+      ]
+    },
+    "executioner": {
+      "wavuId": "King-uf+1+2",
+      "input": "uf+1+2",
+      "name": "Executioner Drop",
+      "level": "t",
+      "startup": "i12",
+      "block": "-6",
+      "hit": "+19d(-7) / +17d(-13)",
+      "ch": null,
+      "notes": [
+        "breaks with 1+2",
+        "hold b to throw backwards"
+      ]
+    },
+    "throw-left": {
+      "wavuId": "King-1+3",
+      "input": "1+3",
+      "name": "Winding Nut",
+      "level": "t",
+      "startup": "i12~14",
+      "block": "-6",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "the generic left throw",
+        "breaks with 1"
+      ]
+    },
+    "throw-right": {
+      "wavuId": "King-2+4",
+      "input": "2+4",
+      "name": "Suplex",
+      "level": "t",
+      "startup": "i12~14",
+      "block": "-3",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "the generic right throw",
+        "breaks with 2"
+      ]
+    },
+    "crouch-lariat": {
+      "wavuId": "King-d+1+3",
+      "input": "d+1+3",
+      "name": "Iron Lariat",
+      "level": "t(c)",
+      "startup": "i12~13",
+      "block": null,
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "CROUCH THROW — cannot be broken",
+        "Floor Break"
+      ]
+    },
+    "crouch-facebuster": {
+      "wavuId": "King-d+1+4",
+      "input": "d+1+4",
+      "name": "Freedom Face Buster",
+      "level": "t(c)",
+      "startup": "i12~13",
+      "block": null,
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "CROUCH THROW — cannot be broken",
+        "Heat Engager"
+      ]
+    },
+    "crouch-vdriver": {
+      "wavuId": "King-d+2+4",
+      "input": "d+2+4",
+      "name": "V Driver",
+      "level": "t(c)",
+      "startup": "i12~13",
+      "block": null,
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "CROUCH THROW — cannot be broken",
+        "Floor Break"
+      ]
+    },
+    "ab-entry": {
+      "wavuId": "King-CD.1+3",
+      "input": "CD.1+3",
+      "name": "Arm Breaker (AB1)",
+      "level": "t",
+      "startup": "i12 (i28~)",
+      "block": "-2",
+      "hit": "+1d",
+      "ch": null,
+      "notes": [
+        "chain-throw entry",
+        "breaks with 1",
+        "leads to Rolling Death Cradle"
+      ]
+    },
+    "shh-entry": {
+      "wavuId": "King-CD.2+4",
+      "input": "CD.2+4",
+      "name": "Standing Heel Hold (SHH1)",
+      "level": "t",
+      "startup": "i12 (i28~)",
+      "block": "-2",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "chain-throw entry",
+        "breaks with 2",
+        "leads to King's Bridge"
+      ]
+    },
+    "mmd-entry": {
+      "wavuId": "King-JGS.1+3_2+4",
+      "input": "JGS.1+3 / JGS.2+4",
+      "name": "Cobra Clutch (MMD1)",
+      "level": "t",
+      "startup": "i12",
+      "block": "-3",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "the seven-stage chain that ends in the Screwdriver"
+      ]
+    },
+    "ras-entry": {
+      "wavuId": "King-df+1+3",
+      "input": "df+1+3",
+      "name": "Reverse Arm Slam (RAS1)",
+      "level": "t",
+      "startup": "i32 (i35)",
+      "block": "-2",
+      "hit": "+1d",
+      "ch": null,
+      "notes": [
+        "homing chain throw",
+        "breaks with 1"
+      ]
+    },
+    "rssb-entry": {
+      "wavuId": "King-df+2+4",
+      "input": "df+2+4",
+      "name": "Reverse Special Stretch Bomb (RSSB1)",
+      "level": "t",
+      "startup": "i32 (i35)",
+      "block": "-2",
+      "hit": "+1d",
+      "ch": null,
+      "notes": [
+        "homing chain throw",
+        "breaks with 2"
+      ]
+    },
+    "tackle": {
+      "wavuId": "King-hFC.1+2",
+      "input": "hFC.1+2",
+      "name": "Ultimate Tackle",
+      "level": "t(m)",
+      "startup": "i32",
+      "block": "-5",
+      "hit": "+3d",
+      "ch": null,
+      "notes": [
+        "breaks with 1+2 in a 6f window",
+        "leads to the tackle follow-ups"
+      ]
+    },
+    "jgs1": {
+      "wavuId": "King-JGS.1",
+      "input": "JGS.1",
+      "name": "Jaguar Step into Hook",
+      "level": "h",
+      "startup": "i17~18/i19~20",
+      "block": "-7/-1",
+      "hit": "+47d/+53d",
+      "ch": null,
+      "notes": [
+        "+47d on hit"
+      ]
+    },
+    "jgs2": {
+      "wavuId": "King-JGS.2",
+      "input": "JGS.2",
+      "name": "Jaguar Step into Hammer",
+      "level": "m",
+      "startup": "i11~12",
+      "block": "-9/-2/0c",
+      "hit": "+12c",
+      "ch": null,
+      "notes": [
+        "i11 mid out of the stance",
+        "+12c on hit sets up a crouch throw"
+      ]
+    },
+    "jgs3": {
+      "wavuId": "King-JGS.3",
+      "input": "JGS.3",
+      "name": "Jaguar Step into Sobat",
+      "level": "m",
+      "startup": "i22~23",
+      "block": "-5/-1",
+      "hit": "+21a(+12)/+25a(+16)",
+      "ch": null,
+      "notes": [
+        "+21a on hit"
+      ]
+    },
+    "jgs4": {
+      "wavuId": "King-JGS.4",
+      "input": "JGS.4",
+      "name": "Jaguar Step into High Kick",
+      "level": "h",
+      "startup": "i17~18",
+      "block": "+8/+15",
+      "hit": "+5a(-4)/+10a(+1)",
+      "ch": null,
+      "notes": [
+        "hugely plus on block"
+      ]
+    },
+    "jgs-df4": {
+      "wavuId": "King-JGS.df+4",
+      "input": "JGS.df+4",
+      "name": "Jaguar Step into Mid Kick",
+      "level": "m",
+      "startup": "i17~19",
+      "block": "-16/+8",
+      "hit": "+5a(-4)",
+      "ch": null,
+      "notes": [
+        "mid option out of the stance"
+      ]
+    },
+    "jgr1": {
+      "wavuId": "King-JGR.1",
+      "input": "JGR.1",
+      "name": "Running Elbow Smash",
+      "level": "m",
+      "startup": "i16~17",
+      "block": "-8",
+      "hit": "+26c",
+      "ch": null,
+      "notes": [
+        "+26c",
+        "becomes a launcher when powered up or in Heat"
+      ]
+    },
+    "jgr1-charged": {
+      "wavuId": "King-JGR.1*",
+      "input": "JGR.1 (powered up)",
+      "name": "Running Elbow Smash (charged)",
+      "level": "m",
+      "startup": "i16~17",
+      "block": "-4",
+      "hit": "+75a (+59)",
+      "ch": null,
+      "notes": [
+        "+75a launcher"
+      ]
+    },
+    "jgr2": {
+      "wavuId": "King-JGR.2",
+      "input": "JGR.2",
+      "name": "Jaguar Axe",
+      "level": "h",
+      "startup": "i18~19",
+      "block": "+3",
+      "hit": "+5a",
+      "ch": null,
+      "notes": [
+        "+3 on block",
+        "Strong Aerial Tailspin",
+        "core combo tool"
+      ]
+    },
+    "jgr3": {
+      "wavuId": "King-JGR.3",
+      "input": "JGR.3",
+      "name": "Sprint Kick",
+      "level": "m",
+      "startup": "i22~23",
+      "block": "-9",
+      "hit": "+12d (+2)",
+      "ch": null,
+      "notes": [
+        "homing mid"
+      ]
+    },
+    "jgr4": {
+      "wavuId": "King-JGR.4",
+      "input": "JGR.4",
+      "name": "Dashing Low Drop Kick",
+      "level": "L",
+      "startup": "i20~24",
+      "block": "-21",
+      "hit": "+0c",
+      "ch": null,
+      "notes": [
+        "the low half of the Jaguar Sprint mixup"
+      ]
+    },
+    "jgr-throw": {
+      "wavuId": "King-JGR.1+3",
+      "input": "JGR.1+3 / JGR.2+4",
+      "name": "Rapid King Onslaught",
+      "level": "t",
+      "startup": "i23",
+      "block": null,
+      "hit": "+1d",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "homing",
+        "CANNOT be broken"
+      ]
+    },
+    "low-parry": {
+      "wavuId": "King-DF",
+      "input": "df (low parry)",
+      "name": "Low Parry",
+      "level": "r(l)",
+      "startup": null,
+      "block": null,
+      "hit": "+51a(+35)",
+      "ch": null,
+      "notes": [
+        "generic low parry",
+        "applies Tornado on success"
+      ]
+    },
+    "parry-punch": {
+      "wavuId": "King-b+1+3",
+      "input": "b+1+3",
+      "name": "Arm Whip",
+      "level": "r(m)",
+      "startup": "i10",
+      "block": null,
+      "hit": "+2d",
+      "ch": null,
+      "notes": [
+        "parries the opponent's RIGHT punch"
+      ]
+    },
+    "parry-kick": {
+      "wavuId": "King-b+2+4",
+      "input": "b+2+4",
+      "name": "Spinning Heel Hold",
+      "level": "r(m)",
+      "startup": "i10",
+      "block": null,
+      "hit": "+24d",
+      "ch": null,
+      "notes": [
+        "parries the opponent's LEFT kick"
+      ]
+    },
+    "heat-burst": {
+      "wavuId": "King-2+3",
+      "input": "2+3",
+      "name": "Heat Burst",
+      "level": "m",
+      "startup": "i16",
+      "block": "+1",
+      "hit": "+2c",
+      "ch": null,
+      "notes": [
+        "+1 on block"
+      ]
+    },
+    "heat-smash": {
+      "wavuId": "King-H.2+3",
+      "input": "H.2+3",
+      "name": "Ultimo Jaguar",
+      "level": "M,t",
+      "startup": "i17~18 i21~22",
+      "block": "+12 JGR",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "Heat Smash",
+        "+12 on block and transitions to Jaguar Sprint"
+      ]
+    },
+    "rage-art": {
+      "wavuId": "King-R.df+1+2",
+      "input": "R.df+1+2",
+      "name": "Anger Of The Beast",
+      "level": "m,t",
+      "startup": "i20",
+      "block": "-18",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "Rage Art"
+      ]
+    }
+  }
+}

@@ -3,17 +3,17 @@ import { kazuya } from "./kazuya";
 import { lars } from "./lars";
 import { bryan } from "./bryan";
 import { jin } from "./jin";
+import { king } from "./king";
 
 /**
  * Character registry. Adding a new character = add a data file and list it here.
  * The UI never special-cases individual characters.
  */
-export const characters: Character[] = [kazuya, lars, bryan, jin];
+export const characters: Character[] = [kazuya, lars, bryan, jin, king];
 
 export const comingSoon: ComingSoonCharacter[] = [
   { id: "reina", name: "Reina", style: "Taido & Mishima Style", available: false },
   { id: "devil-jin", name: "Devil Jin", style: "Advanced Mishima Style", available: false },
-  { id: "king", name: "King", style: "Pro Wrestling", available: false },
   { id: "dragunov", name: "Sergei Dragunov", style: "Commando Sambo", available: false },
   { id: "paul", name: "Paul Phoenix", style: "Integrated Martial Arts", available: false },
   { id: "law", name: "Marshall Law", style: "Martial Arts", available: false },
