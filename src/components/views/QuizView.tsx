@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "motion/react";
-import { ArrowLeft, Check, Timer, X, Zap } from "lucide-react";
+import { Check, Timer, X, Zap } from "lucide-react";
 import type { Character, QuizQuestion } from "@/types";
 import { useProgress } from "@/hooks/use-progress";
 import { cn } from "@/lib/utils";
@@ -128,19 +128,16 @@ export function QuizView({ character }: { character: Character }) {
     }
   };
 
-  const backHref = `/training/${character.id}/stage/4`;
+  /* Located by name, not by position. Punishment happens to be stage 4 in
+     every curriculum today, and a hardcoded 4 would point somewhere plausible
+     but wrong the moment one is ordered differently. */
+  const punishStage = character.stages.find((s) => /punish/i.test(s.name));
+  const studyHref = punishStage
+    ? `/training/${character.id}/stage/${punishStage.number}`
+    : `/training/${character.id}`;
 
   return (
-    <div className="mx-auto max-w-xl">
-      <nav className="mb-6" aria-label="Breadcrumb">
-        <Link
-          href={backHref}
-          className="inline-flex min-h-[40px] items-center gap-1.5 text-xs font-medium text-muted transition-colors hover:text-fg"
-        >
-          <ArrowLeft className="size-3.5" aria-hidden /> Punishment stage
-        </Link>
-      </nav>
-
+    <div>
       {phase.name === "idle" && (
         <div className="text-center">
           <span className="mx-auto flex size-14 items-center justify-center rounded-full border border-accent/50 bg-accent-dim">
@@ -186,7 +183,7 @@ export function QuizView({ character }: { character: Character }) {
           answers={answers}
           total={run.length}
           onRetry={start}
-          backHref={backHref}
+          studyHref={studyHref}
         />
       )}
     </div>
@@ -380,12 +377,12 @@ function ResultsCard({
   answers,
   total,
   onRetry,
-  backHref,
+  studyHref,
 }: {
   answers: AnswerRecord[];
   total: number;
   onRetry: () => void;
-  backHref: string;
+  studyHref: string;
 }) {
   const correct = answers.filter((a) => a.correct).length;
   const times = answers
@@ -427,10 +424,10 @@ function ResultsCard({
           <Zap className="size-4" aria-hidden /> Run it again
         </button>
         <Link
-          href={backHref}
+          href={studyHref}
           className="inline-flex min-h-[48px] w-full max-w-xs items-center justify-center clip-panel border border-border text-sm font-medium text-muted transition-colors hover:border-border-strong hover:text-fg"
         >
-          Back to Punishment
+          Study the punishment stage
         </Link>
       </div>
     </motion.div>
