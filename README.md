@@ -48,8 +48,19 @@ npm run lint
 
 ## Deploy
 
-Push to GitHub and import into [Vercel](https://vercel.com) — zero
-configuration required. Every route is prerendered static HTML.
+Push to GitHub and import into [Vercel](https://vercel.com). Every route is
+prerendered static HTML.
+
+One optional environment variable, for the `/feedback` form:
+
+| Variable | Purpose |
+| --- | --- |
+| `NEXT_PUBLIC_WEB3FORMS_KEY` | [Web3Forms](https://web3forms.com) access key that reports are delivered to. |
+
+Without it the form renders disabled and says so, rather than silently
+dropping what someone writes. The key is public by design — it names the
+destination inbox and cannot read anything back — so it is safe in a client
+bundle, and lives in an env var only so it can be rotated without a commit.
 
 ## Add a character
 
@@ -115,9 +126,15 @@ no IP addresses, and identifies visitors by a hash that is discarded every 24
 hours, so visits cannot be linked across days or across sites. It cannot see
 your progress. The dashboard is private to the project owner.
 
+Reports sent from `/feedback` go straight from your browser to Web3Forms,
+which forwards them to the maintainer. They carry what you type plus your
+browser string and window size, which is stated on the form itself — no
+training progress and no identifiers. Email is optional and used only to
+reply.
+
 Security headers, including the Content Security Policy, are defined in
 `next.config.ts`. `connect-src` and `media-src` pin the only reachable third
-party to `wavu.wiki`.
+parties to `wavu.wiki` and the form endpoint.
 
 ---
 

@@ -22,7 +22,8 @@ const csp = [
   "img-src 'self' data:", // data: is the per-character favicon
   "font-src 'self'", // next/font self-hosts
   "media-src 'self' https://wavu.wiki", // move demo clips
-  "connect-src 'self' https://wavu.wiki", // Cargo frame-data check
+  // wavu.wiki: Cargo frame-data check. web3forms: user bug reports.
+  "connect-src 'self' https://wavu.wiki https://api.web3forms.com",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",
