@@ -43,42 +43,8 @@ export function isItemLearned(
 /* ------------------------------------------------------------------ */
 
 /** Is the drill's machine-readable pass condition currently satisfied? */
-export function isDrillPassed(drill: Drill, p: DrillProgress): boolean {
-  switch (drill.type) {
-    case "consecutive-reps":
-      return p.reps >= drill.target || p.bestStreak >= drill.target;
-    case "total-reps":
-      return p.reps >= drill.target;
-    case "accuracy":
-      return p.hits >= drill.required;
-    case "manual":
-      return (
-        drill.checklist.length > 0 &&
-        drill.checklist.every((_, i) => p.checked[i] === true)
-      );
-    case "timed":
-      return p.elapsedSeconds >= drill.durationSeconds;
-  }
-}
 
 /** 0..1 completion fraction for progress bars. */
-export function drillFraction(drill: Drill, p: DrillProgress): number {
-  const clamp = (n: number) => Math.min(1, Math.max(0, n));
-  switch (drill.type) {
-    case "consecutive-reps":
-      return clamp(Math.max(p.reps, p.bestStreak) / drill.target);
-    case "total-reps":
-      return clamp(p.reps / drill.target);
-    case "accuracy":
-      return clamp(p.hits / drill.required);
-    case "manual": {
-      const done = drill.checklist.filter((_, i) => p.checked[i]).length;
-      return drill.checklist.length ? clamp(done / drill.checklist.length) : 0;
-    }
-    case "timed":
-      return clamp(p.elapsedSeconds / drill.durationSeconds);
-  }
-}
 
 /** Human-readable target, e.g. "10 in a row" / "8 of 10". */
 export function drillTargetLabel(drill: Drill): string {
@@ -88,7 +54,7 @@ export function drillTargetLabel(drill: Drill): string {
     case "total-reps":
       return `${drill.target} total reps`;
     case "accuracy":
-      return `${drill.required} of ${drill.attempts}`;
+      return `${drill.required} of ${drill.attempts} attempts`;
     case "manual":
       return `${drill.checklist.length} points internalized`;
     case "timed":

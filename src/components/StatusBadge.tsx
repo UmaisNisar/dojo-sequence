@@ -12,10 +12,6 @@ const config: Record<
     label: "Not started",
     className: "border-border text-faint",
   },
-  drilling: {
-    label: "Drilling",
-    className: "border-accent-deep/60 text-accent-bright bg-accent-dim",
-  },
   learned: {
     label: "Learned",
     className: "border-accent/50 text-accent-bright bg-accent-dim",

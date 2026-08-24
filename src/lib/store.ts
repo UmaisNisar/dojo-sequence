@@ -4,7 +4,7 @@ import type {
   PersistedState,
 } from "@/types";
 
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 
 /** Fallback fighter when no selection has been made yet. */
 const DEFAULT_CHARACTER_ID = "kazuya";
@@ -14,12 +14,6 @@ const STORAGE_KEY = "dojo-sequence:state";
 export function emptyDrillProgress(): DrillProgress {
   return {
     status: "not-started",
-    reps: 0,
-    bestStreak: 0,
-    attempts: 0,
-    hits: 0,
-    checked: [],
-    elapsedSeconds: 0,
     lastPracticedAt: null,
     lastReviewedAt: null,
     learnedAt: null,
@@ -46,7 +40,7 @@ function isRecord(v: unknown): v is Record<string, unknown> {
   return typeof v === "object" && v !== null && !Array.isArray(v);
 }
 
-const ITEM_STATUSES = ["not-started", "drilling", "learned"] as const;
+const ITEM_STATUSES = ["not-started", "learned"] as const;
 
 function sanitizeNumber(v: unknown, fallback = 0): number {
   return typeof v === "number" && Number.isFinite(v) && v >= 0 ? v : fallback;
@@ -63,12 +57,6 @@ export function sanitizeDrillProgress(v: unknown): DrillProgress | null {
     : "not-started";
   return {
     status,
-    reps: sanitizeNumber(v.reps),
-    bestStreak: sanitizeNumber(v.bestStreak),
-    attempts: sanitizeNumber(v.attempts),
-    hits: sanitizeNumber(v.hits),
-    checked: Array.isArray(v.checked) ? v.checked.map(Boolean) : [],
-    elapsedSeconds: sanitizeNumber(v.elapsedSeconds),
     lastPracticedAt: sanitizeTimestamp(v.lastPracticedAt),
     lastReviewedAt: sanitizeTimestamp(v.lastReviewedAt),
     learnedAt: sanitizeTimestamp(v.learnedAt),

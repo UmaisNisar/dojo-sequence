@@ -42,7 +42,7 @@ export function ItemDetailView({
   const itemProgress = getItemProgress(progress, item.id);
   const unlocked = isItemUnlocked(character, progress, item.id);
 
-  /* Detect the drilling → learned transition to fire the overlay.
+  /* Detect the not-started → learned transition to fire the overlay.
      Armed only after hydration — otherwise restoring a learned item from
      storage would read as a fresh pass and replay the ceremony on reload.
      Skipped when we are about to navigate straight to the next item, so

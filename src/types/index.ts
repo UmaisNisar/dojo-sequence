@@ -125,23 +125,11 @@ export interface ComingSoonCharacter {
 /* Progress                                                            */
 /* ------------------------------------------------------------------ */
 
-export type ItemStatus = "not-started" | "drilling" | "learned";
+export type ItemStatus = "not-started" | "learned";
 
 export interface DrillProgress {
   status: ItemStatus;
-  /** Current rep count (streak for consecutive, cumulative for total). */
-  reps: number;
-  /** Best streak achieved (consecutive-reps only). */
-  bestStreak: number;
-  /** Attempts made (accuracy drills). */
-  attempts: number;
-  /** Successful attempts (accuracy drills). */
-  hits: number;
-  /** Checklist completion (manual drills). */
-  checked: boolean[];
-  /** Elapsed practice toward a timed drill, in seconds. */
-  elapsedSeconds: number;
-  /** Epoch ms of the last time the drill was interacted with. */
+  /** Epoch ms of the last time the item was practiced. */
   lastPracticedAt: number | null;
   /** Epoch ms of the last retention review after learning. */
   lastReviewedAt: number | null;

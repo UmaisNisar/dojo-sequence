@@ -22,8 +22,9 @@ import type {
   SessionItem,
 } from "@/types";
 import { emptyDrillProgress, emptyState, progressStore } from "@/lib/store";
-import { findItem, isDrillPassed } from "@/lib/progression";
+
 import { characters, getCharacter } from "@/data/characters";
+import { findItem } from "@/lib/progression";
 
 interface ProgressState extends PersistedState {
   hydrated: boolean;
@@ -33,13 +34,6 @@ interface ProgressState extends PersistedState {
 
 type Action =
   | { type: "hydrate"; state: PersistedState; at: number }
-  | { type: "increment"; characterId: string; itemId: string }
-  | { type: "decrement"; characterId: string; itemId: string }
-  | { type: "reset-drill"; characterId: string; itemId: string }
-  | { type: "complete-drill"; characterId: string; itemId: string }
-  | { type: "record-attempt"; characterId: string; itemId: string; hit: boolean }
-  | { type: "toggle-check"; characterId: string; itemId: string; index: number }
-  | { type: "add-time"; characterId: string; itemId: string; seconds: number }
   | { type: "mark-learned"; characterId: string; itemId: string }
   | { type: "mark-reviewed"; characterId: string; itemId: string }
   | { type: "start-session"; characterId: string; items: SessionItem[] }
@@ -73,105 +67,16 @@ function updateItem(
   };
 }
 
-function touch(p: DrillProgress): DrillProgress {
-  return {
-    ...p,
-    status: p.status === "not-started" ? "drilling" : p.status,
-    lastPracticedAt: Date.now(),
-  };
-}
 
 function reducer(state: ProgressState, action: Action): ProgressState {
   switch (action.type) {
     case "hydrate":
       return { ...action.state, hydrated: true, hydratedAt: action.at };
 
-    case "increment":
-      return updateItem(state, action.characterId, action.itemId, (p) => {
-        const reps = p.reps + 1;
-        return touch({ ...p, reps, bestStreak: Math.max(p.bestStreak, reps) });
-      });
-
-    case "decrement":
-      return updateItem(state, action.characterId, action.itemId, (p) =>
-        touch({ ...p, reps: Math.max(0, p.reps - 1) }),
-      );
-
-    case "reset-drill":
-      return updateItem(state, action.characterId, action.itemId, (p) =>
-        touch({
-          ...p,
-          reps: 0,
-          attempts: 0,
-          hits: 0,
-          elapsedSeconds: 0,
-          checked: [],
-          // bestStreak intentionally survives a reset — it records achievement.
-        }),
-      );
-
-    case "complete-drill": {
-      // One-tap fill to the pass condition — equivalent to tapping through
-      // every rep; the reps themselves are self-reported either way.
-      const character = getCharacter(action.characterId);
-      if (!character) return state;
-      const found = findItem(character, action.itemId);
-      if (!found) return state;
-      const drill = found.item.drill;
-      return updateItem(state, action.characterId, action.itemId, (p) => {
-        const next = { ...p };
-        switch (drill.type) {
-          case "consecutive-reps":
-          case "total-reps":
-            next.reps = drill.target;
-            next.bestStreak = Math.max(p.bestStreak, drill.target);
-            break;
-          case "accuracy":
-            next.hits = drill.required;
-            next.attempts = Math.max(p.attempts, drill.required);
-            break;
-          case "manual":
-            next.checked = drill.checklist.map(() => true);
-            break;
-          case "timed":
-            next.elapsedSeconds = drill.durationSeconds;
-            break;
-        }
-        return touch(next);
-      });
-    }
-
-    case "record-attempt":
-      return updateItem(state, action.characterId, action.itemId, (p) =>
-        touch({
-          ...p,
-          attempts: p.attempts + 1,
-          hits: p.hits + (action.hit ? 1 : 0),
-        }),
-      );
-
-    case "toggle-check":
-      return updateItem(state, action.characterId, action.itemId, (p) => {
-        const checked = [...p.checked];
-        checked[action.index] = !checked[action.index];
-        return touch({ ...p, checked });
-      });
-
-    case "add-time":
-      return updateItem(state, action.characterId, action.itemId, (p) =>
-        touch({ ...p, elapsedSeconds: p.elapsedSeconds + action.seconds }),
-      );
-
     case "mark-learned": {
-      // The pass condition is enforced here, not in the UI.
+      // Nothing to validate — the reps happen in Practice mode, not here.
       const character = getCharacter(action.characterId);
-      if (!character) return state;
-      const found = findItem(character, action.itemId);
-      if (!found) return state;
-      const current =
-        state.characters[action.characterId]?.items[action.itemId] ??
-        emptyDrillProgress();
-      if (!isDrillPassed(found.item.drill, current)) return state;
+      if (!character || !findItem(character, action.itemId)) return state;
       return updateItem(state, action.characterId, action.itemId, (p) => ({
         ...p,
         status: "learned",

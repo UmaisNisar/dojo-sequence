@@ -8,7 +8,6 @@ import {
   ArrowRight,
   Check,
   LogOut,
-  RotateCcw,
   SkipForward,
   Trophy,
 } from "lucide-react";
@@ -18,7 +17,6 @@ import {
   findItem,
   getItemProgress,
   getNextItem,
-  isDrillPassed,
 } from "@/lib/progression";
 import { cn, pad2 } from "@/lib/utils";
 import { Notation } from "@/components/Notation";
@@ -73,7 +71,6 @@ export function SessionView() {
   const { sessionItem, item, stage } = current;
   const completedCount = session.items.filter((i) => i.completed || i.skipped).length;
   const progress = getItemProgress(state.characters[character.id], item.id);
-  const passed = isDrillPassed(item.drill, progress);
   const isLast = session.currentIndex >= session.items.length - 1;
 
   const advance = (skipped: boolean) => {
@@ -160,20 +157,7 @@ export function SessionView() {
 
       {/* Session controls — sticky, controller-friendly sizes */}
       <div className="sticky bottom-[76px] mt-6 rounded-xl border border-border bg-surface/95 p-3 backdrop-blur-md md:bottom-6">
-        <div className="grid grid-cols-3 gap-2">
-          <button
-            type="button"
-            onClick={() => {
-              dispatch({
-                type: "reset-drill",
-                characterId: character.id,
-                itemId: item.id,
-              });
-            }}
-            className="flex min-h-[52px] items-center justify-center gap-2 rounded-lg border border-border text-xs font-semibold uppercase tracking-wider text-muted transition-colors hover:border-border-strong hover:text-fg"
-          >
-            <RotateCcw className="size-4" aria-hidden /> Repeat
-          </button>
+        <div className="grid grid-cols-2 gap-2">
           <button
             type="button"
             onClick={() => advance(true)}
@@ -190,11 +174,6 @@ export function SessionView() {
             {isLast ? "Finish" : "Next"} <ArrowRight className="size-4" aria-hidden />
           </motion.button>
         </div>
-        {sessionItem.kind === "learn" && !passed && progress.status !== "learned" && (
-          <p className="mt-2 text-center text-[11px] text-faint">
-            Pass the drill before moving on — or skip if it needs more lab time.
-          </p>
-        )}
         <button
           type="button"
           onClick={exit}
