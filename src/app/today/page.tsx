@@ -1,11 +1,6 @@
-import type { Metadata } from "next";
-import { TodayView } from "@/components/views/TodayView";
+import { redirect } from "next/navigation";
 
-export const metadata: Metadata = {
-  title: "Today",
-  description: "What you should practice right now.",
-};
-
+/** Today merged into the curriculum page — keep old links working. */
 export default function TodayPage() {
-  return <TodayView />;
+  redirect("/training");
 }

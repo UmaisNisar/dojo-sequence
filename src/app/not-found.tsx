@@ -12,10 +12,10 @@ export default function NotFound() {
         looking for hasn&apos;t been added yet.
       </p>
       <Link
-        href="/today"
+        href="/training"
         className="mt-6 inline-block rounded-lg bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-accent-bright"
       >
-        Back to Today
+        Back to Training
       </Link>
     </div>
   );

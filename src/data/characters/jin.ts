@@ -60,7 +60,6 @@ export const jin: Character = {
           },
           difficulty: "easy",
           tags: ["fundamental"],
-          rhythmTool: true,
         },
         {
           id: "backdash",
@@ -80,7 +79,6 @@ export const jin: Character = {
           },
           difficulty: "easy",
           tags: ["fundamental"],
-          rhythmTool: true,
         },
         {
           id: "kbd",
@@ -100,7 +98,6 @@ export const jin: Character = {
           },
           difficulty: "hard",
           tags: ["fundamental", "execution"],
-          rhythmTool: true,
         },
         {
           id: "crouch-dash",
@@ -120,7 +117,6 @@ export const jin: Character = {
           },
           difficulty: "medium",
           tags: ["mishima", "execution", "core"],
-          rhythmTool: true,
           moveKeys: ["whf", "tu", "cd-df4-2"],
         },
         {
@@ -141,7 +137,6 @@ export const jin: Character = {
           },
           difficulty: "hard",
           tags: ["mishima", "execution"],
-          rhythmTool: true,
         },
         {
           id: "zenshin",
@@ -629,7 +624,6 @@ export const jin: Character = {
           difficulty: "expert",
           tags: ["just frame", "signature", "execution"],
           moveKeys: ["ewhf", "whf"],
-          rhythmTool: true,
         },
         {
           id: "ewhf-consistency",
@@ -651,7 +645,6 @@ export const jin: Character = {
           difficulty: "expert",
           tags: ["just frame", "consistency"],
           moveKeys: ["ewhf"],
-          rhythmTool: true,
         },
         {
           id: "ewhf-punish",
@@ -673,7 +666,6 @@ export const jin: Character = {
           difficulty: "expert",
           tags: ["just frame", "punisher", "launcher"],
           moveKeys: ["ewhf", "df1-4"],
-          rhythmTool: true,
         },
         {
           id: "ewhf-neutral",

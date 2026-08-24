@@ -82,8 +82,6 @@ export interface TrainingItem {
   difficulty?: ItemDifficulty;
   /** Small metadata tags shown in the UI, e.g. ["14f", "mid", "launcher"]. */
   tags?: string[];
-  /** Show the visual rhythm trainer on this item's detail page. */
-  rhythmTool?: boolean;
   /** Keys into the character's frame-data table — renders a frame panel. */
   moveKeys?: string[];
   /** Frame data or facts that could not be fully verified. */

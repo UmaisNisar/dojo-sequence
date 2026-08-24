@@ -52,7 +52,6 @@ export const lars: Character = {
           },
           difficulty: "easy",
           tags: ["fundamental"],
-          rhythmTool: true,
         },
         {
           id: "backdash",
@@ -72,7 +71,6 @@ export const lars: Character = {
           },
           difficulty: "easy",
           tags: ["fundamental"],
-          rhythmTool: true,
         },
         {
           id: "kbd",
@@ -92,7 +90,6 @@ export const lars: Character = {
           },
           difficulty: "hard",
           tags: ["execution", "defense"],
-          rhythmTool: true,
         },
         {
           id: "sidestep-movement",
@@ -151,7 +148,6 @@ export const lars: Character = {
           },
           difficulty: "expert",
           tags: ["execution", "advanced", "approach"],
-          rhythmTool: true,
         },
       ],
     },

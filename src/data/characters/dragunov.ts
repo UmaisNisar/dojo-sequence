@@ -63,7 +63,6 @@ export const dragunov: Character = {
           },
           difficulty: "easy",
           tags: ["fundamental", "approach"],
-          rhythmTool: true,
         },
         {
           id: "backdash",
@@ -83,7 +82,6 @@ export const dragunov: Character = {
           },
           difficulty: "easy",
           tags: ["fundamental", "whiff punish"],
-          rhythmTool: true,
         },
         {
           id: "kbd",
@@ -103,7 +101,6 @@ export const dragunov: Character = {
           },
           difficulty: "hard",
           tags: ["fundamental", "execution", "defense"],
-          rhythmTool: true,
         },
         {
           id: "sneak-stance",
@@ -145,7 +142,6 @@ export const dragunov: Character = {
           difficulty: "hard",
           tags: ["execution", "signature", "pressure"],
           moveKeys: ["wr2"],
-          rhythmTool: true,
         },
         {
           id: "pigeon-roll",

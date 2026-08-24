@@ -2,11 +2,13 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { motion } from "motion/react";
 import { ArrowLeft, ArrowRight, Gamepad2, Lock } from "lucide-react";
 import type { Character, Stage, TrainingItem } from "@/types";
 import { useProgress } from "@/hooks/use-progress";
 import {
+  allItems,
   drillTargetLabel,
   findItem,
   getItemProgress,
@@ -18,7 +20,6 @@ import { pad2 } from "@/lib/utils";
 import { FrameDataPanel } from "@/components/FrameDataPanel";
 import { Notation } from "@/components/Notation";
 import { NotationPlayer } from "@/components/NotationPlayer";
-import { RhythmTrainer } from "@/components/RhythmTrainer";
 import { StatusBadge } from "@/components/StatusBadge";
 import { DrillPanel } from "@/components/DrillPanel";
 import {
@@ -36,21 +37,26 @@ export function ItemDetailView({
   item: TrainingItem;
 }) {
   const { state } = useProgress();
+  const router = useRouter();
   const progress = state.characters[character.id];
   const itemProgress = getItemProgress(progress, item.id);
   const unlocked = isItemUnlocked(character, progress, item.id);
 
   /* Detect the drilling → learned transition to fire the overlay.
      Armed only after hydration — otherwise restoring a learned item from
-     storage would read as a fresh pass and replay the ceremony on reload. */
+     storage would read as a fresh pass and replay the ceremony on reload.
+     Skipped when we are about to navigate straight to the next item, so
+     completing does not flash a ceremony on a page that is unmounting. */
   const [celebrate, setCelebrate] = useState(false);
+  const skipCelebration = useRef(false);
   const prevStatus = useRef<typeof itemProgress.status | null>(null);
   useEffect(() => {
     if (!state.hydrated) return;
     if (
       prevStatus.current !== null &&
       prevStatus.current !== "learned" &&
-      itemProgress.status === "learned"
+      itemProgress.status === "learned" &&
+      !skipCelebration.current
     ) {
       setCelebrate(true);
     }
@@ -81,6 +87,38 @@ export function ItemDetailView({
   const nextHref = nextItem
     ? `/training/${character.id}/stage/${findItem(character, nextItem.id)?.stage.number ?? stage.number}/item/${nextItem.id}`
     : null;
+
+  /* Finishing this item would clear the whole stage — that milestone gets the
+     overlay (which carries its own next-stage link) instead of a silent jump. */
+  const finishesStage = useMemo(
+    () =>
+      itemProgress.status !== "learned" &&
+      stage.items.every(
+        (i) =>
+          i.id === item.id ||
+          getItemProgress(progress, i.id).status === "learned",
+      ),
+    [stage, item.id, progress, itemProgress.status],
+  );
+
+  /* Where "next" goes when you finish this item. Deliberately positional
+     rather than getNextItem(), which returns the next UNLEARNED item — while
+     you are training this one, that is this one. */
+  const nextInOrder = useMemo(() => {
+    const items = allItems(character);
+    const idx = items.findIndex((i) => i.id === item.id);
+    return idx >= 0 ? (items[idx + 1] ?? null) : null;
+  }, [character, item.id]);
+
+  const nextInOrderHref = nextInOrder
+    ? `/training/${character.id}/stage/${findItem(character, nextInOrder.id)?.stage.number ?? stage.number}/item/${nextInOrder.id}`
+    : null;
+
+  const advance = () => {
+    if (!nextInOrderHref) return;
+    skipCelebration.current = true;
+    router.push(nextInOrderHref);
+  };
 
   if (state.hydrated && !unlocked) {
     return <LockedView character={character} stage={stage} item={item} />;
@@ -162,11 +200,16 @@ export function ItemDetailView({
         </p>
       )}
 
-      <DrillPanel character={character} item={item} />
+      <DrillPanel
+        character={character}
+        item={item}
+        onAdvance={nextInOrder && !finishesStage ? advance : undefined}
+        advanceLabel={nextInOrder ? `Next: ${nextInOrder.name}` : undefined}
+      />
 
-      {item.rhythmTool && <RhythmTrainer />}
-
-      {itemProgress.status === "learned" && nextHref && nextItem && (
+      {/* Fallback link for the stage-clearing case, where the drill panel
+          hands off to the completion overlay instead of a Next button. */}
+      {itemProgress.status === "learned" && finishesStage && nextHref && nextItem && (
         <div className="mt-6">
           <Link
             href={nextHref}
@@ -246,7 +289,7 @@ function LockedView({
           View stages
         </Link>
         <Link
-          href="/today"
+          href="/training"
           className="rounded-lg bg-accent px-5 py-3 text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-accent-bright"
         >
           Go to next item

@@ -65,7 +65,6 @@ export const king: Character = {
           },
           difficulty: "easy",
           tags: ["fundamental", "approach"],
-          rhythmTool: true,
         },
         {
           id: "backdash",
@@ -85,7 +84,6 @@ export const king: Character = {
           },
           difficulty: "easy",
           tags: ["fundamental", "whiff punish"],
-          rhythmTool: true,
         },
         {
           id: "kbd",
@@ -105,7 +103,6 @@ export const king: Character = {
           },
           difficulty: "hard",
           tags: ["fundamental", "execution"],
-          rhythmTool: true,
         },
         {
           id: "running-game",
@@ -361,7 +358,6 @@ export const king: Character = {
           difficulty: "medium",
           tags: ["throw", "signature", "core"],
           moveKeys: ["giant-swing"],
-          rhythmTool: true,
         },
         {
           id: "tomahawk",
@@ -382,7 +378,6 @@ export const king: Character = {
           difficulty: "medium",
           tags: ["throw", "signature", "core"],
           moveKeys: ["tomahawk"],
-          rhythmTool: true,
         },
         {
           id: "the-mixup",
@@ -425,7 +420,6 @@ export const king: Character = {
           difficulty: "hard",
           tags: ["throw", "execution", "damage"],
           moveKeys: ["giant-swing", "tomahawk", "tijuana"],
-          rhythmTool: true,
         },
         {
           id: "crouch-throws",

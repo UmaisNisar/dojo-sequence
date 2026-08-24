@@ -51,7 +51,6 @@ export const kazuya: Character = {
           },
           difficulty: "easy",
           tags: ["fundamental"],
-          rhythmTool: true,
         },
         {
           id: "backdash",
@@ -71,7 +70,6 @@ export const kazuya: Character = {
           },
           difficulty: "easy",
           tags: ["fundamental"],
-          rhythmTool: true,
         },
         {
           id: "kbd-cancel",
@@ -91,7 +89,6 @@ export const kazuya: Character = {
           },
           difficulty: "medium",
           tags: ["execution"],
-          rhythmTool: true,
         },
         {
           id: "kbd-consistency",
@@ -111,7 +108,6 @@ export const kazuya: Character = {
           },
           difficulty: "hard",
           tags: ["execution", "defense"],
-          rhythmTool: true,
         },
         {
           id: "crouch-dash",
@@ -131,7 +127,6 @@ export const kazuya: Character = {
           },
           difficulty: "medium",
           tags: ["execution", "mishima"],
-          rhythmTool: true,
         },
         {
           id: "wavedash",
@@ -151,7 +146,6 @@ export const kazuya: Character = {
           },
           difficulty: "hard",
           tags: ["execution", "mishima", "pressure"],
-          rhythmTool: true,
         },
       ],
     },
@@ -359,7 +353,6 @@ export const kazuya: Character = {
           },
           difficulty: "hard",
           tags: ["just frame", "execution"],
-          rhythmTool: true,
           moveKeys: ["ewgf"],
         },
         {
@@ -784,7 +777,6 @@ export const kazuya: Character = {
           },
           difficulty: "hard",
           tags: ["pressure", "mishima"],
-          rhythmTool: true,
         },
         {
           id: "conditioning",

@@ -2,22 +2,28 @@
 
 import { useMemo } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { motion } from "motion/react";
-import { RefreshCw, Timer } from "lucide-react";
+import { ArrowRight, Play, RefreshCw, RotateCcw, Timer, Trophy } from "lucide-react";
 import type { Character, TrainingItem } from "@/types";
 import { useProgress } from "@/hooks/use-progress";
 import {
   allItems,
+  buildSessionItems,
+  buildTodayPlan,
   findItem,
   getItemProgress,
+  getNextItem,
   summarizeCharacter,
 } from "@/lib/progression";
+import { Notation } from "@/components/Notation";
 import { formatRelativeTime, pad2 } from "@/lib/utils";
 import { CharacterHeader } from "@/components/CharacterHeader";
 import { StageCard } from "@/components/StageCard";
 
 export function CharacterView({ character }: { character: Character }) {
-  const { state } = useProgress();
+  const { state, dispatch } = useProgress();
+  const router = useRouter();
   const progress = state.characters[character.id];
   const now = state.hydratedAt;
   const summary = useMemo(
@@ -56,6 +62,31 @@ export function CharacterView({ character }: { character: Character }) {
 
   const quizStats = state.quizStats[character.id];
 
+  /* The curriculum screen is now the home screen, so it owns what Today
+     used to: where you are, and the one button that resumes training. */
+  const nextItem = useMemo(
+    () => getNextItem(character, progress),
+    [character, progress],
+  );
+  const nextHref = nextItem
+    ? `/training/${character.id}/stage/${findItem(character, nextItem.id)?.stage.number ?? 1}/item/${nextItem.id}`
+    : null;
+
+  const plan = useMemo(
+    () => buildTodayPlan(character, progress, now),
+    [character, progress, now],
+  );
+  const hasSession = state.activeSession !== null;
+
+  const startSession = () => {
+    dispatch({
+      type: "start-session",
+      characterId: character.id,
+      items: buildSessionItems(plan),
+    });
+    router.push("/session");
+  };
+
   return (
     <div>
       <CharacterHeader
@@ -64,6 +95,66 @@ export function CharacterView({ character }: { character: Character }) {
         lastPracticedAt={lastPractice}
         now={now}
       />
+
+      {nextItem && nextHref ? (
+        <section aria-labelledby="continue-heading" className="mb-8">
+          <h2 id="continue-heading" className="microlabel mb-3">
+            Next up
+          </h2>
+          <Link
+            href={nextHref}
+            className="group flex items-center gap-4 rounded-xl border border-accent/50 bg-accent-dim p-4 transition-colors hover:border-accent sm:p-5"
+          >
+            <div className="min-w-0 flex-1">
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+                <span className="text-base font-semibold">{nextItem.name}</span>
+                {nextItem.notation && nextItem.notation !== "—" && (
+                  <Notation value={nextItem.notation} size="sm" />
+                )}
+              </div>
+              <p className="mt-1 text-xs text-muted">
+                Stage {pad2(findItem(character, nextItem.id)?.stage.number ?? 1)} ·{" "}
+                {findItem(character, nextItem.id)?.stage.name}
+              </p>
+            </div>
+            <ArrowRight
+              className="size-4 shrink-0 text-accent-bright transition-transform group-hover:translate-x-0.5"
+              aria-hidden
+            />
+          </Link>
+
+          {(plan.nextUp.length > 0 || plan.retention.length > 0) && (
+            <button
+              type="button"
+              onClick={startSession}
+              className="mt-2 flex w-full items-center justify-center gap-2 rounded-xl border border-border bg-surface px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.15em] text-muted transition-colors hover:border-border-strong hover:text-fg"
+            >
+              {hasSession ? (
+                <>
+                  <RotateCcw className="size-3.5" aria-hidden /> Resume session
+                </>
+              ) : (
+                <>
+                  <Play className="size-3.5" aria-hidden /> Start a session
+                </>
+              )}
+            </button>
+          )}
+        </section>
+      ) : (
+        state.hydrated && (
+          <div className="mb-8 rounded-xl border border-accent/40 bg-accent-dim p-6 text-center">
+            <Trophy className="mx-auto size-7 text-accent-bright" aria-hidden />
+            <h2 className="mt-3 text-lg font-bold uppercase tracking-tight">
+              Curriculum complete
+            </h2>
+            <p className="mx-auto mt-1.5 max-w-sm text-xs text-muted">
+              Every item is learned. Keep the retention list below alive —
+              mastery is maintenance.
+            </p>
+          </div>
+        )
+      )}
 
       <ol className="flex flex-col gap-2">
         {summary.stages.map((s, index) => (

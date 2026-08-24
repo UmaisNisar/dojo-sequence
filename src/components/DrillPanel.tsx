@@ -3,8 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import {
+  ArrowRight,
   Check,
-  CheckCheck,
   Minus,
   Pause,
   Play,
@@ -30,9 +30,14 @@ import { ProgressBar } from "./ProgressBar";
 export function DrillPanel({
   character,
   item,
+  onAdvance,
+  advanceLabel,
 }: {
   character: Character;
   item: TrainingItem;
+  /** Called once the item is learned — moves on to the next thing to train. */
+  onAdvance?: () => void;
+  advanceLabel?: string;
 }) {
   const { state, dispatch } = useProgress();
   const progress = getItemProgress(state.characters[character.id], item.id);
@@ -42,6 +47,16 @@ export function DrillPanel({
 
   const act = (type: "increment" | "decrement" | "reset-drill" | "complete-drill") =>
     dispatch({ type, characterId: character.id, itemId: item.id });
+
+  /* One button finishes the item regardless of drill type: fill the drill to
+     its pass condition if it is not already there, mark it learned, and move
+     on. The reducer re-validates the pass condition, so filling first is what
+     makes `mark-learned` stick. */
+  const completeAndAdvance = () => {
+    if (!passed) act("complete-drill");
+    dispatch({ type: "mark-learned", characterId: character.id, itemId: item.id });
+    onAdvance?.();
+  };
 
   return (
     <section aria-label="Drill" className="rounded-xl border border-border bg-surface p-5 sm:p-6">
@@ -69,7 +84,6 @@ export function DrillPanel({
           onIncrement={() => act("increment")}
           onDecrement={() => act("decrement")}
           onReset={() => act("reset-drill")}
-          onComplete={() => act("complete-drill")}
         />
       )}
 
@@ -131,33 +145,35 @@ export function DrillPanel({
         />
       </div>
 
-      {/* Pass state + mark learned. The reducer re-validates the pass
-          condition — this button is a request, not the authority. */}
+      {/* Finish the item. Always available on every drill type — the drill
+          controls above are for tracking, this is the way forward. */}
       <div aria-live="polite" className="mt-4">
         {learned ? (
-          <div className="flex items-center justify-center gap-2 rounded-lg border border-accent/40 bg-accent-dim px-4 py-3.5 text-sm font-semibold uppercase tracking-[0.15em] text-accent-bright">
-            <Check className="size-4" aria-hidden /> Learned
+          <div className="flex flex-col gap-2">
+            <div className="flex items-center justify-center gap-2 rounded-lg border border-accent/40 bg-accent-dim px-4 py-3.5 text-sm font-semibold uppercase tracking-[0.15em] text-accent-bright">
+              <Check className="size-4" aria-hidden /> Learned
+            </div>
+            {onAdvance && (
+              <motion.button
+                type="button"
+                onClick={onAdvance}
+                whileTap={{ scale: 0.98 }}
+                className="flex w-full items-center justify-center gap-2 rounded-lg bg-accent px-4 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-accent-bright"
+              >
+                {advanceLabel ?? "Next"}
+                <ArrowRight className="size-4" aria-hidden />
+              </motion.button>
+            )}
           </div>
         ) : (
           <motion.button
             type="button"
-            disabled={!passed}
-            onClick={() =>
-              dispatch({
-                type: "mark-learned",
-                characterId: character.id,
-                itemId: item.id,
-              })
-            }
-            whileTap={passed ? { scale: 0.98 } : undefined}
-            className={cn(
-              "w-full rounded-lg px-4 py-4 text-sm font-semibold uppercase tracking-[0.15em] transition-colors",
-              passed
-                ? "bg-accent text-white hover:bg-accent-bright"
-                : "cursor-not-allowed border border-border bg-surface-2 text-faint",
-            )}
+            onClick={completeAndAdvance}
+            whileTap={{ scale: 0.98 }}
+            className="flex w-full items-center justify-center gap-2 rounded-lg bg-accent px-4 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-accent-bright"
           >
-            {passed ? "Mark learned" : "Pass the drill to unlock"}
+            {passed ? "Mark learned" : "Complete"}
+            <ArrowRight className="size-4" aria-hidden />
           </motion.button>
         )}
       </div>
@@ -178,7 +194,6 @@ function RepCounter({
   onIncrement,
   onDecrement,
   onReset,
-  onComplete,
 }: {
   drill: Extract<Drill, { type: "consecutive-reps" | "total-reps" }>;
   reps: number;
@@ -187,7 +202,6 @@ function RepCounter({
   onIncrement: () => void;
   onDecrement: () => void;
   onReset: () => void;
-  onComplete: () => void;
 }) {
   // Each increment fires a spark burst; passing fires the big flash.
   const [burst, setBurst] = useState(0);
@@ -254,15 +268,6 @@ function RepCounter({
           <RotateCcw className="size-3.5" aria-hidden /> Reset
           {drill.type === "consecutive-reps" ? " streak" : ""}
         </button>
-        {!passed && (
-          <button
-            type="button"
-            onClick={onComplete}
-            className="flex min-h-[44px] items-center gap-2 rounded-lg border border-accent/40 px-4 text-xs font-semibold uppercase tracking-[0.15em] text-accent-bright transition-colors hover:border-accent hover:bg-accent-dim"
-          >
-            <CheckCheck className="size-3.5" aria-hidden /> Complete
-          </button>
-        )}
       </div>
     </div>
   );

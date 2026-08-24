@@ -24,7 +24,6 @@ import { cn, pad2 } from "@/lib/utils";
 import { Notation } from "@/components/Notation";
 import { ProgressBar } from "@/components/ProgressBar";
 import { DrillPanel } from "@/components/DrillPanel";
-import { RhythmTrainer } from "@/components/RhythmTrainer";
 import { StatusBadge } from "@/components/StatusBadge";
 
 export function SessionView() {
@@ -58,14 +57,14 @@ export function SessionView() {
           No active session
         </h1>
         <p className="mx-auto mt-3 max-w-sm text-sm text-muted">
-          Start today&apos;s session from the Today screen — it lines up your
+          Start a session from the curriculum screen — it lines up your
           next items and a couple of retention reps.
         </p>
         <Link
-          href="/today"
+          href="/training"
           className="mt-6 inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-accent-bright"
         >
-          Go to Today <ArrowRight className="size-4" aria-hidden />
+          Go to Training <ArrowRight className="size-4" aria-hidden />
         </Link>
       </div>
     );
@@ -85,13 +84,13 @@ export function SessionView() {
         itemId: item.id,
       });
     }
-    // Finishing the last item lands on the results screen, not /today.
+    // Finishing the last item lands on the results screen, not the curriculum.
     dispatch({ type: "advance-session", skipped });
   };
 
   const exit = () => {
     dispatch({ type: "exit-session" });
-    router.push("/today");
+    router.push("/training");
   };
 
   return (
@@ -99,7 +98,7 @@ export function SessionView() {
       <header className="mb-6">
         <div className="flex items-center justify-between gap-4">
           <p className="microlabel">
-            Today&apos;s session · {character.name}
+            Session · {character.name}
           </p>
           <p className="tnum text-sm font-semibold">
             {Math.min(completedCount + 1, session.items.length)} /{" "}
@@ -150,9 +149,12 @@ export function SessionView() {
             </p>
           </div>
 
-          <DrillPanel character={character} item={item} />
-
-          {item.rhythmTool && <RhythmTrainer />}
+          <DrillPanel
+            character={character}
+            item={item}
+            onAdvance={() => advance(false)}
+            advanceLabel="Next in session"
+          />
         </motion.div>
       </AnimatePresence>
 
@@ -313,10 +315,10 @@ function SessionResults() {
         )}
         <button
           type="button"
-          onClick={() => dismissTo("/today")}
+          onClick={() => dismissTo("/training")}
           className="flex min-h-[48px] items-center justify-center rounded-xl border border-border px-6 text-sm font-medium text-muted transition-colors hover:border-border-strong hover:text-fg"
         >
-          Back to Today
+          Back to Training
         </button>
       </div>
     </motion.div>

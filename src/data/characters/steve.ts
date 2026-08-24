@@ -65,7 +65,6 @@ export const steve: Character = {
           },
           difficulty: "easy",
           tags: ["fundamental", "approach"],
-          rhythmTool: true,
         },
         {
           id: "backdash",
@@ -85,7 +84,6 @@ export const steve: Character = {
           },
           difficulty: "easy",
           tags: ["fundamental", "whiff punish"],
-          rhythmTool: true,
         },
         {
           id: "kbd",
@@ -104,7 +102,6 @@ export const steve: Character = {
           },
           difficulty: "hard",
           tags: ["fundamental", "execution"],
-          rhythmTool: true,
         },
         {
           id: "no-kicks",
@@ -340,7 +337,6 @@ export const steve: Character = {
           difficulty: "medium",
           tags: ["i13", "CH launcher", "signature", "core"],
           moveKeys: ["b1", "b1-2"],
-          rhythmTool: true,
         },
         {
           id: "swindler",
@@ -750,7 +746,6 @@ export const steve: Character = {
           difficulty: "expert",
           tags: ["execution", "signature", "stance"],
           moveKeys: ["dck1", "ws1"],
-          rhythmTool: true,
         },
       ],
     },

@@ -58,7 +58,6 @@ export const bryan: Character = {
           },
           difficulty: "easy",
           tags: ["fundamental"],
-          rhythmTool: true,
         },
         {
           id: "backdash",
@@ -78,7 +77,6 @@ export const bryan: Character = {
           },
           difficulty: "easy",
           tags: ["fundamental"],
-          rhythmTool: true,
         },
         {
           id: "sway-problem",
@@ -123,7 +121,6 @@ export const bryan: Character = {
           },
           difficulty: "hard",
           tags: ["fundamental", "execution"],
-          rhythmTool: true,
         },
         {
           id: "slither-step",
@@ -533,7 +530,6 @@ export const bryan: Character = {
           difficulty: "hard",
           tags: ["i14", "launcher", "signature", "execution"],
           moveKeys: ["jet-upper"],
-          rhythmTool: true,
         },
         {
           id: "punish-15-plus",
@@ -936,7 +932,6 @@ export const bryan: Character = {
           difficulty: "expert",
           tags: ["signature", "unblockable", "execution"],
           moveKeys: ["taunt", "jet-upper"],
-          rhythmTool: true,
         },
         {
           id: "sne-arsenal",

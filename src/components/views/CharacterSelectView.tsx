@@ -126,7 +126,7 @@ export function CharacterSelectView() {
     setSelectedId(tile.id);
     dispatch({ type: "set-active-character", characterId: tile.id });
     // Let the select flash play before entering the dojo.
-    window.setTimeout(() => router.push("/today"), 450);
+    window.setTimeout(() => router.push("/training"), 450);
   };
 
   return (
