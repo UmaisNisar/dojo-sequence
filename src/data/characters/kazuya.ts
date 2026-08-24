@@ -21,6 +21,7 @@ export const kazuya: Character = {
   tagline:
     "Precise movement, lethal counter-hits, and the scariest 50/50 in the game — earned one skill at a time.",
   available: true,
+  accent: { base: "#a855f7", bright: "#d8b4fe", deep: "#7e22ce" },
   electric: true,
   stages: [
     /* ------------------------------------------------------------ */

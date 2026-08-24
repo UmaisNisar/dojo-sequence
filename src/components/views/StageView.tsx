@@ -11,7 +11,6 @@ import {
   isItemUnlocked,
 } from "@/lib/progression";
 import { pad2 } from "@/lib/utils";
-import { ProgressBar } from "@/components/ProgressBar";
 import { TrainingItemRow } from "@/components/TrainingItemRow";
 
 export function StageView({
@@ -24,6 +23,7 @@ export function StageView({
   const { state } = useProgress();
   const progress = state.characters[character.id];
   const status = getStageStatus(character, progress, stage.id);
+  const totalStages = character.stages.length;
   const learnedCount = stage.items.filter(
     (i) => getItemProgress(progress, i.id).status === "learned",
   ).length;
@@ -44,7 +44,7 @@ export function StageView({
         </p>
         <Link
           href={`/training/${character.id}`}
-          className="mt-6 inline-block rounded-lg bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-accent-bright"
+          className="mt-6 inline-block clip-row bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-wider text-bg transition-colors hover:bg-accent-bright"
         >
           Back to stages
         </Link>
@@ -65,28 +65,50 @@ export function StageView({
       </nav>
 
       <motion.header
-        initial={{ opacity: 0, y: 8 }}
+        initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3, ease: "easeOut" }}
+        transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
         className="mb-8"
       >
-        <p className="microlabel">Stage {pad2(stage.number)}</p>
-        <h1 className="mt-1 text-4xl font-bold uppercase leading-[1.05] tracking-tight sm:text-5xl">
+        <div className="flex items-center gap-3">
+          <span className="clip-slant bg-accent px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-bg">
+            Stage {pad2(stage.number)}
+          </span>
+          <span className="h-px flex-1 bg-border-strong" aria-hidden />
+          <span className="tnum font-mono text-[10px] font-bold tracking-[0.2em] text-faint">
+            {pad2(stage.number)} / {pad2(totalStages)}
+          </span>
+        </div>
+
+        <h1 className="display-title mt-3 text-5xl uppercase leading-[0.92] sm:text-[4.25rem]">
           {stage.name}
         </h1>
-        <p className="mt-3 text-sm leading-relaxed text-muted">
+
+        <p className="mt-4 text-sm leading-relaxed text-muted">
           {stage.description}
         </p>
-        <div className="mt-5 flex items-center gap-4">
-          <ProgressBar
-            fraction={stage.items.length ? learnedCount / stage.items.length : 0}
-            className="max-w-[12rem]"
-            height={6}
-            label={`${stage.name} progress`}
-          />
-          <p className="tnum text-sm font-semibold">
-            {learnedCount} / {stage.items.length}{" "}
-            <span className="font-medium text-muted">learned</span>
+
+        {/* Segmented meter — a health bar, not a progress bar. */}
+        <div className="mt-6 flex items-center gap-4">
+          <div
+            className="h-2.5 flex-1 overflow-hidden border border-border-strong bg-surface"
+            role="img"
+            aria-label={`${stage.name} progress: ${learnedCount} of ${stage.items.length}`}
+          >
+            <div
+              className="meter-seg h-full text-accent transition-[width] duration-500"
+              style={{
+                width: `${stage.items.length ? (learnedCount / stage.items.length) * 100 : 0}%`,
+                ["--seg" as string]: "10px",
+              }}
+            />
+          </div>
+          <p className="tnum shrink-0 font-mono text-xs font-bold tracking-wider">
+            <span className="text-accent-bright">{pad2(learnedCount)}</span>
+            <span className="text-faint"> / {pad2(stage.items.length)}</span>
+            <span className="ml-2 font-sans text-[10px] uppercase tracking-[0.18em] text-muted">
+              learned
+            </span>
           </p>
         </div>
       </motion.header>
@@ -94,9 +116,9 @@ export function StageView({
       {stage.id === "punishment" && character.punishQuiz && (
         <Link
           href={`/training/${character.id}/quiz`}
-          className="group mb-4 flex items-center gap-4 rounded-xl border border-accent/40 bg-accent-dim p-4 transition-colors hover:border-accent sm:p-5"
+          className="group mb-4 flex items-center gap-4 clip-panel border border-accent/40 bg-accent-dim p-4 transition-colors hover:border-accent sm:p-5"
         >
-          <span className="flex size-11 shrink-0 items-center justify-center rounded-lg border border-accent/50 text-accent-bright">
+          <span className="flex size-11 shrink-0 items-center justify-center clip-row border border-accent/50 text-accent-bright">
             <Timer className="size-5" aria-hidden />
           </span>
           <div className="min-w-0 flex-1">

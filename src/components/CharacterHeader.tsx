@@ -27,14 +27,14 @@ export function CharacterHeader({
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="microlabel">{character.style}</p>
-          <h1 className="mt-1 text-4xl font-bold uppercase tracking-tight sm:text-5xl">
+          <h1 className="display-title mt-1 text-4xl uppercase tracking-tight sm:text-5xl">
             {character.name}
           </h1>
         </div>
         {characters.length > 1 && (
           <Link
             href="/characters"
-            className="mt-1 inline-flex min-h-[40px] shrink-0 items-center gap-1.5 rounded-lg border border-border px-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-muted transition-colors hover:border-border-strong hover:text-fg"
+            className="mt-1 inline-flex min-h-[40px] shrink-0 items-center gap-1.5 clip-row border border-border px-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-muted transition-colors hover:border-border-strong hover:text-fg"
           >
             <Repeat className="size-3.5" aria-hidden /> Switch
           </Link>

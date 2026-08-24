@@ -89,7 +89,7 @@ export function NotationPlayer({ notation }: { notation: string }) {
             }}
             transition={{ type: "spring", stiffness: 600, damping: 26 }}
             className={cn(
-              "flex h-9 min-w-9 items-center justify-center gap-1 rounded-md border px-1.5 transition-colors",
+              "flex h-9 min-w-9 items-center justify-center gap-1 clip-row border px-1.5 transition-colors",
               isActive
                 ? "border-accent bg-accent-dim text-accent-bright"
                 : "border-border bg-surface-2 text-muted",

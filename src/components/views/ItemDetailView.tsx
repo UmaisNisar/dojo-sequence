@@ -152,7 +152,7 @@ export function ItemDetailView({
             <span className="microlabel text-faint">{item.difficulty}</span>
           )}
         </div>
-        <h1 className="mt-2 text-4xl font-bold uppercase tracking-tight sm:text-5xl">
+        <h1 className="display-title mt-2 text-4xl uppercase tracking-tight sm:text-5xl">
           {item.name}
         </h1>
         {item.notation && item.notation !== "—" && (
@@ -194,7 +194,7 @@ export function ItemDetailView({
       )}
 
       {item.verifyInGame && (
-        <p className="mb-6 rounded-lg border border-border bg-surface-2 p-3 text-xs text-muted">
+        <p className="mb-6 clip-row border border-border bg-surface-2 p-3 text-xs text-muted">
           <span className="font-semibold text-fg">Verify in game:</span>{" "}
           {item.verifyInGame}
         </p>
@@ -213,7 +213,7 @@ export function ItemDetailView({
         <div className="mt-6">
           <Link
             href={nextHref}
-            className="group flex items-center justify-between gap-4 rounded-xl border border-border bg-surface p-4 transition-colors hover:border-border-strong sm:p-5"
+            className="group flex items-center justify-between gap-4 clip-panel border border-border bg-surface p-4 transition-colors hover:border-border-strong sm:p-5"
           >
             <div>
               <p className="microlabel">Next in curriculum</p>
@@ -250,7 +250,7 @@ function InfoSection({
   icon?: React.ReactNode;
 }) {
   return (
-    <section className="rounded-xl border border-border bg-surface p-5">
+    <section className="clip-panel border border-border bg-surface p-5">
       <h2 className="microlabel flex items-center gap-1.5">
         {icon}
         {title}
@@ -284,13 +284,13 @@ function LockedView({
       <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
         <Link
           href={`/training/${character.id}`}
-          className="rounded-lg border border-border px-5 py-3 text-sm font-medium text-muted transition-colors hover:border-border-strong hover:text-fg"
+          className="clip-row border border-border px-5 py-3 text-sm font-medium text-muted transition-colors hover:border-border-strong hover:text-fg"
         >
           View stages
         </Link>
         <Link
           href="/training"
-          className="rounded-lg bg-accent px-5 py-3 text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-accent-bright"
+          className="clip-row bg-accent px-5 py-3 text-sm font-semibold uppercase tracking-wider text-bg transition-colors hover:bg-accent-bright"
         >
           Go to next item
         </Link>

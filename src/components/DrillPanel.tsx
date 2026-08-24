@@ -38,7 +38,7 @@ export function DrillPanel({
   return (
     <section
       aria-label="Practice"
-      className="rounded-xl border border-border bg-surface p-5 sm:p-6"
+      className="clip-panel border border-border bg-surface p-5 sm:p-6"
     >
       <div className="flex flex-wrap items-start justify-between gap-4">
         <h2 className="microlabel">Practice</h2>
@@ -61,7 +61,7 @@ export function DrillPanel({
             {drill.checklist.map((point, i) => (
               <li
                 key={i}
-                className="flex items-start gap-2 rounded-lg border border-border bg-surface-2 p-3 text-sm leading-relaxed text-muted"
+                className="flex items-start gap-2 clip-row border border-border bg-surface-2 p-3 text-sm leading-relaxed text-muted"
               >
                 <Dot
                   className="mt-0.5 size-4 shrink-0 text-accent-bright"
@@ -77,7 +77,7 @@ export function DrillPanel({
       <div aria-live="polite" className="mt-5">
         {learned ? (
           <div className="flex flex-col gap-2">
-            <div className="flex items-center justify-center gap-2 rounded-lg border border-accent/40 bg-accent-dim px-4 py-3.5 text-sm font-semibold uppercase tracking-[0.15em] text-accent-bright">
+            <div className="flex items-center justify-center gap-2 clip-row border border-accent/40 bg-accent-dim px-4 py-3.5 text-sm font-semibold uppercase tracking-[0.15em] text-accent-bright">
               <Check className="size-4" aria-hidden /> Learned
             </div>
             {onAdvance && (
@@ -85,7 +85,7 @@ export function DrillPanel({
                 type="button"
                 onClick={onAdvance}
                 whileTap={{ scale: 0.98 }}
-                className="flex w-full items-center justify-center gap-2 rounded-lg bg-accent px-4 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-accent-bright"
+                className="flex w-full items-center justify-center gap-2 clip-row bg-accent px-4 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-bg transition-colors hover:bg-accent-bright"
               >
                 {advanceLabel ?? "Next"}
                 <ArrowRight className="size-4" aria-hidden />
@@ -97,7 +97,7 @@ export function DrillPanel({
             type="button"
             onClick={completeAndAdvance}
             whileTap={{ scale: 0.98 }}
-            className="flex w-full items-center justify-center gap-2 rounded-lg bg-accent px-4 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-accent-bright"
+            className="flex w-full items-center justify-center gap-2 clip-row bg-accent px-4 py-4 text-sm font-semibold uppercase tracking-[0.15em] text-bg transition-colors hover:bg-accent-bright"
           >
             Complete
             <ArrowRight className="size-4" aria-hidden />

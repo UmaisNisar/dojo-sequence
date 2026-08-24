@@ -35,6 +35,7 @@ export const steve: Character = {
   tagline:
     "No kicks, eight stances, and the best counter-hit button in the game. Goad them into swinging, then make them pay for it.",
   available: true,
+  accent: { base: "#e11d48", bright: "#fb7185", deep: "#9f1239" },
   stages: [
     /* ------------------------------------------------------------ */
     /* STAGE 01 — MOVEMENT & THE WEAVES                             */

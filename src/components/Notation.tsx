@@ -23,7 +23,7 @@ export function Notation({
   return (
     <code
       className={cn(
-        "inline-block rounded-[4px] border border-border bg-surface-2 font-mono font-medium tracking-tight text-accent-bright",
+        "inline-block clip-slant border border-border bg-surface-2 font-mono font-medium tracking-tight text-accent-bright",
         sizeClasses[size],
         className,
       )}

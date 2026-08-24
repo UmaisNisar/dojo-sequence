@@ -60,7 +60,7 @@ export function SessionView() {
         </p>
         <Link
           href="/training"
-          className="mt-6 inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-accent-bright"
+          className="mt-6 inline-flex items-center gap-2 clip-row bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-wider text-bg transition-colors hover:bg-accent-bright"
         >
           Go to Training <ArrowRight className="size-4" aria-hidden />
         </Link>
@@ -133,7 +133,7 @@ export function SessionView() {
                 <span className="microlabel text-faint">retention</span>
               )}
             </div>
-            <h1 className="mt-2 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
+            <h1 className="display-title mt-2 text-3xl uppercase tracking-tight sm:text-4xl">
               {item.name}
             </h1>
             {item.notation && item.notation !== "—" && (
@@ -156,12 +156,12 @@ export function SessionView() {
       </AnimatePresence>
 
       {/* Session controls — sticky, controller-friendly sizes */}
-      <div className="sticky bottom-[76px] mt-6 rounded-xl border border-border bg-surface/95 p-3 backdrop-blur-md md:bottom-6">
+      <div className="sticky bottom-[76px] mt-6 clip-panel border border-border bg-surface/95 p-3 backdrop-blur-md md:bottom-6">
         <div className="grid grid-cols-2 gap-2">
           <button
             type="button"
             onClick={() => advance(true)}
-            className="flex min-h-[52px] items-center justify-center gap-2 rounded-lg border border-border text-xs font-semibold uppercase tracking-wider text-muted transition-colors hover:border-border-strong hover:text-fg"
+            className="flex min-h-[52px] items-center justify-center gap-2 clip-row border border-border text-xs font-semibold uppercase tracking-wider text-muted transition-colors hover:border-border-strong hover:text-fg"
           >
             <SkipForward className="size-4" aria-hidden /> Skip
           </button>
@@ -169,7 +169,7 @@ export function SessionView() {
             type="button"
             onClick={() => advance(false)}
             whileTap={{ scale: 0.97 }}
-            className="flex min-h-[52px] items-center justify-center gap-2 rounded-lg bg-accent text-xs font-semibold uppercase tracking-wider text-white transition-colors hover:bg-accent-bright"
+            className="flex min-h-[52px] items-center justify-center gap-2 clip-row bg-accent text-xs font-semibold uppercase tracking-wider text-bg transition-colors hover:bg-accent-bright"
           >
             {isLast ? "Finish" : "Next"} <ArrowRight className="size-4" aria-hidden />
           </motion.button>
@@ -228,7 +228,7 @@ function SessionResults() {
         >
           <Trophy className="size-6 text-accent-bright" aria-hidden />
         </motion.span>
-        <h1 className="mt-5 text-3xl font-bold uppercase tracking-tight sm:text-4xl">
+        <h1 className="display-title mt-5 text-3xl uppercase tracking-tight sm:text-4xl">
           Session complete
         </h1>
         <p className="tnum mt-2 text-sm text-muted">
@@ -248,7 +248,7 @@ function SessionResults() {
               initial={{ opacity: 0, x: -12 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.25 + i * 0.07, duration: 0.25 }}
-              className="flex items-center gap-3 rounded-xl border border-border bg-surface p-4"
+              className="flex items-center gap-3 clip-panel border border-border bg-surface p-4"
             >
               <span
                 className={cn(
@@ -286,7 +286,7 @@ function SessionResults() {
                 `/training/${character.id}/stage/${nextStageNumber}/item/${next.id}`,
               )
             }
-            className="flex min-h-[52px] items-center justify-center gap-2 rounded-xl bg-accent px-6 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-accent-bright"
+            className="flex min-h-[52px] items-center justify-center gap-2 clip-panel bg-accent px-6 text-sm font-semibold uppercase tracking-[0.15em] text-bg transition-colors hover:bg-accent-bright"
           >
             Keep training: {next.name}
             <ArrowRight className="size-4" aria-hidden />
@@ -295,7 +295,7 @@ function SessionResults() {
         <button
           type="button"
           onClick={() => dismissTo("/training")}
-          className="flex min-h-[48px] items-center justify-center rounded-xl border border-border px-6 text-sm font-medium text-muted transition-colors hover:border-border-strong hover:text-fg"
+          className="flex min-h-[48px] items-center justify-center clip-panel border border-border px-6 text-sm font-medium text-muted transition-colors hover:border-border-strong hover:text-fg"
         >
           Back to Training
         </button>

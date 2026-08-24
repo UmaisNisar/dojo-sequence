@@ -146,7 +146,7 @@ export function QuizView({ character }: { character: Character }) {
           <span className="mx-auto flex size-14 items-center justify-center rounded-full border border-accent/50 bg-accent-dim">
             <Timer className="size-6 text-accent-bright" aria-hidden />
           </span>
-          <h1 className="mt-5 text-4xl font-bold uppercase tracking-tight">
+          <h1 className="display-title mt-5 text-4xl uppercase tracking-tight">
             Punish reaction
           </h1>
           <p className="mx-auto mt-3 max-w-sm text-sm leading-relaxed text-muted">
@@ -163,7 +163,7 @@ export function QuizView({ character }: { character: Character }) {
           <button
             type="button"
             onClick={start}
-            className="mt-8 inline-flex min-h-[52px] items-center gap-2 rounded-xl bg-accent px-8 text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-accent-bright"
+            className="mt-8 inline-flex min-h-[52px] items-center gap-2 clip-panel bg-accent px-8 text-sm font-semibold uppercase tracking-[0.15em] text-bg transition-colors hover:bg-accent-bright"
           >
             <Zap className="size-4" aria-hidden /> Start
           </button>
@@ -234,7 +234,7 @@ function QuestionCard({
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0 }}
           transition={{ type: "spring", stiffness: 400, damping: 30 }}
-          className="rounded-xl border border-border bg-surface p-6 text-center"
+          className="clip-panel border border-border bg-surface p-6 text-center"
         >
           <motion.p
             className="tnum text-6xl font-bold text-accent-bright sm:text-7xl"
@@ -259,7 +259,7 @@ function QuestionCard({
               disabled={inFeedback}
               onClick={() => onAnswer(optionIndex)}
               className={cn(
-                "flex min-h-[60px] items-center justify-center rounded-xl border px-4 font-mono text-sm font-semibold transition-colors",
+                "flex min-h-[60px] items-center justify-center clip-panel border px-4 font-mono text-sm font-semibold transition-colors",
                 !inFeedback &&
                   "border-border bg-surface-2 text-fg hover:border-accent/60 hover:bg-accent-dim",
                 inFeedback && isCorrect &&
@@ -281,7 +281,7 @@ function QuestionCard({
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="relative mt-4 overflow-hidden rounded-xl border border-border bg-surface p-4"
+            className="relative mt-4 overflow-hidden clip-panel border border-border bg-surface p-4"
           >
             {picked === q.correctIndex && (
               <CorrectArc reactionMs={lastReactionMs} />
@@ -314,7 +314,7 @@ function QuestionCard({
               type="button"
               onClick={onNext}
               autoFocus
-              className="mt-4 flex min-h-[48px] w-full items-center justify-center rounded-lg bg-accent text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-accent-bright"
+              className="mt-4 flex min-h-[48px] w-full items-center justify-center clip-row bg-accent text-sm font-semibold uppercase tracking-[0.15em] text-bg transition-colors hover:bg-accent-bright"
             >
               {phase.index + 1 >= run.length ? "See results" : "Next round"}
             </button>
@@ -422,13 +422,13 @@ function ResultsCard({
         <button
           type="button"
           onClick={onRetry}
-          className="inline-flex min-h-[52px] w-full max-w-xs items-center justify-center gap-2 rounded-xl bg-accent text-sm font-semibold uppercase tracking-[0.15em] text-white transition-colors hover:bg-accent-bright"
+          className="inline-flex min-h-[52px] w-full max-w-xs items-center justify-center gap-2 clip-panel bg-accent text-sm font-semibold uppercase tracking-[0.15em] text-bg transition-colors hover:bg-accent-bright"
         >
           <Zap className="size-4" aria-hidden /> Run it again
         </button>
         <Link
           href={backHref}
-          className="inline-flex min-h-[48px] w-full max-w-xs items-center justify-center rounded-xl border border-border text-sm font-medium text-muted transition-colors hover:border-border-strong hover:text-fg"
+          className="inline-flex min-h-[48px] w-full max-w-xs items-center justify-center clip-panel border border-border text-sm font-medium text-muted transition-colors hover:border-border-strong hover:text-fg"
         >
           Back to Punishment
         </Link>

@@ -110,6 +110,8 @@ export interface Character {
   available: boolean;
   /** Mishima-style electrics — drives the storm backdrop for this fighter. */
   electric?: boolean;
+  /** Signature colour. Drives the accent for this fighter's whole curriculum. */
+  accent?: { base: string; bright: string; deep: string };
   stages: Stage[];
   /** Timed reaction quiz for the punishment stage. */
   punishQuiz?: QuizQuestion[];

@@ -46,7 +46,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             aria-label="Dojo Sequence — back to training"
             className="flex items-center gap-2 font-semibold tracking-tight"
           >
-            <span className="flex size-6 items-center justify-center rounded-[5px] bg-accent text-bg">
+            <span className="flex size-6 items-center justify-center clip-slant bg-accent text-bg">
               <Zap className="size-3.5" strokeWidth={2.5} aria-hidden />
             </span>
             <span className="text-sm uppercase tracking-[0.18em]">
@@ -63,7 +63,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                       href={href}
                       aria-current={active ? "page" : undefined}
                       className={cn(
-                        "rounded-md px-3 py-1.5 text-[13px] font-medium transition-colors",
+                        "clip-row px-3 py-1.5 text-[13px] font-medium transition-colors",
                         active
                           ? "bg-surface-3 text-fg"
                           : "text-muted hover:bg-surface-2 hover:text-fg",
