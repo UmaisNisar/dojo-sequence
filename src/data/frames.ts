@@ -4,6 +4,7 @@ import larsFrames from "./characters/lars.frames.json";
 import bryanFrames from "./characters/bryan.frames.json";
 import jinFrames from "./characters/jin.frames.json";
 import kingFrames from "./characters/king.frames.json";
+import dragunovFrames from "./characters/dragunov.frames.json";
 
 /**
  * Frame-data registry — the ONLY place frame numbers live.
@@ -16,6 +17,7 @@ const frameData: Record<string, FrameDataSet> = {
   bryan: bryanFrames as FrameDataSet,
   jin: jinFrames as FrameDataSet,
   king: kingFrames as FrameDataSet,
+  dragunov: dragunovFrames as FrameDataSet,
 };
 
 export function getFrameData(characterId: string): FrameDataSet | undefined {

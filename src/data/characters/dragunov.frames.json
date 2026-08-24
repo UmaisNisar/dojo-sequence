@@ -1,0 +1,1544 @@
+{
+  "characterId": "dragunov",
+  "game": "Tekken 8",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-23",
+  "sources": [
+    {
+      "name": "Wavu Wiki",
+      "url": "https://wavu.wiki/t/Dragunov"
+    },
+    {
+      "name": "TekkenDocs",
+      "url": "https://tekkendocs.com/t8/dragunov"
+    }
+  ],
+  "moves": {
+    "jab": {
+      "wavuId": "Dragunov-1",
+      "input": "1",
+      "name": "Jab",
+      "level": "h",
+      "startup": "i10",
+      "block": "+1",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "i10 high",
+        "+1 on block"
+      ]
+    },
+    "jab-1": {
+      "wavuId": "Dragunov-1,1",
+      "input": "1,1",
+      "name": "Jab into Jab",
+      "level": ",h",
+      "startup": ",i20",
+      "displayStartup": "i20 (string)",
+      "block": "-4",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "-4 on block"
+      ]
+    },
+    "jab-1-3": {
+      "wavuId": "Dragunov-1,1,3",
+      "input": "1,1,3",
+      "name": "Eye Gouge into Hilt",
+      "level": ",m",
+      "startup": ",i25~26",
+      "displayStartup": "i25~26 (string)",
+      "block": "-9",
+      "hit": "+15a (+6)",
+      "ch": "+36a (+0)",
+      "notes": [
+        "CH +36a"
+      ]
+    },
+    "jab-2": {
+      "wavuId": "Dragunov-1,2",
+      "input": "1,2",
+      "name": "Jab into Mid",
+      "level": ",m",
+      "startup": ",i18",
+      "displayStartup": "i18 (string)",
+      "block": "-9",
+      "hit": "+2",
+      "ch": null,
+      "notes": [
+        "-9 on block"
+      ]
+    },
+    "jab-2-1": {
+      "wavuId": "Dragunov-1,2,1",
+      "input": "1,2,1",
+      "name": "Salvo",
+      "level": ",m",
+      "startup": ",i19~20",
+      "displayStartup": "i19~20 (string)",
+      "block": "-14",
+      "hit": "+15cg",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "an i10 string that wall splats on counter-hit"
+      ]
+    },
+    "jab-3": {
+      "wavuId": "Dragunov-1,3",
+      "input": "1,3",
+      "name": "Jab into High",
+      "level": ",h",
+      "startup": ",i16~17",
+      "displayStartup": "i16~17 (string)",
+      "block": "-7",
+      "hit": "+1",
+      "ch": "+9",
+      "notes": [
+        "CH +9"
+      ]
+    },
+    "jab-3-2": {
+      "wavuId": "Dragunov-1,3,2",
+      "input": "1,3,2",
+      "name": "Hammer and Sickle",
+      "level": ",m",
+      "startup": ",i22~23",
+      "displayStartup": "i22~23 (string)",
+      "block": "-13",
+      "hit": "+41a",
+      "ch": null,
+      "notes": [
+        "+41a on hit"
+      ]
+    },
+    "feint-catch": {
+      "wavuId": "Dragunov-1,3,2~1+2",
+      "input": "1,3,2~1+2",
+      "name": "Feint & Catch",
+      "level": ",t",
+      "startup": ",i29~32",
+      "displayStartup": "i29~32 (string)",
+      "block": "+5",
+      "hit": "-2d",
+      "ch": null,
+      "notes": [
+        "+5 ON BLOCK",
+        "breaks with 1+2 — UNBREAKABLE in Heat"
+      ]
+    },
+    "right": {
+      "wavuId": "Dragunov-2",
+      "input": "2",
+      "name": "Right Jab",
+      "level": "h",
+      "startup": "i10",
+      "block": "+0",
+      "hit": "+9",
+      "ch": null,
+      "notes": [
+        "i10 high"
+      ]
+    },
+    "right-1": {
+      "wavuId": "Dragunov-2,1",
+      "input": "2,1",
+      "name": "Right Jab into Jab",
+      "level": ",h",
+      "startup": ",i12",
+      "displayStartup": "i12 (string)",
+      "block": "-3",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "his i10 punisher",
+        "press DF afterwards to enter Sneak at +10 on hit"
+      ]
+    },
+    "right-1-3": {
+      "wavuId": "Dragunov-2,1,3",
+      "input": "2,1,3",
+      "name": "One Two Scud Kick",
+      "level": ",h",
+      "startup": ",i18~19",
+      "displayStartup": "i18~19 (string)",
+      "block": "-9",
+      "hit": "+14cg",
+      "ch": null,
+      "notes": [
+        "+14cg on hit"
+      ]
+    },
+    "right-1-4": {
+      "wavuId": "Dragunov-2,1,4",
+      "input": "2,1,4",
+      "name": "One Two Mine Kick",
+      "level": ",L",
+      "startup": ",i23",
+      "displayStartup": "i23 (string)",
+      "block": "-12",
+      "hit": "+3c",
+      "ch": null,
+      "notes": [
+        "the low ender of the same string"
+      ]
+    },
+    "kick3": {
+      "wavuId": "Dragunov-3",
+      "input": "3",
+      "name": "Mid Kick",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-9",
+      "hit": "+2",
+      "ch": null,
+      "notes": [
+        "i15 mid"
+      ]
+    },
+    "kick3-1": {
+      "wavuId": "Dragunov-3,1",
+      "input": "3,1",
+      "name": "Mid Kick into Jab",
+      "level": ",h",
+      "startup": ",i21~22",
+      "displayStartup": "i21~22 (string)",
+      "block": "-2",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "press DF to enter Sneak",
+        "the core combo link"
+      ]
+    },
+    "kick3-1-2": {
+      "wavuId": "Dragunov-3,1,2",
+      "input": "3,1,2",
+      "name": "Disconnector Combo Middle",
+      "level": ",m",
+      "startup": ",i19~21",
+      "displayStartup": "i19~21 (string)",
+      "block": "-12",
+      "hit": "+12a (+3)",
+      "ch": null,
+      "notes": [
+        "mid ender"
+      ]
+    },
+    "kick3-1-4": {
+      "wavuId": "Dragunov-3,1,4",
+      "input": "3,1,4",
+      "name": "Disconnector Combo High",
+      "level": ",h",
+      "startup": ",i22~23",
+      "displayStartup": "i22~23 (string)",
+      "block": "-9",
+      "hit": "+16cg",
+      "ch": null,
+      "notes": [
+        "+16cg on hit"
+      ]
+    },
+    "kick4": {
+      "wavuId": "Dragunov-4",
+      "input": "4",
+      "name": "Right Kick",
+      "level": "h",
+      "startup": "i12",
+      "block": "-9",
+      "hit": "-1",
+      "ch": "+2",
+      "notes": [
+        "i12 high"
+      ]
+    },
+    "kick4-1": {
+      "wavuId": "Dragunov-4,1",
+      "input": "4,1",
+      "name": "Karnov Hook",
+      "level": ",h",
+      "startup": ",i17~18",
+      "displayStartup": "i17~18 (string)",
+      "block": "-4",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "his -12 punisher",
+        "a core combo ender"
+      ]
+    },
+    "kick4-3": {
+      "wavuId": "Dragunov-4,3",
+      "input": "4,3",
+      "name": "Karnov Kick",
+      "level": ",m",
+      "startup": ",i23~24",
+      "displayStartup": "i23~24 (string)",
+      "block": "-12",
+      "hit": "+14c",
+      "ch": null,
+      "notes": [
+        "CH combo starter"
+      ]
+    },
+    "kick4-4": {
+      "wavuId": "Dragunov-4,4",
+      "input": "4,4",
+      "name": "Karnov Avalanche",
+      "level": ",m",
+      "startup": ",i35~36",
+      "displayStartup": "i35~36 (string)",
+      "block": "+5",
+      "hit": "+29a (+20)",
+      "ch": "+46a",
+      "notes": [
+        "+5 ON BLOCK",
+        "the first link of nearly every combo"
+      ]
+    },
+    "bloodhound": {
+      "wavuId": "Dragunov-1+2",
+      "input": "1+2",
+      "name": "Bloodhound Strike",
+      "level": "m",
+      "startup": "i21~22",
+      "block": "-14",
+      "hit": "+19a",
+      "ch": null,
+      "notes": [
+        "Power Crush",
+        "+19a on hit"
+      ]
+    },
+    "df1": {
+      "wavuId": "Dragunov-df+1",
+      "input": "df+1",
+      "name": "Mid Punch",
+      "level": "m",
+      "startup": "i13",
+      "block": "-2",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "his mid check — i13 at only -2 on block"
+      ]
+    },
+    "df1-4": {
+      "wavuId": "Dragunov-df+1,4",
+      "input": "df+1,4",
+      "name": "Switchblade Ripper",
+      "level": ",h",
+      "startup": ",i22~23",
+      "displayStartup": "i22~23 (string)",
+      "block": "-7",
+      "hit": "+22a (+13)",
+      "ch": "+58a",
+      "notes": [
+        "CH +58a"
+      ]
+    },
+    "df2": {
+      "wavuId": "Dragunov-df+2",
+      "input": "df+2",
+      "name": "Scimitar",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-12",
+      "hit": "+28a (+18)",
+      "ch": null,
+      "notes": [
+        "his ONLY standing launcher",
+        "i15, -12 on block"
+      ]
+    },
+    "df3": {
+      "wavuId": "Dragunov-df+3",
+      "input": "df+3",
+      "name": "Mantis Heel",
+      "level": "m",
+      "startup": "i17~20",
+      "block": "-6~-3",
+      "hit": "+5c~+8c",
+      "ch": null,
+      "notes": [
+        "+5c~+8c on hit"
+      ]
+    },
+    "df3plus4": {
+      "wavuId": "Dragunov-df+3+4",
+      "input": "df+3+4",
+      "name": "Reaper Kick",
+      "level": "m",
+      "startup": "i22~24",
+      "block": "-7",
+      "hit": "+12g",
+      "ch": "+24d",
+      "notes": [
+        "core combo filler",
+        "+12g on hit"
+      ]
+    },
+    "df4": {
+      "wavuId": "Dragunov-df+4",
+      "input": "df+4",
+      "name": "Mid Kick (df)",
+      "level": "m",
+      "startup": "i12",
+      "block": "-9",
+      "hit": "+2",
+      "ch": null,
+      "notes": [
+        "i12 mid",
+        "the -12 punish when you need a mid"
+      ]
+    },
+    "b1": {
+      "wavuId": "Dragunov-b+1",
+      "input": "b+1",
+      "name": "Mid Punch (b)",
+      "level": "m",
+      "startup": "i17",
+      "block": "-10",
+      "hit": "+1",
+      "ch": null,
+      "notes": [
+        "i17 mid"
+      ]
+    },
+    "b1-2": {
+      "wavuId": "Dragunov-b+1,2",
+      "input": "b+1,2",
+      "name": "Pommel Fling",
+      "level": ",m",
+      "startup": ",i25~26",
+      "displayStartup": "i25~26 (string)",
+      "block": "-12",
+      "hit": "+18cg",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "a listed whiff punisher"
+      ]
+    },
+    "b1plus2": {
+      "wavuId": "Dragunov-b+1+2",
+      "input": "b+1+2",
+      "name": "Blizzard Hammer",
+      "level": "m",
+      "startup": "i22~23",
+      "block": "+6",
+      "hit": "+13c",
+      "ch": null,
+      "notes": [
+        "+6 ON BLOCK — but the combo side-switches"
+      ]
+    },
+    "b2": {
+      "wavuId": "Dragunov-b+2",
+      "input": "b+2",
+      "name": "Mid Elbow",
+      "level": "m",
+      "startup": "i15",
+      "block": "-3",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "i15 mid at only -3 on block"
+      ]
+    },
+    "b2-1": {
+      "wavuId": "Dragunov-b+2,1",
+      "input": "b+2,1",
+      "name": "Mid Elbow into Hook",
+      "level": ",h",
+      "startup": ",i17~19",
+      "displayStartup": "i17~19 (string)",
+      "block": "-5",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "-5 on block"
+      ]
+    },
+    "b2-1-3": {
+      "wavuId": "Dragunov-b+2,1,3",
+      "input": "b+2,1,3",
+      "name": "Eye Gouge into Stingray",
+      "level": ",l",
+      "startup": ",i29~31",
+      "displayStartup": "i29~31 (string)",
+      "block": "-26",
+      "hit": "-2c",
+      "ch": "+1d",
+      "notes": [
+        "low ender",
+        "-26 on block"
+      ]
+    },
+    "b3": {
+      "wavuId": "Dragunov-b+3",
+      "input": "b+3",
+      "name": "Serrated Edge",
+      "level": "h",
+      "startup": "i14~15",
+      "block": "-9",
+      "hit": "+11g",
+      "ch": null,
+      "notes": [
+        "+11g on hit"
+      ]
+    },
+    "b3plus4": {
+      "wavuId": "Dragunov-b+3+4",
+      "input": "b+3+4",
+      "name": "Inertia Kick",
+      "level": "h",
+      "startup": "i28~29",
+      "block": "-2",
+      "hit": "+1d",
+      "ch": null,
+      "notes": [
+        "his sabaki"
+      ]
+    },
+    "b3plus4-throw": {
+      "wavuId": "Dragunov-b+3+4:1+2",
+      "input": "b+3+4:1+2",
+      "name": "Inertia Kick (throw)",
+      "level": ",t",
+      "startup": "i28~29",
+      "block": null,
+      "hit": "+1d",
+      "ch": null,
+      "notes": [
+        "UNBREAKABLE",
+        "removes recoverable health",
+        "no just frame needed in Heat"
+      ]
+    },
+    "b4": {
+      "wavuId": "Dragunov-b+4",
+      "input": "b+4",
+      "name": "Tundra Strike",
+      "level": "m",
+      "startup": "i14",
+      "block": "-7",
+      "hit": "+4",
+      "ch": null,
+      "notes": [
+        "i14 mid check"
+      ]
+    },
+    "b4-2": {
+      "wavuId": "Dragunov-b+4,2",
+      "input": "b+4,2",
+      "name": "Tundra Strike 2",
+      "level": ",m",
+      "startup": ",i21",
+      "displayStartup": "i21 (string)",
+      "block": "-7",
+      "hit": "+4",
+      "ch": null,
+      "notes": [
+        "press DF to enter Sneak",
+        "leads to the Ambush Tackle"
+      ]
+    },
+    "b4-2-1": {
+      "wavuId": "Dragunov-b+4,2,1",
+      "input": "b+4,2,1",
+      "name": "Ear Grab",
+      "level": ",h",
+      "startup": ",i23~24",
+      "displayStartup": "i23~24 (string)",
+      "block": "+1",
+      "hit": "+5",
+      "ch": "+14c",
+      "notes": [
+        "+1 on block"
+      ]
+    },
+    "ambush-tackle": {
+      "wavuId": "Dragunov-b+4,2,1+2",
+      "input": "b+4,2,1+2",
+      "name": "Ambush Tackle",
+      "level": ",t",
+      "startup": ",i40",
+      "displayStartup": "i40 (string)",
+      "block": "-5 BT",
+      "hit": "+3d",
+      "ch": null,
+      "notes": [
+        "breaks with 1+2 — UNBREAKABLE in Heat"
+      ]
+    },
+    "b4-3": {
+      "wavuId": "Dragunov-b+4,3",
+      "input": "b+4,3",
+      "name": "Tundra Slash",
+      "level": ",h",
+      "startup": ",i17~18",
+      "displayStartup": "i17~18 (string)",
+      "block": "-9",
+      "hit": "+21a (+12)",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "his -14 punisher",
+        "wall splat",
+        "duckable"
+      ]
+    },
+    "d1": {
+      "wavuId": "Dragunov-d+1",
+      "input": "d+1",
+      "name": "Bunker-buster Elbow",
+      "level": "m",
+      "startup": "i18~19",
+      "block": "+1c",
+      "hit": "+8c",
+      "ch": "+13d",
+      "notes": [
+        "+1c ON BLOCK from a crouching input"
+      ]
+    },
+    "d2": {
+      "wavuId": "Dragunov-d+2",
+      "input": "d+2",
+      "name": "Razer",
+      "level": "L",
+      "startup": "i18~19",
+      "block": "-13",
+      "hit": "-1c",
+      "ch": "+13g",
+      "notes": [
+        "i18 low",
+        "CH +13g"
+      ]
+    },
+    "d3": {
+      "wavuId": "Dragunov-d+3",
+      "input": "d+3",
+      "name": "Low Kick",
+      "level": "L",
+      "startup": "i17~18",
+      "block": "-14",
+      "hit": "-3",
+      "ch": "+1c",
+      "notes": [
+        "i17 low"
+      ]
+    },
+    "d3-2": {
+      "wavuId": "Dragunov-d+3,2",
+      "input": "d+3,2",
+      "name": "Low into High",
+      "level": ",h",
+      "startup": ",i24~25",
+      "displayStartup": "i24~25 (string)",
+      "block": "-8",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "-8 on block"
+      ]
+    },
+    "d3-2-1plus2": {
+      "wavuId": "Dragunov-d+3,2,1+2",
+      "input": "d+3,2,1+2",
+      "name": "Avalanche Hammer Rush",
+      "level": ",m",
+      "startup": ",i35~36",
+      "displayStartup": "i35~36 (string)",
+      "block": "-2c",
+      "hit": "+20a",
+      "ch": null,
+      "notes": [
+        "-2c on block"
+      ]
+    },
+    "d3-4": {
+      "wavuId": "Dragunov-d+3,4",
+      "input": "d+3,4",
+      "name": "Detached Kick",
+      "level": ",m",
+      "startup": ",i28",
+      "displayStartup": "i28 (string)",
+      "block": "-11",
+      "hit": "+5",
+      "ch": "+23g",
+      "notes": [
+        "CH +23g"
+      ]
+    },
+    "d4": {
+      "wavuId": "Dragunov-d+4",
+      "input": "d+4",
+      "name": "Low Kick (d+4)",
+      "level": "L",
+      "startup": "i15~16",
+      "block": "-15",
+      "hit": "-9",
+      "ch": "-4",
+      "notes": [
+        "i15 low, -15"
+      ]
+    },
+    "d4-1": {
+      "wavuId": "Dragunov-d+4,1",
+      "input": "d+4,1",
+      "name": "Low into Jab",
+      "level": ",h",
+      "startup": ",i14~15",
+      "displayStartup": "i14~15 (string)",
+      "block": "-11",
+      "hit": "+5",
+      "ch": null,
+      "notes": [
+        "-11 on block"
+      ]
+    },
+    "d4-4": {
+      "wavuId": "Dragunov-d+4,4",
+      "input": "d+4,4",
+      "name": "Stiletto",
+      "level": ",h",
+      "startup": ",i22~23",
+      "displayStartup": "i22~23 (string)",
+      "block": "-14",
+      "hit": "+16a (+6)",
+      "ch": null,
+      "notes": [
+        "+16a on hit"
+      ]
+    },
+    "cold-fate": {
+      "wavuId": "Dragunov-d+1+3",
+      "input": "d+1+3 / d+2+4",
+      "name": "Cold Fate",
+      "level": "t (m)",
+      "startup": "i12~14",
+      "block": null,
+      "hit": "+1d",
+      "ch": null,
+      "notes": [
+        "a throw that works as a combo ender"
+      ]
+    },
+    "db2": {
+      "wavuId": "Dragunov-db+2",
+      "input": "db+2",
+      "name": "Mid Chop",
+      "level": "m",
+      "startup": "i14~15",
+      "block": "-7",
+      "hit": "+4",
+      "ch": null,
+      "notes": [
+        "i14 mid, -7"
+      ]
+    },
+    "db2-1": {
+      "wavuId": "Dragunov-db+2,1",
+      "input": "db+2,1",
+      "name": "Mid Chop into Mid",
+      "level": ",m",
+      "startup": ",i20~21",
+      "displayStartup": "i20~21 (string)",
+      "block": "-10",
+      "hit": "+1",
+      "ch": "+3",
+      "notes": [
+        "CH +3"
+      ]
+    },
+    "db2-1-2": {
+      "wavuId": "Dragunov-db+2,1,2",
+      "input": "db+2,1,2",
+      "name": "Death's Door",
+      "level": ",m",
+      "startup": ",i25",
+      "displayStartup": "i25 (string)",
+      "block": "-14",
+      "hit": "+29a (+23)",
+      "ch": null,
+      "notes": [
+        "+29a on hit"
+      ]
+    },
+    "snake-edge": {
+      "wavuId": "Dragunov-db+3",
+      "input": "db+3",
+      "name": "Clipping Sweep",
+      "level": "l",
+      "startup": "i27~29",
+      "block": "-26",
+      "hit": "-2c",
+      "ch": "+67a (+51)",
+      "notes": [
+        "his snake edge",
+        "CH +67a but -26 on block"
+      ]
+    },
+    "feint-low-catch": {
+      "wavuId": "Dragunov-db+3~1+2",
+      "input": "db+3~1+2",
+      "name": "Feint & Low Catch",
+      "level": "t",
+      "startup": "i19~20",
+      "block": null,
+      "hit": "+1d",
+      "ch": null,
+      "notes": [
+        "the low feint into a throw"
+      ]
+    },
+    "power-low": {
+      "wavuId": "Dragunov-db+3+4",
+      "input": "db+3+4",
+      "name": "Deadly Scorpion",
+      "level": "L",
+      "startup": "i20~21",
+      "block": "-31",
+      "hit": "+3g",
+      "ch": "+20a",
+      "notes": [
+        "his power low",
+        "-31 on block"
+      ]
+    },
+    "f1plus2": {
+      "wavuId": "Dragunov-f+1+2",
+      "input": "f+1+2",
+      "name": "Scabbard",
+      "level": "h",
+      "startup": "i16~17",
+      "block": "-9",
+      "hit": "+35d",
+      "ch": null,
+      "notes": [
+        "his -17 long-range punisher",
+        "+35d on hit"
+      ]
+    },
+    "f1plus4": {
+      "wavuId": "Dragunov-f+1+4",
+      "input": "f+1+4",
+      "name": "Reverse Victor Clutch",
+      "level": "t",
+      "startup": "i11",
+      "block": "-2",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "i11 command throw"
+      ]
+    },
+    "f2": {
+      "wavuId": "Dragunov-f+2",
+      "input": "f+2",
+      "name": "High Punch (f)",
+      "level": "h",
+      "startup": "i19~20",
+      "block": "-8",
+      "hit": "+3",
+      "ch": "+8",
+      "notes": [
+        "i19 high"
+      ]
+    },
+    "f2-4": {
+      "wavuId": "Dragunov-f+2,4",
+      "input": "f+2,4",
+      "name": "Stun Gun",
+      "level": ",m",
+      "startup": ",i19~20",
+      "displayStartup": "i19~20 (string)",
+      "block": "-7",
+      "hit": "+28a (+23)",
+      "ch": "+31a (+25)",
+      "notes": [
+        "+28a on hit",
+        "CH +31a"
+      ]
+    },
+    "f2plus3": {
+      "wavuId": "Dragunov-f+2+3",
+      "input": "f+2+3",
+      "name": "Victor Clutch",
+      "level": "t",
+      "startup": "i11",
+      "block": "-2",
+      "hit": "-1d",
+      "ch": null,
+      "notes": [
+        "i11 command throw"
+      ]
+    },
+    "f3": {
+      "wavuId": "Dragunov-f+3",
+      "input": "f+3",
+      "name": "Front Kick",
+      "level": "m",
+      "startup": "i20",
+      "block": "-6",
+      "hit": "+5",
+      "ch": null,
+      "notes": [
+        "press DF to enter Sneak at +0 on block"
+      ]
+    },
+    "f3-1plus2": {
+      "wavuId": "Dragunov-f+3,1+2",
+      "input": "f+3,1+2",
+      "name": "Crushing Blizzard",
+      "level": ",m",
+      "startup": ",i30~31",
+      "displayStartup": "i30~31 (string)",
+      "block": "-3",
+      "hit": "+22a",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "his -20 punisher"
+      ]
+    },
+    "f3-3": {
+      "wavuId": "Dragunov-f+3,3",
+      "input": "f+3,3",
+      "name": "Step-in Mantis",
+      "level": ",m",
+      "startup": ",i17~20",
+      "displayStartup": "i17~20 (string)",
+      "block": "-10",
+      "hit": "+1d / +1c",
+      "ch": null,
+      "notes": [
+        "mid ender"
+      ]
+    },
+    "f3plus4": {
+      "wavuId": "Dragunov-f+3+4",
+      "input": "f+3+4",
+      "name": "Iron Flail",
+      "level": "h",
+      "startup": "i25~26",
+      "block": "-13",
+      "hit": "+41a",
+      "ch": null,
+      "notes": [
+        "+41a on hit"
+      ]
+    },
+    "f4": {
+      "wavuId": "Dragunov-f+4",
+      "input": "f+4",
+      "name": "High Kick (f)",
+      "level": "h",
+      "startup": "i14~15",
+      "block": "-7",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "i14 high, -7"
+      ]
+    },
+    "f4-3": {
+      "wavuId": "Dragunov-f+4,3",
+      "input": "f+4,3",
+      "name": "Falcon Combination",
+      "level": ",h",
+      "startup": ",i30~32",
+      "displayStartup": "i30~32 (string)",
+      "block": "-9",
+      "hit": "+20a",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "his other -14 punisher"
+      ]
+    },
+    "f4-4": {
+      "wavuId": "Dragunov-f+4,4",
+      "input": "f+4,4",
+      "name": "Falcon 2",
+      "level": ",h",
+      "startup": ",i20~21",
+      "displayStartup": "i20~21 (string)",
+      "block": "-11",
+      "hit": "+0",
+      "ch": "+22a (+15)",
+      "notes": [
+        "CH +22a"
+      ]
+    },
+    "f4-4-3": {
+      "wavuId": "Dragunov-f+4,4,3",
+      "input": "f+4,4,3",
+      "name": "Cougar Combination",
+      "level": ",h",
+      "startup": ",i22~23",
+      "displayStartup": "i22~23 (string)",
+      "block": "-5",
+      "hit": "+21a (+12)",
+      "ch": null,
+      "notes": [
+        "-5 on block"
+      ]
+    },
+    "f4-d4": {
+      "wavuId": "Dragunov-f+4,d+4",
+      "input": "f+4,d+4",
+      "name": "Orca Combination",
+      "level": ",L",
+      "startup": ",i25",
+      "displayStartup": "i25 (string)",
+      "block": "-12",
+      "hit": "+3c",
+      "ch": null,
+      "notes": [
+        "the low branch"
+      ]
+    },
+    "ff2": {
+      "wavuId": "Dragunov-f,F+2",
+      "input": "f,F+2",
+      "name": "Russian Sickle",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-12",
+      "hit": "+15a",
+      "ch": "+30d (+22)",
+      "notes": [
+        "i15 mid",
+        "CH +30d"
+      ]
+    },
+    "ff3": {
+      "wavuId": "Dragunov-f,F+3",
+      "input": "f,F+3",
+      "name": "Stinger Kick",
+      "level": "h",
+      "startup": "i21~23",
+      "block": "+5",
+      "hit": "+30a (+4)",
+      "ch": null,
+      "notes": [
+        "+5 ON BLOCK",
+        "homing"
+      ]
+    },
+    "ff4": {
+      "wavuId": "Dragunov-f,F+4",
+      "input": "f,F+4",
+      "name": "Rolling Thunder",
+      "level": "M",
+      "startup": "i26~28",
+      "block": "-1",
+      "hit": "+13c",
+      "ch": null,
+      "notes": [
+        "only -1 on block",
+        "leads to a guaranteed throw"
+      ]
+    },
+    "wr2": {
+      "wavuId": "Dragunov-f,f,F+2",
+      "input": "f,f,F+2 (wr2)",
+      "name": "Russian Assault",
+      "level": "m",
+      "startup": "i15~17",
+      "block": "+4",
+      "hit": "+6cg",
+      "ch": "+44a",
+      "notes": [
+        "+4 ON BLOCK, CH +44a — his defining pressure mid",
+        "f,n,f+2 within 8f for the powered-up version"
+      ]
+    },
+    "wr4": {
+      "wavuId": "Dragunov-f,f,F+4",
+      "input": "f,f,F+4 (wr4)",
+      "name": "Snap Knee Assault",
+      "level": "m,t",
+      "startup": "i20~21",
+      "block": "-7",
+      "hit": "+1d",
+      "ch": null,
+      "notes": [
+        "transitions to an UNBREAKABLE attack throw"
+      ]
+    },
+    "qcb2": {
+      "wavuId": "Dragunov-qcb+2",
+      "input": "qcb+2",
+      "name": "Mass Elbow",
+      "level": "m",
+      "startup": "i26~27",
+      "block": "-15",
+      "hit": "+32a",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "+32a on hit"
+      ]
+    },
+    "uf1": {
+      "wavuId": "Dragunov-uf+1",
+      "input": "uf+1",
+      "name": "Eye Blast",
+      "level": "h",
+      "startup": "i14",
+      "block": "-9",
+      "hit": "+12c",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "his -14 punisher, but the combo side-switches"
+      ]
+    },
+    "uf2": {
+      "wavuId": "Dragunov-uf+2",
+      "input": "uf+2",
+      "name": "Under Pressure",
+      "level": "M",
+      "startup": "i30-31",
+      "block": "-5",
+      "hit": "+42a",
+      "ch": null,
+      "notes": [
+        "+42a on hit at only -5 on block"
+      ]
+    },
+    "uf3": {
+      "wavuId": "Dragunov-uf+3",
+      "input": "uf+3",
+      "name": "Breaching Charge Kick",
+      "level": "m",
+      "startup": "i17~21",
+      "block": "-7",
+      "hit": "+20a (+10)",
+      "ch": null,
+      "notes": [
+        "+20a on hit"
+      ]
+    },
+    "uf4": {
+      "wavuId": "Dragunov-uf+4",
+      "input": "uf+4",
+      "name": "Slicing Sobat",
+      "level": "m",
+      "startup": "i22~23",
+      "block": "-9",
+      "hit": "+19a",
+      "ch": null,
+      "notes": [
+        "+19a on hit"
+      ]
+    },
+    "uf3plus4": {
+      "wavuId": "Dragunov-uf+3+4",
+      "input": "uf+3+4",
+      "name": "Scorpion Scissors",
+      "level": "t",
+      "startup": "i38~42",
+      "block": null,
+      "hit": "-12d",
+      "ch": null,
+      "notes": [
+        "UNBREAKABLE throw — the only escape is to duck it"
+      ]
+    },
+    "ufn4": {
+      "wavuId": "Dragunov-uf,n,4",
+      "input": "uf,n,4",
+      "name": "Delayed Hopkick",
+      "level": "m",
+      "startup": "i23~i25",
+      "block": "-13",
+      "hit": "+32a (+22a)",
+      "ch": null,
+      "notes": [
+        "his -23 punisher"
+      ]
+    },
+    "ub1": {
+      "wavuId": "Dragunov-ub+1",
+      "input": "ub+1",
+      "name": "Hunter Hook",
+      "level": "h",
+      "startup": "i15~16",
+      "block": "-4",
+      "hit": "+8",
+      "ch": "+18g",
+      "notes": [
+        "CH +18g"
+      ]
+    },
+    "ub2": {
+      "wavuId": "Dragunov-ub+2",
+      "input": "ub+2",
+      "name": "Counterstrike",
+      "level": "h",
+      "startup": "i20",
+      "block": "-5",
+      "hit": "+9",
+      "ch": "+53a",
+      "notes": [
+        "i20 high CH launcher, +53a"
+      ]
+    },
+    "ub4": {
+      "wavuId": "Dragunov-ub+4",
+      "input": "ub+4",
+      "name": "Slicing Sobat (ub)",
+      "level": "m",
+      "startup": "i22~23",
+      "block": "-16~17",
+      "hit": "+11a",
+      "ch": null,
+      "notes": [
+        "+11a on hit"
+      ]
+    },
+    "parry": {
+      "wavuId": "Dragunov-b+1+3",
+      "input": "b+1+3 / b+2+4",
+      "name": "Red Alert",
+      "level": "",
+      "startup": null,
+      "block": null,
+      "hit": "-5d",
+      "ch": null,
+      "notes": [
+        "parries high and mid attacks"
+      ]
+    },
+    "low-parry": {
+      "wavuId": "Dragunov-d+1+2",
+      "input": "d+1+2",
+      "name": "Pit Fall",
+      "level": "",
+      "startup": null,
+      "block": null,
+      "hit": "+5d",
+      "ch": null,
+      "notes": [
+        "his dedicated low parry"
+      ]
+    },
+    "ws1": {
+      "wavuId": "Dragunov-ws1",
+      "input": "ws1",
+      "name": "Rising Punch",
+      "level": "m",
+      "startup": "i12~13",
+      "block": "-3",
+      "hit": "+4",
+      "ch": null,
+      "notes": [
+        "i12 out of crouch at -3",
+        "press DF for Sneak"
+      ]
+    },
+    "ws1-2": {
+      "wavuId": "Dragunov-ws1,2",
+      "input": "ws1,2",
+      "name": "Qullion",
+      "level": ",h",
+      "startup": ",i22~23",
+      "displayStartup": "i22~23 (string)",
+      "block": "-7",
+      "hit": "+10g",
+      "ch": null,
+      "notes": [
+        "-12 crouching punisher"
+      ]
+    },
+    "ws1-3": {
+      "wavuId": "Dragunov-ws1,3",
+      "input": "ws1,3",
+      "name": "Double Hilt",
+      "level": ",m",
+      "startup": ",i17~18",
+      "displayStartup": "i17~18 (string)",
+      "block": "-13",
+      "hit": "+15a (+6)",
+      "ch": "+36a (+0)",
+      "notes": [
+        "-12 crouching punisher",
+        "wall splat",
+        "CH +36a"
+      ]
+    },
+    "ws1plus2": {
+      "wavuId": "Dragunov-ws1+2",
+      "input": "ws1+2 / SNK.1+2",
+      "name": "Frost Tackle",
+      "level": "m",
+      "startup": "i12~13",
+      "block": "-14",
+      "hit": "+19a (+9)",
+      "ch": null,
+      "notes": [
+        "Heat Engager and an i12 punish from crouch"
+      ]
+    },
+    "ws2": {
+      "wavuId": "Dragunov-ws2",
+      "input": "ws2",
+      "name": "Ballistic Upper",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-12",
+      "hit": "+28a (+18)",
+      "ch": null,
+      "notes": [
+        "his -15 crouching launcher"
+      ]
+    },
+    "ws3": {
+      "wavuId": "Dragunov-ws3",
+      "input": "ws3",
+      "name": "Glacial Hilt",
+      "level": "m",
+      "startup": "i16~17",
+      "block": "-9",
+      "hit": "+15a (+6)",
+      "ch": "+36a (+0)",
+      "notes": [
+        "CH +36a"
+      ]
+    },
+    "ws4": {
+      "wavuId": "Dragunov-ws4",
+      "input": "ws4",
+      "name": "Gelid Smash",
+      "level": "m",
+      "startup": "i11~12",
+      "block": "-5",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "his -11 crouching check at only -5"
+      ]
+    },
+    "fc-df1": {
+      "wavuId": "Dragunov-FC.df+1",
+      "input": "FC.df+1",
+      "name": "Low Slicer",
+      "level": "L",
+      "startup": "i16~17",
+      "block": "-13",
+      "hit": "-4",
+      "ch": null,
+      "notes": [
+        "i16 low from full crouch"
+      ]
+    },
+    "fc-df1-4": {
+      "wavuId": "Dragunov-FC.df+1,4",
+      "input": "FC.df+1,4",
+      "name": "Hail Slicer",
+      "level": ",m",
+      "startup": ",i16~17",
+      "displayStartup": "i16~17 (string)",
+      "block": null,
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "the core combo link",
+        "a just-frame input gives 1 more damage"
+      ]
+    },
+    "snk1": {
+      "wavuId": "Dragunov-SNK.1",
+      "input": "SNK.1 / qcf+1",
+      "name": "Cocked Hammer",
+      "level": "h",
+      "startup": "i15~16",
+      "block": "-8",
+      "hit": "+51a",
+      "ch": null,
+      "notes": [
+        "+51a launcher out of Sneak"
+      ]
+    },
+    "snk2": {
+      "wavuId": "Dragunov-SNK.2",
+      "input": "SNK.2 / qcf+2",
+      "name": "Stinger Elbow",
+      "level": "m",
+      "startup": "i18~19",
+      "block": "-14",
+      "hit": "+36a (+26)",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "the combo tornado source"
+      ]
+    },
+    "snk3": {
+      "wavuId": "Dragunov-SNK.3",
+      "input": "SNK.3 / qcf+3",
+      "name": "Slay Ride",
+      "level": "L,t",
+      "startup": "i17~18",
+      "block": "-16",
+      "hit": "+0",
+      "ch": "+1d/(+26a)",
+      "notes": [
+        "a low that becomes a throw on hit"
+      ]
+    },
+    "snk3plus4": {
+      "wavuId": "Dragunov-SNK.3+4",
+      "input": "SNK.3+4 / qcf+3+4",
+      "name": "Snap Knee",
+      "level": "m",
+      "startup": "i17~18",
+      "block": "-13",
+      "hit": "+27g",
+      "ch": null,
+      "notes": [
+        "Power Crush",
+        "absorbs a hit into an attack throw"
+      ]
+    },
+    "snk4": {
+      "wavuId": "Dragunov-SNK.4",
+      "input": "SNK.4 / qcf+4",
+      "name": "Ignition Switch",
+      "level": "m",
+      "startup": "i19~20",
+      "block": "+7",
+      "hit": "+8c",
+      "ch": null,
+      "notes": [
+        "+7 ON BLOCK and a Heat Engager"
+      ]
+    },
+    "pgr2": {
+      "wavuId": "Dragunov-PGR.2",
+      "input": "PGR.2 (3+4,2)",
+      "name": "Frozen Scythe",
+      "level": "M",
+      "startup": "i16~17",
+      "block": "-9",
+      "hit": "+19a (+2)",
+      "ch": null,
+      "notes": [
+        "the mid option out of Pigeon Roll"
+      ]
+    },
+    "pgr3": {
+      "wavuId": "Dragunov-PGR.3",
+      "input": "PGR.3 (3+4,3)",
+      "name": "Frozen Heel Hook",
+      "level": "l",
+      "startup": "i18~19",
+      "block": "-26",
+      "hit": "-1d",
+      "ch": null,
+      "notes": [
+        "the low option",
+        "-26 on block"
+      ]
+    },
+    "pgr-tackle": {
+      "wavuId": "Dragunov-PGR.1+2",
+      "input": "PGR.1+2",
+      "name": "Pigeon Roll into Ambush Tackle",
+      "level": "m(t)",
+      "startup": "i26",
+      "block": "-5",
+      "hit": "+3d",
+      "ch": null,
+      "notes": [
+        "breaks with 1+2 — UNBREAKABLE in Heat"
+      ]
+    },
+    "ss2": {
+      "wavuId": "Dragunov-SS.2",
+      "input": "SS.2",
+      "name": "Sidestep Mid",
+      "level": "m",
+      "startup": "i20~21",
+      "block": "-10",
+      "hit": "+1",
+      "ch": null,
+      "notes": [
+        "i20 mid off a sidestep"
+      ]
+    },
+    "ss2-1plus2-4": {
+      "wavuId": "Dragunov-SS.2,1+2,4",
+      "input": "SS.2,1+2,4",
+      "name": "Integral Blitz",
+      "level": ",h",
+      "startup": ",i26~27",
+      "displayStartup": "i26~27 (string)",
+      "block": "-10",
+      "hit": "+45a",
+      "ch": null,
+      "notes": [
+        "+45a on hit"
+      ]
+    },
+    "otg-db3": {
+      "wavuId": "Dragunov-OTG.d+3+4",
+      "input": "OTG.d+3+4",
+      "name": "Six Feet Under",
+      "level": "L",
+      "startup": "i24",
+      "block": "-11",
+      "hit": "+0",
+      "ch": null,
+      "notes": [
+        "the grounded hit"
+      ]
+    },
+    "heat-burst": {
+      "wavuId": "Dragunov-2+3",
+      "input": "2+3",
+      "name": "Heat Burst",
+      "level": "m",
+      "startup": "i16",
+      "block": "+1",
+      "hit": "+2c",
+      "ch": null,
+      "notes": [
+        "+1 on block"
+      ]
+    },
+    "heat-smash": {
+      "wavuId": "Dragunov-H.2+3",
+      "input": "H.2+3",
+      "name": "Ultra Russian Sickle",
+      "level": "m,m,m",
+      "startup": "i15~16, i30~32,i31~32",
+      "block": "+6",
+      "hit": "+3d",
+      "ch": null,
+      "notes": [
+        "Heat Smash",
+        "+6 on block",
+        "the first hit is a 50-damage throw"
+      ]
+    },
+    "rage-art": {
+      "wavuId": "Dragunov-R.df+1+2",
+      "input": "R.df+1+2",
+      "name": "White Angel of Death",
+      "level": "m,t",
+      "startup": "i20",
+      "block": "-18",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "Rage Art"
+      ]
+    }
+  }
+}
