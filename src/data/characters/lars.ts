@@ -22,6 +22,7 @@ export const lars: Character = {
   tagline:
     "Fast, safe, and relentlessly aggressive — the rare character whose strongest buttons are also his simplest.",
   available: true,
+  electric: true,
   stages: [
     /* ------------------------------------------------------------ */
     /* STAGE 01 — MOVEMENT                                          */
