@@ -71,10 +71,10 @@ export function StageView({
         className="mb-8"
       >
         <p className="microlabel">Stage {pad2(stage.number)}</p>
-        <h1 className="mt-1 max-w-xl text-4xl font-bold uppercase leading-[1.05] tracking-tight sm:text-5xl">
+        <h1 className="mt-1 text-4xl font-bold uppercase leading-[1.05] tracking-tight sm:text-5xl">
           {stage.name}
         </h1>
-        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">
+        <p className="mt-3 text-sm leading-relaxed text-muted">
           {stage.description}
         </p>
         <div className="mt-5 flex items-center gap-4">

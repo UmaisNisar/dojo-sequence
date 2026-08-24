@@ -28,7 +28,7 @@ export function CharactersView() {
         <h1 className="mt-1 text-4xl font-bold uppercase tracking-tight sm:text-5xl">
           Roster
         </h1>
-        <p className="mt-3 max-w-2xl text-sm text-muted">
+        <p className="mt-3 text-sm text-muted">
           Each character is a full curriculum — movement to gameplan, in strict
           order. One at a time is the fastest way up.
         </p>

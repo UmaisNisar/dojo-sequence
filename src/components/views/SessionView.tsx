@@ -141,7 +141,7 @@ export function SessionView() {
                 <Notation value={item.notation} size="lg" />
               </div>
             )}
-            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted">
+            <p className="mt-4 text-sm leading-relaxed text-muted">
               {item.purpose}
             </p>
           </div>

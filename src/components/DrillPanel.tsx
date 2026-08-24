@@ -51,10 +51,10 @@ export function DrillPanel({
       </div>
 
       {"rep" in drill ? (
-        <p className="mt-3 max-w-md text-sm leading-relaxed text-fg">{drill.rep}</p>
+        <p className="mt-3 text-sm leading-relaxed text-fg">{drill.rep}</p>
       ) : (
         <>
-          <p className="mt-3 max-w-md text-sm leading-relaxed text-fg">
+          <p className="mt-3 text-sm leading-relaxed text-fg">
             Work through each of these until it is genuinely internalized.
           </p>
           <ul className="mt-4 flex flex-col gap-2">

@@ -50,7 +50,7 @@ export function SettingsView() {
   };
 
   return (
-    <div className="max-w-2xl">
+    <div>
       <header className="mb-8">
         <p className="microlabel">Settings</p>
         <h1 className="mt-1 text-4xl font-bold uppercase tracking-tight sm:text-5xl">
