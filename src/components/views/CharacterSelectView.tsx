@@ -327,7 +327,7 @@ export function CharacterSelectView({
           {focusedCharacter?.tagline && (
             <p
               key={`${focused?.id}-tag`}
-              className="mt-2 max-w-xl text-xs leading-relaxed text-muted"
+              className="mt-2 text-xs leading-relaxed text-muted"
             >
               {focusedCharacter.tagline}
             </p>

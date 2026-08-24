@@ -15,13 +15,13 @@
  * distant, dim bolt) broken by 20–30s storm fronts of 3–5 strikes with one
  * guaranteed full-height hit. Electric curriculum pages (EWGF items, the
  * 50/50) are a permanent front — frequent, always full-height. The
- * character select fires one guaranteed entrance strike.
+ * The roster screens are always quiet — nobody is chosen there yet.
  *
  * Renders nothing under reduced motion (OS or in-app toggle).
  * Debug: add `#strike` to any URL to fire every 1.5s.
  */
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useActiveCharacter, useReducedMotionSetting } from "@/hooks/use-progress";
@@ -179,8 +179,10 @@ export function LightningStrikes() {
 
   /* The storm belongs to the electric fighters — the Mishimas and Lars.
      Training anyone else means a quiet background: a boxer does not summon
-     lightning. */
-  const electric = character.electric === true;
+     lightning. The roster screens stay quiet too: no fighter is chosen there,
+     so the storm would be claiming someone who has not been picked. */
+  const onRoster = pathname === "/" || pathname === "/characters";
+  const electric = character.electric === true && !onRoster;
   const reduced = Boolean(osReduced) || appReduced || !electric;
   const supercharged = ELECTRIC_ROUTE.test(pathname);
 
@@ -249,28 +251,6 @@ export function LightningStrikes() {
     };
   }, [reduced, supercharged]);
 
-  /* Entrance strike on the character select — once per visit to "/". */
-  const enteredRef = useRef(false);
-  useEffect(() => {
-    if (reduced) return;
-    if (pathname !== "/") {
-      enteredRef.current = false;
-      return;
-    }
-    if (enteredRef.current) return;
-    enteredRef.current = true;
-    const t = setTimeout(() => {
-      setStrike(
-        buildBoltStrike(window.innerWidth, window.innerHeight, {
-          xPct: 13.5,
-          big: true,
-          allowEcho: false,
-        }),
-      );
-      setTimeout(() => setStrike(null), 1100);
-    }, 650);
-    return () => clearTimeout(t);
-  }, [pathname, reduced]);
 
   if (reduced) return null;
 

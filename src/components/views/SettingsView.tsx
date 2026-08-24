@@ -52,7 +52,7 @@ export function SettingsView() {
   return (
     <div>
       <header className="mb-8">
-        <p className="microlabel">Settings</p>
+        <p className="microlabel">Data &amp; preferences</p>
         <h1 className="display-title mt-1 text-4xl uppercase tracking-tight sm:text-5xl">
           Settings
         </h1>

@@ -6,6 +6,7 @@ import { LiveFramesProvider } from "@/hooks/use-live-frames";
 import { AppShell } from "@/components/AppShell";
 import { LightningStrikes } from "@/components/effects/LightningStrikes";
 import { AccentScope } from "@/components/AccentScope";
+import { DynamicFavicon } from "@/components/DynamicFavicon";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <ProgressProvider>
           <LiveFramesProvider>
             <AccentScope>
+              <DynamicFavicon />
               <LightningStrikes />
               <AppShell>{children}</AppShell>
             </AccentScope>
