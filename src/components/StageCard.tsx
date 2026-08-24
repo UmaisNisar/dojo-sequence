@@ -21,7 +21,7 @@ export function StageCard({
   const inner = (
     <div
       className={cn(
-        "group relative flex items-center gap-4 rounded-xl border p-4 transition-colors sm:p-5",
+        "group relative flex items-center gap-4 clip-panel border p-4 transition-colors sm:p-5",
         locked
           ? "border-border bg-surface opacity-60"
           : "border-border bg-surface hover:border-border-strong",
@@ -30,7 +30,7 @@ export function StageCard({
     >
       <div
         className={cn(
-          "tnum flex size-11 shrink-0 items-center justify-center rounded-lg border font-mono text-sm font-semibold",
+          "tnum flex size-11 shrink-0 items-center justify-center clip-row border font-mono text-sm font-semibold",
           status === "complete"
             ? "border-accent/50 bg-accent-dim text-accent-bright"
             : locked

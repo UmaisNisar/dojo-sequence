@@ -20,6 +20,13 @@
   --accent-deep: #6d28d9;
   --accent-dim: rgba(139, 92, 246, 0.14);
   --danger: #f0426b;
+
+  /* Frame-data semantics, borrowed from the game's own colour language:
+     Heat amber for advantage, red for deficit, gold for a launch. Fixed —
+     these never take the character accent, because they mean something. */
+  --frame-plus: #f0a020;
+  --frame-minus: #e35a6d;
+  --frame-launch: #ffcc4d;
 }
 
 @theme inline {
@@ -37,6 +44,9 @@
   --color-accent-deep: var(--accent-deep);
   --color-accent-dim: var(--accent-dim);
   --color-danger: var(--danger);
+  --color-frame-plus: var(--frame-plus);
+  --color-frame-minus: var(--frame-minus);
+  --color-frame-launch: var(--frame-launch);
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, "SFMono-Regular", monospace;
 }

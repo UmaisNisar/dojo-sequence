@@ -44,7 +44,7 @@ export function StageView({
         </p>
         <Link
           href={`/training/${character.id}`}
-          className="mt-6 inline-block rounded-lg bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-accent-bright"
+          className="mt-6 inline-block clip-row bg-accent px-6 py-3 text-sm font-semibold uppercase tracking-wider text-bg transition-colors hover:bg-accent-bright"
         >
           Back to stages
         </Link>
@@ -52,21 +52,8 @@ export function StageView({
     );
   }
 
-  const accent = character.accent;
-
   return (
-    <div
-      style={
-        accent
-          ? ({
-              ["--accent" as string]: accent.base,
-              ["--accent-bright" as string]: accent.bright,
-              ["--accent-deep" as string]: accent.deep,
-              ["--accent-dim" as string]: `${accent.base}24`,
-            } as React.CSSProperties)
-          : undefined
-      }
-    >
+    <div>
       <nav className="mb-6" aria-label="Breadcrumb">
         <Link
           href={`/training/${character.id}`}
@@ -129,9 +116,9 @@ export function StageView({
       {stage.id === "punishment" && character.punishQuiz && (
         <Link
           href={`/training/${character.id}/quiz`}
-          className="group mb-4 flex items-center gap-4 rounded-xl border border-accent/40 bg-accent-dim p-4 transition-colors hover:border-accent sm:p-5"
+          className="group mb-4 flex items-center gap-4 clip-panel border border-accent/40 bg-accent-dim p-4 transition-colors hover:border-accent sm:p-5"
         >
-          <span className="flex size-11 shrink-0 items-center justify-center rounded-lg border border-accent/50 text-accent-bright">
+          <span className="flex size-11 shrink-0 items-center justify-center clip-row border border-accent/50 text-accent-bright">
             <Timer className="size-5" aria-hidden />
           </span>
           <div className="min-w-0 flex-1">

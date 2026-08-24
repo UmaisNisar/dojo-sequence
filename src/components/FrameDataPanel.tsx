@@ -35,7 +35,7 @@ export function FrameDataPanel({
   return (
     <section
       aria-label="Frame data"
-      className="mb-8 overflow-hidden rounded-xl border border-border bg-surface"
+      className="mb-8 overflow-hidden clip-panel border border-border bg-surface"
     >
       <div className="flex items-center justify-between gap-3 border-b border-border px-4 py-2.5 sm:px-5">
         <h2 className="microlabel">Frame data</h2>
@@ -87,17 +87,19 @@ function FrameRow({
           label="Block"
           value={override?.block ?? move.block ?? "—"}
           liveUpdated={override?.block !== undefined}
-          highlightPlus
+          semantic
         />
         <FrameCell
           label="Hit"
           value={override?.hit ?? move.hit ?? "—"}
           liveUpdated={override?.hit !== undefined}
+          semantic
         />
         <FrameCell
           label="CH"
           value={override?.ch ?? move.ch ?? "—"}
           liveUpdated={override?.ch !== undefined}
+          semantic
         />
       </dl>
       {move.notes.length > 0 && (
@@ -117,22 +119,37 @@ function FrameRow({
   );
 }
 
+/**
+ * Colour by meaning, not decoration: a launch reads gold, advantage reads
+ * Heat amber, deficit reads red. Scanning a panel should tell you whether a
+ * move is your turn or theirs before you have read a single number.
+ */
+function frameTone(value: string): string {
+  if (!value || value === "—") return "text-fg";
+  // "+43a", "+70a (+54)" — an aerial state, i.e. a full combo.
+  if (/[+-]?\d+a/.test(value)) return "text-frame-launch";
+  if (value.startsWith("+")) return "text-frame-plus";
+  if (value.startsWith("-")) return "text-frame-minus";
+  return "text-fg";
+}
+
 function FrameCell({
   label,
   value,
   liveUpdated,
-  highlightPlus,
+  semantic,
 }: {
   label: string;
   value: string;
   liveUpdated?: boolean;
-  highlightPlus?: boolean;
+  /** Colour the value by what it means. Off for startup, which has no sign. */
+  semantic?: boolean;
 }) {
-  const isPlus = highlightPlus && value.startsWith("+");
+  const tone = semantic ? frameTone(value) : "text-fg";
   return (
     <div
       className={cn(
-        "relative rounded-lg px-2 py-1.5 text-center",
+        "relative clip-row px-2 py-1.5 text-center",
         liveUpdated
           ? "bg-accent-dim ring-1 ring-accent/40"
           : "bg-surface-2",
@@ -144,7 +161,7 @@ function FrameCell({
       <dd
         className={cn(
           "tnum mt-0.5 break-words font-mono text-[11px] font-semibold sm:text-xs",
-          isPlus || liveUpdated ? "text-accent-bright" : "text-fg",
+          liveUpdated ? "text-accent-bright" : tone,
         )}
       >
         {value}

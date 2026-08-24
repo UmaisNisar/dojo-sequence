@@ -53,7 +53,7 @@ export function SettingsView() {
     <div>
       <header className="mb-8">
         <p className="microlabel">Settings</p>
-        <h1 className="mt-1 text-4xl font-bold uppercase tracking-tight sm:text-5xl">
+        <h1 className="display-title mt-1 text-4xl uppercase tracking-tight sm:text-5xl">
           Settings
         </h1>
       </header>
@@ -66,7 +66,7 @@ export function SettingsView() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
               className={cn(
-                "mb-6 rounded-lg border p-3 text-sm",
+                "mb-6 clip-row border p-3 text-sm",
                 notice.kind === "success"
                   ? "border-accent/40 bg-accent-dim text-accent-bright"
                   : "border-danger/40 bg-danger/10 text-danger",
@@ -157,7 +157,7 @@ export function SettingsView() {
         </SettingRow>
 
         {/* About */}
-        <div className="rounded-xl border border-border bg-surface p-5">
+        <div className="clip-panel border border-border bg-surface p-5">
           <h2 className="microlabel flex items-center gap-1.5">
             <Info className="size-3.5" aria-hidden /> About
           </h2>
@@ -226,7 +226,7 @@ function FrameDataProvenance({ now }: { now: number }) {
   );
 
   return (
-    <div className="mt-4 rounded-lg border border-border px-4 py-3">
+    <div className="mt-4 clip-row border border-border px-4 py-3">
       {[...groups.values()].map((g) => (
         <p key={g.version + g.verifiedAt} className="text-[11px] leading-relaxed text-faint">
           {groups.size > 1 && (
@@ -288,7 +288,7 @@ function SettingRow({
   return (
     <div
       className={cn(
-        "flex items-center justify-between gap-4 rounded-xl border bg-surface p-5",
+        "flex items-center justify-between gap-4 clip-panel border bg-surface p-5",
         danger ? "border-danger/30" : "border-border",
       )}
     >
@@ -322,7 +322,7 @@ function ActionButton({
       type="button"
       onClick={onClick}
       className={cn(
-        "min-h-[44px] rounded-lg border px-5 text-sm font-semibold transition-colors",
+        "min-h-[44px] clip-row border px-5 text-sm font-semibold transition-colors",
         danger
           ? "border-danger/40 text-danger hover:bg-danger/10"
           : "border-border text-fg hover:border-border-strong hover:bg-surface-2",
@@ -362,7 +362,7 @@ export function ConfirmDialog({
           onClick={onCancel}
         >
           <motion.div
-            className="w-full max-w-sm rounded-xl border border-border bg-surface p-6"
+            className="w-full max-w-sm clip-panel border border-border bg-surface p-6"
             initial={{ opacity: 0, y: 12, scale: 0.97 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, scale: 0.98 }}
@@ -376,14 +376,14 @@ export function ConfirmDialog({
                 type="button"
                 onClick={onCancel}
                 autoFocus
-                className="min-h-[44px] rounded-lg border border-border px-4 text-sm font-medium text-muted transition-colors hover:border-border-strong hover:text-fg"
+                className="min-h-[44px] clip-row border border-border px-4 text-sm font-medium text-muted transition-colors hover:border-border-strong hover:text-fg"
               >
                 Cancel
               </button>
               <button
                 type="button"
                 onClick={onConfirm}
-                className="min-h-[44px] rounded-lg bg-danger px-4 text-sm font-semibold text-white transition-colors hover:opacity-90"
+                className="min-h-[44px] clip-row bg-danger px-4 text-sm font-semibold text-white transition-colors hover:opacity-90"
               >
                 {confirmLabel}
               </button>

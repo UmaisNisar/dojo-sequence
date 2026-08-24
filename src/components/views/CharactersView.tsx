@@ -25,7 +25,7 @@ export function CharactersView() {
     <div>
       <header className="mb-8">
         <p className="microlabel">Characters</p>
-        <h1 className="mt-1 text-4xl font-bold uppercase tracking-tight sm:text-5xl">
+        <h1 className="display-title mt-1 text-4xl uppercase tracking-tight sm:text-5xl">
           Roster
         </h1>
         <p className="mt-3 text-sm text-muted">
@@ -50,7 +50,7 @@ export function CharactersView() {
                   characterId: character.id,
                 })
               }
-              className="group flex h-full flex-col rounded-xl border border-accent/40 bg-surface p-5 transition-colors hover:border-accent sm:p-6"
+              className="group flex h-full flex-col clip-panel border border-accent/40 bg-surface p-5 transition-colors hover:border-accent sm:p-6"
             >
               <div className="flex items-center justify-between gap-2">
                 <p className="microlabel">{character.style}</p>
@@ -98,7 +98,7 @@ export function CharactersView() {
               duration: 0.3,
               ease: "easeOut",
             }}
-            className="flex h-full flex-col rounded-xl border border-border bg-surface p-5 opacity-60 sm:p-6"
+            className="flex h-full flex-col clip-panel border border-border bg-surface p-5 opacity-60 sm:p-6"
             aria-label={`${c.name} — coming soon`}
           >
             <p className="microlabel">{c.style}</p>

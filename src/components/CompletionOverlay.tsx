@@ -197,7 +197,7 @@ export function CompletionOverlay({
                 <Link
                   href={stageComplete.nextStageHref}
                   onClick={onContinue}
-                  className="rounded-lg bg-accent px-6 py-3.5 text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-accent-bright"
+                  className="clip-row bg-accent px-6 py-3.5 text-sm font-semibold uppercase tracking-wider text-bg transition-colors hover:bg-accent-bright"
                 >
                   Enter {stageComplete.nextStageName}
                 </Link>
@@ -205,7 +205,7 @@ export function CompletionOverlay({
                 <Link
                   href={continueHref}
                   onClick={onContinue}
-                  className="rounded-lg bg-accent px-6 py-3.5 text-sm font-semibold uppercase tracking-wider text-white transition-colors hover:bg-accent-bright"
+                  className="clip-row bg-accent px-6 py-3.5 text-sm font-semibold uppercase tracking-wider text-bg transition-colors hover:bg-accent-bright"
                 >
                   {continueLabel}
                 </Link>
@@ -213,7 +213,7 @@ export function CompletionOverlay({
               <button
                 type="button"
                 onClick={onContinue}
-                className="rounded-lg border border-border px-6 py-3 text-sm font-medium text-muted transition-colors hover:border-border-strong hover:text-fg"
+                className="clip-row border border-border px-6 py-3 text-sm font-medium text-muted transition-colors hover:border-border-strong hover:text-fg"
               >
                 Stay here
               </button>

@@ -55,7 +55,7 @@ export function MoveVideo({
       className={className}
       style={{ aspectRatio: "16 / 9" }}
     >
-      <div className="relative size-full overflow-hidden rounded-lg border border-border bg-surface-2">
+      <div className="relative size-full overflow-hidden clip-row border border-border bg-surface-2">
         {visible && (
           <video
             src={src}

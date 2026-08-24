@@ -5,6 +5,7 @@ import { ProgressProvider } from "@/hooks/use-progress";
 import { LiveFramesProvider } from "@/hooks/use-live-frames";
 import { AppShell } from "@/components/AppShell";
 import { LightningStrikes } from "@/components/effects/LightningStrikes";
+import { AccentScope } from "@/components/AccentScope";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -52,8 +53,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <div aria-hidden className="bg-grid pointer-events-none absolute inset-x-0 top-0 h-[420px]" />
         <ProgressProvider>
           <LiveFramesProvider>
-            <LightningStrikes />
-            <AppShell>{children}</AppShell>
+            <AccentScope>
+              <LightningStrikes />
+              <AppShell>{children}</AppShell>
+            </AccentScope>
           </LiveFramesProvider>
         </ProgressProvider>
       </body>

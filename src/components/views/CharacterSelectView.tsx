@@ -108,6 +108,7 @@ export function CharacterSelectView() {
 
   // Readout reflects whichever available fighter is under the cursor.
   const focusedCharacter = characters.find((c) => c.id === focusedId) ?? null;
+  const focusedAccent = focusedCharacter?.accent;
   const summary = useMemo(
     () =>
       focusedCharacter
@@ -138,12 +139,12 @@ export function CharacterSelectView() {
         className="mb-8 text-center"
       >
         <p className="microlabel flex items-center justify-center gap-2">
-          <span className="flex size-5 items-center justify-center rounded-[4px] bg-accent text-bg">
+          <span className="flex size-5 items-center justify-center clip-slant bg-accent text-bg">
             <Zap className="size-3" strokeWidth={2.5} aria-hidden />
           </span>
           Dojo Sequence
         </p>
-        <h1 className="mt-3 text-4xl font-bold uppercase tracking-tight sm:text-6xl">
+        <h1 className="display-title mt-3 text-4xl uppercase tracking-tight sm:text-6xl">
           Choose your fighter
         </h1>
         <p className="mt-2 text-sm text-muted">
@@ -161,6 +162,7 @@ export function CharacterSelectView() {
           const isFocused = tile.id === focusedId;
           const isSelected = tile.id === selectedId;
           const isDenied = tile.id === deniedId;
+          const own = characters.find((c) => c.id === tile.id)?.accent;
           return (
             <motion.button
               key={tile.id}
@@ -188,8 +190,18 @@ export function CharacterSelectView() {
               onMouseEnter={() => setFocusedId(tile.id)}
               onFocus={() => setFocusedId(tile.id)}
               onClick={() => choose(tile)}
+              style={
+                own
+                  ? ({
+                      "--accent": own.base,
+                      "--accent-bright": own.bright,
+                      "--accent-deep": own.deep,
+                      "--accent-dim": `${own.base}20`,
+                    } as React.CSSProperties)
+                  : undefined
+              }
               className={cn(
-                "group relative flex aspect-[5/6] flex-col items-center justify-center gap-2 overflow-hidden rounded-xl border p-2 transition-colors sm:aspect-square",
+                "group relative flex aspect-[5/6] flex-col items-center justify-center gap-2 overflow-hidden clip-panel border p-2 transition-colors sm:aspect-square",
                 tile.available
                   ? "breathe border-accent/60 bg-accent-dim"
                   : "border-border bg-surface",
@@ -204,7 +216,7 @@ export function CharacterSelectView() {
                   layoutId="cursor"
                   transition={{ type: "spring", stiffness: 500, damping: 38 }}
                   className={cn(
-                    "pointer-events-none absolute inset-0 rounded-xl border-2",
+                    "pointer-events-none absolute inset-0 clip-panel border-2",
                     tile.available ? "border-accent-bright" : "border-border-strong",
                   )}
                   aria-hidden
@@ -265,10 +277,21 @@ export function CharacterSelectView() {
         })}
       </div>
 
-      {/* Tekken-style readout for the focused fighter */}
+      {/* Tekken-style readout — takes the focused fighter's colour */}
       <div
         className="mt-8 flex min-h-[92px] items-end justify-between gap-4 border-t border-border pt-5"
         aria-live="polite"
+      
+        style={
+          focusedAccent
+            ? ({
+                "--accent": focusedAccent.base,
+                "--accent-bright": focusedAccent.bright,
+                "--accent-deep": focusedAccent.deep,
+                "--accent-dim": `${focusedAccent.base}20`,
+              } as React.CSSProperties)
+            : undefined
+        }
       >
         <div className="min-w-0">
           <p className="microlabel">{focused?.style}</p>

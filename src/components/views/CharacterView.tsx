@@ -103,7 +103,7 @@ export function CharacterView({ character }: { character: Character }) {
           </h2>
           <Link
             href={nextHref}
-            className="group flex items-center gap-4 rounded-xl border border-accent/50 bg-accent-dim p-4 transition-colors hover:border-accent sm:p-5"
+            className="group flex items-center gap-4 clip-panel border border-accent/50 bg-accent-dim p-4 transition-colors hover:border-accent sm:p-5"
           >
             <div className="min-w-0 flex-1">
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
@@ -127,7 +127,7 @@ export function CharacterView({ character }: { character: Character }) {
             <button
               type="button"
               onClick={startSession}
-              className="mt-2 flex w-full items-center justify-center gap-2 rounded-xl border border-border bg-surface px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.15em] text-muted transition-colors hover:border-border-strong hover:text-fg"
+              className="mt-2 flex w-full items-center justify-center gap-2 clip-panel border border-border bg-surface px-6 py-3.5 text-xs font-semibold uppercase tracking-[0.15em] text-muted transition-colors hover:border-border-strong hover:text-fg"
             >
               {hasSession ? (
                 <>
@@ -143,7 +143,7 @@ export function CharacterView({ character }: { character: Character }) {
         </section>
       ) : (
         state.hydrated && (
-          <div className="mb-8 rounded-xl border border-accent/40 bg-accent-dim p-6 text-center">
+          <div className="mb-8 clip-panel border border-accent/40 bg-accent-dim p-6 text-center">
             <Trophy className="mx-auto size-7 text-accent-bright" aria-hidden />
             <h2 className="mt-3 text-lg font-bold uppercase tracking-tight">
               Curriculum complete
@@ -189,7 +189,7 @@ export function CharacterView({ character }: { character: Character }) {
                 <li key={item.id}>
                   <Link
                     href={`/training/${character.id}/stage/${stageNumber}/item/${item.id}`}
-                    className="group flex items-center justify-between gap-4 rounded-xl border border-border bg-surface p-4 transition-colors hover:border-border-strong"
+                    className="group flex items-center justify-between gap-4 clip-panel border border-border bg-surface p-4 transition-colors hover:border-border-strong"
                   >
                     <div className="min-w-0">
                       <p className="truncate text-sm font-semibold">{item.name}</p>
@@ -212,9 +212,9 @@ export function CharacterView({ character }: { character: Character }) {
       {quizStats && quizStats.runs > 0 && (
         <Link
           href={`/training/${character.id}/quiz`}
-          className="group mt-8 flex items-center gap-4 rounded-xl border border-border bg-surface p-4 transition-colors hover:border-border-strong sm:p-5"
+          className="group mt-8 flex items-center gap-4 clip-panel border border-border bg-surface p-4 transition-colors hover:border-border-strong sm:p-5"
         >
-          <span className="flex size-10 shrink-0 items-center justify-center rounded-lg border border-accent/40 text-accent-bright">
+          <span className="flex size-10 shrink-0 items-center justify-center clip-row border border-accent/40 text-accent-bright">
             <Timer className="size-4" aria-hidden />
           </span>
           <div className="min-w-0 flex-1">
