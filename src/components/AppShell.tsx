@@ -1,22 +1,51 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { MotionConfig } from "motion/react";
-import { Zap, Swords, Users, Settings, MessageSquare } from "lucide-react";
+import { Zap, Swords, Users, Settings, MessageSquare, Brain } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useActiveCharacter, useReducedMotionSetting } from "@/hooks/use-progress";
 
-const navItems = [
-  { href: "/training", label: "Training", icon: Swords },
-  { href: "/characters", label: "Characters", icon: Users },
-  { href: "/settings", label: "Settings", icon: Settings },
-  { href: "/feedback", label: "Report", icon: MessageSquare },
-] as const;
+const isQuiz = (pathname: string) => pathname.endsWith("/quiz");
 
-function isActive(pathname: string, href: string): boolean {
-  return pathname === href || pathname.startsWith(href + "/");
+/**
+ * Nav is built per render because Quiz is character-scoped: it points straight
+ * at the active fighter's quiz rather than at a /quiz stub that would bounce
+ * through a redirect, the same reasoning as the wordmark below.
+ *
+ * Each item carries its own active test. Prefix matching alone would light up
+ * Training on the quiz route, since /training/king/quiz sits underneath it.
+ */
+function buildNav(quizHref: string) {
+  return [
+    {
+      href: "/training",
+      label: "Training",
+      icon: Swords,
+      active: (p: string) => p.startsWith("/training") && !isQuiz(p),
+    },
+    { href: quizHref, label: "Quiz", icon: Brain, active: isQuiz },
+    {
+      href: "/characters",
+      label: "Characters",
+      icon: Users,
+      active: (p: string) => p === "/characters",
+    },
+    {
+      href: "/settings",
+      label: "Settings",
+      icon: Settings,
+      active: (p: string) => p === "/settings",
+    },
+    {
+      href: "/feedback",
+      label: "Report",
+      icon: MessageSquare,
+      active: (p: string) => p === "/feedback",
+    },
+  ];
 }
 
 export function AppShell({ children }: { children: React.ReactNode }) {
@@ -30,6 +59,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
      pointless page refresh. */
   const home = `/training/${activeCharacter.id}`;
   const atHome = pathname === home;
+  const navItems = useMemo(
+    () => buildNav(`/training/${activeCharacter.id}/quiz`),
+    [activeCharacter.id],
+  );
 
   // Mirror the in-app setting onto <html> so CSS transitions obey it too.
   useEffect(() => {
@@ -80,8 +113,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           })()}
           <nav aria-label="Primary" className="hidden md:block">
             <ul className="flex items-center gap-1">
-              {navItems.map(({ href, label }) => {
-                const active = isActive(pathname, href);
+              {navItems.map(({ href, label, active: match }) => {
+                const active = match(pathname);
                 return (
                   <li key={href}>
                     <Link
@@ -114,8 +147,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-bg/92 pb-[env(safe-area-inset-bottom)] backdrop-blur-md md:hidden"
       >
         <ul className="flex items-stretch justify-around">
-          {navItems.map(({ href, label, icon: Icon }) => {
-            const active = isActive(pathname, href);
+          {navItems.map(({ href, label, icon: Icon, active: match }) => {
+            const active = match(pathname);
             return (
               <li key={href} className="flex-1">
                 <Link
