@@ -257,16 +257,16 @@ function FrameDataProvenance({ now }: { now: number }) {
       <p className="mt-1.5 flex items-center gap-1.5 text-[11px] text-faint">
         <RadioTower className="size-3 shrink-0" aria-hidden />
         {checking > 0
-          ? `Live-checking ${characters.length} character tables against Wavu Wiki…`
+          ? "Live-checking against Wavu Wiki…"
           : failed > 0
-            ? `${failed} of ${characters.length} tables could not be live-checked — bundled values shown.`
+            ? `${failed} table${failed === 1 ? "" : "s"} could not be live-checked — bundled values shown.`
             : ok > 0
-              ? `All ${ok} character tables live-checked ${formatRelativeTime(oldest, now)}${
+              ? `${ok} of ${characters.length} tables live-checked ${formatRelativeTime(oldest, now)}${
                   changed > 0
                     ? ` — ${changed} value${changed === 1 ? "" : "s"} changed by a patch and shown live.`
-                    : " — all match the bundled tables."
+                    : " — every checked value matches the bundled table."
                 }`
-              : "Live check runs in the background while the app is open."}
+              : "Each table is live-checked against Wavu Wiki the first time you open that character."}
       </p>
     </div>
   );

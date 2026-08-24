@@ -5,8 +5,9 @@
  * While the app is open it quietly queries Wavu Wiki's public API (CORS is
  * enabled for anonymous requests), diffs the live values against the bundled
  * table, and returns overrides for anything a patch changed. Results are
- * cached in localStorage and refreshed at most once a day, so the check
- * costs one small request per day per character.
+ * cached in localStorage and refreshed at most once a day, and only for a
+ * character actually being viewed — so a visitor costs Wavu a handful of
+ * requests a day at most, and nothing at all if they never open a curriculum.
  *
  * Live values are sanitized against a strict whitelist before they can ever
  * render — a vandalized wiki cell becomes a discarded value, not UI content.
@@ -30,6 +31,8 @@ export interface LiveFramesState {
 }
 
 const API = "https://wavu.wiki/w/api.php";
+/** Ids per Cargo query. 50 keeps the URL ~1.3 KB and the round trips few. */
+const BATCH = 50;
 const SUCCESS_TTL = 24 * 60 * 60 * 1000; // re-check daily
 const FAILURE_TTL = 2 * 60 * 60 * 1000; // retry sooner after a failure
 
@@ -70,8 +73,8 @@ interface LiveRow {
 
 async function fetchRows(wavuIds: string[]): Promise<Map<string, LiveRow>> {
   const rows = new Map<string, LiveRow>();
-  for (let i = 0; i < wavuIds.length; i += 20) {
-    const batch = wavuIds.slice(i, i + 20);
+  for (let i = 0; i < wavuIds.length; i += BATCH) {
+    const batch = wavuIds.slice(i, i + BATCH);
     const where = `id IN (${batch
       .map((id) => `'${id.replace(/'/g, "''")}'`)
       .join(",")})`;
@@ -80,7 +83,7 @@ async function fetchRows(wavuIds: string[]): Promise<Map<string, LiveRow>> {
     url.searchParams.set("tables", "Move");
     url.searchParams.set("fields", "id,startup,block,hit,ch");
     url.searchParams.set("where", where);
-    url.searchParams.set("limit", "50");
+    url.searchParams.set("limit", String(BATCH));
     url.searchParams.set("format", "json");
     url.searchParams.set("origin", "*"); // MediaWiki anonymous CORS
     const res = await fetch(url.toString());

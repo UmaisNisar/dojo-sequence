@@ -38,7 +38,9 @@ export function DynamicFavicon() {
 
     /* app/icon.svg was removed precisely so this is the only icon link:
        Next re-appended its static one after ours on every navigation, and the
-       last link wins. Any stray is still swept, defensively. */
+       last link wins. The default mark lives at public/favicon.ico instead,
+       which the browser finds on its own before this runs — a file, not a
+       <link>, so there is nothing here to fight with. Strays still swept. */
     document
       .querySelectorAll<HTMLLinkElement>(
         'link[rel~="icon"]:not([data-dynamic-favicon="true"])',
