@@ -4,7 +4,7 @@ import { useMemo } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { motion } from "motion/react";
-import { ArrowRight, Brain, Play, RefreshCw, RotateCcw, Trophy } from "lucide-react";
+import { ArrowRight, Play, RefreshCw, RotateCcw, Trophy } from "lucide-react";
 import type { Character, TrainingItem } from "@/types";
 import { useProgress } from "@/hooks/use-progress";
 import {
@@ -60,8 +60,6 @@ export function CharacterView({ character }: { character: Character }) {
     return overdue.slice(0, 5);
   }, [character, progress, now]);
 
-  const quizStats = state.quizStats[character.id];
-  const knowledge = state.knowledgeStats[character.id];
 
   /* The curriculum screen is now the home screen, so it owns what Today
      used to: where you are, and the one button that resumes training. */
@@ -210,48 +208,6 @@ export function CharacterView({ character }: { character: Character }) {
         </section>
       )}
 
-      {/* Always visible. This was previously gated on having already run the
-          quiz, which meant the one group who most needed it — people who had
-          never taken it — were the only ones who could not find it. */}
-      <Link
-        href={`/training/${character.id}/quiz`}
-        className="group mt-8 flex items-center gap-4 clip-panel border border-border bg-surface p-4 transition-colors hover:border-accent/50 sm:p-5"
-      >
-        <span className="flex size-10 shrink-0 items-center justify-center clip-row border border-accent/40 text-accent-bright">
-          <Brain className="size-4" aria-hidden />
-        </span>
-        <div className="min-w-0 flex-1">
-          <h2 className="microlabel">Quiz</h2>
-          <p className="tnum mt-1 text-sm font-semibold">
-            {knowledge && knowledge.bestTotal ? (
-              <>
-                Best {knowledge.bestScore} / {knowledge.bestTotal}
-                <span className="font-medium text-muted">
-                  {" "}
-                  · {knowledge.runs} run{knowledge.runs === 1 ? "" : "s"}
-                  {knowledge.bestStreak > 1
-                    ? ` · ${knowledge.bestStreak} streak`
-                    : ""}
-                </span>
-              </>
-            ) : (
-              <span className="font-medium text-muted">
-                Test what you have trained, plus general knowledge
-              </span>
-            )}
-          </p>
-          {quizStats && quizStats.runs > 0 && (
-            <p className="tnum mt-0.5 text-[11px] text-faint">
-              Punish reaction best {quizStats.bestScore} / 10
-              {quizStats.bestAvgMs !== null &&
-                ` · avg ${(quizStats.bestAvgMs / 1000).toFixed(2)}s`}
-            </p>
-          )}
-        </div>
-        <span className="shrink-0 text-xs font-medium text-muted transition-colors group-hover:text-fg">
-          {knowledge && knowledge.runs > 0 ? "Run again →" : "Start →"}
-        </span>
-      </Link>
     </div>
   );
 }
