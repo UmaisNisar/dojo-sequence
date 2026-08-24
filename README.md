@@ -104,6 +104,21 @@ scoring) live in `src/lib/progression.ts` — components never re-implement them
 `localStorage` access is isolated behind `src/lib/store.ts`, and every byte
 read from storage or an imported file is validated before it touches app state.
 
+## Privacy
+
+Your training progress never leaves your browser — it lives in `localStorage`
+and there is no account, no server and no database to hold it.
+
+The site does record aggregate traffic through Vercel Web Analytics: page
+paths, referrer, country, browser and device type. It sets no cookies, stores
+no IP addresses, and identifies visitors by a hash that is discarded every 24
+hours, so visits cannot be linked across days or across sites. It cannot see
+your progress. The dashboard is private to the project owner.
+
+Security headers, including the Content Security Policy, are defined in
+`next.config.ts`. `connect-src` and `media-src` pin the only reachable third
+party to `wavu.wiki`.
+
 ---
 
 Dojo Sequence is a fan-made training tool and is not affiliated with Bandai

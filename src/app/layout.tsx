@@ -7,6 +7,7 @@ import { AppShell } from "@/components/AppShell";
 import { LightningStrikes } from "@/components/effects/LightningStrikes";
 import { AccentScope } from "@/components/AccentScope";
 import { DynamicFavicon } from "@/components/DynamicFavicon";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -61,6 +62,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             </AccentScope>
           </LiveFramesProvider>
         </ProgressProvider>
+        {/* Aggregate traffic only — cookieless, no identifiers, and the
+            dashboard sits behind the Vercel account. Production only: in dev
+            the package loads its debug script from va.vercel-scripts.com,
+            which the CSP blocks, and local browsing would otherwise pollute
+            the real numbers. */}
+        {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
   );
