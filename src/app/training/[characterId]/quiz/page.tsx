@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { characters, getCharacter } from "@/data/characters";
-import { QuizView } from "@/components/views/QuizView";
+import { getFrameData } from "@/data/frames";
+import { QuizHub } from "@/components/views/QuizHub";
 
+/**
+ * Every character with a frame table gets a quiz now, not only the ones with a
+ * hand-written punish set — the knowledge questions are generated from the
+ * table itself.
+ */
 export function generateStaticParams() {
   return characters
-    .filter((c) => c.punishQuiz && c.punishQuiz.length > 0)
+    .filter((c) => getFrameData(c.id) || c.punishQuiz?.length)
     .map((c) => ({ characterId: c.id }));
 }
 
@@ -15,8 +21,9 @@ export async function generateMetadata({
   const { characterId } = await params;
   const character = getCharacter(characterId);
   return {
-    title: character ? `${character.name} — Punish Reaction Quiz` : "Quiz",
-    description: "Flash-card punishment recognition under a timer.",
+    title: character ? `${character.name} — Quiz` : "Quiz",
+    description:
+      "Test what you have trained, with every answer taken from verified frame data.",
   };
 }
 
@@ -25,6 +32,7 @@ export default async function QuizPage({
 }: PageProps<"/training/[characterId]/quiz">) {
   const { characterId } = await params;
   const character = getCharacter(characterId);
-  if (!character || !character.punishQuiz?.length) notFound();
-  return <QuizView character={character} />;
+  if (!character) notFound();
+  if (!getFrameData(character.id) && !character.punishQuiz?.length) notFound();
+  return <QuizHub character={character} />;
 }

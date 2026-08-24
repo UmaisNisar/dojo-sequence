@@ -290,7 +290,7 @@
     },
     "ewgf": {
       "wavuId": "Kazuya-f,n,d,df${justFrame}2",
-      "input": "f,n,d,df+2",
+      "input": "f,n,d,df+2 (just frame)",
       "name": "Electric Wind God Fist",
       "level": "h",
       "startup": "i11~12",

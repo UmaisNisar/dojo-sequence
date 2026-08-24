@@ -4,7 +4,7 @@ import type {
   PersistedState,
 } from "@/types";
 
-export const SCHEMA_VERSION = 2;
+export const SCHEMA_VERSION = 3;
 
 /** Fallback fighter when no selection has been made yet. */
 const DEFAULT_CHARACTER_ID = "kazuya";
@@ -28,6 +28,7 @@ export function emptyState(): PersistedState {
     activeSession: null,
     lastSessionResult: null,
     quizStats: {},
+    knowledgeStats: {},
     settings: { reducedMotion: false },
   };
 }
@@ -147,6 +148,18 @@ export function sanitizeState(raw: unknown): PersistedState {
           typeof s.bestAvgMs === "number" && Number.isFinite(s.bestAvgMs) && s.bestAvgMs > 0
             ? s.bestAvgMs
             : null,
+      };
+    }
+  }
+
+  if (isRecord(raw.knowledgeStats)) {
+    for (const [id, s] of Object.entries(raw.knowledgeStats)) {
+      if (!isRecord(s)) continue;
+      state.knowledgeStats[id] = {
+        runs: sanitizeNumber(s.runs),
+        bestScore: sanitizeNumber(s.bestScore),
+        bestTotal: sanitizeNumber(s.bestTotal),
+        bestStreak: sanitizeNumber(s.bestStreak),
       };
     }
   }

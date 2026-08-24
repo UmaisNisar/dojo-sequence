@@ -197,6 +197,45 @@ export interface QuizStats {
   bestAvgMs: number | null;
 }
 
+/** Where a generated question came from — drives the label and the review link. */
+export type QuizCategory =
+  | "block"
+  | "speed"
+  | "level"
+  | "launcher"
+  | "notation";
+
+/**
+ * A question built from the verified frame table, not hand-authored.
+ * See `src/lib/quiz-generator.ts` for the rules that keep them honest.
+ */
+export interface QuizItem {
+  id: string;
+  category: QuizCategory;
+  /** Short eyebrow, e.g. "On block". */
+  categoryLabel: string;
+  prompt: string;
+  situation: string;
+  /** "Name · input" — identifies the move where the question wording is gone. */
+  subject: string;
+  options: string[];
+  correctIndex: number;
+  explain: string;
+  /** True when the move belongs to an item the player has marked learned. */
+  fromTraining?: boolean;
+  /** Set for trained moves, so a miss can link straight back to the lesson. */
+  fromItemId?: string;
+  fromStageNumber?: number;
+}
+
+export interface KnowledgeStats {
+  runs: number;
+  bestScore: number;
+  /** What bestScore was out of, so the display stays honest if length changes. */
+  bestTotal: number;
+  bestStreak: number;
+}
+
 /* ------------------------------------------------------------------ */
 /* Frame data — single source of truth for every number in the UI     */
 /* ------------------------------------------------------------------ */
@@ -245,6 +284,7 @@ export interface PersistedState {
   lastSessionResult: SessionResult | null;
   /** Per-character reaction quiz stats. */
   quizStats: Record<string, QuizStats>;
+  knowledgeStats: Record<string, KnowledgeStats>;
   settings: {
     reducedMotion: boolean;
   };

@@ -41,6 +41,13 @@ type Action =
   | { type: "exit-session" }
   | { type: "dismiss-session-result" }
   | { type: "record-quiz-run"; characterId: string; score: number; avgMs: number | null }
+  | {
+      type: "record-knowledge-run";
+      characterId: string;
+      score: number;
+      total: number;
+      streak: number;
+    }
   | { type: "set-reduced-motion"; value: boolean }
   | { type: "set-active-character"; characterId: string }
   | { type: "import-characters"; characters: Record<string, CharacterProgress> }
@@ -137,6 +144,32 @@ function reducer(state: ProgressState, action: Action): ProgressState {
     case "dismiss-session-result":
       return { ...state, lastSessionResult: null };
 
+    case "record-knowledge-run": {
+      const prev = state.knowledgeStats[action.characterId] ?? {
+        runs: 0,
+        bestScore: 0,
+        bestTotal: 0,
+        bestStreak: 0,
+      };
+      // Compare as a fraction: quiz length can differ between runs, so a raw
+      // score is not comparable on its own.
+      const better =
+        prev.bestTotal === 0 ||
+        action.score / action.total > prev.bestScore / prev.bestTotal;
+      return {
+        ...state,
+        knowledgeStats: {
+          ...state.knowledgeStats,
+          [action.characterId]: {
+            runs: prev.runs + 1,
+            bestScore: better ? action.score : prev.bestScore,
+            bestTotal: better ? action.total : prev.bestTotal,
+            bestStreak: Math.max(prev.bestStreak, action.streak),
+          },
+        },
+      };
+    }
+
     case "record-quiz-run": {
       const prev = state.quizStats[action.characterId] ?? {
         runs: 0,
@@ -218,6 +251,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       activeSession: state.activeSession,
       lastSessionResult: state.lastSessionResult,
       quizStats: state.quizStats,
+      knowledgeStats: state.knowledgeStats,
       settings: state.settings,
     });
   }, [state]);
