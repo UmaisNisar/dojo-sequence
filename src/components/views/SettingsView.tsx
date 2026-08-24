@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import {
+  RadioTower,
   Download,
   Info,
   RotateCcw,
@@ -10,12 +11,11 @@ import {
   Zap,
 } from "lucide-react";
 import { useProgress } from "@/hooks/use-progress";
-import { useLiveFrames } from "@/hooks/use-live-frames";
+import { useAllLiveFrames } from "@/hooks/use-live-frames";
 import { buildExport, downloadJson, parseImport } from "@/lib/export";
 import { getFrameData } from "@/data/frames";
-import { ProvenanceFooter } from "@/components/FrameDataPanel";
 import { characters } from "@/data/characters";
-import { cn } from "@/lib/utils";
+import { cn, formatRelativeTime } from "@/lib/utils";
 
 type Notice = { kind: "success" | "error"; message: string } | null;
 
@@ -168,15 +168,7 @@ export function SettingsView() {
             anywhere. Dojo Sequence is a fan-made training tool and is not
             affiliated with Bandai Namco.
           </p>
-          <div className="mt-4 flex flex-col gap-2">
-            {characters.map((c) => (
-              <CharacterProvenance
-                key={c.id}
-                characterId={c.id}
-                now={state.hydratedAt}
-              />
-            ))}
-          </div>
+          <FrameDataProvenance now={state.hydratedAt} />
         </div>
       </div>
 
@@ -197,19 +189,85 @@ export function SettingsView() {
 }
 
 /** Frame-data provenance + live-check status for one character. */
-function CharacterProvenance({
-  characterId,
-  now,
-}: {
-  characterId: string;
-  now: number;
-}) {
-  const live = useLiveFrames(characterId);
-  const set = getFrameData(characterId);
-  if (!set) return null;
+/**
+ * One line about where the frame data comes from — not one per character.
+ * Every table is verified together against the same patch, so seven identical
+ * rows was just noise. Splits only if the tables ever disagree.
+ */
+function FrameDataProvenance({ now }: { now: number }) {
+  const live = useAllLiveFrames();
+
+  const groups = new Map<string, { version: string; verifiedAt: string; ids: string[] }>();
+  for (const c of characters) {
+    const set = getFrameData(c.id);
+    if (!set) continue;
+    const key = `${set.gameVersion}|${set.verifiedAt}`;
+    const g = groups.get(key) ?? {
+      version: set.gameVersion,
+      verifiedAt: set.verifiedAt,
+      ids: [],
+    };
+    g.ids.push(c.id);
+    groups.set(key, g);
+  }
+  if (groups.size === 0) return null;
+
+  const states = characters.map((c) => live[c.id]?.status ?? "idle");
+  const ok = states.filter((s) => s === "ok").length;
+  const checking = states.filter((s) => s === "checking").length;
+  const failed = states.filter((s) => s === "error").length;
+  const checkedAt = characters
+    .map((c) => live[c.id]?.checkedAt)
+    .filter((t): t is number => typeof t === "number");
+  const oldest = checkedAt.length ? Math.min(...checkedAt) : null;
+  const changed = characters.reduce(
+    (n, c) => n + Object.keys(live[c.id]?.overrides ?? {}).length,
+    0,
+  );
+
   return (
-    <div className="overflow-hidden rounded-lg border border-border">
-      <ProvenanceFooter set={set} now={now} live={live} className="border-t-0" />
+    <div className="mt-4 rounded-lg border border-border px-4 py-3">
+      {[...groups.values()].map((g) => (
+        <p key={g.version + g.verifiedAt} className="text-[11px] leading-relaxed text-faint">
+          {groups.size > 1 && (
+            <span className="font-semibold text-muted">
+              {g.ids.join(", ")}:{" "}
+            </span>
+          )}
+          Verified against Tekken 8 {g.version} on {g.verifiedAt} ·{" "}
+          <a
+            href="https://wavu.wiki"
+            target="_blank"
+            rel="noreferrer"
+            className="underline decoration-dotted underline-offset-2 transition-colors hover:text-fg"
+          >
+            Wavu Wiki
+          </a>{" "}
+          ·{" "}
+          <a
+            href="https://tekkendocs.com"
+            target="_blank"
+            rel="noreferrer"
+            className="underline decoration-dotted underline-offset-2 transition-colors hover:text-fg"
+          >
+            TekkenDocs
+          </a>
+        </p>
+      ))}
+      <p className="mt-1.5 flex items-center gap-1.5 text-[11px] text-faint">
+        <RadioTower className="size-3 shrink-0" aria-hidden />
+        {checking > 0
+          ? `Live-checking ${characters.length} character tables against Wavu Wiki…`
+          : failed > 0
+            ? `${failed} of ${characters.length} tables could not be live-checked — bundled values shown.`
+            : ok > 0
+              ? `All ${ok} character tables live-checked ${formatRelativeTime(oldest, now)}${
+                  changed > 0
+                    ? ` — ${changed} value${changed === 1 ? "" : "s"} changed by a patch and shown live.`
+                    : " — all match the bundled tables."
+                }`
+              : "Live check runs in the background while the app is open."}
+      </p>
     </div>
   );
 }

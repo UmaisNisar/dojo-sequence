@@ -213,6 +213,9 @@ export interface MoveFrames {
   hit: string | null;
   ch: string | null;
   notes: string[];
+  /** Wavu Wiki move-demo clip, resolved at authoring time by
+      scripts/fetch-move-videos.mjs. Absent when no clip exists. */
+  video?: string;
 }
 
 export interface FrameDataSet {

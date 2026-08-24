@@ -39,7 +39,8 @@
       "ch": null,
       "notes": [
         "jails"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/b6/T8-p2-lars-1%2C2.mp4"
     },
     "delta-slicer": {
       "wavuId": "Lars-1,1,1",
@@ -53,7 +54,8 @@
       "ch": null,
       "notes": [
         "heat engager"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/5/5f/T8-p2-lars-1%2C1%2C1.mp4"
     },
     "ring-current": {
       "wavuId": "Lars-2,1",
@@ -68,7 +70,8 @@
       "notes": [
         "10f punish",
         "whiff punish"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/0/02/T8-p2-lars-2%2C1.mp4"
     },
     "df1": {
       "wavuId": "Lars-df+1",
@@ -95,7 +98,8 @@
       "notes": [
         "transitions to SEN",
         "elbow"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/6c/T8-p2-lars-df%2B2.mp4"
     },
     "b1": {
       "wavuId": "Lars-b+1",
@@ -109,7 +113,8 @@
       "notes": [
         "homing",
         "balcony break on CH"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/3e/T8-p2-lars-b%2B1.mp4"
     },
     "b2-1": {
       "wavuId": "Lars-b+2,1",
@@ -124,7 +129,8 @@
       "notes": [
         "CH launcher",
         "delayable"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/e/e8/T8-p2-lars-b%2B2%2C1.mp4"
     },
     "b3-4": {
       "wavuId": "Lars-b+3,4",
@@ -138,7 +144,8 @@
       "ch": null,
       "notes": [
         "whiff punish"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/e/e9/T8-p2-lars-b%2B3%2C4.mp4"
     },
     "f4": {
       "wavuId": "Lars-f+4",
@@ -166,7 +173,8 @@
       "notes": [
         "13f punish",
         "jails"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/a/a5/T8-p2-lars-f%2B1%2C2.mp4"
     },
     "f1-2-3": {
       "wavuId": "Lars-f+1,2,3",
@@ -180,7 +188,8 @@
       "ch": "+49a",
       "notes": [
         "CH launcher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/9/9c/T8-p2-lars-f%2B1%2C2%2C3.mp4"
     },
     "f2-1": {
       "wavuId": "Lars-f+2,1",
@@ -194,7 +203,8 @@
       "ch": null,
       "notes": [
         "12f punish"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/8a/T8-p2-lars-f%2B2%2C1.mp4"
     },
     "f2-4": {
       "wavuId": "Lars-f+2,4",
@@ -209,7 +219,8 @@
       "notes": [
         "12f punish",
         "damage"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/de/T8-p2-lars-f%2B2%2C4.mp4"
     },
     "f1plus4": {
       "wavuId": "Lars-f+1+4",
@@ -223,7 +234,8 @@
       "notes": [
         "13f launcher",
         "whiff punish"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/f1/T8-p2-lars-f%2B1%2B4.mp4"
     },
     "f1plus2": {
       "wavuId": "Lars-f+1+2",
@@ -236,7 +248,8 @@
       "ch": null,
       "notes": [
         "15f launch punish"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/b0/T8-p2-lars-f%2B1%2B2.mp4"
     },
     "fnb21": {
       "wavuId": "Lars-f,n,b+2,1",
@@ -251,7 +264,8 @@
       "notes": [
         "14f launch punish",
         "jails"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/0/00/T8-p2-lars-f%2Cn%2Cb%2B2%2C1.mp4"
     },
     "d3": {
       "wavuId": "Lars-d+3",
@@ -291,7 +305,8 @@
       "notes": [
         "big low",
         "CH launcher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/1b/T8-p2-lars-db%2B4.mp4"
     },
     "d2": {
       "wavuId": "Lars-d+2",
@@ -305,7 +320,8 @@
       "notes": [
         "neutral on block",
         "spike"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/2d/T8-p2-lars-d%2B2.mp4"
     },
     "uf4": {
       "wavuId": "Lars-uf+4",
@@ -320,7 +336,8 @@
         "launcher",
         "low crush",
         "slow (read, not a punish)"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/3c/T8-p2-lars-uf%2B4.mp4"
     },
     "uf3": {
       "wavuId": "Lars-uf+3",
@@ -334,7 +351,8 @@
       "notes": [
         "launcher",
         "knee"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/1a/T8-p2-lars-uf%2B3.mp4"
     },
     "ws1": {
       "wavuId": "Lars-ws1",
@@ -348,7 +366,8 @@
       "notes": [
         "tornado",
         "15f crouch launcher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/df/T8-p2-lars-ws1.mp4"
     },
     "ws4": {
       "wavuId": "Lars-ws4",
@@ -361,7 +380,8 @@
       "ch": null,
       "notes": [
         "11f crouch punish"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/9/97/T8-p2-lars-ws4.mp4"
     },
     "ws2-1": {
       "wavuId": "Lars-ws2,1",
@@ -375,7 +395,8 @@
       "ch": "+4d",
       "notes": [
         "13f crouch punish"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/fd/T8-p2-lars-ws2%2C1.mp4"
     },
     "ws3": {
       "wavuId": "Lars-ws3",
@@ -389,7 +410,8 @@
       "notes": [
         "launcher",
         "into LEN with D"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/f8/T8-p2-lars-ws3.mp4"
     },
     "ff2": {
       "wavuId": "Lars-f,F+2",
@@ -404,7 +426,8 @@
         "tornado",
         "launcher",
         "into SEN on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/7/7c/T8-p2-lars-f%2Cf%2B2.mp4"
     },
     "fff1": {
       "wavuId": "Lars-f,f,F+1",
@@ -433,7 +456,8 @@
       "notes": [
         "plus on block",
         "balcony break"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/c0/T8-p2-lars-f%2Cf%2Cf%2B3.mp4"
     },
     "ffplus1plus2": {
       "wavuId": "Lars-f,F+1+2",
@@ -446,7 +470,8 @@
       "ch": "+59a (+39)",
       "notes": [
         "CH launcher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/69/T8-p2-lars-f%2Cf%2B1%2B2.mp4"
     },
     "df3-3": {
       "wavuId": "Lars-df+3,3",
@@ -460,7 +485,8 @@
       "ch": null,
       "notes": [
         "launcher on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/5/5c/T8-p2-lars-df%2B3%2C3.mp4"
     },
     "db2-3": {
       "wavuId": "Lars-db+2,3",
@@ -475,7 +501,8 @@
       "notes": [
         "tornado",
         "wall crush"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/5/56/T8-p2-lars-db%2B2%2C3.mp4"
     },
     "threeplusfour": {
       "wavuId": "Lars-3+4",
@@ -488,7 +515,8 @@
       "ch": null,
       "notes": [
         "heat engager"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/f5/T8-p2-lars-3%2B4.mp4"
     },
     "den1": {
       "wavuId": "Lars-DEN.1",
@@ -516,7 +544,8 @@
       "ch": null,
       "notes": [
         "heat engager"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/6b/T8-p2-lars-den.1%2C2.mp4"
     },
     "den2": {
       "wavuId": "Lars-DEN.2",
@@ -531,7 +560,8 @@
         "CH launcher",
         "jab evasion",
         "into Avalanche Flip with UF"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/1b/T8-p2-lars-den.2.mp4"
     },
     "den3": {
       "wavuId": "Lars-DEN.3",
@@ -546,7 +576,8 @@
         "heat engager",
         "homing",
         "plus on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/25/T8-p2-lars-den.3.mp4"
     },
     "den4": {
       "wavuId": "Lars-DEN.4",
@@ -559,7 +590,8 @@
       "ch": null,
       "notes": [
         "low"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/69/T8-p2-lars-den.4.mp4"
     },
     "den34": {
       "wavuId": "Lars-DEN.3+4",
@@ -572,7 +604,8 @@
       "ch": "+5c",
       "notes": [
         "low"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/6c/T8-p2-lars-den.3%2B4.mp4"
     },
     "den12": {
       "wavuId": "Lars-DEN.1+2",
@@ -586,7 +619,8 @@
       "notes": [
         "tornado",
         "launcher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/6c/T8-p2-lars-den.1%2B2.mp4"
     },
     "sen1": {
       "wavuId": "Lars-SEN.1",
@@ -601,7 +635,8 @@
         "heat engager",
         "launcher",
         "balcony break"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/5/5b/T8-p2-lars-sen.1.mp4"
     },
     "sen2": {
       "wavuId": "Lars-SEN.2",
@@ -615,7 +650,8 @@
       "notes": [
         "tornado",
         "low"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/7/76/T8-p2-lars-sen.2.mp4"
     },
     "sen3": {
       "wavuId": "Lars-SEN.3",
@@ -629,7 +665,8 @@
       "notes": [
         "launcher",
         "low crush"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/2f/T8-p2-lars-sen.3.mp4"
     },
     "sen4": {
       "wavuId": "Lars-SEN.4",
@@ -644,7 +681,8 @@
         "plus on block",
         "homing",
         "launcher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/80/T8-p2-lars-sen.4.mp4"
     },
     "sen1plus2": {
       "wavuId": "Lars-SEN.1+2",
@@ -659,7 +697,8 @@
         "tornado",
         "power crush",
         "combo filler"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/5/52/T8-p2-lars-sen.1%2B2.mp4"
     },
     "sen34": {
       "wavuId": "Lars-SEN.3+4",
@@ -672,7 +711,8 @@
       "ch": null,
       "notes": [
         "neutral on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/e/e3/T8-p2-lars-sen.3%2B4.mp4"
     },
     "len1": {
       "wavuId": "Lars-LEN.1",
@@ -685,7 +725,8 @@
       "ch": null,
       "notes": [
         "low"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/2e/T8-p2-lars-len.1.mp4"
     },
     "len2": {
       "wavuId": "Lars-LEN.2",
@@ -699,7 +740,8 @@
       "notes": [
         "tornado",
         "powers up in heat"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/e/ef/T8-p2-lars-len.2.mp4"
     },
     "heat-burst": {
       "wavuId": "Lars-2+3",
@@ -756,7 +798,8 @@
         "new in Season 3",
         "tracks his weak side",
         "into LEN on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/c1/T8-p2-lars-uf%2B1.mp4"
     },
     "fcdf2": {
       "wavuId": "Lars-FC.df+2",
@@ -769,7 +812,8 @@
       "ch": "+63a",
       "notes": [
         "crouching CH launcher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/3f/T8-p2-lars-fc.df%2B2.mp4"
     }
   }
 }

@@ -4,8 +4,14 @@
   "gameVersion": "v3.02.01 (Season 3)",
   "verifiedAt": "2026-08-23",
   "sources": [
-    { "name": "Wavu Wiki", "url": "https://wavu.wiki/t/Kazuya" },
-    { "name": "TekkenDocs", "url": "https://tekkendocs.com/t8/kazuya" }
+    {
+      "name": "Wavu Wiki",
+      "url": "https://wavu.wiki/t/Kazuya"
+    },
+    {
+      "name": "TekkenDocs",
+      "url": "https://tekkendocs.com/t8/kazuya"
+    }
   ],
   "moves": {
     "jab": {
@@ -29,7 +35,10 @@
       "block": "-17",
       "hit": "+20a (+15)",
       "ch": null,
-      "notes": ["knockdown on hit"]
+      "notes": [
+        "knockdown on hit"
+      ],
+      "video": "https://wavu.wiki/w/images/0/06/T8-p2-kazuya-1%2C1%2C2.mp4"
     },
     "df1": {
       "wavuId": "Kazuya-df+1",
@@ -52,7 +61,10 @@
       "block": "+0c",
       "hit": "+9c",
       "ch": null,
-      "notes": ["heat engager"]
+      "notes": [
+        "heat engager"
+      ],
+      "video": "https://wavu.wiki/w/images/2/25/T8-p2-kazuya-df%2B1%2C2.mp4"
     },
     "df1-4": {
       "wavuId": "Kazuya-df+1,4",
@@ -64,7 +76,10 @@
       "block": "-11",
       "hit": "+42a",
       "ch": null,
-      "notes": ["launches on hit"]
+      "notes": [
+        "launches on hit"
+      ],
+      "video": "https://wavu.wiki/w/images/c/cd/T8-p2-kazuya-df%2B1%2C4.mp4"
     },
     "df2": {
       "wavuId": "Kazuya-df+2",
@@ -75,7 +90,11 @@
       "block": "-12",
       "hit": "+5",
       "ch": "+59a",
-      "notes": ["homing", "launches on counter-hit only"]
+      "notes": [
+        "homing",
+        "launches on counter-hit only"
+      ],
+      "video": "https://wavu.wiki/w/images/8/86/T8-p2-kazuya-df%2B2.mp4"
     },
     "f4": {
       "wavuId": "Kazuya-f+4",
@@ -86,7 +105,11 @@
       "block": "+4c",
       "hit": "+7c",
       "ch": "+31d",
-      "notes": ["plus on block", "spike"]
+      "notes": [
+        "plus on block",
+        "spike"
+      ],
+      "video": "https://wavu.wiki/w/images/a/a3/T8-p2-kazuya-f%2B4.mp4"
     },
     "b4": {
       "wavuId": "Kazuya-b+4",
@@ -97,7 +120,11 @@
       "block": "-5",
       "hit": "+16g",
       "ch": null,
-      "notes": ["homing", "heat engager"]
+      "notes": [
+        "homing",
+        "heat engager"
+      ],
+      "video": "https://wavu.wiki/w/images/5/5e/T8-p2-kazuya-b%2B4.mp4"
     },
     "d4": {
       "wavuId": "Kazuya-d+4",
@@ -108,7 +135,9 @@
       "block": "-15",
       "hit": "-4",
       "ch": null,
-      "notes": ["high crush"]
+      "notes": [
+        "high crush"
+      ]
     },
     "d1": {
       "wavuId": "Kazuya-d+1",
@@ -119,7 +148,9 @@
       "block": "-5",
       "hit": "+6",
       "ch": null,
-      "notes": ["high crush"]
+      "notes": [
+        "high crush"
+      ]
     },
     "b1-2": {
       "wavuId": "Kazuya-b+1,2",
@@ -131,7 +162,10 @@
       "block": "-14",
       "hit": "+9 (+0)",
       "ch": null,
-      "notes": ["11f punish"]
+      "notes": [
+        "11f punish"
+      ],
+      "video": "https://wavu.wiki/w/images/c/c8/T8-p2-kazuya-b%2B1%2C2.mp4"
     },
     "one-plus-two": {
       "wavuId": "Kazuya-1+2",
@@ -143,7 +177,11 @@
       "block": "-13",
       "hit": "+13a",
       "ch": null,
-      "notes": ["12f punish", "airborne on hit"]
+      "notes": [
+        "12f punish",
+        "airborne on hit"
+      ],
+      "video": "https://wavu.wiki/w/images/4/4d/T8-p2-kazuya-1%2B2.mp4"
     },
     "db12": {
       "wavuId": "Kazuya-db+1,2",
@@ -155,7 +193,11 @@
       "block": "-19",
       "hit": "+9a (-8)",
       "ch": null,
-      "notes": ["heat engager", "13f punish option"]
+      "notes": [
+        "heat engager",
+        "13f punish option"
+      ],
+      "video": "https://wavu.wiki/w/images/f/fe/T8-p2-kazuya-db%2B1%2C2.mp4"
     },
     "ff2": {
       "wavuId": "Kazuya-f,F+2",
@@ -166,7 +208,11 @@
       "block": "-9",
       "hit": "+13cg",
       "ch": null,
-      "notes": ["heat engager", "forces crouch on hit"]
+      "notes": [
+        "heat engager",
+        "forces crouch on hit"
+      ],
+      "video": "https://wavu.wiki/w/images/b/b0/T8-p2-kazuya-f%2Cf%2B2.mp4"
     },
     "ff3": {
       "wavuId": "Kazuya-f,F+3",
@@ -177,7 +223,11 @@
       "block": "-3c",
       "hit": "+46a",
       "ch": null,
-      "notes": ["launches on normal hit", "spike"]
+      "notes": [
+        "launches on normal hit",
+        "spike"
+      ],
+      "video": "https://wavu.wiki/w/images/5/53/T8-p2-kazuya-f%2Cf%2B3.mp4"
     },
     "ws44": {
       "wavuId": "Kazuya-ws4,4",
@@ -189,7 +239,9 @@
       "block": "-15",
       "hit": "+0c",
       "ch": null,
-      "notes": ["11f crouch punish"]
+      "notes": [
+        "11f crouch punish"
+      ]
     },
     "ws12": {
       "wavuId": "Kazuya-ws1,2",
@@ -201,7 +253,11 @@
       "block": "-12",
       "hit": "+73a(+57)",
       "ch": null,
-      "notes": ["13f crouch launch punish", "tornado"]
+      "notes": [
+        "13f crouch launch punish",
+        "tornado"
+      ],
+      "video": "https://wavu.wiki/w/images/2/24/T8-p2-kazuya-ws1%2C2.mp4"
     },
     "ws2": {
       "wavuId": "Kazuya-ws2",
@@ -212,7 +268,11 @@
       "block": "-18",
       "hit": "+57a",
       "ch": null,
-      "notes": ["homing", "crumple launcher"]
+      "notes": [
+        "homing",
+        "crumple launcher"
+      ],
+      "video": "https://wavu.wiki/w/images/6/61/T8-p2-kazuya-ws2.mp4"
     },
     "wgf": {
       "wavuId": "Kazuya-f,n,d,df+2",
@@ -223,7 +283,10 @@
       "block": "-10",
       "hit": "+39a (+29)",
       "ch": null,
-      "notes": ["launches on hit"]
+      "notes": [
+        "launches on hit"
+      ],
+      "video": "https://wavu.wiki/w/images/0/05/T8-p2-kazuya-f%2Cn%2Cd%2Cdf%2B2.mp4"
     },
     "ewgf": {
       "wavuId": "Kazuya-f,n,d,df${justFrame}2",
@@ -234,7 +297,12 @@
       "block": "+5",
       "hit": "+39a (+29)",
       "ch": null,
-      "notes": ["just frame", "plus on block", "13f effective punish"]
+      "notes": [
+        "just frame",
+        "plus on block",
+        "13f effective punish"
+      ],
+      "video": "https://wavu.wiki/w/images/e/e1/T8-p2-kazuya-f%2Cn%2Cd%2Cdfh2.mp4"
     },
     "hellsweep": {
       "wavuId": "Kazuya-f,n,d,DF+4",
@@ -245,7 +313,9 @@
       "block": "-23",
       "hit": "-3c",
       "ch": "+20a",
-      "notes": ["launch punishable on block"]
+      "notes": [
+        "launch punishable on block"
+      ]
     },
     "hellsweep1": {
       "wavuId": "Kazuya-f,n,d,DF+4,1",
@@ -257,7 +327,10 @@
       "block": "-16",
       "hit": "+16a (+7) / +17a (+10)",
       "ch": null,
-      "notes": ["the standard hellsweep ender"]
+      "notes": [
+        "the standard hellsweep ender"
+      ],
+      "video": "https://wavu.wiki/w/images/0/0e/T8-p2-kazuya-f%2Cn%2Cd%2Cdf%2B4%2C1.mp4"
     },
     "d1plus2": {
       "wavuId": "Kazuya-d+1+2",
@@ -268,7 +341,11 @@
       "block": "-14c",
       "hit": "+3c",
       "ch": "+27a",
-      "notes": ["high crush", "launches on counter-hit"]
+      "notes": [
+        "high crush",
+        "launches on counter-hit"
+      ],
+      "video": "https://wavu.wiki/w/images/2/2c/T8-p2-kazuya-d%2B1%2B2.mp4"
     }
   }
 }

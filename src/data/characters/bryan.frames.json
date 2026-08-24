@@ -41,7 +41,8 @@
       "notes": [
         "jails from the first hit on block",
         "CH +9"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/ba/T8-p2-bryan-1%2C2.mp4"
     },
     "jab-2-1": {
       "wavuId": "Bryan-1,2,1",
@@ -57,7 +58,8 @@
         "mid ender",
         "combos from a 1st-hit CH",
         "can be delayed 10f"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/b5/T8-p2-bryan-1%2C2%2C1.mp4"
     },
     "jab-2-3": {
       "wavuId": "Bryan-1,2,3",
@@ -72,7 +74,8 @@
       "notes": [
         "low ender",
         "the mixup partner to 1,2,1"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/6e/T8-p2-bryan-1%2C2%2C3.mp4"
     },
     "jab-2-4": {
       "wavuId": "Bryan-1,2,4",
@@ -88,7 +91,8 @@
         "Heat Engager",
         "Balcony Break",
         "interruptible with i2 after the 1st hit on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/c3/T8-p2-bryan-1%2C2%2C4.mp4"
     },
     "jab-4": {
       "wavuId": "Bryan-1,4",
@@ -132,7 +136,8 @@
       "notes": [
         "his other i10 punisher",
         "CH +16a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/6a/T8-p2-bryan-2%2C3.mp4"
     },
     "kick-4": {
       "wavuId": "Bryan-4",
@@ -174,7 +179,8 @@
       "notes": [
         "core combo filler",
         "-1 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/0/02/T8-p2-bryan-4%2C1.mp4"
     },
     "homing-1-2": {
       "wavuId": "Bryan-1+2",
@@ -244,7 +250,8 @@
       "notes": [
         "his -13 punisher",
         "press b afterward to enter Sway"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/7/73/T8-p2-bryan-df%2B2%2C1.mp4"
     },
     "d2": {
       "wavuId": "Bryan-d+2",
@@ -271,7 +278,8 @@
       "ch": null,
       "notes": [
         "-6 on block, +8 on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/cb/T8-p2-bryan-db%2B2.mp4"
     },
     "three": {
       "wavuId": "Bryan-3",
@@ -298,7 +306,8 @@
       "notes": [
         "his keep-out button",
         "CH +59a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/2f/T8-p2-bryan-3%2B4.mp4"
     },
     "d3": {
       "wavuId": "Bryan-d+3",
@@ -326,7 +335,8 @@
       "notes": [
         "combos from a 1st-hit CH",
         "+35a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/4/40/T8-p2-bryan-d%2B3%2C2.mp4"
     },
     "d4": {
       "wavuId": "Bryan-d+4",
@@ -339,7 +349,8 @@
       "ch": null,
       "notes": [
         "i15 low keep-out check"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/7/7f/T8-p2-bryan-d%2B4.mp4"
     },
     "db3": {
       "wavuId": "Bryan-db+3",
@@ -352,7 +363,8 @@
       "ch": "+4",
       "notes": [
         "i16~17 low, CH +4"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/be/T8-p2-bryan-db%2B3.mp4"
     },
     "d34": {
       "wavuId": "Bryan-d+3+4",
@@ -379,7 +391,8 @@
       "ch": null,
       "notes": [
         "combo filler"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/9/92/T8-p2-bryan-d%2B3%2B4%2C2.mp4"
     },
     "db1-2": {
       "wavuId": "Bryan-db+1+2",
@@ -393,7 +406,8 @@
       "notes": [
         "Heat Engager",
         "jails from the 1st hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/9/93/T8-p2-bryan-db%2B1%2B2.mp4"
     },
     "snake-edge": {
       "wavuId": "Bryan-df+3",
@@ -407,7 +421,8 @@
       "notes": [
         "i29~30 homing low",
         "launches on hit, -26 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/6d/T8-p2-bryan-df%2B3.mp4"
     },
     "df4": {
       "wavuId": "Bryan-df+4",
@@ -420,7 +435,8 @@
       "ch": null,
       "notes": [
         "i22~24 mid, only -6~-4 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/2f/T8-p2-bryan-df%2B4.mp4"
     },
     "wedge": {
       "wavuId": "Bryan-b,df+4",
@@ -435,7 +451,8 @@
         "low",
         "CH +29a",
         "cancel with B"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/c9/T8-p2-bryan-b%2Cdf%2B4.mp4"
     },
     "b1": {
       "wavuId": "Bryan-b+1",
@@ -449,7 +466,8 @@
       "notes": [
         "+4 on block",
         "CH +78a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/62/T8-p2-bryan-b%2B1.mp4"
     },
     "b2": {
       "wavuId": "Bryan-b+2",
@@ -492,7 +510,8 @@
       "ch": null,
       "notes": [
         "combo filler, +37a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/22/T8-p2-bryan-b%2B2%2C4.mp4"
     },
     "b3": {
       "wavuId": "Bryan-b+3",
@@ -520,7 +539,8 @@
         "i16 mid",
         "wall splat",
         "his -16 punisher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/6c/T8-p2-bryan-b%2B4.mp4"
     },
     "f2": {
       "wavuId": "Bryan-f+2",
@@ -548,7 +568,8 @@
       "notes": [
         "his -15 punisher",
         "press 1+2 on hit to gain Snake Eyes"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/a/a9/T8-p2-bryan-f%2B2%2C1%2C4.mp4"
     },
     "f3": {
       "wavuId": "Bryan-f+3",
@@ -562,7 +583,8 @@
       "notes": [
         "plus on block",
         "CH +50a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/d3/T8-p2-bryan-f%2B3.mp4"
     },
     "f4": {
       "wavuId": "Bryan-f+4",
@@ -590,7 +612,8 @@
       "notes": [
         "his -18 and whiff punisher",
         "+40a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/d0/T8-p2-bryan-f%2B4%2C1.mp4"
     },
     "f1-2": {
       "wavuId": "Bryan-f+1+2",
@@ -605,7 +628,8 @@
         "+1 on block",
         "steps as it starts",
         "combo filler"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/88/T8-p2-bryan-f%2B1%2B2.mp4"
     },
     "jet-upper": {
       "wavuId": "Bryan-f,n,b+2",
@@ -619,7 +643,8 @@
       "notes": [
         "i14 launcher, but it is a HIGH",
         "can be buffered"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/a/ac/T8-p2-bryan-f%2Cn%2Cb%2B2.mp4"
     },
     "mach-breaker": {
       "wavuId": "Bryan-f,F+2",
@@ -634,7 +659,8 @@
         "Heat Engager",
         "i13 high",
         "Balcony Break"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/14/T8-p2-bryan-f%2Cf%2B2.mp4"
     },
     "slash-kick": {
       "wavuId": "Bryan-f,F+3",
@@ -647,7 +673,8 @@
       "ch": "+39a (-8)",
       "notes": [
         "press 1+2 on hit to gain Snake Eyes"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/4/4a/T8-p2-bryan-f%2Cf%2B3.mp4"
     },
     "mach-kick": {
       "wavuId": "Bryan-f,F+4",
@@ -661,7 +688,8 @@
       "notes": [
         "homing high",
         "the initial sidestep evades some attacks"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/9/93/T8-p2-bryan-f%2Cf%2B4.mp4"
     },
     "snake-slash": {
       "wavuId": "Bryan-f,f,F+3",
@@ -674,7 +702,8 @@
       "ch": null,
       "notes": [
         "plus on block out of a run"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/a/a0/T8-p2-bryan-f%2Cf%2Cf%2B3.mp4"
     },
     "orbital": {
       "wavuId": "Bryan-uf+4",
@@ -687,7 +716,8 @@
       "ch": null,
       "notes": [
         "jumping mid, only -5 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/6d/T8-p2-bryan-uf%2B4.mp4"
     },
     "uf1": {
       "wavuId": "Bryan-uf+1",
@@ -701,7 +731,8 @@
       "notes": [
         "Power Crush",
         "gains Snake Eyes on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/a/a0/T8-p2-bryan-uf%2B1.mp4"
     },
     "bullet-knee": {
       "wavuId": "Bryan-uf+3+4",
@@ -715,7 +746,8 @@
       "notes": [
         "Tornado",
         "gains Snake Eyes on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/e/e0/T8-p2-bryan-uf%2B3%2B4.mp4"
     },
     "ufn4": {
       "wavuId": "Bryan-uf,n,4",
@@ -729,7 +761,8 @@
       "notes": [
         "the -25 stagger punish",
         "the jump takes 9f"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/f6/T8-p2-bryan-uf%2Cn%2C4.mp4"
     },
     "uf2": {
       "wavuId": "Bryan-uf+2",
@@ -757,7 +790,8 @@
       "notes": [
         "his -13 punisher",
         "works standing or crouching"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/e/eb/T8-p2-bryan-uf%2B2%2C2%2C2%2C3.mp4"
     },
     "ws1": {
       "wavuId": "Bryan-ws1",
@@ -771,7 +805,8 @@
       "notes": [
         "i15 crouching launcher",
         "-14 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/31/T8-p2-bryan-ws1.mp4"
     },
     "ws2": {
       "wavuId": "Bryan-ws2",
@@ -784,7 +819,8 @@
       "ch": null,
       "notes": [
         "attack throw on standing hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/d9/T8-p2-bryan-ws2.mp4"
     },
     "ws3": {
       "wavuId": "Bryan-ws3",
@@ -797,7 +833,8 @@
       "ch": "+33a (+27)",
       "notes": [
         "i12 crouching CH launcher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/7/71/T8-p2-bryan-ws3.mp4"
     },
     "ws4": {
       "wavuId": "Bryan-ws4",
@@ -810,7 +847,8 @@
       "ch": null,
       "notes": [
         "i11~12 crouching check, -6"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/9/91/T8-p2-bryan-ws4.mp4"
     },
     "fc-df2-1": {
       "wavuId": "Bryan-FC.df+2,1",
@@ -824,7 +862,8 @@
       "notes": [
         "his -13 crouching punisher",
         "wall splat"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/5/5d/T8-p2-bryan-fc.df%2B2%2C1.mp4"
     },
     "fc-df4": {
       "wavuId": "Bryan-FC.df+4",
@@ -837,7 +876,8 @@
       "ch": "+25d",
       "notes": [
         "CH +25d"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/9/92/T8-p2-bryan-fc.df%2B4.mp4"
     },
     "ss1": {
       "wavuId": "Bryan-SS.1",
@@ -850,7 +890,8 @@
       "ch": null,
       "notes": [
         "sidestep high, CH +15c"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/7/76/T8-p2-bryan-ss.1.mp4"
     },
     "ss2-1": {
       "wavuId": "Bryan-SS.2,1",
@@ -864,7 +905,8 @@
       "ch": null,
       "notes": [
         "Heat Engager off a sidestep"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/1a/T8-p2-bryan-ss.2%2C1.mp4"
     },
     "swa1": {
       "wavuId": "Bryan-SWA.1",
@@ -879,7 +921,8 @@
         "Sway move (Wavu lists it as SWA.1)",
         "+1 on block",
         "CH +72a Tornado"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/e/ee/T8-p2-bryan-swa.1.mp4"
     },
     "swa2": {
       "wavuId": "Bryan-SWA.2",
@@ -906,7 +949,8 @@
       "notes": [
         "Sway low",
         "CH +25a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/13/T8-p2-bryan-swa.3.mp4"
     },
     "swa4": {
       "wavuId": "Bryan-SWA.4",
@@ -919,7 +963,8 @@
       "ch": null,
       "notes": [
         "Sway launcher, +31a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/9/94/T8-p2-bryan-swa.4.mp4"
     },
     "sls2": {
       "wavuId": "Bryan-SLS.2",
@@ -946,7 +991,8 @@
       "ch": null,
       "notes": [
         "combo filler, +33a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/b4/T8-p2-bryan-sls.2%2C1.mp4"
     },
     "sls2-2": {
       "wavuId": "Bryan-SLS.2,2",
@@ -960,7 +1006,8 @@
       "ch": null,
       "notes": [
         "floor-break combo ender"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/5/57/T8-p2-bryan-sls.2%2C2.mp4"
     },
     "sls2-4": {
       "wavuId": "Bryan-SLS.2,4",
@@ -974,7 +1021,8 @@
       "notes": [
         "gains Snake Eyes",
         "combo filler"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/f4/T8-p2-bryan-sls.2%2C4.mp4"
     },
     "sls4": {
       "wavuId": "Bryan-SLS.4",
@@ -1000,7 +1048,8 @@
       "ch": null,
       "notes": [
         "Heat Engager out of Slither Step"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/2b/T8-p2-bryan-sls.1%2B2.mp4"
     },
     "taunt": {
       "wavuId": "Bryan-1+3+4",
@@ -1030,7 +1079,8 @@
       "notes": [
         "consumes Snake Eyes",
         "unparryable"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/82/T8-p2-bryan-3%2B4%2Csne.2.mp4"
     },
     "sne2-hold": {
       "wavuId": "Bryan-3+4,SNE.2*",
@@ -1044,7 +1094,8 @@
       "ch": null,
       "notes": [
         "plus on block and wall splats on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/5/57/T8-p2-bryan-3%2B4%2Csne.2s.mp4"
     },
     "sne-b1-2": {
       "wavuId": "Bryan-SNE.b+1+2",
@@ -1086,7 +1137,8 @@
       "notes": [
         "strong parry that auto-retaliates",
         "costs 300f of Heat"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/e/e0/T8-p2-bryan-sne.f%2Cf%2B1%2B2.mp4"
     },
     "heat-smash": {
       "wavuId": "Bryan-H.2+3",

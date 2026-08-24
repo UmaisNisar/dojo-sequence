@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "verify:frames": "node scripts/verify-frame-data.mjs"
+    "verify:frames": "node scripts/verify-frame-data.mjs",
+    "verify:videos": "node scripts/verify-videos.mjs",
+    "fetch:videos": "node scripts/fetch-move-videos.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.33.0",

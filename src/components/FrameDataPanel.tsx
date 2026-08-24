@@ -7,6 +7,7 @@ import { useLiveFrames } from "@/hooks/use-live-frames";
 import type { LiveFrameOverride, LiveFramesState } from "@/lib/live-frames";
 import { cn, formatRelativeTime } from "@/lib/utils";
 import { Notation } from "./Notation";
+import { MoveVideo } from "./MoveVideo";
 
 /**
  * Verified frame data for the moves an item covers.
@@ -60,7 +61,15 @@ function FrameRow({
   override?: LiveFrameOverride;
 }) {
   return (
-    <div className="px-4 py-3 sm:px-5">
+    <div className="flex flex-col gap-3 px-4 py-3 sm:flex-row sm:items-start sm:gap-4 sm:px-5">
+      {move.video && (
+        <MoveVideo
+          src={move.video}
+          label={`${move.name} (${move.input})`}
+          className="w-full shrink-0 sm:w-[200px]"
+        />
+      )}
+      <div className="min-w-0 flex-1">
       <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
         <Notation value={move.input} size="sm" />
         <span className="text-xs font-semibold text-fg">{move.name}</span>
@@ -103,6 +112,7 @@ function FrameRow({
           ))}
         </ul>
       )}
+      </div>
     </div>
   );
 }

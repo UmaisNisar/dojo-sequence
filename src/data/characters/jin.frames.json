@@ -41,7 +41,8 @@
       "notes": [
         "-3 on block",
         "the root of three enders"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/4/45/T8-p2-jin-1%2C2.mp4"
     },
     "jab-2-1": {
       "wavuId": "Jin-1,2,1",
@@ -57,7 +58,8 @@
         "launches",
         "his back-turned punisher",
         "-16 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/cf/T8-p2-jin-1%2C2%2C1.mp4"
     },
     "jab-2-3": {
       "wavuId": "Jin-1,2,3",
@@ -71,7 +73,8 @@
       "ch": null,
       "notes": [
         "0 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/21/T8-p2-jin-1%2C2%2C3.mp4"
     },
     "jab-2-4": {
       "wavuId": "Jin-1,2,4",
@@ -85,7 +88,8 @@
       "ch": null,
       "notes": [
         "-4 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/68/T8-p2-jin-1%2C2%2C4.mp4"
     },
     "jab-3": {
       "wavuId": "Jin-1,3",
@@ -114,7 +118,8 @@
       "notes": [
         "low",
         "CH +29a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/9/93/T8-p2-jin-1%2C3%2C4.mp4"
     },
     "right": {
       "wavuId": "Jin-2",
@@ -156,7 +161,8 @@
       "notes": [
         "delayable",
         "CH +16a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/cf/T8-p2-jin-2%2C1%2C4.mp4"
     },
     "right-1-4-4": {
       "wavuId": "Jin-2,1,4~4",
@@ -170,7 +176,8 @@
       "ch": null,
       "notes": [
         "the low branch of the same string"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/4/48/T8-p2-jin-2%2C1%2C4t4.mp4"
     },
     "switchblade": {
       "wavuId": "Jin-2,4",
@@ -186,7 +193,8 @@
         "his i10 punisher",
         "wall splat",
         "the ender is a duckable high"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/9/90/T8-p2-jin-2%2C4.mp4"
     },
     "kick3": {
       "wavuId": "Jin-3",
@@ -228,7 +236,8 @@
       "notes": [
         "low ender",
         "CH +29a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/26/T8-p2-jin-3%2C1%2C4.mp4"
     },
     "kick4": {
       "wavuId": "Jin-4",
@@ -242,7 +251,8 @@
       "notes": [
         "fast homing high",
         "CH +13c"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/7/7e/T8-p2-jin-4.mp4"
     },
     "kick4-3": {
       "wavuId": "Jin-4~3",
@@ -255,7 +265,8 @@
       "ch": null,
       "notes": [
         "the mid follow-up"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/89/T8-p2-jin-4t3.mp4"
     },
     "one-two-heat": {
       "wavuId": "Jin-1+2",
@@ -269,7 +280,8 @@
       "notes": [
         "Heat Engager",
         "Balcony Break"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/2b/T8-p2-jin-1%2B2.mp4"
     },
     "f1-2": {
       "wavuId": "Jin-f+1+2",
@@ -282,7 +294,8 @@
       "ch": null,
       "notes": [
         "his -14 punisher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/34/T8-p2-jin-f%2B1%2B2.mp4"
     },
     "df1": {
       "wavuId": "Jin-df+1",
@@ -310,7 +323,8 @@
       "notes": [
         "his -13 punisher",
         "CH +17a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/a/a4/T8-p2-jin-df%2B1%2C4.mp4"
     },
     "df1-4-4": {
       "wavuId": "Jin-df+1,4~4",
@@ -324,7 +338,8 @@
       "ch": null,
       "notes": [
         "the mid branch of the same string"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/12/T8-p2-jin-df%2B1%2C4t4.mp4"
     },
     "df2": {
       "wavuId": "Jin-df+2",
@@ -338,7 +353,8 @@
       "notes": [
         "Balcony Break",
         "enters Breaking Step with df"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/dd/T8-p2-jin-df%2B2.mp4"
     },
     "df3": {
       "wavuId": "Jin-df+3",
@@ -351,7 +367,8 @@
       "ch": null,
       "notes": [
         "i12 mid"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/5/57/T8-p2-jin-df%2B3.mp4"
     },
     "df3-3": {
       "wavuId": "Jin-df+3~3",
@@ -365,7 +382,8 @@
       "notes": [
         "plus on block",
         "enters Breaking Step with df"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/d9/T8-p2-jin-df%2B3t3.mp4"
     },
     "df4": {
       "wavuId": "Jin-df+4",
@@ -380,7 +398,8 @@
         "Heat Engager",
         "0 on block",
         "Spike"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/19/T8-p2-jin-df%2B4.mp4"
     },
     "b1": {
       "wavuId": "Jin-b+1",
@@ -408,7 +427,8 @@
       "notes": [
         "his -12 punisher",
         "+32a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/4/4c/T8-p2-jin-b%2B1%2C2.mp4"
     },
     "b2": {
       "wavuId": "Jin-b+2",
@@ -435,7 +455,8 @@
       "ch": null,
       "notes": [
         "mid check and whiff punisher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/1b/T8-p2-jin-b%2B2%2C1.mp4"
     },
     "b3": {
       "wavuId": "Jin-b+3",
@@ -464,7 +485,8 @@
       "notes": [
         "combo ender",
         "+21 on wall hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/37/T8-p2-jin-b%2B3%2C2.mp4"
     },
     "b4": {
       "wavuId": "Jin-b+4",
@@ -477,7 +499,8 @@
       "ch": null,
       "notes": [
         "i17 mid, +15a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/11/T8-p2-jin-b%2B4.mp4"
     },
     "f3": {
       "wavuId": "Jin-f+3",
@@ -505,7 +528,8 @@
       "notes": [
         "Heat Engager",
         "his other -14 punisher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/b8/T8-p2-jin-f%2B3%2C1.mp4"
     },
     "f3-3": {
       "wavuId": "Jin-f+3,3",
@@ -519,7 +543,8 @@
       "ch": null,
       "notes": [
         "press F to enter Zenshin"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/9/94/T8-p2-jin-f%2B3%2C3.mp4"
     },
     "f4": {
       "wavuId": "Jin-f+4",
@@ -533,7 +558,8 @@
       "notes": [
         "safe keep-out mid",
         "CH +42a launcher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/10/T8-p2-jin-f%2B4.mp4"
     },
     "ff2": {
       "wavuId": "Jin-f,F+2",
@@ -547,7 +573,8 @@
       "notes": [
         "Heat Engager",
         "long-range safe mid approach"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/68/T8-p2-jin-f%2Cf%2B2.mp4"
     },
     "ff3": {
       "wavuId": "Jin-f,F+3",
@@ -560,7 +587,8 @@
       "ch": null,
       "notes": [
         "a mid launcher that is only -4 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/dc/T8-p2-jin-f%2Cf%2B3.mp4"
     },
     "ff3-1": {
       "wavuId": "Jin-f,F+3,1",
@@ -574,7 +602,8 @@
       "ch": null,
       "notes": [
         "+1 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/64/T8-p2-jin-f%2Cf%2B3%2C1.mp4"
     },
     "ff4": {
       "wavuId": "Jin-f,F+4",
@@ -587,7 +616,8 @@
       "ch": null,
       "notes": [
         "i17 mid, +22a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/bc/T8-p2-jin-f%2Cf%2B4.mp4"
     },
     "fff3": {
       "wavuId": "Jin-f,f,F+3",
@@ -600,7 +630,8 @@
       "ch": null,
       "notes": [
         "plus on block from a run"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/64/T8-p2-jin-f%2Cf%2Cf%2B3.mp4"
     },
     "bf2": {
       "wavuId": "Jin-b,f+2",
@@ -641,7 +672,8 @@
       "ch": "+50a (+3)",
       "notes": [
         "CH +50a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/87/T8-p2-jin-b%2Cf%2B2%2C1%2C2.mp4"
     },
     "bf2-1-df2": {
       "wavuId": "Jin-b,f+2,1,df+2",
@@ -656,7 +688,8 @@
       "notes": [
         "wall combo ender",
         "+37a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/0/01/T8-p2-jin-b%2Cf%2B2%2C1%2Cdf%2B2.mp4"
     },
     "bf2-3": {
       "wavuId": "Jin-b,f+2,3",
@@ -671,7 +704,8 @@
       "notes": [
         "core combo filler",
         "press F to enter Zenshin at +2"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/f2/T8-p2-jin-b%2Cf%2B2%2C3.mp4"
     },
     "uf2": {
       "wavuId": "Jin-uf+2",
@@ -684,7 +718,8 @@
       "ch": "+19a (+10)",
       "notes": [
         "CH +19a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/4/4d/T8-p2-jin-uf%2B2.mp4"
     },
     "uf3": {
       "wavuId": "Jin-uf+3",
@@ -697,7 +732,8 @@
       "ch": "+59a",
       "notes": [
         "CH +59a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/5/5f/T8-p2-jin-uf%2B3.mp4"
     },
     "uf4": {
       "wavuId": "Jin-uf+4",
@@ -711,7 +747,8 @@
       "notes": [
         "his hopkick",
         "i15 launcher, -13 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/e/e9/T8-p2-jin-uf%2B4.mp4"
     },
     "ub4": {
       "wavuId": "Jin-ub+4",
@@ -737,7 +774,8 @@
       "ch": null,
       "notes": [
         "the stagger punish"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/1c/T8-p2-jin-uf%2Cn%2C4.mp4"
     },
     "d34": {
       "wavuId": "Jin-d+3+4",
@@ -751,7 +789,8 @@
       "notes": [
         "his -15 launch punish",
         "-19 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/d3/T8-p2-jin-d%2B3%2B4.mp4"
     },
     "d3-4": {
       "wavuId": "Jin-d+3,4",
@@ -779,7 +818,8 @@
       "ch": null,
       "notes": [
         "CH combo ender"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/be/T8-p2-jin-d%2B3%2C4%2C3.mp4"
     },
     "d2": {
       "wavuId": "Jin-d+2",
@@ -794,7 +834,8 @@
         "his power low",
         "CH +25d",
         "somewhat reactable"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/5/5d/T8-p2-jin-d%2B2.mp4"
     },
     "d3": {
       "wavuId": "Jin-d+3",
@@ -820,7 +861,8 @@
       "ch": null,
       "notes": [
         "i16 low"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/b2/T8-p2-jin-d%2B4.mp4"
     },
     "db1": {
       "wavuId": "Jin-db+1",
@@ -875,7 +917,8 @@
       "ch": null,
       "notes": [
         "wall combo ender"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/22/T8-p2-jin-db%2B2%2C2%2C3.mp4"
     },
     "db3": {
       "wavuId": "Jin-db+3",
@@ -889,7 +932,8 @@
       "notes": [
         "high",
         "+17a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/6e/T8-p2-jin-db%2B3.mp4"
     },
     "db4": {
       "wavuId": "Jin-db+4",
@@ -903,7 +947,8 @@
       "notes": [
         "his stature-kick low",
         "CH +13g"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/7/7e/T8-p2-jin-db%2B4.mp4"
     },
     "fc-df4": {
       "wavuId": "Jin-FC.df+4",
@@ -918,7 +963,8 @@
         "CH +69a",
         "-26 on block",
         "enters Zenshin with F on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/e/ed/T8-p2-jin-fc.df%2B4.mp4"
     },
     "whf": {
       "wavuId": "Jin-CD.df+2",
@@ -932,7 +978,8 @@
       "notes": [
         "the non-electric version — i11 but -10 on block",
         "becomes EWHF in Heat"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/35/T8-p2-jin-cd.df%2B2.mp4"
     },
     "ewhf": {
       "wavuId": "Jin-CD.df${justFrame}2",
@@ -946,7 +993,8 @@
       "notes": [
         "i11 launcher that is PLUS on block",
         "the defining Jin move"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/d1/T8-p2-jin-cd.dfh2.mp4"
     },
     "tu": {
       "wavuId": "Jin-CD.df+1",
@@ -961,7 +1009,8 @@
         "Tornado",
         "jab evasion",
         "becomes electric in Heat"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/4/43/T8-p2-jin-cd.df%2B1.mp4"
     },
     "etu": {
       "wavuId": "Jin-CD.df${justFrame}1",
@@ -975,7 +1024,8 @@
       "notes": [
         "the just-frame version",
         "+36a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/12/T8-p2-jin-cd.dfh1.mp4"
     },
     "cd-df4": {
       "wavuId": "Jin-CD.DF+4",
@@ -1004,7 +1054,8 @@
       "notes": [
         "the full power low",
         "+21a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/5/55/T8-p2-jin-cd.df%2B4%2C2.mp4"
     },
     "ws1": {
       "wavuId": "Jin-ws1",
@@ -1031,7 +1082,8 @@
       "ch": null,
       "notes": [
         "his -13 crouching punisher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/fa/T8-p2-jin-ws1%2C2.mp4"
     },
     "ws1-3-3": {
       "wavuId": "Jin-ws1,3~3",
@@ -1045,7 +1097,8 @@
       "ch": null,
       "notes": [
         "plus on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/f6/T8-p2-jin-ws1%2C3t3.mp4"
     },
     "ws2": {
       "wavuId": "Jin-ws2",
@@ -1059,7 +1112,8 @@
       "notes": [
         "i14 crouching LAUNCHER",
         "wall splat"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/9/9d/T8-p2-jin-ws2.mp4"
     },
     "ws3": {
       "wavuId": "Jin-ws3",
@@ -1072,7 +1126,8 @@
       "ch": "+22a",
       "notes": [
         "CH +22a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/f9/T8-p2-jin-ws3.mp4"
     },
     "ws4": {
       "wavuId": "Jin-ws4",
@@ -1099,7 +1154,8 @@
       "ch": null,
       "notes": [
         "his -11 crouching punisher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/d1/T8-p2-jin-ws4%2C4.mp4"
     },
     "zen1": {
       "wavuId": "Jin-ZEN.1",
@@ -1127,7 +1183,8 @@
       "ch": null,
       "notes": [
         "Heat Engager out of Zenshin"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/f8/T8-p2-jin-zen.1%2C2.mp4"
     },
     "zen1-3": {
       "wavuId": "Jin-ZEN.1,3",
@@ -1141,7 +1198,8 @@
       "ch": null,
       "notes": [
         "attack-throw combo ender"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/9/99/T8-p2-jin-zen.1%2C3.mp4"
     },
     "zen1plus2": {
       "wavuId": "Jin-ZEN.1+2",
@@ -1155,7 +1213,8 @@
       "notes": [
         "low attack throw",
         "Wall Crush"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/0/04/T8-p2-jin-zen.1%2B2.mp4"
     },
     "zen2": {
       "wavuId": "Jin-ZEN.2",
@@ -1169,7 +1228,8 @@
       "notes": [
         "Heat Engager",
         "only -5 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/8b/T8-p2-jin-zen.2.mp4"
     },
     "zen3": {
       "wavuId": "Jin-ZEN.3",
@@ -1183,7 +1243,8 @@
       "notes": [
         "mid",
         "CH +22a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/13/T8-p2-jin-zen.3.mp4"
     },
     "zen34": {
       "wavuId": "Jin-ZEN.3+4",
@@ -1196,7 +1257,8 @@
       "ch": null,
       "notes": [
         "hugely plus on block, but a high"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/5/59/T8-p2-jin-zen.3%2B4.mp4"
     },
     "zen4": {
       "wavuId": "Jin-ZEN.4",
@@ -1209,7 +1271,8 @@
       "ch": null,
       "notes": [
         "plus on block mid"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/7/7b/T8-p2-jin-zen.4.mp4"
     },
     "zen-u1": {
       "wavuId": "Jin-ZEN.u+1",
@@ -1222,7 +1285,8 @@
       "ch": null,
       "notes": [
         "the Tornado move in every bread-and-butter"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/d0/T8-p2-jin-zen.u%2B1.mp4"
     },
     "sabaki": {
       "wavuId": "Jin-b+1+2",
@@ -1235,7 +1299,8 @@
       "ch": null,
       "notes": [
         "his sabaki"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/b2/T8-p2-jin-b%2B1%2B2.mp4"
     },
     "power-crush": {
       "wavuId": "Jin-d+1",
@@ -1249,7 +1314,8 @@
       "notes": [
         "Power Crush",
         "attack throw on standing hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/7/72/T8-p2-jin-d%2B1.mp4"
     },
     "power-stance": {
       "wavuId": "Jin-db+1+2",
@@ -1264,7 +1330,8 @@
         "unparryable",
         "opponent recovers crouching",
         "powers up in Heat"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/f3/T8-p2-jin-db%2B1%2B2.mp4"
     },
     "heat-burst": {
       "wavuId": "Jin-2+3",

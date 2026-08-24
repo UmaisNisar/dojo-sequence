@@ -54,7 +54,8 @@
       "ch": "+36a (+0)",
       "notes": [
         "CH +36a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/fd/T8-p2-dragunov-1%2C1%2C3.mp4"
     },
     "jab-2": {
       "wavuId": "Dragunov-1,2",
@@ -83,7 +84,8 @@
       "notes": [
         "Heat Engager",
         "an i10 string that wall splats on counter-hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/7/7d/T8-p2-dragunov-1%2C2%2C1.mp4"
     },
     "jab-3": {
       "wavuId": "Dragunov-1,3",
@@ -111,7 +113,8 @@
       "ch": null,
       "notes": [
         "+41a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/e/ee/T8-p2-dragunov-1%2C3%2C2.mp4"
     },
     "feint-catch": {
       "wavuId": "Dragunov-1,3,2~1+2",
@@ -126,7 +129,8 @@
       "notes": [
         "+5 ON BLOCK",
         "breaks with 1+2 — UNBREAKABLE in Heat"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/33/T8-p2-dragunov-1%2C3%2C2~1%2B2.mp4"
     },
     "right": {
       "wavuId": "Dragunov-2",
@@ -168,7 +172,8 @@
       "ch": null,
       "notes": [
         "+14cg on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/b1/T8-p2-dragunov-2%2C1%2C3.mp4"
     },
     "right-1-4": {
       "wavuId": "Dragunov-2,1,4",
@@ -182,7 +187,8 @@
       "ch": null,
       "notes": [
         "the low ender of the same string"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/5/54/T8-p2-dragunov-2%2C1%2C4.mp4"
     },
     "kick3": {
       "wavuId": "Dragunov-3",
@@ -224,7 +230,8 @@
       "ch": null,
       "notes": [
         "mid ender"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/9/9f/T8-p2-dragunov-3%2C1%2C2.mp4"
     },
     "kick3-1-4": {
       "wavuId": "Dragunov-3,1,4",
@@ -238,7 +245,8 @@
       "ch": null,
       "notes": [
         "+16cg on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/84/T8-p2-dragunov-3%2C1%2C4.mp4"
     },
     "kick4": {
       "wavuId": "Dragunov-4",
@@ -266,7 +274,8 @@
       "notes": [
         "his -12 punisher",
         "a core combo ender"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/4/46/T8-p2-dragunov-4%2C1.mp4"
     },
     "kick4-3": {
       "wavuId": "Dragunov-4,3",
@@ -280,7 +289,8 @@
       "ch": null,
       "notes": [
         "CH combo starter"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/6a/T8-p2-dragunov-4%2C3.mp4"
     },
     "kick4-4": {
       "wavuId": "Dragunov-4,4",
@@ -295,7 +305,8 @@
       "notes": [
         "+5 ON BLOCK",
         "the first link of nearly every combo"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/cd/T8-p2-dragunov-4%2C4.mp4"
     },
     "bloodhound": {
       "wavuId": "Dragunov-1+2",
@@ -309,7 +320,8 @@
       "notes": [
         "Power Crush",
         "+19a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/5/5e/T8-p2-dragunov-1%2B2.mp4"
     },
     "df1": {
       "wavuId": "Dragunov-df+1",
@@ -336,7 +348,8 @@
       "ch": "+58a",
       "notes": [
         "CH +58a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/f9/T8-p2-dragunov-df%2B1%2C4.mp4"
     },
     "df2": {
       "wavuId": "Dragunov-df+2",
@@ -350,7 +363,8 @@
       "notes": [
         "his ONLY standing launcher",
         "i15, -12 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/bb/T8-p2-dragunov-df%2B2.mp4"
     },
     "df3": {
       "wavuId": "Dragunov-df+3",
@@ -363,7 +377,8 @@
       "ch": null,
       "notes": [
         "+5c~+8c on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/c6/T8-p2-dragunov-df%2B3.mp4"
     },
     "df3plus4": {
       "wavuId": "Dragunov-df+3+4",
@@ -377,7 +392,8 @@
       "notes": [
         "core combo filler",
         "+12g on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/fe/T8-p2-dragunov-df%2B3%2B4.mp4"
     },
     "df4": {
       "wavuId": "Dragunov-df+4",
@@ -419,7 +435,8 @@
       "notes": [
         "Tornado",
         "a listed whiff punisher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/b8/T8-p2-dragunov-b%2B1%2C2.mp4"
     },
     "b1plus2": {
       "wavuId": "Dragunov-b+1+2",
@@ -432,7 +449,8 @@
       "ch": null,
       "notes": [
         "+6 ON BLOCK — but the combo side-switches"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/db/T8-p2-dragunov-b%2B1%2B2.mp4"
     },
     "b2": {
       "wavuId": "Dragunov-b+2",
@@ -474,7 +492,8 @@
       "notes": [
         "low ender",
         "-26 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/8e/T8-p2-dragunov-b%2B2%2C1%2C3.mp4"
     },
     "b3": {
       "wavuId": "Dragunov-b+3",
@@ -487,7 +506,8 @@
       "ch": null,
       "notes": [
         "+11g on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/4/47/T8-p2-dragunov-b%2B3.mp4"
     },
     "b3plus4": {
       "wavuId": "Dragunov-b+3+4",
@@ -500,7 +520,8 @@
       "ch": null,
       "notes": [
         "his sabaki"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/0/08/T8-p2-dragunov-b%2B3%2B4.mp4"
     },
     "b3plus4-throw": {
       "wavuId": "Dragunov-b+3+4:1+2",
@@ -515,7 +536,8 @@
         "UNBREAKABLE",
         "removes recoverable health",
         "no just frame needed in Heat"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/0/08/T8-p2-dragunov-b%2B3%2B4.mp4"
     },
     "b4": {
       "wavuId": "Dragunov-b+4",
@@ -557,7 +579,8 @@
       "ch": "+14c",
       "notes": [
         "+1 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/d2/T8-p2-dragunov-b%2B4%2C2%2C1.mp4"
     },
     "ambush-tackle": {
       "wavuId": "Dragunov-b+4,2,1+2",
@@ -571,7 +594,8 @@
       "ch": null,
       "notes": [
         "breaks with 1+2 — UNBREAKABLE in Heat"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/6f/T8-p2-dragunov-b%2B4%2C2%2C1%2B2.mp4"
     },
     "b4-3": {
       "wavuId": "Dragunov-b+4,3",
@@ -588,7 +612,8 @@
         "his -14 punisher",
         "wall splat",
         "duckable"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/0/02/T8-p2-dragunov-b%2B4%2C3.mp4"
     },
     "d1": {
       "wavuId": "Dragunov-d+1",
@@ -601,7 +626,8 @@
       "ch": "+13d",
       "notes": [
         "+1c ON BLOCK from a crouching input"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/9/9f/T8-p2-dragunov-d%2B1.mp4"
     },
     "d2": {
       "wavuId": "Dragunov-d+2",
@@ -615,7 +641,8 @@
       "notes": [
         "i18 low",
         "CH +13g"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/81/T8-p2-dragunov-d%2B2.mp4"
     },
     "d3": {
       "wavuId": "Dragunov-d+3",
@@ -656,7 +683,8 @@
       "ch": null,
       "notes": [
         "-2c on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/66/T8-p2-dragunov-d%2B3%2C2%2C1%2B2.mp4"
     },
     "d3-4": {
       "wavuId": "Dragunov-d+3,4",
@@ -670,7 +698,8 @@
       "ch": "+23g",
       "notes": [
         "CH +23g"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/c8/T8-p2-dragunov-d%2B3%2C4.mp4"
     },
     "d4": {
       "wavuId": "Dragunov-d+4",
@@ -711,7 +740,8 @@
       "ch": null,
       "notes": [
         "+16a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/f2/T8-p2-dragunov-d%2B4%2C4.mp4"
     },
     "cold-fate": {
       "wavuId": "Dragunov-d+1+3",
@@ -724,7 +754,8 @@
       "ch": null,
       "notes": [
         "a throw that works as a combo ender"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/7/70/T8-p2-dragunov-d%2B1%2B3.mp4"
     },
     "db2": {
       "wavuId": "Dragunov-db+2",
@@ -765,7 +796,8 @@
       "ch": null,
       "notes": [
         "+29a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/a/ae/T8-p2-dragunov-db%2B2%2C1%2C2.mp4"
     },
     "snake-edge": {
       "wavuId": "Dragunov-db+3",
@@ -779,7 +811,8 @@
       "notes": [
         "his snake edge",
         "CH +67a but -26 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/a/aa/T8-p2-dragunov-db%2B3.mp4"
     },
     "feint-low-catch": {
       "wavuId": "Dragunov-db+3~1+2",
@@ -792,7 +825,8 @@
       "ch": null,
       "notes": [
         "the low feint into a throw"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/a/ac/T8-p2-dragunov-db%2B3~1%2B2.mp4"
     },
     "power-low": {
       "wavuId": "Dragunov-db+3+4",
@@ -806,7 +840,8 @@
       "notes": [
         "his power low",
         "-31 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/d5/T8-p2-dragunov-db%2B3%2B4.mp4"
     },
     "f1plus2": {
       "wavuId": "Dragunov-f+1+2",
@@ -820,7 +855,8 @@
       "notes": [
         "his -17 long-range punisher",
         "+35d on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/b8/T8-p2-dragunov-f%2B1%2B2.mp4"
     },
     "f1plus4": {
       "wavuId": "Dragunov-f+1+4",
@@ -833,7 +869,8 @@
       "ch": null,
       "notes": [
         "i11 command throw"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/e/ef/T8-p2-dragunov-f%2B1%2B4.mp4"
     },
     "f2": {
       "wavuId": "Dragunov-f+2",
@@ -861,7 +898,8 @@
       "notes": [
         "+28a on hit",
         "CH +31a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/4/42/T8-p2-dragunov-f%2B2%2C4.mp4"
     },
     "f2plus3": {
       "wavuId": "Dragunov-f+2+3",
@@ -874,7 +912,8 @@
       "ch": null,
       "notes": [
         "i11 command throw"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/5/53/T8-p2-dragunov-f%2B2%2B3.mp4"
     },
     "f3": {
       "wavuId": "Dragunov-f+3",
@@ -902,7 +941,8 @@
       "notes": [
         "Heat Engager",
         "his -20 punisher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/7/72/T8-p2-dragunov-f%2B3%2C1%2B2.mp4"
     },
     "f3-3": {
       "wavuId": "Dragunov-f+3,3",
@@ -916,7 +956,8 @@
       "ch": null,
       "notes": [
         "mid ender"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/0/0e/T8-p2-dragunov-f%2B3%2C3.mp4"
     },
     "f3plus4": {
       "wavuId": "Dragunov-f+3+4",
@@ -929,7 +970,8 @@
       "ch": null,
       "notes": [
         "+41a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/27/T8-p2-dragunov-3%2B4.mp4"
     },
     "f4": {
       "wavuId": "Dragunov-f+4",
@@ -957,7 +999,8 @@
       "notes": [
         "Tornado",
         "his other -14 punisher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/37/T8-p2-dragunov-f%2B4%2C3.mp4"
     },
     "f4-4": {
       "wavuId": "Dragunov-f+4,4",
@@ -985,7 +1028,8 @@
       "ch": null,
       "notes": [
         "-5 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/11/T8-p2-dragunov-f%2B4%2C4%2C3.mp4"
     },
     "f4-d4": {
       "wavuId": "Dragunov-f+4,d+4",
@@ -999,7 +1043,8 @@
       "ch": null,
       "notes": [
         "the low branch"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/3c/T8-p2-dragunov-f%2B4%2Cd%2B4.mp4"
     },
     "ff2": {
       "wavuId": "Dragunov-f,F+2",
@@ -1013,7 +1058,8 @@
       "notes": [
         "i15 mid",
         "CH +30d"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/e/e7/T8-p2-dragunov-f%2Cf%2B2.mp4"
     },
     "ff3": {
       "wavuId": "Dragunov-f,F+3",
@@ -1027,7 +1073,8 @@
       "notes": [
         "+5 ON BLOCK",
         "homing"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/3b/T8-p2-dragunov-f%2Cf%2B3.mp4"
     },
     "ff4": {
       "wavuId": "Dragunov-f,F+4",
@@ -1041,7 +1088,8 @@
       "notes": [
         "only -1 on block",
         "leads to a guaranteed throw"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/9/92/T8-p2-dragunov-f%2Cf%2B4.mp4"
     },
     "wr2": {
       "wavuId": "Dragunov-f,f,F+2",
@@ -1055,7 +1103,8 @@
       "notes": [
         "+4 ON BLOCK, CH +44a — his defining pressure mid",
         "f,n,f+2 within 8f for the powered-up version"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/3f/T8-p2-dragunov-f%2Cf%2Cf%2B2.mp4"
     },
     "wr4": {
       "wavuId": "Dragunov-f,f,F+4",
@@ -1068,7 +1117,8 @@
       "ch": null,
       "notes": [
         "transitions to an UNBREAKABLE attack throw"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/b1/T8-p2-dragunov-f%2Cf%2Cf%2B4.mp4"
     },
     "qcb2": {
       "wavuId": "Dragunov-qcb+2",
@@ -1082,7 +1132,8 @@
       "notes": [
         "Tornado",
         "+32a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/bc/T8-p2-dragunov-qcb%2B2.mp4"
     },
     "uf1": {
       "wavuId": "Dragunov-uf+1",
@@ -1096,7 +1147,8 @@
       "notes": [
         "Tornado",
         "his -14 punisher, but the combo side-switches"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/7/74/T8-p2-dragunov-uf%2B1.mp4"
     },
     "uf2": {
       "wavuId": "Dragunov-uf+2",
@@ -1109,7 +1161,8 @@
       "ch": null,
       "notes": [
         "+42a on hit at only -5 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/3b/T8-p2-dragunov-uf%2B2.mp4"
     },
     "uf3": {
       "wavuId": "Dragunov-uf+3",
@@ -1122,7 +1175,8 @@
       "ch": null,
       "notes": [
         "+20a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/b9/T8-p2-dragunov-uf%2B3.mp4"
     },
     "uf4": {
       "wavuId": "Dragunov-uf+4",
@@ -1135,7 +1189,8 @@
       "ch": null,
       "notes": [
         "+19a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/c1/T8-p2-dragunov-uf%2B4.mp4"
     },
     "uf3plus4": {
       "wavuId": "Dragunov-uf+3+4",
@@ -1148,7 +1203,8 @@
       "ch": null,
       "notes": [
         "UNBREAKABLE throw — the only escape is to duck it"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/c7/T8-p2-dragunov-uf%2B3%2B4.mp4"
     },
     "ufn4": {
       "wavuId": "Dragunov-uf,n,4",
@@ -1161,7 +1217,8 @@
       "ch": null,
       "notes": [
         "his -23 punisher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/4/48/T8-p2-dragunov-uf%2Cn%2C4.mp4"
     },
     "ub1": {
       "wavuId": "Dragunov-ub+1",
@@ -1174,7 +1231,8 @@
       "ch": "+18g",
       "notes": [
         "CH +18g"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/33/T8-p2-dragunov-ub%2B1.mp4"
     },
     "ub2": {
       "wavuId": "Dragunov-ub+2",
@@ -1187,7 +1245,8 @@
       "ch": "+53a",
       "notes": [
         "i20 high CH launcher, +53a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/5/5f/T8-p2-dragunov-ub%2B2.mp4"
     },
     "ub4": {
       "wavuId": "Dragunov-ub+4",
@@ -1254,7 +1313,8 @@
       "ch": null,
       "notes": [
         "-12 crouching punisher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/4/48/T8-p2-dragunov-ws1%2C2.mp4"
     },
     "ws1-3": {
       "wavuId": "Dragunov-ws1,3",
@@ -1270,7 +1330,8 @@
         "-12 crouching punisher",
         "wall splat",
         "CH +36a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/f1/T8-p2-dragunov-ws1%2C3.mp4"
     },
     "ws1plus2": {
       "wavuId": "Dragunov-ws1+2",
@@ -1283,7 +1344,8 @@
       "ch": null,
       "notes": [
         "Heat Engager and an i12 punish from crouch"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/2c/T8-p2-dragunov-ws1%2B2.mp4"
     },
     "ws2": {
       "wavuId": "Dragunov-ws2",
@@ -1296,7 +1358,8 @@
       "ch": null,
       "notes": [
         "his -15 crouching launcher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/8d/T8-p2-dragunov-ws2.mp4"
     },
     "ws3": {
       "wavuId": "Dragunov-ws3",
@@ -1309,7 +1372,8 @@
       "ch": "+36a (+0)",
       "notes": [
         "CH +36a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/16/T8-p2-dragunov-ws3.mp4"
     },
     "ws4": {
       "wavuId": "Dragunov-ws4",
@@ -1322,7 +1386,8 @@
       "ch": null,
       "notes": [
         "his -11 crouching check at only -5"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/f4/T8-p2-dragunov-ws4.mp4"
     },
     "fc-df1": {
       "wavuId": "Dragunov-FC.df+1",
@@ -1350,7 +1415,8 @@
       "notes": [
         "the core combo link",
         "a just-frame input gives 1 more damage"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/df/T8-p2-dragunov-fc.df%2B1%2C4.mp4"
     },
     "snk1": {
       "wavuId": "Dragunov-SNK.1",
@@ -1363,7 +1429,8 @@
       "ch": null,
       "notes": [
         "+51a launcher out of Sneak"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/4/4a/T8-p2-dragunov-snk.1.mp4"
     },
     "snk2": {
       "wavuId": "Dragunov-SNK.2",
@@ -1377,7 +1444,8 @@
       "notes": [
         "Tornado",
         "the combo tornado source"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/0/0c/T8-p2-dragunov-snk.2.mp4"
     },
     "snk3": {
       "wavuId": "Dragunov-SNK.3",
@@ -1390,7 +1458,8 @@
       "ch": "+1d/(+26a)",
       "notes": [
         "a low that becomes a throw on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/3b/T8-p2-dragunov-snk.3.mp4"
     },
     "snk3plus4": {
       "wavuId": "Dragunov-SNK.3+4",
@@ -1404,7 +1473,8 @@
       "notes": [
         "Power Crush",
         "absorbs a hit into an attack throw"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/14/T8-p2-dragunov-snk.3%2B4.mp4"
     },
     "snk4": {
       "wavuId": "Dragunov-SNK.4",
@@ -1417,7 +1487,8 @@
       "ch": null,
       "notes": [
         "+7 ON BLOCK and a Heat Engager"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/a/a4/T8-p2-dragunov-snk.4.mp4"
     },
     "pgr2": {
       "wavuId": "Dragunov-PGR.2",
@@ -1484,7 +1555,8 @@
       "ch": null,
       "notes": [
         "+45a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/f9/T8-p2-dragunov-ss.2%2C1%2B2%2C4.mp4"
     },
     "otg-db3": {
       "wavuId": "Dragunov-OTG.d+3+4",

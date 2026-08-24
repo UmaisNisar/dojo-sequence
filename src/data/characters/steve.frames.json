@@ -39,7 +39,8 @@
       "ch": null,
       "notes": [
         "weaves out with 3 or 4"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/a/a6/T8-p2-steve-1%2C1.mp4"
     },
     "jab-1-2": {
       "wavuId": "Steve-1,1,2",
@@ -53,7 +54,8 @@
       "notes": [
         "his i10 punisher",
         "ends in a stance at up to +8"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/4/49/T8-p2-steve-1%2C1%2C2.mp4"
     },
     "jab-1-d1": {
       "wavuId": "Steve-1,1,d+1",
@@ -66,7 +68,8 @@
       "ch": "+5",
       "notes": [
         "enters Flicker with b at up to +11"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/de/T8-p2-steve-1%2C1%2Cd%2B1.mp4"
     },
     "jab-2": {
       "wavuId": "Steve-1,2",
@@ -79,7 +82,8 @@
       "ch": null,
       "notes": [
         "-3 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/9/93/T8-p2-steve-1%2C2.mp4"
     },
     "jab-2-1": {
       "wavuId": "Steve-1,2,1",
@@ -106,7 +110,8 @@
       "notes": [
         "Balcony Break",
         "the mid ender"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/88/T8-p2-steve-1%2C2%2C1%2C2.mp4"
     },
     "jab-2-1-d2": {
       "wavuId": "Steve-1,2,1,d+2",
@@ -119,7 +124,8 @@
       "ch": "+14d",
       "notes": [
         "the low ender of the same string"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/19/T8-p2-steve-1%2C2%2C1%2Cd%2B2.mp4"
     },
     "sonic-fang": {
       "wavuId": "Steve-1+2",
@@ -133,7 +139,8 @@
       "notes": [
         "Heat Engager",
         "his -14 punisher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/bc/T8-p2-steve-1%2B2.mp4"
     },
     "right": {
       "wavuId": "Steve-2",
@@ -172,7 +179,8 @@
       "ch": null,
       "notes": [
         "mid ender"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/8f/T8-p2-steve-2%2C1%2C2.mp4"
     },
     "right-2": {
       "wavuId": "Steve-2,2",
@@ -186,7 +194,8 @@
       "notes": [
         "Tornado",
         "also covers -12"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/4/4f/T8-p2-steve-2%2C2.mp4"
     },
     "df1": {
       "wavuId": "Steve-df+1",
@@ -199,7 +208,8 @@
       "ch": null,
       "notes": [
         "his mid check — i13 at only -2"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/0/01/T8-p2-steve-df%2B1.mp4"
     },
     "df1-2": {
       "wavuId": "Steve-df+1,2",
@@ -212,7 +222,8 @@
       "ch": "+5",
       "notes": [
         "the gateway to the Swindler follow-ups"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/9/9a/T8-p2-steve-df%2B1%2C2.mp4"
     },
     "swindler-df": {
       "wavuId": "Steve-df+1,2~1",
@@ -226,7 +237,8 @@
       "notes": [
         "CH +61a",
         "enters Flicker with b"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/18/T8-p2-steve-df%2B1%2C2t1.mp4"
     },
     "swindler-body": {
       "wavuId": "Steve-df+1,2~2",
@@ -239,7 +251,8 @@
       "ch": null,
       "notes": [
         "+36d on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/0/06/T8-p2-steve-df%2B1%2C2t2.mp4"
     },
     "df1-2-f1plus2": {
       "wavuId": "Steve-df+1,2~f+1+2",
@@ -252,7 +265,8 @@
       "ch": "+3",
       "notes": [
         "the long string branch"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/80/T8-p2-steve-df%2B1%2C2tf%2B1%2B2.mp4"
     },
     "df2": {
       "wavuId": "Steve-df+2",
@@ -266,7 +280,8 @@
       "notes": [
         "CH +10c",
         "transitions to any weave or to Duck"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/8a/T8-p2-steve-df%2B2.mp4"
     },
     "b1": {
       "wavuId": "Steve-b+1",
@@ -279,7 +294,8 @@
       "ch": "+61a",
       "notes": [
         "the best counter-hit tool in Tekken 8 — CH +61a, but -14 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/c4/T8-p2-steve-b%2B1.mp4"
     },
     "b1-2": {
       "wavuId": "Steve-b+1,2",
@@ -295,7 +311,8 @@
         "homing",
         "his -13 punisher",
         "enters Lionheart"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/b5/T8-p2-steve-b%2B1%2C2.mp4"
     },
     "swindler-b1": {
       "wavuId": "Steve-b+1,2~1",
@@ -335,7 +352,8 @@
       "notes": [
         "Tornado",
         "+35a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/24/T8-p2-steve-b%2B1%2Cd%2B2%2C1.mp4"
     },
     "b1plus2": {
       "wavuId": "Steve-b+1+2",
@@ -376,7 +394,8 @@
       "ch": null,
       "notes": [
         "his -17 punisher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/c2/T8-p2-steve-b%2B2.mp4"
     },
     "db1": {
       "wavuId": "Steve-db+1",
@@ -404,7 +423,8 @@
       "notes": [
         "Power Crush",
         "+29a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/1e/T8-p2-steve-db%2B1%2B2.mp4"
     },
     "db2": {
       "wavuId": "Steve-db+2",
@@ -418,7 +438,8 @@
       "notes": [
         "low",
         "CH +14d"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/14/T8-p2-steve-db%2B2.mp4"
     },
     "db3": {
       "wavuId": "Steve-db+3",
@@ -444,7 +465,8 @@
       "ch": null,
       "notes": [
         "-27 on block if only the first hit is blocked"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/25/T8-p2-steve-db%2B3%2C2.mp4"
     },
     "d1": {
       "wavuId": "Steve-d+1",
@@ -457,7 +479,8 @@
       "ch": null,
       "notes": [
         "i16 low, -13"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/dc/T8-p2-steve-d%2B1.mp4"
     },
     "d2": {
       "wavuId": "Steve-d+2",
@@ -483,7 +506,8 @@
       "ch": "+56a",
       "notes": [
         "CH +56a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/82/T8-p2-steve-d%2B2%2C1%2C2.mp4"
     },
     "f1plus2": {
       "wavuId": "Steve-f+1+2",
@@ -509,7 +533,8 @@
       "ch": null,
       "notes": [
         "his -15 punisher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/29/T8-p2-steve-f%2B1%2B2%2C2.mp4"
     },
     "f2": {
       "wavuId": "Steve-f+2",
@@ -536,7 +561,8 @@
       "notes": [
         "core combo link",
         "enters Peekaboo or Flicker"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/19/T8-p2-steve-f%2B2%2C1.mp4"
     },
     "f2-1-2": {
       "wavuId": "Steve-f+2,1~2",
@@ -549,7 +575,8 @@
       "ch": null,
       "notes": [
         "+36d on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/39/T8-p2-steve-f%2B2%2C1t2.mp4"
     },
     "f2-2": {
       "wavuId": "Steve-f+2,2",
@@ -576,7 +603,8 @@
       "ch": null,
       "notes": [
         "+5c on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/6b/T8-p2-steve-f%2B2%2C2%2C1%2B2.mp4"
     },
     "ff2": {
       "wavuId": "Steve-f,F+2",
@@ -589,7 +617,8 @@
       "ch": null,
       "notes": [
         "+12d on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/0/0c/T8-p2-steve-f%2Cf%2B2.mp4"
     },
     "fff2": {
       "wavuId": "Steve-f,f,F+2",
@@ -604,7 +633,8 @@
         "Heat Engager",
         "+6 ON BLOCK",
         "9 chip damage on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/dc/T8-p2-steve-f%2Cf%2Cf%2B2.mp4"
     },
     "qcf1": {
       "wavuId": "Steve-qcf+1",
@@ -619,7 +649,8 @@
         "Heat Engager",
         "wall splat",
         "enters Flicker with B"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/f5/T8-p2-steve-qcf%2B1.mp4"
     },
     "qcf2": {
       "wavuId": "Steve-qcf+2",
@@ -633,7 +664,8 @@
       "notes": [
         "his long-range low",
         "-18 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/a/a8/T8-p2-steve-qcf%2B2.mp4"
     },
     "u2": {
       "wavuId": "Steve-u+2",
@@ -646,7 +678,8 @@
       "ch": null,
       "notes": [
         "his i17 standing launcher — he has nothing faster"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/26/T8-p2-steve-pab.uf%2B2.mp4"
     },
     "uf1": {
       "wavuId": "Steve-uf+1",
@@ -659,7 +692,8 @@
       "ch": null,
       "notes": [
         "i19 mid at -6"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/0/08/T8-p2-steve-uf%2B1.mp4"
     },
     "uf2": {
       "wavuId": "Steve-uf+2",
@@ -673,7 +707,8 @@
       "notes": [
         "+52a launcher",
         "his -22 crouching punisher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/4/49/T8-p2-steve-uf%2B2.mp4"
     },
     "uf3": {
       "wavuId": "Steve-uf+3",
@@ -699,7 +734,8 @@
       "ch": null,
       "notes": [
         "the follow-up"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/8b/T8-p2-steve-uf%2B3%2C2.mp4"
     },
     "uf4": {
       "wavuId": "Steve-uf+4",
@@ -712,7 +748,8 @@
       "ch": "+36a (+26)",
       "notes": [
         "his hopkick — i23, unusually slow"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/32/T8-p2-steve-uf%2B4.mp4"
     },
     "ub2": {
       "wavuId": "Steve-ub+2",
@@ -727,7 +764,8 @@
         "+5 ON BLOCK",
         "homing",
         "enters Lionheart"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/e/e2/T8-p2-steve-ub%2B2.mp4"
     },
     "swindler-ub": {
       "wavuId": "Steve-ub+2~1",
@@ -753,7 +791,8 @@
       "ch": null,
       "notes": [
         "unblockable"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/0/00/T8-p2-steve-ub%2B1%2B2.mp4"
     },
     "fc-df2": {
       "wavuId": "Steve-FC.df+2",
@@ -767,7 +806,8 @@
       "notes": [
         "Tornado",
         "his i16 crouching launcher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/c9/T8-p2-steve-fc.df%2B2.mp4"
     },
     "ws1": {
       "wavuId": "Steve-WS.1",
@@ -793,7 +833,8 @@
       "ch": null,
       "notes": [
         "his -11 crouching punisher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/0/01/T8-p2-steve-ws.1%2C1.mp4"
     },
     "ws1-2": {
       "wavuId": "Steve-WS.1,2",
@@ -807,7 +848,8 @@
       "notes": [
         "also covers -11",
         "CH +23d"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/32/T8-p2-steve-ws.1%2C2.mp4"
     },
     "ws2": {
       "wavuId": "Steve-WS.2",
@@ -833,7 +875,8 @@
       "ch": null,
       "notes": [
         "his -13 crouching punisher — enters Lionheart at +11"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/c4/T8-p2-steve-ws.2%2C2.mp4"
     },
     "flk1": {
       "wavuId": "Steve-FLK.1",
@@ -886,7 +929,8 @@
       "ch": null,
       "notes": [
         "Tornado ender"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/dc/T8-p2-steve-flk.1%2C1%2C1%2C2.mp4"
     },
     "flk1-d1": {
       "wavuId": "Steve-FLK.1,d+1",
@@ -900,7 +944,8 @@
       "notes": [
         "0 on block",
         "CH +42a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/15/T8-p2-steve-flk.1%2Cd%2B1.mp4"
     },
     "flk1-f1": {
       "wavuId": "Steve-FLK.1,f+1",
@@ -913,7 +958,8 @@
       "ch": "+10d",
       "notes": [
         "CH +10d"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/d4/T8-p2-steve-flk.1%2Cf%2B1.mp4"
     },
     "flk2": {
       "wavuId": "Steve-FLK.2",
@@ -927,7 +973,8 @@
       "notes": [
         "CH +42a",
         "6 chip damage on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/0/07/T8-p2-steve-flk.2.mp4"
     },
     "flk-b2": {
       "wavuId": "Steve-FLK.b+2",
@@ -942,7 +989,8 @@
         "Power Crush",
         "Tornado",
         "+35d on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/d0/T8-p2-steve-flk.b%2B2.mp4"
     },
     "flk-throw": {
       "wavuId": "Steve-FLK.1+2",
@@ -955,7 +1003,8 @@
       "ch": null,
       "notes": [
         "the Flicker throw"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/ce/T8-p2-steve-flk.1%2B2.mp4"
     },
     "pab1": {
       "wavuId": "Steve-PAB.1",
@@ -994,7 +1043,8 @@
       "ch": "+44a",
       "notes": [
         "CH +44a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/d9/T8-p2-steve-pab.1%2C2%2C1.mp4"
     },
     "pab2": {
       "wavuId": "Steve-PAB.2",
@@ -1009,7 +1059,8 @@
         "+5 ON BLOCK",
         "homing",
         "and it PUNCH PARRIES"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/84/T8-p2-steve-pab.2.mp4"
     },
     "swindler-pab": {
       "wavuId": "Steve-PAB.2~1",
@@ -1050,7 +1101,8 @@
         "+3 on block",
         "homing",
         "enters Lionheart"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/9/97/T8-p2-steve-pab.df%2B1%2C2.mp4"
     },
     "pab-df2": {
       "wavuId": "Steve-PAB.df+2",
@@ -1064,7 +1116,8 @@
       "notes": [
         "the i17 instant-Peekaboo launcher",
         "his biggest punish"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/1/12/T8-p2-steve-pab.df%2B2.mp4"
     },
     "pab-uf2": {
       "wavuId": "Steve-PAB.uf+2",
@@ -1078,7 +1131,8 @@
       "notes": [
         "Tornado",
         "his -18 punisher"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/26/T8-p2-steve-pab.uf%2B2.mp4"
     },
     "pab-f2": {
       "wavuId": "Steve-PAB.f+2",
@@ -1105,7 +1159,8 @@
       "notes": [
         "+24a on hit",
         "the i13 wall splat"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/88/T8-p2-steve-pab.f%2B1%2B2.mp4"
     },
     "pab-b1-1-2-1": {
       "wavuId": "Steve-PAB.b+1,1,2,1",
@@ -1118,7 +1173,8 @@
       "ch": null,
       "notes": [
         "Balcony Break"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/a/af/T8-p2-steve-pab.b%2B1%2C1%2C2%2C1.mp4"
     },
     "pab-d1": {
       "wavuId": "Steve-PAB.d+1",
@@ -1131,7 +1187,8 @@
       "ch": null,
       "notes": [
         "i15 low"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/a/a0/T8-p2-steve-pab.d%2B1.mp4"
     },
     "pab-d2": {
       "wavuId": "Steve-PAB.d+2",
@@ -1145,7 +1202,8 @@
       "notes": [
         "low",
         "CH +32a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/b2/T8-p2-steve-pab.d%2B2.mp4"
     },
     "pab-throw": {
       "wavuId": "Steve-PAB.1+2",
@@ -1158,7 +1216,8 @@
       "ch": null,
       "notes": [
         "i11 throw out of Peekaboo"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/cc/T8-p2-steve-pab.1%2B2.mp4"
     },
     "lnh1": {
       "wavuId": "Steve-LNH.1",
@@ -1173,7 +1232,8 @@
         "Heat Engager",
         "homing",
         "+15g on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/4/4c/T8-p2-steve-lnh.1.mp4"
     },
     "lnh2": {
       "wavuId": "Steve-LNH.2",
@@ -1187,7 +1247,8 @@
       "notes": [
         "Tornado",
         "+61a — the combo ender"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/b2/T8-p2-steve-lnh.2.mp4"
     },
     "lnh1plus2": {
       "wavuId": "Steve-LNH.1+2",
@@ -1201,7 +1262,8 @@
       "notes": [
         "GUARD BREAK",
         "+12 on block with guaranteed follow-ups"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/35/T8-p2-steve-lnh.1%2B2.mp4"
     },
     "dck1": {
       "wavuId": "Steve-DCK.1",
@@ -1214,7 +1276,8 @@
       "ch": "+34a (+24)",
       "notes": [
         "+58a on a normal hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/87/T8-p2-steve-dck.1.mp4"
     },
     "dck2": {
       "wavuId": "Steve-DCK.2",
@@ -1227,7 +1290,8 @@
       "ch": null,
       "notes": [
         "+35a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/fa/T8-p2-steve-dck.2.mp4"
     },
     "dck-f2": {
       "wavuId": "Steve-DCK.f+2",
@@ -1241,7 +1305,8 @@
       "notes": [
         "+5 ON BLOCK",
         "CH +55a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/c4/T8-p2-steve-dck.f%2B2.mp4"
     },
     "dck-gatling": {
       "wavuId": "Steve-DCK.1+2,1+2,1+2,1+2",
@@ -1254,7 +1319,8 @@
       "ch": null,
       "notes": [
         "the easy-confirm machine-gun string"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/8/89/T8-p2-steve-dck.1%2B2%2C1%2B2%2C1%2B2%2C1%2B2.mp4"
     },
     "exd1": {
       "wavuId": "Steve-EXD.1",
@@ -1267,7 +1333,8 @@
       "ch": "+41a (+31)",
       "notes": [
         "8 chip damage on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/e/e0/T8-p2-steve-exd.1.mp4"
     },
     "exd2": {
       "wavuId": "Steve-EXD.2",
@@ -1280,7 +1347,8 @@
       "ch": null,
       "notes": [
         "+61a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/d/d8/T8-p2-steve-exd.2.mp4"
     },
     "exd-f2": {
       "wavuId": "Steve-EXD.f+2",
@@ -1293,7 +1361,8 @@
       "ch": null,
       "notes": [
         "+5 on block, +56a on hit, 11 chip damage on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/b0/T8-p2-steve-exd.f%2B2.mp4"
     },
     "alb2": {
       "wavuId": "Steve-ALB.2",
@@ -1307,7 +1376,8 @@
       "notes": [
         "Heat Engager",
         "only -3 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/2c/T8-p2-steve-alb.2.mp4"
     },
     "alb-d1": {
       "wavuId": "Steve-ALB.d,1",
@@ -1320,7 +1390,8 @@
       "ch": null,
       "notes": [
         "-3 on block"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/c/ca/T8-p2-steve-alb.d_u%2C1.mp4"
     },
     "alb-d2": {
       "wavuId": "Steve-ALB.d+2",
@@ -1333,7 +1404,8 @@
       "ch": "+14d",
       "notes": [
         "the Albion low"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/39/T8-p2-steve-alb.d%2B2.mp4"
     },
     "lwv1": {
       "wavuId": "Steve-LWV.1",
@@ -1361,7 +1433,8 @@
         "+3 on block",
         "homing",
         "the standard combo ender"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/f/f4/T8-p2-steve-lwv.1%2C2.mp4"
     },
     "lwv1-1": {
       "wavuId": "Steve-LWV.1,1",
@@ -1374,7 +1447,8 @@
       "ch": null,
       "notes": [
         "+28a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/2/23/T8-p2-steve-lwv.1%2C1.mp4"
     },
     "lwv1plus2": {
       "wavuId": "Steve-LWV.1+2",
@@ -1387,7 +1461,8 @@
       "ch": "+35d (+27)",
       "notes": [
         "CH +35d"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/b/b6/T8-p2-steve-lwv.1%2B2.mp4"
     },
     "lwv2": {
       "wavuId": "Steve-LWV.2",
@@ -1427,7 +1502,8 @@
       "notes": [
         "+3 on block",
         "homing"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/4/44/T8-p2-steve-rwv.1%2C2.mp4"
     },
     "rwv2": {
       "wavuId": "Steve-RWV.2",
@@ -1440,7 +1516,8 @@
       "ch": "+31a (+5)",
       "notes": [
         "CH +31a"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/3/32/T8-p2-steve-rwv.2.mp4"
     },
     "swy1": {
       "wavuId": "Steve-SWY.1",
@@ -1454,7 +1531,8 @@
       "notes": [
         "around neutral on block, and up to +15c at range",
         "10 chip damage"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/6/69/T8-p2-steve-swy.1.mp4"
     },
     "swy2": {
       "wavuId": "Steve-SWY.2",
@@ -1467,7 +1545,8 @@
       "ch": null,
       "notes": [
         "+36a on hit"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/7/7b/T8-p2-steve-swy.2.mp4"
     },
     "swy-throw": {
       "wavuId": "Steve-SWY.1+2",
@@ -1480,7 +1559,8 @@
       "ch": null,
       "notes": [
         "the sway throw"
-      ]
+      ],
+      "video": "https://wavu.wiki/w/images/4/42/T8-p2-steve-swy.1%2B2.mp4"
     },
     "heat-burst": {
       "wavuId": "Steve-2+3",

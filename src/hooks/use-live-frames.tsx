@@ -106,3 +106,8 @@ export function useLiveFrames(characterId: string): LiveFramesState {
   const map = useContext(LiveFramesContext);
   return map[characterId] ?? IDLE;
 }
+
+/** Every character's check at once — for summarising, without a hook per row. */
+export function useAllLiveFrames(): LiveFramesMap {
+  return useContext(LiveFramesContext);
+}
