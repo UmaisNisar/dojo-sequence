@@ -165,7 +165,7 @@ function buildBoltStrike(
 
 /** Signature-move pages that get a permanent storm front. */
 const ELECTRIC_ROUTE =
-  /\/(?:kazuya\/.*\/item\/(?:ewgf-input|ewgf-consistency|ewgf-movement|fifty-fifty)|lars\/.*\/item\/(?:blue-bolt|sen-threats|len|den-cancel)|bryan\/.*\/item\/(?:taunt-jet-upper|taunt-mechanics|snake-edge|b1)|jin\/.*\/item\/(?:ewhf-input|ewhf-consistency|ewhf-punish|ewhf-neutral)|king\/.*\/item\/(?:giant-swing|the-mixup|mmd-chain|heat)|dragunov\/.*\/item\/(?:wr2|instant-while-running|snake-edge|heat))$/;
+  /\/(?:kazuya\/.*\/item\/(?:ewgf-input|ewgf-consistency|ewgf-movement|fifty-fifty)|lars\/.*\/item\/(?:blue-bolt|sen-threats|len|den-cancel)|bryan\/.*\/item\/(?:taunt-jet-upper|taunt-mechanics|snake-edge|b1)|jin\/.*\/item\/(?:ewhf-input|ewhf-consistency|ewhf-punish|ewhf-neutral)|king\/.*\/item\/(?:giant-swing|the-mixup|mmd-chain|heat)|dragunov\/.*\/item\/(?:wr2|instant-while-running|snake-edge|heat)|steve\/.*\/item\/(?:b1|swindler|duck-cancel|heat))$/;
 
 /** Seconds until the leader reaches ground — flash/burst fire then. */
 const DRAW_S = 0.11;

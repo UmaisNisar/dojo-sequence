@@ -1,0 +1,1540 @@
+{
+  "characterId": "steve",
+  "game": "Tekken 8",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-23",
+  "sources": [
+    {
+      "name": "Wavu Wiki",
+      "url": "https://wavu.wiki/t/Steve"
+    },
+    {
+      "name": "TekkenDocs",
+      "url": "https://tekkendocs.com/t8/steve"
+    }
+  ],
+  "moves": {
+    "jab": {
+      "wavuId": "Steve-1",
+      "input": "1",
+      "name": "Jab",
+      "level": "h",
+      "startup": "i10",
+      "block": "+1",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "i10 high",
+        "+1 on block"
+      ]
+    },
+    "jab-1": {
+      "wavuId": "Steve-1,1",
+      "input": "1,1",
+      "name": "Double Jab",
+      "level": ",h",
+      "startup": "i15",
+      "block": "-3",
+      "hit": "+3",
+      "ch": null,
+      "notes": [
+        "weaves out with 3 or 4"
+      ]
+    },
+    "jab-1-2": {
+      "wavuId": "Steve-1,1,2",
+      "input": "1,1,2",
+      "name": "Lightning Combo",
+      "level": ",h",
+      "startup": "i13-14",
+      "block": "-7",
+      "hit": "+4",
+      "ch": null,
+      "notes": [
+        "his i10 punisher",
+        "ends in a stance at up to +8"
+      ]
+    },
+    "jab-1-d1": {
+      "wavuId": "Steve-1,1,d+1",
+      "input": "1,1,d+1",
+      "name": "Double Jab into Body Blow",
+      "level": ",m",
+      "startup": "i25",
+      "block": "-6",
+      "hit": "+0",
+      "ch": "+5",
+      "notes": [
+        "enters Flicker with b at up to +11"
+      ]
+    },
+    "jab-2": {
+      "wavuId": "Steve-1,2",
+      "input": "1,2",
+      "name": "Left Right",
+      "level": ",h",
+      "startup": "i10",
+      "block": "-3",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "-3 on block"
+      ]
+    },
+    "jab-2-1": {
+      "wavuId": "Steve-1,2,1",
+      "input": "1,2,1",
+      "name": "Left Right Combo",
+      "level": ",h",
+      "startup": "i14",
+      "block": "-3",
+      "hit": "+3",
+      "ch": null,
+      "notes": [
+        "enters Peekaboo with f or Flicker with b"
+      ]
+    },
+    "jab-2-1-2": {
+      "wavuId": "Steve-1,2,1,2",
+      "input": "1,2,1,2",
+      "name": "British Edge Combo",
+      "level": ",m",
+      "startup": "i18-19",
+      "block": "-10",
+      "hit": "+16a (+7)",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "the mid ender"
+      ]
+    },
+    "jab-2-1-d2": {
+      "wavuId": "Steve-1,2,1,d+2",
+      "input": "1,2,1,d+2",
+      "name": "British Edge Combo 2",
+      "level": ",l",
+      "startup": "i26-27",
+      "block": "-12",
+      "hit": "+1c",
+      "ch": "+14d",
+      "notes": [
+        "the low ender of the same string"
+      ]
+    },
+    "sonic-fang": {
+      "wavuId": "Steve-1+2",
+      "input": "1+2 / WS.1+2",
+      "name": "Sonic Fang",
+      "level": "m,m",
+      "startup": "i14, i9-10",
+      "block": "-12",
+      "hit": "+18a (+11)",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "his -14 punisher"
+      ]
+    },
+    "right": {
+      "wavuId": "Steve-2",
+      "input": "2",
+      "name": "Right Jab",
+      "level": "h",
+      "startup": "i12",
+      "block": "-1",
+      "hit": "+5",
+      "ch": null,
+      "notes": [
+        "i12 high at only -1"
+      ]
+    },
+    "right-1": {
+      "wavuId": "Steve-2,1",
+      "input": "2,1",
+      "name": "Right Jab into Hook",
+      "level": ",h",
+      "startup": "i19",
+      "block": "-5",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "his -12 punisher — enters Flicker at +14 or Peekaboo at +13"
+      ]
+    },
+    "right-1-2": {
+      "wavuId": "Steve-2,1,2",
+      "input": "2,1,2",
+      "name": "Vanguard Rush",
+      "level": ",m",
+      "startup": "i25",
+      "block": "-11",
+      "hit": "+13a (+4)",
+      "ch": null,
+      "notes": [
+        "mid ender"
+      ]
+    },
+    "right-2": {
+      "wavuId": "Steve-2,2",
+      "input": "2,2",
+      "name": "Cromwell Combination",
+      "level": ",m",
+      "startup": "i22-24",
+      "block": "-14",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "also covers -12"
+      ]
+    },
+    "df1": {
+      "wavuId": "Steve-df+1",
+      "input": "df+1",
+      "name": "Left Uppercut",
+      "level": "m",
+      "startup": "i13",
+      "block": "-2",
+      "hit": "+5",
+      "ch": null,
+      "notes": [
+        "his mid check — i13 at only -2"
+      ]
+    },
+    "df1-2": {
+      "wavuId": "Steve-df+1,2",
+      "input": "df+1,2",
+      "name": "Uppercut Cross Combo",
+      "level": ",h",
+      "startup": "i19",
+      "block": "-6",
+      "hit": "+3",
+      "ch": "+5",
+      "notes": [
+        "the gateway to the Swindler follow-ups"
+      ]
+    },
+    "swindler-df": {
+      "wavuId": "Steve-df+1,2~1",
+      "input": "df+1,2~1",
+      "name": "Uppercut Psyche-out Hook",
+      "level": ",h",
+      "startup": "i30~31",
+      "block": "-2",
+      "hit": "+2",
+      "ch": "+61a",
+      "notes": [
+        "CH +61a",
+        "enters Flicker with b"
+      ]
+    },
+    "swindler-body": {
+      "wavuId": "Steve-df+1,2~2",
+      "input": "df+1,2~2",
+      "name": "Uppercut Psyche-out Body",
+      "level": ",m",
+      "startup": "i37",
+      "block": "-10",
+      "hit": "+36d (+28)",
+      "ch": null,
+      "notes": [
+        "+36d on hit"
+      ]
+    },
+    "df1-2-f1plus2": {
+      "wavuId": "Steve-df+1,2~f+1+2",
+      "input": "df+1,2~f+1+2",
+      "name": "Psyche-out Left Right",
+      "level": ",h,h",
+      "startup": "i34, i9",
+      "block": "-3",
+      "hit": "+0",
+      "ch": "+3",
+      "notes": [
+        "the long string branch"
+      ]
+    },
+    "df2": {
+      "wavuId": "Steve-df+2",
+      "input": "df+2",
+      "name": "Crescent Hook",
+      "level": "m",
+      "startup": "i16~17",
+      "block": "-11",
+      "hit": "+6",
+      "ch": "+10c",
+      "notes": [
+        "CH +10c",
+        "transitions to any weave or to Duck"
+      ]
+    },
+    "b1": {
+      "wavuId": "Steve-b+1",
+      "input": "b+1",
+      "name": "Quick Hook",
+      "level": "h",
+      "startup": "i13",
+      "block": "-14",
+      "hit": "+2",
+      "ch": "+61a",
+      "notes": [
+        "the best counter-hit tool in Tekken 8 — CH +61a, but -14 on block"
+      ]
+    },
+    "b1-2": {
+      "wavuId": "Steve-b+1,2",
+      "input": "b+1,2",
+      "name": "Quick Draw",
+      "level": ",h",
+      "startup": "i17~18",
+      "block": "+3",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "+3 ON BLOCK",
+        "homing",
+        "his -13 punisher",
+        "enters Lionheart"
+      ]
+    },
+    "swindler-b1": {
+      "wavuId": "Steve-b+1,2~1",
+      "input": "b+1,2~1",
+      "name": "Swindler",
+      "level": ",m",
+      "startup": "i30~31",
+      "block": "-8",
+      "hit": "+4",
+      "ch": "+63a",
+      "notes": [
+        "CH +63a"
+      ]
+    },
+    "b1-d2": {
+      "wavuId": "Steve-b+1,d+2",
+      "input": "b+1,d+2",
+      "name": "Quick Hook into Low",
+      "level": ",l",
+      "startup": "i27~28",
+      "block": "-11",
+      "hit": "+0",
+      "ch": null,
+      "notes": [
+        "the low branch"
+      ]
+    },
+    "b1-d2-1": {
+      "wavuId": "Steve-b+1,d+2,1",
+      "input": "b+1,d+2,1",
+      "name": "Frigate Combo",
+      "level": ",m",
+      "startup": "i25~27",
+      "block": "-9",
+      "hit": "+35a (+20a)",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "+35a on hit"
+      ]
+    },
+    "b1plus2": {
+      "wavuId": "Steve-b+1+2",
+      "input": "b+1+2",
+      "name": "Fox Fury",
+      "level": "m,h",
+      "startup": "i16,i12",
+      "block": "-8",
+      "hit": "+19d",
+      "ch": null,
+      "notes": [
+        "his -16 punisher",
+        "wall splat"
+      ]
+    },
+    "five-fox": {
+      "wavuId": "Steve-b+1+2,H.1+2",
+      "input": "b+1+2,H.1+2",
+      "name": "Five Fox Fury",
+      "level": "m,h,m,h,m",
+      "startup": "i16,i12,i12,i12,i19",
+      "block": "-4",
+      "hit": "+36a (+10)",
+      "ch": null,
+      "notes": [
+        "the Heat extension",
+        "+36a on hit"
+      ]
+    },
+    "b2": {
+      "wavuId": "Steve-b+2",
+      "input": "b+2",
+      "name": "Body Bomb",
+      "level": "m",
+      "startup": "i17",
+      "block": "-13",
+      "hit": "+14",
+      "ch": null,
+      "notes": [
+        "his -17 punisher"
+      ]
+    },
+    "db1": {
+      "wavuId": "Steve-db+1",
+      "input": "db+1",
+      "name": "Crouch Jab",
+      "level": "sl",
+      "startup": "i10",
+      "block": "-5",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "i10 special low",
+        "his remapped d+1"
+      ]
+    },
+    "db1plus2": {
+      "wavuId": "Steve-db+1+2",
+      "input": "db+1+2",
+      "name": "Stun Gun",
+      "level": "m",
+      "startup": "i28~29",
+      "block": "-13",
+      "hit": "+29a (+21)",
+      "ch": null,
+      "notes": [
+        "Power Crush",
+        "+29a on hit"
+      ]
+    },
+    "db2": {
+      "wavuId": "Steve-db+2",
+      "input": "db+2",
+      "name": "Knee Clipper",
+      "level": "l",
+      "startup": "i26",
+      "block": "-12",
+      "hit": "+1c",
+      "ch": "+14d",
+      "notes": [
+        "low",
+        "CH +14d"
+      ]
+    },
+    "db3": {
+      "wavuId": "Steve-db+3",
+      "input": "db+3",
+      "name": "Foot Stomp",
+      "level": "l",
+      "startup": "i16",
+      "block": "-13",
+      "hit": "+0",
+      "ch": null,
+      "notes": [
+        "i16 low"
+      ]
+    },
+    "db3-2": {
+      "wavuId": "Steve-db+3,2",
+      "input": "db+3,2",
+      "name": "Foot Stomp Right Hook",
+      "level": ",h",
+      "startup": "i15~16",
+      "block": "-6",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "-27 on block if only the first hit is blocked"
+      ]
+    },
+    "d1": {
+      "wavuId": "Steve-d+1",
+      "input": "d+1",
+      "name": "Knee Blaster",
+      "level": "l",
+      "startup": "i16",
+      "block": "-13",
+      "hit": "-2",
+      "ch": null,
+      "notes": [
+        "i16 low, -13"
+      ]
+    },
+    "d2": {
+      "wavuId": "Steve-d+2",
+      "input": "d+2",
+      "name": "Low Punch",
+      "level": "l",
+      "startup": "i17",
+      "block": "-18",
+      "hit": "-5",
+      "ch": null,
+      "notes": [
+        "i17 low, -18"
+      ]
+    },
+    "d2-1-2": {
+      "wavuId": "Steve-d+2,1,2",
+      "input": "d+2,1,2",
+      "name": "Wildman Combo",
+      "level": ",h",
+      "startup": "i24~25",
+      "block": "-2",
+      "hit": "+27a (+18)",
+      "ch": "+56a",
+      "notes": [
+        "CH +56a"
+      ]
+    },
+    "f1plus2": {
+      "wavuId": "Steve-f+1+2",
+      "input": "f+1+2",
+      "name": "Shotgun",
+      "level": "m,h",
+      "startup": "i15~16, i7~9",
+      "block": "-14",
+      "hit": "-3",
+      "ch": null,
+      "notes": [
+        "mid into high"
+      ]
+    },
+    "f1plus2-2": {
+      "wavuId": "Steve-f+1+2,2",
+      "input": "f+1+2,2",
+      "name": "Shotgun Combination",
+      "level": ",m",
+      "startup": "i18~19",
+      "block": "-13",
+      "hit": "+3d",
+      "ch": null,
+      "notes": [
+        "his -15 punisher"
+      ]
+    },
+    "f2": {
+      "wavuId": "Steve-f+2",
+      "input": "f+2",
+      "name": "Ducking Body Blow",
+      "level": "m",
+      "startup": "i21~22",
+      "block": "-6",
+      "hit": "+5",
+      "ch": null,
+      "notes": [
+        "i21 mid, -6"
+      ]
+    },
+    "f2-1": {
+      "wavuId": "Steve-f+2,1",
+      "input": "f+2,1",
+      "name": "Ducking Body Blow into Hook",
+      "level": ",h",
+      "startup": "i15",
+      "block": "-5",
+      "hit": "+1",
+      "ch": null,
+      "notes": [
+        "core combo link",
+        "enters Peekaboo or Flicker"
+      ]
+    },
+    "f2-1-2": {
+      "wavuId": "Steve-f+2,1~2",
+      "input": "f+2,1~2",
+      "name": "Ducking Psyche-out Body",
+      "level": ",m",
+      "startup": "i31",
+      "block": "-10",
+      "hit": "+36d (+28)",
+      "ch": null,
+      "notes": [
+        "+36d on hit"
+      ]
+    },
+    "f2-2": {
+      "wavuId": "Steve-f+2,2",
+      "input": "f+2,2",
+      "name": "Ducking Body into Mid",
+      "level": ",m",
+      "startup": "i16~17",
+      "block": "-6",
+      "hit": "+11g",
+      "ch": null,
+      "notes": [
+        "+11g on hit",
+        "enters Lionheart"
+      ]
+    },
+    "f2-2-1plus2": {
+      "wavuId": "Steve-f+2,2,1+2",
+      "input": "f+2,2,1+2",
+      "name": "Conqueror Combination",
+      "level": ",m,m,m",
+      "startup": "i18~19, i7~8, i16",
+      "block": "-12",
+      "hit": "+5c",
+      "ch": null,
+      "notes": [
+        "+5c on block"
+      ]
+    },
+    "ff2": {
+      "wavuId": "Steve-f,F+2",
+      "input": "f,F+2",
+      "name": "Beat Down",
+      "level": "m",
+      "startup": "i14~17",
+      "block": "-13c",
+      "hit": "+12d",
+      "ch": null,
+      "notes": [
+        "+12d on hit"
+      ]
+    },
+    "fff2": {
+      "wavuId": "Steve-f,f,F+2",
+      "input": "f,f,F+2",
+      "name": "Eraser",
+      "level": "m",
+      "startup": "i20~24",
+      "block": "+6",
+      "hit": "+10d",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "+6 ON BLOCK",
+        "9 chip damage on block"
+      ]
+    },
+    "qcf1": {
+      "wavuId": "Steve-qcf+1",
+      "input": "qcf+1",
+      "name": "Rocket Launcher",
+      "level": "m",
+      "startup": "i16",
+      "block": "-10",
+      "hit": "+16a (+7)",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "wall splat",
+        "enters Flicker with B"
+      ]
+    },
+    "qcf2": {
+      "wavuId": "Steve-qcf+2",
+      "input": "qcf+2",
+      "name": "Low Cross Blaster",
+      "level": "l",
+      "startup": "i19",
+      "block": "-18",
+      "hit": "+2c",
+      "ch": null,
+      "notes": [
+        "his long-range low",
+        "-18 on block"
+      ]
+    },
+    "u2": {
+      "wavuId": "Steve-u+2",
+      "input": "u+2 / FLK.u+2",
+      "name": "Dreadnought Uppercut",
+      "level": "m",
+      "startup": "i17~19",
+      "block": "-15",
+      "hit": "+34a (+24)",
+      "ch": null,
+      "notes": [
+        "his i17 standing launcher — he has nothing faster"
+      ]
+    },
+    "uf1": {
+      "wavuId": "Steve-uf+1",
+      "input": "uf+1 / PAB.uf+1",
+      "name": "Over the Top",
+      "level": "m",
+      "startup": "i19~21",
+      "block": "-6",
+      "hit": "+5",
+      "ch": null,
+      "notes": [
+        "i19 mid at -6"
+      ]
+    },
+    "uf2": {
+      "wavuId": "Steve-uf+2",
+      "input": "uf+2",
+      "name": "Burst Hammer",
+      "level": "m",
+      "startup": "i22~25",
+      "block": "-14",
+      "hit": "+52a",
+      "ch": null,
+      "notes": [
+        "+52a launcher",
+        "his -22 crouching punisher"
+      ]
+    },
+    "uf3": {
+      "wavuId": "Steve-uf+3",
+      "input": "uf+3",
+      "name": "Jump-in Foot Stomp",
+      "level": "l",
+      "startup": "i36~37",
+      "block": "-12",
+      "hit": "+9",
+      "ch": null,
+      "notes": [
+        "i36 low"
+      ]
+    },
+    "uf3-2": {
+      "wavuId": "Steve-uf+3,2",
+      "input": "uf+3,2",
+      "name": "Jump-in Foot Stomp Right Hook",
+      "level": ",h",
+      "startup": "i15~16",
+      "block": "-6",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "the follow-up"
+      ]
+    },
+    "uf4": {
+      "wavuId": "Steve-uf+4",
+      "input": "uf+4",
+      "name": "Jumping Duck Kick",
+      "level": "m",
+      "startup": "i23",
+      "block": "-9",
+      "hit": "+22a (+5)",
+      "ch": "+36a (+26)",
+      "notes": [
+        "his hopkick — i23, unusually slow"
+      ]
+    },
+    "ub2": {
+      "wavuId": "Steve-ub+2",
+      "input": "ub+2",
+      "name": "Bounty Hunter",
+      "level": "h",
+      "startup": "i17",
+      "block": "+5",
+      "hit": "+14c",
+      "ch": null,
+      "notes": [
+        "+5 ON BLOCK",
+        "homing",
+        "enters Lionheart"
+      ]
+    },
+    "swindler-ub": {
+      "wavuId": "Steve-ub+2~1",
+      "input": "ub+2~1",
+      "name": "Swindler (ub)",
+      "level": "m",
+      "startup": "i30~31",
+      "block": "-8",
+      "hit": "+4",
+      "ch": "+63a",
+      "notes": [
+        "CH +63a"
+      ]
+    },
+    "ub1plus2": {
+      "wavuId": "Steve-ub+1+2",
+      "input": "ub+1+2",
+      "name": "Hellfire",
+      "level": "ub(m)",
+      "startup": "i66~69",
+      "block": null,
+      "hit": "+12a (+1)",
+      "ch": null,
+      "notes": [
+        "unblockable"
+      ]
+    },
+    "fc-df2": {
+      "wavuId": "Steve-FC.df+2",
+      "input": "FC.df+2",
+      "name": "Finishing Blow",
+      "level": "m",
+      "startup": "i16~17",
+      "block": "-15",
+      "hit": "+34a (+24)",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "his i16 crouching launcher"
+      ]
+    },
+    "ws1": {
+      "wavuId": "Steve-WS.1",
+      "input": "ws1",
+      "name": "Rising Uppercut",
+      "level": "m",
+      "startup": "i11~12",
+      "block": "-3",
+      "hit": "+3",
+      "ch": "+8",
+      "notes": [
+        "i11 crouch check at -3"
+      ]
+    },
+    "ws1-1": {
+      "wavuId": "Steve-WS.1,1",
+      "input": "ws1,1",
+      "name": "Eagle Jab",
+      "level": ",h",
+      "startup": "i15",
+      "block": "-3",
+      "hit": "+3",
+      "ch": null,
+      "notes": [
+        "his -11 crouching punisher"
+      ]
+    },
+    "ws1-2": {
+      "wavuId": "Steve-WS.1,2",
+      "input": "ws1,2",
+      "name": "Wildman",
+      "level": ",m",
+      "startup": "i13~14",
+      "block": "-13",
+      "hit": "+3c",
+      "ch": "+23d",
+      "notes": [
+        "also covers -11",
+        "CH +23d"
+      ]
+    },
+    "ws2": {
+      "wavuId": "Steve-WS.2",
+      "input": "ws2",
+      "name": "Rising Mid",
+      "level": "m",
+      "startup": "i13~15",
+      "block": "-7",
+      "hit": "+4",
+      "ch": null,
+      "notes": [
+        "i13 out of crouch"
+      ]
+    },
+    "ws2-2": {
+      "wavuId": "Steve-WS.2,2",
+      "input": "ws2,2",
+      "name": "Nighthawk Combination",
+      "level": ",m",
+      "startup": "i16~17",
+      "block": "-6",
+      "hit": "+11",
+      "ch": null,
+      "notes": [
+        "his -13 crouching punisher — enters Lionheart at +11"
+      ]
+    },
+    "flk1": {
+      "wavuId": "Steve-FLK.1",
+      "input": "FLK.1",
+      "name": "Flicker Jab",
+      "level": "h",
+      "startup": "i12",
+      "block": "-4",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "i12 out of Flicker",
+        "loops back into Flicker"
+      ]
+    },
+    "flk1-1": {
+      "wavuId": "Steve-FLK.1,1",
+      "input": "FLK.1,1",
+      "name": "Flicker Double Jab",
+      "level": ",h",
+      "startup": "i15",
+      "block": "-9",
+      "hit": "+0",
+      "ch": null,
+      "notes": [
+        "duckable on block"
+      ]
+    },
+    "flk1-1-1": {
+      "wavuId": "Steve-FLK.1,1,1",
+      "input": "FLK.1,1,1",
+      "name": "Flicker Triple Jab",
+      "level": ",h",
+      "startup": "i15",
+      "block": "-9",
+      "hit": "+0",
+      "ch": null,
+      "notes": [
+        "the jab loop"
+      ]
+    },
+    "flk1-1-1-2": {
+      "wavuId": "Steve-FLK.1,1,1,2",
+      "input": "FLK.1,1,1,2",
+      "name": "Spiteful Combination",
+      "level": ",m",
+      "startup": "i20~22",
+      "block": "-12",
+      "hit": "+17a (+0)",
+      "ch": null,
+      "notes": [
+        "Tornado ender"
+      ]
+    },
+    "flk1-d1": {
+      "wavuId": "Steve-FLK.1,d+1",
+      "input": "FLK.1,d+1",
+      "name": "Power Hook Combo",
+      "level": ",h",
+      "startup": "i15~17",
+      "block": "+0",
+      "hit": "+18g",
+      "ch": "+42a",
+      "notes": [
+        "0 on block",
+        "CH +42a"
+      ]
+    },
+    "flk1-f1": {
+      "wavuId": "Steve-FLK.1,f+1",
+      "input": "FLK.1,f+1",
+      "name": "Tempest Combo",
+      "level": ",m",
+      "startup": "i15",
+      "block": "-5",
+      "hit": "+0c",
+      "ch": "+10d",
+      "notes": [
+        "CH +10d"
+      ]
+    },
+    "flk2": {
+      "wavuId": "Steve-FLK.2",
+      "input": "FLK.2",
+      "name": "Fly Swatter",
+      "level": "m",
+      "startup": "i18~19",
+      "block": "-5c",
+      "hit": "+7d",
+      "ch": "+42a",
+      "notes": [
+        "CH +42a",
+        "6 chip damage on block"
+      ]
+    },
+    "flk-b2": {
+      "wavuId": "Steve-FLK.b+2",
+      "input": "FLK.b+2",
+      "name": "British Lancer",
+      "level": "h",
+      "startup": "i14~15",
+      "block": "-9",
+      "hit": "+35d (+27)",
+      "ch": null,
+      "notes": [
+        "Power Crush",
+        "Tornado",
+        "+35d on hit"
+      ]
+    },
+    "flk-throw": {
+      "wavuId": "Steve-FLK.1+2",
+      "input": "FLK.1+2",
+      "name": "Griffin Throw",
+      "level": "th",
+      "startup": "i12~14",
+      "block": "-6",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "the Flicker throw"
+      ]
+    },
+    "pab1": {
+      "wavuId": "Steve-PAB.1",
+      "input": "PAB.1",
+      "name": "Peekaboo Jab",
+      "level": "h",
+      "startup": "i12~13",
+      "block": "-2",
+      "hit": "+9",
+      "ch": null,
+      "notes": [
+        "i12 at only -2"
+      ]
+    },
+    "pab1-2": {
+      "wavuId": "Steve-PAB.1,2",
+      "input": "PAB.1,2",
+      "name": "Peekaboo One Two",
+      "level": ",h",
+      "startup": "i15~16",
+      "block": "+0",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "0 on block"
+      ]
+    },
+    "pab1-2-1": {
+      "wavuId": "Steve-PAB.1,2,1",
+      "input": "PAB.1,2,1",
+      "name": "Albion Combination",
+      "level": ",m",
+      "startup": "i18~20",
+      "block": "-13",
+      "hit": "+8c",
+      "ch": "+44a",
+      "notes": [
+        "CH +44a"
+      ]
+    },
+    "pab2": {
+      "wavuId": "Steve-PAB.2",
+      "input": "PAB.2",
+      "name": "Spite Hook",
+      "level": "h",
+      "startup": "i14",
+      "block": "+5",
+      "hit": "+14c",
+      "ch": null,
+      "notes": [
+        "+5 ON BLOCK",
+        "homing",
+        "and it PUNCH PARRIES"
+      ]
+    },
+    "swindler-pab": {
+      "wavuId": "Steve-PAB.2~1",
+      "input": "PAB.2~1",
+      "name": "Swindler (PAB)",
+      "level": "m",
+      "startup": "i27~28",
+      "block": "-8",
+      "hit": "+4",
+      "ch": "+63a",
+      "notes": [
+        "CH +63a"
+      ]
+    },
+    "pab-df1": {
+      "wavuId": "Steve-PAB.df+1",
+      "input": "PAB.df+1",
+      "name": "Peekaboo Uppercut",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-9",
+      "hit": "+2",
+      "ch": null,
+      "notes": [
+        "i15 mid"
+      ]
+    },
+    "pab-df1-2": {
+      "wavuId": "Steve-PAB.df+1,2",
+      "input": "PAB.df+1,2",
+      "name": "Cross Cut",
+      "level": ",h",
+      "startup": "i17-18",
+      "block": "+3",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "+3 on block",
+        "homing",
+        "enters Lionheart"
+      ]
+    },
+    "pab-df2": {
+      "wavuId": "Steve-PAB.df+2",
+      "input": "PAB.df+2",
+      "name": "Cutting Elbow",
+      "level": "m",
+      "startup": "i16~17",
+      "block": "-10",
+      "hit": "+31a (+21)",
+      "ch": null,
+      "notes": [
+        "the i17 instant-Peekaboo launcher",
+        "his biggest punish"
+      ]
+    },
+    "pab-uf2": {
+      "wavuId": "Steve-PAB.uf+2",
+      "input": "PAB.uf+2",
+      "name": "Dreadnought Uppercut (PAB)",
+      "level": "m",
+      "startup": "i17~19",
+      "block": "-15",
+      "hit": "+34a (+24)",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "his -18 punisher"
+      ]
+    },
+    "pab-f2": {
+      "wavuId": "Steve-PAB.f+2",
+      "input": "PAB.f+2",
+      "name": "Peekaboo Body Blow",
+      "level": "m",
+      "startup": "i18~19",
+      "block": "-13",
+      "hit": "+31a (+16)",
+      "ch": null,
+      "notes": [
+        "+31a on hit"
+      ]
+    },
+    "pab-f1plus2": {
+      "wavuId": "Steve-PAB.f+1+2",
+      "input": "PAB.f+1+2",
+      "name": "Nimrod Combination",
+      "level": "h,h",
+      "startup": "i12, i15~16",
+      "block": "-5",
+      "hit": "+24a (+15)",
+      "ch": null,
+      "notes": [
+        "+24a on hit",
+        "the i13 wall splat"
+      ]
+    },
+    "pab-b1-1-2-1": {
+      "wavuId": "Steve-PAB.b+1,1,2,1",
+      "input": "PAB.b+1,1,2,1",
+      "name": "Lancaster Combination",
+      "level": ",m",
+      "startup": "i21",
+      "block": "-10",
+      "hit": "+16a (+7)",
+      "ch": null,
+      "notes": [
+        "Balcony Break"
+      ]
+    },
+    "pab-d1": {
+      "wavuId": "Steve-PAB.d+1",
+      "input": "PAB.d+1 / FC.df+1",
+      "name": "Patella Smash",
+      "level": "l",
+      "startup": "i15~16",
+      "block": "-12",
+      "hit": "+2",
+      "ch": null,
+      "notes": [
+        "i15 low"
+      ]
+    },
+    "pab-d2": {
+      "wavuId": "Steve-PAB.d+2",
+      "input": "PAB.d+2",
+      "name": "Knuckle Plow",
+      "level": "l",
+      "startup": "i28~29",
+      "block": "-12",
+      "hit": "+7",
+      "ch": "+32a",
+      "notes": [
+        "low",
+        "CH +32a"
+      ]
+    },
+    "pab-throw": {
+      "wavuId": "Steve-PAB.1+2",
+      "input": "PAB.1+2",
+      "name": "Ten Count",
+      "level": "th",
+      "startup": "i11",
+      "block": "0",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "i11 throw out of Peekaboo"
+      ]
+    },
+    "lnh1": {
+      "wavuId": "Steve-LNH.1",
+      "input": "LNH.1",
+      "name": "Vigilant Blow",
+      "level": "m",
+      "startup": "i14-15",
+      "block": "-9",
+      "hit": "+15g",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "homing",
+        "+15g on block"
+      ]
+    },
+    "lnh2": {
+      "wavuId": "Steve-LNH.2",
+      "input": "LNH.2",
+      "name": "Bloodhound",
+      "level": "m",
+      "startup": "i16-17",
+      "block": "-13",
+      "hit": "+61a (+51)",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "+61a — the combo ender"
+      ]
+    },
+    "lnh1plus2": {
+      "wavuId": "Steve-LNH.1+2",
+      "input": "LNH.1+2",
+      "name": "Swingfire Advance",
+      "level": "h",
+      "startup": "i18-19",
+      "block": "+12",
+      "hit": "+51a (+31)",
+      "ch": null,
+      "notes": [
+        "GUARD BREAK",
+        "+12 on block with guaranteed follow-ups"
+      ]
+    },
+    "dck1": {
+      "wavuId": "Steve-DCK.1",
+      "input": "DCK.1",
+      "name": "Fox Hunt",
+      "level": "m",
+      "startup": "i19",
+      "block": "-7",
+      "hit": "+58a (+27)",
+      "ch": "+34a (+24)",
+      "notes": [
+        "+58a on a normal hit"
+      ]
+    },
+    "dck2": {
+      "wavuId": "Steve-DCK.2",
+      "input": "DCK.2",
+      "name": "Skyscraper",
+      "level": "m",
+      "startup": "i19",
+      "block": "-14",
+      "hit": "+35a (+25)",
+      "ch": null,
+      "notes": [
+        "+35a on hit"
+      ]
+    },
+    "dck-f2": {
+      "wavuId": "Steve-DCK.f+2",
+      "input": "DCK.f+2",
+      "name": "Punisher",
+      "level": "h",
+      "startup": "i15~16",
+      "block": "+5",
+      "hit": "+14c",
+      "ch": "+55a",
+      "notes": [
+        "+5 ON BLOCK",
+        "CH +55a"
+      ]
+    },
+    "dck-gatling": {
+      "wavuId": "Steve-DCK.1+2,1+2,1+2,1+2",
+      "input": "DCK.1+2 ×4",
+      "name": "Gatling Gun",
+      "level": ",m,m",
+      "startup": "i7, i9",
+      "block": "-12",
+      "hit": "+32a (+22)",
+      "ch": null,
+      "notes": [
+        "the easy-confirm machine-gun string"
+      ]
+    },
+    "exd1": {
+      "wavuId": "Steve-EXD.1",
+      "input": "EXD.1",
+      "name": "Power Fox Hunt",
+      "level": "m",
+      "startup": "i19",
+      "block": "-7",
+      "hit": "+44d (+36)",
+      "ch": "+41a (+31)",
+      "notes": [
+        "8 chip damage on block"
+      ]
+    },
+    "exd2": {
+      "wavuId": "Steve-EXD.2",
+      "input": "EXD.2",
+      "name": "Power Skyscraper",
+      "level": "m",
+      "startup": "i19",
+      "block": "-14",
+      "hit": "+61a (+51)",
+      "ch": null,
+      "notes": [
+        "+61a on hit"
+      ]
+    },
+    "exd-f2": {
+      "wavuId": "Steve-EXD.f+2",
+      "input": "EXD.f+2",
+      "name": "Power Punisher",
+      "level": "h",
+      "startup": "i15~16",
+      "block": "+5",
+      "hit": "+56a",
+      "ch": null,
+      "notes": [
+        "+5 on block, +56a on hit, 11 chip damage on block"
+      ]
+    },
+    "alb2": {
+      "wavuId": "Steve-ALB.2",
+      "input": "ALB.2",
+      "name": "Cyclone Punch",
+      "level": "m",
+      "startup": "i23",
+      "block": "-3",
+      "hit": "+16a (+7)",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "only -3 on block"
+      ]
+    },
+    "alb-d1": {
+      "wavuId": "Steve-ALB.d,1",
+      "input": "ALB.d,1",
+      "name": "Double Cyclone Punch",
+      "level": ",m",
+      "startup": "i12",
+      "block": "-3",
+      "hit": "+16a (+7)",
+      "ch": null,
+      "notes": [
+        "-3 on block"
+      ]
+    },
+    "alb-d2": {
+      "wavuId": "Steve-ALB.d+2",
+      "input": "ALB.d+2",
+      "name": "Cyclone Knee Clip",
+      "level": "l",
+      "startup": "i34",
+      "block": "-12",
+      "hit": "+1c",
+      "ch": "+14d",
+      "notes": [
+        "the Albion low"
+      ]
+    },
+    "lwv1": {
+      "wavuId": "Steve-LWV.1",
+      "input": "LWV.1",
+      "name": "Left Weave Mid",
+      "level": "m",
+      "startup": "i14",
+      "block": "-10",
+      "hit": "+1",
+      "ch": null,
+      "notes": [
+        "i14 out of the left weave"
+      ]
+    },
+    "lwv1-2": {
+      "wavuId": "Steve-LWV.1,2",
+      "input": "LWV.1,2",
+      "name": "Bee Sting Combo",
+      "level": ",h",
+      "startup": "i22~23",
+      "block": "+3",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "+3 on block",
+        "homing",
+        "the standard combo ender"
+      ]
+    },
+    "lwv1-1": {
+      "wavuId": "Steve-LWV.1,1",
+      "input": "LWV.1,1",
+      "name": "Double Stinger",
+      "level": ",m",
+      "startup": "i24~26",
+      "block": "-13",
+      "hit": "+28a (+19)",
+      "ch": null,
+      "notes": [
+        "+28a on hit"
+      ]
+    },
+    "lwv1plus2": {
+      "wavuId": "Steve-LWV.1+2",
+      "input": "LWV.1+2 / RWV.1+2",
+      "name": "Nemesis Hook",
+      "level": "h",
+      "startup": "i14",
+      "block": "-9",
+      "hit": "+8",
+      "ch": "+35d (+27)",
+      "notes": [
+        "CH +35d"
+      ]
+    },
+    "lwv2": {
+      "wavuId": "Steve-LWV.2",
+      "input": "LWV.2",
+      "name": "Right Shoulder Rush",
+      "level": "m",
+      "startup": "i14~16",
+      "block": "-5",
+      "hit": "+4",
+      "ch": null,
+      "notes": [
+        "-5 on block"
+      ]
+    },
+    "rwv1": {
+      "wavuId": "Steve-RWV.1",
+      "input": "RWV.1",
+      "name": "Right Weave Mid",
+      "level": "m",
+      "startup": "i14~16",
+      "block": "-5~-3",
+      "hit": "+4~+6",
+      "ch": null,
+      "notes": [
+        "i14 out of the right weave"
+      ]
+    },
+    "rwv1-2": {
+      "wavuId": "Steve-RWV.1,2",
+      "input": "RWV.1,2",
+      "name": "Hawk Swoop Combo",
+      "level": ",h",
+      "startup": "i22~23",
+      "block": "+3",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "+3 on block",
+        "homing"
+      ]
+    },
+    "rwv2": {
+      "wavuId": "Steve-RWV.2",
+      "input": "RWV.2",
+      "name": "Gut Drill",
+      "level": "m",
+      "startup": "i14",
+      "block": "-13",
+      "hit": "+10a (+1)",
+      "ch": "+31a (+5)",
+      "notes": [
+        "CH +31a"
+      ]
+    },
+    "swy1": {
+      "wavuId": "Steve-SWY.1",
+      "input": "SWY.1",
+      "name": "Billy Club",
+      "level": "m",
+      "startup": "i16~17",
+      "block": "-1c~+0c",
+      "hit": "+14c~+15c",
+      "ch": null,
+      "notes": [
+        "around neutral on block, and up to +15c at range",
+        "10 chip damage"
+      ]
+    },
+    "swy2": {
+      "wavuId": "Steve-SWY.2",
+      "input": "SWY.2",
+      "name": "Snake Charmer",
+      "level": "m",
+      "startup": "i17~18",
+      "block": "-18",
+      "hit": "+36a",
+      "ch": null,
+      "notes": [
+        "+36a on hit"
+      ]
+    },
+    "swy-throw": {
+      "wavuId": "Steve-SWY.1+2",
+      "input": "SWY.1+2",
+      "name": "Position Change",
+      "level": "th",
+      "startup": "i10~15",
+      "block": "-2",
+      "hit": "+1 / +10~17wc",
+      "ch": null,
+      "notes": [
+        "the sway throw"
+      ]
+    },
+    "heat-burst": {
+      "wavuId": "Steve-2+3",
+      "input": "2+3",
+      "name": "Heat Burst",
+      "level": "m",
+      "startup": "i16",
+      "block": "+1",
+      "hit": "+2c",
+      "ch": null,
+      "notes": [
+        "+1 on block"
+      ]
+    },
+    "heat-smash": {
+      "wavuId": "Steve-H.2+3",
+      "input": "H.2+3",
+      "name": "Bretwalda",
+      "level": "m,th",
+      "startup": "i16",
+      "block": "+8 LNH",
+      "hit": "+0",
+      "ch": null,
+      "notes": [
+        "Heat Smash",
+        "+8 on block and transitions to Lionheart"
+      ]
+    },
+    "heat-grab": {
+      "wavuId": "Steve-H.EXD.1+3",
+      "input": "H.EXD.1+3",
+      "name": "Two-Faced",
+      "level": "h (th)",
+      "startup": "i18~19",
+      "block": null,
+      "hit": null,
+      "ch": null,
+      "notes": [
+        "Heat only — UNBREAKABLE",
+        "homing"
+      ]
+    },
+    "rage-art": {
+      "wavuId": "Steve-R.df+1+2",
+      "input": "R.df+1+2",
+      "name": "Dear Land of Hope",
+      "level": "m,t",
+      "startup": "i20",
+      "block": "-18",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "Rage Art"
+      ]
+    }
+  }
+}
