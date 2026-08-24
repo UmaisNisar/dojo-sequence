@@ -108,6 +108,8 @@ export interface Character {
   /** Short positioning blurb. */
   tagline: string;
   available: boolean;
+  /** Mishima-style electrics — drives the storm backdrop for this fighter. */
+  electric?: boolean;
   stages: Stage[];
   /** Timed reaction quiz for the punishment stage. */
   punishQuiz?: QuizQuestion[];

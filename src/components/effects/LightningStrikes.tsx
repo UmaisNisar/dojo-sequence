@@ -24,7 +24,7 @@
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { useReducedMotionSetting } from "@/hooks/use-progress";
+import { useActiveCharacter, useReducedMotionSetting } from "@/hooks/use-progress";
 
 /* ------------------------------------------------------------------ */
 /* Geometry generation                                                 */
@@ -163,9 +163,9 @@ function buildBoltStrike(
 /* Component                                                           */
 /* ------------------------------------------------------------------ */
 
-/** Signature-move pages that get a permanent storm front. */
+/** Signature-move pages that get a permanent storm front (Mishimas only). */
 const ELECTRIC_ROUTE =
-  /\/(?:kazuya\/.*\/item\/(?:ewgf-input|ewgf-consistency|ewgf-movement|fifty-fifty)|lars\/.*\/item\/(?:blue-bolt|sen-threats|len|den-cancel)|bryan\/.*\/item\/(?:taunt-jet-upper|taunt-mechanics|snake-edge|b1)|jin\/.*\/item\/(?:ewhf-input|ewhf-consistency|ewhf-punish|ewhf-neutral)|king\/.*\/item\/(?:giant-swing|the-mixup|mmd-chain|heat)|dragunov\/.*\/item\/(?:wr2|instant-while-running|snake-edge|heat)|steve\/.*\/item\/(?:b1|swindler|duck-cancel|heat))$/;
+  /\/(?:kazuya\/.*\/item\/(?:ewgf-input|ewgf-consistency|ewgf-movement|fifty-fifty)|jin\/.*\/item\/(?:ewhf-input|ewhf-consistency|ewhf-punish|ewhf-neutral))$/;
 
 /** Seconds until the leader reaches ground — flash/burst fire then. */
 const DRAW_S = 0.11;
@@ -174,9 +174,13 @@ export function LightningStrikes() {
   const pathname = usePathname();
   const osReduced = useReducedMotion();
   const appReduced = useReducedMotionSetting();
+  const character = useActiveCharacter();
   const [strike, setStrike] = useState<Strike | null>(null);
 
-  const reduced = Boolean(osReduced) || appReduced;
+  /* The storm belongs to the Mishima electrics. Training anyone else means a
+     quiet background — a boxer does not summon lightning. */
+  const electric = character.electric === true;
+  const reduced = Boolean(osReduced) || appReduced || !electric;
   const supercharged = ELECTRIC_ROUTE.test(pathname);
 
   /* Weather system. */

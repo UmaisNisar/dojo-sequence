@@ -30,6 +30,7 @@ export const jin: Character = {
   tagline:
     "The all-rounder. An answer for every situation, the best punishment in the game, and one just frame that decides how far you go.",
   available: true,
+  electric: true,
   stages: [
     /* ------------------------------------------------------------ */
     /* STAGE 01 — MOVEMENT & THE CROUCH DASH                        */
