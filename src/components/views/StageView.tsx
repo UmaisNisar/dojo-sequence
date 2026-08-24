@@ -11,6 +11,7 @@ import {
   isItemUnlocked,
 } from "@/lib/progression";
 import { pad2 } from "@/lib/utils";
+import { ProgressBar } from "@/components/ProgressBar";
 import { TrainingItemRow } from "@/components/TrainingItemRow";
 
 export function StageView({
@@ -88,21 +89,13 @@ export function StageView({
           {stage.description}
         </p>
 
-        {/* Segmented meter — a health bar, not a progress bar. */}
         <div className="mt-6 flex items-center gap-4">
-          <div
-            className="h-2.5 flex-1 overflow-hidden border border-border-strong bg-surface"
-            role="img"
-            aria-label={`${stage.name} progress: ${learnedCount} of ${stage.items.length}`}
-          >
-            <div
-              className="meter-seg h-full text-accent transition-[width] duration-500"
-              style={{
-                width: `${stage.items.length ? (learnedCount / stage.items.length) * 100 : 0}%`,
-                ["--seg" as string]: "10px",
-              }}
-            />
-          </div>
+          <ProgressBar
+            fraction={stage.items.length ? learnedCount / stage.items.length : 0}
+            className="flex-1"
+            height={10}
+            label={`${stage.name} progress`}
+          />
           <p className="tnum shrink-0 font-mono text-xs font-bold tracking-wider">
             <span className="text-accent-bright">{pad2(learnedCount)}</span>
             <span className="text-faint"> / {pad2(stage.items.length)}</span>

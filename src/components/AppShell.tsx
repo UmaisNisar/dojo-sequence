@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { MotionConfig } from "motion/react";
 import { Zap, Swords, Users, Settings } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useReducedMotionSetting } from "@/hooks/use-progress";
+import { useActiveCharacter, useReducedMotionSetting } from "@/hooks/use-progress";
 
 const navItems = [
   { href: "/training", label: "Training", icon: Swords },
@@ -21,6 +21,14 @@ function isActive(pathname: string, href: string): boolean {
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const reducedMotion = useReducedMotionSetting();
+  const activeCharacter = useActiveCharacter();
+
+  /* Point the wordmark straight at the curriculum rather than at /training,
+     which would bounce through a redirect. When you are already there it is
+     not a link at all — clicking it used to re-navigate and read as a
+     pointless page refresh. */
+  const home = `/training/${activeCharacter.id}`;
+  const atHome = pathname === home;
 
   // Mirror the in-app setting onto <html> so CSS transitions obey it too.
   useEffect(() => {
@@ -41,18 +49,34 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       {/* Desktop / tablet top bar */}
       <header className="sticky top-0 z-40 border-b border-border bg-bg/85 backdrop-blur-md">
         <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4 sm:px-6">
-          <Link
-            href="/training"
-            aria-label="Dojo Sequence — back to training"
-            className="flex items-center gap-2 font-semibold tracking-tight"
-          >
-            <span className="flex size-6 items-center justify-center clip-slant bg-accent text-bg">
-              <Zap className="size-3.5" strokeWidth={2.5} aria-hidden />
-            </span>
-            <span className="text-sm uppercase tracking-[0.18em]">
-              Dojo <span className="text-accent-bright">Sequence</span>
-            </span>
-          </Link>
+          {(() => {
+            const mark = (
+              <>
+                <span className="flex size-6 items-center justify-center clip-slant bg-accent text-bg">
+                  <Zap className="size-3.5" strokeWidth={2.5} aria-hidden />
+                </span>
+                <span className="text-sm uppercase tracking-[0.18em]">
+                  Dojo <span className="text-accent-bright">Sequence</span>
+                </span>
+              </>
+            );
+            return atHome ? (
+              <span
+                aria-label="Dojo Sequence"
+                className="flex items-center gap-2 font-semibold tracking-tight"
+              >
+                {mark}
+              </span>
+            ) : (
+              <Link
+                href={home}
+                aria-label="Dojo Sequence — back to training"
+                className="flex items-center gap-2 font-semibold tracking-tight"
+              >
+                {mark}
+              </Link>
+            );
+          })()}
           <nav aria-label="Primary" className="hidden md:block">
             <ul className="flex items-center gap-1">
               {navItems.map(({ href, label }) => {

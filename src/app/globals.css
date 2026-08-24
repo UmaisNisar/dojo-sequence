@@ -231,11 +231,19 @@ html[data-reduced-motion="true"] *::after {
   transform-origin: left bottom;
 }
 
-/* Segmented meter — a health bar, not a progress bar. */
-.meter-seg {
+/* Health-bar meter.
+   Notches are dark separators drawn ON TOP of a solid fill, not gaps punched
+   through it — a gapped gradient disintegrates into a dotted line at small
+   heights instead of reading as a bar. */
+.meter-notch {
   background-image: repeating-linear-gradient(
     90deg,
-    currentColor 0 calc(var(--seg, 14px) - 3px),
-    transparent calc(var(--seg, 14px) - 3px) var(--seg, 14px)
+    transparent 0 calc(var(--seg, 12px) - 2px),
+    rgba(0, 0, 0, 0.55) calc(var(--seg, 12px) - 2px) var(--seg, 12px)
   );
+}
+
+/* The whole gauge rakes, matching the display type. */
+.meter-skew {
+  clip-path: polygon(3px 0, 100% 0, calc(100% - 3px) 100%, 0 100%);
 }

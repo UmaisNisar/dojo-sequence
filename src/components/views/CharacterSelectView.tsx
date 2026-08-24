@@ -78,7 +78,13 @@ function monogram(name: string): string {
     : name.slice(0, 2).toUpperCase();
 }
 
-export function CharacterSelectView() {
+export function CharacterSelectView({
+  embedded = false,
+}: {
+  /** Rendered inside the app shell (the Characters tab) rather than as the
+      full-screen entry gate at the root route. */
+  embedded?: boolean;
+} = {}) {
   const { state, dispatch } = useProgress();
   const router = useRouter();
 
@@ -130,8 +136,16 @@ export function CharacterSelectView() {
     window.setTimeout(() => router.push("/training"), 450);
   };
 
+  const Root = embedded ? "div" : "main";
+
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-6xl flex-col px-4 pb-8 pt-10 sm:px-6">
+    <Root
+      className={
+        embedded
+          ? "flex w-full flex-col"
+          : "mx-auto flex min-h-dvh w-full max-w-6xl flex-col px-4 pb-8 pt-10 sm:px-6"
+      }
+    >
       <motion.header
         initial={{ opacity: 0, y: -8 }}
         animate={{ opacity: 1, y: 0 }}
@@ -294,16 +308,30 @@ export function CharacterSelectView() {
         }
       >
         <div className="min-w-0">
-          <p className="microlabel">{focused?.style}</p>
+          <div className="flex items-center gap-2">
+            <p className="microlabel">{focused?.style}</p>
+            {focusedCharacter &&
+              state.activeCharacterId === focusedCharacter.id && (
+                <span className="microlabel text-accent-bright">· training</span>
+              )}
+          </div>
           <p
             key={focused?.id}
             className={cn(
-              "truncate text-3xl font-bold uppercase tracking-tight sm:text-5xl",
+              "display-title truncate text-3xl uppercase sm:text-5xl",
               focused?.available ? "text-fg" : "text-faint",
             )}
           >
             {focused?.name}
           </p>
+          {focusedCharacter?.tagline && (
+            <p
+              key={`${focused?.id}-tag`}
+              className="mt-2 max-w-xl text-xs leading-relaxed text-muted"
+            >
+              {focusedCharacter.tagline}
+            </p>
+          )}
         </div>
         <div className="shrink-0 pb-1 text-right">
           {focused?.available && summary ? (
@@ -332,6 +360,6 @@ export function CharacterSelectView() {
           )}
         </div>
       </div>
-    </main>
+    </Root>
   );
 }

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { CharactersView } from "@/components/views/CharactersView";
+import { CharacterSelectView } from "@/components/views/CharacterSelectView";
 
 export const metadata: Metadata = {
   title: "Characters",
   description: "Choose a character curriculum.",
 };
 
+/** Same roster as the entry screen — just inside the app chrome. */
 export default function CharactersPage() {
-  return <CharactersView />;
+  return <CharacterSelectView embedded />;
 }
