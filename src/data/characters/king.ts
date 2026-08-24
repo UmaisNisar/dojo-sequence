@@ -35,6 +35,7 @@ export const king: Character = {
   tagline:
     "Suplex City. The strongest throw game in Tekken, wrapped around mids that punish everyone who tries to duck it.",
   available: true,
+  accent: { base: "#f5b301", bright: "#fcd34d", deep: "#b45309" },
   stages: [
     /* ------------------------------------------------------------ */
     /* STAGE 01 — MOVEMENT & APPROACH                               */

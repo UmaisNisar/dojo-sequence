@@ -28,6 +28,7 @@ export const bryan: Character = {
   tagline:
     "The counter-hit monster. Slow, punishing, and terrifying to press a button against — if you can pay the execution tax.",
   available: true,
+  accent: { base: "#84cc16", bright: "#bef264", deep: "#4d7c0f" },
   stages: [
     /* ------------------------------------------------------------ */
     /* STAGE 01 — MOVEMENT & THE SWAY PROBLEM                       */

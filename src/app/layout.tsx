@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Archivo } from "next/font/google";
 import "./globals.css";
 import { ProgressProvider } from "@/hooks/use-progress";
 import { LiveFramesProvider } from "@/hooks/use-live-frames";
@@ -9,6 +9,12 @@ import { LightningStrikes } from "@/components/effects/LightningStrikes";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+
+const display = Archivo({
+  variable: "--font-display",
+  subsets: ["latin"],
+  weight: ["700", "800", "900"],
 });
 
 const geistMono = Geist_Mono({
@@ -40,7 +46,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${display.variable} h-full antialiased`}
     >
       <body className="relative min-h-full flex flex-col">
         <div aria-hidden className="bg-grid pointer-events-none absolute inset-x-0 top-0 h-[420px]" />

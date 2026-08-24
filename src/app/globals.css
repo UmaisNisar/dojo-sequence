@@ -171,3 +171,61 @@ html[data-reduced-motion="true"] *::after {
 .breathe {
   animation: breathe 3.4s ease-in-out infinite;
 }
+
+/* ------------------------------------------------------------------ */
+/* Fighting-game geometry                                              */
+/* Panels are chamfered, not rounded. A cut corner reads "versus        */
+/* screen"; a border-radius reads "dashboard".                          */
+/* ------------------------------------------------------------------ */
+
+/* Top-left + bottom-right cut — the default panel shape. */
+.clip-panel {
+  clip-path: polygon(
+    14px 0,
+    100% 0,
+    100% calc(100% - 14px),
+    calc(100% - 14px) 100%,
+    0 100%,
+    0 14px
+  );
+}
+
+/* Tighter cut for rows and small controls. */
+.clip-row {
+  clip-path: polygon(
+    9px 0,
+    100% 0,
+    100% calc(100% - 9px),
+    calc(100% - 9px) 100%,
+    0 100%,
+    0 9px
+  );
+}
+
+/* Single leading bevel — used for the accent spine on list rows. */
+.clip-spine {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+}
+
+/* Slanted parallelogram, for tags and the stage counter. */
+.clip-slant {
+  clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
+}
+
+/* Display type: heavy, tight, slightly raked. Versus-screen energy. */
+.display-title {
+  font-family: var(--font-display), var(--font-sans);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  transform: skewX(-5deg);
+  transform-origin: left bottom;
+}
+
+/* Segmented meter — a health bar, not a progress bar. */
+.meter-seg {
+  background-image: repeating-linear-gradient(
+    90deg,
+    currentColor 0 calc(var(--seg, 14px) - 3px),
+    transparent calc(var(--seg, 14px) - 3px) var(--seg, 14px)
+  );
+}

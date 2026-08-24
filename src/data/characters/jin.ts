@@ -30,6 +30,7 @@ export const jin: Character = {
   tagline:
     "The all-rounder. An answer for every situation, the best punishment in the game, and one just frame that decides how far you go.",
   available: true,
+  accent: { base: "#4f7cff", bright: "#93b4ff", deep: "#1d4ed8" },
   electric: true,
   stages: [
     /* ------------------------------------------------------------ */

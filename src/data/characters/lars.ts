@@ -22,6 +22,7 @@ export const lars: Character = {
   tagline:
     "Fast, safe, and relentlessly aggressive — the rare character whose strongest buttons are also his simplest.",
   available: true,
+  accent: { base: "#22d3ee", bright: "#a5f3fc", deep: "#0e7490" },
   electric: true,
   stages: [
     /* ------------------------------------------------------------ */

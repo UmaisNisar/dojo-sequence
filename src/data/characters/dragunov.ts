@@ -33,6 +33,7 @@ export const dragunov: Character = {
   tagline:
     "Freeze them cold with plus-on-block mids, then open them up. The purest expression of Tekken 8's aggression.",
   available: true,
+  accent: { base: "#93c5fd", bright: "#dbeafe", deep: "#1e40af" },
   stages: [
     /* ------------------------------------------------------------ */
     /* STAGE 01 — MOVEMENT & PRESSURE ENTRY                         */
