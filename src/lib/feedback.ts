@@ -89,6 +89,7 @@ export async function submitFeedback(report: FeedbackReport): Promise<void> {
 
   const kindLabel =
     REPORT_KINDS.find((k) => k.id === report.kind)?.label ?? report.kind;
+  const email = report.email.trim();
 
   let res: Response;
   try {
@@ -101,12 +102,15 @@ export async function submitFeedback(report: FeedbackReport): Promise<void> {
       body: JSON.stringify({
         access_key: ACCESS_KEY,
         subject: `Dojo Sequence — ${kindLabel}${report.characterId ? ` (${report.characterId})` : ""}`,
-        from_name: "Dojo Sequence",
-        // Named fields, because Web3Forms renders the payload as the email body.
+        // `replyto` is reserved: it sets the mail header, so hitting Reply in
+        // an inbox answers the reporter directly. Omitted entirely when they
+        // gave no address — an empty one would only muddy the header.
+        ...(email ? { replyto: email } : {}),
+        // Everything else is free-form and renders as rows in the email body.
         Type: kindLabel,
         Character: report.characterId || "not specific",
         Message: trimmed,
-        "Reply to": report.email.trim() || "not provided",
+        "Reply to": email || "not provided",
         Browser: environmentLine(),
         botcheck: false,
       }),
