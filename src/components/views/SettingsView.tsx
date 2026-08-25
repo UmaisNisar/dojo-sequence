@@ -8,6 +8,7 @@ import {
   Info,
   RotateCcw,
   Upload,
+  FlipHorizontal2,
   Zap,
 } from "lucide-react";
 import { useProgress } from "@/hooks/use-progress";
@@ -109,6 +110,39 @@ export function SettingsView() {
           <ActionButton onClick={() => fileInputRef.current?.click()}>
             Import
           </ActionButton>
+        </SettingRow>
+
+        {/* Clip side */}
+        <SettingRow
+          icon={<FlipHorizontal2 className="size-4" aria-hidden />}
+          title="Mirror move clips"
+          description="Wavu records every demo from the P2 side. Mirroring shows them from P1, where most players sit. Turn this off if you play on the right."
+        >
+          <button
+            type="button"
+            role="switch"
+            aria-checked={state.settings.mirrorClips}
+            aria-label="Mirror move clips"
+            onClick={() =>
+              dispatch({
+                type: "set-mirror-clips",
+                value: !state.settings.mirrorClips,
+              })
+            }
+            className={cn(
+              "relative h-7 w-12 rounded-full border transition-colors",
+              state.settings.mirrorClips
+                ? "border-accent bg-accent"
+                : "border-border-strong bg-surface-3",
+            )}
+          >
+            <span
+              className={cn(
+                "absolute top-0.5 size-5 rounded-full bg-white transition-[left]",
+                state.settings.mirrorClips ? "left-6" : "left-0.5",
+              )}
+            />
+          </button>
         </SettingRow>
 
         {/* Reduced motion */}

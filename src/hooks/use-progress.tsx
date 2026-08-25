@@ -49,6 +49,7 @@ type Action =
       streak: number;
     }
   | { type: "set-reduced-motion"; value: boolean }
+  | { type: "set-mirror-clips"; value: boolean }
   | { type: "set-active-character"; characterId: string }
   | { type: "import-characters"; characters: Record<string, CharacterProgress> }
   | { type: "reset-all" };
@@ -200,6 +201,12 @@ function reducer(state: ProgressState, action: Action): ProgressState {
     case "set-active-character":
       return { ...state, activeCharacterId: action.characterId };
 
+    case "set-mirror-clips":
+      return {
+        ...state,
+        settings: { ...state.settings, mirrorClips: action.value },
+      };
+
     case "set-reduced-motion":
       return {
         ...state,
@@ -291,6 +298,12 @@ export function useActiveCharacter(): Character {
 export function useReducedMotionSetting(): boolean {
   const { state } = useProgress();
   return state.settings.reducedMotion;
+}
+
+/** Clips are recorded from the P2 side; most players sit on P1. */
+export function useMirrorClips(): boolean {
+  const { state } = useProgress();
+  return state.settings.mirrorClips;
 }
 
 export type { Action as ProgressAction, ProgressState };

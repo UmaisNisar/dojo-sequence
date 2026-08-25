@@ -805,11 +805,12 @@ export const steve: Character = {
           id: "bnb-ch-b1",
           stageId: "combos",
           name: "Off the Counter-Hit",
-          notation: "CH b+1 → EXD.1 → df+1,2~1 → f+2,2 → LNH.2 → T! → dash LWV.1,2 → LNH.2",
+          notation:
+            "CH b+1~B (FLK) → EXD.1 → df+1,2~1 → f+2,2 → LNH.2 → T! → dash LWV.1,2 → LNH.2",
           purpose:
-            "The route that matters most, because b+1 is where his damage comes from. Around 56 damage off a 13-frame counter-hit.",
+            "The route that matters most, because b+1 is where his damage comes from. The cancel is not optional: a plain b+1 counter-hit is +61a, but holding B to cancel into Flicker makes it +69, and Extended Ducking 1 only reaches as a pickup off the larger number.",
           whenToUse:
-            "Every b+1 counter-hit. Dropping this conversion throws away the character's entire reason for existing.",
+            "Every b+1 counter-hit. Hold B through the hit as a habit rather than a reaction — the same cancel takes b+1 from -14 on block to -1, so it is the right input whether or not the counter-hit lands.",
           leverlessTip:
             "Same tail as the bread and butter — only the opening differs. That is deliberate: learn one middle and one ender, and every launcher plugs into the front.",
           drill: {
@@ -819,7 +820,9 @@ export const steve: Character = {
           },
           difficulty: "expert",
           tags: ["combo", "CH", "signature"],
-          moveKeys: ["b1", "exd1", "swindler-df", "f2-2", "lnh2", "lwv1-2"],
+          moveKeys: ["b1", "flk1", "exd1", "swindler-df", "f2-2", "lnh2", "lwv1-2"],
+          verifyInGame:
+            "Reported by a player and confirmed against Wavu: EXD.1 only picks up when b+1 is cancelled into Flicker. Wavu lists that cancel as -1/+10/+69 against the raw move's -14/+2/+61a. Confirm the full route in practice mode before trusting the damage figure.",
         },
         {
           id: "mini-combos",

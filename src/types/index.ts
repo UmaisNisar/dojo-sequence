@@ -287,6 +287,8 @@ export interface PersistedState {
   knowledgeStats: Record<string, KnowledgeStats>;
   settings: {
     reducedMotion: boolean;
+    /** Mirror move clips so they read as the left (P1) side. */
+    mirrorClips: boolean;
   };
 }
 

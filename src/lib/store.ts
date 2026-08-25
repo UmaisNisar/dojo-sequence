@@ -29,7 +29,7 @@ export function emptyState(): PersistedState {
     lastSessionResult: null,
     quizStats: {},
     knowledgeStats: {},
-    settings: { reducedMotion: false },
+    settings: { reducedMotion: false, mirrorClips: true },
   };
 }
 
@@ -170,6 +170,9 @@ export function sanitizeState(raw: unknown): PersistedState {
 
   if (isRecord(raw.settings)) {
     state.settings.reducedMotion = Boolean(raw.settings.reducedMotion);
+    // Absent means on: every save written before this setting existed
+    // should get the mirrored default, not an accidental opt-out.
+    state.settings.mirrorClips = raw.settings.mirrorClips !== false;
   }
 
   return state;

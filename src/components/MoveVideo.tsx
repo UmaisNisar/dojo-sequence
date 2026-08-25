@@ -1,9 +1,19 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useMirrorClips } from "@/hooks/use-progress";
+import { cn } from "@/lib/utils";
 
 /**
  * Silent looping demo of a single move, hotlinked from Wavu Wiki.
+ *
+ * Wavu records every clip from the P2 side — the character on the right,
+ * facing left — and hosts no P1 variant (3,000+ T8-p2-* files, zero T8-p1-*).
+ * Most players sit on P1, so a demo facing the wrong way has to be mentally
+ * flipped before it is useful. Mirroring it costs one CSS transform and no
+ * extra bandwidth. It does reverse the burned-in overlay text, but at the
+ * 200px this renders at that text is illegible either way, while the facing
+ * direction is the whole point of the clip.
  *
  * Loads nothing until it scrolls near the viewport — an item can reference
  * half a dozen moves and each clip is ~220 KB. If the clip 404s (renamed or
@@ -20,6 +30,7 @@ export function MoveVideo({
   label: string;
   className?: string;
 }) {
+  const mirror = useMirrorClips();
   const holderRef = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(false);
   const [failed, setFailed] = useState(false);
@@ -67,7 +78,7 @@ export function MoveVideo({
             preload="metadata"
             onCanPlay={() => setReady(true)}
             onError={() => setFailed(true)}
-            className="size-full object-cover"
+            className={cn("size-full object-cover", mirror && "-scale-x-100")}
           />
         )}
         {!ready && (
