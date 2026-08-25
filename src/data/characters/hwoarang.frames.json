@@ -1,0 +1,2667 @@
+{
+  "characterId": "hwoarang",
+  "game": "Tekken 8",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-24",
+  "sources": [
+    {
+      "name": "Wavu Wiki",
+      "url": "https://wavu.wiki/t/Hwoarang"
+    },
+    {
+      "name": "TekkenDocs",
+      "url": "https://tekkendocs.com/t8/hwoarang"
+    }
+  ],
+  "moves": {
+    "jab": {
+      "wavuId": "Hwoarang-1",
+      "input": "1",
+      "name": "Jab",
+      "level": "h",
+      "startup": "i10",
+      "block": "+1",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "Recovers 2f faster on hit or block (t27 r17)"
+      ]
+    },
+    "1-2": {
+      "wavuId": "Hwoarang-1,2",
+      "input": "1,2",
+      "name": "Left Right Combo",
+      "level": ",h",
+      "startup": "i10",
+      "block": "-3",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "Jail from 1st block with 4F delay",
+        "Combo from 1st hit with 4F delay",
+        "Transition to LFS with 3 (+3/+12g?/+12)",
+        "Transition to RFS with 4 (+3/+12g?/+12)"
+      ]
+    },
+    "1-2-f3": {
+      "wavuId": "Hwoarang-1,2,f+3",
+      "input": "1,2,f+3",
+      "name": "Rejector",
+      "level": ",m",
+      "startup": "i21",
+      "block": "-8",
+      "hit": "+9",
+      "ch": null,
+      "notes": [
+        "Wall Crush +21g on hit",
+        "Combo from 2nd CH with 4F delay"
+      ],
+      "video": "https://wavu.wiki/w/images/3/33/T8-p2-hwoarang-1%2C2%2Cf%2B3.mp4"
+    },
+    "1-2-f4": {
+      "wavuId": "Hwoarang-1,2,f+4",
+      "input": "1,2,f+4",
+      "name": "Rejection",
+      "level": ",h",
+      "startup": "i24~25",
+      "displayStartup": "i24~25 (string)",
+      "block": "-2",
+      "hit": "+35d (+27)",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Combo from 2nd CH with 3F delay",
+        "Move can be delayed by 4F"
+      ],
+      "video": "https://wavu.wiki/w/images/0/0b/T8-p2-hwoarang-1%2C2%2Cf%2B4.mp4"
+    },
+    "right": {
+      "wavuId": "Hwoarang-2",
+      "input": "2",
+      "name": "Right Jab",
+      "level": "h",
+      "startup": "i10",
+      "block": "+0",
+      "hit": "+8",
+      "ch": "+9",
+      "notes": [
+        "Transition to LFS with 3 (+3/+11g/+12)",
+        "Transition to RFS with 4 (+3/+11g/+12)",
+        "70% scaling on next hit"
+      ],
+      "video": "https://wavu.wiki/w/images/c/cf/T8-p2-hwoarang-2.mp4"
+    },
+    "2plus3": {
+      "wavuId": "Hwoarang-2+3",
+      "input": "2+3",
+      "name": "Heat Burst",
+      "level": "m",
+      "startup": "i16",
+      "block": "+1",
+      "hit": "+2c",
+      "ch": null,
+      "notes": [
+        "Heat Burst",
+        "Cancel to r45 with b,b on frame 42",
+        "2 chip damage on block",
+        "12 chip damage on hit",
+        "Only deals recoverable damage",
+        "Cannot cause a K.O."
+      ]
+    },
+    "2-f3": {
+      "wavuId": "Hwoarang-2,f+3",
+      "input": "2,f+3",
+      "name": "Right Jab Side Kick",
+      "level": ",m",
+      "startup": "i21",
+      "block": "-8",
+      "hit": "+9",
+      "ch": null,
+      "notes": [
+        "Wall Crush +21g on hit",
+        "Combo from 1st hit with 1F delay",
+        "Combo from 1st CH with 4F delay"
+      ],
+      "video": "https://wavu.wiki/w/images/a/a4/T8-p2-hwoarang-2%2Cf%2B3.mp4"
+    },
+    "2-f4": {
+      "wavuId": "Hwoarang-2,f+4",
+      "input": "2,f+4",
+      "name": "Right Jab > Spinning Back Kick",
+      "level": ",h",
+      "startup": "i24~25",
+      "displayStartup": "i24~25 (string)",
+      "block": "-2",
+      "hit": "+35d (+27)",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Combo from 1st CH with 3F delay"
+      ],
+      "video": "https://wavu.wiki/w/images/1/15/T8-p2-hwoarang-2%2Cf%2B4.mp4"
+    },
+    "kick3": {
+      "wavuId": "Hwoarang-3",
+      "input": "3",
+      "name": "3",
+      "level": "h",
+      "startup": "i14",
+      "block": "-7",
+      "hit": "+4",
+      "ch": null,
+      "notes": []
+    },
+    "3-3-2": {
+      "wavuId": "Hwoarang-3,3,2",
+      "input": "3,3,2",
+      "name": "Siege Mortar Combo",
+      "level": ",M",
+      "startup": "i21~22",
+      "displayStartup": "i21~22 (string)",
+      "block": "-11",
+      "hit": "+1c",
+      "ch": null,
+      "notes": [
+        "Combo from 2nd CH with 8F delay",
+        "Move can be delayed by 10F"
+      ],
+      "video": "https://wavu.wiki/w/images/5/54/T8-p2-hwoarang-3%2C3%2C2.mp4"
+    },
+    "3-3-3": {
+      "wavuId": "Hwoarang-3,3,3",
+      "input": "3,3,3",
+      "name": "Left Kicks",
+      "level": ",m",
+      "startup": "i21",
+      "block": "-14",
+      "hit": "+32d (+24)",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Combo from 2nd CH with 8F delay",
+        "Move can be delayed by 10F"
+      ],
+      "video": "https://wavu.wiki/w/images/f/f5/T8-p2-hwoarang-3%2C3%2C3.mp4"
+    },
+    "3-3-4": {
+      "wavuId": "Hwoarang-3,3,4",
+      "input": "3,3,4",
+      "name": "Left Kicks > Right Hook Kick",
+      "level": ",h",
+      "startup": "i21~23",
+      "displayStartup": "i21~23 (string)",
+      "block": "+8",
+      "hit": "+19g",
+      "ch": "+19",
+      "notes": [
+        "Transition to RFS",
+        "Combo from 2nd CH with 8F delay",
+        "Move can be delayed by 10F"
+      ],
+      "video": "https://wavu.wiki/w/images/b/bc/T8-p2-hwoarang-3%2C3%2C4.mp4"
+    },
+    "3-3-f4": {
+      "wavuId": "Hwoarang-3,3,f+4",
+      "input": "3,3,f+4",
+      "name": "Left Kicks > Backlash",
+      "level": ",h",
+      "startup": "i21~27",
+      "displayStartup": "i21~27 (string)",
+      "block": "-1",
+      "hit": "+40a (+14)",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "-1 on block on average. Frame advantage may range from -4~+2 on block",
+        "Combo from 2nd CH with 5F delay",
+        "Move can be delayed by 10F"
+      ],
+      "video": "https://wavu.wiki/w/images/a/aa/T8-p2-hwoarang-3%2C3%2Cf%2B4.mp4"
+    },
+    "3t4": {
+      "wavuId": "Hwoarang-3~4",
+      "input": "3~4",
+      "name": "Flying Eagle",
+      "level": "m,m",
+      "startup": "i22,i7",
+      "displayStartup": "i22,i7 (string)",
+      "block": "-3",
+      "hit": "+26a (+16)",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Input 4 on frames 1 to 5",
+        "Input 4 on frame 1 to power up",
+        "37dmg, +1 oB, +42a (+16) oH"
+      ]
+    },
+    "kick4": {
+      "wavuId": "Hwoarang-4",
+      "input": "4",
+      "name": "4",
+      "level": "h",
+      "startup": "i11~12",
+      "displayStartup": "i11~12 (string)",
+      "block": "-6",
+      "hit": "+5",
+      "ch": null,
+      "notes": []
+    },
+    "4-3": {
+      "wavuId": "Hwoarang-4,3",
+      "input": "4,3",
+      "name": "Right Left Kick Combo",
+      "level": ",m",
+      "startup": "i22",
+      "block": "-6",
+      "hit": "+5",
+      "ch": "+20a (+11)",
+      "notes": [
+        "Balcony Break",
+        "on CH",
+        "Combo from 1st hit",
+        "+5c on crouching hit",
+        "Cancel the second hit and transition to r8 LFS with F (-6/+5)"
+      ],
+      "video": "https://wavu.wiki/w/images/f/f8/T8-p2-hwoarang-4%2C3.mp4"
+    },
+    "4-4-3": {
+      "wavuId": "Hwoarang-4,4,3",
+      "input": "4,4,3",
+      "name": "Right Kicks > Chainsaw Heel",
+      "level": ",M",
+      "startup": "i25~31",
+      "displayStartup": "i25~31 (string)",
+      "block": "-14c",
+      "hit": "+14d",
+      "ch": null,
+      "notes": [
+        "Transition to RFF",
+        "Combo from 2nd CH"
+      ],
+      "video": "https://wavu.wiki/w/images/e/e0/T8-p2-hwoarang-4%2C4%2C3.mp4"
+    },
+    "b1": {
+      "wavuId": "Hwoarang-b+1",
+      "input": "b+1",
+      "name": "Stealth Needle",
+      "level": "m",
+      "startup": "i15",
+      "block": "-15",
+      "hit": "-1",
+      "ch": null,
+      "notes": [
+        "Sidesteps to the right"
+      ]
+    },
+    "b1plus3": {
+      "wavuId": "Hwoarang-b+1+3",
+      "input": "b+1+3",
+      "name": "Parry",
+      "level": "",
+      "startup": null,
+      "block": null,
+      "hit": "+9",
+      "ch": null,
+      "notes": [
+        "Parries high and mid punches. Pressing 4 on successful parry gives Shotgun Shuffle"
+      ]
+    },
+    "b1plus3-p-4": {
+      "wavuId": "Hwoarang-b+1+3,P.4",
+      "input": "b+1+3,P.4",
+      "name": "Shotgun Shuffle",
+      "level": "m,h,h",
+      "startup": "i15,i8,i9",
+      "displayStartup": "i15,i8,i9 (string)",
+      "block": null,
+      "hit": "+17a (+8)",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Pressing 4 after successful parry"
+      ]
+    },
+    "b2": {
+      "wavuId": "Hwoarang-b+2",
+      "input": "b+2",
+      "name": "Right Back Elbow",
+      "level": "h",
+      "startup": "i14",
+      "block": "-4",
+      "hit": "+6",
+      "ch": "+14c",
+      "notes": [
+        "Elbow",
+        "Good right sidestep tracking"
+      ]
+    },
+    "b3-plasma": {
+      "wavuId": "Hwoarang-b+3",
+      "input": "b+3",
+      "name": "Left Plasma Blade",
+      "level": "M",
+      "startup": "i16~17",
+      "displayStartup": "i16~17 (string)",
+      "block": "-19",
+      "hit": "+35a (+25)",
+      "ch": null,
+      "notes": [
+        "Tornado"
+      ]
+    },
+    "b4": {
+      "wavuId": "Hwoarang-b+4",
+      "input": "b+4",
+      "name": "Nose Bleeder",
+      "level": "h",
+      "startup": "i13~14",
+      "displayStartup": "i13~14 (string)",
+      "block": "-10",
+      "hit": "+1",
+      "ch": "+50a",
+      "notes": [
+        "Transition to RFF"
+      ]
+    },
+    "b-b2plus3": {
+      "wavuId": "Hwoarang-b,B+2+3",
+      "input": "b,B+2+3",
+      "name": "Dynamite Heel",
+      "level": "m!",
+      "startup": "i61~62",
+      "displayStartup": "i61~62 (string)",
+      "block": null,
+      "hit": "+17a",
+      "ch": null,
+      "notes": [
+        "Also possible during RFF",
+        "Cancel and transition to r24? LFS at frame 25? with b,b"
+      ],
+      "video": "https://wavu.wiki/w/images/1/12/T8-p2-hwoarang-db%2B3%2B4.mp4"
+    },
+    "bt3": {
+      "wavuId": "Hwoarang-BT.3",
+      "input": "BT.3",
+      "name": "Left Plasma Blade",
+      "level": "M",
+      "startup": "i14~16",
+      "displayStartup": "i14~16 (string)",
+      "block": "-13",
+      "hit": "+38a (+28)",
+      "ch": null,
+      "notes": []
+    },
+    "bt4": {
+      "wavuId": "Hwoarang-BT.4",
+      "input": "BT.4",
+      "name": "Plasma Blade",
+      "level": "M",
+      "startup": "i14~16",
+      "displayStartup": "i14~16 (string)",
+      "block": "-13",
+      "hit": "+40a (+30)",
+      "ch": null,
+      "notes": [
+        "Transition to RFF"
+      ]
+    },
+    "bt-d3": {
+      "wavuId": "Hwoarang-BT.d+3",
+      "input": "BT.d+3",
+      "name": "Spinning Low Kick",
+      "level": "L",
+      "startup": "i18~19",
+      "displayStartup": "i18~19 (string)",
+      "block": "-13",
+      "hit": "-2",
+      "ch": "+31a",
+      "notes": [],
+      "video": "https://wavu.wiki/w/images/f/fe/T8-p2-hwoarang-bt.d%2B3.mp4"
+    },
+    "phalanx": {
+      "wavuId": "Hwoarang-CD.3",
+      "input": "CD.3",
+      "name": "Phalanx",
+      "level": "m",
+      "startup": "i18~19",
+      "displayStartup": "i18~19 (string)",
+      "block": "+4",
+      "hit": "+25a (+16)",
+      "ch": "+57a (+10)",
+      "notes": [
+        "Tornado",
+        "Balcony Break",
+        "8 chip damage on block",
+        "Also possible during RFF",
+        "Transition to LFS"
+      ],
+      "video": "https://wavu.wiki/w/images/0/04/T8-p2-hwoarang-cd.3.mp4"
+    },
+    "sky-rocket": {
+      "wavuId": "Hwoarang-CD.4",
+      "input": "CD.4",
+      "name": "Sky Rocket",
+      "level": "m",
+      "startup": "i16",
+      "block": "-18",
+      "hit": "+53a (+43)",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "Also possible during RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/3/32/T8-p2-hwoarang-cd.4.mp4"
+    },
+    "d1": {
+      "wavuId": "Hwoarang-d+1",
+      "input": "d+1",
+      "name": "Crouch Jab",
+      "level": "sl",
+      "startup": "i10",
+      "block": "-5",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "Transition to r24 with f",
+        "+6c on crouching hit"
+      ]
+    },
+    "d2": {
+      "wavuId": "Hwoarang-d+2",
+      "input": "d+2",
+      "name": "Crouch Straight",
+      "level": "sl",
+      "startup": "i11",
+      "block": "-4",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "+7c on crouching hit"
+      ]
+    },
+    "d3": {
+      "wavuId": "Hwoarang-d+3",
+      "input": "d+3",
+      "name": "d+3",
+      "level": "l",
+      "startup": "i17",
+      "block": "-13",
+      "hit": "-2",
+      "ch": null,
+      "notes": [
+        "-2c on crouching hit"
+      ]
+    },
+    "d3plus4": {
+      "wavuId": "Hwoarang-d+3+4",
+      "input": "d+3+4",
+      "name": "Dark Halberd",
+      "level": "L",
+      "startup": "i21~22",
+      "displayStartup": "i21~22 (string)",
+      "block": "-14",
+      "hit": "+6 LFS",
+      "ch": null,
+      "notes": [
+        "Homing",
+        "Transition to LFS on hit"
+      ]
+    },
+    "d3-4": {
+      "wavuId": "Hwoarang-d+3,4",
+      "input": "d+3,4",
+      "name": "Smash Low Right",
+      "level": ",h",
+      "startup": "i21~23",
+      "displayStartup": "i21~23 (string)",
+      "block": "+8g~+10g",
+      "hit": "+14g~+16g",
+      "ch": "+19~+21",
+      "notes": [
+        "Transition to RFS",
+        "Combo from 1st hit"
+      ],
+      "video": "https://wavu.wiki/w/images/1/17/T8-p2-hwoarang-d%2B3%2C4.mp4"
+    },
+    "d4": {
+      "wavuId": "Hwoarang-d+4",
+      "input": "d+4",
+      "name": "d+4",
+      "level": "l",
+      "startup": "i19",
+      "block": "-17",
+      "hit": "-6",
+      "ch": "+4s",
+      "notes": [
+        "Also possible during RFF"
+      ]
+    },
+    "d4-4": {
+      "wavuId": "Hwoarang-d+4,4",
+      "input": "d+4,4",
+      "name": "Firecracker",
+      "level": ",h",
+      "startup": "i20",
+      "block": "-13",
+      "hit": "+69a (+53)",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "Jail from 1st normal hit",
+        "Combo from 1st CH",
+        "Also possible during RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/2/29/T8-p2-hwoarang-d%2B4%2C4.mp4"
+    },
+    "db3": {
+      "wavuId": "Hwoarang-db+3",
+      "input": "db+3",
+      "name": "Sweep Kick",
+      "level": "L",
+      "startup": "i19",
+      "block": "-13",
+      "hit": "-1",
+      "ch": "+17g",
+      "notes": [
+        "Also possible during RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/6/66/T8-p2-hwoarang-db%2B3.mp4"
+    },
+    "db4": {
+      "wavuId": "Hwoarang-db+4",
+      "input": "db+4",
+      "name": "db+4",
+      "level": "L",
+      "startup": "i16",
+      "block": "-12",
+      "hit": "-8",
+      "ch": "-1",
+      "notes": [
+        "Transition to r20 RFS with F (-1/+3/+10)",
+        "Also possible during RFF"
+      ]
+    },
+    "db4-4": {
+      "wavuId": "Hwoarang-db+4,4",
+      "input": "db+4,4",
+      "name": "Ankle Biter > Crescent Kick",
+      "level": ",h",
+      "startup": "i17~19",
+      "displayStartup": "i17~19 (string)",
+      "block": "-1~+1",
+      "hit": "+24a~+26a",
+      "ch": null,
+      "notes": [
+        "Combo from 1st CH"
+      ],
+      "video": "https://wavu.wiki/w/images/8/80/T8-p2-hwoarang-db%2B4%2C4.mp4"
+    },
+    "df1": {
+      "wavuId": "Hwoarang-df+1",
+      "input": "df+1",
+      "name": "df+1",
+      "level": "m",
+      "startup": "i13~14",
+      "displayStartup": "i13~14 (string)",
+      "block": "-1",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "Also possible during RFF"
+      ]
+    },
+    "df1-3": {
+      "wavuId": "Hwoarang-df+1,3",
+      "input": "df+1,3",
+      "name": "Left Uppercut & Middle Kick",
+      "level": ",m",
+      "startup": "i22~23",
+      "displayStartup": "i22~23 (string)",
+      "block": "-2",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "Combo from 1st hit",
+        "Transition to LFS"
+      ],
+      "video": "https://wavu.wiki/w/images/5/56/T8-p2-hwoarang-df%2B1%2C3.mp4"
+    },
+    "df2": {
+      "wavuId": "Hwoarang-df+2",
+      "input": "df+2",
+      "name": "Right Uppercut",
+      "level": "m",
+      "startup": "i15~16",
+      "displayStartup": "i15~16 (string)",
+      "block": "-7",
+      "hit": "+34a (+24)",
+      "ch": null,
+      "notes": [
+        "+4s on crouching normal hit",
+        "Also possible during RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/f/fc/T8-p2-hwoarang-df%2B2.mp4"
+    },
+    "df3": {
+      "wavuId": "Hwoarang-df+3",
+      "input": "df+3",
+      "name": "df+3",
+      "level": "m",
+      "startup": "i22~23",
+      "displayStartup": "i22~23 (string)",
+      "block": "-14~-13",
+      "hit": "-4~-3",
+      "ch": null,
+      "notes": [
+        "Cancel and transition to r1 LFS with F_U_D at frame 20 of move startup",
+        "Power up if an attack is absorbed",
+        "Reversal Break",
+        "2 chip damage on block",
+        "-9 on block"
+      ]
+    },
+    "df3plus4": {
+      "wavuId": "Hwoarang-df+3+4",
+      "input": "df+3+4",
+      "name": "Ignition Barrage",
+      "level": "m,h,m",
+      "startup": "i13,i14,i24~25",
+      "displayStartup": "i13,i14,i24~25 (string)",
+      "block": "-14",
+      "hit": "+4c",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "Heat Dash +5, +43d (+35)",
+        "Jails",
+        "5 chip damage on block",
+        "Also possible during RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/4/4c/T8-p2-hwoarang-df%2B3%2B4.mp4"
+    },
+    "df3-4": {
+      "wavuId": "Hwoarang-df+3,4",
+      "input": "df+3,4",
+      "name": "Double Claymore",
+      "level": ",m",
+      "startup": "i24~25",
+      "displayStartup": "i24~25 (string)",
+      "block": "-14",
+      "hit": "+4a",
+      "ch": null,
+      "notes": [
+        "Combo from 1st hit with 7F delay",
+        "Move can be delayed by 5F",
+        "Input can be delayed by 7F",
+        "Power up if an attack is absorbed by previous hit",
+        "Reversal Break",
+        "?",
+        "4 chip damage on block",
+        "-9 on block"
+      ]
+    },
+    "df4": {
+      "wavuId": "Hwoarang-df+4",
+      "input": "df+4",
+      "name": "Middle Claymore",
+      "level": "m",
+      "startup": "i16~17",
+      "displayStartup": "i16~17 (string)",
+      "block": "-8~-7",
+      "hit": "+8~+9",
+      "ch": "+18a (+9)",
+      "notes": [
+        "Homing",
+        "Balcony Break",
+        "on CH",
+        "Transition to RFF",
+        "Wall splats"
+      ],
+      "video": "https://wavu.wiki/w/images/6/62/T8-p2-hwoarang-df%2B4.mp4"
+    },
+    "f1plus2": {
+      "wavuId": "Hwoarang-f+1+2",
+      "input": "f+1+2",
+      "name": "Push Hands",
+      "level": "m",
+      "startup": "i15",
+      "block": "-9",
+      "hit": "+2",
+      "ch": "+14",
+      "notes": [
+        "Also possible during RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/c/cd/T8-p2-hwoarang-f%2B1%2B2.mp4"
+    },
+    "f2": {
+      "wavuId": "Hwoarang-f+2",
+      "input": "f+2",
+      "name": "Rusty Knife",
+      "level": "m",
+      "startup": "i16",
+      "block": "-2",
+      "hit": "+9",
+      "ch": null,
+      "notes": [
+        "Transition to RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/7/73/T8-p2-hwoarang-f%2B2.mp4"
+    },
+    "f2plus3": {
+      "wavuId": "Hwoarang-f+2+3",
+      "input": "f+2+3",
+      "name": "Human Cannonball",
+      "level": "th(h)",
+      "startup": "i12",
+      "block": "+0",
+      "hit": "+1d",
+      "ch": null,
+      "notes": [
+        "Break: 1+2",
+        "Opponent recovery on hit: FUFA, sideswap",
+        "Sideswap on break",
+        "Possible in RFF, LFS and RFS"
+      ],
+      "video": "https://wavu.wiki/w/images/4/43/T8-p2-hwoarang-f%2B2%2B3.mp4"
+    },
+    "f3t3": {
+      "wavuId": "Hwoarang-f+3~3",
+      "input": "f+3~3",
+      "name": "Cheap Shot Snap Kick",
+      "level": "m",
+      "startup": "i20",
+      "block": "-16",
+      "hit": "+7a (-2)",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Sidesteps to the right"
+      ],
+      "video": "https://wavu.wiki/w/images/d/db/T8-p2-hwoarang-f%2B3~3.mp4"
+    },
+    "f4": {
+      "wavuId": "Hwoarang-f+4",
+      "input": "f+4",
+      "name": "Right Hook Kick",
+      "level": "h",
+      "startup": "i17~23",
+      "displayStartup": "i17~23 (string)",
+      "block": "+7~+13",
+      "hit": "+18g~+24g",
+      "ch": "+18~+24",
+      "notes": [
+        "+11~+17 guaranteed on CH depending on frame advantage",
+        "Transition to RFS"
+      ],
+      "video": "https://wavu.wiki/w/images/d/d7/T8-p2-hwoarang-f%2B4.mp4"
+    },
+    "f-f3": {
+      "wavuId": "Hwoarang-f,F+3",
+      "input": "f,F+3",
+      "name": "Spinning Axe Kick",
+      "level": "M",
+      "startup": "i20~24",
+      "displayStartup": "i20~24 (string)",
+      "block": "+6",
+      "hit": "+6c",
+      "ch": null,
+      "notes": [
+        "Transition to RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/6/67/T8-p2-hwoarang-f%2Cf%2B3.mp4"
+    },
+    "f-f4": {
+      "wavuId": "Hwoarang-f,F+4",
+      "input": "f,F+4",
+      "name": "Peacekeeper",
+      "level": "m",
+      "startup": "i17~18",
+      "displayStartup": "i17~18 (string)",
+      "block": "-7",
+      "hit": "+19a (+10)",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "Heat Dash +5, +36a (+26)",
+        "Balcony Break",
+        "Also possible during RFF",
+        "Transition to RFF (does not transition on Heat activation or when using Heat Dash)"
+      ],
+      "video": "https://wavu.wiki/w/images/e/ef/T8-p2-hwoarang-f%2Cf%2B4.mp4"
+    },
+    "f-f-f3": {
+      "wavuId": "Hwoarang-f,f,F+3",
+      "input": "f,f,F+3",
+      "name": "Flying Nerichagi",
+      "level": "m",
+      "startup": "i22~24",
+      "displayStartup": "i22~24 (string)",
+      "block": "+6",
+      "hit": "+23a",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "9 chip damage on block",
+        "Also possible during RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/c/c1/T8-p2-hwoarang-f%2Cf%2Cf%2B3.mp4"
+    },
+    "f-f-f4": {
+      "wavuId": "Hwoarang-f,f,F+4",
+      "input": "f,f,F+4",
+      "name": "Torpedo Kick",
+      "level": "h",
+      "startup": "i18~19",
+      "displayStartup": "i18~19 (string)",
+      "block": "+5",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "11 chip damage on block",
+        "Also possible during RFF",
+        "Sideswaps and leaves opponent backturned on hit",
+        "Transition to BT on block"
+      ],
+      "video": "https://wavu.wiki/w/images/a/a8/T8-p2-hwoarang-f%2Cf%2Cf%2B4.mp4"
+    },
+    "lethal-sky-rocket": {
+      "wavuId": "Hwoarang-f,n,df${justFrame}4",
+      "input": "f,n,df+4 (just frame)",
+      "name": "Lethal Sky Rocket",
+      "level": "m",
+      "startup": "i16",
+      "block": "-8",
+      "hit": "+59a (+49)",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "3 chip damage on block",
+        "Also possible during RFF.",
+        "The 4 input can be delayed up to 10 frames after df input during RFF."
+      ],
+      "video": "https://wavu.wiki/w/images/0/02/T8-p2-hwoarang-f%2Cn%2Cdfh4.mp4"
+    },
+    "h-2plus3": {
+      "wavuId": "Hwoarang-H.2+3",
+      "input": "H.2+3",
+      "name": "Trinity Claymore",
+      "level": "m,(t),m,h",
+      "startup": "i17~18, i18~19, i29",
+      "displayStartup": "i17~18, i18~19, i29 (string)",
+      "block": "+11",
+      "hit": "+13d / +35d (+14)",
+      "ch": null,
+      "notes": [
+        "Heat Smash",
+        "Balcony Break",
+        "Jails",
+        "Transition to +13d attack throw on hit",
+        "5 chip damage on block",
+        "Also possible during RFF and LFS",
+        "Transition to RFS"
+      ]
+    },
+    "hfc-3": {
+      "wavuId": "Hwoarang-hFC.3",
+      "input": "hFC.3",
+      "name": "Crouch Spin Kick",
+      "level": "L",
+      "startup": "i16",
+      "block": "-17",
+      "hit": "-6",
+      "ch": null,
+      "notes": [
+        "-6c on crouching hit"
+      ]
+    },
+    "hfc-4": {
+      "wavuId": "Hwoarang-hFC.4",
+      "input": "hFC.4",
+      "name": "Crouch Shin Kick",
+      "level": "l",
+      "startup": "i12",
+      "block": "-15",
+      "hit": "-4",
+      "ch": null,
+      "notes": [
+        "-4c on crouching hit"
+      ]
+    },
+    "h-rfs-d4": {
+      "wavuId": "Hwoarang-H.RFS.d+4",
+      "input": "H.RFS.d+4",
+      "name": "H.RFS.d+4",
+      "level": "L",
+      "startup": "i20~21",
+      "displayStartup": "i20~21 (string)",
+      "block": "-23",
+      "hit": "+7c",
+      "ch": null,
+      "notes": [
+        "Transition to RFF",
+        "Partially uses remaining Heat time",
+        "RFS.d+4,3,4 airborne combo guaranteed on normal hit",
+        "Increased chip damage scaling on block during heat",
+        "4 chip damage on block in heat"
+      ]
+    },
+    "h-rfs-d4-3-4": {
+      "wavuId": "Hwoarang-H.RFS.d+4,3,4",
+      "input": "H.RFS.d+4,3,4",
+      "name": "Predator Bardiche",
+      "level": ",h",
+      "startup": "i27~28",
+      "displayStartup": "i27~28 (string)",
+      "block": "-9",
+      "hit": "+28a (+2) / +10a (+9)",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Combo from 2nd hit",
+        "Airborne combo from 1st hit",
+        "+10a (+9) on hit",
+        "15 dmg, 38 total dmg from 1st hit",
+        "Increased chip damage scaling on block during heat",
+        "9 chip damage on block in heat"
+      ],
+      "video": "https://wavu.wiki/w/images/8/85/T8-p2-hwoarang-rfs.d%2B4%2C3%2C4.mp4"
+    },
+    "h-rfs-f4": {
+      "wavuId": "Hwoarang-H.RFS.f+4",
+      "input": "H.RFS.f+4",
+      "name": "H.RFS.f+4",
+      "level": "h,h",
+      "startup": "i8, i10",
+      "displayStartup": "i8, i10 (string)",
+      "block": "+0",
+      "hit": "+5",
+      "ch": null,
+      "notes": [
+        "Jail from 1st block",
+        "Remains in RFS",
+        "2 chip damage on block"
+      ]
+    },
+    "h-rfs-f4-4": {
+      "wavuId": "Hwoarang-H.RFS.f+4,4",
+      "input": "H.RFS.f+4,4",
+      "name": "Right Viper Combo > Right Sword",
+      "level": ",h",
+      "startup": "i23",
+      "block": "-6",
+      "hit": "+75a (+59)",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "Combo from 1st or 2nd hit",
+        "Transition to RFF",
+        "Partially uses remaining Heat time",
+        "Increased chip damage scaling on block during heat",
+        "2 chip damage on block"
+      ]
+    },
+    "lfs-1": {
+      "wavuId": "Hwoarang-LFS.1",
+      "input": "LFS.1",
+      "name": "Left Flamingo > Back Hand",
+      "level": "h",
+      "startup": "i13",
+      "block": "+5",
+      "hit": "+7",
+      "ch": null,
+      "notes": [],
+      "video": "https://wavu.wiki/w/images/9/97/T8-p2-hwoarang-lfs.1.mp4"
+    },
+    "lfs-1plus2": {
+      "wavuId": "Hwoarang-LFS.1+2",
+      "input": "LFS.1+2",
+      "name": "LFS.1+2",
+      "level": "m",
+      "startup": "i15~16",
+      "displayStartup": "i15~16 (string)",
+      "block": "-10",
+      "hit": "+4c",
+      "ch": null,
+      "notes": [],
+      "video": "https://wavu.wiki/w/images/2/2a/T8-p2-hwoarang-lfs.1%2B2.mp4"
+    },
+    "lfs-1plus2-4": {
+      "wavuId": "Hwoarang-LFS.1+2,4",
+      "input": "LFS.1+2,4",
+      "name": "Spinning Axe Combo",
+      "level": ",m",
+      "startup": "i23~27",
+      "displayStartup": "i23~27 (string)",
+      "block": "-13",
+      "hit": "+5c",
+      "ch": "+28d",
+      "notes": [
+        "Spike",
+        "Combos from 1st hit"
+      ],
+      "video": "https://wavu.wiki/w/images/0/00/T8-p2-hwoarang-lfs.1%2B2%2C4.mp4"
+    },
+    "lfs-1plus4": {
+      "wavuId": "Hwoarang-LFS.1+4",
+      "input": "LFS.1+4",
+      "name": "Power Blast",
+      "level": "m!",
+      "startup": "i66~69",
+      "displayStartup": "i66~69 (string)",
+      "block": null,
+      "hit": "-2a~+1a",
+      "ch": null,
+      "notes": [
+        "Cancel with b,b"
+      ],
+      "video": "https://wavu.wiki/w/images/7/7c/T8-p2-hwoarang-lfs.1%2B4.mp4"
+    },
+    "lfs-2": {
+      "wavuId": "Hwoarang-LFS.2",
+      "input": "LFS.2",
+      "name": "Right Backhand",
+      "level": "m",
+      "startup": "i16",
+      "block": "-2",
+      "hit": "+9",
+      "ch": null,
+      "notes": [
+        "Transition to RFF",
+        "Links to 10-hit string"
+      ],
+      "video": "https://wavu.wiki/w/images/1/1c/T8-p2-hwoarang-lfs.2.mp4"
+    },
+    "lfs-3": {
+      "wavuId": "Hwoarang-LFS.3",
+      "input": "LFS.3",
+      "name": "LFS.3",
+      "level": "m",
+      "startup": "i14",
+      "block": "-13",
+      "hit": "-7",
+      "ch": "-2",
+      "notes": [
+        "Transition to r17 LFS with F (+2/+8/+13)",
+        "-7c on crouching hit"
+      ]
+    },
+    "lfs-3-2": {
+      "wavuId": "Hwoarang-LFS.3,2",
+      "input": "LFS.3,2",
+      "name": "Flamingo Siege Combo",
+      "level": ",M",
+      "startup": "i21~22",
+      "displayStartup": "i21~22 (string)",
+      "block": "-11",
+      "hit": "+1c",
+      "ch": null,
+      "notes": [
+        "Combo from 1st CH with 9?F delay",
+        "Move can be delayed by 10F"
+      ],
+      "video": "https://wavu.wiki/w/images/7/77/T8-p2-hwoarang-lfs.3%2C2.mp4"
+    },
+    "lfs-3-3": {
+      "wavuId": "Hwoarang-LFS.3,3",
+      "input": "LFS.3,3",
+      "name": "Flamingo Kick Combo Middle",
+      "level": ",m",
+      "startup": "i21",
+      "block": "-14",
+      "hit": "+32d (+24)",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Combo from 1st CH with 9?F delay",
+        "Move can be delayed by 10F"
+      ],
+      "video": "https://wavu.wiki/w/images/5/54/T8-p2-hwoarang-lfs.3%2C3.mp4"
+    },
+    "lfs-3-4": {
+      "wavuId": "Hwoarang-LFS.3,4",
+      "input": "LFS.3,4",
+      "name": "Flamingo Side Kick > Right Hook Kick",
+      "level": ",h",
+      "startup": "i21~23",
+      "displayStartup": "i21~23 (string)",
+      "block": "+8",
+      "hit": "+19g",
+      "ch": "+19",
+      "notes": [
+        "Transition to RFS",
+        "Combo from 1st CH with 9?F delay",
+        "Move can be delayed by 10F"
+      ],
+      "video": "https://wavu.wiki/w/images/3/32/T8-p2-hwoarang-lfs.3%2C4.mp4"
+    },
+    "lfs-3-f4": {
+      "wavuId": "Hwoarang-LFS.3,f+4",
+      "input": "LFS.3,f+4",
+      "name": "Flamingo Side Kick > Backlash",
+      "level": ",h",
+      "startup": "i21~27",
+      "displayStartup": "i21~27 (string)",
+      "block": "-1",
+      "hit": "+40a (+14)",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Combo from 1st CH with 6?F delay",
+        "-1 on block on average. Frame advantage may range from -4~+2 on block"
+      ],
+      "video": "https://wavu.wiki/w/images/b/b6/T8-p2-hwoarang-lfs.3%2Cf%2B4.mp4"
+    },
+    "lfs-4": {
+      "wavuId": "Hwoarang-LFS.4",
+      "input": "LFS.4",
+      "name": "Right Step Kick",
+      "level": "h",
+      "startup": "i14~16",
+      "displayStartup": "i14~16 (string)",
+      "block": "+4",
+      "hit": "+27a (+18)",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Transition to RFS"
+      ],
+      "video": "https://wavu.wiki/w/images/4/4c/T8-p2-hwoarang-lfs.4.mp4"
+    },
+    "lfs-4t3": {
+      "wavuId": "Hwoarang-LFS.4~3",
+      "input": "LFS.4~3",
+      "name": "Lightning Halberd",
+      "level": "h,h",
+      "startup": "i15~16 (i20~21), i8~9",
+      "displayStartup": "i15~16 (i20~21), i8~9 (string)",
+      "block": "+6",
+      "hit": "+24a (+14)",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "7 chip damage on block",
+        "Jail from 1st block",
+        "i20 actual startup: cancel takes 5f",
+        "Input 4 on frame 1 to power up",
+        "45dmg on hit, 8 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/2/21/T8-p2-hwoarang-lfs.4~3.mp4"
+    },
+    "lfs-b1": {
+      "wavuId": "Hwoarang-LFS.b+1",
+      "input": "LFS.b+1",
+      "name": "Stealth Needle",
+      "level": "m",
+      "startup": "i15",
+      "block": "-15",
+      "hit": "-1",
+      "ch": null,
+      "notes": [
+        "Sidesteps to the right"
+      ]
+    },
+    "lfs-b3": {
+      "wavuId": "Hwoarang-LFS.b+3",
+      "input": "LFS.b+3",
+      "name": "Left Thunderbolt",
+      "level": "m",
+      "startup": "i20~22",
+      "displayStartup": "i20~22 (string)",
+      "block": "-12",
+      "hit": "+14",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Power up if an attack is absorbed",
+        "Reversal Break",
+        "9 chip damage on block",
+        "-8 on block",
+        "Transition to RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/e/ef/T8-p2-hwoarang-lfs.b%2B3.mp4"
+    },
+    "lfs-b4": {
+      "wavuId": "Hwoarang-LFS.b+4",
+      "input": "LFS.b+4",
+      "name": "Combat Middle",
+      "level": "m",
+      "startup": "i16~17",
+      "displayStartup": "i16~17 (string)",
+      "block": "-8",
+      "hit": "+0",
+      "ch": null,
+      "notes": [
+        "Transition to RFF"
+      ]
+    },
+    "lfs-b4-3": {
+      "wavuId": "Hwoarang-LFS.b+4,3",
+      "input": "LFS.b+4,3",
+      "name": "Flamingo Screw Kick",
+      "level": ",h",
+      "startup": "i16~19",
+      "displayStartup": "i16~19 (string)",
+      "block": "+0",
+      "hit": "+20a (+11)",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Combo from 1st CH",
+        "Jail from 1st block",
+        "6 chip damage on block",
+        "Transition to RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/2/22/T8-p2-hwoarang-lfs.b%2B4%2C3.mp4"
+    },
+    "lfs-d3": {
+      "wavuId": "Hwoarang-LFS.d+3",
+      "input": "LFS.d+3",
+      "name": "LFS.d+3",
+      "level": "L",
+      "startup": "i16",
+      "block": "-17",
+      "hit": "-6",
+      "ch": null,
+      "notes": [
+        "-6c on crouching hit"
+      ]
+    },
+    "lfs-d3-4": {
+      "wavuId": "Hwoarang-LFS.d+3,4",
+      "input": "LFS.d+3,4",
+      "name": "Flamingo Low Right",
+      "level": ",h",
+      "startup": "i21~23",
+      "displayStartup": "i21~23 (string)",
+      "block": "+8g~+10g",
+      "hit": "+14g~+16g",
+      "ch": "+19~+21",
+      "notes": [
+        "Combo from 1st hit with 1F delay",
+        "Move cannot be delayed",
+        "Input can be delayed by 1F",
+        "Transition to RFS"
+      ],
+      "video": "https://wavu.wiki/w/images/a/a2/T8-p2-hwoarang-lfs.d%2B3%2C4.mp4"
+    },
+    "lfs-d4": {
+      "wavuId": "Hwoarang-LFS.d+4",
+      "input": "LFS.d+4",
+      "name": "Combat Low",
+      "level": "L",
+      "startup": "i20~21",
+      "displayStartup": "i20~21 (string)",
+      "block": "-12",
+      "hit": "+4",
+      "ch": "+14d",
+      "notes": [
+        "Transition to RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/4/47/T8-p2-hwoarang-lfs.d%2B4.mp4"
+    },
+    "lfs-df3": {
+      "wavuId": "Hwoarang-LFS.df+3",
+      "input": "LFS.df+3",
+      "name": "LFS.df+3",
+      "level": "m",
+      "startup": "i22~23",
+      "displayStartup": "i22~23 (string)",
+      "block": "-14",
+      "hit": "-4",
+      "ch": null,
+      "notes": [
+        "Cancel and transition to r1 LFS with F_U_D at frame 20 of move startup",
+        "Power up if an attack is absorbed",
+        "Reversal Break",
+        "2 chip damage on block",
+        "-9 on block"
+      ]
+    },
+    "lfs-df3-4": {
+      "wavuId": "Hwoarang-LFS.df+3,4",
+      "input": "LFS.df+3,4",
+      "name": "Flamingo Double Claymore",
+      "level": ",m",
+      "startup": "i24~25",
+      "displayStartup": "i24~25 (string)",
+      "block": "-14",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "Combo from 1st hit with 7F delay",
+        "Move can be delayed by 5F",
+        "Input can be delayed by 7F",
+        "Power up if an attack is absorbed by previous hit",
+        "Reversal Break",
+        "?",
+        "4 chip damage on block",
+        "-9 on block"
+      ],
+      "video": "https://wavu.wiki/w/images/0/09/T8-p2-hwoarang-lfs.df%2B3%2C4.mp4"
+    },
+    "lfs-f3": {
+      "wavuId": "Hwoarang-LFS.f+3",
+      "input": "LFS.f+3",
+      "name": "Flamingo Rocket",
+      "level": "m",
+      "startup": "i19~20",
+      "displayStartup": "i19~20 (string)",
+      "block": "+4",
+      "hit": "+26a",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Heat Engager",
+        "Heat Dash +5, +36a (+26)",
+        "Remains in LFS (does not transition on Heat activation or when using Heat Dash)"
+      ],
+      "video": "https://wavu.wiki/w/images/b/b0/T8-p2-hwoarang-lfs.f%2B3.mp4"
+    },
+    "lfs-f4": {
+      "wavuId": "Hwoarang-LFS.f+4",
+      "input": "LFS.f+4",
+      "name": "Spinning Hook Kick",
+      "level": "m",
+      "startup": "i17~18",
+      "displayStartup": "i17~18 (string)",
+      "block": "-10",
+      "hit": "+6",
+      "ch": "+16a (+7)",
+      "notes": [
+        "Homing",
+        "Balcony Break",
+        "on CH"
+      ],
+      "video": "https://wavu.wiki/w/images/5/5c/T8-p2-hwoarang-lfs.f%2B4.mp4"
+    },
+    "lfs-uf3": {
+      "wavuId": "Hwoarang-LFS.uf+3",
+      "input": "LFS.uf+3",
+      "name": "LFS.uf+3",
+      "level": "m",
+      "startup": "i28~29",
+      "displayStartup": "i28~29 (string)",
+      "block": "-6",
+      "hit": "-7",
+      "ch": null,
+      "notes": []
+    },
+    "lfs-uf3plus4": {
+      "wavuId": "Hwoarang-LFS.uf+3+4",
+      "input": "LFS.uf+3+4",
+      "name": "LFS.uf+3+4",
+      "level": "m,h",
+      "startup": "i14, i9",
+      "displayStartup": "i14, i9 (string)",
+      "block": "-10",
+      "hit": "+1",
+      "ch": null,
+      "notes": [
+        "Jails from 1st block",
+        "Transition to LFS with F (-2/+9)"
+      ]
+    },
+    "lfs-uf3-4-3": {
+      "wavuId": "Hwoarang-LFS.uf+3,4,3",
+      "input": "LFS.uf+3,4,3",
+      "name": "Flamingo Hunting Hawk",
+      "level": ",m",
+      "startup": "i27~28",
+      "displayStartup": "i27~28 (string)",
+      "block": "-14",
+      "hit": "+0c",
+      "ch": null,
+      "notes": [
+        "Combo from 1st hit"
+      ],
+      "video": "https://wavu.wiki/w/images/f/fa/T8-p2-hwoarang-lfs.uf%2B3%2C4%2C3.mp4"
+    },
+    "lfs-uf3plus4-4": {
+      "wavuId": "Hwoarang-LFS.uf+3+4,4",
+      "input": "LFS.uf+3+4,4",
+      "name": "Flamingo Flashing Trident",
+      "level": ",m",
+      "startup": "i14~15",
+      "displayStartup": "i14~15 (string)",
+      "block": "-10",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "Combo from 1st hit",
+        "Transition to RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/f/f0/T8-p2-hwoarang-lfs.uf%2B3%2B4%2C4.mp4"
+    },
+    "lfs-uf4": {
+      "wavuId": "Hwoarang-LFS.uf+4",
+      "input": "LFS.uf+4",
+      "name": "Switch Plasma Blade",
+      "level": "M",
+      "startup": "i19~20",
+      "displayStartup": "i19~20 (string)",
+      "block": "-14",
+      "hit": "+32a (+22)",
+      "ch": null,
+      "notes": [
+        "Tornado"
+      ],
+      "video": "https://wavu.wiki/w/images/8/88/T8-p2-hwoarang-lfs.uf%2B4.mp4"
+    },
+    "qcb3": {
+      "wavuId": "Hwoarang-qcb+3",
+      "input": "qcb+3",
+      "name": "Door Mat",
+      "level": "th(h)",
+      "startup": "i11",
+      "block": "-2",
+      "hit": "-5d",
+      "ch": null,
+      "notes": [
+        "Floor Break",
+        "Break: 1",
+        "Opponent recovery on hit: FUFA, sideswap"
+      ],
+      "video": "https://wavu.wiki/w/images/e/e5/T8-p2-hwoarang-d%2Cdb%2Cb%2B3.mp4"
+    },
+    "r-df1plus2": {
+      "wavuId": "Hwoarang-R.df+1+2",
+      "input": "R.df+1+2",
+      "name": "Sky Burial",
+      "level": "m,t",
+      "startup": "i20",
+      "block": "-18",
+      "hit": "+0d",
+      "ch": null,
+      "notes": [
+        "Rage Art",
+        "Removes Recoverable Health",
+        "Reversal Break",
+        "Damage increases with lower health, maximum 82",
+        "Freezes match timer on activation and on hit",
+        "Restores recoverable health on hit",
+        "Transition to attack throw on hit",
+        "Consumes Rage",
+        "Possible during RFF, LFS and RFS"
+      ]
+    },
+    "rff-1": {
+      "wavuId": "Hwoarang-RFF.1",
+      "input": "RFF.1",
+      "name": "RFF.1",
+      "level": "h",
+      "startup": "i10",
+      "block": "+0",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "Remains in RFF"
+      ]
+    },
+    "rff-1-1": {
+      "wavuId": "Hwoarang-RFF.1,1",
+      "input": "RFF.1,1",
+      "name": "Migraine",
+      "level": ",m",
+      "startup": "i19",
+      "block": "-8",
+      "hit": "+3",
+      "ch": null,
+      "notes": [
+        "Combo from 1st hit with 4F delay",
+        "Input can be delayed by 4F",
+        "Move can be delayed by 3F"
+      ],
+      "video": "https://wavu.wiki/w/images/2/22/T8-p2-hwoarang-rff.1%2C1.mp4"
+    },
+    "rff-2": {
+      "wavuId": "Hwoarang-RFF.2",
+      "input": "RFF.2",
+      "name": "RFF.2",
+      "level": "h",
+      "startup": "i10",
+      "block": "+2",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "Remains in RFF"
+      ]
+    },
+    "rff-2-1-1": {
+      "wavuId": "Hwoarang-RFF.2,1,1",
+      "input": "RFF.2,1,1",
+      "name": "Big Fists",
+      "level": ",m",
+      "startup": "i19",
+      "block": "-8",
+      "hit": "+3",
+      "ch": null,
+      "notes": [
+        "Combo from 1st hit with 4F delay",
+        "Input can be delayed by 4F",
+        "Move can be delayed by 3F"
+      ],
+      "video": "https://wavu.wiki/w/images/3/36/T8-p2-hwoarang-rff.2%2C1%2C1.mp4"
+    },
+    "rff-2-3": {
+      "wavuId": "Hwoarang-RFF.2,3",
+      "input": "RFF.2,3",
+      "name": "Hawk Strike",
+      "level": ",h",
+      "startup": "i19~20",
+      "displayStartup": "i19~20 (string)",
+      "block": "-9",
+      "hit": "+20g",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Tornado",
+        "Forces crouch on hit",
+        "Combo from 1st hit with 2F delay",
+        "Input can be delayed by 2F",
+        "Move cannot be delayed"
+      ],
+      "video": "https://wavu.wiki/w/images/1/19/T8-p2-hwoarang-rff.2%2C3.mp4"
+    },
+    "rff-2-4-3": {
+      "wavuId": "Hwoarang-RFF.2,4,3",
+      "input": "RFF.2,4,3",
+      "name": "Chainsaw Kick Combo",
+      "level": ",M",
+      "startup": "i25~31",
+      "displayStartup": "i25~31 (string)",
+      "block": "-14c",
+      "hit": "+14d",
+      "ch": null,
+      "notes": [
+        "Combo from 2nd CH with 2F delay",
+        "Move can be delayed by 10F",
+        "Remains in RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/a/a9/T8-p2-hwoarang-rff.2%2C4%2C3.mp4"
+    },
+    "rff-2-4-4": {
+      "wavuId": "Hwoarang-RFF.2,4,4",
+      "input": "RFF.2,4,4",
+      "name": "Right Reverse Kick Combo",
+      "level": ",h",
+      "startup": "i18~19",
+      "displayStartup": "i18~19 (string)",
+      "block": "-5",
+      "hit": "+41a",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Jail from 2nd block with no delay",
+        "Does not jail from 2nd hit",
+        "Combo from 2nd CH with 9F delay",
+        "Move can be delayed by 10F"
+      ],
+      "video": "https://wavu.wiki/w/images/0/0f/T8-p2-hwoarang-rff.2%2C4%2C4.mp4"
+    },
+    "rff-3": {
+      "wavuId": "Hwoarang-RFF.3",
+      "input": "RFF.3",
+      "name": "RFF.3",
+      "level": "m",
+      "startup": "i16",
+      "block": "-4",
+      "hit": "+7",
+      "ch": null,
+      "notes": []
+    },
+    "rff-3-4": {
+      "wavuId": "Hwoarang-RFF.3,4",
+      "input": "RFF.3,4",
+      "name": "Volcannon",
+      "level": ",h",
+      "startup": "i27~28",
+      "displayStartup": "i27~28 (string)",
+      "block": "+10g~+11g",
+      "hit": "+21g~+22g",
+      "ch": "+11~+12",
+      "notes": [
+        "Combo from 1st hit",
+        "Transition to RFS",
+        "Cancel and transition to r8? RFS with F (-12/-1)"
+      ],
+      "video": "https://wavu.wiki/w/images/1/1d/T8-p2-hwoarang-rff.3%2C4.mp4"
+    },
+    "rff-3t4": {
+      "wavuId": "Hwoarang-RFF.3~4",
+      "input": "RFF.3~4",
+      "name": "Backlash",
+      "level": "h",
+      "startup": "i27~30",
+      "displayStartup": "i27~30 (string)",
+      "block": "+4~+7",
+      "hit": "+46a~+49",
+      "ch": null,
+      "notes": [
+        "Strong Aerial Tailspin",
+        "Homing",
+        "Balcony Break",
+        "Clean hit, 35dmg",
+        "Input 4 on frames 1~4",
+        "10 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/3/32/T8-p2-hwoarang-rff.3~4.mp4"
+    },
+    "rff-4": {
+      "wavuId": "Hwoarang-RFF.4",
+      "input": "RFF.4",
+      "name": "RFF.4",
+      "level": "h",
+      "startup": "i12",
+      "block": "-8",
+      "hit": "+3",
+      "ch": null,
+      "notes": [
+        "Remains in RFF",
+        "Transition to RFS with F_B_D_U (+4/+16g/+16)",
+        "i13 RFS followups guaranteed on CH?"
+      ]
+    },
+    "rff-4-3": {
+      "wavuId": "Hwoarang-RFF.4,3",
+      "input": "RFF.4,3",
+      "name": "Chainsaw Kick",
+      "level": ",M",
+      "startup": "i25~31",
+      "displayStartup": "i25~31 (string)",
+      "block": "-14c",
+      "hit": "+14d",
+      "ch": null,
+      "notes": [
+        "Remains in RFF",
+        "Combo from 1st CH with 2F delay",
+        "Move can be delayed by 10F"
+      ],
+      "video": "https://wavu.wiki/w/images/1/10/T8-p2-hwoarang-rff.4%2C3.mp4"
+    },
+    "rff-4-4": {
+      "wavuId": "Hwoarang-RFF.4,4",
+      "input": "RFF.4,4",
+      "name": "Right Reverse Kick",
+      "level": ",h",
+      "startup": "i18~19",
+      "displayStartup": "i18~19 (string)",
+      "block": "-5",
+      "hit": "+41a",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Jail from 1st block with no delay",
+        "Combo from 1st CH with 9F delay",
+        "Move can be delayed by 10F"
+      ],
+      "video": "https://wavu.wiki/w/images/8/88/T8-p2-hwoarang-rff.4%2C4.mp4"
+    },
+    "rff-b1": {
+      "wavuId": "Hwoarang-RFF.b+1",
+      "input": "RFF.b+1",
+      "name": "Left Back Elbow",
+      "level": "h",
+      "startup": "i14",
+      "block": "-4",
+      "hit": "+6",
+      "ch": "+14c",
+      "notes": [
+        "Elbow",
+        "Has good left sidestep tracking"
+      ]
+    },
+    "rff-b2": {
+      "wavuId": "Hwoarang-RFF.b+2",
+      "input": "RFF.b+2",
+      "name": "Blast Fist",
+      "level": "m",
+      "startup": "i16~17",
+      "displayStartup": "i16~17 (string)",
+      "block": "+4~+5",
+      "hit": "+6c~+7c",
+      "ch": "+25d~+26d",
+      "notes": [
+        "5 chip damage on block",
+        "Remains in RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/1/13/T8-p2-hwoarang-rff.b%2B2.mp4"
+    },
+    "rff-b3": {
+      "wavuId": "Hwoarang-RFF.b+3",
+      "input": "RFF.b+3",
+      "name": "Nose Bleeder",
+      "level": "h",
+      "startup": "i13~14",
+      "displayStartup": "i13~14 (string)",
+      "block": "-10",
+      "hit": "+1",
+      "ch": "+50a",
+      "notes": [
+        "Sidesteps to the right"
+      ]
+    },
+    "rff-b4": {
+      "wavuId": "Hwoarang-RFF.b+4",
+      "input": "RFF.b+4",
+      "name": "Spin Kick",
+      "level": "h",
+      "startup": "i18~19",
+      "displayStartup": "i18~19 (string)",
+      "block": "-9",
+      "hit": "+12g",
+      "ch": "+13c",
+      "notes": [
+        "Balcony Break"
+      ],
+      "video": "https://wavu.wiki/w/images/d/da/T8-p2-hwoarang-rff.b%2B4.mp4"
+    },
+    "rff-d3": {
+      "wavuId": "Hwoarang-RFF.d+3",
+      "input": "RFF.d+3",
+      "name": "RFF.d+3",
+      "level": "L",
+      "startup": "i18",
+      "block": "-11",
+      "hit": "+0",
+      "ch": null,
+      "notes": [
+        "Transition to BT",
+        "+0c on crouching hit"
+      ]
+    },
+    "rff-d3plus4": {
+      "wavuId": "Hwoarang-RFF.d+3+4",
+      "input": "RFF.d+3+4",
+      "name": "Heel Screw",
+      "level": "L",
+      "startup": "i19",
+      "block": "-11",
+      "hit": "+5",
+      "ch": "+15g",
+      "notes": [
+        "Remains in RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/7/7c/T8-p2-hwoarang-rff.d%2B3%2B4.mp4"
+    },
+    "rff-d3-4": {
+      "wavuId": "Hwoarang-RFF.d+3,4",
+      "input": "RFF.d+3,4",
+      "name": "Triumph Low Right",
+      "level": ",h",
+      "startup": "i21~23",
+      "displayStartup": "i21~23 (string)",
+      "block": "+8g~+10g",
+      "hit": "+14g~+16g",
+      "ch": "+19~+21",
+      "notes": [
+        "Combo from 1st hit",
+        "Transition to RFS"
+      ],
+      "video": "https://wavu.wiki/w/images/d/da/T8-p2-hwoarang-rff.d%2B3%2C4.mp4"
+    },
+    "rff-df2plus3": {
+      "wavuId": "Hwoarang-RFF.df+2+3",
+      "input": "RFF.df+2+3",
+      "name": "RFF.df+2+3",
+      "level": "m",
+      "startup": "i22~23",
+      "displayStartup": "i22~23 (string)",
+      "block": "-14",
+      "hit": "-4",
+      "ch": null,
+      "notes": [
+        "Power up if an attack is absorbed",
+        "Reversal Break",
+        "2 chip damage on block",
+        "-9 on block",
+        "Cancel and transition to r1 LFS with F_U_D at frame 20 of move startup"
+      ]
+    },
+    "rff-df2plus3-4": {
+      "wavuId": "Hwoarang-RFF.df+2+3,4",
+      "input": "RFF.df+2+3,4",
+      "name": "Double Claymore",
+      "level": ",m",
+      "startup": "i24~25",
+      "displayStartup": "i24~25 (string)",
+      "block": "-14",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "Power up if an attack is absorbed by previous hit",
+        "Reversal Break",
+        "?",
+        "4 chip damage on block",
+        "-9 on block",
+        "Combo from 1st hit with 7F delay",
+        "Move can be delayed by 5F",
+        "Input can be delayed by 7F"
+      ]
+    },
+    "rff-df3": {
+      "wavuId": "Hwoarang-RFF.df+3",
+      "input": "RFF.df+3",
+      "name": "Black Kite",
+      "level": "m",
+      "startup": "i22~24",
+      "displayStartup": "i22~24 (string)",
+      "block": "+1",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "Homing",
+        "Heat Engager",
+        "Heat Dash +5, +43d (+35)",
+        "Balcony Break",
+        "Remains in RFF (transitions to LFF on Heat activation or when using Heat Dash)"
+      ],
+      "video": "https://wavu.wiki/w/images/2/27/T8-p2-hwoarang-rff.df%2B3.mp4"
+    },
+    "rff-df4": {
+      "wavuId": "Hwoarang-RFF.df+4",
+      "input": "RFF.df+4",
+      "name": "Right Sidekick",
+      "level": "m",
+      "startup": "i13",
+      "block": "-7",
+      "hit": "+1g",
+      "ch": "+1",
+      "notes": [
+        "Remains in RFF",
+        "Transition to RFS with F_B_D_U (+4/+13g/+13)"
+      ],
+      "video": "https://wavu.wiki/w/images/b/b7/T8-p2-hwoarang-rff.df%2B4.mp4"
+    },
+    "rff-f1": {
+      "wavuId": "Hwoarang-RFF.f+1",
+      "input": "RFF.f+1",
+      "name": "RFF.f+1",
+      "level": "h",
+      "startup": "i10",
+      "block": "+1",
+      "hit": "+8",
+      "ch": null,
+      "notes": []
+    },
+    "rff-f1-2": {
+      "wavuId": "Hwoarang-RFF.f+1,2",
+      "input": "RFF.f+1,2",
+      "name": "Left Right Combo",
+      "level": ",h",
+      "startup": "i10",
+      "block": "-3",
+      "hit": "+6",
+      "ch": null,
+      "notes": [
+        "Jail from 1st block with 4F delay",
+        "Combo from 1st hit with 4F delay"
+      ]
+    },
+    "rff-f3": {
+      "wavuId": "Hwoarang-RFF.f+3",
+      "input": "RFF.f+3",
+      "name": "Cheap Shot",
+      "level": "h",
+      "startup": "i14~17",
+      "displayStartup": "i14~17 (string)",
+      "block": "+12~+15",
+      "hit": "+23~+26",
+      "ch": null,
+      "notes": [
+        "Transition to LFS",
+        "Transition to r44? BT with B (-11~-8/+0~+3)"
+      ],
+      "video": "https://wavu.wiki/w/images/2/2e/T8-p2-hwoarang-rff.f%2B3.mp4"
+    },
+    "rff-f4t4": {
+      "wavuId": "Hwoarang-RFF.f+4~4",
+      "input": "RFF.f+4~4",
+      "name": "Plasma Blade",
+      "level": "M",
+      "startup": "i18~20",
+      "displayStartup": "i18~20 (string)",
+      "block": "-13",
+      "hit": "+41a (+31)",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "Remains in RFF"
+      ]
+    },
+    "rff-f-f3": {
+      "wavuId": "Hwoarang-RFF.f,F+3",
+      "input": "RFF.f,F+3",
+      "name": "Hunting Heel",
+      "level": "M",
+      "startup": "i22~25",
+      "displayStartup": "i22~25 (string)",
+      "block": "-7",
+      "hit": "+19d",
+      "ch": null,
+      "notes": [],
+      "video": "https://wavu.wiki/w/images/a/ab/T8-p2-hwoarang-rff.f%2Cf%2B3.mp4"
+    },
+    "rfs-1": {
+      "wavuId": "Hwoarang-RFS.1",
+      "input": "RFS.1",
+      "name": "Left Punch",
+      "level": "m",
+      "startup": "i16",
+      "block": "-2",
+      "hit": "+9",
+      "ch": null,
+      "notes": [
+        "Links to 10-hit string"
+      ],
+      "video": "https://wavu.wiki/w/images/1/13/T8-p2-hwoarang-rfs.1.mp4"
+    },
+    "rfs-2": {
+      "wavuId": "Hwoarang-RFS.2",
+      "input": "RFS.2",
+      "name": "Right Flamingo > Back Hand",
+      "level": "h",
+      "startup": "i13",
+      "block": "+5",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "Transition to RFF",
+        "Links to RFF.2 extensions"
+      ],
+      "video": "https://wavu.wiki/w/images/1/11/T8-p2-hwoarang-rfs.2.mp4"
+    },
+    "rfs-3": {
+      "wavuId": "Hwoarang-RFS.3",
+      "input": "RFS.3",
+      "name": "Left Step Kick",
+      "level": "h",
+      "startup": "i14~16",
+      "displayStartup": "i14~16 (string)",
+      "block": "+4",
+      "hit": "+27a (+18)",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Transition to LFS",
+        "Sidesteps to the left",
+        "Increased chip damage scaling on block during heat",
+        "7 chip damage on block in heat"
+      ],
+      "video": "https://wavu.wiki/w/images/4/49/T8-p2-hwoarang-rfs.3.mp4"
+    },
+    "rfs-3t4": {
+      "wavuId": "Hwoarang-RFS.3~4",
+      "input": "RFS.3~4",
+      "name": "Flying Eagle",
+      "level": "m,m",
+      "startup": "i16,i7",
+      "displayStartup": "i16,i7 (string)",
+      "block": "-3",
+      "hit": "+26 (+16)",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Jail from 1st block",
+        "Increased chip damage scaling on block during heat",
+        "9 chip damage on block in heat",
+        "Input 4 on frames 1 to 7",
+        "Input 4 on frame 1 to power up",
+        "37dmg on hit, +1 on block",
+        "14 chip damage on block in heat"
+      ]
+    },
+    "rfs-4": {
+      "wavuId": "Hwoarang-RFS.4",
+      "input": "RFS.4",
+      "name": "Right Kick",
+      "level": "m",
+      "startup": "i14",
+      "block": "-9",
+      "hit": "+3",
+      "ch": null,
+      "notes": [
+        "Transition to RFF",
+        "Increased chip damage scaling on block during heat",
+        "5 chip damage on block in heat"
+      ],
+      "video": "https://wavu.wiki/w/images/f/fa/T8-p2-hwoarang-rfs.4.mp4"
+    },
+    "rfs-4-3": {
+      "wavuId": "Hwoarang-RFS.4,3",
+      "input": "RFS.4,3",
+      "name": "Double Phalanx",
+      "level": ",m",
+      "startup": ",i23~24",
+      "displayStartup": ",i23~24 (string)",
+      "block": "+4",
+      "hit": "+25a (+16)",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "Balcony Break",
+        "Transition to LFS",
+        "Combo from 1st CH",
+        "Combo from 1st hit during heat",
+        "Increased chip damage scaling on block during heat",
+        "4 chip damage on block in heat"
+      ]
+    },
+    "rfs-b3": {
+      "wavuId": "Hwoarang-RFS.b+3",
+      "input": "RFS.b+3",
+      "name": "Left Heel Lance",
+      "level": "m",
+      "startup": "i16~17",
+      "displayStartup": "i16~17 (string)",
+      "block": "-9",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "Heat Engager",
+        "Heat Dash +5, +42a (+27)",
+        "Increased chip damage scaling on block during heat",
+        "6 chip damage on block in heat"
+      ],
+      "video": "https://wavu.wiki/w/images/d/d5/T8-p2-hwoarang-rfs.b%2B3.mp4"
+    },
+    "rfs-b4": {
+      "wavuId": "Hwoarang-RFS.b+4",
+      "input": "RFS.b+4",
+      "name": "Right Thunderbolt",
+      "level": "m",
+      "startup": "i20~22",
+      "displayStartup": "i20~22 (string)",
+      "block": "-12",
+      "hit": "+14g",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Power up if an attack is absorbed",
+        "Reversal Break",
+        "9 chip damage on block",
+        "-8 on block",
+        "Increased chip damage scaling on block during heat",
+        "6 chip damage on block in heat",
+        "9 chip damage on block after absorbing an attack"
+      ],
+      "video": "https://wavu.wiki/w/images/0/0d/T8-p2-hwoarang-rfs.b%2B4.mp4"
+    },
+    "rfs-d3": {
+      "wavuId": "Hwoarang-RFS.d+3",
+      "input": "RFS.d+3",
+      "name": "RFS.d+3",
+      "level": "L",
+      "startup": "i15",
+      "block": "-13",
+      "hit": "-5",
+      "ch": "+2",
+      "notes": [
+        "Transition to RFF",
+        "Increased chip damage scaling on block during heat",
+        "3 chip damage on block in heat",
+        "cs10~19 crush state when canceled into followup"
+      ]
+    },
+    "rfs-d3-3": {
+      "wavuId": "Hwoarang-RFS.d+3,3",
+      "input": "RFS.d+3,3",
+      "name": "Teaser",
+      "level": ",h",
+      "startup": "i25~27",
+      "displayStartup": "i25~27 (string)",
+      "block": "-2",
+      "hit": "+34a (+8)",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Combo from 1st CH with 4F delay",
+        "Move cannot be delayed",
+        "Input can be delayed by 4F",
+        "11 chip damage on block",
+        "Increased chip damage scaling on block during heat",
+        "14 chip damage on block in heat"
+      ],
+      "video": "https://wavu.wiki/w/images/4/49/T8-p2-hwoarang-rfs.d%2B3%2C3.mp4"
+    },
+    "rfs-d4": {
+      "wavuId": "Hwoarang-RFS.d+4",
+      "input": "RFS.d+4",
+      "name": "RFS.d+4",
+      "level": "L",
+      "startup": "i20~21",
+      "displayStartup": "i20~21 (string)",
+      "block": "-23",
+      "hit": "+7c",
+      "ch": null,
+      "notes": [
+        "Transition to RFF"
+      ]
+    },
+    "rfs-d4-3-4": {
+      "wavuId": "Hwoarang-RFS.d+4,3,4",
+      "input": "RFS.d+4,3,4",
+      "name": "Predator Bardiche",
+      "level": ",h",
+      "startup": "i27~28",
+      "displayStartup": "i27~28 (string)",
+      "block": "-9",
+      "hit": "+28a (+2) / +10a (+9)",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Power up in Heat: 30dmg and increased chip damage on block",
+        "Combo from 2nd CH",
+        "Airborne combo from 1st CH",
+        "+10a (+9) on hit",
+        "10 dmg, 36 total dmg from 1st CH"
+      ],
+      "video": "https://wavu.wiki/w/images/8/85/T8-p2-hwoarang-rfs.d%2B4%2C3%2C4.mp4"
+    },
+    "rfs-df4": {
+      "wavuId": "Hwoarang-RFS.df+4",
+      "input": "RFS.df+4",
+      "name": "Snap Kick",
+      "level": "m",
+      "startup": "i17~19",
+      "displayStartup": "i17~19 (string)",
+      "block": "+1",
+      "hit": "+8c",
+      "ch": "+26a",
+      "notes": [
+        "Increased chip damage scaling on block during heat",
+        "4 chip damage on block in heat"
+      ],
+      "video": "https://wavu.wiki/w/images/5/57/T8-p2-hwoarang-rfs.df%2B4.mp4"
+    },
+    "rfs-f3": {
+      "wavuId": "Hwoarang-RFS.f+3",
+      "input": "RFS.f+3",
+      "name": "Screw Kick",
+      "level": "m",
+      "startup": "i20~21",
+      "displayStartup": "i20~21 (string)",
+      "block": "-10",
+      "hit": "+5",
+      "ch": "+15a (+6)",
+      "notes": [
+        "Homing",
+        "Increased chip damage scaling on block during heat",
+        "5 chip damage on block in heat"
+      ],
+      "video": "https://wavu.wiki/w/images/f/f0/T8-p2-hwoarang-rfs.f%2B3.mp4"
+    },
+    "rfs-f4": {
+      "wavuId": "Hwoarang-RFS.f+4",
+      "input": "RFS.f+4",
+      "name": "RFS.f+4",
+      "level": "h,h",
+      "startup": "i8, i10",
+      "displayStartup": "i8, i10 (string)",
+      "block": "+0",
+      "hit": "+2",
+      "ch": "+5",
+      "notes": [
+        "Jail from 1st block",
+        "+6 on 2nd CH",
+        "Remains in RFS",
+        "Power up during Heat"
+      ]
+    },
+    "rfs-f4-4": {
+      "wavuId": "Hwoarang-RFS.f+4,4",
+      "input": "RFS.f+4,4",
+      "name": "Right Viper Combo > Right Sword",
+      "level": ",h",
+      "startup": "i23",
+      "block": "-6",
+      "hit": "+75a (+59)",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "Combo from 1st or 2nd CH",
+        "Transition to RFF"
+      ]
+    },
+    "rfs-u4": {
+      "wavuId": "Hwoarang-RFS.u+4",
+      "input": "RFS.u+4",
+      "name": "Raptor Claw",
+      "level": "h",
+      "startup": "i25~26",
+      "displayStartup": "i25~26 (string)",
+      "block": "-2",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "Homing",
+        "Transition to RFF",
+        "Link to LFF.(4,4,4),4 extension",
+        "Combo from 1st hit with 4F input delay",
+        "Extension cannot be delayed",
+        "Increased chip damage scaling on block during heat",
+        "5 chip damage on block in heat"
+      ],
+      "video": "https://wavu.wiki/w/images/a/a9/T8-p2-hwoarang-rfs.u%2B4.mp4"
+    },
+    "rfs-uf3": {
+      "wavuId": "Hwoarang-RFS.uf+3",
+      "input": "RFS.uf+3",
+      "name": "Flamingo Hunting Heel",
+      "level": "M",
+      "startup": "i24~27",
+      "displayStartup": "i24~27 (string)",
+      "block": "-7",
+      "hit": "+19d",
+      "ch": null,
+      "notes": [
+        "Increased chip damage scaling on block during heat",
+        "6 chip damage on block in heat"
+      ],
+      "video": "https://wavu.wiki/w/images/8/82/T8-p2-hwoarang-rfs.uf%2B3.mp4"
+    },
+    "rfs-uf4": {
+      "wavuId": "Hwoarang-RFS.uf+4",
+      "input": "RFS.uf+4",
+      "name": "Air Blade",
+      "level": "m",
+      "startup": "i17~18",
+      "displayStartup": "i17~18 (string)",
+      "block": "-13",
+      "hit": "+30a (+20)",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "Transition to RFF",
+        "Increased chip damage scaling on block during heat",
+        "6 chip damage on block in heat"
+      ],
+      "video": "https://wavu.wiki/w/images/1/12/T8-p2-hwoarang-rfs.uf%2B4.mp4"
+    },
+    "ss-3": {
+      "wavuId": "Hwoarang-SS.3",
+      "input": "SS.3",
+      "name": "SS.3",
+      "level": "m",
+      "startup": "i18~19",
+      "displayStartup": "i18~19 (string)",
+      "block": "-12",
+      "hit": "-1",
+      "ch": "+5s",
+      "notes": []
+    },
+    "ss-3-3": {
+      "wavuId": "Hwoarang-SS.3,3",
+      "input": "SS.3,3",
+      "name": "Eruption",
+      "level": ",h",
+      "startup": "i9~10",
+      "displayStartup": "i9~10 (string)",
+      "block": "+3",
+      "hit": "+14g",
+      "ch": "+14",
+      "notes": [
+        "Jail from 1st block",
+        "Combo from 1st hit",
+        "+34a (+27) on 1st CH",
+        "Transition to LFS"
+      ],
+      "video": "https://wavu.wiki/w/images/5/5a/T8-p2-hwoarang-ss.3%2C3.mp4"
+    },
+    "ss-4": {
+      "wavuId": "Hwoarang-SS.4",
+      "input": "SS.4",
+      "name": "Spinning Trip Kick",
+      "level": "l",
+      "startup": "i19~20",
+      "displayStartup": "i19~20 (string)",
+      "block": "-13",
+      "hit": "+5c",
+      "ch": "+31a",
+      "notes": [
+        "Transition to RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/1/13/T8-p2-hwoarang-ss.4.mp4"
+    },
+    "u2": {
+      "wavuId": "Hwoarang-u+2",
+      "input": "u+2",
+      "name": "Knife Hand Strike",
+      "level": "h",
+      "startup": "i13~15",
+      "displayStartup": "i13~15 (string)",
+      "block": "-9",
+      "hit": "+15g",
+      "ch": null,
+      "notes": [
+        "Balcony Break",
+        "Homing",
+        "Also possible during RFF",
+        "Sidesteps to the left",
+        "Wall splats"
+      ]
+    },
+    "u3": {
+      "wavuId": "Hwoarang-u+3",
+      "input": "u+3",
+      "name": "Jump Kick",
+      "level": "h",
+      "startup": "i20",
+      "block": "+5",
+      "hit": "+44a (+38)",
+      "ch": null,
+      "notes": [
+        "Also possible during RFF",
+        "Transition to LFS"
+      ],
+      "video": "https://wavu.wiki/w/images/c/c2/T8-p2-hwoarang-u%2B3.mp4"
+    },
+    "u3plus4": {
+      "wavuId": "Hwoarang-u+3+4",
+      "input": "u+3+4",
+      "name": "Bloody Guillotine",
+      "level": "m",
+      "startup": "i25~26",
+      "displayStartup": "i25~26 (string)",
+      "block": "-7",
+      "hit": "+24a",
+      "ch": null,
+      "notes": [
+        "Also possible during RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/6/6d/T8-p2-hwoarang-u%2B3%2B4.mp4"
+    },
+    "u4": {
+      "wavuId": "Hwoarang-u+4",
+      "input": "u+4",
+      "name": "Scorpion Side Kick",
+      "level": "m",
+      "startup": "i16~18",
+      "displayStartup": "i16~18 (string)",
+      "block": "+3",
+      "hit": "+11g",
+      "ch": "+11",
+      "notes": [
+        "Also possible during RFF",
+        "Transition to RFS"
+      ],
+      "video": "https://wavu.wiki/w/images/5/50/T8-p2-hwoarang-u%2B4.mp4"
+    },
+    "ub4": {
+      "wavuId": "Hwoarang-ub+4",
+      "input": "ub+4",
+      "name": "Fade-Away Kick",
+      "level": "m",
+      "startup": "i17~20",
+      "displayStartup": "i17~20 (string)",
+      "block": "-8",
+      "hit": "+10",
+      "ch": null,
+      "notes": [
+        "Opponent recovers non-guarding on hit (situational guaranteed follow-up)",
+        "Also possible during RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/b/b4/T8-p2-hwoarang-ub%2B4.mp4"
+    },
+    "uf2": {
+      "wavuId": "Hwoarang-uf+2",
+      "input": "uf+2",
+      "name": "Bone Stinger",
+      "level": "m",
+      "startup": "i26",
+      "block": "+5c",
+      "hit": "+6c",
+      "ch": "+28d",
+      "notes": [
+        "Also possible during RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/b/b5/T8-p2-hwoarang-uf%2B2.mp4"
+    },
+    "uf3": {
+      "wavuId": "Hwoarang-uf+3",
+      "input": "uf+3",
+      "name": "uf+3",
+      "level": "m",
+      "startup": "i28~29",
+      "displayStartup": "i28~29 (string)",
+      "block": "-6",
+      "hit": "-7",
+      "ch": null,
+      "notes": [
+        "Also possible during RFF"
+      ]
+    },
+    "uf3plus4": {
+      "wavuId": "Hwoarang-uf+3+4",
+      "input": "uf+3+4",
+      "name": "uf+3+4",
+      "level": "m,h",
+      "startup": "i14,i9",
+      "displayStartup": "i14,i9 (string)",
+      "block": "-10",
+      "hit": "+1",
+      "ch": null,
+      "notes": [
+        "Jail from 1st block",
+        "Also possible during RFF",
+        "Transition to LFS with F (-2/+9)"
+      ]
+    },
+    "uf3-4-3": {
+      "wavuId": "Hwoarang-uf+3,4,3",
+      "input": "uf+3,4,3",
+      "name": "Hunting Hawk",
+      "level": ",m",
+      "startup": "i27~28",
+      "displayStartup": "i27~28 (string)",
+      "block": "-14",
+      "hit": "+0c",
+      "ch": null,
+      "notes": [
+        "Combo from 1st hit",
+        "Also possible during RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/1/16/T8-p2-hwoarang-uf%2B3%2C4%2C3.mp4"
+    },
+    "uf3plus4-4": {
+      "wavuId": "Hwoarang-uf+3+4,4",
+      "input": "uf+3+4,4",
+      "name": "Flashing Trident",
+      "level": ",m",
+      "startup": "i14~15",
+      "displayStartup": "i14~15 (string)",
+      "block": "-10",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "Combo from 1st hit",
+        "Also possible during RFF",
+        "Transition to RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/7/77/T8-p2-hwoarang-uf%2B3%2B4%2C4.mp4"
+    },
+    "uf4": {
+      "wavuId": "Hwoarang-uf+4",
+      "input": "uf+4",
+      "name": "uf+4",
+      "level": "h",
+      "startup": "i22~23",
+      "displayStartup": "i22~23 (string)",
+      "block": "-2",
+      "hit": "+4",
+      "ch": null,
+      "notes": [
+        "Also possible during RFF",
+        "Transition to RFS"
+      ]
+    },
+    "uf4-4-4": {
+      "wavuId": "Hwoarang-uf+4,4,4",
+      "input": "uf+4,4,4",
+      "name": "Air Raid",
+      "level": ",L",
+      "startup": "i9~10",
+      "displayStartup": "i9~10 (string)",
+      "block": "+1",
+      "hit": "+7",
+      "ch": null,
+      "notes": [
+        "Combo from 2nd CH",
+        "Also possible during RFF",
+        "Transition to RFS",
+        "Third hit is not low parryable if the first two hits connect. Parryable if the first two hits whiff."
+      ],
+      "video": "https://wavu.wiki/w/images/8/84/T8-p2-hwoarang-uf%2B4%2C4%2C4.mp4"
+    },
+    "uf-n-4": {
+      "wavuId": "Hwoarang-uf,n,4",
+      "input": "uf,n,4",
+      "name": "Delayed Rising Toe Kick",
+      "level": "m",
+      "startup": "i23~25",
+      "displayStartup": "i23~25 (string)",
+      "block": "-13",
+      "hit": "+32a (+22)",
+      "ch": null,
+      "notes": [
+        "Also possible during RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/4/40/T8-p2-hwoarang-uf%2Cn%2C4.mp4"
+    },
+    "ws1": {
+      "wavuId": "Hwoarang-ws1",
+      "input": "ws1",
+      "name": "ws1",
+      "level": "m",
+      "startup": "i12~13",
+      "displayStartup": "i12~13 (string)",
+      "block": "-3",
+      "hit": "+8",
+      "ch": null,
+      "notes": []
+    },
+    "ws1-4": {
+      "wavuId": "Hwoarang-ws1,4",
+      "input": "ws1,4",
+      "name": "Twin Mustang",
+      "level": ",m",
+      "startup": "i22~23",
+      "displayStartup": "i22~23 (string)",
+      "block": "+0",
+      "hit": "+8",
+      "ch": null,
+      "notes": [
+        "Combo from 1st hit",
+        "Transition to RFS"
+      ]
+    },
+    "ws2": {
+      "wavuId": "Hwoarang-ws2",
+      "input": "ws2",
+      "name": "ws2",
+      "level": "m",
+      "startup": "i15~16",
+      "displayStartup": "i15~16 (string)",
+      "block": "-7",
+      "hit": "+4s",
+      "ch": null,
+      "notes": []
+    },
+    "ws2-3": {
+      "wavuId": "Hwoarang-ws2,3",
+      "input": "ws2,3",
+      "name": "Chonsan Spin",
+      "level": ",h",
+      "startup": "i23~25",
+      "displayStartup": "i23~25 (string)",
+      "block": "+3",
+      "hit": "+72a (+56) / +10",
+      "ch": null,
+      "notes": [
+        "Tornado",
+        "Combo from 1st hit",
+        "+72a (+56) from 1st hit",
+        "Balcony Break",
+        "from 1st hit",
+        "Transition to LFS"
+      ],
+      "video": "https://wavu.wiki/w/images/8/85/T8-p2-hwoarang-ws2%2C3.mp4"
+    },
+    "ws3": {
+      "wavuId": "Hwoarang-ws3",
+      "input": "ws3",
+      "name": "Iron Heel",
+      "level": "m",
+      "startup": "i14~16",
+      "displayStartup": "i14~16 (string)",
+      "block": "-12",
+      "hit": "+14c",
+      "ch": null,
+      "notes": [],
+      "video": "https://wavu.wiki/w/images/e/e6/T8-p2-hwoarang-ws3.mp4"
+    },
+    "ws3plus4": {
+      "wavuId": "Hwoarang-ws3+4",
+      "input": "ws3+4",
+      "name": "ws3+4",
+      "level": "m",
+      "startup": "i20~21",
+      "displayStartup": "i20~21 (string)",
+      "block": "-9",
+      "hit": "+2",
+      "ch": null,
+      "notes": [
+        "Alternate input: f,n,d,df+3+4 (CD.3+4)",
+        "Transition to BT"
+      ]
+    },
+    "ws3plus4-3": {
+      "wavuId": "Hwoarang-ws3+4,3",
+      "input": "ws3+4,3",
+      "name": "Spinning Scythe > Axe Heel",
+      "level": ",M",
+      "startup": "i21~26",
+      "displayStartup": "i21~26 (string)",
+      "block": "-6",
+      "hit": "+5c~+10c",
+      "ch": "+29d",
+      "notes": [
+        "Combo from 1st hit with 7F delay",
+        "Input can be delayed by 7F",
+        "Move cannot be delayed"
+      ],
+      "video": "https://wavu.wiki/w/images/d/dd/T8-p2-hwoarang-ws3%2B4%2C3.mp4"
+    },
+    "ws4": {
+      "wavuId": "Hwoarang-ws4",
+      "input": "ws4",
+      "name": "ws4",
+      "level": "m",
+      "startup": "i11~12",
+      "displayStartup": "i11~12 (string)",
+      "block": "-3",
+      "hit": "+8",
+      "ch": null,
+      "notes": []
+    },
+    "ws4-4": {
+      "wavuId": "Hwoarang-ws4,4",
+      "input": "ws4,4",
+      "name": "Tsunami Kick",
+      "level": ",M",
+      "startup": "i15~19",
+      "displayStartup": "i15~19 (string)",
+      "block": "-9",
+      "hit": "+4c",
+      "ch": null,
+      "notes": [
+        "Jail from 1st block",
+        "Combo from 1st hit",
+        "Recovers 3 frames faster on hit (r21 t52)",
+        "Transition to RFF"
+      ],
+      "video": "https://wavu.wiki/w/images/9/98/T8-p2-hwoarang-ws4%2C4.mp4"
+    }
+  }
+}

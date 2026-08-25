@@ -29,8 +29,9 @@ import { jin } from "../src/data/characters/jin.ts";
 import { king } from "../src/data/characters/king.ts";
 import { dragunov } from "../src/data/characters/dragunov.ts";
 import { steve } from "../src/data/characters/steve.ts";
+import { hwoarang } from "../src/data/characters/hwoarang.ts";
 
-const characters = [kazuya, lars, bryan, jin, king, dragunov, steve];
+const characters = [kazuya, lars, bryan, jin, king, dragunov, steve, hwoarang];
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const RUNS_PER_CHARACTER = 40;
