@@ -25,7 +25,8 @@
       "ch": null,
       "notes": [
         "i10 high",
-        "+1 on block"
+        "+1 on block",
+        "Recovers 2f faster on hit or block (t27 r17)"
       ]
     },
     "jab-2": {
@@ -40,7 +41,8 @@
       "ch": null,
       "notes": [
         "-3 on block",
-        "a listed whiff punisher"
+        "a listed whiff punisher",
+        "Jail from 1st attack with 6f delay"
       ],
       "video": "https://wavu.wiki/w/images/1/11/T8-p2-king-1%2C2.mp4"
     },
@@ -55,7 +57,8 @@
       "hit": "+5",
       "ch": "+10",
       "notes": [
-        "only -4 on block"
+        "only -4 on block",
+        "Jail from 2nd hit with 4f delay"
       ],
       "video": "https://wavu.wiki/w/images/7/79/T8-p2-king-1%2C2%2C1.mp4"
     },
@@ -98,7 +101,8 @@
       "hit": "+8",
       "ch": null,
       "notes": [
-        "his i10 punisher, and only -3 on block"
+        "his i10 punisher, and only -3 on block",
+        "Combo from 1st hit"
       ],
       "video": "https://wavu.wiki/w/images/a/a9/T8-p2-king-2%2C1.mp4"
     },
@@ -127,7 +131,11 @@
       "ch": null,
       "notes": [
         "wall ender",
-        "+17g on hit"
+        "+17g on hit",
+        "Transition to JGR +17g r30 automatically on hit",
+        "Cancel JGR transition +12g with B",
+        "Combo from 2nd CH with 10f delay",
+        "Opponent recovers crouching"
       ]
     },
     "stampede-hold": {
@@ -141,7 +149,9 @@
       "hit": "+25a (+15)",
       "ch": null,
       "notes": [
-        "+9c ON BLOCK when charged"
+        "+9c ON BLOCK when charged",
+        "Transition to JGR +9 +25a (+15) r30 automatically on hit or block",
+        "Cancel JGR transition +4c +20a (+10) r35 with B"
       ]
     },
     "kick4": {
@@ -183,7 +193,9 @@
       "hit": "+5",
       "ch": null,
       "notes": [
-        "mid ender"
+        "mid ender",
+        "Combo from 1st hit with 4f delay",
+        "Combo from 1st CH with 9f delay"
       ],
       "video": "https://wavu.wiki/w/images/e/e2/T8-p2-king-df%2B1%2C2.mp4"
     },
@@ -212,7 +224,8 @@
       "ch": null,
       "notes": [
         "i13 CH launcher",
-        "only -4 on block"
+        "only -4 on block",
+        "Combo from 1st CH with 13f delay"
       ],
       "video": "https://wavu.wiki/w/images/5/58/T8-p2-king-df%2B2%2C1.mp4"
     },
@@ -240,7 +253,8 @@
       "hit": "+28d",
       "ch": null,
       "notes": [
-        "0 on block"
+        "0 on block",
+        "Combo from 1st CH"
       ],
       "video": "https://wavu.wiki/w/images/1/12/T8-p2-king-df%2B3%2C4.mp4"
     },
@@ -269,7 +283,8 @@
       "ch": null,
       "notes": [
         "the core combo filler",
-        "-5 on block"
+        "-5 on block",
+        "Combo from 1st CH"
       ]
     },
     "df4-3-4": {
@@ -283,7 +298,10 @@
       "hit": "+6a (-3)",
       "ch": "+47a (+16)",
       "notes": [
-        "CH +47a"
+        "CH +47a",
+        "Combo from 2nd CH.",
+        "Transition to BT -8 +13a (+4) +54a (+23) r31 with B",
+        "BT transition is -14"
       ],
       "video": "https://wavu.wiki/w/images/c/c3/T8-p2-king-df%2B4%2C3%2C4.mp4"
     },
@@ -299,7 +317,8 @@
       "ch": "+22a",
       "notes": [
         "the low branch",
-        "CH +22a"
+        "CH +22a",
+        "Recovers in FC on hit"
       ],
       "video": "https://wavu.wiki/w/images/3/38/T8-p2-king-df%2B4%2C3%2Cd%2B4.mp4"
     },
@@ -328,7 +347,11 @@
       "ch": null,
       "notes": [
         "Tornado",
-        "LAUNCHES for +70a if b+1 counter-hits"
+        "LAUNCHES for +70a if b+1 counter-hits",
+        "Combo from 1st hit with 8f delay",
+        "Combo from 1st CH with 10f delay",
+        "Move can be delayed by 6f",
+        "Input can be delayed by 10f"
       ],
       "video": "https://wavu.wiki/w/images/0/03/T8-p2-king-b%2B1%2C2.mp4"
     },
@@ -357,7 +380,11 @@
       "ch": null,
       "notes": [
         "his -14 punisher",
-        "wall splat"
+        "wall splat",
+        "Combo from 1st hit with 5f delay",
+        "Move can be delayed by 10f",
+        "Input can be delayed by 15f",
+        "Recovers 2f faster on hit"
       ],
       "video": "https://wavu.wiki/w/images/a/a0/T8-p2-king-b%2B2%2C1.mp4"
     },
@@ -372,7 +399,9 @@
       "hit": "+22a",
       "ch": null,
       "notes": [
-        "+2c on block"
+        "+2c on block",
+        "Move can be delayed by 10f",
+        "Input can be delayed by 15f"
       ],
       "video": "https://wavu.wiki/w/images/1/1b/T8-p2-king-b%2B2%2C1%2B2.mp4"
     },
@@ -387,7 +416,9 @@
       "hit": "+0d",
       "ch": null,
       "notes": [
-        "combo filler into a throw"
+        "combo filler into a throw",
+        "Move can be delayed by 10f",
+        "Input can be delayed by 15f"
       ],
       "video": "https://wavu.wiki/w/images/5/51/T8-p2-king-b%2B2%2C4.mp4"
     },
@@ -402,7 +433,8 @@
       "ch": null,
       "notes": [
         "combo filler",
-        "+13d on hit"
+        "+13d on hit",
+        "Tornado"
       ],
       "video": "https://wavu.wiki/w/images/1/15/T8-p2-king-b%2B3.mp4"
     },
@@ -460,7 +492,8 @@
       "hit": "+7",
       "ch": null,
       "notes": [
-        "+3 on block"
+        "+3 on block",
+        "Chest attack, unparryable by Asuka, Nina, etc"
       ],
       "video": "https://wavu.wiki/w/images/6/60/T8-p2-king-f%2B1%2B4.mp4"
     },
@@ -489,7 +522,8 @@
       "ch": null,
       "notes": [
         "Heat Engager",
-        "his -15 punisher"
+        "his -15 punisher",
+        "Combo from 1st hit with 3f delay"
       ],
       "video": "https://wavu.wiki/w/images/8/80/T8-p2-king-f%2B2%2C1.mp4"
     },
@@ -519,7 +553,9 @@
       "hit": "+27a (+17)",
       "ch": null,
       "notes": [
-        "his back-turned punisher"
+        "his back-turned punisher",
+        "Combo from 2nd hit with 13f delay",
+        "Jail from 2nd attack with 3f delay"
       ],
       "video": "https://wavu.wiki/w/images/7/7f/T8-p2-king-f%2B2%2Cd%2B1%2C2.mp4"
     },
@@ -593,7 +629,8 @@
       "hit": "+12c",
       "ch": null,
       "notes": [
-        "+7 ON BLOCK"
+        "+7 ON BLOCK",
+        "Forces crouching on hit."
       ],
       "video": "https://wavu.wiki/w/images/4/4b/T8-p2-king-f%2Cf%2C2.mp4"
     },
@@ -607,7 +644,8 @@
       "hit": "+14a(+4)",
       "ch": "+1d",
       "notes": [
-        "wall carry tool"
+        "wall carry tool",
+        "Tornado"
       ],
       "video": "https://wavu.wiki/w/images/4/44/T8-p2-king-f%2Cf%2C4.mp4"
     },
@@ -678,7 +716,8 @@
       "ch": null,
       "notes": [
         "his hopkick",
-        "i15 launcher, -13"
+        "i15 launcher, -13",
+        "Recovers 2f faster on hit"
       ],
       "video": "https://wavu.wiki/w/images/a/aa/T8-p2-king-uf%2B4.mp4"
     },
@@ -693,7 +732,9 @@
       "ch": null,
       "notes": [
         "combo filler",
-        "+25g"
+        "+25g",
+        "Tornado",
+        "Cancel shift into JGR on hit at +22g with B"
       ],
       "video": "https://wavu.wiki/w/images/1/10/T8-p2-king-uf%2B3%2B4.mp4"
     },
@@ -749,7 +790,8 @@
       "ch": null,
       "notes": [
         "+2c on block",
-        "+22a on hit"
+        "+22a on hit",
+        "Parryable by traditional punch parries"
       ],
       "video": "https://wavu.wiki/w/images/6/68/T8-p2-king-u%2B1%2B2.mp4"
     },
@@ -763,7 +805,8 @@
       "hit": "+6",
       "ch": null,
       "notes": [
-        "i10 special low"
+        "i10 special low",
+        "Transition to r24 with f"
       ]
     },
     "d2": {
@@ -789,7 +832,8 @@
       "hit": "+45a (+35)",
       "ch": null,
       "notes": [
-        "+45a launcher but -24 on block"
+        "+45a launcher but -24 on block",
+        "Tornado"
       ],
       "video": "https://wavu.wiki/w/images/e/e0/T8-p2-king-d%2B1%2B2.mp4"
     },
@@ -903,7 +947,9 @@
       "hit": "+35g",
       "ch": null,
       "notes": [
-        "Heat Engager out of the power crush"
+        "Heat Engager out of the power crush",
+        "Transition to attack throw on front standing hit",
+        "Transition into +12? JGR with input 3+4 on throw hit"
       ],
       "video": "https://wavu.wiki/w/images/7/75/T8-p2-king-db%2B1%2B2%2C2.mp4"
     },
@@ -945,7 +991,13 @@
       "notes": [
         "his -14 crouching punisher",
         "wall splat",
-        "goes to Jaguar Sprint on hit"
+        "goes to Jaguar Sprint on hit",
+        "Combo from 1st hit with 9F delay",
+        "Combo from 1st CH with 16F delay",
+        "Transition to JGR on hit",
+        "Cancel to standing with B",
+        "Move can be delayed by 10F",
+        "Input can be delayed by 16F"
       ],
       "video": "https://wavu.wiki/w/images/8/8f/T8-p2-king-ws2%2C2.mp4"
     },
@@ -1003,7 +1055,8 @@
       "ch": null,
       "notes": [
         "a low that LAUNCHES for +73a",
-        "-12 on block"
+        "-12 on block",
+        "Tornado on grounded hit."
       ],
       "video": "https://wavu.wiki/w/images/7/7b/T8-p2-king-fc.df%2B1.mp4"
     },
@@ -1062,7 +1115,13 @@
       "notes": [
         "breaks with 1",
         "45 damage, 50 on a perfect (bluespark) input",
-        "homing in Heat"
+        "homing in Heat",
+        "Input all directions, df for 1-3F, f for 0-1F, and f+1 to execute bluespark.",
+        "i11 startup for Bluespark throw with buffered input",
+        "50 damage on bluespark",
+        "18F throw break window on bluespark",
+        "7F throw break window on CH bluespark",
+        "Opponent recovers in FUFT."
       ]
     },
     "tomahawk": {
@@ -1077,7 +1136,13 @@
       "notes": [
         "breaks with 1+2",
         "only -5 on block",
-        "40 damage, 45 on bluespark"
+        "40 damage, 45 on bluespark",
+        "Input f,F+2+4 in 6 frames after f,f for bluespark.",
+        "i13 startup for Bluespark throw with buffered input",
+        "45 damage on bluespark",
+        "18F throw break window on bluespark",
+        "7F throw break window on CH bluespark",
+        "Opponent recovers in FUFL."
       ],
       "video": "https://wavu.wiki/w/images/8/89/T8-p2-king-f%2Cf%2Cf%2B2%2B4.mp4"
     },
@@ -1092,7 +1157,13 @@
       "ch": null,
       "notes": [
         "breaks with 2",
-        "50 damage, 55 on bluespark"
+        "50 damage, 55 on bluespark",
+        "Input all directions, df for 1-3F, f for 0-1F, and f+2 to execute bluespark.",
+        "i13 startup for Bluespark throw with buffered input",
+        "55 damage on bluespark",
+        "18F throw break window on bluespark",
+        "7F throw break window on CH bluespark",
+        "Opponent recovers in FUFL."
       ],
       "video": "https://wavu.wiki/w/images/6/62/T8-p2-king-f%2Chcf%2B2.mp4"
     },
@@ -1108,7 +1179,9 @@
       "notes": [
         "breaks with 1+2",
         "Floor Break",
-        "50 damage"
+        "50 damage",
+        "King recovers in BT",
+        "Opponent recovers in FUFA."
       ],
       "video": "https://wavu.wiki/w/images/6/68/T8-p2-king-qcb%2B1%2B2.mp4"
     },
@@ -1123,7 +1196,8 @@
       "ch": null,
       "notes": [
         "breaks with 1",
-        "leads to the PD follow-up throws"
+        "leads to the PD follow-up throws",
+        "Opponent recovers in FUFT."
       ],
       "video": "https://wavu.wiki/w/images/2/2e/T8-p2-king-qcf%2B1.mp4"
     },
@@ -1139,7 +1213,8 @@
       "notes": [
         "breaks with 2",
         "Floor Break",
-        "53 damage"
+        "53 damage",
+        "Opponent recovers in FUFA"
       ],
       "video": "https://wavu.wiki/w/images/4/41/T8-p2-king-db%2Cn%2Cf%2B2%2B4.mp4"
     },
@@ -1154,7 +1229,8 @@
       "ch": null,
       "notes": [
         "breaks with 1+2",
-        "hold b to throw backwards"
+        "hold b to throw backwards",
+        "Opponent recovers in FUFT."
       ],
       "video": "https://wavu.wiki/w/images/c/c7/T8-p2-king-uf%2B1%2B2.mp4"
     },
@@ -1169,7 +1245,8 @@
       "ch": null,
       "notes": [
         "the generic left throw",
-        "breaks with 1"
+        "breaks with 1",
+        "Opponent recovers in FUFA."
       ]
     },
     "throw-right": {
@@ -1183,7 +1260,8 @@
       "ch": null,
       "notes": [
         "the generic right throw",
-        "breaks with 2"
+        "breaks with 2",
+        "Side switch. Opponent recovers in FUFA."
       ]
     },
     "crouch-lariat": {
@@ -1197,7 +1275,8 @@
       "ch": null,
       "notes": [
         "CROUCH THROW — cannot be broken",
-        "Floor Break"
+        "Floor Break",
+        "Opponent recovers in FDFA."
       ],
       "video": "https://wavu.wiki/w/images/4/45/T8-p2-king-d%2B1%2B3.mp4"
     },
@@ -1212,7 +1291,8 @@
       "ch": null,
       "notes": [
         "CROUCH THROW — cannot be broken",
-        "Heat Engager"
+        "Heat Engager",
+        "Opponent recovers in FDFA."
       ],
       "video": "https://wavu.wiki/w/images/c/c4/T8-p2-king-d%2B1%2B4.mp4"
     },
@@ -1227,7 +1307,8 @@
       "ch": null,
       "notes": [
         "CROUCH THROW — cannot be broken",
-        "Floor Break"
+        "Floor Break",
+        "Opponent recovers in FUFA."
       ],
       "video": "https://wavu.wiki/w/images/d/df/T8-p2-king-d%2B2%2B4.mp4"
     },
@@ -1243,7 +1324,8 @@
       "notes": [
         "chain-throw entry",
         "breaks with 1",
-        "leads to Rolling Death Cradle"
+        "leads to Rolling Death Cradle",
+        "Opponent recovers in FUFT."
       ],
       "video": "https://wavu.wiki/w/images/8/8f/T8-p2-king-cd.1%2B4.mp4"
     },
@@ -1259,7 +1341,8 @@
       "notes": [
         "chain-throw entry",
         "breaks with 2",
-        "leads to King's Bridge"
+        "leads to King's Bridge",
+        "Opponent recovers in FDFR."
       ],
       "video": "https://wavu.wiki/w/images/1/11/T8-p2-king-cd.2%2B3.mp4"
     },
@@ -1273,7 +1356,8 @@
       "hit": "+0d",
       "ch": null,
       "notes": [
-        "the seven-stage chain that ends in the Screwdriver"
+        "the seven-stage chain that ends in the Screwdriver",
+        "Opponent recovers in FDFT."
       ],
       "video": "https://wavu.wiki/w/images/7/70/T8-p2-king-jgs.1%2B4_2%2B3.mp4"
     },
@@ -1288,7 +1372,8 @@
       "ch": null,
       "notes": [
         "homing chain throw",
-        "breaks with 1"
+        "breaks with 1",
+        "Opponent recovers in FUFA."
       ],
       "video": "https://wavu.wiki/w/images/8/8c/T8-p2-king-df%2B1%2B3.mp4"
     },
@@ -1303,7 +1388,8 @@
       "ch": null,
       "notes": [
         "homing chain throw",
-        "breaks with 2"
+        "breaks with 2",
+        "Opponent recovers in FUFT."
       ],
       "video": "https://wavu.wiki/w/images/6/6f/T8-p2-king-df%2B2%2B4.mp4"
     },
@@ -1318,7 +1404,8 @@
       "ch": null,
       "notes": [
         "breaks with 1+2 in a 6f window",
-        "leads to the tackle follow-ups"
+        "leads to the tackle follow-ups",
+        "Transition to UT r30 on hit"
       ],
       "video": "https://wavu.wiki/w/images/b/bb/T8-p2-king-fc.1%2B2.mp4"
     },
@@ -1347,7 +1434,9 @@
       "ch": null,
       "notes": [
         "i11 mid out of the stance",
-        "+12c on hit sets up a crouch throw"
+        "+12c on hit sets up a crouch throw",
+        "Forces Crouching on hit.",
+        "Forces Crouching on block from 3rd spin on."
       ],
       "video": "https://wavu.wiki/w/images/0/05/T8-p2-king-jgs.2.mp4"
     },
@@ -1418,7 +1507,8 @@
       "hit": "+75a (+59)",
       "ch": null,
       "notes": [
-        "+75a launcher"
+        "+75a launcher",
+        "Tornado"
       ]
     },
     "jgr2": {
@@ -1477,7 +1567,8 @@
       "notes": [
         "Heat Engager",
         "homing",
-        "CANNOT be broken"
+        "CANNOT be broken",
+        "Opponent recovers in FUFA."
       ],
       "video": "https://wavu.wiki/w/images/b/b7/T8-p2-king-jgr.1%2B3.mp4"
     },
@@ -1492,7 +1583,8 @@
       "ch": null,
       "notes": [
         "generic low parry",
-        "applies Tornado on success"
+        "applies Tornado on success",
+        "Tornado affect on success."
       ],
       "video": "https://wavu.wiki/w/images/e/ea/T8-p2-king-df.mp4"
     },
@@ -1506,7 +1598,8 @@
       "hit": "+2d",
       "ch": null,
       "notes": [
-        "parries the opponent's RIGHT punch"
+        "parries the opponent's RIGHT punch",
+        "Side Switch. Opponent recovers in FUFR."
       ],
       "video": "https://wavu.wiki/w/images/d/d4/T8-p2-king-b%2B1%2B3.mp4"
     },
@@ -1520,7 +1613,8 @@
       "hit": "+24d",
       "ch": null,
       "notes": [
-        "parries the opponent's LEFT kick"
+        "parries the opponent's LEFT kick",
+        "Side switches randomly. Opponent recovers in FUFL."
       ],
       "video": "https://wavu.wiki/w/images/8/84/T8-p2-king-b%2B2%2B4.mp4"
     },
@@ -1534,7 +1628,8 @@
       "hit": "+2c",
       "ch": null,
       "notes": [
-        "+1 on block"
+        "+1 on block",
+        "Cancel to r45 with b,b on frame 42"
       ]
     },
     "heat-smash": {
@@ -1548,7 +1643,15 @@
       "ch": null,
       "notes": [
         "Heat Smash",
-        "+12 on block and transitions to Jaguar Sprint"
+        "+12 on block and transitions to Jaguar Sprint",
+        "Transition to attack throw on standing hit",
+        "Transition to JGR on block",
+        "Cancel transition to JGR on block with B (+7)",
+        "Transition to 2nd i21~22 23dmg mid hit on 1st block or whiff",
+        "Tornado",
+        "Jail from 1st block",
+        "Forces crouch on 2nd hit",
+        "Cancel transition to JGR on hit with B (+19)"
       ]
     },
     "rage-art": {
@@ -1561,7 +1664,8 @@
       "hit": "+0d",
       "ch": null,
       "notes": [
-        "Rage Art"
+        "Rage Art",
+        "Transition to attack throw on hit"
       ]
     }
   }

@@ -23,7 +23,9 @@
       "block": "+1",
       "hit": "+8",
       "ch": null,
-      "notes": []
+      "notes": [
+        "Recovers 2f faster on hit or block (t27 r17)"
+      ]
     },
     "flash-punch": {
       "wavuId": "Kazuya-1,1,2",
@@ -36,7 +38,9 @@
       "hit": "+20a (+15)",
       "ch": null,
       "notes": [
-        "knockdown on hit"
+        "knockdown on hit",
+        "Combo from 1st hit",
+        "Combo from 2nd hit with 11f delay"
       ],
       "video": "https://wavu.wiki/w/images/0/06/T8-p2-kazuya-1%2C1%2C2.mp4"
     },
@@ -62,7 +66,9 @@
       "hit": "+9c",
       "ch": null,
       "notes": [
-        "heat engager"
+        "heat engager",
+        "Combo from 1st hit with 4F delay",
+        "Input can be delayed by 4F"
       ],
       "video": "https://wavu.wiki/w/images/2/25/T8-p2-kazuya-df%2B1%2C2.mp4"
     },
@@ -77,7 +83,9 @@
       "hit": "+42a",
       "ch": null,
       "notes": [
-        "launches on hit"
+        "launches on hit",
+        "Combo from 1st hit with 4F delay",
+        "Input can be delayed by 4F"
       ],
       "video": "https://wavu.wiki/w/images/c/cd/T8-p2-kazuya-df%2B1%2C4.mp4"
     },
@@ -163,7 +171,8 @@
       "hit": "+9 (+0)",
       "ch": null,
       "notes": [
-        "11f punish"
+        "11f punish",
+        "Combo from 1st hit"
       ],
       "video": "https://wavu.wiki/w/images/c/c8/T8-p2-kazuya-b%2B1%2C2.mp4"
     },
@@ -195,7 +204,9 @@
       "ch": null,
       "notes": [
         "heat engager",
-        "13f punish option"
+        "13f punish option",
+        "Combo from 1st hit with 2F delay",
+        "Input can be delayed by 2F"
       ],
       "video": "https://wavu.wiki/w/images/f/fe/T8-p2-kazuya-db%2B1%2C2.mp4"
     },
@@ -240,7 +251,9 @@
       "hit": "+0c",
       "ch": null,
       "notes": [
-        "11f crouch punish"
+        "11f crouch punish",
+        "Jail from 1st block",
+        "Combo from 1st hit"
       ]
     },
     "ws12": {
@@ -255,7 +268,8 @@
       "ch": null,
       "notes": [
         "13f crouch launch punish",
-        "tornado"
+        "tornado",
+        "Combo from 1st hit"
       ],
       "video": "https://wavu.wiki/w/images/2/24/T8-p2-kazuya-ws1%2C2.mp4"
     },
@@ -270,7 +284,8 @@
       "ch": null,
       "notes": [
         "homing",
-        "crumple launcher"
+        "crumple launcher",
+        "Recovers 5f faster on hit (t49 r32)"
       ],
       "video": "https://wavu.wiki/w/images/6/61/T8-p2-kazuya-ws2.mp4"
     },
@@ -328,7 +343,8 @@
       "hit": "+16a (+7) / +17a (+10)",
       "ch": null,
       "notes": [
-        "the standard hellsweep ender"
+        "the standard hellsweep ender",
+        "Airborne combo from first hit (+17a (+10))"
       ],
       "video": "https://wavu.wiki/w/images/0/0e/T8-p2-kazuya-f%2Cn%2Cd%2Cdf%2B4%2C1.mp4"
     },

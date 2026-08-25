@@ -25,7 +25,8 @@
       "ch": null,
       "notes": [
         "i10 high",
-        "+1 on block"
+        "+1 on block",
+        "Recovers 2f faster on hit or block (t27 r17)"
       ]
     },
     "jab-1": {
@@ -38,7 +39,14 @@
       "hit": "+3",
       "ch": null,
       "notes": [
-        "weaves out with 3 or 4"
+        "weaves out with 3 or 4",
+        "Combo from 1st hit with 4F delay",
+        "Jails from 1st block with 2F delay",
+        "Move can be delayed by 4F",
+        "Transition to LWV with 3 (-6/+0)",
+        "Transition to RWV with 4 (-6/+0)",
+        "Transition to SWY with b+3_4 (-6/+0)",
+        "Transition to DCK with f+3_4 (-2/+4)"
       ],
       "video": "https://wavu.wiki/w/images/a/a6/T8-p2-steve-1%2C1.mp4"
     },
@@ -53,7 +61,14 @@
       "ch": null,
       "notes": [
         "his i10 punisher",
-        "ends in a stance at up to +8"
+        "ends in a stance at up to +8",
+        "Combo from 1st hit with 3F delay",
+        "Jail from 1st block with 3F delay",
+        "Move can be delayed by 3F",
+        "Transition to LWV with 3 (-5/+6)",
+        "Transition to RWV with 4 (-5/+6)",
+        "Transition to SWY with b+3_4 (-5/+6)",
+        "Transition to DCK with f+3_4 (-3/+8)"
       ],
       "video": "https://wavu.wiki/w/images/4/49/T8-p2-steve-1%2C1%2C2.mp4"
     },
@@ -67,7 +82,9 @@
       "hit": "+0",
       "ch": "+5",
       "notes": [
-        "enters Flicker with b at up to +11"
+        "enters Flicker with b at up to +11",
+        "Transition to FLK with b (+0/+6/+11)",
+        "Move can be delayed by 3F"
       ],
       "video": "https://wavu.wiki/w/images/d/de/T8-p2-steve-1%2C1%2Cd%2B1.mp4"
     },
@@ -81,7 +98,13 @@
       "hit": "+8",
       "ch": null,
       "notes": [
-        "-3 on block"
+        "-3 on block",
+        "Combo from 1st hit",
+        "Jail from 1st block",
+        "Transition to LWV with 3 (-4/+7)",
+        "Transition to RWV with 4 (-4/+7)",
+        "Transition to SWY with b+3_4 (-4/+7)",
+        "Transition to DCK with f+3_4 (-2/+9)"
       ],
       "video": "https://wavu.wiki/w/images/9/93/T8-p2-steve-1%2C2.mp4"
     },
@@ -95,7 +118,11 @@
       "hit": "+3",
       "ch": null,
       "notes": [
-        "enters Peekaboo with f or Flicker with b"
+        "enters Peekaboo with f or Flicker with b",
+        "Combo from 1st CH or 2nd CH",
+        "Jail from 1st block",
+        "Transition to PAB with f (-2/+4)",
+        "Transition to FLK with b (-1/+5)"
       ]
     },
     "jab-2-1-2": {
@@ -109,7 +136,12 @@
       "ch": null,
       "notes": [
         "Balcony Break",
-        "the mid ender"
+        "the mid ender",
+        "Combo from 3rd CH",
+        "Transition to LWV with 3 (-6/+20a (+11))",
+        "Transition to RWV with 4 (-6/+20a (+11))",
+        "Transition to SWY with b+3_4 (-6/+20a (+11))",
+        "Transition to DCK with f+3_4 (-4/+22a (+13))"
       ],
       "video": "https://wavu.wiki/w/images/8/88/T8-p2-steve-1%2C2%2C1%2C2.mp4"
     },
@@ -123,7 +155,8 @@
       "hit": "+1c",
       "ch": "+14d",
       "notes": [
-        "the low ender of the same string"
+        "the low ender of the same string",
+        "Transition to FC with d_db"
       ],
       "video": "https://wavu.wiki/w/images/1/19/T8-p2-steve-1%2C2%2C1%2Cd%2B2.mp4"
     },
@@ -165,7 +198,11 @@
       "hit": "+6",
       "ch": null,
       "notes": [
-        "his -12 punisher — enters Flicker at +14 or Peekaboo at +13"
+        "his -12 punisher — enters Flicker at +14 or Peekaboo at +13",
+        "Combo from 1st hit",
+        "Jail from 1st block",
+        "Transition to PAB with f (+2/+13g/+13)",
+        "Transition to FLK with b (+3/+14g/+14)"
       ]
     },
     "right-1-2": {
@@ -178,7 +215,9 @@
       "hit": "+13a (+4)",
       "ch": null,
       "notes": [
-        "mid ender"
+        "mid ender",
+        "Combo from 2nd CH with 3?F delay",
+        "Move can be delayed by 10?F"
       ],
       "video": "https://wavu.wiki/w/images/8/8f/T8-p2-steve-2%2C1%2C2.mp4"
     },
@@ -193,7 +232,8 @@
       "ch": null,
       "notes": [
         "Tornado",
-        "also covers -12"
+        "also covers -12",
+        "Combo from 1st hit"
       ],
       "video": "https://wavu.wiki/w/images/4/4f/T8-p2-steve-2%2C2.mp4"
     },
@@ -207,7 +247,11 @@
       "hit": "+5",
       "ch": null,
       "notes": [
-        "his mid check — i13 at only -2"
+        "his mid check — i13 at only -2",
+        "Transition to LWV with 3 (-7/0)",
+        "Transition to RWV with 4 (-7/0)",
+        "Transition to SWY with b+3_4 (-7/0)",
+        "Transition to DCK with f+3_4 (-5/+2)"
       ],
       "video": "https://wavu.wiki/w/images/0/01/T8-p2-steve-df%2B1.mp4"
     },
@@ -221,7 +265,12 @@
       "hit": "+3",
       "ch": "+5",
       "notes": [
-        "the gateway to the Swindler follow-ups"
+        "the gateway to the Swindler follow-ups",
+        "Combo from 1st hit",
+        "Cancel to LWV with 3 (-16/-9) at frame 17",
+        "Cancel to RWV with 4 (-16/-9) at frame 17",
+        "Cancel to SWY with b+3_4 (-16/-9) at frame 17",
+        "Cancel to DCK with f+3_4 (-14/-7) at frame 17"
       ],
       "video": "https://wavu.wiki/w/images/9/9a/T8-p2-steve-df%2B1%2C2.mp4"
     },
@@ -236,7 +285,8 @@
       "ch": "+61a",
       "notes": [
         "CH +61a",
-        "enters Flicker with b"
+        "enters Flicker with b",
+        "Transition to FLK with b (+0/+4/+63a)"
       ],
       "video": "https://wavu.wiki/w/images/1/18/T8-p2-steve-df%2B1%2C2t1.mp4"
     },
@@ -264,7 +314,11 @@
       "hit": "+0",
       "ch": "+3",
       "notes": [
-        "the long string branch"
+        "the long string branch",
+        "Transition to LWV with 3 (-4/-1/+2)",
+        "Transition to RWV with 4 (-4/-1/+2)",
+        "Transition to SWY with b+3_4 (-4/-1/+2)",
+        "Transition to DCK with f+3_4 (-2/+1/+4)"
       ],
       "video": "https://wavu.wiki/w/images/8/80/T8-p2-steve-df%2B1%2C2tf%2B1%2B2.mp4"
     },
@@ -279,7 +333,11 @@
       "ch": "+10c",
       "notes": [
         "CH +10c",
-        "transitions to any weave or to Duck"
+        "transitions to any weave or to Duck",
+        "Transition to LWV with 3 (-7/+10/+14c)",
+        "Transition to RWV with 4 (-7/+10/+14c)",
+        "Transition to SWY with b+3_4 (-7/+10/+14c)",
+        "Transition to DCK with f+3_4 (-3/+14g/+18c~+19c)"
       ],
       "video": "https://wavu.wiki/w/images/8/8a/T8-p2-steve-df%2B2.mp4"
     },
@@ -294,7 +352,8 @@
       "ch": "+61a",
       "notes": [
         "the best counter-hit tool in Tekken 8 — CH +61a, but -14 on block",
-        "hold B to cancel into Flicker: -1 on block and +69 on counter-hit, which is what makes the EXD.1 pickup reach"
+        "hold B to cancel into Flicker: -1 on block and +69 on counter-hit, which is what makes the EXD.1 pickup reach",
+        "Transition to FLK with B (-1/+10/+69)"
       ],
       "video": "https://wavu.wiki/w/images/c/c4/T8-p2-steve-b%2B1.mp4"
     },
@@ -311,7 +370,10 @@
         "+3 ON BLOCK",
         "homing",
         "his -13 punisher",
-        "enters Lionheart"
+        "enters Lionheart",
+        "Combo from 1st hit",
+        "Transition to LNH",
+        "Transition to standing with b (-1/+4)"
       ],
       "video": "https://wavu.wiki/w/images/b/b5/T8-p2-steve-b%2B1%2C2.mp4"
     },
@@ -338,7 +400,9 @@
       "hit": "+0",
       "ch": null,
       "notes": [
-        "the low branch"
+        "the low branch",
+        "Combo from 1st hit",
+        "Transition to PAB with f (-9/+2)"
       ]
     },
     "b1-d2-1": {
@@ -352,7 +416,8 @@
       "ch": null,
       "notes": [
         "Tornado",
-        "+35a on hit"
+        "+35a on hit",
+        "Combo from 2nd CH"
       ],
       "video": "https://wavu.wiki/w/images/2/24/T8-p2-steve-b%2B1%2Cd%2B2%2C1.mp4"
     },
@@ -367,7 +432,8 @@
       "ch": null,
       "notes": [
         "his -16 punisher",
-        "wall splat"
+        "wall splat",
+        "Jail from 1st attack"
       ]
     },
     "five-fox": {
@@ -381,7 +447,10 @@
       "ch": null,
       "notes": [
         "the Heat extension",
-        "+36a on hit"
+        "+36a on hit",
+        "Jails from 1st block",
+        "Combo from 1st hit",
+        "Transition to FLK r22 with B (+3/+43a (+17))"
       ]
     },
     "b2": {
@@ -409,7 +478,8 @@
       "ch": null,
       "notes": [
         "i10 special low",
-        "his remapped d+1"
+        "his remapped d+1",
+        "Transition to standing with f"
       ]
     },
     "db1plus2": {
@@ -438,7 +508,8 @@
       "ch": "+14d",
       "notes": [
         "low",
-        "CH +14d"
+        "CH +14d",
+        "Transition to FC with d_db"
       ],
       "video": "https://wavu.wiki/w/images/1/14/T8-p2-steve-db%2B2.mp4"
     },
@@ -465,7 +536,10 @@
       "hit": "+8",
       "ch": null,
       "notes": [
-        "-27 on block if only the first hit is blocked"
+        "-27 on block if only the first hit is blocked",
+        "Combo from 1st hit",
+        "Transition to LNH",
+        "Transition to r34 standing with b (-31/-10/+4)"
       ],
       "video": "https://wavu.wiki/w/images/2/25/T8-p2-steve-db%2B3%2C2.mp4"
     },
@@ -506,7 +580,8 @@
       "hit": "+27a (+18)",
       "ch": "+56a",
       "notes": [
-        "CH +56a"
+        "CH +56a",
+        "Combo from 2nd CH"
       ],
       "video": "https://wavu.wiki/w/images/8/82/T8-p2-steve-d%2B2%2C1%2C2.mp4"
     },
@@ -520,7 +595,8 @@
       "hit": "-3",
       "ch": null,
       "notes": [
-        "mid into high"
+        "mid into high",
+        "Jail from 1st block"
       ]
     },
     "f1plus2-2": {
@@ -533,7 +609,8 @@
       "hit": "+3d",
       "ch": null,
       "notes": [
-        "his -15 punisher"
+        "his -15 punisher",
+        "Combo from 2nd hit"
       ],
       "video": "https://wavu.wiki/w/images/2/29/T8-p2-steve-f%2B1%2B2%2C2.mp4"
     },
@@ -561,7 +638,11 @@
       "ch": null,
       "notes": [
         "core combo link",
-        "enters Peekaboo or Flicker"
+        "enters Peekaboo or Flicker",
+        "Combo from 1st hit with 7F delay",
+        "Move can be delayed by 16F",
+        "Transition to PAB with f (+0/+4)",
+        "Transition to FLK with b (+1/+5)"
       ],
       "video": "https://wavu.wiki/w/images/1/19/T8-p2-steve-f%2B2%2C1.mp4"
     },
@@ -590,7 +671,12 @@
       "ch": null,
       "notes": [
         "+11g on hit",
-        "enters Lionheart"
+        "enters Lionheart",
+        "Combo from 1st hit with 6F delay",
+        "Jail from 1st block with ?F delay",
+        "Move can be delayed by 16F",
+        "Transition to LNH",
+        "Transition to standing with b (-10/+7)"
       ]
     },
     "f2-2-1plus2": {
@@ -603,7 +689,8 @@
       "hit": "+5c",
       "ch": null,
       "notes": [
-        "+5c on block"
+        "+5c on hit — it is -12 on block",
+        "Combo from 2nd CH"
       ],
       "video": "https://wavu.wiki/w/images/6/6b/T8-p2-steve-f%2B2%2C2%2C1%2B2.mp4"
     },
@@ -649,7 +736,8 @@
       "notes": [
         "Heat Engager",
         "wall splat",
-        "enters Flicker with B"
+        "enters Flicker with B",
+        "Transition to FLK with B (-3/+23a (+14)/+23a (+14))"
       ],
       "video": "https://wavu.wiki/w/images/f/f5/T8-p2-steve-qcf%2B1.mp4"
     },
@@ -664,7 +752,8 @@
       "ch": null,
       "notes": [
         "his long-range low",
-        "-18 on block"
+        "-18 on block",
+        "Transition to PAB with F (-18/+2c)"
       ],
       "video": "https://wavu.wiki/w/images/a/a8/T8-p2-steve-qcf%2B2.mp4"
     },
@@ -678,7 +767,8 @@
       "hit": "+34a (+24)",
       "ch": null,
       "notes": [
-        "his i17 standing launcher — he has nothing faster"
+        "his i17 standing launcher — he has nothing faster",
+        "Tornado"
       ],
       "video": "https://wavu.wiki/w/images/2/26/T8-p2-steve-pab.uf%2B2.mp4"
     },
@@ -734,7 +824,9 @@
       "hit": "+8",
       "ch": null,
       "notes": [
-        "the follow-up"
+        "the follow-up",
+        "Combo from 1st hit",
+        "Transition to standing with b (-31/-10/+4)"
       ],
       "video": "https://wavu.wiki/w/images/8/8b/T8-p2-steve-uf%2B3%2C2.mp4"
     },
@@ -764,7 +856,9 @@
       "notes": [
         "+5 ON BLOCK",
         "homing",
-        "enters Lionheart"
+        "enters Lionheart",
+        "Transition into LNH",
+        "Transition to r30 standing with b (+1/+10c)"
       ],
       "video": "https://wavu.wiki/w/images/e/e2/T8-p2-steve-ub%2B2.mp4"
     },
@@ -833,7 +927,15 @@
       "hit": "+3",
       "ch": null,
       "notes": [
-        "his -11 crouching punisher"
+        "his -11 crouching punisher",
+        "Combo from 1st hit",
+        "Combo from 1st CH with 11F delay",
+        "Move can be delayed by 11F",
+        "Jails attack inputs with ?F from 1st block (movement bufferable)",
+        "Transition to LWV with 3 (-6/+0)",
+        "Transition to RWV with 4 (-6/+0)",
+        "Transition to SWY with b+3_4 (-6/+0)",
+        "Transition to DCK with f+3_4 (-2/+4)"
       ],
       "video": "https://wavu.wiki/w/images/0/01/T8-p2-steve-ws.1%2C1.mp4"
     },
@@ -848,7 +950,11 @@
       "ch": "+23d",
       "notes": [
         "also covers -11",
-        "CH +23d"
+        "CH +23d",
+        "Combo from 1st hit with 1F delay",
+        "Combo from 1st CH with 11F delay",
+        "Jail from 1st block with 3F delay",
+        "Move can be delayed by 11F"
       ],
       "video": "https://wavu.wiki/w/images/3/32/T8-p2-steve-ws.1%2C2.mp4"
     },
@@ -862,7 +968,11 @@
       "hit": "+4",
       "ch": null,
       "notes": [
-        "i13 out of crouch"
+        "i13 out of crouch",
+        "Transition to LWV with 3 (-7/+4)",
+        "Transition to RWV with 4 (-7/+4)",
+        "Transition to SWY with b+3_4 (-7/+4)",
+        "Transition to DCK with f+3_4 (-5/+6)"
       ]
     },
     "ws2-2": {
@@ -875,7 +985,12 @@
       "hit": "+11",
       "ch": null,
       "notes": [
-        "his -13 crouching punisher — enters Lionheart at +11"
+        "his -13 crouching punisher — enters Lionheart at +11",
+        "Combo from 1st hit with 5F delay",
+        "Jail from 1st block with no delay",
+        "Move can be delayed by 5F",
+        "Transition to LNH",
+        "Input b to cancel LNH at (-10/+7)"
       ],
       "video": "https://wavu.wiki/w/images/c/c4/T8-p2-steve-ws.2%2C2.mp4"
     },
@@ -890,7 +1005,9 @@
       "ch": null,
       "notes": [
         "i12 out of Flicker",
-        "loops back into Flicker"
+        "loops back into Flicker",
+        "Transition to FLK with b (-1/+10/+10)",
+        "Transition to ALB with 3+4 with 2?F delay (+17g/+28g/+28)"
       ]
     },
     "flk1-1": {
@@ -903,7 +1020,12 @@
       "hit": "+0",
       "ch": null,
       "notes": [
-        "duckable on block"
+        "duckable on block",
+        "Combo from 1st CH with 3F delay",
+        "Move can be delayed by 3F",
+        "Jail from 1st block with ?F delay",
+        "Transition to FLK with b (-4/+5/+5)",
+        "Transition to ALB with 3+4 (+14g/+23g/+23)"
       ]
     },
     "flk1-1-1": {
@@ -916,7 +1038,12 @@
       "hit": "+0",
       "ch": null,
       "notes": [
-        "the jab loop"
+        "the jab loop",
+        "Combo from 2nd CH with 1F delay",
+        "Jail from 2nd block with 1F delay",
+        "Move can be delayed by 1F",
+        "Transition to FLK with b (-4/+5/+5)",
+        "Transition to ALB with 3+4 (+14g/+23g/+23)"
       ]
     },
     "flk1-1-1-2": {
@@ -929,7 +1056,9 @@
       "hit": "+17a (+0)",
       "ch": null,
       "notes": [
-        "Tornado ender"
+        "Tornado ender",
+        "Tornado",
+        "Combo from 3rd hit"
       ],
       "video": "https://wavu.wiki/w/images/d/dc/T8-p2-steve-flk.1%2C1%2C1%2C2.mp4"
     },
@@ -944,7 +1073,10 @@
       "ch": "+42a",
       "notes": [
         "0 on block",
-        "CH +42a"
+        "CH +42a",
+        "Combo from 1st CH with 14F delay",
+        "Jail from 1st block with ?F delay (crouch assist bufferable)",
+        "Move can be delayed by 14F"
       ],
       "video": "https://wavu.wiki/w/images/1/15/T8-p2-steve-flk.1%2Cd%2B1.mp4"
     },
@@ -958,7 +1090,10 @@
       "hit": "+0c",
       "ch": "+10d",
       "notes": [
-        "CH +10d"
+        "CH +10d",
+        "Combo from 1st CH with 14F delay",
+        "Jail from 1st block with 3F delay",
+        "Move can be delayed by 14F"
       ],
       "video": "https://wavu.wiki/w/images/d/d4/T8-p2-steve-flk.1%2Cf%2B1.mp4"
     },
@@ -1030,7 +1165,9 @@
       "hit": "+8",
       "ch": null,
       "notes": [
-        "0 on block"
+        "0 on block",
+        "Combo from 1st hit",
+        "Jail from 1st block"
       ]
     },
     "pab1-2-1": {
@@ -1043,7 +1180,10 @@
       "hit": "+8c",
       "ch": "+44a",
       "notes": [
-        "CH +44a"
+        "CH +44a",
+        "Combo from 2nd CH with 8F delay",
+        "Jail from 1st block with no delay",
+        "Move can be delayed by 10F"
       ],
       "video": "https://wavu.wiki/w/images/d/d9/T8-p2-steve-pab.1%2C2%2C1.mp4"
     },
@@ -1059,7 +1199,8 @@
       "notes": [
         "+5 ON BLOCK",
         "homing",
-        "and it PUNCH PARRIES"
+        "and it PUNCH PARRIES",
+        "Transition to standing with B (+1/+10c)"
       ],
       "video": "https://wavu.wiki/w/images/8/84/T8-p2-steve-pab.2.mp4"
     },
@@ -1101,7 +1242,10 @@
       "notes": [
         "+3 on block",
         "homing",
-        "enters Lionheart"
+        "enters Lionheart",
+        "Combo from 1st hit with 8F delay",
+        "Transition to LNH",
+        "Transition to standing with B (-1/+4)"
       ],
       "video": "https://wavu.wiki/w/images/9/97/T8-p2-steve-pab.df%2B1%2C2.mp4"
     },
@@ -1159,7 +1303,7 @@
       "ch": null,
       "notes": [
         "+24a on hit",
-        "the i13 wall splat"
+        "the i12 wall splat"
       ],
       "video": "https://wavu.wiki/w/images/8/88/T8-p2-steve-pab.f%2B1%2B2.mp4"
     },
@@ -1173,7 +1317,10 @@
       "hit": "+16a (+7)",
       "ch": null,
       "notes": [
-        "Balcony Break"
+        "Balcony Break",
+        "Combo from 3rd hit",
+        "Jails attack inputs from 3rd block",
+        "Transition to FLK with b (-3/+23a (+14))"
       ],
       "video": "https://wavu.wiki/w/images/a/af/T8-p2-steve-pab.b%2B1%2C1%2C2%2C1.mp4"
     },
@@ -1202,7 +1349,8 @@
       "ch": "+32a",
       "notes": [
         "low",
-        "CH +32a"
+        "CH +32a",
+        "Cancel into FC with DB"
       ],
       "video": "https://wavu.wiki/w/images/b/b2/T8-p2-steve-pab.d%2B2.mp4"
     },
@@ -1232,7 +1380,8 @@
       "notes": [
         "Heat Engager",
         "homing",
-        "+15g on block"
+        "+15g on hit — it is -9 on block",
+        "Transition to FLK (-3/+21g) with B"
       ],
       "video": "https://wavu.wiki/w/images/4/4c/T8-p2-steve-lnh.1.mp4"
     },
@@ -1305,7 +1454,8 @@
       "ch": "+55a",
       "notes": [
         "+5 ON BLOCK",
-        "CH +55a"
+        "CH +55a",
+        "Transition to standing (+1/+10c/+51a) with B"
       ],
       "video": "https://wavu.wiki/w/images/c/c4/T8-p2-steve-dck.f%2B2.mp4"
     },
@@ -1319,7 +1469,9 @@
       "hit": "+32a (+22)",
       "ch": null,
       "notes": [
-        "the easy-confirm machine-gun string"
+        "the easy-confirm machine-gun string",
+        "Combo from 1st hit",
+        "Jail from 1st block?"
       ],
       "video": "https://wavu.wiki/w/images/8/89/T8-p2-steve-dck.1%2B2%2C1%2B2%2C1%2B2%2C1%2B2.mp4"
     },
@@ -1361,7 +1513,8 @@
       "hit": "+56a",
       "ch": null,
       "notes": [
-        "+5 on block, +56a on hit, 11 chip damage on block"
+        "+5 on block, +56a on hit, 11 chip damage on block",
+        "Transition to standing (+1/+52a) with B"
       ],
       "video": "https://wavu.wiki/w/images/b/b0/T8-p2-steve-exd.f%2B2.mp4"
     },
@@ -1433,7 +1586,11 @@
       "notes": [
         "+3 on block",
         "homing",
-        "the standard combo ender"
+        "the standard combo ender",
+        "Combo from 1st hit with 7F delay",
+        "Move can be delayed by 10F",
+        "Transition to LNH",
+        "Input b to cancel LNH at (-1/+4/+4)"
       ],
       "video": "https://wavu.wiki/w/images/f/f4/T8-p2-steve-lwv.1%2C2.mp4"
     },
@@ -1447,7 +1604,9 @@
       "hit": "+28a (+19)",
       "ch": null,
       "notes": [
-        "+28a on hit"
+        "+28a on hit",
+        "Combo from 1st hit with 5F delay",
+        "Move can be delayed by 10F"
       ],
       "video": "https://wavu.wiki/w/images/2/23/T8-p2-steve-lwv.1%2C1.mp4"
     },
@@ -1475,7 +1634,8 @@
       "hit": "+4",
       "ch": null,
       "notes": [
-        "-5 on block"
+        "-5 on block",
+        "Transition to PAB with f (-1/+8)"
       ]
     },
     "rwv1": {
@@ -1488,7 +1648,8 @@
       "hit": "+4~+6",
       "ch": null,
       "notes": [
-        "i14 out of the right weave"
+        "i14 out of the right weave",
+        "Transition to PAB with f (-1~+1/+8~+10)"
       ]
     },
     "rwv1-2": {
@@ -1502,7 +1663,11 @@
       "ch": null,
       "notes": [
         "+3 on block",
-        "homing"
+        "homing",
+        "Combo from 1st hit with 2F delay",
+        "Move can be delayed by 11F",
+        "Transition into LNH",
+        "Input b to cancel LNH at (-1/+4/+4)"
       ],
       "video": "https://wavu.wiki/w/images/4/44/T8-p2-steve-rwv.1%2C2.mp4"
     },
@@ -1573,7 +1738,8 @@
       "hit": "+2c",
       "ch": null,
       "notes": [
-        "+1 on block"
+        "+1 on block",
+        "Cancel to r45 with b,b on frame 42"
       ]
     },
     "heat-smash": {
@@ -1587,7 +1753,8 @@
       "ch": null,
       "notes": [
         "Heat Smash",
-        "+8 on block and transitions to Lionheart"
+        "+8 on block and transitions to Lionheart",
+        "Can cancel transition to LNH on block with B at -9"
       ]
     },
     "heat-grab": {
@@ -1601,7 +1768,8 @@
       "ch": null,
       "notes": [
         "Heat only — UNBREAKABLE",
-        "homing"
+        "homing",
+        "Transition to TFA"
       ]
     },
     "rage-art": {
@@ -1614,7 +1782,8 @@
       "hit": "+0d",
       "ch": null,
       "notes": [
-        "Rage Art"
+        "Rage Art",
+        "Transition to attack throw on hit"
       ]
     }
   }

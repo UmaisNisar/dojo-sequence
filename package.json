@@ -10,6 +10,7 @@
     "verify:frames": "node scripts/verify-frame-data.mjs",
     "verify:videos": "node scripts/verify-videos.mjs",
     "verify:quiz": "node --no-warnings scripts/verify-quiz.mjs",
+    "verify:claims": "node --no-warnings scripts/verify-claims.mjs",
     "fetch:videos": "node scripts/fetch-move-videos.mjs"
   },
   "dependencies": {

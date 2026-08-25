@@ -25,7 +25,8 @@
       "ch": null,
       "notes": [
         "i10 high",
-        "+1 on block"
+        "+1 on block",
+        "Recovers 2f faster on hit or block (t27 r17)"
       ]
     },
     "jab-1": {
@@ -39,7 +40,8 @@
       "hit": "+7",
       "ch": null,
       "notes": [
-        "-4 on block"
+        "-4 on block",
+        "Combo from 1st hit"
       ]
     },
     "jab-1-3": {
@@ -53,7 +55,8 @@
       "hit": "+15a (+6)",
       "ch": "+36a (+0)",
       "notes": [
-        "CH +36a"
+        "CH +36a",
+        "Combo from 2nd CH with 5f delay"
       ],
       "video": "https://wavu.wiki/w/images/f/fd/T8-p2-dragunov-1%2C1%2C3.mp4"
     },
@@ -68,7 +71,9 @@
       "hit": "+2",
       "ch": null,
       "notes": [
-        "-9 on block"
+        "-9 on block",
+        "Jail from 1st attack",
+        "Combo from 1st hit"
       ]
     },
     "jab-2-1": {
@@ -83,7 +88,10 @@
       "ch": null,
       "notes": [
         "Heat Engager",
-        "an i10 string that wall splats on counter-hit"
+        "an i10 string that wall splats on counter-hit",
+        "Combo from 1st or 2nd CH",
+        "Jail from 1st block",
+        "Opponent recovers Crouching"
       ],
       "video": "https://wavu.wiki/w/images/7/7d/T8-p2-dragunov-1%2C2%2C1.mp4"
     },
@@ -98,7 +106,9 @@
       "hit": "+1",
       "ch": "+9",
       "notes": [
-        "CH +9"
+        "CH +9",
+        "Jail from 1st attack",
+        "Combo from 1st hit"
       ]
     },
     "jab-3-2": {
@@ -112,7 +122,8 @@
       "hit": "+41a",
       "ch": null,
       "notes": [
-        "+41a on hit"
+        "+41a on hit",
+        "Combo from 2nd CH"
       ],
       "video": "https://wavu.wiki/w/images/e/ee/T8-p2-dragunov-1%2C3%2C2.mp4"
     },
@@ -128,7 +139,8 @@
       "ch": null,
       "notes": [
         "+5 ON BLOCK",
-        "breaks with 1+2 — UNBREAKABLE in Heat"
+        "breaks with 1+2 — UNBREAKABLE in Heat",
+        "Cancel to r28 with B"
       ],
       "video": "https://wavu.wiki/w/images/3/33/T8-p2-dragunov-1%2C3%2C2~1%2B2.mp4"
     },
@@ -157,7 +169,9 @@
       "ch": null,
       "notes": [
         "his i10 punisher",
-        "press DF afterwards to enter Sneak at +10 on hit"
+        "press DF afterwards to enter Sneak at +10 on hit",
+        "Jail from 1st attack",
+        "Combo from 1st hit"
       ]
     },
     "right-1-3": {
@@ -215,7 +229,8 @@
       "ch": null,
       "notes": [
         "press DF to enter Sneak",
-        "the core combo link"
+        "the core combo link",
+        "Combo from 1st hit"
       ]
     },
     "kick3-1-2": {
@@ -229,7 +244,9 @@
       "hit": "+12a (+3)",
       "ch": null,
       "notes": [
-        "mid ender"
+        "mid ender",
+        "Jail from 2nd block with 1F delay",
+        "Combo from 2nd CH with 10f delay"
       ],
       "video": "https://wavu.wiki/w/images/9/9f/T8-p2-dragunov-3%2C1%2C2.mp4"
     },
@@ -244,7 +261,8 @@
       "hit": "+16cg",
       "ch": null,
       "notes": [
-        "+16cg on hit"
+        "+16cg on hit",
+        "Combo from 2nd CH with 7f delay"
       ],
       "video": "https://wavu.wiki/w/images/8/84/T8-p2-dragunov-3%2C1%2C4.mp4"
     },
@@ -273,7 +291,10 @@
       "ch": null,
       "notes": [
         "his -12 punisher",
-        "a core combo ender"
+        "a core combo ender",
+        "Combo from 1st hit",
+        "Jails attack inputs from 1st block (movement bufferable)",
+        "Recovers 3f faster on hit or block"
       ],
       "video": "https://wavu.wiki/w/images/4/46/T8-p2-dragunov-4%2C1.mp4"
     },
@@ -288,7 +309,8 @@
       "hit": "+14c",
       "ch": null,
       "notes": [
-        "CH combo starter"
+        "CH combo starter",
+        "Combo from 1st CH"
       ],
       "video": "https://wavu.wiki/w/images/6/6a/T8-p2-dragunov-4%2C3.mp4"
     },
@@ -347,7 +369,8 @@
       "hit": "+22a (+13)",
       "ch": "+58a",
       "notes": [
-        "CH +58a"
+        "CH +58a",
+        "Combo from 1st CH with 8f delay"
       ],
       "video": "https://wavu.wiki/w/images/f/f9/T8-p2-dragunov-df%2B1%2C4.mp4"
     },
@@ -434,7 +457,9 @@
       "ch": null,
       "notes": [
         "Tornado",
-        "a listed whiff punisher"
+        "a listed whiff punisher",
+        "Combo from 1st hit with 1f delay",
+        "Opponent recovers crouching"
       ],
       "video": "https://wavu.wiki/w/images/b/b8/T8-p2-dragunov-b%2B1%2C2.mp4"
     },
@@ -476,7 +501,9 @@
       "hit": "+6",
       "ch": null,
       "notes": [
-        "-5 on block"
+        "-5 on block",
+        "Combo from 1st hit with 3F delay",
+        "Input can be delayed by 3F"
       ]
     },
     "b2-1-3": {
@@ -505,7 +532,8 @@
       "hit": "+11g",
       "ch": null,
       "notes": [
-        "+11g on hit"
+        "+11g on hit",
+        "Transitions to throw on counterhit from the front"
       ],
       "video": "https://wavu.wiki/w/images/4/47/T8-p2-dragunov-b%2B3.mp4"
     },
@@ -519,7 +547,8 @@
       "hit": "+1d",
       "ch": null,
       "notes": [
-        "his sabaki"
+        "his sabaki",
+        "Transitions to throw on block front hit"
       ],
       "video": "https://wavu.wiki/w/images/0/08/T8-p2-dragunov-b%2B3%2B4.mp4"
     },
@@ -535,7 +564,9 @@
       "notes": [
         "UNBREAKABLE",
         "removes recoverable health",
-        "no just frame needed in Heat"
+        "no just frame needed in Heat",
+        "Transitions to throw when blocked from the front",
+        "Just frame not required during Heat"
       ],
       "video": "https://wavu.wiki/w/images/0/08/T8-p2-dragunov-b%2B3%2B4.mp4"
     },
@@ -564,7 +595,8 @@
       "ch": null,
       "notes": [
         "press DF to enter Sneak",
-        "leads to the Ambush Tackle"
+        "leads to the Ambush Tackle",
+        "Combo from 1st CH with 5f delay"
       ]
     },
     "b4-2-1": {
@@ -578,7 +610,9 @@
       "hit": "+5",
       "ch": "+14c",
       "notes": [
-        "+1 on block"
+        "+1 on block",
+        "Combo from 1st CH or 2nd hit with 7F delay",
+        "Move can be delayed by 10F"
       ],
       "video": "https://wavu.wiki/w/images/d/d2/T8-p2-dragunov-b%2B4%2C2%2C1.mp4"
     },
@@ -611,7 +645,9 @@
         "Heat Engager",
         "his -14 punisher",
         "wall splat",
-        "duckable"
+        "duckable",
+        "Combo from 1st hit with 1f delay",
+        "Jails attack inputs (movement bufferable)"
       ],
       "video": "https://wavu.wiki/w/images/0/02/T8-p2-dragunov-b%2B4%2C3.mp4"
     },
@@ -668,7 +704,8 @@
       "hit": "+6",
       "ch": null,
       "notes": [
-        "-8 on block"
+        "-8 on block",
+        "Combo from 1st CH"
       ]
     },
     "d3-2-1plus2": {
@@ -697,7 +734,8 @@
       "hit": "+5",
       "ch": "+23g",
       "notes": [
-        "CH +23g"
+        "CH +23g",
+        "Combo from 1st CH"
       ],
       "video": "https://wavu.wiki/w/images/c/c8/T8-p2-dragunov-d%2B3%2C4.mp4"
     },
@@ -725,7 +763,8 @@
       "hit": "+5",
       "ch": null,
       "notes": [
-        "-11 on block"
+        "-11 on block",
+        "Combo from 1st CH with 1f delay"
       ]
     },
     "d4-4": {
@@ -739,7 +778,8 @@
       "hit": "+16a (+6)",
       "ch": null,
       "notes": [
-        "+16a on hit"
+        "+16a on hit",
+        "Combo from 1st CH"
       ],
       "video": "https://wavu.wiki/w/images/f/f2/T8-p2-dragunov-d%2B4%2C4.mp4"
     },
@@ -781,7 +821,8 @@
       "hit": "+1",
       "ch": "+3",
       "notes": [
-        "CH +3"
+        "CH +3",
+        "Combo from 1st hit with 9f delay"
       ]
     },
     "db2-1-2": {
@@ -795,7 +836,8 @@
       "hit": "+29a (+23)",
       "ch": null,
       "notes": [
-        "+29a on hit"
+        "+29a on hit",
+        "Combo from 2nd CH with 6f delay"
       ],
       "video": "https://wavu.wiki/w/images/a/ae/T8-p2-dragunov-db%2B2%2C1%2C2.mp4"
     },
@@ -824,7 +866,8 @@
       "hit": "+1d",
       "ch": null,
       "notes": [
-        "the low feint into a throw"
+        "the low feint into a throw",
+        "Cancel to FC with D, DB or DF"
       ],
       "video": "https://wavu.wiki/w/images/a/ac/T8-p2-dragunov-db%2B3~1%2B2.mp4"
     },
@@ -868,7 +911,8 @@
       "hit": "+0d",
       "ch": null,
       "notes": [
-        "i11 command throw"
+        "i11 command throw",
+        "Opponent recovers in FDFT"
       ],
       "video": "https://wavu.wiki/w/images/e/ef/T8-p2-dragunov-f%2B1%2B4.mp4"
     },
@@ -897,7 +941,8 @@
       "ch": "+31a (+25)",
       "notes": [
         "+28a on hit",
-        "CH +31a"
+        "CH +31a",
+        "Combo from 1st CH with 10f delay"
       ],
       "video": "https://wavu.wiki/w/images/4/42/T8-p2-dragunov-f%2B2%2C4.mp4"
     },
@@ -911,7 +956,8 @@
       "hit": "-1d",
       "ch": null,
       "notes": [
-        "i11 command throw"
+        "i11 command throw",
+        "Opponent recovers in FUFA (FUFL?)"
       ],
       "video": "https://wavu.wiki/w/images/5/53/T8-p2-dragunov-f%2B2%2B3.mp4"
     },
@@ -940,7 +986,8 @@
       "ch": null,
       "notes": [
         "Heat Engager",
-        "his -20 punisher"
+        "his -20 punisher",
+        "Combo from 1st hit"
       ],
       "video": "https://wavu.wiki/w/images/7/72/T8-p2-dragunov-f%2B3%2C1%2B2.mp4"
     },
@@ -955,7 +1002,8 @@
       "hit": "+1d / +1c",
       "ch": null,
       "notes": [
-        "mid ender"
+        "mid ender",
+        "Combo from 1st CH"
       ],
       "video": "https://wavu.wiki/w/images/0/0e/T8-p2-dragunov-f%2B3%2C3.mp4"
     },
@@ -998,7 +1046,8 @@
       "ch": null,
       "notes": [
         "Tornado",
-        "his other -14 punisher"
+        "his other -14 punisher",
+        "Combo from 1st hit with 3f delay"
       ],
       "video": "https://wavu.wiki/w/images/3/37/T8-p2-dragunov-f%2B4%2C3.mp4"
     },
@@ -1013,7 +1062,8 @@
       "hit": "+0",
       "ch": "+22a (+15)",
       "notes": [
-        "CH +22a"
+        "CH +22a",
+        "Combo from 1st hit with 5f delay"
       ]
     },
     "f4-4-3": {
@@ -1042,7 +1092,8 @@
       "hit": "+3c",
       "ch": null,
       "notes": [
-        "the low branch"
+        "the low branch",
+        "Combo from 1st hit with 5f delay"
       ],
       "video": "https://wavu.wiki/w/images/3/3c/T8-p2-dragunov-f%2B4%2Cd%2B4.mp4"
     },
@@ -1057,7 +1108,8 @@
       "ch": "+30d (+22)",
       "notes": [
         "i15 mid",
-        "CH +30d"
+        "CH +30d",
+        "Cancel to Feint & Catch with 1+2 at frame 14"
       ],
       "video": "https://wavu.wiki/w/images/e/e7/T8-p2-dragunov-f%2Cf%2B2.mp4"
     },
@@ -1102,7 +1154,8 @@
       "ch": "+44a",
       "notes": [
         "+4 ON BLOCK, CH +44a — his defining pressure mid",
-        "f,n,f+2 within 8f for the powered-up version"
+        "f,n,f+2 within 8f for the powered-up version",
+        "Do f,n,f+2 within 8 total frames for the powered up (bluespark) version - 26 damage and 7 chip damage on block"
       ],
       "video": "https://wavu.wiki/w/images/3/3f/T8-p2-dragunov-f%2Cf%2Cf%2B2.mp4"
     },
@@ -1116,7 +1169,9 @@
       "hit": "+1d",
       "ch": null,
       "notes": [
-        "transitions to an UNBREAKABLE attack throw"
+        "transitions to an UNBREAKABLE attack throw",
+        "Tornado",
+        "Transition to attack throw on front standing or wall hit"
       ],
       "video": "https://wavu.wiki/w/images/b/b1/T8-p2-dragunov-f%2Cf%2Cf%2B4.mp4"
     },
@@ -1312,7 +1367,8 @@
       "hit": "+10g",
       "ch": null,
       "notes": [
-        "-12 crouching punisher"
+        "-12 crouching punisher",
+        "Combo from 1st hit"
       ],
       "video": "https://wavu.wiki/w/images/4/48/T8-p2-dragunov-ws1%2C2.mp4"
     },
@@ -1329,7 +1385,9 @@
       "notes": [
         "-12 crouching punisher",
         "wall splat",
-        "CH +36a"
+        "CH +36a",
+        "Combo from 1st hit with 1F delay",
+        "Input can be delayed by 1F"
       ],
       "video": "https://wavu.wiki/w/images/f/f1/T8-p2-dragunov-ws1%2C3.mp4"
     },
@@ -1414,7 +1472,9 @@
       "ch": null,
       "notes": [
         "the core combo link",
-        "a just-frame input gives 1 more damage"
+        "a just-frame input gives 1 more damage",
+        "Combo from 1st hit",
+        "Available only as combo from 1st hit"
       ],
       "video": "https://wavu.wiki/w/images/d/df/T8-p2-dragunov-fc.df%2B1%2C4.mp4"
     },
@@ -1472,7 +1532,8 @@
       "ch": null,
       "notes": [
         "Power Crush",
-        "absorbs a hit into an attack throw"
+        "absorbs a hit into an attack throw",
+        "Absorb a hit to transition to Snap Knee Assault"
       ],
       "video": "https://wavu.wiki/w/images/1/14/T8-p2-dragunov-snk.3%2B4.mp4"
     },
@@ -1527,7 +1588,8 @@
       "hit": "+3d",
       "ch": null,
       "notes": [
-        "breaks with 1+2 — UNBREAKABLE in Heat"
+        "breaks with 1+2 — UNBREAKABLE in Heat",
+        "Transition to BT on throw break"
       ]
     },
     "ss2": {
@@ -1554,7 +1616,8 @@
       "hit": "+45a",
       "ch": null,
       "notes": [
-        "+45a on hit"
+        "+45a on hit",
+        "Move can be delayed by 15F"
       ],
       "video": "https://wavu.wiki/w/images/f/f9/T8-p2-dragunov-ss.2%2C1%2B2%2C4.mp4"
     },
@@ -1581,7 +1644,8 @@
       "hit": "+2c",
       "ch": null,
       "notes": [
-        "+1 on block"
+        "+1 on block",
+        "Cancel to r45 with b,b on frame 42"
       ]
     },
     "heat-smash": {
@@ -1609,7 +1673,8 @@
       "hit": "+0d",
       "ch": null,
       "notes": [
-        "Rage Art"
+        "Rage Art",
+        "Transition to attack throw on hit"
       ]
     }
   }

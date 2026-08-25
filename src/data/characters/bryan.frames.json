@@ -25,7 +25,8 @@
       "ch": null,
       "notes": [
         "i10 high",
-        "+1 on block"
+        "+1 on block",
+        "Recovers 2f faster on hit or block (t27 r17)"
       ]
     },
     "jab-2": {
@@ -40,7 +41,9 @@
       "ch": "+9",
       "notes": [
         "jails from the first hit on block",
-        "CH +9"
+        "CH +9",
+        "Jail from 1st block",
+        "Combo from 1st hit"
       ],
       "video": "https://wavu.wiki/w/images/b/ba/T8-p2-bryan-1%2C2.mp4"
     },
@@ -57,7 +60,10 @@
       "notes": [
         "mid ender",
         "combos from a 1st-hit CH",
-        "can be delayed 10f"
+        "can be delayed 10f",
+        "Combo from 1st CH with no delay",
+        "Combo from 2nd CH with 10F delay",
+        "Move can be delayed by 10F"
       ],
       "video": "https://wavu.wiki/w/images/b/b5/T8-p2-bryan-1%2C2%2C1.mp4"
     },
@@ -73,7 +79,10 @@
       "ch": "+14a",
       "notes": [
         "low ender",
-        "the mixup partner to 1,2,1"
+        "the mixup partner to 1,2,1",
+        "Combo from 1st CH with no delay",
+        "Combo from 2nd CH with 3F delay",
+        "Input can be delayed by 3F"
       ],
       "video": "https://wavu.wiki/w/images/6/6e/T8-p2-bryan-1%2C2%2C3.mp4"
     },
@@ -90,7 +99,9 @@
       "notes": [
         "Heat Engager",
         "Balcony Break",
-        "interruptible with i2 after the 1st hit on block"
+        "interruptible with i2 after the 1st hit on block",
+        "Combo from 1st CH or 2nd CH with 3f delay",
+        "Input can be delayed by 3F"
       ],
       "video": "https://wavu.wiki/w/images/c/c3/T8-p2-bryan-1%2C2%2C4.mp4"
     },
@@ -106,7 +117,8 @@
       "ch": null,
       "notes": [
         "his i10 punisher",
-        "jails from the 1st hit"
+        "jails from the 1st hit",
+        "Jail from 1st attack"
       ]
     },
     "right": {
@@ -135,7 +147,9 @@
       "ch": "+16a (+7)",
       "notes": [
         "his other i10 punisher",
-        "CH +16a"
+        "CH +16a",
+        "Combo from 1st hit with 1f delay",
+        "CH frames also apply to combo from 1st CH"
       ],
       "video": "https://wavu.wiki/w/images/6/6a/T8-p2-bryan-2%2C3.mp4"
     },
@@ -163,7 +177,8 @@
       "hit": "+2",
       "ch": null,
       "notes": [
-        "his -12 punisher"
+        "his -12 punisher",
+        "Combo from 1st hit"
       ]
     },
     "kick-4-1": {
@@ -178,7 +193,9 @@
       "ch": null,
       "notes": [
         "core combo filler",
-        "-1 on block"
+        "-1 on block",
+        "Combo from 1st hit",
+        "Transition to +8 +0 SWA with B"
       ],
       "video": "https://wavu.wiki/w/images/0/02/T8-p2-bryan-4%2C1.mp4"
     },
@@ -221,7 +238,9 @@
       "ch": null,
       "notes": [
         "chip-pressure string",
-        "-10 on block"
+        "-10 on block",
+        "Jail from 1st block with 9F delay",
+        "Combo from 1st hit with 14F delay"
       ]
     },
     "df2": {
@@ -249,7 +268,8 @@
       "ch": null,
       "notes": [
         "his -13 punisher",
-        "press b afterward to enter Sway"
+        "press b afterward to enter Sway",
+        "Combo from 1st hit"
       ],
       "video": "https://wavu.wiki/w/images/7/73/T8-p2-bryan-df%2B2%2C1.mp4"
     },
@@ -264,7 +284,8 @@
       "ch": null,
       "notes": [
         "-2 on block, +8 on crouching hit",
-        "hold D to stay crouched"
+        "hold D to stay crouched",
+        "Transition to FC with D"
       ]
     },
     "db2": {
@@ -334,7 +355,8 @@
       "ch": null,
       "notes": [
         "combos from a 1st-hit CH",
-        "+35a on hit"
+        "+35a on hit",
+        "Combo from 1st CH"
       ],
       "video": "https://wavu.wiki/w/images/4/40/T8-p2-bryan-d%2B3%2C2.mp4"
     },
@@ -390,7 +412,10 @@
       "hit": "+14a (-3)",
       "ch": null,
       "notes": [
-        "combo filler"
+        "combo filler",
+        "Tornado",
+        "Combo from 1st CH",
+        "Cancel to -23 -12 -7 FC with DB"
       ],
       "video": "https://wavu.wiki/w/images/9/92/T8-p2-bryan-d%2B3%2B4%2C2.mp4"
     },
@@ -405,7 +430,8 @@
       "ch": null,
       "notes": [
         "Heat Engager",
-        "jails from the 1st hit"
+        "jails from the 1st hit",
+        "Jail from 1st attack"
       ],
       "video": "https://wavu.wiki/w/images/9/93/T8-p2-bryan-db%2B1%2B2.mp4"
     },
@@ -450,7 +476,8 @@
       "notes": [
         "low",
         "CH +29a",
-        "cancel with B"
+        "cancel with B",
+        "Cancel to r26 with B"
       ],
       "video": "https://wavu.wiki/w/images/c/c9/T8-p2-bryan-b%2Cdf%2B4.mp4"
     },
@@ -480,7 +507,9 @@
       "ch": "+53a",
       "notes": [
         "CH +53a",
-        "f+1 cancels into b+2,1 and f+4 into b+2,4"
+        "f+1 cancels into b+2,1 and f+4 into b+2,4",
+        "Cancel into b+2,1 with f+1",
+        "Cancel into b+2,4 with f+4"
       ]
     },
     "b2-1": {
@@ -495,7 +524,8 @@
       "ch": null,
       "notes": [
         "0 on block",
-        "core combo filler"
+        "core combo filler",
+        "Cancel to SS with u_d"
       ]
     },
     "b2-4": {
@@ -567,7 +597,8 @@
       "ch": null,
       "notes": [
         "his -15 punisher",
-        "press 1+2 on hit to gain Snake Eyes"
+        "press 1+2 on hit to gain Snake Eyes",
+        "Combo from 1st or 2nd hit"
       ],
       "video": "https://wavu.wiki/w/images/a/a9/T8-p2-bryan-f%2B2%2C1%2C4.mp4"
     },
@@ -611,7 +642,8 @@
       "ch": null,
       "notes": [
         "his -18 and whiff punisher",
-        "+40a"
+        "+40a",
+        "Combo from 1st hit with 5f delay"
       ],
       "video": "https://wavu.wiki/w/images/d/d0/T8-p2-bryan-f%2B4%2C1.mp4"
     },
@@ -642,7 +674,8 @@
       "ch": null,
       "notes": [
         "i14 launcher, but it is a HIGH",
-        "can be buffered"
+        "can be buffered",
+        "Tornado"
       ],
       "video": "https://wavu.wiki/w/images/a/ac/T8-p2-bryan-f%2Cn%2Cb%2B2.mp4"
     },
@@ -789,7 +822,8 @@
       "ch": null,
       "notes": [
         "his -13 punisher",
-        "works standing or crouching"
+        "works standing or crouching",
+        "Combo from 3rd hit with 5f delay"
       ],
       "video": "https://wavu.wiki/w/images/e/eb/T8-p2-bryan-uf%2B2%2C2%2C2%2C3.mp4"
     },
@@ -818,7 +852,8 @@
       "hit": "+50a",
       "ch": null,
       "notes": [
-        "attack throw on standing hit"
+        "attack throw on standing hit",
+        "Transition to r90 attack throw on front/side standing hit"
       ],
       "video": "https://wavu.wiki/w/images/d/d9/T8-p2-bryan-ws2.mp4"
     },
@@ -861,7 +896,8 @@
       "ch": null,
       "notes": [
         "his -13 crouching punisher",
-        "wall splat"
+        "wall splat",
+        "Combo from 1st hit with 7f delay"
       ],
       "video": "https://wavu.wiki/w/images/5/5d/T8-p2-bryan-fc.df%2B2%2C1.mp4"
     },
@@ -904,7 +940,9 @@
       "hit": "+17cg",
       "ch": null,
       "notes": [
-        "Heat Engager off a sidestep"
+        "Heat Engager off a sidestep",
+        "Combo from 1st hit with 8f delay",
+        "Cancel to r35 with B (-15/-1)"
       ],
       "video": "https://wavu.wiki/w/images/1/1a/T8-p2-bryan-ss.2%2C1.mp4"
     },
@@ -920,7 +958,8 @@
       "notes": [
         "Sway move (Wavu lists it as SWA.1)",
         "+1 on block",
-        "CH +72a Tornado"
+        "CH +72a Tornado",
+        "Tornado"
       ],
       "video": "https://wavu.wiki/w/images/e/ee/T8-p2-bryan-swa.1.mp4"
     },
@@ -962,7 +1001,8 @@
       "hit": "+31a (+21)",
       "ch": null,
       "notes": [
-        "Sway launcher, +31a on hit"
+        "Sway launcher, +31a on hit",
+        "Recovers 2f faster on hit (t48 r30)"
       ],
       "video": "https://wavu.wiki/w/images/9/94/T8-p2-bryan-swa.4.mp4"
     },
@@ -990,7 +1030,8 @@
       "hit": "+33a (+18)",
       "ch": null,
       "notes": [
-        "combo filler, +33a"
+        "combo filler, +33a",
+        "Combo from 1st hit with 4f delay"
       ],
       "video": "https://wavu.wiki/w/images/b/b4/T8-p2-bryan-sls.2%2C1.mp4"
     },
@@ -1005,7 +1046,8 @@
       "hit": "+14a",
       "ch": null,
       "notes": [
-        "floor-break combo ender"
+        "floor-break combo ender",
+        "Combo from 1st hit with 4f delay"
       ],
       "video": "https://wavu.wiki/w/images/5/57/T8-p2-bryan-sls.2%2C2.mp4"
     },
@@ -1020,7 +1062,9 @@
       "ch": null,
       "notes": [
         "gains Snake Eyes",
-        "combo filler"
+        "combo filler",
+        "Tornado",
+        "Combo from 1st hit with 4f delay"
       ],
       "video": "https://wavu.wiki/w/images/f/f4/T8-p2-bryan-sls.2%2C4.mp4"
     },
@@ -1063,7 +1107,9 @@
       "notes": [
         "cancellable on frames 1~31",
         "grants Snake Eyes",
-        "-34 if left uncancelled"
+        "-34 if left uncancelled",
+        "Cancellable with any input on frames 1~31",
+        "-34 if not cancelled"
       ]
     },
     "sne2": {
@@ -1078,7 +1124,9 @@
       "ch": null,
       "notes": [
         "consumes Snake Eyes",
-        "unparryable"
+        "unparryable",
+        "Combo from 1st hit",
+        "Unparryable by traditional parries, Asuka, Nina, etc"
       ],
       "video": "https://wavu.wiki/w/images/8/82/T8-p2-bryan-3%2B4%2Csne.2.mp4"
     },
@@ -1093,7 +1141,8 @@
       "hit": "+66a (+50)",
       "ch": null,
       "notes": [
-        "plus on block and wall splats on block"
+        "plus on block and wall splats on block",
+        "Tornado"
       ],
       "video": "https://wavu.wiki/w/images/5/57/T8-p2-bryan-3%2B4%2Csne.2s.mp4"
     },
@@ -1122,7 +1171,8 @@
       "ch": "+25a",
       "notes": [
         "unparryable low",
-        "CH +25a"
+        "CH +25a",
+        "Unparryable"
       ]
     },
     "sne-ff1-2": {
@@ -1136,7 +1186,9 @@
       "ch": null,
       "notes": [
         "strong parry that auto-retaliates",
-        "costs 300f of Heat"
+        "costs 300f of Heat",
+        "On a successful parry, the attack is canceled and Bryan automatically retaliates",
+        "Unparryable with traditional parries, Asuka, Nina, etc"
       ],
       "video": "https://wavu.wiki/w/images/e/e0/T8-p2-bryan-sne.f%2Cf%2B1%2B2.mp4"
     },
@@ -1151,7 +1203,8 @@
       "ch": null,
       "notes": [
         "Heat Smash",
-        "+9 on block"
+        "+9 on block",
+        "Transition to attack throw on 1st or 2nd hit (55dmg total)"
       ]
     },
     "rage-art": {
@@ -1165,7 +1218,8 @@
       "ch": null,
       "notes": [
         "Rage Art",
-        "Reversal Break"
+        "Reversal Break",
+        "Transition to attack throw on hit"
       ]
     },
     "parry": {

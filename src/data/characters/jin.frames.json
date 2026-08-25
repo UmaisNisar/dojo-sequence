@@ -25,7 +25,8 @@
       "ch": null,
       "notes": [
         "i10 high",
-        "+1 on block"
+        "+1 on block",
+        "Recovers 2f faster on hit or block (t27 r17)"
       ]
     },
     "jab-2": {
@@ -40,7 +41,8 @@
       "ch": null,
       "notes": [
         "-3 on block",
-        "the root of three enders"
+        "the root of three enders",
+        "Jail from 1st attack with 4f delay"
       ],
       "video": "https://wavu.wiki/w/images/4/45/T8-p2-jin-1%2C2.mp4"
     },
@@ -57,7 +59,9 @@
       "notes": [
         "launches",
         "his back-turned punisher",
-        "-16 on block"
+        "-16 on block",
+        "Tornado",
+        "Combo from 2nd CH with 7f delay"
       ],
       "video": "https://wavu.wiki/w/images/c/cf/T8-p2-jin-1%2C2%2C1.mp4"
     },
@@ -87,7 +91,8 @@
       "hit": "+23a (+14)",
       "ch": null,
       "notes": [
-        "-4 on block"
+        "-4 on block",
+        "Combo from 3rd hit with 7f delay"
       ],
       "video": "https://wavu.wiki/w/images/6/68/T8-p2-jin-1%2C2%2C4.mp4"
     },
@@ -102,7 +107,8 @@
       "hit": "-1",
       "ch": null,
       "notes": [
-        "low ender"
+        "low ender",
+        "Combo from 1st hit with 4f delay"
       ]
     },
     "jab-3-4": {
@@ -117,7 +123,8 @@
       "ch": "+29a",
       "notes": [
         "low",
-        "CH +29a"
+        "CH +29a",
+        "Combo from 2nd CH with 7f delay"
       ],
       "video": "https://wavu.wiki/w/images/9/93/T8-p2-jin-1%2C3%2C4.mp4"
     },
@@ -145,7 +152,8 @@
       "hit": "+6",
       "ch": null,
       "notes": [
-        "-3 on block"
+        "-3 on block",
+        "Jail from 1st attack with 2f delay"
       ]
     },
     "right-1-4": {
@@ -160,7 +168,8 @@
       "ch": "+16a (+7)",
       "notes": [
         "delayable",
-        "CH +16a"
+        "CH +16a",
+        "Combo from 2nd CH with 8f delay"
       ],
       "video": "https://wavu.wiki/w/images/c/cf/T8-p2-jin-2%2C1%2C4.mp4"
     },
@@ -192,7 +201,8 @@
       "notes": [
         "his i10 punisher",
         "wall splat",
-        "the ender is a duckable high"
+        "the ender is a duckable high",
+        "Combo from 1st hit with 2f delay"
       ],
       "video": "https://wavu.wiki/w/images/9/90/T8-p2-jin-2%2C4.mp4"
     },
@@ -220,7 +230,8 @@
       "hit": "+7",
       "ch": null,
       "notes": [
-        "press F afterwards to enter Zenshin at +4"
+        "press F afterwards to enter Zenshin at +4",
+        "Combo from 1st hit"
       ]
     },
     "kick3-1-4": {
@@ -235,7 +246,8 @@
       "ch": "+29a",
       "notes": [
         "low ender",
-        "CH +29a"
+        "CH +29a",
+        "Combo from 2nd CH with 9f delay"
       ],
       "video": "https://wavu.wiki/w/images/2/26/T8-p2-jin-3%2C1%2C4.mp4"
     },
@@ -293,7 +305,8 @@
       "hit": "+21a (+11)",
       "ch": null,
       "notes": [
-        "his -14 punisher"
+        "his -14 punisher",
+        "Jail from 1st attack"
       ],
       "video": "https://wavu.wiki/w/images/3/34/T8-p2-jin-f%2B1%2B2.mp4"
     },
@@ -322,7 +335,8 @@
       "ch": "+17a (+8)",
       "notes": [
         "his -13 punisher",
-        "CH +17a"
+        "CH +17a",
+        "Combo from 1st hit with 6f delay"
       ],
       "video": "https://wavu.wiki/w/images/a/a4/T8-p2-jin-df%2B1%2C4.mp4"
     },
@@ -426,7 +440,9 @@
       "ch": null,
       "notes": [
         "his -12 punisher",
-        "+32a on hit"
+        "+32a on hit",
+        "Tornado",
+        "Combo from 1st hit with 8f delay"
       ],
       "video": "https://wavu.wiki/w/images/4/4c/T8-p2-jin-b%2B1%2C2.mp4"
     },
@@ -454,7 +470,10 @@
       "hit": "+2",
       "ch": null,
       "notes": [
-        "mid check and whiff punisher"
+        "mid check and whiff punisher",
+        "Jail from 1st block with 5F delay",
+        "Combo from 1st hit with 1F delay",
+        "Combo from 1st CH with 13f delay"
       ],
       "video": "https://wavu.wiki/w/images/1/1b/T8-p2-jin-b%2B2%2C1.mp4"
     },
@@ -484,7 +503,8 @@
       "ch": null,
       "notes": [
         "combo ender",
-        "+21 on wall hit"
+        "+21 on wall hit",
+        "Combo from 1st CH with 9F delay"
       ],
       "video": "https://wavu.wiki/w/images/3/37/T8-p2-jin-b%2B3%2C2.mp4"
     },
@@ -527,7 +547,10 @@
       "ch": null,
       "notes": [
         "Heat Engager",
-        "his other -14 punisher"
+        "his other -14 punisher",
+        "Combo from 1st hit with 8F delay",
+        "Move can be delayed by 7F",
+        "Input can be delayed by 8F"
       ],
       "video": "https://wavu.wiki/w/images/b/b8/T8-p2-jin-f%2B3%2C1.mp4"
     },
@@ -542,7 +565,11 @@
       "hit": "+8",
       "ch": null,
       "notes": [
-        "press F to enter Zenshin"
+        "press F to enter Zenshin",
+        "Combo from 1st hit with 8F delay",
+        "Move can be delayed by 7F",
+        "Input can be delayed by 8F",
+        "Transition to Special Move backdash with B"
       ],
       "video": "https://wavu.wiki/w/images/9/94/T8-p2-jin-f%2B3%2C3.mp4"
     },
@@ -601,7 +628,8 @@
       "hit": "+7",
       "ch": null,
       "notes": [
-        "+1 on block"
+        "+1 on block",
+        "Jails attack inputs (crouch assist bufferable)"
       ],
       "video": "https://wavu.wiki/w/images/6/64/T8-p2-jin-f%2Cf%2B3%2C1.mp4"
     },
@@ -629,7 +657,8 @@
       "hit": "+13a~+14a (+3~+4)",
       "ch": null,
       "notes": [
-        "plus on block from a run"
+        "plus on block from a run",
+        "Transition to +6 +13a ZEN with F"
       ],
       "video": "https://wavu.wiki/w/images/6/64/T8-p2-jin-f%2Cf%2Cf%2B3.mp4"
     },
@@ -657,7 +686,8 @@
       "hit": "+6",
       "ch": "+9",
       "notes": [
-        "-5 on block"
+        "-5 on block",
+        "Combo from 1st hit with 8f delay"
       ]
     },
     "bf2-1-2": {
@@ -671,7 +701,8 @@
       "hit": "+18a (+9)",
       "ch": "+50a (+3)",
       "notes": [
-        "CH +50a"
+        "CH +50a",
+        "Combo from 2nd CH with 15f"
       ],
       "video": "https://wavu.wiki/w/images/8/87/T8-p2-jin-b%2Cf%2B2%2C1%2C2.mp4"
     },
@@ -687,7 +718,9 @@
       "ch": null,
       "notes": [
         "wall combo ender",
-        "+37a"
+        "+37a",
+        "Tornado",
+        "Combo from 2nd CH"
       ],
       "video": "https://wavu.wiki/w/images/0/01/T8-p2-jin-b%2Cf%2B2%2C1%2Cdf%2B2.mp4"
     },
@@ -703,7 +736,8 @@
       "ch": "+59a",
       "notes": [
         "core combo filler",
-        "press F to enter Zenshin at +2"
+        "press F to enter Zenshin at +2",
+        "Combo from 1st hit with 4f delay"
       ],
       "video": "https://wavu.wiki/w/images/f/f2/T8-p2-jin-b%2Cf%2B2%2C3.mp4"
     },
@@ -803,7 +837,8 @@
       "hit": "-3",
       "ch": null,
       "notes": [
-        "string starter"
+        "string starter",
+        "Combo from 1st CH"
       ]
     },
     "d3-4-3": {
@@ -817,7 +852,9 @@
       "hit": "+31d (+23)",
       "ch": null,
       "notes": [
-        "CH combo ender"
+        "CH combo ender",
+        "Tornado",
+        "Combo from 2nd CH with 2f delay"
       ],
       "video": "https://wavu.wiki/w/images/b/be/T8-p2-jin-d%2B3%2C4%2C3.mp4"
     },
@@ -875,7 +912,8 @@
       "ch": null,
       "notes": [
         "i10 special low",
-        "his remapped d+1"
+        "his remapped d+1",
+        "Transition to r24 with f"
       ]
     },
     "db2": {
@@ -902,7 +940,8 @@
       "hit": "-7",
       "ch": "+43a",
       "notes": [
-        "CH +43a launcher"
+        "CH +43a launcher",
+        "Jail from 1st attack"
       ]
     },
     "db2-2-3": {
@@ -962,7 +1001,8 @@
       "notes": [
         "CH +69a",
         "-26 on block",
-        "enters Zenshin with F on hit"
+        "enters Zenshin with F on hit",
+        "Transition to +12cg ZEN with F on hit"
       ],
       "video": "https://wavu.wiki/w/images/e/ed/T8-p2-jin-fc.df%2B4.mp4"
     },
@@ -992,7 +1032,8 @@
       "ch": null,
       "notes": [
         "i11 launcher that is PLUS on block",
-        "the defining Jin move"
+        "the defining Jin move",
+        "Recovers 3f faster on hit or block (t36 r24)"
       ],
       "video": "https://wavu.wiki/w/images/d/d1/T8-p2-jin-cd.dfh2.mp4"
     },
@@ -1023,7 +1064,8 @@
       "ch": null,
       "notes": [
         "the just-frame version",
-        "+36a"
+        "+36a",
+        "Tornado"
       ],
       "video": "https://wavu.wiki/w/images/1/12/T8-p2-jin-cd.dfh1.mp4"
     },
@@ -1053,7 +1095,8 @@
       "ch": null,
       "notes": [
         "the full power low",
-        "+21a on hit"
+        "+21a on hit",
+        "Combo from 1st hit"
       ],
       "video": "https://wavu.wiki/w/images/5/55/T8-p2-jin-cd.df%2B4%2C2.mp4"
     },
@@ -1081,7 +1124,9 @@
       "hit": "+3c",
       "ch": null,
       "notes": [
-        "his -13 crouching punisher"
+        "his -13 crouching punisher",
+        "Combo from 1st hit with 1f delay",
+        "Combo from 1st CH with 10f delay"
       ],
       "video": "https://wavu.wiki/w/images/f/fa/T8-p2-jin-ws1%2C2.mp4"
     },
@@ -1153,7 +1198,8 @@
       "hit": "+4",
       "ch": null,
       "notes": [
-        "his -11 crouching punisher"
+        "his -11 crouching punisher",
+        "Combo from 1st hit with 1f delay"
       ],
       "video": "https://wavu.wiki/w/images/d/d1/T8-p2-jin-ws4%2C4.mp4"
     },
@@ -1182,7 +1228,9 @@
       "hit": "+32a (+6)",
       "ch": null,
       "notes": [
-        "Heat Engager out of Zenshin"
+        "Heat Engager out of Zenshin",
+        "Combo from 1st hit with 6f delay",
+        "Cancel to Breaking Step -11 -12 r40 with DF on frame 20"
       ],
       "video": "https://wavu.wiki/w/images/f/f8/T8-p2-jin-zen.1%2C2.mp4"
     },
@@ -1197,7 +1245,9 @@
       "hit": "+0d",
       "ch": null,
       "notes": [
-        "attack-throw combo ender"
+        "attack-throw combo ender",
+        "Combo from 1st hit",
+        "Transition to attack throw on standing or airborne hit"
       ],
       "video": "https://wavu.wiki/w/images/9/99/T8-p2-jin-zen.1%2C3.mp4"
     },
@@ -1212,7 +1262,9 @@
       "ch": null,
       "notes": [
         "low attack throw",
-        "Wall Crush"
+        "Wall Crush",
+        "Transition to attack throw on standing hit from the front",
+        "Transition to +5 CD with DF after throw"
       ],
       "video": "https://wavu.wiki/w/images/0/04/T8-p2-jin-zen.1%2B2.mp4"
     },
@@ -1284,7 +1336,8 @@
       "hit": "+31a (+21)",
       "ch": null,
       "notes": [
-        "the Tornado move in every bread-and-butter"
+        "the Tornado move in every bread-and-butter",
+        "Tornado"
       ],
       "video": "https://wavu.wiki/w/images/d/d0/T8-p2-jin-zen.u%2B1.mp4"
     },
@@ -1313,7 +1366,8 @@
       "ch": null,
       "notes": [
         "Power Crush",
-        "attack throw on standing hit"
+        "attack throw on standing hit",
+        "Transition to attack throw on standing hit"
       ],
       "video": "https://wavu.wiki/w/images/7/72/T8-p2-jin-d%2B1.mp4"
     },
@@ -1329,7 +1383,8 @@
       "notes": [
         "unparryable",
         "opponent recovers crouching",
-        "powers up in Heat"
+        "powers up in Heat",
+        "Unparryable by traditional parries, Asuka, Nina, etc"
       ],
       "video": "https://wavu.wiki/w/images/f/f3/T8-p2-jin-db%2B1%2B2.mp4"
     },
@@ -1343,7 +1398,8 @@
       "hit": "+2c",
       "ch": null,
       "notes": [
-        "+1 on block"
+        "+1 on block",
+        "Cancel to r45 with b,b on frame 42"
       ]
     },
     "heat-smash": {
@@ -1357,7 +1413,11 @@
       "ch": null,
       "notes": [
         "Heat Smash",
-        "plus on block and auto-transitions to Crouch Dash"
+        "plus on block and auto-transitions to Crouch Dash",
+        "Transition to attack throw after 1st hit",
+        "Transition to CD automatically on block",
+        "Transition to standing on block with B",
+        "Jail from 1st attack"
       ]
     },
     "heat-smash-4": {
@@ -1371,7 +1431,8 @@
       "ch": null,
       "notes": [
         "+9 on block",
-        "jails from the first hit"
+        "jails from the first hit",
+        "Jail from 1st attack"
       ]
     },
     "h-power-stance": {
@@ -1385,7 +1446,12 @@
       "ch": null,
       "notes": [
         "plus on block",
-        "transitions to the DVS stance"
+        "transitions to the DVS stance",
+        "Transition to DVS r34 on hit or block",
+        "Stance moves can be delayed by 9F",
+        "Transition to FC with no input",
+        "Unparryable by traditional parries, Asuka, Nina, etc",
+        "Opponent recovers crouching"
       ]
     },
     "dvs1": {
@@ -1398,7 +1464,8 @@
       "hit": "+36d",
       "ch": null,
       "notes": [
-        "Heat-only Mishima move"
+        "Heat-only Mishima move",
+        "Tornado"
       ]
     },
     "dvs2": {
@@ -1440,7 +1507,8 @@
       "ch": null,
       "notes": [
         "Rage Art",
-        "Reversal Break"
+        "Reversal Break",
+        "Transition to attack throw on hit"
       ]
     }
   }

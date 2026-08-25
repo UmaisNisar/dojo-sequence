@@ -24,7 +24,8 @@
       "hit": "+8",
       "ch": null,
       "notes": [
-        "your fastest button"
+        "your fastest button",
+        "Recovers 2f faster on hit or block (t27 r17)"
       ]
     },
     "jab-12": {
@@ -38,7 +39,8 @@
       "hit": "+8",
       "ch": null,
       "notes": [
-        "jails"
+        "jails",
+        "Jail from 1st attack with 4f delay"
       ],
       "video": "https://wavu.wiki/w/images/b/b6/T8-p2-lars-1%2C2.mp4"
     },
@@ -53,7 +55,8 @@
       "hit": "+17a",
       "ch": null,
       "notes": [
-        "heat engager"
+        "heat engager",
+        "Combo from 1st CH or 2nd hit with 4f delay"
       ],
       "video": "https://wavu.wiki/w/images/5/5f/T8-p2-lars-1%2C1%2C1.mp4"
     },
@@ -69,7 +72,8 @@
       "ch": null,
       "notes": [
         "10f punish",
-        "whiff punish"
+        "whiff punish",
+        "Combo from 1st hit with 3f delay"
       ],
       "video": "https://wavu.wiki/w/images/0/02/T8-p2-lars-2%2C1.mp4"
     },
@@ -83,7 +87,8 @@
       "hit": "+5",
       "ch": null,
       "notes": [
-        "your money mid"
+        "your money mid",
+        "Recovers 2F faster on hit (t33 r20)"
       ]
     },
     "df2": {
@@ -97,7 +102,9 @@
       "ch": "+13c",
       "notes": [
         "transitions to SEN",
-        "elbow"
+        "elbow",
+        "Transition to SEN",
+        "Transition to standing r34 with B (-11/+1/+5c)"
       ],
       "video": "https://wavu.wiki/w/images/6/6c/T8-p2-lars-df%2B2.mp4"
     },
@@ -128,7 +135,11 @@
       "ch": "+32a",
       "notes": [
         "CH launcher",
-        "delayable"
+        "delayable",
+        "Combo from 1st hit with 15F delay",
+        "Jail from 1st block with ?F delay",
+        "Move can be delayed by 10F",
+        "Input can be delayed by 15F"
       ],
       "video": "https://wavu.wiki/w/images/e/e8/T8-p2-lars-b%2B2%2C1.mp4"
     },
@@ -143,7 +154,8 @@
       "hit": "+19 (+10)",
       "ch": null,
       "notes": [
-        "whiff punish"
+        "whiff punish",
+        "Combo from 1st hit with ?F delay"
       ],
       "video": "https://wavu.wiki/w/images/e/e9/T8-p2-lars-b%2B3%2C4.mp4"
     },
@@ -172,7 +184,12 @@
       "ch": null,
       "notes": [
         "13f punish",
-        "jails"
+        "jails",
+        "Transition to SEN",
+        "Combo from 1st hit with 1F delay",
+        "Input can be delayed by 1F",
+        "Jails from 1st block",
+        "Transition to standing with B (-8/+3)"
       ],
       "video": "https://wavu.wiki/w/images/a/a5/T8-p2-lars-f%2B1%2C2.mp4"
     },
@@ -187,7 +204,11 @@
       "hit": "+22c",
       "ch": "+49a",
       "notes": [
-        "CH launcher"
+        "CH launcher",
+        "Combo from 2nd hit CH",
+        "Transition to DEN",
+        "Cancel DEN and transition to standing with input B (-12/+41d (-17)/+42a)",
+        "Opponent recovers crouching"
       ],
       "video": "https://wavu.wiki/w/images/9/9c/T8-p2-lars-f%2B1%2C2%2C3.mp4"
     },
@@ -202,7 +223,11 @@
       "hit": "+6",
       "ch": null,
       "notes": [
-        "12f punish"
+        "12f punish",
+        "Combo from 1st hit",
+        "Jails",
+        "Transition to SEN",
+        "Cancel SEN and transition to standing with input B (-6/+5)"
       ],
       "video": "https://wavu.wiki/w/images/8/8a/T8-p2-lars-f%2B2%2C1.mp4"
     },
@@ -263,7 +288,9 @@
       "ch": null,
       "notes": [
         "14f launch punish",
-        "jails"
+        "jails",
+        "Jail from 1st block with ?F delay",
+        "Combo from 1st hit with ?F delay"
       ],
       "video": "https://wavu.wiki/w/images/0/00/T8-p2-lars-f%2Cn%2Cb%2B2%2C1.mp4"
     },
@@ -319,7 +346,8 @@
       "ch": "+30d",
       "notes": [
         "neutral on block",
-        "spike"
+        "spike",
+        "Transition to FC with input D"
       ],
       "video": "https://wavu.wiki/w/images/2/2d/T8-p2-lars-d%2B2.mp4"
     },
@@ -350,7 +378,8 @@
       "ch": null,
       "notes": [
         "launcher",
-        "knee"
+        "knee",
+        "Transition to FC on hit"
       ],
       "video": "https://wavu.wiki/w/images/1/1a/T8-p2-lars-uf%2B3.mp4"
     },
@@ -365,7 +394,8 @@
       "ch": null,
       "notes": [
         "tornado",
-        "15f crouch launcher"
+        "15f crouch launcher",
+        "Transition to SEN r32 with F on hit (+36a)"
       ],
       "video": "https://wavu.wiki/w/images/d/df/T8-p2-lars-ws1.mp4"
     },
@@ -394,7 +424,8 @@
       "hit": "+2c",
       "ch": "+4d",
       "notes": [
-        "13f crouch punish"
+        "13f crouch punish",
+        "Combo from 1st hit"
       ],
       "video": "https://wavu.wiki/w/images/f/fd/T8-p2-lars-ws2%2C1.mp4"
     },
@@ -409,7 +440,8 @@
       "ch": null,
       "notes": [
         "launcher",
-        "into LEN with D"
+        "into LEN with D",
+        "Transition to LEN r34 with input D (+4/+26a (+20))"
       ],
       "video": "https://wavu.wiki/w/images/f/f8/T8-p2-lars-ws3.mp4"
     },
@@ -425,7 +457,8 @@
       "notes": [
         "tornado",
         "launcher",
-        "into SEN on hit"
+        "into SEN on hit",
+        "Transition to SEN on hit with input F (+37a)"
       ],
       "video": "https://wavu.wiki/w/images/7/7c/T8-p2-lars-f%2Cf%2B2.mp4"
     },
@@ -441,7 +474,8 @@
       "notes": [
         "plus on block",
         "launcher",
-        "balcony break"
+        "balcony break",
+        "Transition to standing with B (+2/+34a)"
       ]
     },
     "fff3": {
@@ -484,7 +518,9 @@
       "hit": "+29a (+14a)",
       "ch": null,
       "notes": [
-        "launcher on hit"
+        "launcher on hit",
+        "Combo from 1st hit with 2F delay",
+        "Input can be delayed by 2F"
       ],
       "video": "https://wavu.wiki/w/images/5/5c/T8-p2-lars-df%2B3%2C3.mp4"
     },
@@ -500,7 +536,8 @@
       "ch": null,
       "notes": [
         "tornado",
-        "wall crush"
+        "wall crush",
+        "Input can be delayed by 5F? from 1st?"
       ],
       "video": "https://wavu.wiki/w/images/5/56/T8-p2-lars-db%2B2%2C3.mp4"
     },
@@ -529,7 +566,8 @@
       "ch": null,
       "notes": [
         "plus on block",
-        "into SEN with F"
+        "into SEN with F",
+        "Transition to SEN with input F (-3/+4)"
       ]
     },
     "den1-2": {
@@ -543,7 +581,10 @@
       "hit": "+21c",
       "ch": null,
       "notes": [
-        "heat engager"
+        "heat engager",
+        "Jail from 1st block",
+        "Combo from 1st hit with 6F delay?",
+        "Input can be delayed by 6F"
       ],
       "video": "https://wavu.wiki/w/images/6/6b/T8-p2-lars-den.1%2C2.mp4"
     },
@@ -559,7 +600,8 @@
       "notes": [
         "CH launcher",
         "jab evasion",
-        "into Avalanche Flip with UF"
+        "into Avalanche Flip with UF",
+        "Transition to Avalanche Flip on hit or CH with input UF (+9/+64a)"
       ],
       "video": "https://wavu.wiki/w/images/1/1b/T8-p2-lars-den.2.mp4"
     },
@@ -575,7 +617,8 @@
       "notes": [
         "heat engager",
         "homing",
-        "plus on block"
+        "plus on block",
+        "Transition to SEN (cannot cancel, does not transition when using Heat Dash)"
       ],
       "video": "https://wavu.wiki/w/images/2/25/T8-p2-lars-den.3.mp4"
     },
@@ -589,7 +632,8 @@
       "hit": "+1",
       "ch": null,
       "notes": [
-        "low"
+        "low",
+        "Transition to LEN with input D (-12/+3)"
       ],
       "video": "https://wavu.wiki/w/images/6/69/T8-p2-lars-den.4.mp4"
     },
@@ -603,7 +647,8 @@
       "hit": "-3",
       "ch": "+5c",
       "notes": [
-        "low"
+        "low",
+        "Transition to SEN with input F (-7/+4/+12c)"
       ],
       "video": "https://wavu.wiki/w/images/6/6c/T8-p2-lars-den.3%2B4.mp4"
     },
@@ -664,7 +709,8 @@
       "ch": null,
       "notes": [
         "launcher",
-        "low crush"
+        "low crush",
+        "Recovers 3F faster on hit (t45 r29)"
       ],
       "video": "https://wavu.wiki/w/images/2/2f/T8-p2-lars-sen.3.mp4"
     },
@@ -696,7 +742,8 @@
       "notes": [
         "tornado",
         "power crush",
-        "combo filler"
+        "combo filler",
+        "Recovers 7F? faster on hit (t44 r28?)"
       ],
       "video": "https://wavu.wiki/w/images/5/52/T8-p2-lars-sen.1%2B2.mp4"
     },
@@ -710,7 +757,8 @@
       "hit": "+22d (-13)",
       "ch": null,
       "notes": [
-        "neutral on block"
+        "neutral on block",
+        "Jail from 1st block"
       ],
       "video": "https://wavu.wiki/w/images/e/e3/T8-p2-lars-sen.3%2B4.mp4"
     },
@@ -739,7 +787,8 @@
       "ch": null,
       "notes": [
         "tornado",
-        "powers up in heat"
+        "powers up in heat",
+        "Powers up during Heat (Uses Heat Time, Tornado launches on hit)"
       ],
       "video": "https://wavu.wiki/w/images/e/ef/T8-p2-lars-len.2.mp4"
     },
@@ -754,7 +803,8 @@
       "ch": null,
       "notes": [
         "heat burst",
-        "plus on block"
+        "plus on block",
+        "Cancel to r45 with b,b on frame 42"
       ]
     },
     "heat-smash": {
@@ -768,7 +818,11 @@
       "ch": null,
       "notes": [
         "heat smash",
-        "very plus on block"
+        "very plus on block",
+        "Transition to 30dmg attack throw on 1st hit",
+        "Transition to DEN (+12c/+81a)",
+        "Transition to r37 standing with B (+10c/+79a)",
+        "Opponent recovers FDFA"
       ]
     },
     "rage-art": {
@@ -782,7 +836,8 @@
       "ch": null,
       "notes": [
         "rage art",
-        "reversal break"
+        "reversal break",
+        "Transition to attack throw on hit"
       ]
     },
     "uf1": {
@@ -797,7 +852,10 @@
       "notes": [
         "new in Season 3",
         "tracks his weak side",
-        "into LEN on hit"
+        "into LEN on hit",
+        "Combo from 1st hit",
+        "Cancel 2nd hit to with B (-12/-5) at frame 16",
+        "Transition to LEN r29 on hit with D (+3)"
       ],
       "video": "https://wavu.wiki/w/images/c/c1/T8-p2-lars-uf%2B1.mp4"
     },
