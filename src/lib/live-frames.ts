@@ -46,7 +46,12 @@ const cacheKey = (characterId: string) =>
 /** Frame values are short strings of digits, signs, and a few letters. */
 const VALUE_RE = /^[0-9+\-iacdgs~(),./?!\s]{1,32}$/i;
 
-function normalize(value: unknown): string | null {
+/**
+ * Exported for tests. This is the boundary that decides whether a value
+ * fetched from a wiki anyone can edit is allowed to render, so it is worth
+ * pinning down explicitly rather than only exercising through the network.
+ */
+export function normalize(value: unknown): string | null {
   if (value === null || value === undefined) return null;
   const cleaned = String(value)
     .replace(/\[\[[^\]|]*\|([^\]]*)\]\]/g, "$1")

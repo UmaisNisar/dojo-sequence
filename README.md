@@ -44,7 +44,21 @@ npm install
 npm run dev    # http://localhost:3000
 npm run build  # production build (fully static)
 npm run lint
+npm test       # unit tests (node:test, no framework)
 ```
+
+Four data checks run against the live sources, not fixtures:
+
+| | |
+| --- | --- |
+| `npm run verify:frames` | every frame value against Wavu's Cargo API |
+| `npm run verify:quiz` | every generated question re-derived from the tables |
+| `npm run verify:claims` | prose and notes against the values they describe |
+| `npm run verify:videos` | every baked clip URL still resolves |
+
+`npm test` covers the logic those cannot: persistence and schema migration,
+unlock rules, import validation, and the sanitiser that decides whether a
+value fetched from a wiki is allowed to render.
 
 ## Deploy
 

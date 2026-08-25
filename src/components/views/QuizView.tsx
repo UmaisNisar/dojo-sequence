@@ -10,35 +10,12 @@ import { haptic } from "@/lib/haptics";
 import { cn } from "@/lib/utils";
 import { Notation } from "@/components/Notation";
 import { ProgressBar } from "@/components/ProgressBar";
+import { buildLadder, slotForKey } from "@/lib/punish-ladder";
 
 /* Doubled from 4s after the ladder landed. The ladder removed the reading
    load, but scanning ten entries you have not memorised yet still costs
    more than a reaction, and 4s left no room for the decision itself. */
 export const QUESTION_MS = 8000;
-
-/**
- * The punish ladder — every answer this character's quiz can have, in a fixed
- * order, on screen the whole run.
- *
- * A player reported that the old drill measured reading speed rather than
- * reaction: four bespoke options appeared with the prompt, so the timer was
- * spent parsing 60-70 characters of unfamiliar notation and whatever was left
- * went to the decision. Holding one ladder constant fixes that at the root —
- * after the first round you are not reading it, you are reaching for a
- * position you already know, which is exactly what punishing is in a match.
- */
-function buildLadder(questions: QuizQuestion[]): string[] {
-  const seen = new Set<string>();
-  const ladder: string[] = [];
-  for (const q of questions) {
-    const answer = q.options[q.correctIndex];
-    if (answer && !seen.has(answer)) {
-      seen.add(answer);
-      ladder.push(answer);
-    }
-  }
-  return ladder;
-}
 
 interface AnswerRecord {
   questionId: string;
@@ -156,10 +133,10 @@ export function QuizView({ character }: { character: Character }) {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (phase.name === "question") {
-        const n = Number(e.key);
-        if (Number.isInteger(n) && n >= 1 && n <= ladder.length) {
+        const slot = slotForKey(e.key, ladder.length);
+        if (slot !== null) {
           e.preventDefault();
-          answer(n - 1);
+          answer(slot);
         }
         return;
       }
@@ -265,7 +242,7 @@ export function QuizView({ character }: { character: Character }) {
         <p className="microlabel mb-2">
           {character.name}&apos;s punish ladder
           <span className="ml-2 normal-case tracking-normal text-faint">
-            press 1–{ladder.length}
+            press {ladder.length >= 10 ? "1–9, 0" : `1–${ladder.length}`}
           </span>
         </p>
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5">
@@ -295,7 +272,7 @@ export function QuizView({ character }: { character: Character }) {
                     isAnswer ? "text-accent-bright" : "text-faint",
                   )}
                 >
-                  {slot + 1}
+                  {slot === 9 ? 0 : slot + 1}
                 </span>
                 <Notation value={entry} size="sm" />
                 {isAnswer && (
