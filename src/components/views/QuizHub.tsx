@@ -4,7 +4,7 @@ import { useState } from "react";
 import type { Character } from "@/types";
 import { cn } from "@/lib/utils";
 import { KnowledgeQuizView } from "./KnowledgeQuizView";
-import { QuizView } from "./QuizView";
+import { QuizView, QUESTION_MS } from "./QuizView";
 
 type Mode = "knowledge" | "punish";
 
@@ -12,7 +12,7 @@ type Mode = "knowledge" | "punish";
  * One quiz destination, two things worth testing.
  *
  * The knowledge quiz asks what you know and gives you as long as you want.
- * The punish drill asks how fast you recognise a gap, on a four second timer.
+ * The punish drill asks how fast you recognise a gap, against a timer.
  * They train different muscles, so neither replaces the other — but they are
  * both "the quiz" as far as anyone navigating the app is concerned.
  */
@@ -24,7 +24,13 @@ export function QuizHub({ character }: { character: Character }) {
 
   const tabs: { id: Mode; label: string; hint: string }[] = [
     { id: "knowledge", label: "Knowledge", hint: "Untimed · your training" },
-    { id: "punish", label: "Punish reaction", hint: "4s timer · reflexes" },
+    // Derived, not written out — the hint said 4s for a while after the
+    // timer moved to 8s.
+    {
+      id: "punish",
+      label: "Punish reaction",
+      hint: `${QUESTION_MS / 1000}s timer · reflexes`,
+    },
   ];
 
   return (

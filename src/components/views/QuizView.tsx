@@ -10,7 +10,10 @@ import { cn } from "@/lib/utils";
 import { Notation } from "@/components/Notation";
 import { ProgressBar } from "@/components/ProgressBar";
 
-const QUESTION_MS = 4000;
+/* Doubled from 4s after the ladder landed. The ladder removed the reading
+   load, but scanning ten entries you have not memorised yet still costs
+   more than a reaction, and 4s left no room for the decision itself. */
+export const QUESTION_MS = 8000;
 
 /**
  * The punish ladder — every answer this character's quiz can have, in a fixed
