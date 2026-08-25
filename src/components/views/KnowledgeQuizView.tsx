@@ -5,7 +5,8 @@ import Link from "next/link";
 import { AnimatePresence, motion } from "motion/react";
 import { ArrowRight, Check, Flame, RotateCcw, Trophy, X } from "lucide-react";
 import type { Character, QuizItem } from "@/types";
-import { useProgress } from "@/hooks/use-progress";
+import { useProgress, useHaptics } from "@/hooks/use-progress";
+import { haptic } from "@/lib/haptics";
 import { getFrameData } from "@/data/frames";
 import { buildQuiz, QUIZ_LENGTH } from "@/lib/quiz-generator";
 import { cn } from "@/lib/utils";
@@ -32,6 +33,7 @@ export function KnowledgeQuizView({ character }: { character: Character }) {
   const progress = state.characters[character.id];
   const frames = getFrameData(character.id);
   const best = state.knowledgeStats[character.id];
+  const hapticsOn = useHaptics();
 
   const [run, setRun] = useState<QuizItem[]>([]);
   const [answers, setAnswers] = useState<Answer[]>([]);
@@ -71,7 +73,9 @@ export function KnowledgeQuizView({ character }: { character: Character }) {
   const answer = (picked: number) => {
     if (phase.name !== "question") return;
     const q = run[phase.index];
-    setAnswers((a) => [...a, { question: q, picked, correct: picked === q.correctIndex }]);
+    const correct = picked === q.correctIndex;
+    haptic(correct ? "correct" : "wrong", hapticsOn);
+    setAnswers((a) => [...a, { question: q, picked, correct }]);
     setPhase({ name: "feedback", index: phase.index, picked });
   };
 

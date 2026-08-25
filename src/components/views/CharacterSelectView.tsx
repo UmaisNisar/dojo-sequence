@@ -170,7 +170,7 @@ export function CharacterSelectView({
         role="listbox"
         aria-label="Character select"
         aria-activedescendant={`tile-${focusedId}`}
-        className="grid flex-1 grid-cols-3 content-start gap-2 sm:grid-cols-5 sm:gap-3 lg:grid-cols-7"
+        className="grid flex-1 grid-cols-2 content-start gap-2 min-[380px]:grid-cols-3 sm:grid-cols-5 sm:gap-3 lg:grid-cols-7"
       >
         {tiles.map((tile, i) => {
           const isFocused = tile.id === focusedId;
@@ -270,7 +270,7 @@ export function CharacterSelectView({
               </span>
               <span
                 className={cn(
-                  "line-clamp-1 px-1 text-center text-[10px] font-semibold uppercase tracking-[0.1em] sm:text-[11px]",
+                  "line-clamp-2 px-1 text-center text-[11px] font-semibold uppercase leading-tight tracking-[0.08em] sm:text-[11px]",
                   tile.available ? "text-fg" : "text-muted",
                 )}
               >

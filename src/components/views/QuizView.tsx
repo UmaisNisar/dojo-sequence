@@ -5,7 +5,8 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import { Check, Timer, X, Zap } from "lucide-react";
 import type { Character, QuizQuestion } from "@/types";
-import { useProgress } from "@/hooks/use-progress";
+import { useProgress, useHaptics } from "@/hooks/use-progress";
+import { haptic } from "@/lib/haptics";
 import { cn } from "@/lib/utils";
 import { Notation } from "@/components/Notation";
 import { ProgressBar } from "@/components/ProgressBar";
@@ -65,6 +66,7 @@ export function QuizView({ character }: { character: Character }) {
   const { state, dispatch } = useProgress();
   const questions = useMemo(() => character.punishQuiz ?? [], [character]);
   const stats = state.quizStats[character.id];
+  const hapticsOn = useHaptics();
 
   /* Built from the full question set, not the shuffled run, so the ladder is
      identical every time — the muscle memory has to survive a restart. */
@@ -92,11 +94,12 @@ export function QuizView({ character }: { character: Character }) {
           ...a,
           { questionId: run[index].id, correct: false, timedOut: true, reactionMs: null },
         ]);
+        haptic("wrong", hapticsOn);
         setPhase({ name: "feedback", index, picked: null, timedOut: true });
       }
     }, 50);
     return () => clearInterval(tick);
-  }, [phase, run]);
+  }, [phase, run, hapticsOn]);
 
   const start = () => {
     setRun(shuffle(questions));
@@ -110,6 +113,7 @@ export function QuizView({ character }: { character: Character }) {
       if (phase.name !== "question") return;
       const q = run[phase.index];
       const correct = slot === correctSlot(q);
+      haptic(correct ? "correct" : "wrong", hapticsOn);
       setAnswers((a) => [
         ...a,
         {
@@ -121,7 +125,7 @@ export function QuizView({ character }: { character: Character }) {
       ]);
       setPhase({ name: "feedback", index: phase.index, picked: slot, timedOut: false });
     },
-    [phase, run, correctSlot],
+    [phase, run, correctSlot, hapticsOn],
   );
 
   const next = useCallback(() => {

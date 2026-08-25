@@ -247,3 +247,56 @@ html[data-reduced-motion="true"] *::after {
 .meter-skew {
   clip-path: polygon(3px 0, 100% 0, calc(100% - 3px) 100%, 0 100%);
 }
+
+/* ------------------------------------------------------------------ */
+/* Touch                                                               */
+/* ------------------------------------------------------------------ */
+
+/**
+ * Every interactive element in the app styles `hover:` and nothing else, which
+ * on a touchscreen means a tap produces no feedback at all until the next page
+ * paints. One rule scoped to hover-less pointers gives the whole app a pressed
+ * state without editing thirty components — and cannot affect mouse users,
+ * who already have hover.
+ */
+@media (hover: none) {
+  a:active,
+  button:active,
+  [role="switch"]:active,
+  summary:active {
+    transform: scale(0.97);
+    filter: brightness(1.15);
+  }
+
+  /* The transform must not fight the skew on display buttons. */
+  .display-title:active {
+    transform: skewX(-5deg) scale(0.97);
+  }
+}
+
+@media (hover: none) and (prefers-reduced-motion: reduce) {
+  a:active,
+  button:active,
+  [role="switch"]:active,
+  summary:active {
+    transform: none;
+  }
+}
+
+/* Safari paints its own grey flash on tap, which fights the pressed state. */
+a,
+button,
+[role="switch"],
+select,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/**
+ * Comfortable minimum touch target. Applied to the small controls the mobile
+ * audit measured under 44px — Apple's HIG and WCAG 2.5.5 both land there.
+ */
+.tap-target {
+  min-height: 44px;
+  min-width: 44px;
+}

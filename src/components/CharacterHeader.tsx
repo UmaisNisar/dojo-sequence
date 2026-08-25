@@ -34,7 +34,7 @@ export function CharacterHeader({
         {characters.length > 1 && (
           <Link
             href="/characters"
-            className="mt-1 inline-flex min-h-[40px] shrink-0 items-center gap-1.5 clip-row border border-border px-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-muted transition-colors hover:border-border-strong hover:text-fg"
+            className="mt-1 inline-flex min-h-[44px] shrink-0 items-center gap-1.5 clip-row border border-border px-3 text-[11px] font-semibold uppercase tracking-[0.12em] text-muted transition-colors hover:border-border-strong hover:text-fg"
           >
             <Repeat className="size-3.5" aria-hidden /> Switch
           </Link>

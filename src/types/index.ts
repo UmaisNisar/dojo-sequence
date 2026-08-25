@@ -289,6 +289,8 @@ export interface PersistedState {
     reducedMotion: boolean;
     /** Mirror move clips so they read as the left (P1) side. */
     mirrorClips: boolean;
+    /** Vibrate on answers and milestones. Android only; iOS has no web API. */
+    haptics: boolean;
   };
 }
 

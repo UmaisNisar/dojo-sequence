@@ -177,7 +177,7 @@ export function SessionView() {
         <button
           type="button"
           onClick={exit}
-          className="mx-auto mt-2 flex min-h-[40px] items-center gap-1.5 px-4 text-[11px] font-semibold uppercase tracking-wider text-faint transition-colors hover:text-muted"
+          className="mx-auto mt-2 flex min-h-[44px] items-center gap-1.5 px-4 text-[11px] font-semibold uppercase tracking-wider text-faint transition-colors hover:text-muted"
         >
           <LogOut className="size-3.5" aria-hidden /> Exit session
         </button>

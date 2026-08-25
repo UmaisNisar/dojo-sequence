@@ -97,7 +97,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             return atHome ? (
               <span
                 aria-label="Dojo Sequence"
-                className="flex items-center gap-2 font-semibold tracking-tight"
+                className="tap-target -my-2 flex items-center gap-2 py-2 font-semibold tracking-tight"
               >
                 {mark}
               </span>
@@ -105,7 +105,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               <Link
                 href={home}
                 aria-label="Dojo Sequence — back to training"
-                className="flex items-center gap-2 font-semibold tracking-tight"
+                className="tap-target -my-2 flex items-center gap-2 py-2 font-semibold tracking-tight"
               >
                 {mark}
               </Link>
@@ -167,6 +167,12 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           })}
         </ul>
       </nav>
+
+      {/* Portal host for pinned mobile actions. Inside AccentScope so it
+          inherits the character colour, outside every clip-path so it is
+          not clipped — document.body would satisfy the second and fail
+          the first, which is how it first shipped violet on a gold page. */}
+      <div id="pinned-action" />
     </MotionConfig>
   );
 }

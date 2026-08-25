@@ -16,7 +16,7 @@ import { cn } from "@/lib/utils";
 type Status = "idle" | "sending" | "sent" | "error";
 
 const fieldClass =
-  "clip-row w-full border border-border bg-surface px-3 py-2.5 text-sm text-fg " +
+  "clip-row min-h-[44px] w-full border border-border bg-surface px-3 py-3 text-sm text-fg " +
   "outline-none transition-colors placeholder:text-faint " +
   "focus:border-accent focus:ring-1 focus:ring-accent";
 
@@ -113,7 +113,7 @@ export function FeedbackView() {
                   onClick={() => setKind(k.id)}
                   aria-pressed={active}
                   className={cn(
-                    "clip-row border px-4 py-2 text-[13px] font-semibold transition-colors",
+                    "tap-target clip-row flex items-center border px-4 py-2 text-[13px] font-semibold transition-colors",
                     active
                       ? "border-accent bg-accent text-bg"
                       : "border-border bg-surface text-muted hover:border-border-strong hover:text-fg",
@@ -193,7 +193,7 @@ export function FeedbackView() {
           <button
             type="submit"
             disabled={status === "sending" || !feedbackConfigured}
-            className="flex items-center gap-2 clip-row border border-accent bg-accent px-6 py-3 text-xs font-bold uppercase tracking-[0.15em] text-bg transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
+            className="tap-target flex items-center gap-2 clip-row border border-accent bg-accent px-6 py-3.5 text-xs font-bold uppercase tracking-[0.15em] text-bg transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
           >
             <Send className="size-3.5" aria-hidden />
             {status === "sending" ? "Sending…" : "Send report"}

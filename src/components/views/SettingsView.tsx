@@ -9,6 +9,7 @@ import {
   RotateCcw,
   Upload,
   FlipHorizontal2,
+  Vibrate,
   Zap,
 } from "lucide-react";
 import { useProgress } from "@/hooks/use-progress";
@@ -118,31 +119,24 @@ export function SettingsView() {
           title="Mirror move clips"
           description="Wavu records every demo from the P2 side. Mirroring shows them from P1, where most players sit. Turn this off if you play on the right."
         >
-          <button
-            type="button"
-            role="switch"
-            aria-checked={state.settings.mirrorClips}
-            aria-label="Mirror move clips"
-            onClick={() =>
-              dispatch({
-                type: "set-mirror-clips",
-                value: !state.settings.mirrorClips,
-              })
-            }
-            className={cn(
-              "relative h-7 w-12 rounded-full border transition-colors",
-              state.settings.mirrorClips
-                ? "border-accent bg-accent"
-                : "border-border-strong bg-surface-3",
-            )}
-          >
-            <span
-              className={cn(
-                "absolute top-0.5 size-5 rounded-full bg-white transition-[left]",
-                state.settings.mirrorClips ? "left-6" : "left-0.5",
-              )}
-            />
-          </button>
+          <Switch
+            checked={state.settings.mirrorClips}
+            label="Mirror move clips"
+            onChange={(value) => dispatch({ type: "set-mirror-clips", value })}
+          />
+        </SettingRow>
+
+        {/* Haptics */}
+        <SettingRow
+          icon={<Vibrate className="size-4" aria-hidden />}
+          title="Haptic feedback"
+          description="A short buzz on quiz answers and when you complete an item. Works on Android; iPhone has no web vibration API, so it does nothing there."
+        >
+          <Switch
+            checked={state.settings.haptics}
+            label="Haptic feedback"
+            onChange={(value) => dispatch({ type: "set-haptics", value })}
+          />
         </SettingRow>
 
         {/* Reduced motion */}
@@ -151,31 +145,11 @@ export function SettingsView() {
           title="Reduce motion"
           description="Minimize animations throughout the app. Your OS-level setting is always respected regardless."
         >
-          <button
-            type="button"
-            role="switch"
-            aria-checked={state.settings.reducedMotion}
-            aria-label="Reduce motion"
-            onClick={() =>
-              dispatch({
-                type: "set-reduced-motion",
-                value: !state.settings.reducedMotion,
-              })
-            }
-            className={cn(
-              "relative h-7 w-12 rounded-full border transition-colors",
-              state.settings.reducedMotion
-                ? "border-accent bg-accent"
-                : "border-border-strong bg-surface-3",
-            )}
-          >
-            <span
-              className={cn(
-                "absolute top-0.5 size-5 rounded-full bg-white transition-[left]",
-                state.settings.reducedMotion ? "left-6" : "left-0.5",
-              )}
-            />
-          </button>
+          <Switch
+            checked={state.settings.reducedMotion}
+            label="Reduce motion"
+            onChange={(value) => dispatch({ type: "set-reduced-motion", value })}
+          />
         </SettingRow>
 
         {/* Reset */}
@@ -303,6 +277,46 @@ function FrameDataProvenance({ now }: { now: number }) {
               : "Each table is live-checked against Wavu Wiki the first time you open that character."}
       </p>
     </div>
+  );
+}
+
+/**
+ * The visible track stays 28px because that is the right size to look at; the
+ * button around it is 44px because that is the right size to hit. Measured at
+ * 48x28 in the mobile audit, which is a miss on a phone.
+ */
+function Switch({
+  checked,
+  label,
+  onChange,
+}: {
+  checked: boolean;
+  label: string;
+  onChange: (next: boolean) => void;
+}) {
+  return (
+    <button
+      type="button"
+      role="switch"
+      aria-checked={checked}
+      aria-label={label}
+      onClick={() => onChange(!checked)}
+      className="tap-target flex shrink-0 items-center justify-center px-1"
+    >
+      <span
+        className={cn(
+          "relative block h-7 w-12 rounded-full border transition-colors",
+          checked ? "border-accent bg-accent" : "border-border-strong bg-surface-3",
+        )}
+      >
+        <span
+          className={cn(
+            "absolute top-0.5 size-5 rounded-full bg-white transition-[left]",
+            checked ? "left-6" : "left-0.5",
+          )}
+        />
+      </span>
+    </button>
   );
 }
 

@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { motion } from "motion/react";
 import { ArrowLeft, ArrowRight, Gamepad2, Lock } from "lucide-react";
 import type { Character, Stage, TrainingItem } from "@/types";
 import { useProgress } from "@/hooks/use-progress";
+import { useSwipe } from "@/hooks/use-swipe";
 import {
   allItems,
   drillTargetLabel,
@@ -114,11 +115,38 @@ export function ItemDetailView({
     ? `/training/${character.id}/stage/${findItem(character, nextInOrder.id)?.stage.number ?? stage.number}/item/${nextInOrder.id}`
     : null;
 
+  /* The item before this one, for swiping back. Unlike "next" this needs no
+     unlock check — anything earlier in the order is already reachable. */
+  const prevInOrder = useMemo(() => {
+    const items = allItems(character);
+    const idx = items.findIndex((i) => i.id === item.id);
+    return idx > 0 ? (items[idx - 1] ?? null) : null;
+  }, [character, item.id]);
+
+  const prevInOrderHref = prevInOrder
+    ? `/training/${character.id}/stage/${findItem(character, prevInOrder.id)?.stage.number ?? stage.number}/item/${prevInOrder.id}`
+    : null;
+
   const advance = () => {
     if (!nextInOrderHref) return;
     skipCelebration.current = true;
     router.push(nextInOrderHref);
   };
+
+  /* Swipe between items on touch. Forward only goes where a tap could — an
+     unlocked item — so a gesture can never skip the linear progression. */
+  const swipeForward = useCallback(() => {
+    if (nextInOrderHref && isItemUnlocked(character, progress, nextInOrder!.id)) {
+      skipCelebration.current = true;
+      router.push(nextInOrderHref);
+    }
+  }, [nextInOrderHref, nextInOrder, character, progress, router]);
+
+  const swipeBack = useCallback(() => {
+    if (prevInOrderHref) router.push(prevInOrderHref);
+  }, [prevInOrderHref, router]);
+
+  useSwipe({ onLeft: swipeForward, onRight: swipeBack });
 
   if (state.hydrated && !unlocked) {
     return <LockedView character={character} stage={stage} item={item} />;
@@ -129,7 +157,7 @@ export function ItemDetailView({
       <nav className="mb-6" aria-label="Breadcrumb">
         <Link
           href={`/training/${character.id}/stage/${stage.number}`}
-          className="inline-flex min-h-[40px] items-center gap-1.5 text-xs font-medium text-muted transition-colors hover:text-fg"
+          className="inline-flex min-h-[44px] items-center gap-1.5 text-xs font-medium text-muted transition-colors hover:text-fg"
         >
           <ArrowLeft className="size-3.5" aria-hidden />
           Stage {pad2(stage.number)} · {stage.name}

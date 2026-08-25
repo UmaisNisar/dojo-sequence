@@ -50,6 +50,7 @@ type Action =
     }
   | { type: "set-reduced-motion"; value: boolean }
   | { type: "set-mirror-clips"; value: boolean }
+  | { type: "set-haptics"; value: boolean }
   | { type: "set-active-character"; characterId: string }
   | { type: "import-characters"; characters: Record<string, CharacterProgress> }
   | { type: "reset-all" };
@@ -201,6 +202,9 @@ function reducer(state: ProgressState, action: Action): ProgressState {
     case "set-active-character":
       return { ...state, activeCharacterId: action.characterId };
 
+    case "set-haptics":
+      return { ...state, settings: { ...state.settings, haptics: action.value } };
+
     case "set-mirror-clips":
       return {
         ...state,
@@ -304,6 +308,11 @@ export function useReducedMotionSetting(): boolean {
 export function useMirrorClips(): boolean {
   const { state } = useProgress();
   return state.settings.mirrorClips;
+}
+
+export function useHaptics(): boolean {
+  const { state } = useProgress();
+  return state.settings.haptics;
 }
 
 export type { Action as ProgressAction, ProgressState };

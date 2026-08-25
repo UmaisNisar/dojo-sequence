@@ -59,7 +59,7 @@ export function QuizHub({ character }: { character: Character }) {
               >
                 {t.label}
               </span>
-              <span className="block text-[10px] uppercase tracking-wider text-faint">
+              <span className="block text-[11px] uppercase tracking-wider text-faint">
                 {t.hint}
               </span>
             </button>

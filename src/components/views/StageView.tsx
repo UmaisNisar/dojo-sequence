@@ -58,7 +58,7 @@ export function StageView({
       <nav className="mb-6" aria-label="Breadcrumb">
         <Link
           href={`/training/${character.id}`}
-          className="inline-flex min-h-[40px] items-center gap-1.5 text-xs font-medium text-muted transition-colors hover:text-fg"
+          className="inline-flex min-h-[44px] items-center gap-1.5 text-xs font-medium text-muted transition-colors hover:text-fg"
         >
           <ArrowLeft className="size-3.5" aria-hidden />
           {character.name} — all stages

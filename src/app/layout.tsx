@@ -39,10 +39,20 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Dojo Sequence",
   },
+  appleWebApp: {
+    capable: true,
+    title: "Dojo Sequence",
+    statusBarStyle: "black-translucent",
+  },
+  icons: {
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export const viewport: Viewport = {
   themeColor: "#070709",
+  // Let the app paint under the notch and home indicator once installed.
+  viewportFit: "cover",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
