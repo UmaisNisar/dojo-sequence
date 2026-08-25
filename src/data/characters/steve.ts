@@ -1151,7 +1151,7 @@ export const steve: Character = {
       id: "q-10",
       prompt: "-10",
       situation: "You blocked a string ender. You are standing.",
-      options: ["1,1,2 (into a stance)", "2,1", "u+2", "b+1+2"],
+      options: ["1,1,2", "2,1", "u+2", "b+1+2"],
       correctIndex: 0,
       explain:
         "1,1,2 is his i10 punish and exits into a weave, Sway or Duck at up to +8. With Steve the stance exit is the real reward, not the damage.",
@@ -1160,7 +1160,7 @@ export const steve: Character = {
       id: "q-12",
       prompt: "-12",
       situation: "You blocked a heavier poke. Standing.",
-      options: ["2,1 → Flicker at +14", "1,1,2", "b+1,2", "1+2"],
+      options: ["2,1", "1,1,2", "b+1,2", "1+2"],
       correctIndex: 0,
       explain:
         "2,1 covers -12, and holding b puts you in Flicker at +14 (or f for Peekaboo at +13). 2,2 also covers -12 if you want the Tornado instead.",
@@ -1169,7 +1169,7 @@ export const steve: Character = {
       id: "q-13",
       prompt: "-13",
       situation: "You blocked an unsafe mid. Standing.",
-      options: ["b+1,2 → Lionheart", "2,1", "1,1,2", "u+2"],
+      options: ["b+1,2", "2,1", "1,1,2", "u+2"],
       correctIndex: 0,
       explain:
         "b+1,2 is the -13 punish, is +3 on block in its own right, and exits into Lionheart at +8.",
@@ -1178,7 +1178,7 @@ export const steve: Character = {
       id: "q-14",
       prompt: "-14",
       situation: "You blocked a committed move and you want Heat.",
-      options: ["1+2 (Heat Engager)", "b+1,2", "2,1", "b+2"],
+      options: ["1+2", "b+1,2", "2,1", "b+2"],
       correctIndex: 0,
       explain:
         "1+2 (Sonic Fang) covers -14 and is a Heat Engager. For Steve, Heat is worth more than damage — it gives him an unbreakable grab and chip pressure.",
@@ -1187,7 +1187,7 @@ export const steve: Character = {
       id: "q-15",
       prompt: "-15",
       situation: "You blocked a launcher-class move. Standing.",
-      options: ["f+1+2,2 — you CANNOT launch here", "u+2", "PAB.df+2", "uf+2"],
+      options: ["f+1+2,2", "u+2", "PAB.df+2", "uf+2"],
       correctIndex: 0,
       explain:
         "This is the defining Steve fact: unlike almost every other character he cannot launch at -15 from standing OR crouching. f+1+2,2 is the -15 punish. His fastest launchers are u+2 at i17 and FC.df+2 at i16.",
@@ -1196,7 +1196,7 @@ export const steve: Character = {
       id: "q-17",
       prompt: "-17",
       situation: "They whiffed something huge. Standing, in range.",
-      options: ["u+2 → combo", "1,1,2", "b+1,2", "1+2"],
+      options: ["u+2", "1,1,2", "b+1,2", "1+2"],
       correctIndex: 0,
       explain:
         "-17 is finally where he launches. u+2 is the reliable option; PAB.df+2 out of an instant Peekaboo does considerably more but Wavu marks it as hard.",
@@ -1214,7 +1214,7 @@ export const steve: Character = {
       id: "q-ws13",
       prompt: "-13 ws",
       situation: "Blocked a worse low. Crouching.",
-      options: ["ws2,2 → Lionheart at +11", "ws1,1", "FC.df+2", "1+2"],
+      options: ["ws2,2", "ws1,1", "FC.df+2", "1+2"],
       correctIndex: 0,
       explain:
         "ws2,2 covers -13 and exits into Lionheart at +11 — one of the biggest stance transitions he has off a punish.",
@@ -1223,7 +1223,7 @@ export const steve: Character = {
       id: "q-ws16",
       prompt: "-16 ws",
       situation: "You blocked a badly unsafe low. Crouching.",
-      options: ["FC.df+2 → combo", "ws2,2", "ws1,1", "b+1"],
+      options: ["FC.df+2", "ws2,2", "ws1,1", "b+1"],
       correctIndex: 0,
       explain:
         "FC.df+2 is his i16 crouching launcher — his fastest launch of any kind. Blocking lows is where Steve gets his best punishment.",
@@ -1232,7 +1232,7 @@ export const steve: Character = {
       id: "q-ch",
       prompt: "THEY PRESSED",
       situation: "You baited a button at close range and they swung.",
-      options: ["b+1 → full combo", "db+3", "qcf+2", "1,1,2"],
+      options: ["b+1", "db+3", "qcf+2", "1,1,2"],
       correctIndex: 0,
       explain:
         "b+1 is i13 and counter-hit launches for +61a — Wavu calls it the best counter-hit tool in Tekken 8. It is -14 on block, so it is always a read, and it is the read the whole character is built around.",

@@ -1082,7 +1082,7 @@ export const kazuya: Character = {
       id: "q-13",
       prompt: "-13",
       situation: "You blocked a launcher-class mid. Standing.",
-      options: ["EWGF → combo", "1,1,2", "db+1,2", "df+2"],
+      options: ["EWGF", "1,1,2", "db+1,2", "df+2"],
       correctIndex: 0,
       explain:
         "-13 is where Kazuya gets a full combo — the electric's effective punish speed is 13f. db+1,2 is the execution-free backup (30 + heat engager). df+2 doesn't launch grounded opponents.",
@@ -1109,7 +1109,7 @@ export const kazuya: Character = {
       id: "q-ws13",
       prompt: "-13",
       situation: "You blocked a slow sweep. Crouching.",
-      options: ["ws+1,2 → combo", "ws+4,4", "ws+2", "d+1"],
+      options: ["ws+1,2", "ws+4,4", "ws+2", "d+1"],
       correctIndex: 0,
       explain:
         "ws+1,2 is your i13 while-standing launcher with a built-in Tornado — full combo. ws+2 (i16) doesn't reach at -13; ws+4,4 works but throws away the launch.",
@@ -1118,7 +1118,7 @@ export const kazuya: Character = {
       id: "q-hellsweep",
       prompt: "-23",
       situation: "You blocked a hellsweep. Crouching.",
-      options: ["ws+1,2 → combo", "ws+4,4", "d+4", "Block again"],
+      options: ["ws+1,2", "ws+4,4", "d+4", "Block again"],
       correctIndex: 0,
       explain:
         "-23 gives you all the time in the world — take the full launch. Poking after blocking a sweep is the most commonly donated damage in Tekken.",
@@ -1127,7 +1127,7 @@ export const kazuya: Character = {
       id: "q-whiff",
       prompt: "WHIFF",
       situation: "Their big mid just whiffed in front of you.",
-      options: ["EWGF → combo", "1,1,2", "d+4", "Backdash"],
+      options: ["EWGF", "1,1,2", "d+4", "Backdash"],
       correctIndex: 0,
       explain:
         "A whiff is a free launch — this is what your backdash exists to create. From farther out, f,F+3 collects too.",
@@ -1145,7 +1145,7 @@ export const kazuya: Character = {
       id: "q-rage-art",
       prompt: "-18",
       situation: "You blocked a Rage Art.",
-      options: ["EWGF → combo", "Throw", "1,1,2", "df+2"],
+      options: ["EWGF", "Throw", "1,1,2", "df+2"],
       correctIndex: 0,
       explain:
         "A blocked Rage Art is the biggest punish moment in the game — take maximum damage with the electric launch. Anything less is leaving a round on the table.",

@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { AnimatePresence, motion } from "motion/react";
+import { motion } from "motion/react";
 import { Check, Timer, X, Zap } from "lucide-react";
 import type { Character, QuizQuestion } from "@/types";
 import { useProgress } from "@/hooks/use-progress";
@@ -12,9 +12,28 @@ import { ProgressBar } from "@/components/ProgressBar";
 
 const QUESTION_MS = 4000;
 
-interface RunQuestion extends QuizQuestion {
-  /** Option order for this run (indices into `options`). */
-  order: number[];
+/**
+ * The punish ladder — every answer this character's quiz can have, in a fixed
+ * order, on screen the whole run.
+ *
+ * A player reported that the old drill measured reading speed rather than
+ * reaction: four bespoke options appeared with the prompt, so the timer was
+ * spent parsing 60-70 characters of unfamiliar notation and whatever was left
+ * went to the decision. Holding one ladder constant fixes that at the root —
+ * after the first round you are not reading it, you are reaching for a
+ * position you already know, which is exactly what punishing is in a match.
+ */
+function buildLadder(questions: QuizQuestion[]): string[] {
+  const seen = new Set<string>();
+  const ladder: string[] = [];
+  for (const q of questions) {
+    const answer = q.options[q.correctIndex];
+    if (answer && !seen.has(answer)) {
+      seen.add(answer);
+      ladder.push(answer);
+    }
+  }
+  return ladder;
 }
 
 interface AnswerRecord {
@@ -44,10 +63,19 @@ export function QuizView({ character }: { character: Character }) {
   const questions = useMemo(() => character.punishQuiz ?? [], [character]);
   const stats = state.quizStats[character.id];
 
-  const [run, setRun] = useState<RunQuestion[]>([]);
+  /* Built from the full question set, not the shuffled run, so the ladder is
+     identical every time — the muscle memory has to survive a restart. */
+  const ladder = useMemo(() => buildLadder(questions), [questions]);
+
+  const [run, setRun] = useState<QuizQuestion[]>([]);
   const [phase, setPhase] = useState<Phase>({ name: "idle" });
   const [answers, setAnswers] = useState<AnswerRecord[]>([]);
   const [remainingMs, setRemainingMs] = useState(QUESTION_MS);
+
+  const correctSlot = useCallback(
+    (q: QuizQuestion) => ladder.indexOf(q.options[q.correctIndex]),
+    [ladder],
+  );
 
   /* Countdown while a question is live; timeout counts as a miss. */
   useEffect(() => {
@@ -59,12 +87,7 @@ export function QuizView({ character }: { character: Character }) {
       if (left <= 0) {
         setAnswers((a) => [
           ...a,
-          {
-            questionId: run[index].id,
-            correct: false,
-            timedOut: true,
-            reactionMs: null,
-          },
+          { questionId: run[index].id, correct: false, timedOut: true, reactionMs: null },
         ]);
         setPhase({ name: "feedback", index, picked: null, timedOut: true });
       }
@@ -73,42 +96,35 @@ export function QuizView({ character }: { character: Character }) {
   }, [phase, run]);
 
   const start = () => {
-    const shuffled = shuffle(questions).map((q) => ({
-      ...q,
-      order: shuffle(q.options.map((_, i) => i)),
-    }));
-    setRun(shuffled);
+    setRun(shuffle(questions));
     setAnswers([]);
     setRemainingMs(QUESTION_MS);
     setPhase({ name: "question", index: 0, startedAt: Date.now() });
   };
 
-  const answer = (optionIndex: number) => {
-    if (phase.name !== "question") return;
-    const q = run[phase.index];
-    const correct = optionIndex === q.correctIndex;
-    setAnswers((a) => [
-      ...a,
-      {
-        questionId: q.id,
-        correct,
-        timedOut: false,
-        reactionMs: Date.now() - phase.startedAt,
-      },
-    ]);
-    setPhase({
-      name: "feedback",
-      index: phase.index,
-      picked: optionIndex,
-      timedOut: false,
-    });
-  };
+  const answer = useCallback(
+    (slot: number) => {
+      if (phase.name !== "question") return;
+      const q = run[phase.index];
+      const correct = slot === correctSlot(q);
+      setAnswers((a) => [
+        ...a,
+        {
+          questionId: q.id,
+          correct,
+          timedOut: false,
+          reactionMs: Date.now() - phase.startedAt,
+        },
+      ]);
+      setPhase({ name: "feedback", index: phase.index, picked: slot, timedOut: false });
+    },
+    [phase, run, correctSlot],
+  );
 
-  const next = () => {
+  const next = useCallback(() => {
     if (phase.name !== "feedback") return;
     const nextIndex = phase.index + 1;
     if (nextIndex >= run.length) {
-      // Record the run as we land on results — answers are all in by now.
       const correct = answers.filter((a) => a.correct);
       const times = correct
         .map((a) => a.reactionMs)
@@ -126,7 +142,28 @@ export function QuizView({ character }: { character: Character }) {
       setRemainingMs(QUESTION_MS);
       setPhase({ name: "question", index: nextIndex, startedAt: Date.now() });
     }
-  };
+  }, [phase, run, answers, dispatch, character.id]);
+
+  /* Number keys answer, Enter advances. Reaching for the mouse was itself
+     part of the measured time, which is not the skill being trained. */
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (phase.name === "question") {
+        const n = Number(e.key);
+        if (Number.isInteger(n) && n >= 1 && n <= ladder.length) {
+          e.preventDefault();
+          answer(n - 1);
+        }
+        return;
+      }
+      if (phase.name === "feedback" && (e.key === "Enter" || e.key === " ")) {
+        e.preventDefault();
+        next();
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [phase, ladder.length, answer, next]);
 
   /* Located by name, not by position. Punishment happens to be stage 4 in
      every curriculum today, and a hardcoded 4 would point somewhere plausible
@@ -136,9 +173,26 @@ export function QuizView({ character }: { character: Character }) {
     ? `/training/${character.id}/stage/${punishStage.number}`
     : `/training/${character.id}`;
 
+  if (phase.name === "results") {
+    return (
+      <ResultsCard
+        answers={answers}
+        total={run.length}
+        onRetry={start}
+        studyHref={studyHref}
+      />
+    );
+  }
+
+  const live = phase.name === "question" || phase.name === "feedback";
+  const q = live ? run[phase.index] : null;
+  const inFeedback = phase.name === "feedback";
+  const picked = inFeedback ? phase.picked : null;
+  const answerSlot = q ? correctSlot(q) : -1;
+
   return (
     <div>
-      {phase.name === "idle" && (
+      {phase.name === "idle" ? (
         <div className="text-center">
           <span className="mx-auto flex size-14 items-center justify-center rounded-full border border-accent/50 bg-accent-dim">
             <Timer className="size-6 text-accent-bright" aria-hidden />
@@ -146,10 +200,13 @@ export function QuizView({ character }: { character: Character }) {
           <h1 className="display-title mt-5 text-4xl uppercase tracking-tight">
             Punish reaction
           </h1>
-          <p className="mx-auto mt-3 max-w-sm text-sm leading-relaxed text-muted">
-            A situation flashes — tap {character.name}&apos;s best answer before
-            the window closes. {questions.length} rounds, {QUESTION_MS / 1000}s
-            each. Frame data verified against the current punish table.
+          <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-muted">
+            A situation flashes — answer with the ladder below before the window
+            closes. {questions.length} rounds, {QUESTION_MS / 1000}s each.
+            {" "}
+            The ladder never changes, so learn it once and then stop reading it.
+            Every entry is a real punisher; the answer is always the biggest one
+            that still reaches.
           </p>
           {stats && stats.runs > 0 && (
             <p className="tnum mt-4 text-sm text-accent-bright">
@@ -165,131 +222,104 @@ export function QuizView({ character }: { character: Character }) {
             <Zap className="size-4" aria-hidden /> Start
           </button>
         </div>
-      )}
+      ) : (
+        <div>
+          <div className="mb-3 flex items-center justify-between gap-4">
+            <p className="microlabel">
+              Round {phase.index + 1} / {run.length}
+            </p>
+            <div className="w-32">
+              <ProgressBar
+                fraction={remainingMs / QUESTION_MS}
+                height={5}
+                label="Time remaining"
+              />
+            </div>
+          </div>
 
-      {(phase.name === "question" || phase.name === "feedback") && (
-        <QuestionCard
-          run={run}
-          phase={phase}
-          remainingMs={remainingMs}
-          lastReactionMs={answers[answers.length - 1]?.reactionMs ?? null}
-          onAnswer={answer}
-          onNext={next}
-        />
-      )}
-
-      {phase.name === "results" && (
-        <ResultsCard
-          answers={answers}
-          total={run.length}
-          onRetry={start}
-          studyHref={studyHref}
-        />
-      )}
-    </div>
-  );
-}
-
-function QuestionCard({
-  run,
-  phase,
-  remainingMs,
-  lastReactionMs,
-  onAnswer,
-  onNext,
-}: {
-  run: RunQuestion[];
-  phase: Extract<Phase, { name: "question" } | { name: "feedback" }>;
-  remainingMs: number;
-  lastReactionMs: number | null;
-  onAnswer: (i: number) => void;
-  onNext: () => void;
-}) {
-  const q = run[phase.index];
-  const inFeedback = phase.name === "feedback";
-  const picked = inFeedback ? phase.picked : null;
-
-  return (
-    <div>
-      <div className="mb-4 flex items-center justify-between">
-        <p className="microlabel">
-          Round {phase.index + 1} / {run.length}
-        </p>
-        <div className="w-28">
-          <ProgressBar
-            fraction={remainingMs / QUESTION_MS}
-            height={5}
-            label="Time remaining"
-          />
-        </div>
-      </div>
-
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={q.id}
-          initial={{ opacity: 0, scale: 0.94 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ type: "spring", stiffness: 400, damping: 30 }}
-          className="clip-panel border border-border bg-surface p-6 text-center"
-        >
-          <motion.p
-            className="tnum text-6xl font-bold text-accent-bright sm:text-7xl"
-            initial={{ scale: 1.4, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ type: "spring", stiffness: 500, damping: 24 }}
+          <motion.div
+            key={q?.id}
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ type: "spring", stiffness: 420, damping: 28 }}
+            className="clip-panel border border-border bg-surface p-6 text-center"
           >
-            {q.prompt}
-          </motion.p>
-          <p className="mt-3 text-sm text-muted">{q.situation}</p>
-        </motion.div>
-      </AnimatePresence>
+            <p className="tnum text-5xl font-bold text-accent-bright sm:text-6xl">
+              {q?.prompt}
+            </p>
+            <p className="mt-2 text-sm text-muted">{q?.situation}</p>
+          </motion.div>
+        </div>
+      )}
 
-      <div className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2">
-        {q.order.map((optionIndex) => {
-          const isCorrect = optionIndex === q.correctIndex;
-          const isPicked = picked === optionIndex;
-          return (
-            <button
-              key={optionIndex}
-              type="button"
-              disabled={inFeedback}
-              onClick={() => onAnswer(optionIndex)}
-              className={cn(
-                "flex min-h-[60px] items-center justify-center clip-panel border px-4 font-mono text-sm font-semibold transition-colors",
-                !inFeedback &&
-                  "border-border bg-surface-2 text-fg hover:border-accent/60 hover:bg-accent-dim",
-                inFeedback && isCorrect &&
-                  "border-accent bg-accent-dim text-accent-bright",
-                inFeedback && isPicked && !isCorrect &&
-                  "border-danger/60 bg-danger/10 text-danger",
-                inFeedback && !isPicked && !isCorrect &&
-                  "border-border text-faint",
-              )}
-            >
-              {q.options[optionIndex]}
-            </button>
-          );
-        })}
-      </div>
+      {/* The ladder. Present in every phase, including before you start, so
+          the first round is not the one where you are still learning it. */}
+      <section className="mt-6" aria-label="Punish ladder">
+        <p className="microlabel mb-2">
+          {character.name}&apos;s punish ladder
+          <span className="ml-2 normal-case tracking-normal text-faint">
+            press 1–{ladder.length}
+          </span>
+        </p>
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5">
+          {ladder.map((entry, slot) => {
+            const isAnswer = inFeedback && slot === answerSlot;
+            const isWrongPick = inFeedback && picked === slot && slot !== answerSlot;
+            return (
+              <button
+                key={entry}
+                type="button"
+                disabled={phase.name !== "question"}
+                onClick={() => answer(slot)}
+                aria-label={`${slot + 1}: ${entry}`}
+                className={cn(
+                  "flex min-h-[56px] items-center justify-center gap-2 clip-row border px-2 py-2 transition-colors",
+                  phase.name === "question" &&
+                    "border-border bg-surface-2 hover:border-accent/60 hover:bg-accent-dim",
+                  phase.name === "idle" && "border-border bg-surface",
+                  isAnswer && "border-accent bg-accent-dim",
+                  isWrongPick && "border-danger/60 bg-danger/10",
+                  inFeedback && !isAnswer && !isWrongPick && "border-border bg-surface opacity-50",
+                )}
+              >
+                <span
+                  className={cn(
+                    "tnum shrink-0 text-[10px] font-bold",
+                    isAnswer ? "text-accent-bright" : "text-faint",
+                  )}
+                >
+                  {slot + 1}
+                </span>
+                <Notation value={entry} size="sm" />
+                {isAnswer && (
+                  <Check className="size-3.5 shrink-0 text-accent-bright" strokeWidth={3} aria-hidden />
+                )}
+                {isWrongPick && (
+                  <X className="size-3.5 shrink-0 text-danger" strokeWidth={3} aria-hidden />
+                )}
+              </button>
+            );
+          })}
+        </div>
+      </section>
 
       <div aria-live="polite">
-        {inFeedback && (
+        {inFeedback && q && (
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             className="relative mt-4 overflow-hidden clip-panel border border-border bg-surface p-4"
           >
-            {picked === q.correctIndex && (
-              <CorrectArc reactionMs={lastReactionMs} />
+            {picked === answerSlot && (
+              <CorrectArc reactionMs={answers[answers.length - 1]?.reactionMs ?? null} />
             )}
             <p
               className={cn(
                 "flex items-center gap-1.5 text-sm font-bold uppercase tracking-wider",
-                picked === q.correctIndex ? "text-accent-bright" : "text-danger",
+                picked === answerSlot ? "text-accent-bright" : "text-danger",
               )}
             >
-              {picked === q.correctIndex ? (
+              {picked === answerSlot ? (
                 <>
                   <Check className="size-4" aria-hidden /> Correct
                 </>
@@ -309,11 +339,12 @@ function QuestionCard({
             <p className="mt-2 text-sm leading-relaxed text-muted">{q.explain}</p>
             <button
               type="button"
-              onClick={onNext}
+              onClick={next}
               autoFocus
               className="mt-4 flex min-h-[48px] w-full items-center justify-center clip-row bg-accent text-sm font-semibold uppercase tracking-[0.15em] text-bg transition-colors hover:bg-accent-bright"
             >
               {phase.index + 1 >= run.length ? "See results" : "Next round"}
+              <span className="ml-2 text-[10px] opacity-70">ENTER</span>
             </button>
           </motion.div>
         )}
@@ -331,6 +362,8 @@ function CorrectArc({ reactionMs }: { reactionMs: number | null }) {
   const tier = reactionMs === null ? 0 : reactionMs < 1200 ? 2 : reactionMs < 2500 ? 1 : 0;
   const width = ["45%", "70%", "100%"][tier];
   const peak = [0.45, 0.65, 0.95][tier];
+  const path =
+    "M0 26 L70 20 L76 30 L170 16 L178 26 L280 14 L288 24 L390 12 L400 22 L500 10 L510 20 L600 8";
   return (
     <svg
       aria-hidden
@@ -341,7 +374,7 @@ function CorrectArc({ reactionMs }: { reactionMs: number | null }) {
       fill="none"
     >
       <motion.path
-        d="M0 26 L70 20 L76 30 L170 16 L178 26 L280 14 L288 24 L390 12 L400 22 L500 10 L510 20 L600 8"
+        d={path}
         stroke="var(--accent)"
         strokeWidth={4}
         strokeLinejoin="round"
@@ -356,7 +389,7 @@ function CorrectArc({ reactionMs }: { reactionMs: number | null }) {
         }}
       />
       <motion.path
-        d="M0 26 L70 20 L76 30 L170 16 L178 26 L280 14 L288 24 L390 12 L400 22 L500 10 L510 20 L600 8"
+        d={path}
         stroke="var(--accent-bright)"
         strokeWidth={1.4}
         strokeLinejoin="round"

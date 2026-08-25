@@ -1126,7 +1126,7 @@ export const lars: Character = {
       id: "q-14",
       prompt: "-14",
       situation: "You blocked a launcher-class move. Standing.",
-      options: ["f,n,b+2,1 → combo", "f+1,2", "2,1", "df+1"],
+      options: ["f,n,b+2,1", "f+1,2", "2,1", "df+1"],
       correctIndex: 0,
       explain:
         "-14 is where Lars gets a full combo: Blue Bolt launches. The motion is the price — buffer f, n during blockstun so only b+2,1 remains.",
@@ -1135,7 +1135,7 @@ export const lars: Character = {
       id: "q-15",
       prompt: "-15",
       situation: "Blocked a big move, and your Blue Bolt motion is shaky today.",
-      options: ["f+1+2 → combo", "f+1,2", "uf+4", "2,1"],
+      options: ["f+1+2", "f+1,2", "uf+4", "2,1"],
       correctIndex: 0,
       explain:
         "Ark Blast launches at -15 with a single chord instead of a motion. A landed easy punish beats a dropped hard one every time.",
@@ -1162,7 +1162,7 @@ export const lars: Character = {
       id: "q-ws15",
       prompt: "-15",
       situation: "You blocked a big sweep. Crouching.",
-      options: ["ws+1 → combo", "ws+4", "ws+2,1", "Block again"],
+      options: ["ws+1", "ws+4", "ws+2,1", "Block again"],
       correctIndex: 0,
       explain:
         "-15 from crouch is a full launch with ws+1, and it carries its own Tornado. Poking after blocking a big low is the most commonly wasted punish in Tekken.",
@@ -1171,7 +1171,7 @@ export const lars: Character = {
       id: "q-whiff",
       prompt: "WHIFF",
       situation: "Their big mid just whiffed in front of you.",
-      options: ["f+1+4 → combo", "d+3", "df+1", "Backdash again"],
+      options: ["f+1+4", "d+3", "df+1", "Backdash again"],
       correctIndex: 0,
       explain:
         "A whiff has no blockstun, so f+1+4's -18 costs you nothing — take the launch. 2,1 is the safe pickup and b+3,4 covers longer range.",
@@ -1180,7 +1180,7 @@ export const lars: Character = {
       id: "q-rage-art",
       prompt: "-18",
       situation: "You blocked a Rage Art.",
-      options: ["f,n,b+2,1 → combo", "2,1", "f+2,1", "Throw"],
+      options: ["f,n,b+2,1", "2,1", "f+2,1", "Throw"],
       correctIndex: 0,
       explain:
         "A blocked Rage Art is the biggest punish window in the game — take maximum damage with a launcher. Anything less leaves a round on the table.",

@@ -1137,18 +1137,13 @@ export const hwoarang: Character = {
         "b+3 launches for +35a. It is -19 on block, which is why a whiff — where there is nothing to block — is the right place to use it.",
     },
     {
-      id: "hwo-q-plus",
-      prompt: "+12 ON BLOCK",
-      situation: "RFF.f+3 was blocked and you are hugely plus.",
-      options: [
-        "Enter a flamingo and threaten the step kick",
-        "Switch stance with 3+4",
-        "Throw a low and reset",
-        "Back off and block",
-      ],
+      id: "hwo-q-13-crouch",
+      prompt: "-13, CROUCHING",
+      situation: "You blocked a low that leaves them at -13.",
+      options: ["ws1", "ws3", "1,2", "b+2"],
       correctIndex: 0,
       explain:
-        "Cheap Shot leaves you +12 to +15. That is enough to enter stance and get a launching, plus-on-block step kick out before they can move.",
+        "ws1 is i12~13, so it reaches at -13 where ws3 (i14~16) does not. Take the punish that lands over the one that looks bigger.",
     },
     {
       id: "hwo-q-ducked",
@@ -1160,18 +1155,13 @@ export const hwoarang: Character = {
         "f,F+3 is a mid at +6 on block. The others are all highs — repeating a high into a crouch is how the pressure stops working.",
     },
     {
-      id: "hwo-q-minus",
-      prompt: "MINUS",
-      situation: "Your string was blocked and it is clearly their turn.",
-      options: [
-        "Block and take your turn back",
-        "3+4 into RFF",
-        "f+3 into Left Flamingo",
-        "d+3+4",
-      ],
+      id: "hwo-q-whiff-low",
+      prompt: "WHIFFED LOW",
+      situation: "They whiffed a low and are recovering in front of you.",
+      options: ["b+3", "ws4", "4", "df+2"],
       correctIndex: 0,
       explain:
-        "Stance changes have no frames of their own — doing one while minus is doing nothing while they attack. Block first, switch later.",
+        "A whiff gives you far more time than any blocked move. b+3 launches for +35a — its -19 on block never applies, because there is nothing to block.",
     },
   ],
 };

@@ -1116,7 +1116,7 @@ export const dragunov: Character = {
       id: "q-10",
       prompt: "-10",
       situation: "You blocked a string ender. You are standing.",
-      options: ["2,1 (then DF for Sneak)", "4,1", "df+2", "b+4,3"],
+      options: ["2,1", "4,1", "df+2", "b+4,3"],
       correctIndex: 0,
       explain:
         "2,1 is his i10 punish — and adding DF leaves you in Sneak at +10 on hit, so the punish becomes the start of your pressure.",
@@ -1143,7 +1143,7 @@ export const dragunov: Character = {
       id: "q-15",
       prompt: "-15",
       situation: "You blocked a launcher-class move. Standing.",
-      options: ["df+2 → combo", "b+4,3", "4,1", "f+1+2"],
+      options: ["df+2", "b+4,3", "4,1", "f+1+2"],
       correctIndex: 0,
       explain:
         "df+2 is his ONLY standing launcher. There is no faster one and no alternative, so knowing which moves are -15 in a matchup matters more for him than for most.",
@@ -1188,7 +1188,7 @@ export const dragunov: Character = {
       id: "q-ws15",
       prompt: "-15 ws",
       situation: "You blocked a badly unsafe low. Crouching.",
-      options: ["ws2 → combo", "ws4", "ws1,3", "d+2"],
+      options: ["ws2", "ws4", "ws1,3", "d+2"],
       correctIndex: 0,
       explain:
         "ws2 (Ballistic Upper) launches at -15. Between ws2 and df+2 he has exactly two launch punishes — one standing, one crouching, both at -15.",

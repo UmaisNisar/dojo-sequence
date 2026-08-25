@@ -1155,7 +1155,7 @@ export const bryan: Character = {
       id: "q-14",
       prompt: "-14",
       situation: "You blocked a launcher-class move. Standing.",
-      options: ["f,n,b+2 → combo", "df+2,1", "4,3", "b+4"],
+      options: ["f,n,b+2", "df+2,1", "4,3", "b+4"],
       correctIndex: 0,
       explain:
         "This is the number that defines Bryan. Jet Uppercut is i14 and LAUNCHES, so moves that are safe against most of the cast lose a round against him. Everything else here takes a fraction of the damage.",
@@ -1200,7 +1200,7 @@ export const bryan: Character = {
       id: "q-ws15",
       prompt: "-15 ws",
       situation: "You blocked a badly unsafe low. Crouching.",
-      options: ["ws1 → combo", "ws4", "ws3", "df+2,1"],
+      options: ["ws1", "ws4", "ws3", "df+2,1"],
       correctIndex: 0,
       explain:
         "ws1 LAUNCHES at -15. Bryan's crouch punishment is genuinely better than his standing punishment — blocking lows is where he collects.",

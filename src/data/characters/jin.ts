@@ -1155,7 +1155,7 @@ export const jin: Character = {
       id: "q-15",
       prompt: "-15",
       situation: "You blocked a launcher-class move. Standing.",
-      options: ["d+3+4 → combo", "f+1+2", "df+1,4", "2,4"],
+      options: ["d+3+4", "f+1+2", "df+1,4", "2,4"],
       correctIndex: 0,
       explain:
         "d+3+4 LAUNCHES at -15 with no just frame required. This is why Jin's punishment is rated the best in the game — big damage with no execution tax.",
@@ -1182,7 +1182,7 @@ export const jin: Character = {
       id: "q-ws14",
       prompt: "-14 ws",
       situation: "You blocked a badly unsafe low. Crouching.",
-      options: ["ws2 → combo", "ws4,4", "ws1,2", "db+1"],
+      options: ["ws2", "ws4,4", "ws1,2", "db+1"],
       correctIndex: 0,
       explain:
         "ws2 LAUNCHES at -14 — one frame faster than his standing launch punish. Blocking lows is where Jin collects the most.",

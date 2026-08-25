@@ -1164,7 +1164,7 @@ export const king: Character = {
       id: "q-15",
       prompt: "-15",
       situation: "You blocked a launcher-class move. Standing.",
-      options: ["uf+4 → combo", "b+2,1", "b+1,2", "2,1"],
+      options: ["uf+4", "b+2,1", "b+1,2", "2,1"],
       correctIndex: 0,
       explain:
         "uf+4 launches at -15 for a full combo. f+2,1 also covers -15 and is a Heat Engager — take that instead when Heat is worth more than damage.",
@@ -1191,7 +1191,7 @@ export const king: Character = {
       id: "q-ws15",
       prompt: "-15 ws",
       situation: "You blocked a badly unsafe low. Crouching.",
-      options: ["FC.df+2 → combo", "ws4", "ws2,2", "d+3"],
+      options: ["FC.df+2", "ws4", "ws2,2", "d+3"],
       correctIndex: 0,
       explain:
         "FC.df+2 LAUNCHES at -15 and crumples on hit for a big combo. ws2,2 at -14 is the safer pick if you are unsure of the number.",
