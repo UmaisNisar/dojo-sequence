@@ -22,6 +22,8 @@ const csp = [
   "img-src 'self' data:", // data: is the per-character favicon
   "font-src 'self'", // next/font self-hosts
   "media-src 'self' https://wavu.wiki", // move demo clips
+  "worker-src 'self'", // the offline service worker
+  "manifest-src 'self'",
   // wavu.wiki: Cargo frame-data check. web3forms: user bug reports.
   "connect-src 'self' https://wavu.wiki https://api.web3forms.com",
   "object-src 'none'",
@@ -49,7 +51,19 @@ const nextConfig: NextConfig = {
   // Don't advertise the framework version to anyone scanning for known CVEs.
   poweredByHeader: false,
   headers() {
-    return Promise.resolve([{ source: "/:path*", headers: securityHeaders }]);
+    return Promise.resolve([
+      { source: "/:path*", headers: securityHeaders },
+      {
+        /* The worker decides what every other request does, so it is the one
+           file that must never be answered from a stale cache — otherwise a
+           deploy cannot replace the thing that would have fetched it. */
+        source: "/sw.js",
+        headers: [
+          { key: "Cache-Control", value: "no-cache, no-store, must-revalidate" },
+          { key: "Service-Worker-Allowed", value: "/" },
+        ],
+      },
+    ]);
   },
 };
 

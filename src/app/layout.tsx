@@ -7,6 +7,7 @@ import { AppShell } from "@/components/AppShell";
 import { LightningStrikes } from "@/components/effects/LightningStrikes";
 import { AccentScope } from "@/components/AccentScope";
 import { DynamicFavicon } from "@/components/DynamicFavicon";
+import { ServiceWorker } from "@/components/ServiceWorker";
 import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
@@ -78,6 +79,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             which the CSP blocks, and local browsing would otherwise pollute
             the real numbers. */}
         {process.env.NODE_ENV === "production" && <Analytics />}
+        <ServiceWorker />
       </body>
     </html>
   );
