@@ -209,52 +209,57 @@ function RouteRow({ route }: { route: ComboRoute }) {
   const steps = route.notation.split(/\s+/).filter(Boolean);
 
   return (
-    <div className="flex flex-col gap-2 px-4 py-3 sm:flex-row sm:items-start sm:gap-4 sm:px-5">
-      <ol className="flex min-w-0 flex-1 flex-wrap items-center gap-1.5">
-        {steps.map((step, i) => (
-          <li key={`${step}-${i}`}>
-            {isComboMarker(step) ? (
-              <span
-                title={COMBO_MARKERS[step]}
-                className="rounded-sm bg-accent-dim px-1.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wide text-accent-bright"
-              >
-                {step}
-              </span>
-            ) : (
-              <Notation value={step} size="sm" />
-            )}
-          </li>
-        ))}
-      </ol>
+    /* The notes sit BELOW the row rather than beside it. As a third flex child
+       a full-width note collapsed the notation list to a single column and put
+       the damage block on top of the first input. */
+    <div className="px-4 py-3 sm:px-5">
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:gap-4">
+        <ol className="flex min-w-0 flex-1 flex-wrap items-center gap-1.5">
+          {steps.map((step, i) => (
+            <li key={`${step}-${i}`}>
+              {isComboMarker(step) ? (
+                <span
+                  title={COMBO_MARKERS[step]}
+                  className="rounded-sm bg-accent-dim px-1.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wide text-accent-bright"
+                >
+                  {step}
+                </span>
+              ) : (
+                <Notation value={step} size="sm" />
+              )}
+            </li>
+          ))}
+        </ol>
 
-      <div className="flex shrink-0 items-center gap-2">
-        {route.damage !== null && (
-          <div className="clip-row bg-surface-2 px-2 py-1.5 text-center">
-            <p className="text-[9px] font-semibold uppercase tracking-[0.12em] text-faint">
-              Damage
-            </p>
-            <p className="tnum mt-0.5 font-mono text-xs font-semibold text-frame-launch">
-              {route.damage}
-            </p>
-          </div>
-        )}
-        {route.recoverable !== null && (
-          <div
-            className="clip-row bg-surface-2 px-2 py-1.5 text-center"
-            title="Grey health the opponent recovers"
-          >
-            <p className="text-[9px] font-semibold uppercase tracking-[0.12em] text-faint">
-              Recovers
-            </p>
-            <p className="tnum mt-0.5 font-mono text-xs font-semibold text-fg">
-              {route.recoverable}
-            </p>
-          </div>
-        )}
+        <div className="flex shrink-0 items-center gap-2">
+          {route.damage !== null && (
+            <div className="clip-row bg-surface-2 px-2 py-1.5 text-center">
+              <p className="text-[9px] font-semibold uppercase tracking-[0.12em] text-faint">
+                Damage
+              </p>
+              <p className="tnum mt-0.5 font-mono text-xs font-semibold text-frame-launch">
+                {route.damage}
+              </p>
+            </div>
+          )}
+          {route.recoverable !== null && (
+            <div
+              className="clip-row bg-surface-2 px-2 py-1.5 text-center"
+              title="Grey health the opponent recovers"
+            >
+              <p className="text-[9px] font-semibold uppercase tracking-[0.12em] text-faint">
+                Recovers
+              </p>
+              <p className="tnum mt-0.5 font-mono text-xs font-semibold text-fg">
+                {route.recoverable}
+              </p>
+            </div>
+          )}
+        </div>
       </div>
 
       {route.notes.length > 0 && (
-        <ul className="w-full basis-full sm:basis-auto">
+        <ul className="mt-2 flex flex-col gap-0.5">
           {route.notes.map((note) => (
             <li key={note} className="text-[10px] leading-relaxed text-faint">
               {note}
