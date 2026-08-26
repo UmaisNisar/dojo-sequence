@@ -4,7 +4,15 @@ import { useEffect, useMemo } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { MotionConfig } from "motion/react";
-import { Zap, Swords, Users, Settings, MessageSquare, Brain } from "lucide-react";
+import {
+  Zap,
+  Swords,
+  Users,
+  Settings,
+  MessageSquare,
+  Brain,
+  ShieldAlert,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useActiveCharacter, useReducedMotionSetting } from "@/hooks/use-progress";
 
@@ -27,6 +35,12 @@ function buildNav(quizHref: string) {
       active: (p: string) => p.startsWith("/training") && !isQuiz(p),
     },
     { href: quizHref, label: "Quiz", icon: Brain, active: isQuiz },
+    {
+      href: "/matchups",
+      label: "Matchups",
+      icon: ShieldAlert,
+      active: (p: string) => p.startsWith("/matchups"),
+    },
     {
       href: "/characters",
       label: "Characters",
@@ -155,7 +169,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                   href={href}
                   aria-current={active ? "page" : undefined}
                   className={cn(
-                    "flex min-h-[60px] flex-col items-center justify-center gap-1 text-[10px] font-semibold uppercase tracking-wider transition-colors",
+                    "flex min-h-[60px] flex-col items-center justify-center gap-1 px-0.5 text-center text-[9px] font-semibold uppercase leading-tight tracking-wide transition-colors",
                     active ? "text-accent-bright" : "text-muted",
                   )}
                 >

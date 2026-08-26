@@ -1,0 +1,203 @@
+{
+  "characterId": "king",
+  "source": "https://wavu.wiki/t/King_punishers",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-25",
+  "sections": {
+    "standing": [
+      {
+        "moveKey": "right-1",
+        "input": null,
+        "enemy": "-10",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "b1-2",
+        "input": null,
+        "enemy": "-12",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "b2-1",
+        "input": null,
+        "enemy": "-14",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "uf4",
+        "input": null,
+        "enemy": "-15",
+        "frames": null,
+        "damage": null,
+        "combo": "66",
+        "notes": []
+      },
+      {
+        "moveKey": "f2-1",
+        "input": null,
+        "enemy": "-15",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "b3-throw",
+        "input": null,
+        "enemy": "-16",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      }
+    ],
+    "crouching": [
+      {
+        "moveKey": "ws4",
+        "input": null,
+        "enemy": "-11",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws2-2",
+        "input": null,
+        "enemy": "-14",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "fc-df2",
+        "input": null,
+        "enemy": "-15",
+        "frames": null,
+        "damage": null,
+        "combo": "72",
+        "notes": []
+      },
+      {
+        "moveKey": "ws1plus2",
+        "input": null,
+        "enemy": "-18",
+        "frames": null,
+        "damage": null,
+        "combo": "73",
+        "notes": []
+      }
+    ],
+    "backTurned": [
+      {
+        "moveKey": "f2-d1-2",
+        "input": null,
+        "enemy": "-15",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": [
+          "Leads to a Burning Knuckle combo. Burning Knuckle combos are character specific so use the linked resource to learn the appropriate combo."
+        ]
+      }
+    ],
+    "grounded": [
+      {
+        "moveKey": "d3",
+        "input": null,
+        "enemy": "-17",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "db3",
+        "input": null,
+        "enemy": "-23",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "db4",
+        "input": null,
+        "enemy": "-29",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "d2plus3",
+        "input": null,
+        "enemy": "-33",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      }
+    ]
+  },
+  "whiff": [
+    {
+      "moveKey": "jab-2",
+      "input": null,
+      "speed": null,
+      "damage": null,
+      "risk": null,
+      "notes": []
+    },
+    {
+      "moveKey": "right-1",
+      "input": null,
+      "speed": null,
+      "damage": null,
+      "risk": null,
+      "notes": []
+    },
+    {
+      "moveKey": "b1-2",
+      "input": null,
+      "speed": null,
+      "damage": null,
+      "risk": null,
+      "notes": []
+    },
+    {
+      "moveKey": "b2-1",
+      "input": null,
+      "speed": null,
+      "damage": null,
+      "risk": null,
+      "notes": []
+    },
+    {
+      "moveKey": "uf4",
+      "input": null,
+      "speed": null,
+      "damage": null,
+      "risk": null,
+      "notes": []
+    },
+    {
+      "moveKey": "f2-1",
+      "input": null,
+      "speed": null,
+      "damage": null,
+      "risk": null,
+      "notes": []
+    }
+  ]
+}

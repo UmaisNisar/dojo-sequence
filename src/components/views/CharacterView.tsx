@@ -4,7 +4,17 @@ import { useMemo } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { motion } from "motion/react";
-import { ArrowRight, Play, RefreshCw, RotateCcw, Trophy } from "lucide-react";
+import {
+  ArrowRight,
+  Crosshair,
+  ListTree,
+  ShieldAlert,
+  Swords,
+  Play,
+  RefreshCw,
+  RotateCcw,
+  Trophy,
+} from "lucide-react";
 import type { Character, TrainingItem } from "@/types";
 import { useProgress } from "@/hooks/use-progress";
 import {
@@ -16,6 +26,9 @@ import {
   getNextItem,
   summarizeCharacter,
 } from "@/lib/progression";
+import { getFrameData } from "@/data/frames";
+import { getPunishers } from "@/data/punishers";
+import { getCombos } from "@/data/combos";
 import { Notation } from "@/components/Notation";
 import { formatRelativeTime, pad2 } from "@/lib/utils";
 import { CharacterHeader } from "@/components/CharacterHeader";
@@ -32,6 +45,18 @@ export function CharacterView({ character }: { character: Character }) {
   );
 
   const nextStageId = summary.stages.find((s) => s.status === "unlocked")?.stage.id;
+
+  const frames = getFrameData(character.id);
+  const hasMoveIndex = !!frames;
+  const hasPunishSheet = !!getPunishers(character.id) && hasMoveIndex;
+  const combos = getCombos(character.id);
+  const comboCount = combos
+    ? combos.sections.reduce(
+        (n, s) => n + s.groups.reduce((m, g) => m + g.routes.length, 0),
+        0,
+      )
+    : 0;
+  const moveCount = frames ? Object.keys(frames.moves).length : 0;
 
   const lastPractice = useMemo(() => {
     let latest = 0;
@@ -155,6 +180,44 @@ export function CharacterView({ character }: { character: Character }) {
         )
       )}
 
+      {/* Reference, not curriculum: these are the two screens you open with
+          the game running, so they sit above the stage list rather than being
+          buried at the end of it. */}
+      {(hasMoveIndex || hasPunishSheet || comboCount > 0) && (
+        <nav aria-label="Reference" className="mb-8 grid gap-2 sm:grid-cols-2">
+          {hasMoveIndex && (
+            <ReferenceLink
+              href={`/training/${character.id}/moves`}
+              icon={<ListTree className="size-4" aria-hidden />}
+              title="Movelist"
+              detail={`${moveCount} moves · search and filter`}
+            />
+          )}
+          {hasPunishSheet && (
+            <ReferenceLink
+              href={`/training/${character.id}/punish`}
+              icon={<Crosshair className="size-4" aria-hidden />}
+              title="Punishers"
+              detail="What to hit them with, by frames"
+            />
+          )}
+          {comboCount > 0 && (
+            <ReferenceLink
+              href={`/training/${character.id}/combos`}
+              icon={<Swords className="size-4" aria-hidden />}
+              title="Combos"
+              detail={`${comboCount} routes · grouped by launcher`}
+            />
+          )}
+          <ReferenceLink
+            href="/matchups"
+            icon={<ShieldAlert className="size-4" aria-hidden />}
+            title="Matchups"
+            detail="What the opponent is doing to you"
+          />
+        </nav>
+      )}
+
       <ol className="flex flex-col gap-2">
         {summary.stages.map((s, index) => (
           <motion.li
@@ -209,5 +272,36 @@ export function CharacterView({ character }: { character: Character }) {
       )}
 
     </div>
+  );
+}
+
+function ReferenceLink({
+  href,
+  icon,
+  title,
+  detail,
+}: {
+  href: string;
+  icon: React.ReactNode;
+  title: string;
+  detail: string;
+}) {
+  return (
+    <Link
+      href={href}
+      className="group flex items-center gap-3 clip-panel border border-border bg-surface p-4 transition-colors hover:border-border-strong"
+    >
+      <span className="flex size-9 shrink-0 items-center justify-center clip-row bg-surface-2 text-accent-bright">
+        {icon}
+      </span>
+      <span className="min-w-0 flex-1">
+        <span className="block text-sm font-semibold">{title}</span>
+        <span className="mt-0.5 block text-[11px] text-muted">{detail}</span>
+      </span>
+      <ArrowRight
+        className="size-4 shrink-0 text-faint transition-transform group-hover:translate-x-0.5"
+        aria-hidden
+      />
+    </Link>
   );
 }

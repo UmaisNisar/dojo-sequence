@@ -1,0 +1,172 @@
+{
+  "characterId": "kazuya",
+  "source": "https://wavu.wiki/t/Kazuya_punishers",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-25",
+  "sections": {
+    "standing": [
+      {
+        "moveKey": "flash-punch",
+        "input": null,
+        "enemy": "-10",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "jab-2-2",
+        "input": null,
+        "enemy": "-10",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "b1-2",
+        "input": null,
+        "enemy": "-11",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "one-plus-two",
+        "input": null,
+        "enemy": "-12",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "uf1plus2",
+        "input": "uf+1+2",
+        "enemy": "-12",
+        "frames": "+25(+7)",
+        "damage": "35",
+        "combo": null,
+        "notes": [
+          "Only on Rage Arts & Power Crushes"
+        ]
+      },
+      {
+        "moveKey": "ewgf",
+        "input": null,
+        "enemy": "-13",
+        "frames": null,
+        "damage": null,
+        "combo": "72",
+        "notes": []
+      },
+      {
+        "moveKey": "db12",
+        "input": null,
+        "enemy": "-13",
+        "frames": "HE/KND",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "df1-2",
+        "input": null,
+        "enemy": "-15",
+        "frames": "HE/+9",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "df1-4",
+        "input": null,
+        "enemy": "-15",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      }
+    ],
+    "crouching": [
+      {
+        "moveKey": "ws44",
+        "input": null,
+        "enemy": "-11",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws12",
+        "input": null,
+        "enemy": "-13",
+        "frames": null,
+        "damage": null,
+        "combo": "63",
+        "notes": []
+      },
+      {
+        "moveKey": "ws2",
+        "input": null,
+        "enemy": "-16",
+        "frames": null,
+        "damage": null,
+        "combo": "77",
+        "notes": []
+      }
+    ],
+    "backTurned": [
+      {
+        "moveKey": "jab-2-4",
+        "input": null,
+        "enemy": "-10",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "right-2",
+        "input": null,
+        "enemy": "-12",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "b2-2-1plus2",
+        "input": null,
+        "enemy": "-14",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      }
+    ],
+    "grounded": []
+  },
+  "whiff": [
+    {
+      "moveKey": "flash-punch",
+      "input": null,
+      "speed": null,
+      "damage": null,
+      "risk": "-1",
+      "notes": [
+        "Hit confirm last hit."
+      ]
+    },
+    {
+      "moveKey": "ewgf",
+      "input": null,
+      "speed": "i11(~13)",
+      "damage": null,
+      "risk": null,
+      "notes": []
+    }
+  ]
+}

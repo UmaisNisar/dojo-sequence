@@ -1,0 +1,204 @@
+{
+  "characterId": "dragunov",
+  "source": "https://wavu.wiki/t/Dragunov_punishers",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-25",
+  "sections": {
+    "standing": [
+      {
+        "moveKey": "right-1",
+        "input": null,
+        "enemy": "-10",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "right-1",
+        "input": "2,1,DF",
+        "enemy": "-10",
+        "frames": "+10 SNK",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "kick4-1",
+        "input": null,
+        "enemy": "-12",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "df4",
+        "input": null,
+        "enemy": "-12",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": [
+          "Use over 4,1 only if you need a mid."
+        ]
+      },
+      {
+        "moveKey": "df1",
+        "input": null,
+        "enemy": "-13",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "b4-3",
+        "input": null,
+        "enemy": "-14",
+        "frames": null,
+        "damage": null,
+        "combo": "76 (41)",
+        "notes": [
+          "Heat Engager +17g, Heat Dash +62a (+42)"
+        ]
+      },
+      {
+        "moveKey": "f4-3",
+        "input": null,
+        "enemy": "-14",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "uf1",
+        "input": null,
+        "enemy": "-14",
+        "frames": null,
+        "damage": null,
+        "combo": "44 (0)",
+        "notes": [
+          "Combo switches sides with the opponent"
+        ]
+      },
+      {
+        "moveKey": "df2",
+        "input": null,
+        "enemy": "-15",
+        "frames": null,
+        "damage": null,
+        "combo": "69 (35)",
+        "notes": []
+      },
+      {
+        "moveKey": "f1plus2",
+        "input": null,
+        "enemy": "-17",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": [
+          "Long range punisher; think Deathfist"
+        ]
+      },
+      {
+        "moveKey": "f3-1plus2",
+        "input": null,
+        "enemy": "-20",
+        "frames": null,
+        "damage": null,
+        "combo": "79 (41)",
+        "notes": [
+          "Heat Engager +17g, Heat Dash +67a (+50)"
+        ]
+      },
+      {
+        "moveKey": "ufn4",
+        "input": null,
+        "enemy": "-23",
+        "frames": null,
+        "damage": null,
+        "combo": "77 (35)",
+        "notes": []
+      }
+    ],
+    "crouching": [
+      {
+        "moveKey": "ws4",
+        "input": null,
+        "enemy": "-11",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws1-3",
+        "input": null,
+        "enemy": "-12",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws1-2",
+        "input": null,
+        "enemy": "-12",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws1plus2",
+        "input": null,
+        "enemy": "-12",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws2",
+        "input": null,
+        "enemy": "-15",
+        "frames": null,
+        "damage": null,
+        "combo": "70 (35)",
+        "notes": []
+      },
+      {
+        "moveKey": "ufn4",
+        "input": null,
+        "enemy": "-23",
+        "frames": null,
+        "damage": null,
+        "combo": "77 (35)",
+        "notes": []
+      }
+    ],
+    "backTurned": [],
+    "grounded": []
+  },
+  "whiff": [
+    {
+      "moveKey": "b1-2",
+      "input": null,
+      "speed": null,
+      "damage": null,
+      "risk": null,
+      "notes": []
+    },
+    {
+      "moveKey": "b4-3",
+      "input": null,
+      "speed": null,
+      "damage": null,
+      "risk": null,
+      "notes": []
+    }
+  ]
+}

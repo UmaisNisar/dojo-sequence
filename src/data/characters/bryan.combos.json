@@ -1,0 +1,739 @@
+{
+  "characterId": "bryan",
+  "source": "https://wavu.wiki/t/Bryan_combos",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-26",
+  "sections": [
+    {
+      "id": "bnb",
+      "label": "Bread and butter",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "Regular launch (e.g. ws1 or f,n,b+2)",
+              "damage": null,
+              "notes": [],
+              "moveKey": "ws1"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "db+2 2 b+2,1,f~2,4 T! b+3,f~2,1",
+              "damage": null,
+              "recoverable": null,
+              "notes": [
+                "Gain Snake Eyes"
+              ]
+            },
+            {
+              "notation": "db+2 4,1 4,1~B SWY.1 T! b+3~F+2,2",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Tornado launch (e.g. df+3 or CH qcb+1)",
+              "damage": null,
+              "notes": [],
+              "moveKey": "snake-edge"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "4,1 1 b+2,1~F SLS.2,4",
+              "damage": null,
+              "recoverable": null,
+              "notes": [
+                "Gain Snake Eyes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "staple",
+      "label": "Staples",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "f,n,b+2",
+              "damage": null,
+              "notes": [],
+              "moveKey": "jet-upper"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "dash qcf+3,4 b+2,1,f~2,4 T! b+3,f~2,2",
+              "damage": 76,
+              "recoverable": 34,
+              "notes": [
+                "Gain Snake Eyes.",
+                "Floor break.",
+                "qcb+4 for 18 (12) additional damage guaranteed if enemy does not backroll."
+              ]
+            },
+            {
+              "notation": "dash qcf+3,4 b+2,1,f~2,4 T! b+3,f~2,1",
+              "damage": 75,
+              "recoverable": 34,
+              "notes": [
+                "Gain Snake Eyes."
+              ]
+            },
+            {
+              "notation": "dash qcf+3,4 b+2,4 qcb+1 T! b+3,f~2,1",
+              "damage": 73,
+              "recoverable": 34,
+              "notes": []
+            },
+            {
+              "notation": "f+1+2 2 b+2,4 qcb+1 T! b+3,f~2,1",
+              "damage": 72,
+              "recoverable": 43,
+              "notes": []
+            },
+            {
+              "notation": "f+1+2 1 b+2,1,f~2,4 T! b+3,f~2,1",
+              "damage": 71,
+              "recoverable": 42,
+              "notes": [
+                "Gain Snake Eyes."
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "ws1",
+              "damage": null,
+              "notes": [],
+              "moveKey": "ws1"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "dash qcf+3,4 b+2,1,f~2,4 T! b+3,f~2,2",
+              "damage": 76,
+              "recoverable": 34,
+              "notes": [
+                "Gain Snake Eyes.",
+                "Floor break.",
+                "qcb+4 for 18 (12) additional damage guaranteed if enemy does not backroll."
+              ]
+            },
+            {
+              "notation": "qcf+3,4 b+2,1,f~2,4 T! b+3,f~2,1",
+              "damage": 75,
+              "recoverable": 34,
+              "notes": [
+                "Gain Snake Eyes."
+              ]
+            },
+            {
+              "notation": "b+2,4 uf+3 d+3+4,2 T! b+3,f~2,1",
+              "damage": 72,
+              "recoverable": 33,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "low parry",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "T! b+2,4 dash 2 b+3,f~2,1",
+              "damage": 39,
+              "recoverable": 25,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "f+4,1",
+              "damage": null,
+              "notes": [],
+              "moveKey": "f4-1"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "1+2,1 1 b+2,1,f~2,4 T! dash b+3,f~2,2",
+              "damage": 72,
+              "recoverable": 31,
+              "notes": [
+                "Gain Snake Eyes.",
+                "Floor break."
+              ]
+            },
+            {
+              "notation": "uf+3 2 b+2,1,f~2,4 T! b+3,f~2,1",
+              "damage": 69,
+              "recoverable": 30,
+              "notes": [
+                "Gain Snake Eyes."
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "df+3",
+              "damage": null,
+              "notes": [],
+              "moveKey": "snake-edge"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "T! 1+2,1 2 b+2,1,f~2,2",
+              "damage": 61,
+              "recoverable": 24,
+              "notes": [
+                "Floor break."
+              ]
+            },
+            {
+              "notation": "T! 1+2,1 2 b+2,1,f~2,4",
+              "damage": 60,
+              "recoverable": 24,
+              "notes": [
+                "Gain Snake Eyes."
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH b+1",
+              "damage": null,
+              "notes": [],
+              "moveKey": "b1"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "b+2,f+4 b+2,4 dash d+3+4,2 T! b+3,f~2,2",
+              "damage": 81,
+              "recoverable": 34,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH b+2,1",
+              "damage": null,
+              "notes": [],
+              "moveKey": "b2-1"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "b+2,4 dash d+3+4,2 T! b+3,f~2,2",
+              "damage": 86,
+              "recoverable": 31,
+              "notes": [
+                "Floor break."
+              ]
+            },
+            {
+              "notation": "b+2,4 dash d+3+4,2 T! b+3,f~2,1",
+              "damage": 85,
+              "recoverable": 31,
+              "notes": []
+            },
+            {
+              "notation": "b+2,1,f~2,4 T! b+3,f~2,2",
+              "damage": 83,
+              "recoverable": 29,
+              "notes": [
+                "Gain Snake Eyes.",
+                "Floor break."
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH 3+4",
+              "damage": null,
+              "notes": [],
+              "moveKey": "side-kick"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "1+2,1 1 b+2,1,f~2,4 T! dash b+3,f~2,2",
+              "damage": 76,
+              "recoverable": 31,
+              "notes": [
+                "Gain Snake Eyes.",
+                "Floor break."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mini",
+      "label": "Mini-combos",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "b+4",
+              "damage": 18,
+              "notes": [],
+              "moveKey": "b4"
+            },
+            {
+              "label": "uf+3",
+              "damage": 15,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f,F+2",
+              "damage": 20,
+              "recoverable": null,
+              "notes": [
+                "Heat Engager"
+              ]
+            },
+            {
+              "notation": "d+4",
+              "damage": 9,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH ss1",
+              "damage": 27,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f+2,1,SNE.2,3,2",
+              "damage": 31,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "f+2,1,4",
+              "damage": 29,
+              "recoverable": null,
+              "notes": [
+                "Press 1+2 to activate Snake Eyes"
+              ]
+            },
+            {
+              "notation": "uf+2,2,2,SNE.2,2,3",
+              "damage": 21,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "uf+2,2,2,3",
+              "damage": 17,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "db+1+2",
+              "damage": 16,
+              "recoverable": null,
+              "notes": [
+                "Heat Engager"
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "qcb+2,4",
+              "damage": 41,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "f,F+4",
+              "damage": 32,
+              "notes": [],
+              "moveKey": "mach-kick"
+            },
+            {
+              "label": "CH (b+3),1+2",
+              "damage": 30,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "CH b,df+4",
+              "damage": 30,
+              "notes": [],
+              "moveKey": "wedge"
+            },
+            {
+              "label": "df+4",
+              "damage": 23,
+              "notes": [],
+              "moveKey": "df4"
+            },
+            {
+              "label": "CH (1,4,3),3",
+              "damage": 21,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "CH (1,2),3",
+              "damage": 18,
+              "notes": [],
+              "moveKey": "jab-2-3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "qcb+4",
+              "damage": 18,
+              "recoverable": 12,
+              "notes": []
+            },
+            {
+              "notation": "d+3+4",
+              "damage": 12,
+              "recoverable": 8,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "qcf+2,4 with SNE activated",
+              "damage": 38,
+              "notes": [
+                "Have to test if guaranteed"
+              ],
+              "moveKey": "sls2-4"
+            },
+            {
+              "label": "uf+3+4 with SNE activated",
+              "damage": 22,
+              "notes": [
+                "Have to test if guaranteed"
+              ],
+              "moveKey": "bullet-knee"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "d+4",
+              "damage": 10,
+              "recoverable": 7,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH (1,4,2,1),4",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "CH (qcf+4,1),4",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "CH (b+2,1),4",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "b,B+4",
+              "damage": 44,
+              "recoverable": 13,
+              "notes": []
+            },
+            {
+              "notation": "f,F qcb+4",
+              "damage": 43,
+              "recoverable": 12,
+              "notes": []
+            },
+            {
+              "notation": "f,F df+3",
+              "damage": 41,
+              "recoverable": 11,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "SNE.b+1+2",
+              "damage": null,
+              "notes": [],
+              "moveKey": "sne-b1-2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "H.FC.df+3",
+              "damage": 43,
+              "recoverable": 13,
+              "notes": []
+            },
+            {
+              "notation": "FC.df+4",
+              "damage": 40,
+              "recoverable": 11,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "1+3+4 (taunt)",
+              "damage": null,
+              "notes": [],
+              "moveKey": "taunt"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "[20 +] f,n,b+2 ...",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "H.2+3",
+              "damage": 55,
+              "recoverable": 20,
+              "notes": []
+            },
+            {
+              "notation": "f+2,1,SNE.2,3,2",
+              "damage": 48,
+              "recoverable": 9,
+              "notes": []
+            },
+            {
+              "notation": "f+2,1,4",
+              "damage": 42,
+              "recoverable": null,
+              "notes": [
+                "Press 1+2 to activate Snake Eyes"
+              ]
+            },
+            {
+              "notation": "[18 +] b+4 ...",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "4,1",
+              "damage": 30,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall",
+      "label": "Wall",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "Regular carry (30% scaling) wallsplat",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "1+2,1 uf+2,2,2,2,2,3",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "b+3,f~3>4",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "b+3,f~u, db+1+2",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Regular carry (30% scaling) wallsplat with tornado",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "uf+3+4, 1+2,1 uf+2,2,2,2,2,3",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "b+4",
+              "damage": null,
+              "notes": [],
+              "moveKey": "b4"
+            },
+            {
+              "label": "uf+3",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f,n,b+2 W! f,F+4 uf+3+4 T! b+3,f~3>4",
+              "damage": 64,
+              "recoverable": 22,
+              "notes": []
+            },
+            {
+              "notation": "f,n,b+2 W! f,F+4 uf+3+4 T! 1+2,1 uf+2,2,2,2,2,3",
+              "damage": 77,
+              "recoverable": 24,
+              "notes": []
+            },
+            {
+              "notation": "f,n,b+2 W! f,F+4 f,n,b+2 T! f,n,b+2 1+2,1 uf+2,2,2,2,2,3",
+              "damage": 81,
+              "recoverable": 25,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "float",
+      "label": "Float",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "1",
+              "damage": null,
+              "notes": [],
+              "moveKey": "jab"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "b+2,1,f~2,4 T! b+3,f~2,1",
+              "damage": 42,
+              "recoverable": 26,
+              "notes": []
+            },
+            {
+              "notation": "b+3,f~u f+1 b+3,f~2,4 T! b+3,f~2,1",
+              "damage": 38,
+              "recoverable": 23,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backTurned",
+      "label": "Back-turned opponent",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "3,3,2",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "dash qcf+3,4 dash d+3+4,2 T! qcf+4,1,2",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "dash qcf+3,4 dash d+3+4,2 T! d+2,3",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

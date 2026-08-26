@@ -1,0 +1,536 @@
+{
+  "characterId": "kazuya",
+  "source": "https://wavu.wiki/t/Kazuya_combos",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-26",
+  "sections": [
+    {
+      "id": "bnb",
+      "label": "Bread and butter",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "Regular launch (e.g. f,F+3)",
+              "damage": null,
+              "notes": [],
+              "moveKey": "ff3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "3,1,4 df+1,df+2 T! 3,1~df~3",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "staple",
+      "label": "Staples",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "EWGF",
+              "damage": 23,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "WGF",
+              "damage": 20,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "EWGF b+2,2 df+1,df+2 T! 3,1,df CD.3",
+              "damage": 51,
+              "recoverable": 34,
+              "notes": []
+            },
+            {
+              "notation": "b+4 b+2,2 df+1,df+2 T! 3,1,df CD.3",
+              "damage": 49,
+              "recoverable": 32,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "ws1,2",
+              "damage": 22,
+              "notes": [],
+              "moveKey": "ws12"
+            },
+            {
+              "label": "low parry",
+              "damage": 0,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "ws1+2 b+2,2 b+2,2,1+2",
+              "damage": 41,
+              "recoverable": 26,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "ws2",
+              "damage": 25,
+              "notes": [],
+              "moveKey": "ws2"
+            },
+            {
+              "label": "CH d+1+2",
+              "damage": 24,
+              "notes": [],
+              "moveKey": "d1plus2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "ws1+2 b+2,2 df+1,df+2 T! 3,1,df CD.3",
+              "damage": 52,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "f,F+3",
+              "damage": 21,
+              "notes": [],
+              "moveKey": "ff3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "SSR.3 b+2,2 df+1,df+2 T! 3,1,df CD.3",
+              "damage": 51,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH df+2",
+              "damage": 26,
+              "notes": [],
+              "moveKey": "df2"
+            },
+            {
+              "label": "CH (1,2,4),3",
+              "damage": 30,
+              "notes": [],
+              "moveKey": "jab-2-4-3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "EWGF b+2,2 df+1,df+2 T! 3,1,df CD.3",
+              "damage": 51,
+              "recoverable": null,
+              "notes": [
+                "Micro sidestep needed before performing EWGF to allow df+1,df+2 to connect"
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH f,F+4",
+              "damage": 26,
+              "notes": [],
+              "moveKey": "ff4"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+3 df+1,df+2 T! 3,1,df CD.3",
+              "damage": 37,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "df+3,2,1 T! 3,1,df CD.3",
+              "damage": 38,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH (2),2",
+              "damage": 28,
+              "notes": [],
+              "moveKey": "right-2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+3,2,1 T! df+3,2,1",
+              "damage": 35,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH df+2",
+              "damage": 26,
+              "notes": [],
+              "moveKey": "df2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "PEWGF EWGF b+2,2 df+1,df+2 T! 3,1,df CD.3",
+              "damage": 74,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH SS.3",
+              "damage": 27,
+              "notes": [],
+              "moveKey": "ss3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+1,df+2 T! 3,1,df CD.3",
+              "damage": 33,
+              "recoverable": null,
+              "notes": [
+                "Deep dash to connect df+1,df+2, sidestep to connect 3,1,df CD.3"
+              ]
+            },
+            {
+              "notation": "CD.1 T! ws1+2 b+2,2,1+2",
+              "damage": 42,
+              "recoverable": null,
+              "notes": [
+                "Sidestep to connect ws1+2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mini",
+      "label": "Mini-combos",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "CH db+2",
+              "damage": 27,
+              "notes": [],
+              "moveKey": "db2"
+            },
+            {
+              "label": "CH f+4",
+              "damage": 24,
+              "notes": [],
+              "moveKey": "f4"
+            },
+            {
+              "label": "CH (3,1),4",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "three-1-4"
+            },
+            {
+              "label": "CH 4",
+              "damage": 21,
+              "notes": [],
+              "moveKey": "four"
+            },
+            {
+              "label": "CH ws1+2",
+              "damage": 30,
+              "notes": [],
+              "moveKey": "ws1plus2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f,F+4",
+              "damage": 17,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH (df+3,2),1",
+              "damage": 25,
+              "notes": [],
+              "moveKey": "df3-2-1"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f,F+2",
+              "damage": 20,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "df+3 (last active frame)",
+              "damage": null,
+              "notes": [],
+              "moveKey": "df3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "1,1,2",
+              "damage": 39,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "1,2,2",
+              "damage": 38,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall",
+      "label": "Wall",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "Regular carry (30% scaling)",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+3+4,1,2",
+              "damage": 23,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "df+1,4 1+2",
+              "damage": 25,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "df+1,4 f+2 df+1,4 1+2",
+              "damage": 39,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "df+1,4 df+1,df+2 df+3+4,1,2",
+              "damage": 46,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heat",
+      "label": "Heat",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "EWGF",
+              "damage": 23,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "b+4 b+2,2 df+1,df+2 T! 2+3 df+1,2,H.f !HD uf+3",
+              "damage": 55,
+              "recoverable": null,
+              "notes": [
+                "Overheat +6"
+              ]
+            },
+            {
+              "notation": "b+4 b+2,2 df+1,df+2 T! 3,1~df~3",
+              "damage": 53,
+              "recoverable": null,
+              "notes": [
+                "While In Heat +4"
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "ws2",
+              "damage": 25,
+              "notes": [],
+              "moveKey": "ws2"
+            },
+            {
+              "label": "CH d+1+2",
+              "damage": 24,
+              "notes": [],
+              "moveKey": "d1plus2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "ws1+2 b+2,2 df+1,df+2 T! 2+3 df+1,2,H.f uf+3",
+              "damage": 58,
+              "recoverable": null,
+              "notes": [
+                "Overheat +6"
+              ]
+            },
+            {
+              "notation": "ws1+2 b+2,2 df+1,df+2 T! 3,1~df~3",
+              "damage": 56,
+              "recoverable": null,
+              "notes": [
+                "While in Heat +4"
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "ws1,2",
+              "damage": 22,
+              "notes": [],
+              "moveKey": "ws12"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "iWS1+2 b+2,2 df+1,2,H.f 3,1~df~3",
+              "damage": 47,
+              "recoverable": null,
+              "notes": [
+                "While in heat +6"
+              ]
+            },
+            {
+              "notation": "iWS1+2 b+2,4 2+3 3,1~df~3",
+              "damage": 42,
+              "recoverable": null,
+              "notes": [
+                "heat activation +1 better oki"
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "SS.2",
+              "damage": 25,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "u+1+2 DEWGF df+1,df+2 T! b+3,1 f,F+2,H.f 3,1~df~3",
+              "damage": 62,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "u+1+2 DEWGF df+1,df+2 T! 3,1~df~3",
+              "damage": 58,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "u+1+2 dash df+1 df+1,df+2 T! 3,1~df~3",
+              "damage": 52,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "u+1+2 dash df+1,df+2 T! 3,1~df~3",
+              "damage": 50,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backTurned",
+      "label": "Back-turned opponent",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "EWGF",
+              "damage": 23,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "b+4 df+1,df+2 T! b+2,2,1+2",
+              "damage": 37,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

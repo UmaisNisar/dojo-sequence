@@ -1,0 +1,150 @@
+{
+  "characterId": "jin",
+  "source": "https://wavu.wiki/t/Jin_punishers",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-25",
+  "sections": {
+    "standing": [
+      {
+        "moveKey": "switchblade",
+        "input": null,
+        "enemy": "-10",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "b1-2",
+        "input": null,
+        "enemy": "-12",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "df1-4",
+        "input": null,
+        "enemy": "-13",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "f1-2",
+        "input": null,
+        "enemy": "-14",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "f3-1",
+        "input": null,
+        "enemy": "-14",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "d34",
+        "input": null,
+        "enemy": "-15",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      }
+    ],
+    "crouching": [
+      {
+        "moveKey": "ws4-4",
+        "input": null,
+        "enemy": "-11",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws1-2",
+        "input": null,
+        "enemy": "-13",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws1-3-2-1-4-2",
+        "input": null,
+        "enemy": "-13",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws2",
+        "input": null,
+        "enemy": "-14",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      }
+    ],
+    "backTurned": [
+      {
+        "moveKey": "jab-2-1",
+        "input": null,
+        "enemy": null,
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      }
+    ],
+    "grounded": []
+  },
+  "whiff": [
+    {
+      "moveKey": "switchblade",
+      "input": null,
+      "speed": null,
+      "damage": null,
+      "risk": "-9",
+      "notes": [
+        "Duckable"
+      ]
+    },
+    {
+      "moveKey": "f4",
+      "input": null,
+      "speed": null,
+      "damage": null,
+      "risk": "-8",
+      "notes": []
+    },
+    {
+      "moveKey": "b2-1",
+      "input": null,
+      "speed": null,
+      "damage": null,
+      "risk": "-9",
+      "notes": []
+    },
+    {
+      "moveKey": "ewhf",
+      "input": null,
+      "speed": null,
+      "damage": null,
+      "risk": "+5",
+      "notes": []
+    }
+  ]
+}

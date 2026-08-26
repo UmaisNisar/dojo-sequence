@@ -1,0 +1,176 @@
+{
+  "characterId": "bryan",
+  "source": "https://wavu.wiki/t/Bryan_punishers",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-25",
+  "sections": {
+    "standing": [
+      {
+        "moveKey": "jab-4",
+        "input": null,
+        "enemy": "-10",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "right-3",
+        "input": null,
+        "enemy": "-10",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "kick-4-3",
+        "input": null,
+        "enemy": "-12",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "uf2-223",
+        "input": null,
+        "enemy": "-13",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "df2-1",
+        "input": null,
+        "enemy": "-13",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "jet-upper",
+        "input": null,
+        "enemy": "-14",
+        "frames": null,
+        "damage": null,
+        "combo": "76 (34)",
+        "notes": []
+      },
+      {
+        "moveKey": "f2-1-4",
+        "input": null,
+        "enemy": "-15",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "b4",
+        "input": null,
+        "enemy": "-16",
+        "frames": null,
+        "damage": null,
+        "combo": "64 (22)",
+        "notes": []
+      },
+      {
+        "moveKey": "f4-1",
+        "input": null,
+        "enemy": "-18",
+        "frames": null,
+        "damage": null,
+        "combo": "69 (30)",
+        "notes": []
+      }
+    ],
+    "crouching": [
+      {
+        "moveKey": "ws4",
+        "input": null,
+        "enemy": "-11",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws3",
+        "input": null,
+        "enemy": "-12",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "fc-df2-1",
+        "input": null,
+        "enemy": "-13",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "uf2-223",
+        "input": null,
+        "enemy": "-13",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws1",
+        "input": null,
+        "enemy": "-15",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws2",
+        "input": null,
+        "enemy": "-18",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ufn4",
+        "input": null,
+        "enemy": "-25+ (stagger)",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      }
+    ],
+    "backTurned": [],
+    "grounded": []
+  },
+  "whiff": [
+    {
+      "moveKey": "jab-4",
+      "input": null,
+      "speed": null,
+      "damage": null,
+      "risk": null,
+      "notes": []
+    },
+    {
+      "moveKey": "f4-1",
+      "input": null,
+      "speed": null,
+      "damage": null,
+      "risk": null,
+      "notes": []
+    }
+  ]
+}

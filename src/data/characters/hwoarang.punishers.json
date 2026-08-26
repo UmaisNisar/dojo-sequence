@@ -1,0 +1,277 @@
+{
+  "characterId": "hwoarang",
+  "source": "https://wavu.wiki/t/Hwoarang_punishers",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-25",
+  "sections": {
+    "standing": [
+      {
+        "moveKey": null,
+        "input": "1,2,3",
+        "enemy": "-10",
+        "frames": "+11g LFS",
+        "damage": "17",
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": null,
+        "input": "1,2,4",
+        "enemy": "-10",
+        "frames": "+11g RFS",
+        "damage": "17",
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "2-f3",
+        "input": "2,F+3",
+        "enemy": "-10",
+        "frames": "+8",
+        "damage": "23",
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "4-3",
+        "input": "4,3",
+        "enemy": "-11",
+        "frames": "+5",
+        "damage": "30",
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "kick4-4",
+        "input": "4,4",
+        "enemy": "-11",
+        "frames": "+10g RFS",
+        "damage": "27",
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "df1-3",
+        "input": "DF+1,3",
+        "enemy": "-13",
+        "frames": "+6",
+        "damage": "30",
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "df3plus4",
+        "input": "DF3+4",
+        "enemy": "-13",
+        "frames": "+4s",
+        "damage": "30",
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "uf3plus4-4",
+        "input": "uf+3+4,4",
+        "enemy": "-14",
+        "frames": "+7 RFF",
+        "damage": "30",
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "df2",
+        "input": "df+2",
+        "enemy": "-15",
+        "frames": "+34a (+24)",
+        "damage": "13",
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "b3-plasma",
+        "input": "b+3",
+        "enemy": "-16",
+        "frames": "+35a (+25)",
+        "damage": "17",
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "lethal-sky-rocket",
+        "input": "F,n,DF+4",
+        "enemy": "-18",
+        "frames": "+59a (+49)",
+        "damage": "18",
+        "combo": null,
+        "notes": []
+      }
+    ],
+    "crouching": [
+      {
+        "moveKey": null,
+        "input": "hFC.1",
+        "enemy": "-10",
+        "frames": "+6",
+        "damage": "5",
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws1",
+        "input": "WS+1",
+        "enemy": "-10",
+        "frames": "+8",
+        "damage": "12",
+        "combo": null,
+        "notes": [
+          "ws1 only works at -10 if the opponent is very close and slightly to Hwoarang's left, since the first active frame has a very short hitbox."
+        ]
+      },
+      {
+        "moveKey": "ws4-4",
+        "input": "WS+4,4",
+        "enemy": "-11",
+        "frames": "+4c RFF",
+        "damage": "28",
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws3",
+        "input": "WS+3",
+        "enemy": "-14",
+        "frames": "+23d",
+        "damage": "20",
+        "combo": "39",
+        "notes": []
+      },
+      {
+        "moveKey": "ws2-3",
+        "input": "WS+2,3",
+        "enemy": "-15",
+        "frames": "+70a (+50) LFS",
+        "damage": "23",
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "uf-n-4",
+        "input": "UF,N+4",
+        "enemy": "-23",
+        "frames": "+34a (+24)",
+        "damage": "25",
+        "combo": null,
+        "notes": []
+      }
+    ],
+    "backTurned": [
+      {
+        "moveKey": "jab-1-3-3",
+        "input": "1,1,3,3",
+        "enemy": "-10",
+        "frames": "+4",
+        "damage": "39",
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "4-4-3",
+        "input": "4,4,3",
+        "enemy": "-11",
+        "frames": "+14d",
+        "damage": "47",
+        "combo": "64",
+        "notes": []
+      },
+      {
+        "moveKey": "3-3-4",
+        "input": "3,3,4",
+        "enemy": "-14",
+        "frames": "+40a (+31)",
+        "damage": "42",
+        "combo": null,
+        "notes": []
+      }
+    ],
+    "grounded": [
+      {
+        "moveKey": "db4",
+        "input": "DB+4",
+        "enemy": "-16",
+        "frames": "-1a (-9)",
+        "damage": "11",
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "b3-plasma",
+        "input": "B+3",
+        "enemy": "-16",
+        "frames": "+15a (-2)",
+        "damage": "13",
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "f-f3",
+        "input": "FF+3",
+        "enemy": "-23",
+        "frames": "+7a (-1)",
+        "damage": "19",
+        "combo": null,
+        "notes": []
+      }
+    ]
+  },
+  "whiff": [
+    {
+      "moveKey": "4-3",
+      "input": "4,3",
+      "speed": "i11",
+      "damage": "30",
+      "risk": "-6",
+      "notes": []
+    },
+    {
+      "moveKey": "df1-3",
+      "input": "DF+1,3",
+      "speed": "i13",
+      "damage": "25",
+      "risk": "-2 LFS",
+      "notes": []
+    },
+    {
+      "moveKey": "uf3plus4-4",
+      "input": "UF3+4,4",
+      "speed": "i14",
+      "damage": "30",
+      "risk": "-10",
+      "notes": []
+    },
+    {
+      "moveKey": "df2",
+      "input": "DF+2",
+      "speed": "i15",
+      "damage": "13 (?)",
+      "risk": "-7",
+      "notes": [
+        "Doesn't launch vs crouch."
+      ]
+    },
+    {
+      "moveKey": "b3-plasma",
+      "input": "B+3",
+      "speed": "i16",
+      "damage": "17 (?)",
+      "risk": "-19",
+      "notes": []
+    },
+    {
+      "moveKey": "rff-f4t4",
+      "input": "RFF F+[4~4]",
+      "speed": "i18",
+      "damage": "20 (?)",
+      "risk": "-13",
+      "notes": []
+    }
+  ]
+}

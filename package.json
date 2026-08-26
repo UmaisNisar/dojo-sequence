@@ -9,10 +9,15 @@
     "lint": "eslint",
     "test": "node --no-warnings --import ./scripts/register-ts.mjs --test tests/*.test.ts",
     "verify:frames": "node scripts/verify-frame-data.mjs",
+    "verify:punishers": "node scripts/verify-punishers.mjs",
+    "verify:combos": "node scripts/verify-combos.mjs",
     "verify:videos": "node scripts/verify-videos.mjs",
     "verify:quiz": "node --no-warnings scripts/verify-quiz.mjs",
     "verify:claims": "node --no-warnings scripts/verify-claims.mjs",
-    "fetch:videos": "node scripts/fetch-move-videos.mjs"
+    "fetch:videos": "node scripts/fetch-move-videos.mjs",
+    "fetch:punishers": "node scripts/fetch-punishers.mjs",
+    "fetch:combos": "node scripts/fetch-combos.mjs",
+    "sync:damage": "node scripts/sync-damage-totals.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

@@ -1,0 +1,686 @@
+{
+  "characterId": "jin",
+  "source": "https://wavu.wiki/t/Jin_combos",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-26",
+  "sections": [
+    {
+      "id": "bnb",
+      "label": "Bread and butter",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "Regular launch (e.g. d+3+4 or uf+4)",
+              "damage": null,
+              "notes": [],
+              "moveKey": "d34"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "b+3~F ZEN.1 b,f+2,3~F ZEN.u+1 T! b+3~F ZEN.1,3",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Instant Tornado (e.g. EWHF or low parry)",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "T! EWHF b+3~F ZEN.1 b+3~F ZEN.1,3",
+              "damage": null,
+              "recoverable": null,
+              "notes": [
+                "Can be done as 'f+3+4 ZEN.DF+2'"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "staple",
+      "label": "Staples",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "H.DVS.2 (EWGF) Cannot do HB! routes",
+              "damage": 23,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "f,n,d,df#1",
+              "damage": 22,
+              "notes": [],
+              "moveKey": "etu"
+            },
+            {
+              "label": "f,n,d,df+1",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "etu"
+            },
+            {
+              "label": "ZEN.u+1",
+              "damage": 20,
+              "notes": [
+                "Or ZAN.u+1 or (1,2),1"
+              ],
+              "moveKey": "zen-u1"
+            },
+            {
+              "label": "d+3+4",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "d34"
+            },
+            {
+              "label": "uf+4",
+              "damage": 13,
+              "notes": [],
+              "moveKey": "uf4"
+            },
+            {
+              "label": "ws2",
+              "damage": 14,
+              "notes": [],
+              "moveKey": "ws2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "EWHF b+3~F ZEN.1 b,f+2,3~F ZEN.u+1 T! (2),4~F ZEN.2 HB! f+3+4 ZEN.1,2,H.F f,F+4",
+              "damage": 78,
+              "recoverable": 57,
+              "notes": [
+                "EWHF to b3F link only works up close"
+              ]
+            },
+            {
+              "notation": "EWHF b+3~F ZEN.1 b,f+2,3~F ZEN.u+1 T! (2),4~F ZEN.1,3",
+              "damage": 63,
+              "recoverable": 38,
+              "notes": [
+                "EWHF to b3F link only works up close"
+              ]
+            },
+            {
+              "notation": "b,f+2,3~F ZEN.2 b,f+2,3~F ZEN.u+1 T! SSL (2),4~F ZEN.1,3",
+              "damage": 59,
+              "recoverable": 36,
+              "notes": []
+            },
+            {
+              "notation": "EWHF b+3~F ZEN.1 b,f+2,3~F ZEN.u+1 T! b+3,2",
+              "damage": 56,
+              "recoverable": 35,
+              "notes": [
+                "EWHF to b3F link only works up close"
+              ]
+            },
+            {
+              "notation": "b+3~F ZEN.1 b,f+2,3~F ZEN.u+1 T! (2),4~F ZEN.1,3",
+              "damage": 53,
+              "recoverable": 32,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "H.DVS.1 Cannot do HB! routes",
+              "damage": 25,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "EWHF",
+              "damage": 25,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "Low Parry",
+              "damage": 0,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "T! EWHF b+3~F ZEN.1 b,f+2,3~F ZEN.HB! (2),4~F ZEN.2 f,F+2,H.F f,F+4",
+              "damage": 66,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "T! (2),4~F ZEN.2 b,f+2,3~F ZEN.1,3",
+              "damage": 47,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "T! EWHF b+3~F ZEN.1 b+3~F ZEN.1,3",
+              "damage": 47,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "ZEN.1,2,H.F",
+              "damage": 35,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "f+3,2,H.F",
+              "damage": 29,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "f,F+2,H.F",
+              "damage": 22,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "df+4,H.F",
+              "damage": 22,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "EWHF b+3~F ZEN.1 b+3~F ZEN.1 b,f+2,3~F ZEN.u+1 T! (2),4~F ZEN.1,3",
+              "damage": 39,
+              "recoverable": 38,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH f+4",
+              "damage": 25,
+              "notes": [],
+              "moveKey": "f4"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "run b+3~F ZEN.1 b,f+2,3~F ZEN.u+1 T! ssr b+3~F ZEN.1,3",
+              "damage": 52,
+              "recoverable": null,
+              "notes": [
+                "Wait for ssr to fully complete before doing b3F"
+              ]
+            },
+            {
+              "notation": "run b+3~F ZEN.1 b,f+2,3~F ZEN.u+1 T! b+3,2",
+              "damage": 46,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "run b+3~F ZEN.1 b,f+2,3~F ZEN.u+1 T! dash b,f+2,1,2",
+              "damage": 49,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH f+4~F",
+              "damage": 25,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "ZEN.df <ws4 b+3~F ZEN.1 b,f+2,3~F ZEN.u+1 T! (2),4~F ZEN.1,3",
+              "damage": 55,
+              "recoverable": 33,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "H.DVS.3 Stick to second route, cannot do HB! routes",
+              "damage": 25,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "f,F+3",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "ff3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "EWHF b+3~F ZEN.1 b,f+2,3~F ZEN.u+1 T! (2),4~F ZEN.1,3",
+              "damage": 63,
+              "recoverable": 38,
+              "notes": []
+            },
+            {
+              "notation": "b,f+2,3~F ZEN.2 b,f+2,3~F ZEN.u+1 T! SSL (2),4~F ZEN.1,3",
+              "damage": 59,
+              "recoverable": 36,
+              "notes": []
+            },
+            {
+              "notation": "b+3~F ZEN.1 b,f+2,3~F ZEN.u+1 T! (2),4~F ZEN.1,3",
+              "damage": 53,
+              "recoverable": 32,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH (3,1),4",
+              "damage": 21,
+              "notes": [],
+              "moveKey": "kick3-1-4"
+            },
+            {
+              "label": "CH (1,3),4",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "jab-3-4"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "EWHF b+3~F ZEN.1 b,f+2,1,df+2 T! dash (2),4~F ZEN.1,3",
+              "damage": 62,
+              "recoverable": 37,
+              "notes": []
+            },
+            {
+              "notation": "b,f+2,3~F ZEN.2 b,f+2,3~F ZEN.u+1 T! SSL (2),4~F ZEN.1,3",
+              "damage": 59,
+              "recoverable": 36,
+              "notes": []
+            },
+            {
+              "notation": "b+3~F ZEN.1 b,f+2,3~F ZEN.u+1 T! (2),4~F ZEN.1,3",
+              "damage": 53,
+              "recoverable": 32,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mini",
+      "label": "Mini-combos",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "(ws1),3~3",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "ws1-3-3"
+            },
+            {
+              "label": "df+3~3",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "df3-3"
+            },
+            {
+              "label": "CH 4",
+              "damage": 18,
+              "notes": [],
+              "moveKey": "kick4"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+1,4",
+              "damage": 19,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "1+2",
+              "damage": 15,
+              "recoverable": null,
+              "notes": [
+                "Heat engager"
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "db+3",
+              "damage": 28,
+              "notes": [
+                "Have to test if guaranteed"
+              ],
+              "moveKey": "db3"
+            },
+            {
+              "label": "ZEN.4",
+              "damage": 25,
+              "notes": [
+                "Or ZAN.[input]"
+              ],
+              "moveKey": "zen4"
+            },
+            {
+              "label": "CH ZEN.3",
+              "damage": 24,
+              "notes": [
+                "Or ZAN.[input]"
+              ],
+              "moveKey": "zen3"
+            },
+            {
+              "label": "(db+2),3",
+              "damage": 23,
+              "notes": [
+                "Have to test if guaranteed"
+              ],
+              "moveKey": null
+            },
+            {
+              "label": "(1,2),3",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "jab-2-3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "md OTG.d+1+2",
+              "damage": 19,
+              "recoverable": 13,
+              "notes": []
+            },
+            {
+              "notation": "d+2",
+              "damage": 17,
+              "recoverable": 11,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH (d+3,4),3",
+              "damage": 25,
+              "notes": [],
+              "moveKey": "d3-4-3"
+            },
+            {
+              "label": "b+1+2,P",
+              "damage": 20,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f,F+4",
+              "damage": 25,
+              "recoverable": 17,
+              "notes": []
+            },
+            {
+              "notation": "d+2",
+              "damage": 17,
+              "recoverable": 11,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH (2,1),4~4",
+              "damage": 24,
+              "notes": [
+                "Have to test if guaranteed"
+              ],
+              "moveKey": "right-1-4-4"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "md d+2",
+              "damage": 17,
+              "recoverable": 11,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "1+2,H.F",
+              "damage": 24,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f,F+4",
+              "damage": 20,
+              "recoverable": 20,
+              "notes": []
+            },
+            {
+              "notation": "OTG.d+1+2",
+              "damage": 15,
+              "recoverable": 15,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall",
+      "label": "Wall",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "Tornado Available",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f,n,d,df#1 T! b,f+2,1,df+2",
+              "damage": 45,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "b+1,2 T! b,f+2,1,2",
+              "damage": 44,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "No Tornado Available",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "b,f+2,1,df+2",
+              "damage": 26,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "1 db+2,2,3",
+              "damage": 24,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "2,4",
+              "damage": 29,
+              "notes": [],
+              "moveKey": "switchblade"
+            },
+            {
+              "label": "WH! (39% scaling)",
+              "damage": 5,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "EWHF b+3~F ZEN.1 b,f+2,3~F ZEN.u+1 T! (2),4~F ZEN.1,3",
+              "damage": 28,
+              "recoverable": 20,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "float",
+      "label": "Float",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "1",
+              "damage": null,
+              "notes": [],
+              "moveKey": "jab"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "b3F ZEN 1 bf2,3F ZEN u1 T! b3,2",
+              "damage": 43,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backTurned",
+      "label": "Back-turned opponent",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "1,2,1",
+              "damage": null,
+              "notes": [],
+              "moveKey": "jab-2-1"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "Launches opponent",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "bf+2,1,df+2",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f*d,df+2, df+2,4, dash b+3F>Zen.u+1, df+3~3DF>CD.1",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "f*d,df+2, dash 3,1F,2, dash b+3F>Zen.u+1, df+3~3DF>CD.1",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "bf+2,3F ZEN u1",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "Launches opponent",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

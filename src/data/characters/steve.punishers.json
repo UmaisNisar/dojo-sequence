@@ -1,0 +1,168 @@
+{
+  "characterId": "steve",
+  "source": "https://wavu.wiki/t/Steve_punishers",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-25",
+  "sections": {
+    "standing": [
+      {
+        "moveKey": "jab-1-2",
+        "input": null,
+        "enemy": "-10",
+        "frames": "+4 / +6 LWV-RWV / +6 SWY / +8 DCK",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "right-1",
+        "input": null,
+        "enemy": "-12",
+        "frames": "+6 / +13 PAB / +14 FLK",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "right-2",
+        "input": null,
+        "enemy": "-12",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "b1-2",
+        "input": null,
+        "enemy": "-13",
+        "frames": "+8 LNH / +4",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "sonic-fang",
+        "input": null,
+        "enemy": "-14",
+        "frames": "HE / +18a (+11)",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "f1plus2-2",
+        "input": null,
+        "enemy": "-15",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "b1plus2",
+        "input": null,
+        "enemy": "-16",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "b2",
+        "input": null,
+        "enemy": "-17",
+        "frames": null,
+        "damage": null,
+        "combo": "48",
+        "notes": []
+      },
+      {
+        "moveKey": "u2",
+        "input": null,
+        "enemy": "-17",
+        "frames": null,
+        "damage": null,
+        "combo": "63",
+        "notes": []
+      },
+      {
+        "moveKey": "pab-df2",
+        "input": "PAB.df+2",
+        "enemy": "-17",
+        "frames": "+31 (+21)",
+        "damage": "16",
+        "combo": "80",
+        "notes": []
+      },
+      {
+        "moveKey": "pab-uf2",
+        "input": "PAB.uf+2",
+        "enemy": "-18",
+        "frames": "+34 (+24)",
+        "damage": "23",
+        "combo": "72",
+        "notes": []
+      }
+    ],
+    "crouching": [
+      {
+        "moveKey": "ws1-2",
+        "input": null,
+        "enemy": "-11",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws1-1",
+        "input": null,
+        "enemy": "-11",
+        "frames": "+3 / +0 LWV-RWV / +0 SWY / +4 DCK",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws2-2",
+        "input": null,
+        "enemy": "-13",
+        "frames": "+11 LNH / +7",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "sonic-fang",
+        "input": null,
+        "enemy": "-14",
+        "frames": "HE / +18a (+11)",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "fc-df2",
+        "input": null,
+        "enemy": "-16",
+        "frames": null,
+        "damage": null,
+        "combo": "77",
+        "notes": []
+      },
+      {
+        "moveKey": "uf2",
+        "input": null,
+        "enemy": "-22",
+        "frames": null,
+        "damage": null,
+        "combo": "77",
+        "notes": []
+      }
+    ],
+    "backTurned": [],
+    "grounded": []
+  },
+  "whiff": []
+}

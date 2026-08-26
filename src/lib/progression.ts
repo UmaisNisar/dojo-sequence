@@ -124,6 +124,37 @@ export function findItem(
   return null;
 }
 
+/**
+ * The lesson that teaches a given frame-table move, if any.
+ *
+ * The reference screens (movelist, punishers, combos) all want to link a move
+ * back to where it is taught, and each of them walking the curriculum itself
+ * is how three copies of the same rule end up disagreeing.
+ */
+export function findLessonForMove(
+  character: Character,
+  moveKey: string | null,
+): { item: TrainingItem; stage: Stage } | null {
+  if (!moveKey) return null;
+  for (const stage of character.stages) {
+    for (const item of stage.items) {
+      if (item.moveKeys?.includes(moveKey)) return { item, stage };
+    }
+  }
+  return null;
+}
+
+/** Its URL, or null when nothing teaches it. */
+export function lessonHref(
+  character: Character,
+  moveKey: string | null,
+): string | null {
+  const found = findLessonForMove(character, moveKey);
+  return found
+    ? `/training/${character.id}/stage/${found.stage.number}/item/${found.item.id}`
+    : null;
+}
+
 /** The single next item the player should work on, in curriculum order. */
 export function getNextItem(
   character: Character,

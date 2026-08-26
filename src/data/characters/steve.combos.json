@@ -1,0 +1,622 @@
+{
+  "characterId": "steve",
+  "source": "https://wavu.wiki/t/Steve_combos",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-26",
+  "sections": [
+    {
+      "id": "bnb",
+      "label": "Bread and butter",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "uf+2",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "uf2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "DCK.1 df+1,2~1~FLK.1 f+2,2, LNH.2 T! dash LWV.1,2 LNH.2",
+              "damage": 57,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH b+1",
+              "damage": 12,
+              "notes": [],
+              "moveKey": "b1"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "EXD.1 df+1,2~1 f+2,2 LNH.2 T! dash LWV.1,2 LNH.2",
+              "damage": 56,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "FC.df+2",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "fc-df2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f+2,1~B FLK.1, f+2,2 LNH.2 T! dash LWV.1,2 LNH.2",
+              "damage": 46,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Instant Tornado (e.g., low parry)",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "T! DCK.1 df+1,2~1~FLK.1 f+2,2 LNH 2",
+              "damage": 38,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Combo Enders",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "T! dash LWV.1,2 LNH 2 (Damage)",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "T! dash LWV.1,2 DCK.1 (Corner Carry)",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "T! dash FLK.1,1 ALB 2 (More Corner Carry, worse Oki)",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "staple",
+      "label": "Staples",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "CH b+1",
+              "damage": 12,
+              "notes": [],
+              "moveKey": "b1"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "EXD.1 df+1,2~1~B~FLK~DCK~db ws1 f+2,2 LNH.2 T! dash LWV.1,2 LNH.2",
+              "damage": 59,
+              "recoverable": null,
+              "notes": [
+                "DCK Crouch Cancel"
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "uf+2",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "uf2"
+            },
+            {
+              "label": "FC.df+2",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "fc-df2"
+            },
+            {
+              "label": "PAB.uf+2",
+              "damage": 23,
+              "notes": [],
+              "moveKey": "pab-uf2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+1,2~1 f+2,1 f+2,2 LNH.2 T! dash 1+2",
+              "damage": 46,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "ub+2~LNH~DCK.1 df+1,2~1 f+2,2 LNH.2 T! dash LWV.1,2 LNH.2",
+              "damage": 57,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "LNH.2",
+              "damage": 22,
+              "notes": [],
+              "moveKey": "lnh2"
+            },
+            {
+              "label": "Low Parry",
+              "damage": 0,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "T! DCK.f+2~DCK.1 df+1 f+2,1~FLK.1~ALB.2",
+              "damage": 42,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "T! DCK.f+2~DCK.1 df+2~DCK~db ws1 f+2,1~FLK~DCK.1",
+              "damage": 40,
+              "recoverable": null,
+              "notes": [
+                "DCK Crouch Cancel"
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH FLK.2",
+              "damage": 25,
+              "notes": [],
+              "moveKey": "flk2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+1,2~1 f+2,1 f+2,2 LNH.2 T! dash 1+2",
+              "damage": 46,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "PKB.df+2",
+              "damage": 16,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "PKB.f+1+2 b+1,2~B f+2,2 LNH.2 T! dash LWV.1,2 LNH.2",
+              "damage": 56,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "SWY.2",
+              "damage": 30,
+              "notes": [],
+              "moveKey": "swy2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+1,2~1 f+2,1~LK.b+2 T! dash LWV.1,2 LNH.2",
+              "damage": 46,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "DCK.2",
+              "damage": 15,
+              "notes": [],
+              "moveKey": "dck2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "ub+2~LNH~DCK.1 df+1,2~1 f+2,2 LNH.2 T! dash LWV.1,2 LNH.2",
+              "damage": 57,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "b+2 df+1,2~1~FLK.1 f+2,2 LNH.2 T! dash LWV.1,2 LNH.2",
+              "damage": 60,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "EXD.2",
+              "damage": 21,
+              "notes": [],
+              "moveKey": "exd2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "EXD.f+2~DCK.1 df+2~DCK~db f+2,2 LNH.2 T! dash LWV.1,2 LNH.2",
+              "damage": 62,
+              "recoverable": null,
+              "notes": [
+                "DCK Crouch Cancel"
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "EXD.f+2",
+              "damage": 28,
+              "notes": [],
+              "moveKey": "exd-f2"
+            },
+            {
+              "label": "CH DCK.f+2",
+              "damage": 25,
+              "notes": [],
+              "moveKey": "dck-f2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "EXD.1 df+1,2~1 ub+2~LNH.2 T! dash LWV.1,2 LNH.2",
+              "damage": 54,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "LWV.1,1 dash df+1,2~1 f+2,2 LNH.2 T! dash LWV.1,2 LNH.2",
+              "damage": 58,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mini",
+      "label": "Mini-combos",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "CH df+2~DCK",
+              "damage": 12,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "DCK 1+2,1+2,1+2,1+2 (Easy Confirm)",
+              "damage": 30,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "ws1,2 (Damage)",
+              "damage": 32,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "ws2,2 (Damage, Goes into LNH, Hard Confirm)",
+              "damage": 32,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "b+2",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "b2"
+            },
+            {
+              "label": "db+1+2",
+              "damage": 21,
+              "notes": [],
+              "moveKey": "db1plus2"
+            },
+            {
+              "label": "TFA.1",
+              "damage": 15,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "1+2 (Reliable, Heat Engager)",
+              "damage": 28,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "iPKB f1+2 (KND + Damage, Hard Confirm)",
+              "damage": 35,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "SWY 1",
+              "damage": 26,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "1+2",
+              "damage": 18,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "Instant flicker cancel (b3+4, db, neutral) ws1,2",
+              "damage": 32,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "At longer range is +15 and gives f1+2,2",
+              "damage": 29,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "PKB f+2",
+              "damage": 18,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "PKB cancel (f3+4), 1+2",
+              "damage": 14,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "DCK 1",
+              "damage": 17,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f,F+2",
+              "damage": 16,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "EXD 1",
+              "damage": 21,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "FLK b+2",
+              "damage": 21,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "FLK 2",
+              "damage": 21,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "(f+2,1)~2",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "f2-1-2"
+            },
+            {
+              "label": "(df+1,2)~2",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "swindler-body"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f,F+2",
+              "damage": 19,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "ALB 2",
+              "damage": 17,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "ub+2",
+              "damage": 17,
+              "notes": [],
+              "moveKey": "ub2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "LNH 1 (if you dont hold B. Heat Engager)",
+              "damage": 14,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "1+2 (if you do hold B. Heat Engager)",
+              "damage": 18,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "Instant flicker cancel (b3+4, db, neutral), ws1,2",
+              "damage": 32,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "LNH 1+2 (on block)",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "1,1,2 (DCK Transition)",
+              "damage": 17,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "2,1 (PKB/FLK Transition)",
+              "damage": 17,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "2,2 (Damage)",
+              "damage": 19,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall",
+      "label": "Wall",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "Regular carry (30% scaling)",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "W! f+2,1 ~B FLK.f+3 DCK.1+2,1+2,1+2,1+2",
+              "damage": null,
+              "recoverable": null,
+              "notes": [
+                "You can opt to use 2,1~B if you need a faster option."
+              ]
+            },
+            {
+              "notation": "W! f+2,2,1+2",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "W! 1+2",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

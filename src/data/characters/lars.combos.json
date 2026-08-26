@@ -1,0 +1,662 @@
+{
+  "characterId": "lars",
+  "source": "https://wavu.wiki/t/Lars_combos",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-26",
+  "sections": [
+    {
+      "id": "bnb",
+      "label": "Bread and butter",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "Ark Blast (f+1+2)",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+3~d,DEN.2 2 f,F+4,2 DEN.1~f,SEN.1+2 T! f,f,F+2+4",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "df+3~d,DEN.2 2 f,F+4,2 DEN.1~f,SEN.1+2 T! f+3,DEN.2+3",
+              "damage": null,
+              "recoverable": null,
+              "notes": [
+                "This is the same as the combo above with a different input for the throw."
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Lightning Screw (uf+3)",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "FC df+2 db+2~f SEN.1+2 T! f+3,DEN.1 df+3~d,DEN.2~UF 4",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Orbital (uf+4), Blue Bolt (f,n,b+2,1)",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f+3,DEN.2 df+3~d,DEN.2 df+1 b+3~f,SEN.1+2 T! f+3,1 b+3~f,SEN.1",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Instant Tornado (e.g., low parry)",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "T! f+3,DEN.2 df+1 2 f,F+4,2 DEN.2~UF 4",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "staple",
+      "label": "Staples",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "f+1+2",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "f1plus2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+3~d DEN.2 2 f,F+4,2 DEN.1 b+3~f SEN.1+2 T! f+2,1 SEN.1",
+              "damage": 58,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "uf+4",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "uf4"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+3~d DEN.2 2 f,F+4,2 DEN.1 b+3~f SEN.1+2 T! f+2,1 SEN.1",
+              "damage": 58,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "uf+3",
+              "damage": 26,
+              "notes": [],
+              "moveKey": "uf3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "FC df+2 db+2~f SEN.1+2 T! ssl f,F+4,2 DEN.1 b+3~f SEN.1",
+              "damage": 41,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "FC df+2 db+2~f SEN.1+2 T! f+3,DEN.1 b+3~f SEN.3+4",
+              "damage": 34,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "f,n,b+2,1",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "fnb21"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+3~d DEN.2 2 f,F+4,2 DEN.1 b+3~f SEN.1+2 T! f+2,1 SEN.1",
+              "damage": 58,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "f+3,DEN.2 df+3~d,DEN.2 df+1 b+3~f,SEN.1+2 T! f+3,DEN.1 b+3~f SEN.1",
+              "damage": 56,
+              "recoverable": null,
+              "notes": [
+                "Works with the starters above as well, but gives worse knockdown advantage."
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "f,F+2",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "ff2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "uf+3 ws2~f SEN.1+2 T! f,f+4,2 DEN.1 b+3~f SEN.1",
+              "damage": 51,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "ws1",
+              "damage": 16,
+              "notes": [],
+              "moveKey": "ws1"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "uf+3 ws2~f SEN.1+2 T! f,f+4,2 DEN.1 b+3~f SEN.1",
+              "damage": 51,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "ws3~D",
+              "damage": 30,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "LEN.2 T! f+1,2,3 DEN.1 b+3~F SEN.3+4",
+              "damage": 44,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH (b+2),1",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "b2-1"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f+3,DEN.2 f+1,2,3 DEN.1 b+3~f SEN.1+2 T! f+3,DEN.1 b+3~f SEN.1",
+              "damage": 57,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH DEN.2",
+              "damage": 22,
+              "notes": [],
+              "moveKey": "den2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f+3,DEN.2 df+3~d,DEN.2 df+1 b+3~f,SEN.1+2 T! f+3,DEN.1 b+3~f SEN.1",
+              "damage": 56,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "f+3,DEN.2 df+3~d,DEN.2 2 b+3~f,SEN.1+2 T! f+3,DEN.1 b+3~f SEN.3+4",
+              "damage": 55,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH f,F+1+2",
+              "damage": 24,
+              "notes": [],
+              "moveKey": "ffplus1plus2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f+3,DEN.2 df+3~d,DEN.2 df+1 b+3~f,SEN.1+2 T! f+3,DEN.1 b+3~f SEN.3+4",
+              "damage": 56,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH (f+1,2),3",
+              "damage": 24,
+              "notes": [],
+              "moveKey": "f1-2-3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "DEN.2 df+3~d,DEN.2 2 b+3~f,SEN.1+2 T! f+3,DEN.1 b+3~f SEN.1",
+              "damage": 55,
+              "recoverable": null,
+              "notes": [
+                "df+1 whiffs on Jack-8, but adds 1 more damage."
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH db+4",
+              "damage": 22,
+              "notes": [],
+              "moveKey": "db4"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "ws4 2 f,F+4,2 DEN.1, b+3~f SEN.1+2 T! f+2,1 SEN.1",
+              "damage": 52,
+              "recoverable": null,
+              "notes": [
+                "This combo doesn't work on bears."
+              ]
+            },
+            {
+              "notation": "FC df+2 db+2,1 df+2 SEN.1+2 T! f+3,DEN.1 b+3~f SEN.3+4",
+              "damage": 47,
+              "recoverable": null,
+              "notes": [
+                "This combo works on everyone but Jack-8."
+              ]
+            },
+            {
+              "notation": "ws2 db+2,1 df+2 SEN.1+2 T! f+3,DEN.1 b+3~f SEN.3+4",
+              "damage": 43,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH SEN.2",
+              "damage": 22,
+              "notes": [],
+              "moveKey": "sen2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "T! f+3,DEN.2 df+3~d,DEN.2 df+1 b+3~f,SEN.3+4",
+              "damage": 47,
+              "recoverable": null,
+              "notes": [
+                "Slight delay before inputting f+3."
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Low parry (Instant Tornado)",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "T! df+3~d DEN.2 2 f,f+4,2 DEN.1, b+3~f SEN.1",
+              "damage": 45,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mini",
+      "label": "Mini-combos",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "1+2",
+              "damage": 25,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "db+4",
+              "damage": 15,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "SS.2",
+              "damage": 20,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "d+1+2",
+              "damage": 20,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "f,F+3+4",
+              "damage": 18,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH d+2",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "d2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "d+1+2",
+              "damage": 20,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH df+2",
+              "damage": 18,
+              "notes": [],
+              "moveKey": "df2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "SEN.1",
+              "damage": 20,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH df+2~B",
+              "damage": 18,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f,F+1+2",
+              "damage": 16,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH db+1+2",
+              "damage": 21,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "2,1 LEN",
+              "damage": 15,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH db+1+2~D",
+              "damage": 21,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "DEN.1,2",
+              "damage": 23,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH DEN.2~UF",
+              "damage": 22,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "4",
+              "damage": 28,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH DEN.3+4~F",
+              "damage": 25,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "SEN.1",
+              "damage": 18,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall",
+      "label": "Wall",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "Pre-Tornado",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "W!",
+              "damage": null,
+              "notes": [
+                "Damage values based on 30% scaling"
+              ],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f,F+2 T! df+1 db2,1 f+1+4",
+              "damage": 41,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Post-Tornado",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "W!",
+              "damage": null,
+              "notes": [
+                "Damage values based on 30% scaling"
+              ],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+1 db+2,1 f+1+4",
+              "damage": 26,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "f,f,F+2+4 f+1+4",
+              "damage": 22,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Resplat",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "W!",
+              "damage": null,
+              "notes": [
+                "Damage values based on 30% scaling"
+              ],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "ssl f+2,1 SEN.1+2 T! df+1 db2,1 f+1+4",
+              "damage": 44,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "ssl b+1+2 f,F+2 T! df+1 db2,1 f+1+4",
+              "damage": 43,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
