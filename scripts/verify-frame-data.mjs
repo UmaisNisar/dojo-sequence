@@ -18,6 +18,7 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { damageTotal } from "./wavu-damage.mjs";
 
 const DATA_DIR = join(
   dirname(fileURLToPath(import.meta.url)),
@@ -50,7 +51,7 @@ async function fetchMoves(wavuIds) {
     const url = new URL(API);
     url.searchParams.set("action", "cargoquery");
     url.searchParams.set("tables", "Move");
-    url.searchParams.set("fields", "id,startup,block,hit,ch,target");
+    url.searchParams.set("fields", "id,startup,block,hit,ch,target,damage");
     url.searchParams.set("where", where);
     url.searchParams.set("limit", "50");
     url.searchParams.set("format", "json");
@@ -71,6 +72,60 @@ async function fetchMoves(wavuIds) {
   return results;
 }
 
+/**
+ * Every row for one character, so a string's damage can be summed along its
+ * parent chain. `damage` on a string row is that HIT's damage — rendering it
+ * raw under-reports the move, which is why the tables also carry a total.
+ */
+async function fetchCharacterRows(wavuCharacter) {
+  const rows = [];
+  let offset = 0;
+  for (;;) {
+    const url = new URL(API);
+    url.searchParams.set("action", "cargoquery");
+    url.searchParams.set("tables", "Move");
+    url.searchParams.set("fields", "id,damage,parent,target");
+    url.searchParams.set("where", `id LIKE '${wavuCharacter}-%'`);
+    url.searchParams.set("limit", "500");
+    url.searchParams.set("offset", String(offset));
+    url.searchParams.set("format", "json");
+    const res = await fetch(url, {
+      headers: { "User-Agent": "dojo-sequence-frame-verifier" },
+    });
+    if (!res.ok) throw new Error(`Wavu API ${res.status} for ${wavuCharacter}`);
+    const json = await res.json();
+    if (json.error) throw new Error(`Wavu API error: ${json.error.info}`);
+    const batch = (json.cargoquery ?? []).map((r) => r.title);
+    rows.push(...batch);
+    if (batch.length < 500) break;
+    offset += 500;
+  }
+  const byId = new Map();
+  for (const row of rows) {
+    const prev = byId.get(row.id);
+    if (prev && prev.damage && !row.damage) continue;
+    byId.set(row.id, row);
+  }
+  return byId;
+}
+
+/**
+ * A string's `target` is relative to its parent (",h"), so the full level has
+ * to be chained the same way the input is. Storing the raw value renders ",H"
+ * and, worse, hides the move from every height filter.
+ */
+function liveLevel(byId, wavuId) {
+  const parts = [];
+  let current = byId.get(wavuId);
+  const seen = new Set();
+  while (current && !seen.has(current.id)) {
+    seen.add(current.id);
+    parts.unshift(normalize(current.target) ?? "");
+    current = current.parent ? byId.get(current.parent) : null;
+  }
+  return parts.join("") || null;
+}
+
 function compareMove(key, local, live) {
   const failures = [];
   const warnings = [];
@@ -80,6 +135,7 @@ function compareMove(key, local, live) {
     ["block", local.block, normalize(live.block), false],
     ["hit", local.hit, normalize(live.hit), false],
     ["ch", local.ch, normalize(live.ch), false],
+    ["damage", local.damage, normalize(live.damage), false],
     ["startup", local.startup, normalize(live.startup), isString],
   ];
 
@@ -111,9 +167,25 @@ for (const file of files) {
   );
 
   const live = await fetchMoves(entries.map(([, m]) => m.wavuId));
+  const wavuCharacter = entries[0]?.[1].wavuId.split("-")[0];
+  const chains = wavuCharacter ? await fetchCharacterRows(wavuCharacter) : new Map();
 
   for (const [key, move] of entries) {
     totalChecked++;
+    const expectedLevel = liveLevel(chains, move.wavuId);
+    if (expectedLevel !== null && (move.level ?? null) !== expectedLevel) {
+      totalFailures++;
+      console.log(
+        `  ✗ ${key} (${move.input}) level: ours "${move.level ?? "—"}" vs live "${expectedLevel}"`,
+      );
+    }
+    const expectedTotal = damageTotal(chains, move.wavuId);
+    if ((move.damageTotal ?? null) !== expectedTotal) {
+      totalFailures++;
+      console.log(
+        `  ✗ ${key} (${move.input}) damageTotal: ours "${move.damageTotal ?? "—"}" vs live "${expectedTotal ?? "—"}"`,
+      );
+    }
     const row = live.get(move.wavuId);
     if (!row) {
       totalFailures++;

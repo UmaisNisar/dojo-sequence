@@ -23,6 +23,8 @@
       "block": "+1",
       "hit": "+8",
       "ch": null,
+      "damage": "5",
+      "damageTotal": 5,
       "notes": [
         "i10 high",
         "+1 on block",
@@ -33,12 +35,14 @@
       "wavuId": "King-1,2",
       "input": "1,2",
       "name": "Palm Strike",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i10~12",
       "displayStartup": "i10~12 (string)",
       "block": "-3",
       "hit": "+8",
       "ch": null,
+      "damage": ",15",
+      "damageTotal": 20,
       "notes": [
         "-3 on block",
         "a listed whiff punisher",
@@ -50,12 +54,14 @@
       "wavuId": "King-1,2,1",
       "input": "1,2,1",
       "name": "Palm Strike Uppercut",
-      "level": ",m",
+      "level": "h,h,m",
       "startup": ",i24~25",
       "displayStartup": "i24~25 (string)",
       "block": "-4",
       "hit": "+5",
       "ch": "+10",
+      "damage": ",10",
+      "damageTotal": 30,
       "notes": [
         "only -4 on block",
         "Jail from 2nd hit with 4f delay"
@@ -66,12 +72,14 @@
       "wavuId": "King-1,2,1,2+4",
       "input": "1,2,1,2+4",
       "name": "Palm Strike Uppercut into Suplex",
-      "level": ",t",
+      "level": "h,h,m,t",
       "startup": ",i26~28",
       "displayStartup": "i26~28 (string)",
       "block": "-3",
       "hit": "+0d",
       "ch": null,
+      "damage": ",40",
+      "damageTotal": 70,
       "notes": [
         "a throw ender on a jab string"
       ],
@@ -86,6 +94,8 @@
       "block": "+1",
       "hit": "+7",
       "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
       "notes": [
         "i10 high"
       ]
@@ -94,12 +104,14 @@
       "wavuId": "King-2,1",
       "input": "2,1",
       "name": "Right Jab into Uppercut",
-      "level": ",m",
+      "level": "h,m",
       "startup": ",i23~24",
       "displayStartup": "i23~24 (string)",
       "block": "-3",
       "hit": "+8",
       "ch": null,
+      "damage": ",15",
+      "damageTotal": 25,
       "notes": [
         "his i10 punisher, and only -3 on block",
         "Combo from 1st hit"
@@ -115,6 +127,8 @@
       "block": "-9",
       "hit": "+2",
       "ch": null,
+      "damage": "17",
+      "damageTotal": 17,
       "notes": [
         "i15 high"
       ]
@@ -123,12 +137,14 @@
       "wavuId": "King-3,2,2",
       "input": "3,2,2",
       "name": "Stampede Crush",
-      "level": ",m",
+      "level": "h,m,m",
       "startup": ",i23~24",
       "displayStartup": "i23~24 (string)",
       "block": "-13",
       "hit": "+17g",
       "ch": null,
+      "damage": ",24",
+      "damageTotal": 59,
       "notes": [
         "wall ender",
         "+17g on hit",
@@ -142,12 +158,14 @@
       "wavuId": "King-3,2,2*",
       "input": "3,2,2 (hold)",
       "name": "Stampede Crush (charged)",
-      "level": ",m",
+      "level": "h,m,m",
       "startup": ",i34~35",
       "displayStartup": "i34~35 (string)",
       "block": "+9c",
       "hit": "+25a (+15)",
       "ch": null,
+      "damage": ",30",
+      "damageTotal": 65,
       "notes": [
         "+9c ON BLOCK when charged",
         "Transition to JGR +9 +25a (+15) r30 automatically on hit or block",
@@ -163,6 +181,8 @@
       "block": "-5",
       "hit": "+6",
       "ch": "+31d",
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "i13 high",
         "CH +31d",
@@ -178,6 +198,8 @@
       "block": "-1",
       "hit": "+3",
       "ch": null,
+      "damage": "15",
+      "damageTotal": 15,
       "notes": [
         "his mid check — i14 at only -1 on block"
       ]
@@ -186,12 +208,14 @@
       "wavuId": "King-df+1,2",
       "input": "df+1,2",
       "name": "Elbow Sting",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i20~21",
       "displayStartup": "i20~21 (string)",
       "block": "-10",
       "hit": "+5",
       "ch": null,
+      "damage": ",15",
+      "damageTotal": 30,
       "notes": [
         "mid ender",
         "Combo from 1st hit with 4f delay",
@@ -208,6 +232,8 @@
       "block": "-6",
       "hit": "+4",
       "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
       "notes": [
         "i13 mid, -6"
       ]
@@ -216,12 +242,14 @@
       "wavuId": "King-df+2,1",
       "input": "df+2,1",
       "name": "Double Hook Disaster",
-      "level": ",h",
+      "level": "m,h",
       "startup": ",i20~21",
       "displayStartup": "i20~21 (string)",
       "block": "-4",
       "hit": "+24a",
       "ch": null,
+      "damage": ",15",
+      "damageTotal": 27,
       "notes": [
         "i13 CH launcher",
         "only -4 on block",
@@ -238,6 +266,8 @@
       "block": "-9",
       "hit": "+6",
       "ch": null,
+      "damage": "17",
+      "damageTotal": 17,
       "notes": [
         "i14 mid"
       ]
@@ -246,12 +276,14 @@
       "wavuId": "King-df+3,4",
       "input": "df+3,4",
       "name": "Lasso Kick",
-      "level": ",h",
+      "level": "m,h",
       "startup": ",i30",
       "displayStartup": "i30 (string)",
       "block": "+0",
       "hit": "+28d",
       "ch": null,
+      "damage": ",23",
+      "damageTotal": 40,
       "notes": [
         "0 on block",
         "Combo from 1st CH"
@@ -267,6 +299,8 @@
       "block": "-14",
       "hit": "-3",
       "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
       "notes": [
         "i14 low"
       ]
@@ -275,12 +309,14 @@
       "wavuId": "King-df+4,3",
       "input": "df+4,3",
       "name": "Low Kick into High",
-      "level": ",h",
+      "level": "l,h",
       "startup": ",i22",
       "displayStartup": "i22 (string)",
       "block": "-5",
       "hit": "+6",
       "ch": null,
+      "damage": ",11",
+      "damageTotal": 21,
       "notes": [
         "the core combo filler",
         "-5 on block",
@@ -291,12 +327,14 @@
       "wavuId": "King-df+4,3,4",
       "input": "df+4,3,4",
       "name": "Mincer",
-      "level": ",m",
+      "level": "l,h,m",
       "startup": ",i28~29",
       "displayStartup": "i28~29 (string)",
       "block": "-15",
       "hit": "+6a (-3)",
       "ch": "+47a (+16)",
+      "damage": ",27",
+      "damageTotal": 48,
       "notes": [
         "CH +47a",
         "Combo from 2nd CH.",
@@ -309,12 +347,14 @@
       "wavuId": "King-df+4,3,d+4",
       "input": "df+4,3,d+4",
       "name": "Mincer Low",
-      "level": ",L",
+      "level": "l,h,L",
       "startup": ",i33~35",
       "displayStartup": "i33~35 (string)",
       "block": "-10d",
       "hit": "-8a",
       "ch": "+22a",
+      "damage": ",20",
+      "damageTotal": 41,
       "notes": [
         "the low branch",
         "CH +22a",
@@ -331,6 +371,8 @@
       "block": "-8",
       "hit": "+3",
       "ch": "+3s",
+      "damage": "13",
+      "damageTotal": 13,
       "notes": [
         "i12 high"
       ]
@@ -339,12 +381,14 @@
       "wavuId": "King-b+1,2",
       "input": "b+1,2",
       "name": "Quick Hook into Uppercut",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i19~20",
       "displayStartup": "i19~20 (string)",
       "block": "-13",
       "hit": "+5",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 33,
       "notes": [
         "Tornado",
         "LAUNCHES for +70a if b+1 counter-hits",
@@ -364,6 +408,8 @@
       "block": "-5",
       "hit": "+1",
       "ch": null,
+      "damage": "16",
+      "damageTotal": 16,
       "notes": [
         "i14 high"
       ]
@@ -372,12 +418,14 @@
       "wavuId": "King-b+2,1",
       "input": "b+2,1",
       "name": "Spinning Back Elbow",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i20~21",
       "displayStartup": "i20~21 (string)",
       "block": "-9",
       "hit": "+19a (+10)",
       "ch": null,
+      "damage": ",21",
+      "damageTotal": 37,
       "notes": [
         "his -14 punisher",
         "wall splat",
@@ -392,12 +440,14 @@
       "wavuId": "King-b+2,1+2",
       "input": "b+2,1+2",
       "name": "Head Butt",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i24~25",
       "displayStartup": "i24~25 (string)",
       "block": "+2c",
       "hit": "+22a",
       "ch": null,
+      "damage": ",22",
+      "damageTotal": 38,
       "notes": [
         "+2c on block",
         "Move can be delayed by 10f",
@@ -409,12 +459,14 @@
       "wavuId": "King-b+2,4",
       "input": "b+2,4",
       "name": "Olympia Slam",
-      "level": ",m,t",
+      "level": "h,m,t",
       "startup": ",i21",
       "displayStartup": "i21 (string)",
       "block": "-8",
       "hit": "+0d",
       "ch": null,
+      "damage": ",18,20",
+      "damageTotal": 54,
       "notes": [
         "combo filler into a throw",
         "Move can be delayed by 10f",
@@ -431,6 +483,8 @@
       "block": "-10",
       "hit": "+13d",
       "ch": null,
+      "damage": "23",
+      "damageTotal": 23,
       "notes": [
         "combo filler",
         "+13d on hit",
@@ -442,11 +496,13 @@
       "wavuId": "King-b+3:1+2",
       "input": "b+3:1+2",
       "name": "Guillotine Drop",
-      "level": ",t",
+      "level": "h,t",
       "startup": null,
       "block": null,
       "hit": "-7d",
       "ch": null,
+      "damage": ",15",
+      "damageTotal": 38,
       "notes": [
         "his -16 punisher",
         "input 1+2 during frames 2~17 of b+3"
@@ -462,6 +518,8 @@
       "block": "+2",
       "hit": "+14gc",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "+2 on block"
       ],
@@ -476,6 +534,8 @@
       "block": "+0~+1",
       "hit": "+10d",
       "ch": null,
+      "damage": "23",
+      "damageTotal": 23,
       "notes": [
         "plus on block",
         "combo filler"
@@ -491,6 +551,8 @@
       "block": "+3",
       "hit": "+7",
       "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "+3 on block",
         "Chest attack, unparryable by Asuka, Nina, etc"
@@ -506,6 +568,8 @@
       "block": "-11",
       "hit": "+2",
       "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
       "notes": [
         "i15 mid"
       ]
@@ -514,12 +578,14 @@
       "wavuId": "King-f+2,1",
       "input": "f+2,1",
       "name": "Elbow Impact",
-      "level": ",h",
+      "level": "m,h",
       "startup": ",i15~16",
       "displayStartup": "i15~16 (string)",
       "block": "-9",
       "hit": "+16a",
       "ch": null,
+      "damage": ",25",
+      "damageTotal": 37,
       "notes": [
         "Heat Engager",
         "his -15 punisher",
@@ -536,6 +602,8 @@
       "block": "-5",
       "hit": "+8a (-1)",
       "ch": null,
+      "damage": "27",
+      "damageTotal": 27,
       "notes": [
         "Heat Engager",
         "only -5 on block"
@@ -546,12 +614,14 @@
       "wavuId": "King-f+2,d+1,2",
       "input": "f+2,d+1,2",
       "name": "Jaguar Smash Combo",
-      "level": ",m",
+      "level": "m,m,m",
       "startup": ",i22~23",
       "displayStartup": "i22~23 (string)",
       "block": "-15",
       "hit": "+27a (+17)",
       "ch": null,
+      "damage": ",16",
+      "damageTotal": 43,
       "notes": [
         "his back-turned punisher",
         "Combo from 2nd hit with 13f delay",
@@ -568,6 +638,8 @@
       "block": "-8",
       "hit": "+1",
       "ch": "+9",
+      "damage": "18",
+      "damageTotal": 18,
       "notes": [
         "i15 mid, -8"
       ],
@@ -577,11 +649,13 @@
       "wavuId": "King-f+3,1+2",
       "input": "f+3,1+2",
       "name": "Front Kick into DDT",
-      "level": ",t",
+      "level": "m,t",
       "startup": null,
       "block": null,
       "hit": "-5d",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 38,
       "notes": [
         "input 1+2 during frames 2~20 of f+3",
         "catches grounded opponents"
@@ -597,6 +671,8 @@
       "block": "-9",
       "hit": "+12a (+3)",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "homing mid",
         "Balcony Break"
@@ -612,6 +688,8 @@
       "block": "-5",
       "hit": "+14g",
       "ch": "+38d",
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "homing mid",
         "CH +38d",
@@ -628,6 +706,8 @@
       "block": "+7",
       "hit": "+12c",
       "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "+7 ON BLOCK",
         "Forces crouching on hit."
@@ -643,6 +723,8 @@
       "block": "-15",
       "hit": "+14a(+4)",
       "ch": "+1d",
+      "damage": "25,(14)",
+      "damageTotal": 25,
       "notes": [
         "wall carry tool",
         "Tornado"
@@ -658,6 +740,8 @@
       "block": "+3",
       "hit": "+30(+22)",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "+3 on block from a run"
       ],
@@ -672,6 +756,8 @@
       "block": "+17",
       "hit": "+32d(-26)",
       "ch": null,
+      "damage": "40",
+      "damageTotal": 40,
       "notes": [
         "+17 on block"
       ],
@@ -686,6 +772,8 @@
       "block": "+0",
       "hit": "+7s",
       "ch": "+18s",
+      "damage": "0",
+      "damageTotal": null,
       "notes": [
         "i9 mid out of a run"
       ],
@@ -700,6 +788,8 @@
       "block": "-13",
       "hit": "+5s/(0d)",
       "ch": null,
+      "damage": "17,(30)",
+      "damageTotal": 17,
       "notes": [
         "the running low"
       ],
@@ -714,6 +804,8 @@
       "block": "-13",
       "hit": "+33a (+23)",
       "ch": null,
+      "damage": "13",
+      "damageTotal": 13,
       "notes": [
         "his hopkick",
         "i15 launcher, -13",
@@ -730,6 +822,8 @@
       "block": "-12",
       "hit": "+25g",
       "ch": null,
+      "damage": "23",
+      "damageTotal": 23,
       "notes": [
         "combo filler",
         "+25g",
@@ -747,6 +841,8 @@
       "block": "-3",
       "hit": "+36a (+27)",
       "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "+36a on hit"
       ],
@@ -761,6 +857,8 @@
       "block": "-13",
       "hit": "+19a (+9)",
       "ch": "+33a (+23)",
+      "damage": "15",
+      "damageTotal": 15,
       "notes": [
         "CH +33a"
       ]
@@ -774,6 +872,8 @@
       "block": "-13",
       "hit": "+32a (+22)",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "+32a launcher"
       ],
@@ -788,6 +888,8 @@
       "block": "+2c",
       "hit": "+22a",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "+2c on block",
         "+22a on hit",
@@ -804,6 +906,8 @@
       "block": "-5",
       "hit": "+6",
       "ch": null,
+      "damage": "5",
+      "damageTotal": 5,
       "notes": [
         "i10 special low",
         "Transition to r24 with f"
@@ -818,6 +922,8 @@
       "block": "-4",
       "hit": "+7",
       "ch": null,
+      "damage": "8",
+      "damageTotal": 8,
       "notes": [
         "i11 special low, -4"
       ]
@@ -831,6 +937,8 @@
       "block": "-24",
       "hit": "+45a (+35)",
       "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "+45a launcher but -24 on block",
         "Tornado"
@@ -846,6 +954,8 @@
       "block": "-12",
       "hit": "+1",
       "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
       "notes": [
         "his stature kick",
         "the -17 grounded punish"
@@ -861,6 +971,8 @@
       "block": "-15",
       "hit": "-4",
       "ch": null,
+      "damage": "6",
+      "damageTotal": 6,
       "notes": [
         "i14 low"
       ]
@@ -874,6 +986,8 @@
       "block": "-8~-3",
       "hit": "+0c~+5c",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "the -33 grounded punish"
       ],
@@ -888,6 +1002,8 @@
       "block": "-25",
       "hit": "-9",
       "ch": null,
+      "damage": "14",
+      "damageTotal": 14,
       "notes": [
         "-25 on block on its own"
       ]
@@ -901,6 +1017,8 @@
       "block": "-5c",
       "hit": "+19a",
       "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "-5c on block",
         "+19a launcher"
@@ -916,6 +1034,8 @@
       "block": "-14",
       "hit": "+4c",
       "ch": "+25a",
+      "damage": "17",
+      "damageTotal": 17,
       "notes": [
         "his shadow-cutter low",
         "CH +25a"
@@ -931,6 +1051,8 @@
       "block": "-17a",
       "hit": "-3d",
       "ch": "+27d",
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "CH +27d"
       ],
@@ -946,6 +1068,8 @@
       "block": "-9",
       "hit": "+35g",
       "ch": null,
+      "damage": ",15",
+      "damageTotal": 15,
       "notes": [
         "Heat Engager out of the power crush",
         "Transition to attack throw on front standing hit",
@@ -962,6 +1086,8 @@
       "block": "-3",
       "hit": "+4s",
       "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
       "notes": [
         "i10 out of crouch"
       ]
@@ -975,6 +1101,8 @@
       "block": "-9",
       "hit": "+1s",
       "ch": null,
+      "damage": "11",
+      "damageTotal": 11,
       "notes": [
         "i14 mid"
       ]
@@ -983,11 +1111,13 @@
       "wavuId": "King-ws2,2",
       "input": "ws2,2",
       "name": "Round Trip Chop",
-      "level": ",m",
+      "level": "m,m",
       "startup": "i15~16",
       "block": "-12",
       "hit": "+12g",
       "ch": null,
+      "damage": ",25",
+      "damageTotal": 36,
       "notes": [
         "his -14 crouching punisher",
         "wall splat",
@@ -1010,6 +1140,8 @@
       "block": "0",
       "hit": "+22a(+12)",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "0 on block",
         "+22a on hit"
@@ -1024,6 +1156,8 @@
       "block": "-6",
       "hit": "+5",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "his -11 crouching punisher, -6 on block"
       ],
@@ -1038,6 +1172,8 @@
       "block": "-10",
       "hit": "+35a(+25)",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "his -18 crouching punisher",
         "+35a"
@@ -1053,6 +1189,8 @@
       "block": "-12",
       "hit": "+73a(+57)",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "a low that LAUNCHES for +73a",
         "-12 on block",
@@ -1069,6 +1207,8 @@
       "block": "-14",
       "hit": "+56a",
       "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "i15 crouching launcher",
         "crumples on hit"
@@ -1084,6 +1224,8 @@
       "block": "-9",
       "hit": "+49a(+18)",
       "ch": "+53a",
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "+49a on hit out of Beast Step"
       ],
@@ -1098,6 +1240,8 @@
       "block": "-5c",
       "hit": "+16d",
       "ch": "+52a",
+      "damage": "24",
+      "damageTotal": 24,
       "notes": [
         "CH +52a"
       ],
@@ -1112,6 +1256,8 @@
       "block": "-13",
       "hit": "-22d(-50)",
       "ch": null,
+      "damage": "45(50)/70,5",
+      "damageTotal": 45,
       "notes": [
         "breaks with 1",
         "45 damage, 50 on a perfect (bluespark) input",
@@ -1133,6 +1279,8 @@
       "block": "-5",
       "hit": "+1d",
       "ch": null,
+      "damage": "40(45)",
+      "damageTotal": 40,
       "notes": [
         "breaks with 1+2",
         "only -5 on block",
@@ -1155,6 +1303,8 @@
       "block": "-6",
       "hit": "+1d",
       "ch": null,
+      "damage": "50(55)",
+      "damageTotal": 50,
       "notes": [
         "breaks with 2",
         "50 damage, 55 on bluespark",
@@ -1176,6 +1326,8 @@
       "block": "-6",
       "hit": "-6d",
       "ch": null,
+      "damage": "50",
+      "damageTotal": 50,
       "notes": [
         "breaks with 1+2",
         "Floor Break",
@@ -1194,6 +1346,8 @@
       "block": "-2/-7",
       "hit": "+8d",
       "ch": null,
+      "damage": "30",
+      "damageTotal": 30,
       "notes": [
         "breaks with 1",
         "leads to the PD follow-up throws",
@@ -1210,6 +1364,8 @@
       "block": "-2",
       "hit": "-1d",
       "ch": null,
+      "damage": "53",
+      "damageTotal": 53,
       "notes": [
         "breaks with 2",
         "Floor Break",
@@ -1227,6 +1383,8 @@
       "block": "-6",
       "hit": "+19d(-7) / +17d(-13)",
       "ch": null,
+      "damage": "30",
+      "damageTotal": 30,
       "notes": [
         "breaks with 1+2",
         "hold b to throw backwards",
@@ -1243,6 +1401,8 @@
       "block": "-6",
       "hit": "+0d",
       "ch": null,
+      "damage": "35",
+      "damageTotal": 35,
       "notes": [
         "the generic left throw",
         "breaks with 1",
@@ -1258,6 +1418,8 @@
       "block": "-3",
       "hit": "+0d",
       "ch": null,
+      "damage": "35",
+      "damageTotal": 35,
       "notes": [
         "the generic right throw",
         "breaks with 2",
@@ -1273,6 +1435,8 @@
       "block": null,
       "hit": "+0d",
       "ch": null,
+      "damage": "35",
+      "damageTotal": 35,
       "notes": [
         "CROUCH THROW — cannot be broken",
         "Floor Break",
@@ -1289,6 +1453,8 @@
       "block": null,
       "hit": "+0d",
       "ch": null,
+      "damage": "35",
+      "damageTotal": 35,
       "notes": [
         "CROUCH THROW — cannot be broken",
         "Heat Engager",
@@ -1305,6 +1471,8 @@
       "block": null,
       "hit": "+0d",
       "ch": null,
+      "damage": "35",
+      "damageTotal": 35,
       "notes": [
         "CROUCH THROW — cannot be broken",
         "Floor Break",
@@ -1321,6 +1489,8 @@
       "block": "-2",
       "hit": "+1d",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "chain-throw entry",
         "breaks with 1",
@@ -1338,6 +1508,8 @@
       "block": "-2",
       "hit": "+0d",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "chain-throw entry",
         "breaks with 2",
@@ -1355,6 +1527,8 @@
       "block": "-3",
       "hit": "+0d",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "the seven-stage chain that ends in the Screwdriver",
         "Opponent recovers in FDFT."
@@ -1370,6 +1544,8 @@
       "block": "-2",
       "hit": "+1d",
       "ch": null,
+      "damage": "19",
+      "damageTotal": 19,
       "notes": [
         "homing chain throw",
         "breaks with 1",
@@ -1386,6 +1562,8 @@
       "block": "-2",
       "hit": "+1d",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "homing chain throw",
         "breaks with 2",
@@ -1402,6 +1580,8 @@
       "block": "-5",
       "hit": "+3d",
       "ch": null,
+      "damage": "0",
+      "damageTotal": null,
       "notes": [
         "breaks with 1+2 in a 6f window",
         "leads to the tackle follow-ups",
@@ -1418,6 +1598,8 @@
       "block": "-7/-1",
       "hit": "+47d/+53d",
       "ch": null,
+      "damage": "21/25/31",
+      "damageTotal": 21,
       "notes": [
         "+47d on hit"
       ],
@@ -1432,6 +1614,8 @@
       "block": "-9/-2/0c",
       "hit": "+12c",
       "ch": null,
+      "damage": "15/18/22",
+      "damageTotal": 15,
       "notes": [
         "i11 mid out of the stance",
         "+12c on hit sets up a crouch throw",
@@ -1449,6 +1633,8 @@
       "block": "-5/-1",
       "hit": "+21a(+12)/+25a(+16)",
       "ch": null,
+      "damage": "23/27/34",
+      "damageTotal": 23,
       "notes": [
         "+21a on hit"
       ],
@@ -1463,6 +1649,8 @@
       "block": "+8/+15",
       "hit": "+5a(-4)/+10a(+1)",
       "ch": null,
+      "damage": "40/42/52",
+      "damageTotal": 40,
       "notes": [
         "hugely plus on block"
       ],
@@ -1477,6 +1665,8 @@
       "block": "-16/+8",
       "hit": "+5a(-4)",
       "ch": null,
+      "damage": "30/36/45",
+      "damageTotal": 30,
       "notes": [
         "mid option out of the stance"
       ],
@@ -1491,6 +1681,8 @@
       "block": "-8",
       "hit": "+26c",
       "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "+26c",
         "becomes a launcher when powered up or in Heat"
@@ -1506,6 +1698,8 @@
       "block": "-4",
       "hit": "+75a (+59)",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "+75a launcher",
         "Tornado"
@@ -1520,6 +1714,8 @@
       "block": "+3",
       "hit": "+5a",
       "ch": null,
+      "damage": "24",
+      "damageTotal": 24,
       "notes": [
         "+3 on block",
         "Strong Aerial Tailspin",
@@ -1536,6 +1732,8 @@
       "block": "-9",
       "hit": "+12d (+2)",
       "ch": null,
+      "damage": "30",
+      "damageTotal": 30,
       "notes": [
         "homing mid"
       ],
@@ -1550,6 +1748,8 @@
       "block": "-21",
       "hit": "+0c",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "the low half of the Jaguar Sprint mixup"
       ],
@@ -1564,6 +1764,8 @@
       "block": null,
       "hit": "+1d",
       "ch": null,
+      "damage": "45",
+      "damageTotal": 45,
       "notes": [
         "Heat Engager",
         "homing",
@@ -1581,6 +1783,8 @@
       "block": null,
       "hit": "+51a(+35)",
       "ch": null,
+      "damage": "0",
+      "damageTotal": null,
       "notes": [
         "generic low parry",
         "applies Tornado on success",
@@ -1597,6 +1801,8 @@
       "block": null,
       "hit": "+2d",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "parries the opponent's RIGHT punch",
         "Side Switch. Opponent recovers in FUFR."
@@ -1612,6 +1818,8 @@
       "block": null,
       "hit": "+24d",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "parries the opponent's LEFT kick",
         "Side switches randomly. Opponent recovers in FUFL."
@@ -1627,6 +1835,8 @@
       "block": "+1",
       "hit": "+2c",
       "ch": null,
+      "damage": "[12;12]",
+      "damageTotal": 24,
       "notes": [
         "+1 on block",
         "Cancel to r45 with b,b on frame 42"
@@ -1641,6 +1851,8 @@
       "block": "+12 JGR",
       "hit": "+0d",
       "ch": null,
+      "damage": "20,40",
+      "damageTotal": 60,
       "notes": [
         "Heat Smash",
         "+12 on block and transitions to Jaguar Sprint",
@@ -1663,6 +1875,8 @@
       "block": "-18",
       "hit": "+0d",
       "ch": null,
+      "damage": "55+",
+      "damageTotal": 55,
       "notes": [
         "Rage Art",
         "Transition to attack throw on hit"

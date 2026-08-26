@@ -23,6 +23,8 @@
       "block": "+1",
       "hit": "+8",
       "ch": null,
+      "damage": "5",
+      "damageTotal": 5,
       "notes": [
         "your fastest button",
         "Recovers 2f faster on hit or block (t27 r17)"
@@ -32,12 +34,14 @@
       "wavuId": "Lars-1,2",
       "input": "1,2",
       "name": "Left Right Combo",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i10",
       "displayStartup": "i10 (string)",
       "block": "-3",
       "hit": "+8",
       "ch": null,
+      "damage": ",9",
+      "damageTotal": 14,
       "notes": [
         "jails",
         "Jail from 1st attack with 4f delay"
@@ -48,12 +52,14 @@
       "wavuId": "Lars-1,1,1",
       "input": "1,1,1",
       "name": "Delta Slicer",
-      "level": ",m",
+      "level": "h,m,m",
       "startup": ",i25~26",
       "displayStartup": "i10 (string)",
       "block": "-12",
       "hit": "+17a",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 33,
       "notes": [
         "heat engager",
         "Combo from 1st CH or 2nd hit with 4f delay"
@@ -64,12 +70,14 @@
       "wavuId": "Lars-2,1",
       "input": "2,1",
       "name": "Ring Current",
-      "level": ",m",
+      "level": "h,m",
       "startup": ",i20~21",
       "displayStartup": "i10 (string)",
       "block": "-6",
       "hit": "+8",
       "ch": null,
+      "damage": ",12",
+      "damageTotal": 22,
       "notes": [
         "10f punish",
         "whiff punish",
@@ -86,6 +94,8 @@
       "block": "-3",
       "hit": "+5",
       "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
       "notes": [
         "your money mid",
         "Recovers 2F faster on hit (t33 r20)"
@@ -100,6 +110,8 @@
       "block": "-3",
       "hit": "+9",
       "ch": "+13c",
+      "damage": "15",
+      "damageTotal": 15,
       "notes": [
         "transitions to SEN",
         "elbow",
@@ -117,6 +129,8 @@
       "block": "-9",
       "hit": "+4",
       "ch": "+14a (+5)",
+      "damage": "17",
+      "damageTotal": 17,
       "notes": [
         "homing",
         "balcony break on CH"
@@ -127,12 +141,14 @@
       "wavuId": "Lars-b+2,1",
       "input": "b+2,1",
       "name": "Gilbert Smash",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i15",
       "displayStartup": "i15 (string)",
       "block": "-10",
       "hit": "+4",
       "ch": "+32a",
+      "damage": ",17",
+      "damageTotal": 29,
       "notes": [
         "CH launcher",
         "delayable",
@@ -147,12 +163,14 @@
       "wavuId": "Lars-b+3,4",
       "input": "b+3,4",
       "name": "Impulse Plus",
-      "level": ",h",
+      "level": "m,h",
       "startup": ",i23~24",
       "displayStartup": "i17 (string)",
       "block": "-8",
       "hit": "+19 (+10)",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 34,
       "notes": [
         "whiff punish",
         "Combo from 1st hit with ?F delay"
@@ -168,6 +186,8 @@
       "block": "-9",
       "hit": "+7",
       "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
       "notes": [
         "mid pressure"
       ]
@@ -176,12 +196,14 @@
       "wavuId": "Lars-f+1,2",
       "input": "f+1,2",
       "name": "Flash Claw",
-      "level": ",m",
+      "level": "h,m",
       "startup": ",i12",
       "displayStartup": "i13 (string)",
       "block": "-5",
       "hit": "+6",
       "ch": null,
+      "damage": ",11",
+      "damageTotal": 21,
       "notes": [
         "13f punish",
         "jails",
@@ -197,12 +219,14 @@
       "wavuId": "Lars-f+1,2,3",
       "input": "f+1,2,3",
       "name": "Flash Bang",
-      "level": ",m",
+      "level": "h,m,m",
       "startup": ",i24",
       "displayStartup": "i13 (string)",
       "block": "-5",
       "hit": "+22c",
       "ch": "+49a",
+      "damage": ",20",
+      "damageTotal": 41,
       "notes": [
         "CH launcher",
         "Combo from 2nd hit CH",
@@ -216,12 +240,14 @@
       "wavuId": "Lars-f+2,1",
       "input": "f+2,1",
       "name": "Charge Factor",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i13",
       "displayStartup": "i12 (string)",
       "block": "-5",
       "hit": "+6",
       "ch": null,
+      "damage": ",15",
+      "damageTotal": 25,
       "notes": [
         "12f punish",
         "Combo from 1st hit",
@@ -235,12 +261,14 @@
       "wavuId": "Lars-f+2,4",
       "input": "f+2,4",
       "name": "Death Mask",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i18~19",
       "displayStartup": "i12 (string)",
       "block": "-12",
       "hit": "+15 (+6)",
       "ch": null,
+      "damage": ",22",
+      "damageTotal": 32,
       "notes": [
         "12f punish",
         "damage"
@@ -256,6 +284,8 @@
       "block": "-18",
       "hit": "+18a (+8)",
       "ch": null,
+      "damage": "28",
+      "damageTotal": 28,
       "notes": [
         "13f launcher",
         "whiff punish"
@@ -271,6 +301,8 @@
       "block": "-13",
       "hit": "+28",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "15f launch punish"
       ],
@@ -280,12 +312,14 @@
       "wavuId": "Lars-f,n,b+2,1",
       "input": "f,n,b+2,1",
       "name": "Blue Bolt",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i16",
       "displayStartup": "i14 (string)",
       "block": "-18",
       "hit": "+47a (+39)",
       "ch": null,
+      "damage": ",10",
+      "damageTotal": 20,
       "notes": [
         "14f launch punish",
         "jails",
@@ -303,6 +337,8 @@
       "block": "-14",
       "hit": "-3",
       "ch": null,
+      "damage": "8",
+      "damageTotal": 8,
       "notes": [
         "low poke"
       ]
@@ -316,6 +352,8 @@
       "block": "-12",
       "hit": "-1",
       "ch": null,
+      "damage": "9",
+      "damageTotal": 9,
       "notes": [
         "low poke"
       ]
@@ -329,6 +367,8 @@
       "block": "-26",
       "hit": "+5c",
       "ch": "+29a",
+      "damage": "19",
+      "damageTotal": 19,
       "notes": [
         "big low",
         "CH launcher"
@@ -344,6 +384,8 @@
       "block": "+0c",
       "hit": "+8c",
       "ch": "+30d",
+      "damage": "17",
+      "damageTotal": 17,
       "notes": [
         "neutral on block",
         "spike",
@@ -360,6 +402,8 @@
       "block": "-8",
       "hit": "+42a",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "launcher",
         "low crush",
@@ -376,6 +420,8 @@
       "block": "-26",
       "hit": "+33a (+15)",
       "ch": null,
+      "damage": "12,14 (20)",
+      "damageTotal": 26,
       "notes": [
         "launcher",
         "knee",
@@ -392,6 +438,8 @@
       "block": "-12",
       "hit": "+38a",
       "ch": null,
+      "damage": "16",
+      "damageTotal": 16,
       "notes": [
         "tornado",
         "15f crouch launcher",
@@ -408,6 +456,8 @@
       "block": "-6",
       "hit": "+5",
       "ch": null,
+      "damage": "16",
+      "damageTotal": 16,
       "notes": [
         "11f crouch punish"
       ],
@@ -417,12 +467,14 @@
       "wavuId": "Lars-ws2,1",
       "input": "ws+2,1",
       "name": "Multiplied Force",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i23~24",
       "displayStartup": "i13 (string)",
       "block": "-12c",
       "hit": "+2c",
       "ch": "+4d",
+      "damage": ",17",
+      "damageTotal": 30,
       "notes": [
         "13f crouch punish",
         "Combo from 1st hit"
@@ -438,6 +490,8 @@
       "block": "+0",
       "hit": "+21a (+15)",
       "ch": null,
+      "damage": "30",
+      "damageTotal": 30,
       "notes": [
         "launcher",
         "into LEN with D",
@@ -454,6 +508,8 @@
       "block": "-13",
       "hit": "+35a",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "tornado",
         "launcher",
@@ -471,6 +527,8 @@
       "block": "+4",
       "hit": "+36a",
       "ch": null,
+      "damage": "23",
+      "damageTotal": 23,
       "notes": [
         "plus on block",
         "launcher",
@@ -487,6 +545,8 @@
       "block": "+6",
       "hit": "+15a (+5)",
       "ch": null,
+      "damage": "30",
+      "damageTotal": 30,
       "notes": [
         "plus on block",
         "balcony break"
@@ -502,6 +562,8 @@
       "block": "-9",
       "hit": "+14 (+5)",
       "ch": "+59a (+39)",
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "CH launcher"
       ],
@@ -511,12 +573,14 @@
       "wavuId": "Lars-df+3,3",
       "input": "df+3,3",
       "name": "Outpost Blitz",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i25~26",
       "displayStartup": "i16 (string)",
       "block": "-15",
       "hit": "+29a (+14a)",
       "ch": null,
+      "damage": ",24 (16)",
+      "damageTotal": 39,
       "notes": [
         "launcher on hit",
         "Combo from 1st hit with 2F delay",
@@ -528,12 +592,14 @@
       "wavuId": "Lars-db+2,3",
       "input": "db+2,3",
       "name": "HE Combination",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i19",
       "displayStartup": "i15 (string)",
       "block": "-13",
       "hit": "+8",
       "ch": null,
+      "damage": ",15",
+      "damageTotal": 27,
       "notes": [
         "tornado",
         "wall crush",
@@ -550,6 +616,8 @@
       "block": "-8",
       "hit": "+17d",
       "ch": null,
+      "damage": "22",
+      "damageTotal": 22,
       "notes": [
         "heat engager"
       ],
@@ -564,6 +632,8 @@
       "block": "+1",
       "hit": "+8",
       "ch": null,
+      "damage": "14",
+      "damageTotal": 14,
       "notes": [
         "plus on block",
         "into SEN with F",
@@ -574,12 +644,14 @@
       "wavuId": "Lars-DEN.1,2",
       "input": "DEN.1,2",
       "name": "Double Barrel",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i14~15",
       "displayStartup": "i11 (string)",
       "block": "-6",
       "hit": "+21c",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 34,
       "notes": [
         "heat engager",
         "Jail from 1st block",
@@ -597,6 +669,8 @@
       "block": "-7",
       "hit": "+7",
       "ch": "+62a",
+      "damage": "17",
+      "damageTotal": 17,
       "notes": [
         "CH launcher",
         "jab evasion",
@@ -614,6 +688,8 @@
       "block": "+5",
       "hit": "+5",
       "ch": null,
+      "damage": "23",
+      "damageTotal": 23,
       "notes": [
         "heat engager",
         "homing",
@@ -631,6 +707,8 @@
       "block": "-12",
       "hit": "+1",
       "ch": null,
+      "damage": "14",
+      "damageTotal": 14,
       "notes": [
         "low",
         "Transition to LEN with input D (-12/+3)"
@@ -646,6 +724,8 @@
       "block": "-14",
       "hit": "-3",
       "ch": "+5c",
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "low",
         "Transition to SEN with input F (-7/+4/+12c)"
@@ -661,6 +741,8 @@
       "block": "-1",
       "hit": "+29a",
       "ch": null,
+      "damage": "24",
+      "damageTotal": 24,
       "notes": [
         "tornado",
         "launcher"
@@ -676,6 +758,8 @@
       "block": "-9",
       "hit": "+23a (+13)",
       "ch": null,
+      "damage": "26",
+      "damageTotal": 26,
       "notes": [
         "heat engager",
         "launcher",
@@ -692,6 +776,8 @@
       "block": "-12",
       "hit": "+6c",
       "ch": "+27d",
+      "damage": "23",
+      "damageTotal": 23,
       "notes": [
         "tornado",
         "low"
@@ -707,6 +793,8 @@
       "block": "-13",
       "hit": "+29a (+19)",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "launcher",
         "low crush",
@@ -723,6 +811,8 @@
       "block": "+4",
       "hit": "+31a",
       "ch": null,
+      "damage": "19",
+      "damageTotal": 19,
       "notes": [
         "plus on block",
         "homing",
@@ -739,6 +829,8 @@
       "block": "-14",
       "hit": "+20a (+13)",
       "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "tornado",
         "power crush",
@@ -756,6 +848,8 @@
       "block": "+0c",
       "hit": "+22d (-13)",
       "ch": null,
+      "damage": "6,16 (23)",
+      "damageTotal": 22,
       "notes": [
         "neutral on block",
         "Jail from 1st block"
@@ -771,6 +865,8 @@
       "block": "-12",
       "hit": "+4c",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "low"
       ],
@@ -785,6 +881,8 @@
       "block": "-9",
       "hit": "+25 (+15)",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "tornado",
         "powers up in heat",
@@ -801,6 +899,8 @@
       "block": "+1",
       "hit": "+2c",
       "ch": null,
+      "damage": "[12;12]",
+      "damageTotal": 24,
       "notes": [
         "heat burst",
         "plus on block",
@@ -816,6 +916,8 @@
       "block": "+12c",
       "hit": "+0d / +81a",
       "ch": null,
+      "damage": "55",
+      "damageTotal": 55,
       "notes": [
         "heat smash",
         "very plus on block",
@@ -834,6 +936,8 @@
       "block": "-18",
       "hit": "+0d",
       "ch": null,
+      "damage": "55+",
+      "damageTotal": 55,
       "notes": [
         "rage art",
         "reversal break",
@@ -849,6 +953,8 @@
       "block": "-12",
       "hit": "+3",
       "ch": null,
+      "damage": "10,20",
+      "damageTotal": 30,
       "notes": [
         "new in Season 3",
         "tracks his weak side",
@@ -868,10 +974,46 @@
       "block": "-8",
       "hit": "+5",
       "ch": "+63a",
+      "damage": "19",
+      "damageTotal": 19,
       "notes": [
         "crouching CH launcher"
       ],
       "video": "https://wavu.wiki/w/images/3/3f/T8-p2-lars-fc.df%2B2.mp4"
+    },
+    "ws2-3": {
+      "wavuId": "Lars-ws2,3",
+      "input": "ws2,3",
+      "name": "Glass Breaker",
+      "level": "m,h",
+      "startup": ",i20",
+      "displayStartup": "i13 (string)",
+      "block": "-15",
+      "hit": "-3",
+      "ch": null,
+      "damage": ",20",
+      "damageTotal": 33,
+      "notes": [
+        "Combo from 1st hit with 6F delay",
+        "Interrupt with i7",
+        "Move cannot be delayed",
+        "Transition to LEN r34 with D (-11/+6)"
+      ],
+      "video": "https://wavu.wiki/w/images/8/8d/T8-p2-lars-ws2%2C3.mp4"
+    },
+    "ufn4": {
+      "wavuId": "Lars-uf,n,4",
+      "input": "uf,n,4",
+      "name": "Delayed Rising Toe Kick",
+      "level": "m",
+      "startup": "i23~25",
+      "block": "-13",
+      "hit": "+32a (+22)",
+      "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
+      "notes": [],
+      "video": "https://wavu.wiki/w/images/8/83/T8-p2-lars-uf%2Cn%2C4.mp4"
     }
   }
 }

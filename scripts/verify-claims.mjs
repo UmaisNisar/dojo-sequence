@@ -61,7 +61,20 @@ function valuesOf(move) {
  * which is worse than not having it.
  */
 const conditional = (note) =>
-  /bluespark|powered? up|absorb|in heat|if only|when .*(hit|block)|buffered|transition|press [a-z,+]+ to|enter |on average|may range/i.test(note);
+  /bluespark|powered? up|absorb|in heat|heat dash|on wall|wall hit|if only|when .*(hit|block)|buffered|transition|press [a-z,+]+ to|enter |on average|may range/i.test(note);
+
+/**
+ * Notes that are never about this move's own frames, whatever number they
+ * carry — comparing them to the row is meaningless rather than merely
+ * uncertain, so they are skipped per note rather than exempting the move:
+ *
+ *   "Interrupt with i3"   — the gap the OPPONENT needs, not this startup
+ *   "Actual startup i14"  — Wavu's clarification for rows that store an
+ *                           input window instead (the Mishima electrics)
+ *   "13f effective punish" — what this move is worth as a punisher
+ */
+const aboutAnotherMeasure = (note) =>
+  /^\s*interrupt with\b|actual startup|effective punish/i.test(note);
 
 /**
  * True when n falls inside any figure the startup string states.
@@ -98,6 +111,8 @@ for (const character of characters) {
     const perHit = String(startup ?? "").trim().startsWith(",");
 
     for (const note of notes) {
+      // Measuring a different thing, or explicitly describing a variant.
+      if (aboutAnotherMeasure(note) || conditional(note)) continue;
       if (!hasVariant) {
         for (const m of note.matchAll(/([+-]\d+)[a-z]*\s+on\s+block/gi)) {
           if (block && !block.includes(m[1])) {

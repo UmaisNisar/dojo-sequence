@@ -23,6 +23,8 @@
       "block": "+1",
       "hit": "+8",
       "ch": null,
+      "damage": "5",
+      "damageTotal": 5,
       "notes": [
         "i10 high",
         "+1 on block",
@@ -33,12 +35,14 @@
       "wavuId": "Dragunov-1,1",
       "input": "1,1",
       "name": "Jab into Jab",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i20",
       "displayStartup": "i20 (string)",
       "block": "-4",
       "hit": "+7",
       "ch": null,
+      "damage": ",8",
+      "damageTotal": 13,
       "notes": [
         "-4 on block",
         "Combo from 1st hit"
@@ -48,12 +52,14 @@
       "wavuId": "Dragunov-1,1,3",
       "input": "1,1,3",
       "name": "Eye Gouge into Hilt",
-      "level": ",m",
+      "level": "h,h,m",
       "startup": ",i25~26",
       "displayStartup": "i25~26 (string)",
       "block": "-9",
       "hit": "+15a (+6)",
       "ch": "+36a (+0)",
+      "damage": ",22",
+      "damageTotal": 35,
       "notes": [
         "CH +36a",
         "Combo from 2nd CH with 5f delay"
@@ -64,12 +70,14 @@
       "wavuId": "Dragunov-1,2",
       "input": "1,2",
       "name": "Jab into Mid",
-      "level": ",m",
+      "level": "h,m",
       "startup": ",i18",
       "displayStartup": "i18 (string)",
       "block": "-9",
       "hit": "+2",
       "ch": null,
+      "damage": ",8",
+      "damageTotal": 13,
       "notes": [
         "-9 on block",
         "Jail from 1st attack",
@@ -80,12 +88,14 @@
       "wavuId": "Dragunov-1,2,1",
       "input": "1,2,1",
       "name": "Salvo",
-      "level": ",m",
+      "level": "h,m,m",
       "startup": ",i19~20",
       "displayStartup": "i19~20 (string)",
       "block": "-14",
       "hit": "+15cg",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 33,
       "notes": [
         "Heat Engager",
         "an i10 string that wall splats on counter-hit",
@@ -99,12 +109,14 @@
       "wavuId": "Dragunov-1,3",
       "input": "1,3",
       "name": "Jab into High",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i16~17",
       "displayStartup": "i16~17 (string)",
       "block": "-7",
       "hit": "+1",
       "ch": "+9",
+      "damage": ",14",
+      "damageTotal": 19,
       "notes": [
         "CH +9",
         "Jail from 1st attack",
@@ -115,12 +127,14 @@
       "wavuId": "Dragunov-1,3,2",
       "input": "1,3,2",
       "name": "Hammer and Sickle",
-      "level": ",m",
+      "level": "h,h,m",
       "startup": ",i22~23",
       "displayStartup": "i22~23 (string)",
       "block": "-13",
       "hit": "+41a",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 39,
       "notes": [
         "+41a on hit",
         "Combo from 2nd CH"
@@ -131,12 +145,14 @@
       "wavuId": "Dragunov-1,3,2~1+2",
       "input": "1,3,2~1+2",
       "name": "Feint & Catch",
-      "level": ",t",
+      "level": "h,h,t",
       "startup": ",i29~32",
       "displayStartup": "i29~32 (string)",
       "block": "+5",
       "hit": "-2d",
       "ch": null,
+      "damage": ",40",
+      "damageTotal": 59,
       "notes": [
         "+5 ON BLOCK",
         "breaks with 1+2 — UNBREAKABLE in Heat",
@@ -153,6 +169,8 @@
       "block": "+0",
       "hit": "+9",
       "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
       "notes": [
         "i10 high"
       ]
@@ -161,12 +179,14 @@
       "wavuId": "Dragunov-2,1",
       "input": "2,1",
       "name": "Right Jab into Jab",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i12",
       "displayStartup": "i12 (string)",
       "block": "-3",
       "hit": "+8",
       "ch": null,
+      "damage": ",10",
+      "damageTotal": 20,
       "notes": [
         "his i10 punisher",
         "press DF afterwards to enter Sneak at +10 on hit",
@@ -178,12 +198,14 @@
       "wavuId": "Dragunov-2,1,3",
       "input": "2,1,3",
       "name": "One Two Scud Kick",
-      "level": ",h",
+      "level": "h,h,h",
       "startup": ",i18~19",
       "displayStartup": "i18~19 (string)",
       "block": "-9",
       "hit": "+14cg",
       "ch": null,
+      "damage": ",24",
+      "damageTotal": 44,
       "notes": [
         "+14cg on hit"
       ],
@@ -193,12 +215,14 @@
       "wavuId": "Dragunov-2,1,4",
       "input": "2,1,4",
       "name": "One Two Mine Kick",
-      "level": ",L",
+      "level": "h,h,L",
       "startup": ",i23",
       "displayStartup": "i23 (string)",
       "block": "-12",
       "hit": "+3c",
       "ch": null,
+      "damage": ",14",
+      "damageTotal": 34,
       "notes": [
         "the low ender of the same string"
       ],
@@ -213,6 +237,8 @@
       "block": "-9",
       "hit": "+2",
       "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
       "notes": [
         "i15 mid"
       ]
@@ -221,12 +247,14 @@
       "wavuId": "Dragunov-3,1",
       "input": "3,1",
       "name": "Mid Kick into Jab",
-      "level": ",h",
+      "level": "m,h",
       "startup": ",i21~22",
       "displayStartup": "i21~22 (string)",
       "block": "-2",
       "hit": "+7",
       "ch": null,
+      "damage": ",8",
+      "damageTotal": 18,
       "notes": [
         "press DF to enter Sneak",
         "the core combo link",
@@ -237,12 +265,14 @@
       "wavuId": "Dragunov-3,1,2",
       "input": "3,1,2",
       "name": "Disconnector Combo Middle",
-      "level": ",m",
+      "level": "m,h,m",
       "startup": ",i19~21",
       "displayStartup": "i19~21 (string)",
       "block": "-12",
       "hit": "+12a (+3)",
       "ch": null,
+      "damage": ",24",
+      "damageTotal": 42,
       "notes": [
         "mid ender",
         "Jail from 2nd block with 1F delay",
@@ -254,12 +284,14 @@
       "wavuId": "Dragunov-3,1,4",
       "input": "3,1,4",
       "name": "Disconnector Combo High",
-      "level": ",h",
+      "level": "m,h,h",
       "startup": ",i22~23",
       "displayStartup": "i22~23 (string)",
       "block": "-9",
       "hit": "+16cg",
       "ch": null,
+      "damage": ",24",
+      "damageTotal": 42,
       "notes": [
         "+16cg on hit",
         "Combo from 2nd CH with 7f delay"
@@ -275,6 +307,8 @@
       "block": "-9",
       "hit": "-1",
       "ch": "+2",
+      "damage": "10",
+      "damageTotal": 10,
       "notes": [
         "i12 high"
       ]
@@ -283,12 +317,14 @@
       "wavuId": "Dragunov-4,1",
       "input": "4,1",
       "name": "Karnov Hook",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i17~18",
       "displayStartup": "i17~18 (string)",
       "block": "-4",
       "hit": "+8",
       "ch": null,
+      "damage": ",17",
+      "damageTotal": 27,
       "notes": [
         "his -12 punisher",
         "a core combo ender",
@@ -302,12 +338,14 @@
       "wavuId": "Dragunov-4,3",
       "input": "4,3",
       "name": "Karnov Kick",
-      "level": ",m",
+      "level": "h,m",
       "startup": ",i23~24",
       "displayStartup": "i23~24 (string)",
       "block": "-12",
       "hit": "+14c",
       "ch": null,
+      "damage": ",18",
+      "damageTotal": 28,
       "notes": [
         "CH combo starter",
         "Combo from 1st CH"
@@ -318,12 +356,14 @@
       "wavuId": "Dragunov-4,4",
       "input": "4,4",
       "name": "Karnov Avalanche",
-      "level": ",m",
+      "level": "h,m",
       "startup": ",i35~36",
       "displayStartup": "i35~36 (string)",
       "block": "+5",
       "hit": "+29a (+20)",
       "ch": "+46a",
+      "damage": ",23",
+      "damageTotal": 33,
       "notes": [
         "+5 ON BLOCK",
         "the first link of nearly every combo"
@@ -339,6 +379,8 @@
       "block": "-14",
       "hit": "+19a",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "Power Crush",
         "+19a on hit"
@@ -354,6 +396,8 @@
       "block": "-2",
       "hit": "+7",
       "ch": null,
+      "damage": "13",
+      "damageTotal": 13,
       "notes": [
         "his mid check — i13 at only -2 on block"
       ]
@@ -362,12 +406,14 @@
       "wavuId": "Dragunov-df+1,4",
       "input": "df+1,4",
       "name": "Switchblade Ripper",
-      "level": ",h",
+      "level": "m,h",
       "startup": ",i22~23",
       "displayStartup": "i22~23 (string)",
       "block": "-7",
       "hit": "+22a (+13)",
       "ch": "+58a",
+      "damage": ",23",
+      "damageTotal": 36,
       "notes": [
         "CH +58a",
         "Combo from 1st CH with 8f delay"
@@ -383,6 +429,8 @@
       "block": "-12",
       "hit": "+28a (+18)",
       "ch": null,
+      "damage": "14",
+      "damageTotal": 14,
       "notes": [
         "his ONLY standing launcher",
         "i15, -12 on block"
@@ -398,6 +446,8 @@
       "block": "-6~-3",
       "hit": "+5c~+8c",
       "ch": null,
+      "damage": "16",
+      "damageTotal": 16,
       "notes": [
         "+5c~+8c on hit"
       ],
@@ -412,6 +462,8 @@
       "block": "-7",
       "hit": "+12g",
       "ch": "+24d",
+      "damage": "19",
+      "damageTotal": 19,
       "notes": [
         "core combo filler",
         "+12g on hit"
@@ -427,6 +479,8 @@
       "block": "-9",
       "hit": "+2",
       "ch": null,
+      "damage": "14",
+      "damageTotal": 14,
       "notes": [
         "i12 mid",
         "the -12 punish when you need a mid"
@@ -441,6 +495,8 @@
       "block": "-10",
       "hit": "+1",
       "ch": null,
+      "damage": "14",
+      "damageTotal": 14,
       "notes": [
         "i17 mid"
       ]
@@ -449,12 +505,14 @@
       "wavuId": "Dragunov-b+1,2",
       "input": "b+1,2",
       "name": "Pommel Fling",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i25~26",
       "displayStartup": "i25~26 (string)",
       "block": "-12",
       "hit": "+18cg",
       "ch": null,
+      "damage": ",18",
+      "damageTotal": 32,
       "notes": [
         "Tornado",
         "a listed whiff punisher",
@@ -472,6 +530,8 @@
       "block": "+6",
       "hit": "+13c",
       "ch": null,
+      "damage": "26",
+      "damageTotal": 26,
       "notes": [
         "+6 ON BLOCK — but the combo side-switches"
       ],
@@ -486,6 +546,8 @@
       "block": "-3",
       "hit": "+8",
       "ch": null,
+      "damage": "14",
+      "damageTotal": 14,
       "notes": [
         "i15 mid at only -3 on block"
       ]
@@ -494,12 +556,14 @@
       "wavuId": "Dragunov-b+2,1",
       "input": "b+2,1",
       "name": "Mid Elbow into Hook",
-      "level": ",h",
+      "level": "m,h",
       "startup": ",i17~19",
       "displayStartup": "i17~19 (string)",
       "block": "-5",
       "hit": "+6",
       "ch": null,
+      "damage": ",11",
+      "damageTotal": 25,
       "notes": [
         "-5 on block",
         "Combo from 1st hit with 3F delay",
@@ -510,12 +574,14 @@
       "wavuId": "Dragunov-b+2,1,3",
       "input": "b+2,1,3",
       "name": "Eye Gouge into Stingray",
-      "level": ",l",
+      "level": "m,h,l",
       "startup": ",i29~31",
       "displayStartup": "i29~31 (string)",
       "block": "-26",
       "hit": "-2c",
       "ch": "+1d",
+      "damage": ",17",
+      "damageTotal": 42,
       "notes": [
         "low ender",
         "-26 on block"
@@ -531,6 +597,8 @@
       "block": "-9",
       "hit": "+11g",
       "ch": null,
+      "damage": "17",
+      "damageTotal": 17,
       "notes": [
         "+11g on hit",
         "Transitions to throw on counterhit from the front"
@@ -546,6 +614,8 @@
       "block": "-2",
       "hit": "+1d",
       "ch": null,
+      "damage": "22",
+      "damageTotal": 22,
       "notes": [
         "his sabaki",
         "Transitions to throw on block front hit"
@@ -556,11 +626,13 @@
       "wavuId": "Dragunov-b+3+4:1+2",
       "input": "b+3+4:1+2",
       "name": "Inertia Kick (throw)",
-      "level": ",t",
+      "level": "h,t",
       "startup": "i28~29",
       "block": null,
       "hit": "+1d",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 42,
       "notes": [
         "UNBREAKABLE",
         "removes recoverable health",
@@ -579,6 +651,8 @@
       "block": "-7",
       "hit": "+4",
       "ch": null,
+      "damage": "15",
+      "damageTotal": 15,
       "notes": [
         "i14 mid check"
       ]
@@ -587,12 +661,14 @@
       "wavuId": "Dragunov-b+4,2",
       "input": "b+4,2",
       "name": "Tundra Strike 2",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i21",
       "displayStartup": "i21 (string)",
       "block": "-7",
       "hit": "+4",
       "ch": null,
+      "damage": ",10",
+      "damageTotal": 25,
       "notes": [
         "press DF to enter Sneak",
         "leads to the Ambush Tackle",
@@ -603,12 +679,14 @@
       "wavuId": "Dragunov-b+4,2,1",
       "input": "b+4,2,1",
       "name": "Ear Grab",
-      "level": ",h",
+      "level": "m,m,h",
       "startup": ",i23~24",
       "displayStartup": "i23~24 (string)",
       "block": "+1",
       "hit": "+5",
       "ch": "+14c",
+      "damage": ",17",
+      "damageTotal": 42,
       "notes": [
         "+1 on block",
         "Combo from 1st CH or 2nd hit with 7F delay",
@@ -620,12 +698,14 @@
       "wavuId": "Dragunov-b+4,2,1+2",
       "input": "b+4,2,1+2",
       "name": "Ambush Tackle",
-      "level": ",t",
+      "level": "m,m,t",
       "startup": ",i40",
       "displayStartup": "i40 (string)",
       "block": "-5 BT",
       "hit": "+3d",
       "ch": null,
+      "damage": null,
+      "damageTotal": 25,
       "notes": [
         "breaks with 1+2 — UNBREAKABLE in Heat"
       ],
@@ -635,12 +715,14 @@
       "wavuId": "Dragunov-b+4,3",
       "input": "b+4,3",
       "name": "Tundra Slash",
-      "level": ",h",
+      "level": "m,h",
       "startup": ",i17~18",
       "displayStartup": "i17~18 (string)",
       "block": "-9",
       "hit": "+21a (+12)",
       "ch": null,
+      "damage": ",16",
+      "damageTotal": 31,
       "notes": [
         "Heat Engager",
         "his -14 punisher",
@@ -660,6 +742,8 @@
       "block": "+1c",
       "hit": "+8c",
       "ch": "+13d",
+      "damage": "18",
+      "damageTotal": 18,
       "notes": [
         "+1c ON BLOCK from a crouching input"
       ],
@@ -674,6 +758,8 @@
       "block": "-13",
       "hit": "-1c",
       "ch": "+13g",
+      "damage": "14",
+      "damageTotal": 14,
       "notes": [
         "i18 low",
         "CH +13g"
@@ -689,6 +775,8 @@
       "block": "-14",
       "hit": "-3",
       "ch": "+1c",
+      "damage": "13",
+      "damageTotal": 13,
       "notes": [
         "i17 low"
       ]
@@ -697,12 +785,14 @@
       "wavuId": "Dragunov-d+3,2",
       "input": "d+3,2",
       "name": "Low into High",
-      "level": ",h",
+      "level": "L,h",
       "startup": ",i24~25",
       "displayStartup": "i24~25 (string)",
       "block": "-8",
       "hit": "+6",
       "ch": null,
+      "damage": ",18",
+      "damageTotal": 31,
       "notes": [
         "-8 on block",
         "Combo from 1st CH"
@@ -712,12 +802,14 @@
       "wavuId": "Dragunov-d+3,2,1+2",
       "input": "d+3,2,1+2",
       "name": "Avalanche Hammer Rush",
-      "level": ",m",
+      "level": "L,h,m",
       "startup": ",i35~36",
       "displayStartup": "i35~36 (string)",
       "block": "-2c",
       "hit": "+20a",
       "ch": null,
+      "damage": ",24",
+      "damageTotal": 55,
       "notes": [
         "-2c on block"
       ],
@@ -727,12 +819,14 @@
       "wavuId": "Dragunov-d+3,4",
       "input": "d+3,4",
       "name": "Detached Kick",
-      "level": ",m",
+      "level": "L,m",
       "startup": ",i28",
       "displayStartup": "i28 (string)",
       "block": "-11",
       "hit": "+5",
       "ch": "+23g",
+      "damage": ",18",
+      "damageTotal": 31,
       "notes": [
         "CH +23g",
         "Combo from 1st CH"
@@ -748,6 +842,8 @@
       "block": "-15",
       "hit": "-9",
       "ch": "-4",
+      "damage": "12",
+      "damageTotal": 12,
       "notes": [
         "i15 low, -15"
       ]
@@ -756,12 +852,14 @@
       "wavuId": "Dragunov-d+4,1",
       "input": "d+4,1",
       "name": "Low into Jab",
-      "level": ",h",
+      "level": "L,h",
       "startup": ",i14~15",
       "displayStartup": "i14~15 (string)",
       "block": "-11",
       "hit": "+5",
       "ch": null,
+      "damage": ",8",
+      "damageTotal": 20,
       "notes": [
         "-11 on block",
         "Combo from 1st CH with 1f delay"
@@ -771,12 +869,14 @@
       "wavuId": "Dragunov-d+4,4",
       "input": "d+4,4",
       "name": "Stiletto",
-      "level": ",h",
+      "level": "L,h",
       "startup": ",i22~23",
       "displayStartup": "i22~23 (string)",
       "block": "-14",
       "hit": "+16a (+6)",
       "ch": null,
+      "damage": ",23",
+      "damageTotal": 35,
       "notes": [
         "+16a on hit",
         "Combo from 1st CH"
@@ -792,6 +892,8 @@
       "block": null,
       "hit": "+1d",
       "ch": null,
+      "damage": "35",
+      "damageTotal": 35,
       "notes": [
         "a throw that works as a combo ender"
       ],
@@ -806,6 +908,8 @@
       "block": "-7",
       "hit": "+4",
       "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
       "notes": [
         "i14 mid, -7"
       ]
@@ -814,12 +918,14 @@
       "wavuId": "Dragunov-db+2,1",
       "input": "db+2,1",
       "name": "Mid Chop into Mid",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i20~21",
       "displayStartup": "i20~21 (string)",
       "block": "-10",
       "hit": "+1",
       "ch": "+3",
+      "damage": ",10",
+      "damageTotal": 22,
       "notes": [
         "CH +3",
         "Combo from 1st hit with 9f delay"
@@ -829,12 +935,14 @@
       "wavuId": "Dragunov-db+2,1,2",
       "input": "db+2,1,2",
       "name": "Death's Door",
-      "level": ",m",
+      "level": "m,m,m",
       "startup": ",i25",
       "displayStartup": "i25 (string)",
       "block": "-14",
       "hit": "+29a (+23)",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 42,
       "notes": [
         "+29a on hit",
         "Combo from 2nd CH with 6f delay"
@@ -850,6 +958,8 @@
       "block": "-26",
       "hit": "-2c",
       "ch": "+67a (+51)",
+      "damage": "17",
+      "damageTotal": 17,
       "notes": [
         "his snake edge",
         "CH +67a but -26 on block"
@@ -865,6 +975,8 @@
       "block": null,
       "hit": "+1d",
       "ch": null,
+      "damage": "35",
+      "damageTotal": 35,
       "notes": [
         "the low feint into a throw",
         "Cancel to FC with D, DB or DF"
@@ -880,6 +992,8 @@
       "block": "-31",
       "hit": "+3g",
       "ch": "+20a",
+      "damage": "23",
+      "damageTotal": 23,
       "notes": [
         "his power low",
         "-31 on block"
@@ -895,6 +1009,8 @@
       "block": "-9",
       "hit": "+35d",
       "ch": null,
+      "damage": "27",
+      "damageTotal": 27,
       "notes": [
         "his -17 long-range punisher",
         "+35d on hit"
@@ -910,6 +1026,8 @@
       "block": "-2",
       "hit": "+0d",
       "ch": null,
+      "damage": "40",
+      "damageTotal": 40,
       "notes": [
         "i11 command throw",
         "Opponent recovers in FDFT"
@@ -925,6 +1043,8 @@
       "block": "-8",
       "hit": "+3",
       "ch": "+8",
+      "damage": "16",
+      "damageTotal": 16,
       "notes": [
         "i19 high"
       ]
@@ -933,12 +1053,14 @@
       "wavuId": "Dragunov-f+2,4",
       "input": "f+2,4",
       "name": "Stun Gun",
-      "level": ",m",
+      "level": "h,m",
       "startup": ",i19~20",
       "displayStartup": "i19~20 (string)",
       "block": "-7",
       "hit": "+28a (+23)",
       "ch": "+31a (+25)",
+      "damage": ",24",
+      "damageTotal": 40,
       "notes": [
         "+28a on hit",
         "CH +31a",
@@ -955,6 +1077,8 @@
       "block": "-2",
       "hit": "-1d",
       "ch": null,
+      "damage": "40",
+      "damageTotal": 40,
       "notes": [
         "i11 command throw",
         "Opponent recovers in FUFA (FUFL?)"
@@ -970,6 +1094,8 @@
       "block": "-6",
       "hit": "+5",
       "ch": null,
+      "damage": "11",
+      "damageTotal": 11,
       "notes": [
         "press DF to enter Sneak at +0 on block"
       ]
@@ -978,12 +1104,14 @@
       "wavuId": "Dragunov-f+3,1+2",
       "input": "f+3,1+2",
       "name": "Crushing Blizzard",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i30~31",
       "displayStartup": "i30~31 (string)",
       "block": "-3",
       "hit": "+22a",
       "ch": null,
+      "damage": ",27",
+      "damageTotal": 38,
       "notes": [
         "Heat Engager",
         "his -20 punisher",
@@ -995,12 +1123,14 @@
       "wavuId": "Dragunov-f+3,3",
       "input": "f+3,3",
       "name": "Step-in Mantis",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i17~20",
       "displayStartup": "i17~20 (string)",
       "block": "-10",
       "hit": "+1d / +1c",
       "ch": null,
+      "damage": ",14",
+      "damageTotal": 25,
       "notes": [
         "mid ender",
         "Combo from 1st CH"
@@ -1016,6 +1146,8 @@
       "block": "-13",
       "hit": "+41a",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "+41a on hit"
       ],
@@ -1030,6 +1162,8 @@
       "block": "-7",
       "hit": "+8",
       "ch": null,
+      "damage": "16",
+      "damageTotal": 16,
       "notes": [
         "i14 high, -7"
       ]
@@ -1038,12 +1172,14 @@
       "wavuId": "Dragunov-f+4,3",
       "input": "f+4,3",
       "name": "Falcon Combination",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i30~32",
       "displayStartup": "i30~32 (string)",
       "block": "-9",
       "hit": "+20a",
       "ch": null,
+      "damage": ",22",
+      "damageTotal": 38,
       "notes": [
         "Tornado",
         "his other -14 punisher",
@@ -1055,12 +1191,14 @@
       "wavuId": "Dragunov-f+4,4",
       "input": "f+4,4",
       "name": "Falcon 2",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i20~21",
       "displayStartup": "i20~21 (string)",
       "block": "-11",
       "hit": "+0",
       "ch": "+22a (+15)",
+      "damage": ",11",
+      "damageTotal": 27,
       "notes": [
         "CH +22a",
         "Combo from 1st hit with 5f delay"
@@ -1070,12 +1208,14 @@
       "wavuId": "Dragunov-f+4,4,3",
       "input": "f+4,4,3",
       "name": "Cougar Combination",
-      "level": ",h",
+      "level": "h,h,h",
       "startup": ",i22~23",
       "displayStartup": "i22~23 (string)",
       "block": "-5",
       "hit": "+21a (+12)",
       "ch": null,
+      "damage": ",17",
+      "damageTotal": 44,
       "notes": [
         "-5 on block"
       ],
@@ -1085,12 +1225,14 @@
       "wavuId": "Dragunov-f+4,d+4",
       "input": "f+4,d+4",
       "name": "Orca Combination",
-      "level": ",L",
+      "level": "h,L",
       "startup": ",i25",
       "displayStartup": "i25 (string)",
       "block": "-12",
       "hit": "+3c",
       "ch": null,
+      "damage": ",12",
+      "damageTotal": 28,
       "notes": [
         "the low branch",
         "Combo from 1st hit with 5f delay"
@@ -1106,6 +1248,8 @@
       "block": "-12",
       "hit": "+15a",
       "ch": "+30d (+22)",
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "i15 mid",
         "CH +30d",
@@ -1122,6 +1266,8 @@
       "block": "+5",
       "hit": "+30a (+4)",
       "ch": null,
+      "damage": "35",
+      "damageTotal": 35,
       "notes": [
         "+5 ON BLOCK",
         "homing"
@@ -1137,6 +1283,8 @@
       "block": "-1",
       "hit": "+13c",
       "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "only -1 on block",
         "leads to a guaranteed throw"
@@ -1152,6 +1300,8 @@
       "block": "+4",
       "hit": "+6cg",
       "ch": "+44a",
+      "damage": "22",
+      "damageTotal": 22,
       "notes": [
         "+4 ON BLOCK, CH +44a — his defining pressure mid",
         "f,n,f+2 within 8f for the powered-up version",
@@ -1168,6 +1318,8 @@
       "block": "-7",
       "hit": "+1d",
       "ch": null,
+      "damage": "20,25",
+      "damageTotal": 45,
       "notes": [
         "transitions to an UNBREAKABLE attack throw",
         "Tornado",
@@ -1184,6 +1336,8 @@
       "block": "-15",
       "hit": "+32a",
       "ch": null,
+      "damage": "23",
+      "damageTotal": 23,
       "notes": [
         "Tornado",
         "+32a on hit"
@@ -1199,6 +1353,8 @@
       "block": "-9",
       "hit": "+12c",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "Tornado",
         "his -14 punisher, but the combo side-switches"
@@ -1214,6 +1370,8 @@
       "block": "-5",
       "hit": "+42a",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "+42a on hit at only -5 on block"
       ],
@@ -1228,6 +1386,8 @@
       "block": "-7",
       "hit": "+20a (+10)",
       "ch": null,
+      "damage": "16",
+      "damageTotal": 16,
       "notes": [
         "+20a on hit"
       ],
@@ -1242,6 +1402,8 @@
       "block": "-9",
       "hit": "+19a",
       "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "+19a on hit"
       ],
@@ -1256,6 +1418,8 @@
       "block": null,
       "hit": "-12d",
       "ch": null,
+      "damage": "35",
+      "damageTotal": 35,
       "notes": [
         "UNBREAKABLE throw — the only escape is to duck it"
       ],
@@ -1270,6 +1434,8 @@
       "block": "-13",
       "hit": "+32a (+22a)",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "his -23 punisher"
       ],
@@ -1284,6 +1450,8 @@
       "block": "-4",
       "hit": "+8",
       "ch": "+18g",
+      "damage": "17",
+      "damageTotal": 17,
       "notes": [
         "CH +18g"
       ],
@@ -1298,6 +1466,8 @@
       "block": "-5",
       "hit": "+9",
       "ch": "+53a",
+      "damage": "18",
+      "damageTotal": 18,
       "notes": [
         "i20 high CH launcher, +53a"
       ],
@@ -1312,6 +1482,8 @@
       "block": "-16~17",
       "hit": "+11a",
       "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "+11a on hit"
       ]
@@ -1325,6 +1497,8 @@
       "block": null,
       "hit": "-5d",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "parries high and mid attacks"
       ]
@@ -1338,6 +1512,8 @@
       "block": null,
       "hit": "+5d",
       "ch": null,
+      "damage": "40",
+      "damageTotal": 40,
       "notes": [
         "his dedicated low parry"
       ]
@@ -1351,6 +1527,8 @@
       "block": "-3",
       "hit": "+4",
       "ch": null,
+      "damage": "11",
+      "damageTotal": 11,
       "notes": [
         "i12 out of crouch at -3",
         "press DF for Sneak"
@@ -1360,12 +1538,14 @@
       "wavuId": "Dragunov-ws1,2",
       "input": "ws1,2",
       "name": "Qullion",
-      "level": ",h",
+      "level": "m,h",
       "startup": ",i22~23",
       "displayStartup": "i22~23 (string)",
       "block": "-7",
       "hit": "+10g",
       "ch": null,
+      "damage": ",14",
+      "damageTotal": 25,
       "notes": [
         "-12 crouching punisher",
         "Combo from 1st hit"
@@ -1376,12 +1556,14 @@
       "wavuId": "Dragunov-ws1,3",
       "input": "ws1,3",
       "name": "Double Hilt",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i17~18",
       "displayStartup": "i17~18 (string)",
       "block": "-13",
       "hit": "+15a (+6)",
       "ch": "+36a (+0)",
+      "damage": ",17",
+      "damageTotal": 28,
       "notes": [
         "-12 crouching punisher",
         "wall splat",
@@ -1400,6 +1582,8 @@
       "block": "-14",
       "hit": "+19a (+9)",
       "ch": null,
+      "damage": "28",
+      "damageTotal": 28,
       "notes": [
         "Heat Engager and an i12 punish from crouch"
       ],
@@ -1414,6 +1598,8 @@
       "block": "-12",
       "hit": "+28a (+18)",
       "ch": null,
+      "damage": "15",
+      "damageTotal": 15,
       "notes": [
         "his -15 crouching launcher"
       ],
@@ -1428,6 +1614,8 @@
       "block": "-9",
       "hit": "+15a (+6)",
       "ch": "+36a (+0)",
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "CH +36a"
       ],
@@ -1442,6 +1630,8 @@
       "block": "-5",
       "hit": "+6",
       "ch": null,
+      "damage": "15",
+      "damageTotal": 15,
       "notes": [
         "his -11 crouching check at only -5"
       ],
@@ -1456,6 +1646,8 @@
       "block": "-13",
       "hit": "-4",
       "ch": null,
+      "damage": "8",
+      "damageTotal": 8,
       "notes": [
         "i16 low from full crouch"
       ]
@@ -1464,12 +1656,14 @@
       "wavuId": "Dragunov-FC.df+1,4",
       "input": "FC.df+1,4",
       "name": "Hail Slicer",
-      "level": ",m",
+      "level": "L,m",
       "startup": ",i16~17",
       "displayStartup": "i16~17 (string)",
       "block": null,
       "hit": "+7",
       "ch": null,
+      "damage": ",10",
+      "damageTotal": 18,
       "notes": [
         "the core combo link",
         "a just-frame input gives 1 more damage",
@@ -1487,6 +1681,8 @@
       "block": "-8",
       "hit": "+51a",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "+51a launcher out of Sneak"
       ],
@@ -1501,6 +1697,8 @@
       "block": "-14",
       "hit": "+36a (+26)",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "Tornado",
         "the combo tornado source"
@@ -1516,6 +1714,8 @@
       "block": "-16",
       "hit": "+0",
       "ch": "+1d/(+26a)",
+      "damage": "17,20",
+      "damageTotal": 37,
       "notes": [
         "a low that becomes a throw on hit"
       ],
@@ -1530,6 +1730,8 @@
       "block": "-13",
       "hit": "+27g",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "Power Crush",
         "absorbs a hit into an attack throw",
@@ -1546,6 +1748,8 @@
       "block": "+7",
       "hit": "+8c",
       "ch": null,
+      "damage": "22",
+      "damageTotal": 22,
       "notes": [
         "+7 ON BLOCK and a Heat Engager"
       ],
@@ -1560,6 +1764,8 @@
       "block": "-9",
       "hit": "+19a (+2)",
       "ch": null,
+      "damage": "24",
+      "damageTotal": 24,
       "notes": [
         "the mid option out of Pigeon Roll"
       ]
@@ -1573,6 +1779,8 @@
       "block": "-26",
       "hit": "-1d",
       "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "the low option",
         "-26 on block"
@@ -1587,6 +1795,8 @@
       "block": "-5",
       "hit": "+3d",
       "ch": null,
+      "damage": null,
+      "damageTotal": null,
       "notes": [
         "breaks with 1+2 — UNBREAKABLE in Heat",
         "Transition to BT on throw break"
@@ -1601,6 +1811,8 @@
       "block": "-10",
       "hit": "+1",
       "ch": null,
+      "damage": "16",
+      "damageTotal": 16,
       "notes": [
         "i20 mid off a sidestep"
       ]
@@ -1609,12 +1821,14 @@
       "wavuId": "Dragunov-SS.2,1+2,4",
       "input": "SS.2,1+2,4",
       "name": "Integral Blitz",
-      "level": ",h",
+      "level": "m,m,m,h",
       "startup": ",i26~27",
       "displayStartup": "i26~27 (string)",
       "block": "-10",
       "hit": "+45a",
       "ch": null,
+      "damage": ",28",
+      "damageTotal": 64,
       "notes": [
         "+45a on hit",
         "Move can be delayed by 15F"
@@ -1630,6 +1844,8 @@
       "block": "-11",
       "hit": "+0",
       "ch": null,
+      "damage": "24",
+      "damageTotal": 24,
       "notes": [
         "the grounded hit"
       ]
@@ -1643,6 +1859,8 @@
       "block": "+1",
       "hit": "+2c",
       "ch": null,
+      "damage": "[12;12]",
+      "damageTotal": 24,
       "notes": [
         "+1 on block",
         "Cancel to r45 with b,b on frame 42"
@@ -1657,6 +1875,8 @@
       "block": "+6",
       "hit": "+3d",
       "ch": null,
+      "damage": "25,14,23",
+      "damageTotal": 62,
       "notes": [
         "Heat Smash",
         "+6 on block",
@@ -1672,6 +1892,8 @@
       "block": "-18",
       "hit": "+0d",
       "ch": null,
+      "damage": "55+",
+      "damageTotal": 55,
       "notes": [
         "Rage Art",
         "Transition to attack throw on hit"

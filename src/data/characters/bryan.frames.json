@@ -23,6 +23,8 @@
       "block": "+1",
       "hit": "+8",
       "ch": null,
+      "damage": "5",
+      "damageTotal": 5,
       "notes": [
         "i10 high",
         "+1 on block",
@@ -33,12 +35,14 @@
       "wavuId": "Bryan-1,2",
       "input": "1,2",
       "name": "Left Right Combo",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i12",
       "displayStartup": "i12 (string)",
       "block": "-3",
       "hit": "+8",
       "ch": "+9",
+      "damage": ",8",
+      "damageTotal": 13,
       "notes": [
         "jails from the first hit on block",
         "CH +9",
@@ -51,12 +55,14 @@
       "wavuId": "Bryan-1,2,1",
       "input": "1,2,1",
       "name": "One Two Body Blow",
-      "level": ",m",
+      "level": "h,h,m",
       "startup": ",i19",
       "displayStartup": "i19 (string)",
       "block": "-6",
       "hit": "+6",
       "ch": "+30d",
+      "damage": ",18",
+      "damageTotal": 31,
       "notes": [
         "mid ender",
         "combos from a 1st-hit CH",
@@ -71,12 +77,14 @@
       "wavuId": "Bryan-1,2,3",
       "input": "1,2,3",
       "name": "One Two Low Kick",
-      "level": ",L",
+      "level": "h,h,L",
       "startup": ",i24",
       "displayStartup": "i24 (string)",
       "block": "-12",
       "hit": "+2",
       "ch": "+14a",
+      "damage": ",15",
+      "damageTotal": 28,
       "notes": [
         "low ender",
         "the mixup partner to 1,2,1",
@@ -90,12 +98,14 @@
       "wavuId": "Bryan-1,2,4",
       "input": "1,2,4",
       "name": "One Two Neck Breaker",
-      "level": ",h",
+      "level": "h,h,h",
       "startup": ",i20",
       "displayStartup": "i20 (string)",
       "block": "-5",
       "hit": "+20a (+11)",
       "ch": null,
+      "damage": ",24",
+      "damageTotal": 37,
       "notes": [
         "Heat Engager",
         "Balcony Break",
@@ -109,12 +119,14 @@
       "wavuId": "Bryan-1,4",
       "input": "1,4",
       "name": "Jab into Right Kick",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i15",
       "displayStartup": "i15 (string)",
       "block": "-7",
       "hit": "+4",
       "ch": null,
+      "damage": ",14",
+      "damageTotal": 19,
       "notes": [
         "his i10 punisher",
         "jails from the 1st hit",
@@ -130,6 +142,8 @@
       "block": "+1",
       "hit": "+7",
       "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
       "notes": [
         "i10 high",
         "+1 on block"
@@ -139,12 +153,14 @@
       "wavuId": "Bryan-2,3",
       "input": "2,3",
       "name": "PK Combination",
-      "level": ",m",
+      "level": "h,m",
       "startup": ",i16",
       "displayStartup": "i16 (string)",
       "block": "-10",
       "hit": "+6",
       "ch": "+16a (+7)",
+      "damage": ",14",
+      "damageTotal": 24,
       "notes": [
         "his other i10 punisher",
         "CH +16a",
@@ -162,6 +178,8 @@
       "block": "-7",
       "hit": "+6",
       "ch": null,
+      "damage": "15",
+      "damageTotal": 15,
       "notes": [
         "i12 high check"
       ]
@@ -170,12 +188,14 @@
       "wavuId": "Bryan-4,3",
       "input": "4,3",
       "name": "Right Kick into Spin",
-      "level": ",m",
+      "level": "h,m",
       "startup": ",i24~25",
       "displayStartup": "i24~25 (string)",
       "block": "-10",
       "hit": "+2",
       "ch": null,
+      "damage": ",12",
+      "damageTotal": 27,
       "notes": [
         "his -12 punisher",
         "Combo from 1st hit"
@@ -185,12 +205,14 @@
       "wavuId": "Bryan-4,1",
       "input": "4,1",
       "name": "Viper Bite",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i23~24",
       "displayStartup": "i23~24 (string)",
       "block": "-1",
       "hit": "+7",
       "ch": null,
+      "damage": ",15",
+      "damageTotal": 30,
       "notes": [
         "core combo filler",
         "-1 on block",
@@ -208,6 +230,8 @@
       "block": "-7",
       "hit": "+6",
       "ch": null,
+      "damage": "15",
+      "damageTotal": 15,
       "notes": [
         "homing mid",
         "catches sidestep"
@@ -222,6 +246,8 @@
       "block": "-5",
       "hit": "+1",
       "ch": null,
+      "damage": "8",
+      "damageTotal": 8,
       "notes": [
         "hold DF to access the 1,1,1 extensions"
       ]
@@ -230,12 +256,14 @@
       "wavuId": "Bryan-DF+1,1",
       "input": "DF+1,1",
       "name": "Vulcan Cannon (1st ext)",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i10",
       "displayStartup": "i10 (string)",
       "block": "-10",
       "hit": "-4",
       "ch": null,
+      "damage": ",2",
+      "damageTotal": 10,
       "notes": [
         "chip-pressure string",
         "-10 on block",
@@ -252,6 +280,8 @@
       "block": "-6",
       "hit": "+5",
       "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
       "notes": [
         "i13 mid check"
       ]
@@ -260,12 +290,14 @@
       "wavuId": "Bryan-df+2,1",
       "input": "df+2,1",
       "name": "Blackout Combo",
-      "level": ",h",
+      "level": "m,h",
       "startup": ",i16",
       "displayStartup": "i16 (string)",
       "block": "-4",
       "hit": "+5",
       "ch": null,
+      "damage": ",11",
+      "damageTotal": 23,
       "notes": [
         "his -13 punisher",
         "press b afterward to enter Sway",
@@ -282,6 +314,8 @@
       "block": "-2",
       "hit": "+8c",
       "ch": null,
+      "damage": "17",
+      "damageTotal": 17,
       "notes": [
         "-2 on block, +8 on crouching hit",
         "hold D to stay crouched",
@@ -297,6 +331,8 @@
       "block": "-6",
       "hit": "+8",
       "ch": null,
+      "damage": "13",
+      "damageTotal": 13,
       "notes": [
         "-6 on block, +8 on hit"
       ],
@@ -311,6 +347,8 @@
       "block": "-4",
       "hit": "+7",
       "ch": null,
+      "damage": "14",
+      "damageTotal": 14,
       "notes": [
         "i16 mid, -4 on block"
       ]
@@ -324,6 +362,8 @@
       "block": "-13",
       "hit": "+8",
       "ch": "+59a",
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "his keep-out button",
         "CH +59a"
@@ -339,6 +379,8 @@
       "block": "-11",
       "hit": "+0",
       "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
       "notes": [
         "i16 low, -11"
       ]
@@ -347,12 +389,14 @@
       "wavuId": "Bryan-d+3,2",
       "input": "d+3,2",
       "name": "Quick Low Screw Punch",
-      "level": ",h",
+      "level": "l,h",
       "startup": ",i21",
       "displayStartup": "i21 (string)",
       "block": "-7",
       "hit": "+35a (+9)",
       "ch": null,
+      "damage": ",22",
+      "damageTotal": 32,
       "notes": [
         "combos from a 1st-hit CH",
         "+35a on hit",
@@ -369,6 +413,8 @@
       "block": "-11",
       "hit": "+0",
       "ch": null,
+      "damage": "13",
+      "damageTotal": 13,
       "notes": [
         "i15 low keep-out check"
       ],
@@ -383,6 +429,8 @@
       "block": "-12",
       "hit": "-1",
       "ch": "+4",
+      "damage": "11",
+      "damageTotal": 11,
       "notes": [
         "i16~17 low, CH +4"
       ],
@@ -397,6 +445,8 @@
       "block": "-12",
       "hit": "-1",
       "ch": "+4",
+      "damage": "16",
+      "damageTotal": 16,
       "notes": [
         "i19 low"
       ]
@@ -405,12 +455,14 @@
       "wavuId": "Bryan-d+3+4,2",
       "input": "d+3+4,2",
       "name": "Side Low Knuckle Whip",
-      "level": ",m",
+      "level": "l,m",
       "startup": ",i19",
       "displayStartup": "i19 (string)",
       "block": "-12",
       "hit": "+14a (-3)",
       "ch": null,
+      "damage": ",25",
+      "damageTotal": 41,
       "notes": [
         "combo filler",
         "Tornado",
@@ -428,6 +480,8 @@
       "block": "-9",
       "hit": "+4",
       "ch": null,
+      "damage": "8,16",
+      "damageTotal": 24,
       "notes": [
         "Heat Engager",
         "jails from the 1st hit",
@@ -444,6 +498,8 @@
       "block": "-26",
       "hit": "+70a (+54)",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "i29~30 homing low",
         "launches on hit, -26 on block"
@@ -459,6 +515,8 @@
       "block": "-6~-4",
       "hit": "+19a",
       "ch": null,
+      "damage": "23",
+      "damageTotal": 23,
       "notes": [
         "i22~24 mid, only -6~-4 on block"
       ],
@@ -473,6 +531,8 @@
       "block": "-13",
       "hit": "+14g",
       "ch": "+29a",
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "low",
         "CH +29a",
@@ -490,6 +550,8 @@
       "block": "+4",
       "hit": "+7c",
       "ch": "+78a (+58)",
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "+4 on block",
         "CH +78a"
@@ -505,6 +567,8 @@
       "block": "-7",
       "hit": "+4",
       "ch": "+53a",
+      "damage": "18",
+      "damageTotal": 18,
       "notes": [
         "CH +53a",
         "f+1 cancels into b+2,1 and f+4 into b+2,4",
@@ -516,12 +580,14 @@
       "wavuId": "Bryan-b+2,1",
       "input": "b+2,1",
       "name": "Hands of Doom (1st ext)",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i19",
       "displayStartup": "i19 (string)",
       "block": "+0",
       "hit": "+55",
       "ch": null,
+      "damage": ",16",
+      "damageTotal": 34,
       "notes": [
         "0 on block",
         "core combo filler",
@@ -532,12 +598,14 @@
       "wavuId": "Bryan-b+2,4",
       "input": "b+2,4",
       "name": "Kickass Combo",
-      "level": ",m",
+      "level": "h,m",
       "startup": ",i30-31",
       "displayStartup": "i30 (string)",
       "block": "-5",
       "hit": "+40a (+14)",
       "ch": null,
+      "damage": ",21",
+      "damageTotal": 39,
       "notes": [
         "combo filler, +37a"
       ],
@@ -552,6 +620,8 @@
       "block": "-7",
       "hit": "+4",
       "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
       "notes": [
         "press f to enter Slither Step at +1 on block"
       ]
@@ -565,6 +635,8 @@
       "block": "-10",
       "hit": "+15",
       "ch": null,
+      "damage": "18",
+      "damageTotal": 18,
       "notes": [
         "i16 mid",
         "wall splat",
@@ -581,6 +653,8 @@
       "block": "-10",
       "hit": "+1",
       "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
       "notes": [
         "i15 mid string starter"
       ]
@@ -589,12 +663,14 @@
       "wavuId": "Bryan-f+2,1,4",
       "input": "f+2,1,4",
       "name": "Right Left into Spin Kick",
-      "level": ",m",
+      "level": "m,m,m",
       "startup": ",i18~19",
       "displayStartup": "i18~19 (string)",
       "block": "-13",
       "hit": "+3a",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 42,
       "notes": [
         "his -15 punisher",
         "press 1+2 on hit to gain Snake Eyes",
@@ -611,6 +687,8 @@
       "block": "+0~+2",
       "hit": "+4~+6",
       "ch": "+50a",
+      "damage": "18",
+      "damageTotal": 18,
       "notes": [
         "plus on block",
         "CH +50a"
@@ -626,6 +704,8 @@
       "block": "-9",
       "hit": "+1",
       "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
       "notes": [
         "i18 mid"
       ]
@@ -634,12 +714,14 @@
       "wavuId": "Bryan-f+4,1",
       "input": "f+4,1",
       "name": "Boa Crusher",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i25~26",
       "displayStartup": "i25~26 (string)",
       "block": "-13c",
       "hit": "+40a (+32)",
       "ch": null,
+      "damage": ",10",
+      "damageTotal": 20,
       "notes": [
         "his -18 and whiff punisher",
         "+40a",
@@ -656,6 +738,8 @@
       "block": "+1",
       "hit": "+19d",
       "ch": null,
+      "damage": "22",
+      "damageTotal": 22,
       "notes": [
         "+1 on block",
         "steps as it starts",
@@ -672,6 +756,8 @@
       "block": "-7",
       "hit": "+43a (+33)",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "i14 launcher, but it is a HIGH",
         "can be buffered",
@@ -688,6 +774,8 @@
       "block": "-9",
       "hit": "+41d (-17)",
       "ch": null,
+      "damage": "29",
+      "damageTotal": 29,
       "notes": [
         "Heat Engager",
         "i13 high",
@@ -704,6 +792,8 @@
       "block": "-13",
       "hit": "+28a (-8)",
       "ch": "+39a (-8)",
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "press 1+2 on hit to gain Snake Eyes"
       ],
@@ -718,6 +808,8 @@
       "block": "-9c~-6c",
       "hit": "+15a",
       "ch": null,
+      "damage": "32",
+      "damageTotal": 32,
       "notes": [
         "homing high",
         "the initial sidestep evades some attacks"
@@ -733,6 +825,8 @@
       "block": "+6~+9",
       "hit": "+13a (+3)",
       "ch": null,
+      "damage": "30",
+      "damageTotal": 30,
       "notes": [
         "plus on block out of a run"
       ],
@@ -747,6 +841,8 @@
       "block": "-5",
       "hit": "+26a",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "jumping mid, only -5 on block"
       ],
@@ -761,6 +857,8 @@
       "block": "-13",
       "hit": "+15a",
       "ch": null,
+      "damage": "22",
+      "damageTotal": 22,
       "notes": [
         "Power Crush",
         "gains Snake Eyes on hit"
@@ -776,6 +874,8 @@
       "block": "-7",
       "hit": "+8a",
       "ch": null,
+      "damage": "22",
+      "damageTotal": 22,
       "notes": [
         "Tornado",
         "gains Snake Eyes on hit"
@@ -791,6 +891,8 @@
       "block": "-13",
       "hit": "+32a (+22)",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "the -25 stagger punish",
         "the jump takes 9f"
@@ -806,6 +908,8 @@
       "block": "-10",
       "hit": "+1",
       "ch": null,
+      "damage": "6",
+      "damageTotal": 6,
       "notes": [
         "mid string starter"
       ]
@@ -814,12 +918,14 @@
       "wavuId": "Bryan-uf+2,2,2,3",
       "input": "uf+2,2,2,3",
       "name": "Bloody War",
-      "level": ",m",
+      "level": "m,m,m,m",
       "startup": ",i22~23",
       "displayStartup": "i22~23 (string)",
       "block": "-15",
       "hit": "+30a (+12)",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 34,
       "notes": [
         "his -13 punisher",
         "works standing or crouching",
@@ -836,6 +942,8 @@
       "block": "-14",
       "hit": "+35a (+25)",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "i15 crouching launcher",
         "-14 on block"
@@ -851,6 +959,8 @@
       "block": "-10",
       "hit": "+50a",
       "ch": null,
+      "damage": "10,20",
+      "damageTotal": 30,
       "notes": [
         "attack throw on standing hit",
         "Transition to r90 attack throw on front/side standing hit"
@@ -866,6 +976,8 @@
       "block": "-10",
       "hit": "+4",
       "ch": "+33a (+27)",
+      "damage": "17",
+      "damageTotal": 17,
       "notes": [
         "i12 crouching CH launcher"
       ],
@@ -880,6 +992,8 @@
       "block": "-6",
       "hit": "+5",
       "ch": null,
+      "damage": "16",
+      "damageTotal": 16,
       "notes": [
         "i11~12 crouching check, -6"
       ],
@@ -889,11 +1003,13 @@
       "wavuId": "Bryan-FC.df+2,1",
       "input": "FC.df+2,1",
       "name": "Snake Rampage",
-      "level": ",h",
+      "level": "m,h",
       "startup": "i22~23",
       "block": "-8",
       "hit": "+34a (+8)",
       "ch": null,
+      "damage": ",25",
+      "damageTotal": 37,
       "notes": [
         "his -13 crouching punisher",
         "wall splat",
@@ -910,6 +1026,8 @@
       "block": "-10",
       "hit": "+13g",
       "ch": "+25d",
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "CH +25d"
       ],
@@ -924,6 +1042,8 @@
       "block": "-5",
       "hit": "+15c",
       "ch": null,
+      "damage": "23",
+      "damageTotal": 23,
       "notes": [
         "sidestep high, CH +15c"
       ],
@@ -933,12 +1053,14 @@
       "wavuId": "Bryan-SS.2,1",
       "input": "SS.2,1",
       "name": "Snake Fang",
-      "level": ",h",
+      "level": "M,h",
       "startup": ",i21~22",
       "displayStartup": "i21~22 (string)",
       "block": "-9",
       "hit": "+17cg",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 35,
       "notes": [
         "Heat Engager off a sidestep",
         "Combo from 1st hit with 8f delay",
@@ -955,6 +1077,8 @@
       "block": "+1",
       "hit": "+19cg",
       "ch": "+72a (+56)",
+      "damage": "22",
+      "damageTotal": 22,
       "notes": [
         "Sway move (Wavu lists it as SWA.1)",
         "+1 on block",
@@ -972,6 +1096,8 @@
       "block": "-9",
       "hit": "+6",
       "ch": null,
+      "damage": "16",
+      "damageTotal": 16,
       "notes": [
         "Sway mid, -9"
       ]
@@ -985,6 +1111,8 @@
       "block": "-13",
       "hit": "+5",
       "ch": "+25a",
+      "damage": "23",
+      "damageTotal": 23,
       "notes": [
         "Sway low",
         "CH +25a"
@@ -1000,6 +1128,8 @@
       "block": "-12",
       "hit": "+31a (+21)",
       "ch": null,
+      "damage": "23",
+      "damageTotal": 23,
       "notes": [
         "Sway launcher, +31a on hit",
         "Recovers 2f faster on hit (t48 r30)"
@@ -1015,6 +1145,8 @@
       "block": "-6",
       "hit": "+2",
       "ch": null,
+      "damage": "16",
+      "damageTotal": 16,
       "notes": [
         "Slither Step high, -6"
       ]
@@ -1023,12 +1155,14 @@
       "wavuId": "Bryan-SLS.2,1",
       "input": "qcf+2,1",
       "name": "Cross Bazooka",
-      "level": ",m",
+      "level": "h,m",
       "startup": ",i15~16",
       "displayStartup": "i15~16 (string)",
       "block": "-11",
       "hit": "+33a (+18)",
       "ch": null,
+      "damage": ",23",
+      "damageTotal": 39,
       "notes": [
         "combo filler, +33a",
         "Combo from 1st hit with 4f delay"
@@ -1039,12 +1173,14 @@
       "wavuId": "Bryan-SLS.2,2",
       "input": "qcf+2,2",
       "name": "Cross Grenade",
-      "level": ",m",
+      "level": "h,m",
       "startup": ",i25",
       "displayStartup": "i25 (string)",
       "block": "-7",
       "hit": "+14a",
       "ch": null,
+      "damage": ",25",
+      "damageTotal": 41,
       "notes": [
         "floor-break combo ender",
         "Combo from 1st hit with 4f delay"
@@ -1055,11 +1191,13 @@
       "wavuId": "Bryan-SLS.2,4",
       "input": "qcf+2,4",
       "name": "Cross Bullet",
-      "level": ",m",
+      "level": "h,m",
       "startup": "i16~17",
       "block": "-10",
       "hit": "+5a",
       "ch": null,
+      "damage": ",22",
+      "damageTotal": 38,
       "notes": [
         "gains Snake Eyes",
         "combo filler",
@@ -1077,6 +1215,8 @@
       "block": "-5",
       "hit": "+1",
       "ch": "+3",
+      "damage": "13",
+      "damageTotal": 13,
       "notes": [
         "Slither Step mid, -5"
       ]
@@ -1090,6 +1230,8 @@
       "block": "-9",
       "hit": "+23a (+13)",
       "ch": null,
+      "damage": "23",
+      "damageTotal": 23,
       "notes": [
         "Heat Engager out of Slither Step"
       ],
@@ -1104,6 +1246,8 @@
       "block": null,
       "hit": "+16",
       "ch": null,
+      "damage": "0",
+      "damageTotal": null,
       "notes": [
         "cancellable on frames 1~31",
         "grants Snake Eyes",
@@ -1116,12 +1260,14 @@
       "wavuId": "Bryan-3+4,SNE.2",
       "input": "3+4,SNE.2",
       "name": "Neo Soul Eraser",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i14~15",
       "displayStartup": "i14~15 (string)",
       "block": "-9",
       "hit": "+25a (+20)",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 40,
       "notes": [
         "consumes Snake Eyes",
         "unparryable",
@@ -1134,12 +1280,14 @@
       "wavuId": "Bryan-3+4,SNE.2*",
       "input": "3+4,SNE.2 (hold)",
       "name": "Neo Soul Eraser Exceed",
-      "level": ",M",
+      "level": "m,M",
       "startup": ",i55~56",
       "displayStartup": "i55~56 (string)",
       "block": "+9g~+10g",
       "hit": "+66a (+50)",
       "ch": null,
+      "damage": ",30",
+      "damageTotal": 50,
       "notes": [
         "plus on block and wall splats on block",
         "Tornado"
@@ -1155,6 +1303,8 @@
       "block": "+4",
       "hit": "+33d (+25)",
       "ch": null,
+      "damage": "9,15",
+      "damageTotal": 24,
       "notes": [
         "+4 on block",
         "consumes Snake Eyes"
@@ -1169,6 +1319,8 @@
       "block": "-13",
       "hit": "+7",
       "ch": "+25a",
+      "damage": "24",
+      "damageTotal": 24,
       "notes": [
         "unparryable low",
         "CH +25a",
@@ -1184,6 +1336,8 @@
       "block": "-9",
       "hit": "+23a (+18)",
       "ch": null,
+      "damage": "30",
+      "damageTotal": 30,
       "notes": [
         "strong parry that auto-retaliates",
         "costs 300f of Heat",
@@ -1201,6 +1355,8 @@
       "block": "+9",
       "hit": "-1d",
       "ch": null,
+      "damage": "20,20,35",
+      "damageTotal": 75,
       "notes": [
         "Heat Smash",
         "+9 on block",
@@ -1216,6 +1372,8 @@
       "block": "-18",
       "hit": "+0d",
       "ch": null,
+      "damage": "55+",
+      "damageTotal": 55,
       "notes": [
         "Rage Art",
         "Reversal Break",
@@ -1231,6 +1389,8 @@
       "block": null,
       "hit": "+31",
       "ch": null,
+      "damage": null,
+      "damageTotal": null,
       "notes": [
         "parries high and mid punches",
         "parry state on frames 5~12"

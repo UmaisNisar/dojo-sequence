@@ -2,7 +2,7 @@
   "characterId": "kazuya",
   "game": "Tekken 8",
   "gameVersion": "v3.02.01 (Season 3)",
-  "verifiedAt": "2026-08-23",
+  "verifiedAt": "2026-08-25",
   "sources": [
     {
       "name": "Wavu Wiki",
@@ -23,8 +23,27 @@
       "block": "+1",
       "hit": "+8",
       "ch": null,
+      "damage": "5",
+      "damageTotal": 5,
       "notes": [
         "Recovers 2f faster on hit or block (t27 r17)"
+      ]
+    },
+    "jab-1": {
+      "wavuId": "Kazuya-1,1",
+      "input": "1,1",
+      "name": "1,1",
+      "level": "h,h",
+      "startup": ",i15",
+      "displayStartup": "i10 (string)",
+      "block": "-1",
+      "hit": "+6",
+      "ch": null,
+      "damage": ",6",
+      "damageTotal": 11,
+      "notes": [
+        "Jail from 1st block with 3f delay",
+        "Combo from 1st hit with 3f delay"
       ]
     },
     "flash-punch": {
@@ -37,178 +56,558 @@
       "block": "-17",
       "hit": "+20a (+15)",
       "ch": null,
+      "damage": ",14",
+      "damageTotal": 25,
       "notes": [
         "knockdown on hit",
+        "Balcony Break (airborne)",
         "Combo from 1st hit",
-        "Combo from 2nd hit with 11f delay"
+        "Combo from 2nd hit with 11f delay",
+        "Move can be delayed 11f"
       ],
       "video": "https://wavu.wiki/w/images/0/06/T8-p2-kazuya-1%2C1%2C2.mp4"
+    },
+    "jab-2": {
+      "wavuId": "Kazuya-1,2",
+      "input": "1,2",
+      "name": "One Two Strike",
+      "level": "h,h",
+      "startup": ",i10",
+      "displayStartup": "i10 (string)",
+      "block": "-3",
+      "hit": "+8",
+      "ch": null,
+      "damage": ",8",
+      "damageTotal": 13,
+      "notes": [
+        "Jail from 1st block with 4f delay",
+        "Combo from 1st hit with 4f delay",
+        "Move can be delayed 4f"
+      ],
+      "video": "https://wavu.wiki/w/images/a/a0/T8-p2-kazuya-1%2C2.mp4"
+    },
+    "jab-2-2": {
+      "wavuId": "Kazuya-1,2,2",
+      "input": "1,2,2",
+      "name": "Back Fist Combo",
+      "level": "h,h,h",
+      "startup": ",i17",
+      "displayStartup": "i10 (string)",
+      "block": "-12",
+      "hit": "+4",
+      "ch": null,
+      "damage": ",12",
+      "damageTotal": 25,
+      "notes": [
+        "Combo from 1st hit",
+        "Combo from 2nd hit with 2f delay",
+        "Jail from 1st block with 2f delay",
+        "Input can be delayed 2f",
+        "Move cannot be delayed"
+      ],
+      "video": "https://wavu.wiki/w/images/f/f7/T8-p2-kazuya-1%2C2%2C2.mp4"
+    },
+    "jab-2-4": {
+      "wavuId": "Kazuya-1,2,4",
+      "input": "1,2,4",
+      "name": "Twin Fang Stature Smash",
+      "level": "h,h,L",
+      "startup": ",i23~24",
+      "displayStartup": "i10 (string)",
+      "block": "-14c",
+      "hit": "-3",
+      "ch": "+0c",
+      "damage": ",18",
+      "damageTotal": 31,
+      "notes": [
+        "Combo from 2nd CH with 7f delay",
+        "Interrupt with i3 from 1st block",
+        "-3c on crouching hit"
+      ]
+    },
+    "jab-2-4-3": {
+      "wavuId": "Kazuya-1,2,4,3",
+      "input": "1,2,4,3",
+      "name": "Twin Fang Double Kick",
+      "level": "h,h,L,m",
+      "startup": ",i32",
+      "displayStartup": "i10 (string)",
+      "block": "-2",
+      "hit": "+24a (+15)",
+      "ch": "+69a",
+      "damage": ",25",
+      "damageTotal": 56,
+      "notes": [
+        "Balcony Break",
+        "Combo from 3rd CH with no delay",
+        "Interrupt with i13 from 3rd block",
+        "Interrupt with i2 from 3rd hit",
+        "Whiffs vs SSL from 3rd block",
+        "Move can be delayed 11f"
+      ],
+      "video": "https://wavu.wiki/w/images/8/88/T8-p2-kazuya-1%2C2%2C4%2C3.mp4"
+    },
+    "one-plus-two": {
+      "wavuId": "Kazuya-1+2",
+      "input": "1+2",
+      "name": "Acute Pain",
+      "level": "m,m",
+      "startup": "i12 i15",
+      "block": "-13",
+      "hit": "+13a",
+      "ch": null,
+      "damage": "5,20",
+      "damageTotal": 25,
+      "notes": [
+        "12f punish",
+        "airborne on hit",
+        "Balcony Break"
+      ],
+      "video": "https://wavu.wiki/w/images/4/4d/T8-p2-kazuya-1%2B2.mp4"
+    },
+    "right": {
+      "wavuId": "Kazuya-2",
+      "input": "2",
+      "name": "Right Jab",
+      "level": "h",
+      "startup": "i12",
+      "block": "-3",
+      "hit": "+8",
+      "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
+      "notes": []
+    },
+    "right-2": {
+      "wavuId": "Kazuya-2,2",
+      "input": "2,2",
+      "name": "Double Back Fist",
+      "level": "h,m",
+      "startup": ",i24~25",
+      "displayStartup": "i12 (string)",
+      "block": "-8",
+      "hit": "+7",
+      "ch": "+50a",
+      "damage": ",24",
+      "damageTotal": 36,
+      "notes": [
+        "Balcony Break (airborne)",
+        "Combo from 1st CH",
+        "Interrupt with i4 from 1st block"
+      ],
+      "video": "https://wavu.wiki/w/images/3/3a/T8-p2-kazuya-2%2C2.mp4"
+    },
+    "three": {
+      "wavuId": "Kazuya-3",
+      "input": "3",
+      "name": "Face Kick",
+      "level": "h",
+      "startup": "i14",
+      "block": "-8",
+      "hit": "+4",
+      "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
+      "notes": []
+    },
+    "three-1": {
+      "wavuId": "Kazuya-3,1",
+      "input": "3,1",
+      "name": "Face Kick to Jab",
+      "level": "h,h",
+      "startup": ",i19",
+      "displayStartup": "i14 (string)",
+      "block": "-1",
+      "hit": "+7",
+      "ch": null,
+      "damage": ",10",
+      "damageTotal": 22,
+      "notes": [
+        "Combo from 1st hit",
+        "Transition to CD r16?~r25? with df (+2 +10)",
+        "* CD recovery depends on input",
+        "* r24 forward dash with df,n,f,n,f",
+        "* Cannot buffer attack inputs or sidewalks during forward dash transition"
+      ]
+    },
+    "three-1-4": {
+      "wavuId": "Kazuya-3,1,4",
+      "input": "3,1,4",
+      "name": "Agony Spear",
+      "level": "h,h,m",
+      "startup": ",i21~22",
+      "displayStartup": "i14 (string)",
+      "block": "-6",
+      "hit": "+8",
+      "ch": "+40d (+32)",
+      "damage": ",17",
+      "damageTotal": 39,
+      "notes": [
+        "Knee",
+        "Combo from 2nd CH with 6f delay",
+        "Move can be delayed 14f"
+      ],
+      "video": "https://wavu.wiki/w/images/2/28/T8-p2-kazuya-3%2C1%2C4.mp4"
+    },
+    "four": {
+      "wavuId": "Kazuya-4",
+      "input": "4",
+      "name": "Roundhouse",
+      "level": "h",
+      "startup": "i12",
+      "block": "-9",
+      "hit": "+2",
+      "ch": "+27d",
+      "damage": "18",
+      "damageTotal": 18,
+      "notes": [
+        "Balcony Break (CH)"
+      ],
+      "video": "https://wavu.wiki/w/images/b/bc/T8-p2-kazuya-4.mp4"
+    },
+    "demon-scissors": {
+      "wavuId": "Kazuya-4~3",
+      "input": "4~3",
+      "name": "Demon Scissors",
+      "level": "m,M",
+      "startup": "i31~33 i2~4",
+      "block": "-11a",
+      "hit": "-1a",
+      "ch": null,
+      "damage": "18,17",
+      "damageTotal": 35,
+      "notes": [
+        "Floor Break",
+        "+21a on hit if the 1st hit whiffs"
+      ],
+      "video": "https://wavu.wiki/w/images/4/48/T8-p2-kazuya-4t3.mp4"
     },
     "df1": {
       "wavuId": "Kazuya-df+1",
       "input": "df+1",
-      "name": "Glorious Demon Fist",
+      "name": "Entrails Smash",
       "level": "m",
       "startup": "i15~16",
       "block": "-7",
       "hit": "+9",
       "ch": null,
+      "damage": "11",
+      "damageTotal": 11,
       "notes": []
     },
     "df1-2": {
       "wavuId": "Kazuya-df+1,2",
       "input": "df+1,2",
-      "name": "Glorious Demon God Fist",
+      "name": "Slaughter Hook",
       "level": "m,h",
       "startup": "i18",
       "displayStartup": "i15 (string)",
       "block": "+0c",
       "hit": "+9c",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 31,
       "notes": [
-        "heat engager",
+        "Heat Engager",
+        "Heat Dash +67a (+50a) on hit, +5 on block",
         "Combo from 1st hit with 4F delay",
-        "Input can be delayed by 4F"
+        "Interrupt with i3",
+        "Move cannot be delayed",
+        "Input can be delayed by 4F",
+        "6 chip damage on block"
       ],
       "video": "https://wavu.wiki/w/images/2/25/T8-p2-kazuya-df%2B1%2C2.mp4"
     },
     "df1-4": {
       "wavuId": "Kazuya-df+1,4",
       "input": "df+1,4",
-      "name": "Demon Slayer Kick",
+      "name": "Slaughter High Kick",
       "level": "m,h",
       "startup": "i16~17",
       "displayStartup": "i15 (string)",
       "block": "-11",
       "hit": "+42a",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 31,
       "notes": [
         "launches on hit",
+        "Balcony Break",
         "Combo from 1st hit with 4F delay",
+        "Interrupt with i1",
+        "Move cannot be delayed",
         "Input can be delayed by 4F"
       ],
       "video": "https://wavu.wiki/w/images/c/cd/T8-p2-kazuya-df%2B1%2C4.mp4"
     },
+    "df1-df2": {
+      "wavuId": "Kazuya-df+1,df+2",
+      "input": "df+1,df+2",
+      "name": "Slaughter Uppercut",
+      "level": "m,m",
+      "startup": "i22~23",
+      "displayStartup": "i15 (string)",
+      "block": "-8",
+      "hit": "+18cg",
+      "ch": "+32a (+22)",
+      "damage": ",22",
+      "damageTotal": 33,
+      "notes": [
+        "Tornado",
+        "Balcony Break",
+        "Combo from 1st CH with 4F delay",
+        "Interrupt with i5",
+        "Move can be delayed by 2F",
+        "Input can be delayed by 4F"
+      ],
+      "video": "https://wavu.wiki/w/images/7/71/T8-p2-kazuya-df%2B1%2Cdf%2B2.mp4"
+    },
     "df2": {
       "wavuId": "Kazuya-df+2",
       "input": "df+2",
-      "name": "Demon Godfist",
+      "name": "Abolishing Fist",
       "level": "m",
       "startup": "i14",
       "block": "-12",
       "hit": "+5",
       "ch": "+59a",
+      "damage": "22",
+      "damageTotal": 22,
       "notes": [
-        "homing",
-        "launches on counter-hit only"
+        "launches on counter-hit only",
+        "Homing",
+        "Balcony Break on air hit",
+        "Crumple stun +13F after CH"
       ],
       "video": "https://wavu.wiki/w/images/8/86/T8-p2-kazuya-df%2B2.mp4"
+    },
+    "df3": {
+      "wavuId": "Kazuya-df+3",
+      "input": "df+3",
+      "name": "Impaling Knee",
+      "level": "m",
+      "startup": "i18~19",
+      "block": "-7",
+      "hit": "+9",
+      "ch": null,
+      "damage": "13",
+      "damageTotal": 13,
+      "notes": [
+        "Knee"
+      ]
+    },
+    "df3-1": {
+      "wavuId": "Kazuya-df+3,1",
+      "input": "df+3,1",
+      "name": "Impaling Knee Elbow Slash",
+      "level": "m,h",
+      "startup": ",i22~23",
+      "displayStartup": "i18 (string)",
+      "block": "-7",
+      "hit": "+15g",
+      "ch": "+13c",
+      "damage": ",17",
+      "damageTotal": 30,
+      "notes": [
+        "Balcony Break",
+        "Elbow",
+        "Combo from 1st hit with 7F delay",
+        "Interrupt with i2"
+      ]
+    },
+    "df3-2": {
+      "wavuId": "Kazuya-df+3,2",
+      "input": "df+3,2",
+      "name": "df+3,2",
+      "level": "m,m",
+      "startup": ",i20",
+      "displayStartup": "i18 (string)",
+      "block": "-11",
+      "hit": "+5",
+      "ch": null,
+      "damage": ",13",
+      "damageTotal": 26,
+      "notes": [
+        "Combo from 1st hit with 9F delay"
+      ]
+    },
+    "df3-2-1": {
+      "wavuId": "Kazuya-df+3,2,1",
+      "input": "df+3,2,1",
+      "name": "Impaling Knee Twin Thrust",
+      "level": "m,m,m",
+      "startup": ",i25",
+      "displayStartup": "i18 (string)",
+      "block": "-14",
+      "hit": "+8a (-1)",
+      "ch": "+25",
+      "damage": ",21",
+      "damageTotal": 47,
+      "notes": [
+        "Tornado",
+        "Balcony Break",
+        "Combo from 2nd CH with 10F delay",
+        "Interrupt with i6",
+        "Move can be delayed by 15F",
+        "Input can be delayed by 16F"
+      ],
+      "video": "https://wavu.wiki/w/images/e/ec/T8-p2-kazuya-df%2B3%2C2%2C1.mp4"
+    },
+    "df3plus4": {
+      "wavuId": "Kazuya-df+3+4",
+      "input": "df+3+4",
+      "name": "df+3+4",
+      "level": "m,h",
+      "startup": "i18, i13~14",
+      "block": "-8",
+      "hit": "+0",
+      "ch": null,
+      "damage": "7,9",
+      "damageTotal": 16,
+      "notes": [
+        "Does not jail on block",
+        "Duckable on 1st block"
+      ]
+    },
+    "df3plus4-1": {
+      "wavuId": "Kazuya-df+3+4,1",
+      "input": "df+3+4,1",
+      "name": "df+3+4,1",
+      "level": "m,h,m",
+      "startup": "i11~12",
+      "displayStartup": "i18 (string)",
+      "block": "-11",
+      "hit": "+1",
+      "ch": null,
+      "damage": ",15",
+      "damageTotal": 31,
+      "notes": [
+        "Jail from 1st block"
+      ]
+    },
+    "df3plus4-1-2": {
+      "wavuId": "Kazuya-df+3+4,1,2",
+      "input": "df+3+4,1,2",
+      "name": "Kyogeki Goutsuiken",
+      "level": "m,h,m,M,M",
+      "startup": "i20~21, i7~9",
+      "displayStartup": "i18 (string)",
+      "block": "-19",
+      "hit": "+7a (-10)",
+      "ch": null,
+      "damage": ",14,25",
+      "damageTotal": 70,
+      "notes": [
+        "Balcony Break",
+        "Projectile",
+        "Combo from 3rd hit",
+        "Interrupt with i1",
+        "7 chip damage on block",
+        "+5a (-4) on wall hit"
+      ],
+      "video": "https://wavu.wiki/w/images/d/de/T8-p2-kazuya-df%2B3%2B4%2C1%2C2.mp4"
+    },
+    "df4": {
+      "wavuId": "Kazuya-df+4",
+      "input": "df+4",
+      "name": "df+4",
+      "level": "m",
+      "startup": "i13~14",
+      "block": "-9",
+      "hit": "+2",
+      "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
+      "notes": []
+    },
+    "df4-4": {
+      "wavuId": "Kazuya-df+4,4",
+      "input": "df+4,4",
+      "name": "Tsunami Kick",
+      "level": "m,m",
+      "startup": "i15~16",
+      "displayStartup": "i13 (string)",
+      "block": "-15",
+      "hit": "+0c",
+      "ch": null,
+      "damage": ",16",
+      "damageTotal": 26,
+      "notes": [
+        "Spike",
+        "Combo from 1st hit with 10f delay",
+        "Jail from 1st block with 3f delay",
+        "Move can be delayed 10f"
+      ]
+    },
+    "f1plus2": {
+      "wavuId": "Kazuya-f+1+2",
+      "input": "f+1+2",
+      "name": "Glorious Demon God Fist",
+      "level": "m",
+      "startup": "i25",
+      "block": "-9",
+      "hit": "+11a(+2)",
+      "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
+      "notes": [
+        "Balcony Break",
+        "Parries high and mid punches",
+        "25 damage, +38d (+17) on successful parry"
+      ],
+      "video": "https://wavu.wiki/w/images/f/f1/T8-p2-kazuya-f%2B1%2B2.mp4"
+    },
+    "f2": {
+      "wavuId": "Kazuya-f+2",
+      "input": "f+2",
+      "name": "Soul Thrust",
+      "level": "m",
+      "startup": "i20",
+      "block": "-12",
+      "hit": "+13a(+4)",
+      "ch": null,
+      "damage": "23",
+      "damageTotal": 23,
+      "notes": [
+        "Tornado",
+        "Balcony Break",
+        "Reversal break and -8 on block if an attack is absorbed",
+        "9 chip damage on block after absorbing an attack in power crush state"
+      ],
+      "video": "https://wavu.wiki/w/images/7/7e/T8-p2-kazuya-f%2B2.mp4"
+    },
+    "f3": {
+      "wavuId": "Kazuya-f+3",
+      "input": "f+3",
+      "name": "Oni Front Kick",
+      "level": "m",
+      "startup": "i17",
+      "block": "-13",
+      "hit": "+5",
+      "ch": "+54a(+23)",
+      "damage": "22",
+      "damageTotal": 22,
+      "notes": [
+        "Balcony Break on air hit"
+      ],
+      "video": "https://wavu.wiki/w/images/1/1b/T8-p2-kazuya-f%2B3.mp4"
     },
     "f4": {
       "wavuId": "Kazuya-f+4",
       "input": "f+4",
-      "name": "Devil Backhand Spin Kick",
+      "name": "Right Splits Kick",
       "level": "m",
       "startup": "i19~20",
       "block": "+4c",
       "hit": "+7c",
       "ch": "+31d",
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "plus on block",
-        "spike"
+        "Spike"
       ],
       "video": "https://wavu.wiki/w/images/a/a3/T8-p2-kazuya-f%2B4.mp4"
-    },
-    "b4": {
-      "wavuId": "Kazuya-b+4",
-      "input": "b+4",
-      "name": "Devil Kick",
-      "level": "h",
-      "startup": "i17",
-      "block": "-5",
-      "hit": "+16g",
-      "ch": null,
-      "notes": [
-        "homing",
-        "heat engager"
-      ],
-      "video": "https://wavu.wiki/w/images/5/5e/T8-p2-kazuya-b%2B4.mp4"
-    },
-    "d4": {
-      "wavuId": "Kazuya-d+4",
-      "input": "d+4",
-      "name": "Shin Kick",
-      "level": "l",
-      "startup": "i12",
-      "block": "-15",
-      "hit": "-4",
-      "ch": null,
-      "notes": [
-        "high crush"
-      ]
-    },
-    "d1": {
-      "wavuId": "Kazuya-d+1",
-      "input": "d+1",
-      "name": "Crouch Jab",
-      "level": "sl",
-      "startup": "i10",
-      "block": "-5",
-      "hit": "+6",
-      "ch": null,
-      "notes": [
-        "high crush"
-      ]
-    },
-    "b1-2": {
-      "wavuId": "Kazuya-b+1,2",
-      "input": "b+1,2",
-      "name": "Shattered Spine",
-      "level": "h,m",
-      "startup": "i20",
-      "displayStartup": "i11 (string)",
-      "block": "-14",
-      "hit": "+9 (+0)",
-      "ch": null,
-      "notes": [
-        "11f punish",
-        "Combo from 1st hit"
-      ],
-      "video": "https://wavu.wiki/w/images/c/c8/T8-p2-kazuya-b%2B1%2C2.mp4"
-    },
-    "one-plus-two": {
-      "wavuId": "Kazuya-1+2",
-      "input": "1+2",
-      "name": "Impaling Knee",
-      "level": "m,m",
-      "startup": "i12 i15",
-      "displayStartup": "i12",
-      "block": "-13",
-      "hit": "+13a",
-      "ch": null,
-      "notes": [
-        "12f punish",
-        "airborne on hit"
-      ],
-      "video": "https://wavu.wiki/w/images/4/4d/T8-p2-kazuya-1%2B2.mp4"
-    },
-    "db12": {
-      "wavuId": "Kazuya-db+1,2",
-      "input": "db+1,2",
-      "name": "Abolishing Fists",
-      "level": "m,M,M",
-      "startup": "i20",
-      "displayStartup": "i13 (string)",
-      "block": "-19",
-      "hit": "+9a (-8)",
-      "ch": null,
-      "notes": [
-        "heat engager",
-        "13f punish option",
-        "Combo from 1st hit with 2F delay",
-        "Input can be delayed by 2F"
-      ],
-      "video": "https://wavu.wiki/w/images/f/fe/T8-p2-kazuya-db%2B1%2C2.mp4"
     },
     "ff2": {
       "wavuId": "Kazuya-f,F+2",
@@ -219,9 +618,15 @@
       "block": "-9",
       "hit": "+13cg",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
-        "heat engager",
-        "forces crouch on hit"
+        "forces crouch on hit",
+        "Heat Engager",
+        "Heat Dash +36a (+26a)",
+        "Balcony Break",
+        "6 chip damage on block",
+        "Forces tech back roll on hit"
       ],
       "video": "https://wavu.wiki/w/images/b/b0/T8-p2-kazuya-f%2Cf%2B2.mp4"
     },
@@ -234,27 +639,594 @@
       "block": "-3c",
       "hit": "+46a",
       "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "launches on normal hit",
-        "spike"
+        "Spike"
       ],
       "video": "https://wavu.wiki/w/images/5/53/T8-p2-kazuya-f%2Cf%2B3.mp4"
     },
-    "ws44": {
-      "wavuId": "Kazuya-ws4,4",
-      "input": "ws+4,4",
-      "name": "Tsunami Kick",
-      "level": "m,m",
-      "startup": "i15~16",
-      "displayStartup": "i11 (string)",
-      "block": "-15",
-      "hit": "+0c",
+    "ff4": {
+      "wavuId": "Kazuya-f,F+4",
+      "input": "f,F+4",
+      "name": "Devil's Steel Pedal",
+      "level": "M",
+      "startup": "i17~18",
+      "block": "-9",
+      "hit": "+5",
+      "ch": "+29a(+23)",
+      "damage": "22",
+      "damageTotal": 22,
+      "notes": [],
+      "video": "https://wavu.wiki/w/images/d/db/T8-p2-kazuya-f%2Cf%2B4.mp4"
+    },
+    "fff3": {
+      "wavuId": "Kazuya-f,f,F+3",
+      "input": "f,f,F+3",
+      "name": "Leaping Side Kick",
+      "level": "m",
+      "startup": "i22~25",
+      "block": "+6",
+      "hit": "+13a (+3)",
       "ch": null,
+      "damage": "30",
+      "damageTotal": 30,
       "notes": [
-        "11f crouch punish",
-        "Jail from 1st block",
+        "Balcony Break",
+        "9 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/7/70/T8-p2-kazuya-f%2Cf%2Cf%2B3.mp4"
+    },
+    "b1": {
+      "wavuId": "Kazuya-b+1",
+      "input": "b+1",
+      "name": "b+1",
+      "level": "h",
+      "startup": "i11",
+      "block": "-10",
+      "hit": "+1",
+      "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
+      "notes": []
+    },
+    "b1-2": {
+      "wavuId": "Kazuya-b+1,2",
+      "input": "b+1,2",
+      "name": "Sokushitsu Goda",
+      "level": "h,m",
+      "startup": "i20",
+      "displayStartup": "i11 (string)",
+      "block": "-14",
+      "hit": "+9 (+0)",
+      "ch": null,
+      "damage": ",20",
+      "damageTotal": 30,
+      "notes": [
+        "11f punish",
+        "Balcony Break",
+        "Combo from 1st hit",
+        "Can be delayed 14F",
+        "Combo can be delayed 10F from hit"
+      ],
+      "video": "https://wavu.wiki/w/images/c/c8/T8-p2-kazuya-b%2B1%2C2.mp4"
+    },
+    "b1plus2": {
+      "wavuId": "Kazuya-b+1+2",
+      "input": "b+1+2",
+      "name": "Kumo Kiri",
+      "level": "m",
+      "startup": "i22",
+      "block": "-8",
+      "hit": "+5",
+      "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
+      "notes": [
+        "Heat Engager",
+        "Heat Dash +5, +43d (+35)",
+        "6 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/d/d3/T8-p2-kazuya-b%2B1%2B2.mp4"
+    },
+    "b2": {
+      "wavuId": "Kazuya-b+2",
+      "input": "b+2",
+      "name": "b+2",
+      "level": "m",
+      "startup": "i14",
+      "block": "-8",
+      "hit": "+4",
+      "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
+      "notes": []
+    },
+    "b2-2": {
+      "wavuId": "Kazuya-b+2,2",
+      "input": "b+2,2",
+      "name": "b+2,2",
+      "level": "m,m",
+      "startup": "i25",
+      "displayStartup": "i14 (string)",
+      "block": "-10",
+      "hit": "+1",
+      "ch": null,
+      "damage": ",14",
+      "damageTotal": 26,
+      "notes": []
+    },
+    "b2-2-1plus2": {
+      "wavuId": "Kazuya-b+2,2,1+2",
+      "input": "b+2,2,1+2",
+      "name": "Danzui Raizanba",
+      "level": "m,m,h",
+      "startup": "i28~32",
+      "displayStartup": "i14 (string)",
+      "block": "-8",
+      "hit": "+38d (-20)",
+      "ch": null,
+      "damage": ",20",
+      "damageTotal": 46,
+      "notes": [
+        "Balcony Break",
+        "Chip damage when guarded"
+      ],
+      "video": "https://wavu.wiki/w/images/1/15/T8-p2-kazuya-b%2B2%2C2%2C1%2B2.mp4"
+    },
+    "b2-4": {
+      "wavuId": "Kazuya-b+2,4",
+      "input": "b+2,4",
+      "name": "b+2,4",
+      "level": "m,h",
+      "startup": ",i22",
+      "displayStartup": "i14 (string)",
+      "block": "-3",
+      "hit": "+8",
+      "ch": null,
+      "damage": ",12",
+      "damageTotal": 24,
+      "notes": [
+        "Combo from 1st hit",
+        "Can be delayed 10F",
+        "Combo can be delayed 5F from hit"
+      ]
+    },
+    "b2-4-1": {
+      "wavuId": "Kazuya-b+2,4,1",
+      "input": "b+2,4,1",
+      "name": "Rampaging Demon",
+      "level": "m,h,m",
+      "startup": ",i19",
+      "displayStartup": "i14 (string)",
+      "block": "-14",
+      "hit": "+11a (+2)",
+      "ch": null,
+      "damage": ",22",
+      "damageTotal": 46,
+      "notes": [
+        "Balcony Break",
+        "Combo from 2nd CH"
+      ],
+      "video": "https://wavu.wiki/w/images/e/e5/T8-p2-kazuya-b%2B2%2C4%2C1.mp4"
+    },
+    "b3": {
+      "wavuId": "Kazuya-b+3",
+      "input": "b+3",
+      "name": "b+3",
+      "level": "h",
+      "startup": "i18",
+      "block": "-8",
+      "hit": "+3",
+      "ch": null,
+      "damage": "15",
+      "damageTotal": 15,
+      "notes": []
+    },
+    "b3-1": {
+      "wavuId": "Kazuya-b+3,1",
+      "input": "b+3,1",
+      "name": "b+3,1",
+      "level": "h,h",
+      "startup": ",i12",
+      "displayStartup": "i18 (string)",
+      "block": "+0",
+      "hit": "+6",
+      "ch": null,
+      "damage": ",10",
+      "damageTotal": 25,
+      "notes": [
+        "Jails",
         "Combo from 1st hit"
       ]
+    },
+    "b3-1-4": {
+      "wavuId": "Kazuya-b+3,1,4",
+      "input": "b+3,1,4",
+      "name": "b+3,1,4",
+      "level": "h,h,l",
+      "startup": ",i16",
+      "displayStartup": "i18 (string)",
+      "block": "-10c",
+      "hit": "+7",
+      "ch": null,
+      "damage": ",10",
+      "damageTotal": 35,
+      "notes": []
+    },
+    "b3-1-4-1": {
+      "wavuId": "Kazuya-b+3,1,4,1",
+      "input": "b+3,1,4,1",
+      "name": "Demon's Wrath",
+      "level": "h,h,l,m",
+      "startup": ",i15",
+      "displayStartup": "i18 (string)",
+      "block": "-14",
+      "hit": "+15a (+6)",
+      "ch": null,
+      "damage": ",15",
+      "damageTotal": 50,
+      "notes": [
+        "Balcony Break"
+      ],
+      "video": "https://wavu.wiki/w/images/8/84/T8-p2-kazuya-b%2B3%2C1%2C4%2C1.mp4"
+    },
+    "b3-1-4-3": {
+      "wavuId": "Kazuya-b+3,1,4,3",
+      "input": "b+3,1,4,3",
+      "name": "Reign of Terror",
+      "level": "h,h,l,l",
+      "startup": ",i20",
+      "displayStartup": "i18 (string)",
+      "block": "-13c",
+      "hit": "+1",
+      "ch": null,
+      "damage": ",12",
+      "damageTotal": 47,
+      "notes": [],
+      "video": "https://wavu.wiki/w/images/9/98/T8-p2-kazuya-b%2B3%2C1%2C4%2C3.mp4"
+    },
+    "b4": {
+      "wavuId": "Kazuya-b+4",
+      "input": "b+4",
+      "name": "Flash Tornado",
+      "level": "h",
+      "startup": "i17",
+      "block": "-5",
+      "hit": "+16g",
+      "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
+      "notes": [
+        "Heat Engager",
+        "Heat Dash +5, +43d (+35)",
+        "Homing",
+        "6 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/5/5e/T8-p2-kazuya-b%2B4.mp4"
+    },
+    "db1": {
+      "wavuId": "Kazuya-db+1",
+      "input": "db+1",
+      "name": "db+1",
+      "level": "m",
+      "startup": "i13",
+      "block": "-10",
+      "hit": "+0",
+      "ch": null,
+      "damage": "7",
+      "damageTotal": 7,
+      "notes": []
+    },
+    "db12": {
+      "wavuId": "Kazuya-db+1,2",
+      "input": "db+1,2",
+      "name": "Goutsuiken",
+      "level": "m,M,M",
+      "startup": "i20",
+      "displayStartup": "i13 (string)",
+      "block": "-19",
+      "hit": "+9a (-8)",
+      "ch": null,
+      "damage": ",8,15",
+      "damageTotal": 30,
+      "notes": [
+        "13f punish option",
+        "Heat Engager",
+        "Heat Dash +5, +43d (+35)",
+        "Balcony Break",
+        "4 chip damage on block",
+        "Combo from 1st hit with 2F delay",
+        "Move cannot be delayed",
+        "Input can be delayed by 2F"
+      ],
+      "video": "https://wavu.wiki/w/images/f/fe/T8-p2-kazuya-db%2B1%2C2.mp4"
+    },
+    "db2": {
+      "wavuId": "Kazuya-db+2",
+      "input": "db+2",
+      "name": "Lion Slayer",
+      "level": "m",
+      "startup": "i18",
+      "block": "-4",
+      "hit": "+7c",
+      "ch": "+27d",
+      "damage": "23",
+      "damageTotal": 23,
+      "notes": [
+        "Spike"
+      ],
+      "video": "https://wavu.wiki/w/images/0/01/T8-p2-kazuya-db%2B2.mp4"
+    },
+    "db3": {
+      "wavuId": "Kazuya-db+3",
+      "input": "db+3",
+      "name": "Sliding Low Kick",
+      "level": "L",
+      "startup": "i19~20",
+      "block": "-12c",
+      "hit": "-1",
+      "ch": "+7c",
+      "damage": "14",
+      "damageTotal": 14,
+      "notes": [],
+      "video": "https://wavu.wiki/w/images/8/83/T8-p2-kazuya-db%2B3.mp4"
+    },
+    "db4": {
+      "wavuId": "Kazuya-db+4",
+      "input": "db+4",
+      "name": "Stature Smash",
+      "level": "L",
+      "startup": "i20",
+      "block": "-12",
+      "hit": "+4",
+      "ch": "+17g",
+      "damage": "18",
+      "damageTotal": 18,
+      "notes": [
+        "Flips over on grounded hit"
+      ],
+      "video": "https://wavu.wiki/w/images/2/2c/T8-p2-kazuya-db%2B4.mp4"
+    },
+    "d1": {
+      "wavuId": "Kazuya-d+1",
+      "input": "d+1",
+      "name": "Crouch Jab",
+      "level": "sl",
+      "startup": "i10",
+      "block": "-5",
+      "hit": "+6",
+      "ch": null,
+      "damage": "5",
+      "damageTotal": 5,
+      "notes": [
+        "high crush",
+        "Returns to standing when input F"
+      ]
+    },
+    "d1plus2": {
+      "wavuId": "Kazuya-d+1+2",
+      "input": "d+1+2",
+      "name": "Nejiri Uraken",
+      "level": "L",
+      "startup": "i23",
+      "block": "-14c",
+      "hit": "+3c",
+      "ch": "+27a",
+      "damage": "20",
+      "damageTotal": 20,
+      "notes": [
+        "high crush",
+        "launches on counter-hit"
+      ],
+      "video": "https://wavu.wiki/w/images/2/2c/T8-p2-kazuya-d%2B1%2B2.mp4"
+    },
+    "d2": {
+      "wavuId": "Kazuya-d+2",
+      "input": "d+2",
+      "name": "Crouch Straight",
+      "level": "sl",
+      "startup": "i11",
+      "block": "-4",
+      "hit": "+7",
+      "ch": null,
+      "damage": "8",
+      "damageTotal": 8,
+      "notes": []
+    },
+    "d3": {
+      "wavuId": "Kazuya-d+3",
+      "input": "d+3",
+      "name": "Crouch Spin Kick",
+      "level": "L",
+      "startup": "i16",
+      "block": "-17",
+      "hit": "-6",
+      "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
+      "notes": []
+    },
+    "d4": {
+      "wavuId": "Kazuya-d+4",
+      "input": "d+4",
+      "name": "Crouch Chin Kick",
+      "level": "l",
+      "startup": "i12",
+      "block": "-15",
+      "hit": "-4",
+      "ch": null,
+      "damage": "6",
+      "damageTotal": 6,
+      "notes": [
+        "high crush"
+      ]
+    },
+    "fc-df3plus4": {
+      "wavuId": "Kazuya-FC.df+3+4",
+      "input": "FC.df+3+4",
+      "name": "Tombstone Crusher",
+      "level": "m",
+      "startup": "i23",
+      "block": "-11c",
+      "hit": "+11a",
+      "ch": null,
+      "damage": "24",
+      "damageTotal": 24,
+      "notes": [],
+      "video": "https://wavu.wiki/w/images/2/25/T8-p2-kazuya-fc.df%2B3%2B4.mp4"
+    },
+    "gates-of-hell": {
+      "wavuId": "Kazuya-FC.db+1+2",
+      "input": "FC.db+1+2",
+      "name": "Gates of Hell",
+      "level": "th(h)",
+      "startup": "i12~14",
+      "block": "-6",
+      "hit": "-3d",
+      "ch": null,
+      "damage": "40",
+      "damageTotal": 40,
+      "notes": [
+        "Throw break: 1+2"
+      ],
+      "video": "https://wavu.wiki/w/images/9/96/T8-p2-kazuya-fc.db%2B1%2B2.mp4"
+    },
+    "uf1": {
+      "wavuId": "Kazuya-uf+1",
+      "input": "uf+1",
+      "name": "Raijen Uraken",
+      "level": "m",
+      "startup": "i20",
+      "block": "-7",
+      "hit": "+3",
+      "ch": "+3",
+      "damage": "16",
+      "damageTotal": 16,
+      "notes": []
+    },
+    "uf2": {
+      "wavuId": "Kazuya-uf+2",
+      "input": "uf+2",
+      "name": "Hook",
+      "level": "h",
+      "startup": "i15",
+      "block": "-12",
+      "hit": "+9",
+      "ch": null,
+      "damage": "17",
+      "damageTotal": 17,
+      "notes": [
+        "Balcony Break on air hit"
+      ]
+    },
+    "uf3": {
+      "wavuId": "Kazuya-uf+3",
+      "input": "uf+3",
+      "name": "Searing Edge",
+      "level": "m",
+      "startup": "i19",
+      "block": "-9",
+      "hit": "+17(+9)",
+      "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
+      "notes": [
+        "Balcony Break"
+      ],
+      "video": "https://wavu.wiki/w/images/b/b0/T8-p2-kazuya-uf%2B3.mp4"
+    },
+    "uf4": {
+      "wavuId": "Kazuya-uf+4",
+      "input": "uf+4",
+      "name": "uf+4",
+      "level": "m",
+      "startup": "i25",
+      "block": "-12",
+      "hit": "-1",
+      "ch": null,
+      "damage": "16",
+      "damageTotal": 16,
+      "notes": [
+        "Balcony Break on air hit"
+      ]
+    },
+    "uf4-4": {
+      "wavuId": "Kazuya-uf+4,4",
+      "input": "uf+4,4",
+      "name": "uf+4,4",
+      "level": "m,l",
+      "startup": null,
+      "displayStartup": "i25 (string)",
+      "block": "-23",
+      "hit": "+29a",
+      "ch": null,
+      "damage": ",12",
+      "damageTotal": 28,
+      "notes": [
+        "Combo from 1st CH"
+      ]
+    },
+    "ufn4": {
+      "wavuId": "Kazuya-uf,n,4",
+      "input": "uf,n,4",
+      "name": "Delayed Rising Toe Kick",
+      "level": "m",
+      "startup": "i23",
+      "block": "-13",
+      "hit": "+32a(+22)",
+      "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
+      "notes": [],
+      "video": "https://wavu.wiki/w/images/0/05/T8-p2-kazuya-uf%2Cn%2C4.mp4"
+    },
+    "ub1": {
+      "wavuId": "Kazuya-ub+1",
+      "input": "ub+1",
+      "name": "ub+1",
+      "level": "m",
+      "startup": "i18",
+      "block": "-12",
+      "hit": "-1",
+      "ch": "-1",
+      "damage": "12",
+      "damageTotal": 12,
+      "notes": [
+        "Spike"
+      ]
+    },
+    "ub1plus2": {
+      "wavuId": "Kazuya-ub+1+2",
+      "input": "ub+1+2",
+      "name": "Inferno",
+      "level": "h",
+      "startup": "i41~56",
+      "block": null,
+      "hit": "-7c~+8c",
+      "ch": null,
+      "damage": "32",
+      "damageTotal": 32,
+      "notes": [
+        "Balcony Break",
+        "9 chip damage on block",
+        "Forces tech backroll on hit",
+        "* Opponent recovers crouching"
+      ]
+    },
+    "ws1": {
+      "wavuId": "Kazuya-ws1",
+      "input": "ws+1",
+      "name": "Uppercut",
+      "level": "m",
+      "startup": "i13~14",
+      "block": "-5",
+      "hit": "+5",
+      "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
+      "notes": []
     },
     "ws12": {
       "wavuId": "Kazuya-ws1,2",
@@ -266,12 +1238,29 @@
       "block": "-12",
       "hit": "+73a(+57)",
       "ch": null,
+      "damage": ",12",
+      "damageTotal": 22,
       "notes": [
         "13f crouch launch punish",
-        "tornado",
-        "Combo from 1st hit"
+        "Tornado",
+        "Combo from 1st hit",
+        "Interrupt with i2 from 1st block"
       ],
       "video": "https://wavu.wiki/w/images/2/24/T8-p2-kazuya-ws1%2C2.mp4"
+    },
+    "ws1plus2": {
+      "wavuId": "Kazuya-ws1+2",
+      "input": "ws+1+2",
+      "name": "Fujin Uraken",
+      "level": "m",
+      "startup": "i13~14",
+      "block": "-9",
+      "hit": "+8",
+      "ch": "+24a",
+      "damage": "25",
+      "damageTotal": 25,
+      "notes": [],
+      "video": "https://wavu.wiki/w/images/a/ad/T8-p2-kazuya-ws1%2B2.mp4"
     },
     "ws2": {
       "wavuId": "Kazuya-ws2",
@@ -282,12 +1271,63 @@
       "block": "-18",
       "hit": "+57a",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
-        "homing",
         "crumple launcher",
+        "Homing",
+        "Crumple stun",
         "Recovers 5f faster on hit (t49 r32)"
       ],
       "video": "https://wavu.wiki/w/images/6/61/T8-p2-kazuya-ws2.mp4"
+    },
+    "ws3": {
+      "wavuId": "Kazuya-ws3",
+      "input": "ws+3",
+      "name": "Engetsusen",
+      "level": "m",
+      "startup": "i21~23",
+      "block": "-5",
+      "hit": "+20a (+11)",
+      "ch": null,
+      "damage": "24",
+      "damageTotal": 24,
+      "notes": [
+        "Homing",
+        "Balcony Break"
+      ],
+      "video": "https://wavu.wiki/w/images/7/74/T8-p2-kazuya-ws3.mp4"
+    },
+    "ws4": {
+      "wavuId": "Kazuya-ws4",
+      "input": "ws+4",
+      "name": "Toe Smash",
+      "level": "m",
+      "startup": "i11~12",
+      "block": "-3",
+      "hit": "+8",
+      "ch": null,
+      "damage": "13",
+      "damageTotal": 13,
+      "notes": []
+    },
+    "ws44": {
+      "wavuId": "Kazuya-ws4,4",
+      "input": "ws+4,4",
+      "name": "Tsunami Kick",
+      "level": "m,m",
+      "startup": "i15~16",
+      "displayStartup": "i11 (string)",
+      "block": "-15",
+      "hit": "+0c",
+      "ch": null,
+      "damage": ",16",
+      "damageTotal": 29,
+      "notes": [
+        "11f crouch punish",
+        "Jail from 1st block",
+        "Combo from 1st hit"
+      ]
     },
     "wgf": {
       "wavuId": "Kazuya-f,n,d,df+2",
@@ -298,8 +1338,11 @@
       "block": "-10",
       "hit": "+39a (+29)",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
-        "launches on hit"
+        "launches on hit",
+        "Becomes Electric Wind God Fist during Heat (Consumes 60F of remaining Heat Time)"
       ],
       "video": "https://wavu.wiki/w/images/0/05/T8-p2-kazuya-f%2Cn%2Cd%2Cdf%2B2.mp4"
     },
@@ -312,12 +1355,67 @@
       "block": "+5",
       "hit": "+39a (+29)",
       "ch": null,
+      "damage": "23",
+      "damageTotal": 23,
       "notes": [
         "just frame",
         "plus on block",
-        "13f effective punish"
+        "13f effective punish",
+        "5 chip damage on block",
+        "Actual startup i14 (i13 if done from Mist Step)"
       ],
       "video": "https://wavu.wiki/w/images/e/e1/T8-p2-kazuya-f%2Cn%2Cd%2Cdfh2.mp4"
+    },
+    "tgf": {
+      "wavuId": "Kazuya-f,n,d,df+1",
+      "input": "f,n,d,df+1",
+      "name": "Thunder God Fist",
+      "level": "m",
+      "startup": "i20~22",
+      "block": "-16",
+      "hit": "+29a (+19)",
+      "ch": null,
+      "damage": "23",
+      "damageTotal": 23,
+      "notes": [
+        "Tornado"
+      ],
+      "video": "https://wavu.wiki/w/images/9/9d/T8-p2-kazuya-f%2Cn%2Cd%2Cdf%2B1.mp4"
+    },
+    "parricide": {
+      "wavuId": "Kazuya-f,n,d,df+1+2",
+      "input": "f,n,d,df+1+2",
+      "name": "Parricide Fist",
+      "level": "m",
+      "startup": "i24",
+      "block": "+5",
+      "hit": "+25a (+15)",
+      "ch": null,
+      "damage": "33",
+      "damageTotal": 33,
+      "notes": [
+        "Tornado",
+        "Balcony Break",
+        "9 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/a/aa/T8-p2-kazuya-f%2Cn%2Cd%2Cdf%2B1%2B2.mp4"
+    },
+    "hell-lancer": {
+      "wavuId": "Kazuya-f,n,d,df+3",
+      "input": "f,n,d,df+3",
+      "name": "Hell Lancer",
+      "level": "h",
+      "startup": "i18~27",
+      "block": "-9",
+      "hit": "+12a (+2)",
+      "ch": null,
+      "damage": "30",
+      "damageTotal": 30,
+      "notes": [
+        "Balcony Break",
+        "12 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/b/b4/T8-p2-kazuya-f%2Cn%2Cd%2Cdf%2B3.mp4"
     },
     "hellsweep": {
       "wavuId": "Kazuya-f,n,d,DF+4",
@@ -328,6 +1426,8 @@
       "block": "-23",
       "hit": "-3c",
       "ch": "+20a",
+      "damage": "15",
+      "damageTotal": 15,
       "notes": [
         "launch punishable on block"
       ]
@@ -335,33 +1435,222 @@
     "hellsweep1": {
       "wavuId": "Kazuya-f,n,d,DF+4,1",
       "input": "f,n,d,DF+4,1",
-      "name": "Spinning Demon → Left Hook",
+      "name": "Spinning Demon > Left Hook",
       "level": "L,m",
       "startup": "i26",
       "displayStartup": "i16 (string)",
       "block": "-16",
       "hit": "+16a (+7) / +17a (+10)",
       "ch": null,
+      "damage": ",24 (16)",
+      "damageTotal": 39,
       "notes": [
         "the standard hellsweep ender",
+        "Balcony Break",
         "Airborne combo from first hit (+17a (+10))"
       ],
       "video": "https://wavu.wiki/w/images/0/0e/T8-p2-kazuya-f%2Cn%2Cd%2Cdf%2B4%2C1.mp4"
     },
-    "d1plus2": {
-      "wavuId": "Kazuya-d+1+2",
-      "input": "d+1+2",
-      "name": "Nejiri Uraken",
-      "level": "L",
-      "startup": "i23",
-      "block": "-14c",
-      "hit": "+3c",
-      "ch": "+27a",
+    "hellsweep4": {
+      "wavuId": "Kazuya-f,n,d,DF+4,4",
+      "input": "f,n,d,DF+4,4",
+      "name": "Illusive Demon",
+      "level": "L,h",
+      "startup": "i30~31",
+      "displayStartup": "i16 (string)",
+      "block": "-9",
+      "hit": "+17a (+8) / +10a (+9)",
+      "ch": null,
+      "damage": ",27 (18)",
+      "damageTotal": 42,
       "notes": [
-        "high crush",
-        "launches on counter-hit"
+        "Balcony Break",
+        "Airborne combo from first hit (+10a (+9))"
       ],
-      "video": "https://wavu.wiki/w/images/2/2c/T8-p2-kazuya-d%2B1%2B2.mp4"
+      "video": "https://wavu.wiki/w/images/6/62/T8-p2-kazuya-f%2Cn%2Cd%2Cdf%2B4%2C4.mp4"
+    },
+    "ss1plus2": {
+      "wavuId": "Kazuya-SS.1+2",
+      "input": "SS.1+2",
+      "name": "Elkeid",
+      "level": "h",
+      "startup": "i19~20",
+      "block": "+5",
+      "hit": "+26g",
+      "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
+      "notes": [
+        "Homing",
+        "7 chip damage on block",
+        "Transition to r18 CD with DF",
+        "* Transition to r19? forward dash with f,n,f (+4?/+25g?)"
+      ],
+      "video": "https://wavu.wiki/w/images/f/f8/T8-p2-kazuya-ss.1%2B2.mp4"
+    },
+    "ss3": {
+      "wavuId": "Kazuya-SS.3",
+      "input": "SS.3",
+      "name": "Shattered Spine",
+      "level": "m",
+      "startup": "i23",
+      "block": "-7",
+      "hit": "+16a (+7)",
+      "ch": "+50a",
+      "damage": "23",
+      "damageTotal": 23,
+      "notes": [
+        "Balcony Break"
+      ],
+      "video": "https://wavu.wiki/w/images/f/f8/T8-p2-kazuya-ss.3.mp4"
+    },
+    "ss4": {
+      "wavuId": "Kazuya-SS.4",
+      "input": "SS.4",
+      "name": "SS.4",
+      "level": "m",
+      "startup": "i15",
+      "block": "-6",
+      "hit": "+4",
+      "ch": null,
+      "damage": "14",
+      "damageTotal": 14,
+      "notes": [
+        "Balcony Break"
+      ]
+    },
+    "ss4-1": {
+      "wavuId": "Kazuya-SS.4,1",
+      "input": "SS.4,1",
+      "name": "Hanetoguro",
+      "level": "m,m",
+      "startup": "i21~22",
+      "displayStartup": "i15 (string)",
+      "block": "-13",
+      "hit": "+21a (+12)",
+      "ch": null,
+      "damage": ",22",
+      "damageTotal": 36,
+      "notes": [
+        "Strong Aerial Tailspin",
+        "Elbow",
+        "Combo from 1st hit with 9f delay",
+        "Move can be delayed 9F",
+        "Recovers 5F faster on hit (t65 r28)"
+      ]
+    },
+    "heat-burst": {
+      "wavuId": "Kazuya-2+3",
+      "input": "2+3",
+      "name": "Heat Burst",
+      "level": "m",
+      "startup": "i16",
+      "block": "+1",
+      "hit": "+2c",
+      "ch": null,
+      "damage": "[12;12]",
+      "damageTotal": 24,
+      "notes": [
+        "Heat Burst",
+        "Cancel to r45 with b,b on frame 42",
+        "2 chip damage on block",
+        "12 chip damage on hit",
+        "Only deals recoverable damage",
+        "Cannot cause a K.O."
+      ]
+    },
+    "heat-smash": {
+      "wavuId": "Kazuya-H.2+3",
+      "input": "H.2+3",
+      "name": "Omega Crash",
+      "level": "L,m,th",
+      "startup": "i18, i27",
+      "block": "-14",
+      "hit": "+0d",
+      "ch": null,
+      "damage": "9,14 (20),17 (34)",
+      "damageTotal": 40,
+      "notes": [
+        "Heat Smash",
+        "Balcony Break",
+        "8 chip damage"
+      ]
+    },
+    "rage-art": {
+      "wavuId": "Kazuya-R.df+1+2",
+      "input": "R.df+1+2",
+      "name": "Demonic Catastrophe",
+      "level": "m,t",
+      "startup": "i20",
+      "block": "-18",
+      "hit": "+0d",
+      "ch": null,
+      "damage": "55+",
+      "damageTotal": 55,
+      "notes": [
+        "Rage Art",
+        "Removes Recoverable Health",
+        "Reversal Break",
+        "Damage increases with lower health, maximum 82",
+        "Freezes match timer on activation and on hit",
+        "Restores recoverable health on hit",
+        "Transition to attack throw on hit",
+        "Consumes Rage"
+      ]
+    },
+    "throw-1plus3": {
+      "wavuId": "Kazuya-1+3",
+      "input": "1+3",
+      "name": "Double High Sweep",
+      "level": "th(h)",
+      "startup": "i12~14",
+      "block": "+0",
+      "hit": "+2d",
+      "ch": null,
+      "damage": "35",
+      "damageTotal": 35,
+      "notes": [
+        "Homing",
+        "Throw break: 1 or 2",
+        "Recovers BT on break"
+      ],
+      "video": "https://wavu.wiki/w/images/5/5b/T8-p2-kazuya-1%2B3.mp4"
+    },
+    "throw-2plus4": {
+      "wavuId": "Kazuya-2+4",
+      "input": "2+4",
+      "name": "Lightning Crash",
+      "level": "th(h)",
+      "startup": "i12~14",
+      "block": "+0",
+      "hit": "+0d",
+      "ch": null,
+      "damage": "35",
+      "damageTotal": 35,
+      "notes": [
+        "Homing",
+        "Throw break: 1 or 2"
+      ],
+      "video": "https://wavu.wiki/w/images/3/31/T8-p2-kazuya-2%2B4.mp4"
+    },
+    "uf1plus2": {
+      "wavuId": "Kazuya-uf+1+2",
+      "input": "uf+1+2",
+      "name": "Stonehead",
+      "level": "th(h)",
+      "startup": "i12~14",
+      "block": "+0",
+      "hit": "+26d (+8)",
+      "ch": null,
+      "damage": "35",
+      "damageTotal": 35,
+      "notes": [
+        "Throw break: 1+2",
+        "Balcony Break",
+        "Side switch on break",
+        "15 additional damage on wall hit"
+      ],
+      "video": "https://wavu.wiki/w/images/0/0b/T8-p2-kazuya-uf%2B1%2B2.mp4"
     }
   }
 }

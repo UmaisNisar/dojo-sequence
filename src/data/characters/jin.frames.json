@@ -23,6 +23,8 @@
       "block": "+1",
       "hit": "+8",
       "ch": null,
+      "damage": "5",
+      "damageTotal": 5,
       "notes": [
         "i10 high",
         "+1 on block",
@@ -33,12 +35,14 @@
       "wavuId": "Jin-1,2",
       "input": "1,2",
       "name": "Left Right Combo",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i10",
       "displayStartup": "i10 (string)",
       "block": "-3",
       "hit": "+6",
       "ch": null,
+      "damage": ",12",
+      "damageTotal": 17,
       "notes": [
         "-3 on block",
         "the root of three enders",
@@ -50,12 +54,14 @@
       "wavuId": "Jin-1,2,1",
       "input": "1,2,1",
       "name": "Left Right into Black Wing Rondo",
-      "level": ",m",
+      "level": "h,h,m",
       "startup": ",i20~22",
       "displayStartup": "i20~22 (string)",
       "block": "-16",
       "hit": "+31a (+21)",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 37,
       "notes": [
         "launches",
         "his back-turned punisher",
@@ -69,12 +75,14 @@
       "wavuId": "Jin-1,2,3",
       "input": "1,2,3",
       "name": "Left Right into Axe Kick",
-      "level": ",m",
+      "level": "h,h,m",
       "startup": ",i24~26",
       "displayStartup": "i24~26 (string)",
       "block": "+0",
       "hit": "+31d",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 37,
       "notes": [
         "0 on block"
       ],
@@ -84,12 +92,14 @@
       "wavuId": "Jin-1,2,4",
       "input": "1,2,4",
       "name": "Left Right into Spinning Hook Kick",
-      "level": ",h",
+      "level": "h,h,h",
       "startup": ",i20~22",
       "displayStartup": "i20~22 (string)",
       "block": "-4",
       "hit": "+23a (+14)",
       "ch": null,
+      "damage": ",26",
+      "damageTotal": 43,
       "notes": [
         "-4 on block",
         "Combo from 3rd hit with 7f delay"
@@ -100,12 +110,14 @@
       "wavuId": "Jin-1,3",
       "input": "1,3",
       "name": "Left Jab into Single Low",
-      "level": ",L",
+      "level": "h,L",
       "startup": ",i16~17",
       "displayStartup": "i16~17 (string)",
       "block": "-12",
       "hit": "-1",
       "ch": null,
+      "damage": ",9",
+      "damageTotal": 14,
       "notes": [
         "low ender",
         "Combo from 1st hit with 4f delay"
@@ -115,12 +127,14 @@
       "wavuId": "Jin-1,3,4",
       "input": "1,3,4",
       "name": "Left Jab into Double Low",
-      "level": ",l",
+      "level": "h,L,l",
       "startup": ",i23",
       "displayStartup": "i23 (string)",
       "block": "-13",
       "hit": "+3",
       "ch": "+29a",
+      "damage": ",17",
+      "damageTotal": 31,
       "notes": [
         "low",
         "CH +29a",
@@ -137,6 +151,8 @@
       "block": "+0",
       "hit": "+9",
       "ch": null,
+      "damage": "9",
+      "damageTotal": 9,
       "notes": [
         "i10 high"
       ]
@@ -145,12 +161,14 @@
       "wavuId": "Jin-2,1",
       "input": "2,1",
       "name": "Double Thrust",
-      "level": ",m",
+      "level": "h,m",
       "startup": ",i16~17",
       "displayStartup": "i16~17 (string)",
       "block": "-3",
       "hit": "+6",
       "ch": null,
+      "damage": ",9",
+      "damageTotal": 18,
       "notes": [
         "-3 on block",
         "Jail from 1st attack with 2f delay"
@@ -160,12 +178,14 @@
       "wavuId": "Jin-2,1,4",
       "input": "2,1,4",
       "name": "Double Thrust into Roundhouse",
-      "level": ",m",
+      "level": "h,m,m",
       "startup": ",i18~20",
       "displayStartup": "i18~20 (string)",
       "block": "-10",
       "hit": "+3",
       "ch": "+16a (+7)",
+      "damage": ",18",
+      "damageTotal": 36,
       "notes": [
         "delayable",
         "CH +16a",
@@ -177,12 +197,14 @@
       "wavuId": "Jin-2,1,4~4",
       "input": "2,1,4~4",
       "name": "Double Thrust into Low Trick Kick",
-      "level": ",l",
+      "level": "h,m,l",
       "startup": ",i20~21",
       "displayStartup": "i20~21 (string)",
       "block": "-12",
       "hit": "+16a",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 38,
       "notes": [
         "the low branch of the same string"
       ],
@@ -192,12 +214,14 @@
       "wavuId": "Jin-2,4",
       "input": "2,4",
       "name": "Switchblade",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i24~27",
       "displayStartup": "i24~27 (string)",
       "block": "-13",
       "hit": "+7",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 29,
       "notes": [
         "his i10 punisher",
         "wall splat",
@@ -215,6 +239,8 @@
       "block": "-7",
       "hit": "+4",
       "ch": null,
+      "damage": "17",
+      "damageTotal": 17,
       "notes": [
         "i14 high"
       ]
@@ -223,12 +249,14 @@
       "wavuId": "Jin-3,1",
       "input": "3,1",
       "name": "Left Roundhouse into Jab",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i20",
       "displayStartup": "i20 (string)",
       "block": "-1",
       "hit": "+7",
       "ch": null,
+      "damage": ",7",
+      "damageTotal": 24,
       "notes": [
         "press F afterwards to enter Zenshin at +4",
         "Combo from 1st hit"
@@ -238,12 +266,14 @@
       "wavuId": "Jin-3,1,4",
       "input": "3,1,4",
       "name": "Kishin Rekko",
-      "level": ",l",
+      "level": "h,h,l",
       "startup": ",i18",
       "displayStartup": "i18 (string)",
       "block": "-13",
       "hit": "+3",
       "ch": "+29a",
+      "damage": ",18",
+      "damageTotal": 42,
       "notes": [
         "low ender",
         "CH +29a",
@@ -260,6 +290,8 @@
       "block": "-9",
       "hit": "+10g",
       "ch": "+13c",
+      "damage": "15",
+      "damageTotal": 15,
       "notes": [
         "fast homing high",
         "CH +13c"
@@ -275,6 +307,8 @@
       "block": "-11~-2",
       "hit": "+2a~+12a",
       "ch": null,
+      "damage": "27",
+      "damageTotal": 27,
       "notes": [
         "the mid follow-up"
       ],
@@ -289,6 +323,8 @@
       "block": "-14",
       "hit": "+12a (+3)",
       "ch": null,
+      "damage": "4,4,16",
+      "damageTotal": 24,
       "notes": [
         "Heat Engager",
         "Balcony Break"
@@ -304,6 +340,8 @@
       "block": "-6",
       "hit": "+21a (+11)",
       "ch": null,
+      "damage": "14,24",
+      "damageTotal": 38,
       "notes": [
         "his -14 punisher",
         "Jail from 1st attack"
@@ -319,6 +357,8 @@
       "block": "-3",
       "hit": "+4",
       "ch": "+6",
+      "damage": "10",
+      "damageTotal": 10,
       "notes": [
         "i13 mid check at only -3"
       ]
@@ -327,12 +367,14 @@
       "wavuId": "Jin-df+1,4",
       "input": "df+1,4",
       "name": "Mid Left Punch into High Roundhouse",
-      "level": ",h",
+      "level": "m,h",
       "startup": ",i18~21",
       "displayStartup": "i18~21 (string)",
       "block": "-9",
       "hit": "+10g",
       "ch": "+17a (+8)",
+      "damage": ",18",
+      "damageTotal": 28,
       "notes": [
         "his -13 punisher",
         "CH +17a",
@@ -344,12 +386,14 @@
       "wavuId": "Jin-df+1,4~4",
       "input": "df+1,4~4",
       "name": "Mid Left Punch into Mid Sidekick",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i20",
       "displayStartup": "i20 (string)",
       "block": "-12",
       "hit": "+10a (+1)",
       "ch": null,
+      "damage": ",24",
+      "damageTotal": 34,
       "notes": [
         "the mid branch of the same string"
       ],
@@ -364,6 +408,8 @@
       "block": "-9",
       "hit": "+6",
       "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
       "notes": [
         "Balcony Break",
         "enters Breaking Step with df"
@@ -379,6 +425,8 @@
       "block": "-8",
       "hit": "+3",
       "ch": null,
+      "damage": "16",
+      "damageTotal": 16,
       "notes": [
         "i12 mid"
       ],
@@ -393,6 +441,8 @@
       "block": "+6c",
       "hit": "+13c",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "plus on block",
         "enters Breaking Step with df"
@@ -408,6 +458,8 @@
       "block": "+0",
       "hit": "+8c",
       "ch": null,
+      "damage": "22",
+      "damageTotal": 22,
       "notes": [
         "Heat Engager",
         "0 on block",
@@ -424,6 +476,8 @@
       "block": "-9",
       "hit": "+2",
       "ch": null,
+      "damage": "11",
+      "damageTotal": 11,
       "notes": [
         "i12 high"
       ]
@@ -432,12 +486,14 @@
       "wavuId": "Jin-b+1,2",
       "input": "b+1,2",
       "name": "Shun Maten",
-      "level": ",h",
+      "level": "h,h",
       "startup": ",i22~24",
       "displayStartup": "i22~24 (string)",
       "block": "-10",
       "hit": "+32a (+17)",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 31,
       "notes": [
         "his -12 punisher",
         "+32a on hit",
@@ -455,6 +511,8 @@
       "block": "-11",
       "hit": "+0",
       "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
       "notes": [
         "i15 mid"
       ]
@@ -463,12 +521,14 @@
       "wavuId": "Jin-b+2,1",
       "input": "b+2,1",
       "name": "Shun Masatsu",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i14~15",
       "displayStartup": "i14~15 (string)",
       "block": "-9",
       "hit": "+2",
       "ch": null,
+      "damage": ",10",
+      "damageTotal": 22,
       "notes": [
         "mid check and whiff punisher",
         "Jail from 1st block with 5F delay",
@@ -486,6 +546,8 @@
       "block": "-6",
       "hit": "+5",
       "ch": null,
+      "damage": "17",
+      "damageTotal": 17,
       "notes": [
         "mid check",
         "press F to enter Zenshin"
@@ -495,12 +557,14 @@
       "wavuId": "Jin-b+3,2",
       "input": "b+3,2",
       "name": "Left Knee into Right Thrust",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i19~20",
       "displayStartup": "i19~20 (string)",
       "block": "-9",
       "hit": "+9g +21w",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 37,
       "notes": [
         "combo ender",
         "+21 on wall hit",
@@ -517,6 +581,8 @@
       "block": "-7",
       "hit": "+15a",
       "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "i17 mid, +15a on hit"
       ],
@@ -531,6 +597,8 @@
       "block": "-16",
       "hit": "-5",
       "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
       "notes": [
         "-16 on block on its own — always continue the string"
       ]
@@ -539,12 +607,14 @@
       "wavuId": "Jin-f+3,1",
       "input": "f+3,1",
       "name": "Tanden Nidan-uchi",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i22",
       "displayStartup": "i22 (string)",
       "block": "-12",
       "hit": "+4",
       "ch": null,
+      "damage": ",17",
+      "damageTotal": 29,
       "notes": [
         "Heat Engager",
         "his other -14 punisher",
@@ -558,12 +628,14 @@
       "wavuId": "Jin-f+3,3",
       "input": "f+3,3",
       "name": "Left Sidekick into Stinger",
-      "level": ",h",
+      "level": "m,h",
       "startup": ",i20",
       "displayStartup": "i20 (string)",
       "block": "-8",
       "hit": "+8",
       "ch": null,
+      "damage": ",14",
+      "damageTotal": 26,
       "notes": [
         "press F to enter Zenshin",
         "Combo from 1st hit with 8F delay",
@@ -582,6 +654,8 @@
       "block": "-8",
       "hit": "+4",
       "ch": "+42a",
+      "damage": "21",
+      "damageTotal": 21,
       "notes": [
         "safe keep-out mid",
         "CH +42a launcher"
@@ -597,6 +671,8 @@
       "block": "-8",
       "hit": "+15a (+6)",
       "ch": null,
+      "damage": "22",
+      "damageTotal": 22,
       "notes": [
         "Heat Engager",
         "long-range safe mid approach"
@@ -612,6 +688,8 @@
       "block": "-4",
       "hit": "+24a",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "a mid launcher that is only -4 on block"
       ],
@@ -621,12 +699,14 @@
       "wavuId": "Jin-f,F+3,1",
       "input": "f,F+3,1",
       "name": "Left Axe Kick into Left Jab",
-      "level": ",h",
+      "level": "m,h",
       "startup": ",i15",
       "displayStartup": "i15 (string)",
       "block": "+1",
       "hit": "+7",
       "ch": null,
+      "damage": ",5",
+      "damageTotal": 25,
       "notes": [
         "+1 on block",
         "Jails attack inputs (crouch assist bufferable)"
@@ -642,6 +722,8 @@
       "block": "-7",
       "hit": "+22a (+12)",
       "ch": null,
+      "damage": "32",
+      "damageTotal": 32,
       "notes": [
         "i17 mid, +22a on hit"
       ],
@@ -656,6 +738,8 @@
       "block": "+6",
       "hit": "+13a~+14a (+3~+4)",
       "ch": null,
+      "damage": "30",
+      "damageTotal": 30,
       "notes": [
         "plus on block from a run",
         "Transition to +6 +13a ZEN with F"
@@ -671,6 +755,8 @@
       "block": "-7",
       "hit": "+4",
       "ch": null,
+      "damage": "15",
+      "damageTotal": 15,
       "notes": [
         "i15 mid string starter"
       ]
@@ -679,12 +765,14 @@
       "wavuId": "Jin-b,f+2,1",
       "input": "b,f+2,1",
       "name": "Demon Slayer into Jab",
-      "level": ",h",
+      "level": "m,h",
       "startup": ",i21",
       "displayStartup": "i21 (string)",
       "block": "-5",
       "hit": "+6",
       "ch": "+9",
+      "damage": ",14",
+      "damageTotal": 29,
       "notes": [
         "-5 on block",
         "Combo from 1st hit with 8f delay"
@@ -694,12 +782,14 @@
       "wavuId": "Jin-b,f+2,1,2",
       "input": "b,f+2,1,2",
       "name": "Evil Intent",
-      "level": ",m",
+      "level": "m,h,m",
       "startup": ",i19~20",
       "displayStartup": "i19~20 (string)",
       "block": "-5",
       "hit": "+18a (+9)",
       "ch": "+50a (+3)",
+      "damage": ",20",
+      "damageTotal": 49,
       "notes": [
         "CH +50a",
         "Combo from 2nd CH with 15f"
@@ -710,12 +800,14 @@
       "wavuId": "Jin-b,f+2,1,df+2",
       "input": "b,f+2,1,df+2",
       "name": "Geyser",
-      "level": ",M",
+      "level": "m,h,M",
       "startup": ",i28~29",
       "displayStartup": "i28~29 (string)",
       "block": "-14",
       "hit": "+37a (+27)",
       "ch": null,
+      "damage": ",22",
+      "damageTotal": 51,
       "notes": [
         "wall combo ender",
         "+37a",
@@ -728,12 +820,14 @@
       "wavuId": "Jin-b,f+2,3",
       "input": "b,f+2,3",
       "name": "Keito",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i25",
       "displayStartup": "i25 (string)",
       "block": "-9",
       "hit": "+6",
       "ch": "+59a",
+      "damage": ",17",
+      "damageTotal": 32,
       "notes": [
         "core combo filler",
         "press F to enter Zenshin at +2",
@@ -750,6 +844,8 @@
       "block": "-10~-9",
       "hit": "+6~+7",
       "ch": "+19a (+10)",
+      "damage": "18",
+      "damageTotal": 18,
       "notes": [
         "CH +19a"
       ],
@@ -764,6 +860,8 @@
       "block": "-9",
       "hit": "+6",
       "ch": "+59a",
+      "damage": "17",
+      "damageTotal": 17,
       "notes": [
         "CH +59a"
       ],
@@ -778,6 +876,8 @@
       "block": "-13",
       "hit": "+33a (+23a)",
       "ch": null,
+      "damage": "13",
+      "damageTotal": 13,
       "notes": [
         "his hopkick",
         "i15 launcher, -13 on block"
@@ -793,6 +893,8 @@
       "block": "-13",
       "hit": "+19a (+9)",
       "ch": "+33a (+23a)",
+      "damage": "15",
+      "damageTotal": 15,
       "notes": [
         "+19a on hit, CH +33a"
       ]
@@ -806,6 +908,8 @@
       "block": "-13",
       "hit": "+32a (+22a)",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "the stagger punish"
       ],
@@ -820,6 +924,8 @@
       "block": "-19",
       "hit": "+32a (+22)",
       "ch": null,
+      "damage": "5,15",
+      "damageTotal": 20,
       "notes": [
         "his -15 launch punish",
         "-19 on block"
@@ -830,12 +936,14 @@
       "wavuId": "Jin-d+3,4",
       "input": "d+3,4",
       "name": "Knee Popper",
-      "level": ",h",
+      "level": "l,h",
       "startup": ",i20~21",
       "displayStartup": "i20~21 (string)",
       "block": "-11",
       "hit": "-3",
       "ch": null,
+      "damage": ",10",
+      "damageTotal": 17,
       "notes": [
         "string starter",
         "Combo from 1st CH"
@@ -845,12 +953,14 @@
       "wavuId": "Jin-d+3,4,3",
       "input": "d+3,4,3",
       "name": "Kazama Style Three-Quarter Kick",
-      "level": ",m",
+      "level": "l,h,m",
       "startup": ",i24~25",
       "displayStartup": "i24~25 (string)",
       "block": "-12",
       "hit": "+31d (+23)",
       "ch": null,
+      "damage": ",21",
+      "damageTotal": 38,
       "notes": [
         "CH combo ender",
         "Tornado",
@@ -867,6 +977,8 @@
       "block": "-14",
       "hit": "+4c",
       "ch": "+25d",
+      "damage": "22",
+      "damageTotal": 22,
       "notes": [
         "his power low",
         "CH +25d",
@@ -883,6 +995,8 @@
       "block": "-14",
       "hit": "-3",
       "ch": null,
+      "damage": "7",
+      "damageTotal": 7,
       "notes": [
         "i15 low"
       ]
@@ -896,6 +1010,8 @@
       "block": "-12",
       "hit": "-1",
       "ch": null,
+      "damage": "11",
+      "damageTotal": 11,
       "notes": [
         "i16 low"
       ],
@@ -910,6 +1026,8 @@
       "block": "-5",
       "hit": "+6",
       "ch": null,
+      "damage": "5",
+      "damageTotal": 5,
       "notes": [
         "i10 special low",
         "his remapped d+1",
@@ -925,6 +1043,8 @@
       "block": "-10",
       "hit": "-4",
       "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
       "notes": [
         "i16 mid"
       ]
@@ -933,12 +1053,14 @@
       "wavuId": "Jin-db+2,2",
       "input": "db+2,2",
       "name": "Left Body Blow into Jab",
-      "level": ",h",
+      "level": "m,h",
       "startup": ",i8",
       "displayStartup": "i8 (string)",
       "block": "-12",
       "hit": "-7",
       "ch": "+43a",
+      "damage": ",11",
+      "damageTotal": 23,
       "notes": [
         "CH +43a launcher",
         "Jail from 1st attack"
@@ -948,12 +1070,14 @@
       "wavuId": "Jin-db+2,2,3",
       "input": "db+2,2,3",
       "name": "Savage Sword",
-      "level": ",m",
+      "level": "m,h,m",
       "startup": ",i35~i36",
       "displayStartup": "i35~36 (string)",
       "block": "-9",
       "hit": "+20a",
       "ch": null,
+      "damage": ",21",
+      "damageTotal": 44,
       "notes": [
         "wall combo ender"
       ],
@@ -968,6 +1092,8 @@
       "block": "-10~-8",
       "hit": "+17a",
       "ch": null,
+      "damage": "28",
+      "damageTotal": 28,
       "notes": [
         "high",
         "+17a on hit"
@@ -983,6 +1109,8 @@
       "block": "-13",
       "hit": "+3",
       "ch": "+13g",
+      "damage": "18",
+      "damageTotal": 18,
       "notes": [
         "his stature-kick low",
         "CH +13g"
@@ -998,6 +1126,8 @@
       "block": "-26",
       "hit": "+2c",
       "ch": "+69a (+53)",
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "CH +69a",
         "-26 on block",
@@ -1015,6 +1145,8 @@
       "block": "-10",
       "hit": "+74a (+58)",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "the non-electric version — i11 but -10 on block",
         "becomes EWHF in Heat"
@@ -1030,6 +1162,8 @@
       "block": "+5~+6",
       "hit": "+76a (+60)",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "i11 launcher that is PLUS on block",
         "the defining Jin move",
@@ -1046,6 +1180,8 @@
       "block": "-13",
       "hit": "+32a (+22)",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "Tornado",
         "jab evasion",
@@ -1062,6 +1198,8 @@
       "block": "-13",
       "hit": "+36a (+26)",
       "ch": null,
+      "damage": "22",
+      "damageTotal": 22,
       "notes": [
         "the just-frame version",
         "+36a",
@@ -1078,6 +1216,8 @@
       "block": "-31",
       "hit": "+8c",
       "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
       "notes": [
         "the wavedash low",
         "-31 on block on its own"
@@ -1087,12 +1227,14 @@
       "wavuId": "Jin-CD.DF+4,2",
       "input": "f,n,d,DF+4,2",
       "name": "Depraved Savagery",
-      "level": ",M",
+      "level": "l,M",
       "startup": ",i31~i32",
       "displayStartup": "i31~32 (string)",
       "block": "-16",
       "hit": "+21a",
       "ch": null,
+      "damage": ",28",
+      "damageTotal": 40,
       "notes": [
         "the full power low",
         "+21a on hit",
@@ -1109,6 +1251,8 @@
       "block": "-6",
       "hit": "+5",
       "ch": null,
+      "damage": "7",
+      "damageTotal": 7,
       "notes": [
         "i13 crouching mid"
       ]
@@ -1117,12 +1261,14 @@
       "wavuId": "Jin-ws1,2",
       "input": "ws1,2",
       "name": "Twin Lancer",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i19~20",
       "displayStartup": "i19~20 (string)",
       "block": "-8",
       "hit": "+3c",
       "ch": null,
+      "damage": ",19",
+      "damageTotal": 26,
       "notes": [
         "his -13 crouching punisher",
         "Combo from 1st hit with 1f delay",
@@ -1134,12 +1280,14 @@
       "wavuId": "Jin-ws1,3~3",
       "input": "ws1,3~3",
       "name": "Solar Plexus into Brazilian Kick",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i23~i24",
       "displayStartup": "i23~24 (string)",
       "block": "+6",
       "hit": "+13c",
       "ch": null,
+      "damage": ",20",
+      "damageTotal": 27,
       "notes": [
         "plus on block"
       ],
@@ -1154,6 +1302,8 @@
       "block": "-12",
       "hit": "+39a (+29)",
       "ch": null,
+      "damage": "14",
+      "damageTotal": 14,
       "notes": [
         "i14 crouching LAUNCHER",
         "wall splat"
@@ -1169,6 +1319,8 @@
       "block": "-9",
       "hit": "+10g",
       "ch": "+22a",
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "CH +22a"
       ],
@@ -1183,6 +1335,8 @@
       "block": "-3",
       "hit": "+8",
       "ch": null,
+      "damage": "13",
+      "damageTotal": 13,
       "notes": [
         "i11 crouching check at only -3"
       ]
@@ -1191,12 +1345,14 @@
       "wavuId": "Jin-ws4,4",
       "input": "ws4,4",
       "name": "Double Cross Kicks",
-      "level": ",h",
+      "level": "m,h",
       "startup": ",i19~20",
       "displayStartup": "i19~20 (string)",
       "block": "-7",
       "hit": "+4",
       "ch": null,
+      "damage": ",15",
+      "damageTotal": 28,
       "notes": [
         "his -11 crouching punisher",
         "Combo from 1st hit with 1f delay"
@@ -1212,6 +1368,8 @@
       "block": "-3",
       "hit": "+8",
       "ch": null,
+      "damage": "14",
+      "damageTotal": 14,
       "notes": [
         "-3 on block",
         "the core combo filler"
@@ -1221,12 +1379,14 @@
       "wavuId": "Jin-ZEN.1,2",
       "input": "ZEN.1,2",
       "name": "Brimstone Bite",
-      "level": ",m",
+      "level": "m,m",
       "startup": ",i23~24",
       "displayStartup": "i23~24 (string)",
       "block": "-14",
       "hit": "+32a (+6)",
       "ch": null,
+      "damage": ",21",
+      "damageTotal": 35,
       "notes": [
         "Heat Engager out of Zenshin",
         "Combo from 1st hit with 6f delay",
@@ -1238,12 +1398,14 @@
       "wavuId": "Jin-ZEN.1,3",
       "input": "ZEN.1,3",
       "name": "Kazama Style Leg Strike Flurry",
-      "level": ",h,t",
+      "level": "m,h,t",
       "startup": ",i24~25",
       "displayStartup": "i24~25 (string)",
       "block": "-9",
       "hit": "+0d",
       "ch": null,
+      "damage": ",14,14",
+      "damageTotal": 42,
       "notes": [
         "attack-throw combo ender",
         "Combo from 1st hit",
@@ -1260,6 +1422,8 @@
       "block": "-14",
       "hit": "+4",
       "ch": null,
+      "damage": "10,20",
+      "damageTotal": 30,
       "notes": [
         "low attack throw",
         "Wall Crush",
@@ -1277,6 +1441,8 @@
       "block": "-5",
       "hit": "+17a (+8)",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "Heat Engager",
         "only -5 on block"
@@ -1292,6 +1458,8 @@
       "block": "-9",
       "hit": "+10g",
       "ch": "+22a",
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "mid",
         "CH +22a"
@@ -1307,6 +1475,8 @@
       "block": "+9g~+15g",
       "hit": "+19a (+9)",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "hugely plus on block, but a high"
       ],
@@ -1321,6 +1491,8 @@
       "block": "+2~+8",
       "hit": "+17d~+23d",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "plus on block mid"
       ],
@@ -1335,6 +1507,8 @@
       "block": "-16",
       "hit": "+31a (+21)",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "the Tornado move in every bread-and-butter",
         "Tornado"
@@ -1350,6 +1524,8 @@
       "block": "-12",
       "hit": "+6",
       "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
       "notes": [
         "his sabaki"
       ],
@@ -1364,6 +1540,8 @@
       "block": "-13",
       "hit": "+0d",
       "ch": null,
+      "damage": "21,10",
+      "damageTotal": 31,
       "notes": [
         "Power Crush",
         "attack throw on standing hit",
@@ -1380,6 +1558,8 @@
       "block": "-11~+4",
       "hit": "+17g~+32g",
       "ch": null,
+      "damage": "0",
+      "damageTotal": null,
       "notes": [
         "unparryable",
         "opponent recovers crouching",
@@ -1397,6 +1577,8 @@
       "block": "+1",
       "hit": "+2c",
       "ch": null,
+      "damage": "[12;12]",
+      "damageTotal": 24,
       "notes": [
         "+1 on block",
         "Cancel to r45 with b,b on frame 42"
@@ -1411,6 +1593,8 @@
       "block": "+3",
       "hit": "+0d",
       "ch": null,
+      "damage": "57",
+      "damageTotal": 57,
       "notes": [
         "Heat Smash",
         "plus on block and auto-transitions to Crouch Dash",
@@ -1429,6 +1613,8 @@
       "block": "+9",
       "hit": "+32a (-4)",
       "ch": null,
+      "damage": "50",
+      "damageTotal": 50,
       "notes": [
         "+9 on block",
         "jails from the first hit",
@@ -1444,6 +1630,8 @@
       "block": "+4",
       "hit": "+23g~+38g",
       "ch": null,
+      "damage": "0",
+      "damageTotal": null,
       "notes": [
         "plus on block",
         "transitions to the DVS stance",
@@ -1463,6 +1651,8 @@
       "block": "-9",
       "hit": "+36d",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "Heat-only Mishima move",
         "Tornado"
@@ -1477,6 +1667,8 @@
       "block": "+4",
       "hit": "+38a (+28)",
       "ch": null,
+      "damage": "23",
+      "damageTotal": 23,
       "notes": [
         "Heat-only electric",
         "+4 on block"
@@ -1491,6 +1683,8 @@
       "block": "+2c",
       "hit": "+22a",
       "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
       "notes": [
         "Heat-only",
         "plus on block"
@@ -1505,11 +1699,31 @@
       "block": "-18",
       "hit": "+0d",
       "ch": null,
+      "damage": "55+",
+      "damageTotal": 55,
       "notes": [
         "Rage Art",
         "Reversal Break",
         "Transition to attack throw on hit"
       ]
+    },
+    "ws1-3-2-1-4-2": {
+      "wavuId": "Jin-ws1,3,2,1,4,2",
+      "input": "ws1,3,2,1,4,2",
+      "name": "Kazama Style 6 Hit Combo Redux",
+      "level": "m,h,m,m,l,M",
+      "startup": ",i31~32",
+      "displayStartup": "i13 (string)",
+      "block": "-16",
+      "hit": "-8",
+      "ch": null,
+      "damage": ",10",
+      "damageTotal": 37,
+      "notes": [
+        "Combo from 1st hit",
+        "Spike"
+      ],
+      "video": "https://wavu.wiki/w/images/2/29/T8-p2-jin-ws1%2C3%2C2%2C1%2C4%2C2.mp4"
     }
   }
 }

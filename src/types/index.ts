@@ -255,6 +255,14 @@ export interface MoveFrames {
   /** Null for non-attacks that have no hit frames of their own. */
   hit: string | null;
   ch: string | null;
+  /** Wavu-exact damage. A string, not a number — strings list "5,8,12". */
+  damage: string | null;
+  /**
+   * What the move does in total, summed along Wavu's parent chain. A string's
+   * `damage` column holds only that hit, so this is the figure to render;
+   * `verify:frames` recomputes it from the live database.
+   */
+  damageTotal: number | null;
   notes: string[];
   /** Wavu Wiki move-demo clip, resolved at authoring time by
       scripts/fetch-move-videos.mjs. Absent when no clip exists. */
@@ -269,6 +277,98 @@ export interface FrameDataSet {
   verifiedAt: string;
   sources: { name: string; url: string }[];
   moves: Record<string, MoveFrames>;
+}
+
+/* ------------------------------------------------------------------ */
+/* Combos — Wavu's combo pages, baked at authoring time                */
+/* ------------------------------------------------------------------ */
+
+export interface ComboStarter {
+  /** As the wiki writes it: "CH df+2", "EWGF", "Regular launch (e.g. f,F+3)". */
+  label: string;
+  /** The starter's own damage, when stated. */
+  damage: number | null;
+  /** Key into the frame table when the label names a move we carry. */
+  moveKey: string | null;
+  notes: string[];
+}
+
+export interface ComboRoute {
+  /** Combo notation, verbatim. `T!` is the Tornado, `!W` the wall. */
+  notation: string;
+  /** Total damage the route does, when the wiki states it. */
+  damage: number | null;
+  /**
+   * Recoverable damage — the grey health the opponent earns back. Wavu's
+   * combo-notation legend defines "[damage; recoverable]"; it is not carry.
+   */
+  recoverable: number | null;
+  notes: string[];
+}
+
+/** Consecutive starters on the wiki share the routes listed under them. */
+export interface ComboGroup {
+  starters: ComboStarter[];
+  routes: ComboRoute[];
+}
+
+export interface ComboSection {
+  id: string;
+  label: string;
+  groups: ComboGroup[];
+}
+
+export interface ComboSet {
+  characterId: string;
+  source: string;
+  gameVersion: string;
+  verifiedAt: string;
+  sections: ComboSection[];
+}
+
+/* ------------------------------------------------------------------ */
+/* Punishers — Wavu's curated punish tables, baked at authoring time   */
+/* ------------------------------------------------------------------ */
+
+export interface PunishEntry {
+  /**
+   * Key into the character's frame table. Null when the punisher page names a
+   * move Wavu's own Move table has no row for — the entry still renders, from
+   * the values the page itself states.
+   */
+  moveKey: string | null;
+  /** Notation as the page writes it. Null when the entry is identified by moveKey. */
+  input: string | null;
+  /** The disadvantage this answers, e.g. "-12" or "-25+ (stagger)". */
+  enemy: string | null;
+  /** Frames override, e.g. "HE/+9" — otherwise the move's own hit value. */
+  frames: string | null;
+  /** Damage override, for entries with no move row of their own. */
+  damage: string | null;
+  /** Damage of the combo this punish converts into. */
+  combo: string | null;
+  notes: string[];
+}
+
+export interface WhiffPunishEntry {
+  moveKey: string | null;
+  input: string | null;
+  speed: string | null;
+  damage: string | null;
+  /** What you are left at if it misses. */
+  risk: string | null;
+  notes: string[];
+}
+
+export type PunishSection = "standing" | "crouching" | "backTurned" | "grounded";
+
+export interface PunishSet {
+  characterId: string;
+  source: string;
+  gameVersion: string;
+  verifiedAt: string;
+  sections: Record<PunishSection, PunishEntry[]>;
+  whiff: WhiffPunishEntry[];
 }
 
 /* ------------------------------------------------------------------ */
