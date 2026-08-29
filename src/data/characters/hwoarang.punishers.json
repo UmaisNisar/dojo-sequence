@@ -2,7 +2,7 @@
   "characterId": "hwoarang",
   "source": "https://wavu.wiki/t/Hwoarang_punishers",
   "gameVersion": "v3.02.01 (Season 3)",
-  "verifiedAt": "2026-08-25",
+  "verifiedAt": "2026-08-29",
   "sections": {
     "standing": [
       {
@@ -28,7 +28,7 @@
         "input": "2,F+3",
         "enemy": "-10",
         "frames": "+8",
-        "damage": "23",
+        "damage": null,
         "combo": null,
         "notes": []
       },
@@ -37,7 +37,7 @@
         "input": "4,3",
         "enemy": "-11",
         "frames": "+5",
-        "damage": "30",
+        "damage": null,
         "combo": null,
         "notes": []
       },
@@ -46,7 +46,7 @@
         "input": "4,4",
         "enemy": "-11",
         "frames": "+10g RFS",
-        "damage": "27",
+        "damage": null,
         "combo": null,
         "notes": []
       },
@@ -55,7 +55,7 @@
         "input": "DF+1,3",
         "enemy": "-13",
         "frames": "+6",
-        "damage": "30",
+        "damage": null,
         "combo": null,
         "notes": []
       },
@@ -64,7 +64,7 @@
         "input": "DF3+4",
         "enemy": "-13",
         "frames": "+4s",
-        "damage": "30",
+        "damage": null,
         "combo": null,
         "notes": []
       },
@@ -73,7 +73,7 @@
         "input": "uf+3+4,4",
         "enemy": "-14",
         "frames": "+7 RFF",
-        "damage": "30",
+        "damage": null,
         "combo": null,
         "notes": []
       },
@@ -82,7 +82,7 @@
         "input": "df+2",
         "enemy": "-15",
         "frames": "+34a (+24)",
-        "damage": "13",
+        "damage": null,
         "combo": null,
         "notes": []
       },
@@ -91,7 +91,7 @@
         "input": "b+3",
         "enemy": "-16",
         "frames": "+35a (+25)",
-        "damage": "17",
+        "damage": null,
         "combo": null,
         "notes": []
       },
@@ -100,7 +100,7 @@
         "input": "F,n,DF+4",
         "enemy": "-18",
         "frames": "+59a (+49)",
-        "damage": "18",
+        "damage": null,
         "combo": null,
         "notes": []
       }
@@ -120,7 +120,7 @@
         "input": "WS+1",
         "enemy": "-10",
         "frames": "+8",
-        "damage": "12",
+        "damage": null,
         "combo": null,
         "notes": [
           "ws1 only works at -10 if the opponent is very close and slightly to Hwoarang's left, since the first active frame has a very short hitbox."
@@ -131,7 +131,7 @@
         "input": "WS+4,4",
         "enemy": "-11",
         "frames": "+4c RFF",
-        "damage": "28",
+        "damage": null,
         "combo": null,
         "notes": []
       },
@@ -140,7 +140,7 @@
         "input": "WS+3",
         "enemy": "-14",
         "frames": "+23d",
-        "damage": "20",
+        "damage": null,
         "combo": "39",
         "notes": []
       },
@@ -149,7 +149,7 @@
         "input": "WS+2,3",
         "enemy": "-15",
         "frames": "+70a (+50) LFS",
-        "damage": "23",
+        "damage": null,
         "combo": null,
         "notes": []
       },
@@ -158,7 +158,7 @@
         "input": "UF,N+4",
         "enemy": "-23",
         "frames": "+34a (+24)",
-        "damage": "25",
+        "damage": null,
         "combo": null,
         "notes": []
       }
@@ -169,7 +169,7 @@
         "input": "1,1,3,3",
         "enemy": "-10",
         "frames": "+4",
-        "damage": "39",
+        "damage": null,
         "combo": null,
         "notes": []
       },
@@ -178,7 +178,7 @@
         "input": "4,4,3",
         "enemy": "-11",
         "frames": "+14d",
-        "damage": "47",
+        "damage": null,
         "combo": "64",
         "notes": []
       },
@@ -187,7 +187,7 @@
         "input": "3,3,4",
         "enemy": "-14",
         "frames": "+40a (+31)",
-        "damage": "42",
+        "damage": null,
         "combo": null,
         "notes": []
       }
@@ -198,7 +198,7 @@
         "input": "DB+4",
         "enemy": "-16",
         "frames": "-1a (-9)",
-        "damage": "11",
+        "damage": null,
         "combo": null,
         "notes": []
       },
@@ -207,7 +207,7 @@
         "input": "B+3",
         "enemy": "-16",
         "frames": "+15a (-2)",
-        "damage": "13",
+        "damage": null,
         "combo": null,
         "notes": []
       },
@@ -216,7 +216,7 @@
         "input": "FF+3",
         "enemy": "-23",
         "frames": "+7a (-1)",
-        "damage": "19",
+        "damage": null,
         "combo": null,
         "notes": []
       }
@@ -227,7 +227,7 @@
       "moveKey": "4-3",
       "input": "4,3",
       "speed": "i11",
-      "damage": "30",
+      "damage": null,
       "risk": "-6",
       "notes": []
     },
@@ -235,7 +235,7 @@
       "moveKey": "df1-3",
       "input": "DF+1,3",
       "speed": "i13",
-      "damage": "25",
+      "damage": null,
       "risk": "-2 LFS",
       "notes": []
     },
@@ -243,7 +243,7 @@
       "moveKey": "uf3plus4-4",
       "input": "UF3+4,4",
       "speed": "i14",
-      "damage": "30",
+      "damage": null,
       "risk": "-10",
       "notes": []
     },
@@ -251,7 +251,7 @@
       "moveKey": "df2",
       "input": "DF+2",
       "speed": "i15",
-      "damage": "13 (?)",
+      "damage": null,
       "risk": "-7",
       "notes": [
         "Doesn't launch vs crouch."
@@ -261,7 +261,7 @@
       "moveKey": "b3-plasma",
       "input": "B+3",
       "speed": "i16",
-      "damage": "17 (?)",
+      "damage": null,
       "risk": "-19",
       "notes": []
     },
@@ -269,7 +269,7 @@
       "moveKey": "rff-f4t4",
       "input": "RFF F+[4~4]",
       "speed": "i18",
-      "damage": "20 (?)",
+      "damage": null,
       "risk": "-13",
       "notes": []
     }

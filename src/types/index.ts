@@ -267,6 +267,12 @@ export interface MoveFrames {
   /** Wavu Wiki move-demo clip, resolved at authoring time by
       scripts/fetch-move-videos.mjs. Absent when no clip exists. */
   video?: string;
+  /**
+   * Why this row cannot be diffed against Wavu's Move table — set only when
+   * the wiki stopped storing it, never to silence a real mismatch.
+   * `verify:frames` skips the comparison and reports the reason every run.
+   */
+  unverifiable?: string;
 }
 
 export interface FrameDataSet {

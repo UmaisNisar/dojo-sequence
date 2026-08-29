@@ -1790,7 +1790,7 @@
         "applies Tornado on success",
         "Tornado affect on success."
       ],
-      "video": "https://wavu.wiki/w/images/e/ea/T8-p2-king-df.mp4"
+      "unverifiable": "Wavu removed the per-character generic low-parry rows from the Move table"
     },
     "parry-punch": {
       "wavuId": "King-b+1+3",

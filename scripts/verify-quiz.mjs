@@ -22,16 +22,11 @@ import { buildQuiz, QUIZ_LENGTH } from "../src/lib/quiz-generator.ts";
 /* Imported file by file rather than through the registry: that uses
    extensionless specifiers, which the bundler resolves and plain Node does
    not. Adding a character here is the one manual step this script needs. */
-import { kazuya } from "../src/data/characters/kazuya.ts";
-import { lars } from "../src/data/characters/lars.ts";
-import { bryan } from "../src/data/characters/bryan.ts";
-import { jin } from "../src/data/characters/jin.ts";
-import { king } from "../src/data/characters/king.ts";
-import { dragunov } from "../src/data/characters/dragunov.ts";
-import { steve } from "../src/data/characters/steve.ts";
-import { hwoarang } from "../src/data/characters/hwoarang.ts";
 
-const characters = [kazuya, lars, bryan, jin, king, dragunov, steve, hwoarang];
+/* Read from the registry rather than a hand-kept list: a character that
+   was added but not listed here would be silently unverified, which is
+   exactly the failure this script exists to prevent. */
+import { characters } from "../src/data/characters/index.ts";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const RUNS_PER_CHARACTER = 40;

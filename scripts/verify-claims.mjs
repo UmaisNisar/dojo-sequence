@@ -24,16 +24,11 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { kazuya } from "../src/data/characters/kazuya.ts";
-import { lars } from "../src/data/characters/lars.ts";
-import { bryan } from "../src/data/characters/bryan.ts";
-import { jin } from "../src/data/characters/jin.ts";
-import { king } from "../src/data/characters/king.ts";
-import { dragunov } from "../src/data/characters/dragunov.ts";
-import { steve } from "../src/data/characters/steve.ts";
-import { hwoarang } from "../src/data/characters/hwoarang.ts";
 
-const characters = [kazuya, lars, bryan, jin, king, dragunov, steve, hwoarang];
+/* Read from the registry rather than a hand-kept list: a character that
+   was added but not listed here would be silently unverified, which is
+   exactly the failure this script exists to prevent. */
+import { characters } from "../src/data/characters/index.ts";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 /** Every signed frame number a row states, in any field. */
@@ -68,13 +63,15 @@ const conditional = (note) =>
  * carry — comparing them to the row is meaningless rather than merely
  * uncertain, so they are skipped per note rather than exempting the move:
  *
- *   "Interrupt with i3"   — the gap the OPPONENT needs, not this startup
- *   "Actual startup i14"  — Wavu's clarification for rows that store an
- *                           input window instead (the Mishima electrics)
- *   "13f effective punish" — what this move is worth as a punisher
+ *   "Interrupt with i3"      — the gap the OPPONENT needs, not this startup
+ *   "Actual startup i14"     — Wavu's clarification for rows that store an
+ *                              input window instead (the Mishima electrics)
+ *   "13f effective punish"   — what this move is worth as a punisher
+ *   "effective startup i26"  — startup INCLUDING the sidestep in front of it,
+ *                              which is not the row's own value
  */
 const aboutAnotherMeasure = (note) =>
-  /^\s*interrupt with\b|actual startup|effective punish/i.test(note);
+  /^\s*interrupt with\b|actual startup|effective (?:startup|punish)/i.test(note);
 
 /**
  * True when n falls inside any figure the startup string states.

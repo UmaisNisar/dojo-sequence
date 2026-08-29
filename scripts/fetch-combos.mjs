@@ -45,6 +45,7 @@ export const WAVU_NAMES = {
   dragunov: "Dragunov",
   steve: "Steve",
   hwoarang: "Hwoarang",
+  yoshimitsu: "Yoshimitsu",
 };
 
 /**
@@ -133,6 +134,9 @@ function canonicalInput(value) {
     .toLowerCase()
     .replace(/\s+/g, "")
     .replace(/^h(fc\.)/, "$1")
+    // "1SS." is Yoshimitsu holding his sword — his DEFAULT stance. Wavu writes
+    // it as a qualifier in prose, but the Move rows use the bare input.
+    .replace(/1ss\./g, "")
     .replace(/\(justframe\)/g, "")
     .replace(/#/g, "+")
     .replace(/\bf,f\b/g, "ff")

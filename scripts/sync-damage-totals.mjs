@@ -66,10 +66,12 @@ for (const file of readdirSync(DATA_DIR).filter((f) => f.endsWith(".frames.json"
   let n = 0;
   for (const [, move] of entries) {
     const total = damageTotal(byId, move.wavuId);
-    if ((move.damageTotal ?? null) !== total) {
-      move.damageTotal = total;
-      n++;
-    }
+    // Written even when it is null and even when it has not changed: the field
+    // is part of the shape, and a move with no damage was silently skipped
+    // when this only wrote on a difference.
+    const changed = !("damageTotal" in move) || move.damageTotal !== total;
+    move.damageTotal = total;
+    if (changed) n++;
   }
   changed += n;
   writeFileSync(path, JSON.stringify(set, null, 2) + "\n");

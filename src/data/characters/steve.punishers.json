@@ -2,7 +2,7 @@
   "characterId": "steve",
   "source": "https://wavu.wiki/t/Steve_punishers",
   "gameVersion": "v3.02.01 (Season 3)",
-  "verifiedAt": "2026-08-25",
+  "verifiedAt": "2026-08-29",
   "sections": {
     "standing": [
       {
@@ -91,7 +91,7 @@
         "input": "PAB.df+2",
         "enemy": "-17",
         "frames": "+31 (+21)",
-        "damage": "16",
+        "damage": null,
         "combo": "80",
         "notes": []
       },
@@ -100,7 +100,7 @@
         "input": "PAB.uf+2",
         "enemy": "-18",
         "frames": "+34 (+24)",
-        "damage": "23",
+        "damage": null,
         "combo": "72",
         "notes": []
       }

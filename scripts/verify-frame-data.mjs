@@ -13,6 +13,10 @@
  *
  * Startup values for multi-hit strings are reported as warnings only (Wavu
  * stores per-hit startups on string rows); block/hit/CH are strict failures.
+ *
+ * A move may carry `unverifiable: "<reason>"` to opt out entirely, for rows
+ * Wavu no longer stores. Those are printed as warnings on every run — an
+ * opt-out that goes quiet is an opt-out nobody re-checks.
  */
 
 import { readdirSync, readFileSync } from "node:fs";
@@ -172,6 +176,15 @@ for (const file of files) {
 
   for (const [key, move] of entries) {
     totalChecked++;
+    /* A move the Move table no longer carries. Wavu dropped the per-character
+       generic low-parry rows, but the mechanic and its values are unchanged
+       and a lesson still teaches it. Reported every run rather than skipped
+       quietly, so an opt-out cannot rot unnoticed. */
+    if (move.unverifiable) {
+      totalWarnings++;
+      console.log(`  ⚠ ${key} (${move.input}) not checked — ${move.unverifiable}`);
+      continue;
+    }
     const expectedLevel = liveLevel(chains, move.wavuId);
     if (expectedLevel !== null && (move.level ?? null) !== expectedLevel) {
       totalFailures++;

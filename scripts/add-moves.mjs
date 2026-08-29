@@ -43,6 +43,27 @@ const unlink = (s) =>
         .replace(/\s+/g, " ")
         .trim() || null;
 
+/**
+ * Some moves carry two names, and Wavu stores them as a bulleted list rather
+ * than a string: "<div class=\"dotlist\">
+* Sword Sweep
+* Samurai Cutter</div>".
+ * Written through raw it puts markup in the move index, so the bullets are
+ * joined the way the wiki renders them.
+ */
+function parseName(raw) {
+  const text = dec(raw);
+  if (!/<div[^>]*(?:dotlist|plainlist)/.test(text)) {
+    return text.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+  }
+  const names = text
+    .split(/^\s*\*\s?/m)
+    .slice(1)
+    .map((n) => n.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim())
+    .filter(Boolean);
+  return names.join(" / ");
+}
+
 /** See fetch-punishers.mjs: `notes` is a plainlist of bullets, not prose. */
 function parseNotes(raw) {
   if (!raw) return [];
@@ -163,7 +184,7 @@ for (const [key, id] of wanted) {
     wavuId: id,
     input,
     // Wavu leaves some rows unnamed; the notation is the honest fallback.
-    name: dec(row.name) || input,
+    name: parseName(row.name) || input,
     level: rows.map((r) => dec(r.target ?? "")).join("") || null,
     startup: unlink(row.startup),
   };
@@ -175,6 +196,9 @@ for (const [key, id] of wanted) {
   move.hit = unlink(row.hit);
   move.ch = unlink(row.ch);
   move.damage = unlink(row.damage);
+  /* Filled in by scripts/sync-damage-totals.mjs, which walks the parent chain
+     this script does not fetch. Emitted here so the shape is complete. */
+  move.damageTotal = null;
   move.notes = parseNotes(row.notes);
 
   set.moves[key] = move;

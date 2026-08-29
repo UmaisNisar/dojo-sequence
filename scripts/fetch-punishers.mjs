@@ -47,6 +47,7 @@ export const WAVU_NAMES = {
   dragunov: "Dragunov",
   steve: "Steve",
   hwoarang: "Hwoarang",
+  yoshimitsu: "Yoshimitsu",
 };
 
 const SECTIONS = {
@@ -181,6 +182,9 @@ function canonicalInput(value) {
     .toLowerCase()
     .replace(/\s+/g, "")
     .replace(/^h(fc\.)/, "$1")
+    // "1SS." is Yoshimitsu holding his sword — his DEFAULT stance. Wavu writes
+    // it as a qualifier in prose, but the Move rows use the bare input.
+    .replace(/1ss\./g, "")
     .replace(/\(justframe\)/g, "")
     .replace(/\bf,f\b/g, "ff")
     .replace(/\bb,b\b/g, "bb")
@@ -280,12 +284,15 @@ function fromWikiTable(text) {
       }
       if (/^\s*!/.test(row)) continue; // header row
 
-      // Cells are separated by `||` on a line, or by a fresh `|` on a new line.
+      /* Cells are separated by `||` on a line, or by a fresh `|` on a new
+         line. Empty cells are KEPT: these tables use a blank Enemy cell to
+         mean "same disadvantage as the row above", and dropping it shifts
+         every later column left — which read damage values as move inputs
+         and put "29" in the sheet as a punisher. */
       const cells = row
         .split(/\|\||\n\s*\|/)
-        .map((c) => c.replace(/^\s*\|/, ""))
-        .filter((c) => c.trim() !== "");
-      if (cells.length === 0) continue;
+        .map((c) => c.replace(/^\s*\|/, ""));
+      if (cells.every((c) => c.trim() === "")) continue;
 
       const parsed = cells.map((c) => {
         const span = /rowspan="(\d+)"\s*\|([\s\S]*)$/.exec(c);
@@ -308,18 +315,20 @@ function fromWikiTable(text) {
         continue;
       }
 
-      let cursor = 0;
+      /* A rowspan'd Enemy cell covers the rows beneath it; a blank one means
+         the same thing written by hand. Both carry the last value forward. */
+      let cursor = 1;
       let enemy;
       if (carriedLeft > 0) {
         enemy = carriedEnemy;
         carriedLeft--;
+        cursor = 0;
+      } else if (parsed[0]?.text) {
+        enemy = parsed[0].text;
+        carriedEnemy = enemy;
+        if (parsed[0].rowspan > 1) carriedLeft = parsed[0].rowspan - 1;
       } else {
-        enemy = parsed[0]?.text ?? null;
-        if ((parsed[0]?.rowspan ?? 1) > 1) {
-          carriedEnemy = enemy;
-          carriedLeft = parsed[0].rowspan - 1;
-        }
-        cursor = 1;
+        enemy = carriedEnemy;
       }
 
       const move = parsed[cursor];
@@ -372,6 +381,12 @@ function link(entries, byWavuId, byInput, byLoose, unresolved) {
     // moveId has served its purpose once resolved; the sheet stores the key.
     const rest = { ...e };
     delete rest.moveId;
+    /* Damage belongs to the frame table whenever there IS one. The wikitable
+       format carries a Damage column, and its hand-typed values can drift from
+       the Move rows — Yoshimitsu's page says 1,1 does 26 where the rows total
+       24 — which showed the same move at two different numbers on two screens.
+       Kept only for entries with no move to read it from. */
+    if (key) rest.damage = null;
     return { moveKey: key, ...rest, input: rest.input ?? null };
   });
 }
