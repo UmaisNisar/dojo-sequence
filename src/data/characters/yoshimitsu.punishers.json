@@ -1,0 +1,213 @@
+{
+  "characterId": "yoshimitsu",
+  "source": "https://wavu.wiki/t/Yoshimitsu_punishers",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-29",
+  "sections": {
+    "standing": [
+      {
+        "moveKey": "soul-stealer",
+        "input": "1SS.1+4",
+        "enemy": "-6",
+        "frames": "+14",
+        "damage": null,
+        "combo": "42",
+        "notes": []
+      },
+      {
+        "moveKey": "nss-soul-stealer",
+        "input": "NSS.1+4",
+        "enemy": "-8",
+        "frames": "+14 +64a",
+        "damage": null,
+        "combo": "67",
+        "notes": []
+      },
+      {
+        "moveKey": "jab-1",
+        "input": "1,1SS.1",
+        "enemy": "-10",
+        "frames": "+4c",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "jab-nss1",
+        "input": "1,NSS.1",
+        "enemy": "-10",
+        "frames": "+16d",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "right-2",
+        "input": "2,2",
+        "enemy": "-11",
+        "frames": "+15g",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "right-nss1",
+        "input": "2,NSS.1",
+        "enemy": "-11",
+        "frames": "+19d",
+        "damage": null,
+        "combo": "53",
+        "notes": []
+      },
+      {
+        "moveKey": "df1-4",
+        "input": "df+1,4",
+        "enemy": "-13",
+        "frames": "+4",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "b2-2",
+        "input": "b+2,2",
+        "enemy": "-14",
+        "frames": "+2d (+17 HE)",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "cd2",
+        "input": "f,n,d,df+2",
+        "enemy": "-14",
+        "frames": "+6g",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "df2",
+        "input": "df+2",
+        "enemy": "-15",
+        "frames": "+34a (+24)",
+        "damage": null,
+        "combo": "72",
+        "notes": []
+      },
+      {
+        "moveKey": "uf3",
+        "input": "uf+3",
+        "enemy": "-15",
+        "frames": "+32a (+22)",
+        "damage": null,
+        "combo": "69",
+        "notes": []
+      },
+      {
+        "moveKey": "cd1",
+        "input": "f,n,d,df+1",
+        "enemy": "‐17",
+        "frames": "+35a (+25)",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "heat-smash",
+        "input": "H.2+3",
+        "enemy": "-18",
+        "frames": "-3d",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      }
+    ],
+    "crouching": [
+      {
+        "moveKey": null,
+        "input": "FC 1SS.d+1+4",
+        "enemy": "-6",
+        "frames": "+14",
+        "damage": "20",
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": null,
+        "input": "FC NSS.d+1+4",
+        "enemy": "-8",
+        "frames": "+14 +64a",
+        "damage": "24",
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": null,
+        "input": "FC d1",
+        "enemy": "-10",
+        "frames": "+8",
+        "damage": "5",
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws4",
+        "input": "ws4",
+        "enemy": "-11",
+        "frames": "+5",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws1-2",
+        "input": "ws1,2",
+        "enemy": "-13",
+        "frames": "+14g",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws2-1",
+        "input": "ws2,1SS.1",
+        "enemy": "-15",
+        "frames": "+36a (+26)",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "uf3",
+        "input": "uf+3",
+        "enemy": "-15",
+        "frames": "+32a (+22)",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "cd1",
+        "input": "f,n,d,df+1",
+        "enemy": "‐17",
+        "frames": "+35a (+25)",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "heat-smash",
+        "input": "H.2+3",
+        "enemy": "-18",
+        "frames": "-3d",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      }
+    ],
+    "backTurned": [],
+    "grounded": []
+  },
+  "whiff": []
+}

@@ -1,0 +1,2619 @@
+{
+  "characterId": "yoshimitsu",
+  "game": "Tekken 8",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-29",
+  "sources": [
+    {
+      "name": "Wavu Wiki",
+      "url": "https://wavu.wiki/t/Yoshimitsu"
+    },
+    {
+      "name": "TekkenDocs",
+      "url": "https://tekkendocs.com/t8/yoshimitsu"
+    }
+  ],
+  "moves": {
+    "jab": {
+      "wavuId": "Yoshimitsu-1",
+      "input": "1",
+      "name": "Jab",
+      "level": "h",
+      "startup": "i10",
+      "block": "+1",
+      "hit": "+8",
+      "ch": null,
+      "damage": "5",
+      "notes": [
+        "Recovers 2f faster on hit or block (t27 r17)"
+      ],
+      "damageTotal": 5
+    },
+    "jab-1": {
+      "wavuId": "Yoshimitsu-1,1",
+      "input": "1,1",
+      "name": "Naguri Kabuto Wari",
+      "level": "h,m",
+      "startup": ",i23",
+      "displayStartup": "i10 (string)",
+      "block": "-9",
+      "hit": "+4c",
+      "ch": null,
+      "damage": ",19",
+      "notes": [
+        "Floor Break",
+        "Weapon",
+        "Combo from 1st hit with 1f delay",
+        "Move can be delayed 3f",
+        "Interrupt with i4 from 1st block",
+        "3 chip damage on block",
+        "Power up in NSS or Heat"
+      ],
+      "damageTotal": 24,
+      "video": "https://wavu.wiki/w/images/4/41/T8-p2-yoshimitsu-1%2C1.mp4"
+    },
+    "jab-nss1": {
+      "wavuId": "Yoshimitsu-1,NSS.1",
+      "input": "1,NSS.1",
+      "name": "1,NSS.1",
+      "level": "h,m",
+      "startup": ",i23",
+      "displayStartup": "i10 (string)",
+      "block": "-9",
+      "hit": "+22a (+17)",
+      "ch": null,
+      "damage": ",22",
+      "notes": [
+        "Floor Break",
+        "Weapon",
+        "Combo from 1st hit with 1f delay",
+        "Input can be delayed 3f",
+        "Interrupt with i4 from 1st block",
+        "8 chip damage on block",
+        "Recovers 1 base health or 6 additional recoverable health on hit",
+        "Recovers 1 base health when remaining recoverable health is 5 or less",
+        "1,H.1: Consumes 90F of remaining Heat time"
+      ],
+      "damageTotal": 27
+    },
+    "right": {
+      "wavuId": "Yoshimitsu-2",
+      "input": "2",
+      "name": "Right Jab",
+      "level": "h",
+      "startup": "i11",
+      "block": "-1",
+      "hit": "+5",
+      "ch": "+8",
+      "damage": "10",
+      "notes": [],
+      "damageTotal": 10
+    },
+    "right-1": {
+      "wavuId": "Yoshimitsu-2,1",
+      "input": "2,1",
+      "name": "Seiken Douharai",
+      "level": "h,m",
+      "startup": ",i26~27",
+      "displayStartup": "i11 (string)",
+      "block": "-9",
+      "hit": "+12a",
+      "ch": null,
+      "damage": ",23",
+      "notes": [
+        "Balcony Break",
+        "Weapon",
+        "Combo from 1st CH with 1f delay",
+        "Move cannot be delayed",
+        "Cancel to -12 -6 r30 with B",
+        "Interrupt with i8 from 1st block",
+        "Replaced by a different move in NSS"
+      ],
+      "damageTotal": 33,
+      "video": "https://wavu.wiki/w/images/6/65/T8-p2-yoshimitsu-2%2C1.mp4"
+    },
+    "right-2": {
+      "wavuId": "Yoshimitsu-2,2",
+      "input": "2,2",
+      "name": "Mushibami",
+      "level": "h,h",
+      "startup": ",i24",
+      "displayStartup": "i11 (string)",
+      "block": "-1",
+      "hit": "+15g",
+      "ch": null,
+      "damage": ",18",
+      "notes": [
+        "Tornado",
+        "Balcony Break (airborne)",
+        "Combo from 1st hit with 1f delay",
+        "Move cannot be delayed",
+        "Enter KIN r25 with 1+2",
+        "Transitions to NSS on hit or block only",
+        "Recovers 2f faster on hit or block",
+        "Interrupt with i5 from 1st block",
+        "Hit vs BT +20a (+11)"
+      ],
+      "damageTotal": 28,
+      "video": "https://wavu.wiki/w/images/f/fc/T8-p2-yoshimitsu-2%2C2.mp4"
+    },
+    "right-3": {
+      "wavuId": "Yoshimitsu-2,3",
+      "input": "2,3",
+      "name": "PK Combo",
+      "level": "h,h",
+      "startup": ",i26~27",
+      "displayStartup": "i11 (string)",
+      "block": "-10",
+      "hit": "+16a (+7)",
+      "ch": null,
+      "damage": ",24",
+      "notes": [
+        "Balcony Break",
+        "Combo from 1st CH with 2f delay",
+        "Interrupt with i6 from 1st block",
+        "Move can be delayed 5f"
+      ],
+      "damageTotal": 34,
+      "video": "https://wavu.wiki/w/images/8/81/T8-p2-yoshimitsu-2%2C3.mp4"
+    },
+    "right-d3": {
+      "wavuId": "Yoshimitsu-2,d+3",
+      "input": "2,d+3",
+      "name": "PDK Combo",
+      "level": "h,L",
+      "startup": ",i22",
+      "displayStartup": "i11 (string)",
+      "block": "-12",
+      "hit": "-1",
+      "ch": null,
+      "damage": ",11",
+      "notes": [
+        "Combo from 1st hit with 2f delay",
+        "Interrupt with i4 from 1st block",
+        "Input can be delayed 2f",
+        "Move cannot be delayed"
+      ],
+      "damageTotal": 21,
+      "video": "https://wavu.wiki/w/images/7/78/T8-p2-yoshimitsu-2%2Cd%2B3.mp4"
+    },
+    "right-nss1": {
+      "wavuId": "Yoshimitsu-2,NSS.1",
+      "input": "2,NSS.1",
+      "name": "Karakuri Uzumaki",
+      "level": "h,h",
+      "startup": ",i23~24 i18",
+      "displayStartup": "i11 (string)",
+      "block": "-5",
+      "hit": "+19a",
+      "ch": null,
+      "damage": ",5,15",
+      "notes": [
+        "Balcony Break",
+        "Combo from 1st hit",
+        "Jail from 2nd attack"
+      ],
+      "damageTotal": 30,
+      "video": "https://wavu.wiki/w/images/6/6a/T8-p2-yoshimitsu-2%2Cnss.1.mp4"
+    },
+    "three": {
+      "wavuId": "Yoshimitsu-3",
+      "input": "3",
+      "name": "Enma",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-9",
+      "hit": "+5",
+      "ch": null,
+      "damage": "12",
+      "notes": [],
+      "damageTotal": 12
+    },
+    "three-1": {
+      "wavuId": "Yoshimitsu-3,1",
+      "input": "3,1",
+      "name": "Enma's Flame",
+      "level": "m,h",
+      "startup": ",i22~24",
+      "displayStartup": "i15 (string)",
+      "block": "+7",
+      "hit": "+18g",
+      "ch": null,
+      "damage": ",20",
+      "notes": [
+        "Heat Engager",
+        "Heat Dash +5, +62a (+42)",
+        "Balcony Break",
+        "Weapon",
+        "Combo from 1st hit",
+        "Interrupt with i1 from 1st block",
+        "4 chip damage on block",
+        "Does not transition to DGF during Heat activation or Heat Dash",
+        "Power up in NSS or Heat",
+        "Recovers in 1SS"
+      ],
+      "damageTotal": 32,
+      "video": "https://wavu.wiki/w/images/f/f6/T8-p2-yoshimitsu-3%2C1.mp4"
+    },
+    "three-2": {
+      "wavuId": "Yoshimitsu-3,2",
+      "input": "3,2",
+      "name": "3,2",
+      "level": "m,m",
+      "startup": ",i22",
+      "displayStartup": "i15 (string)",
+      "block": "-12",
+      "hit": "+1",
+      "ch": null,
+      "damage": ",12",
+      "notes": [
+        "Interrupt with i1 from 1st block"
+      ],
+      "damageTotal": 24
+    },
+    "three-2-1plus2": {
+      "wavuId": "Yoshimitsu-3,2,1+2",
+      "input": "3,2,1+2",
+      "name": "Enma's Cleansing Sword",
+      "level": "m,m,M",
+      "startup": ",i26~27",
+      "displayStartup": "i15 (string)",
+      "block": "-14c",
+      "hit": "+20a (+10)",
+      "ch": null,
+      "damage": ",26",
+      "notes": [
+        "Balcony Break",
+        "Weapon",
+        "Combo from 2nd hit with 4f delay",
+        "Input can be delayed 10f",
+        "Move can be delayed 9f",
+        "Interrupt with i7 from 2nd block",
+        "5 chip damage on block",
+        "Power up in NSS or Heat"
+      ],
+      "damageTotal": 50,
+      "video": "https://wavu.wiki/w/images/b/b1/T8-p2-yoshimitsu-3%2C2%2C1%2B2.mp4"
+    },
+    "four": {
+      "wavuId": "Yoshimitsu-4",
+      "input": "4",
+      "name": "Magic 4",
+      "level": "h",
+      "startup": "i12~13",
+      "block": "-11",
+      "hit": "+0",
+      "ch": "+20a (+10)",
+      "damage": "16",
+      "notes": [
+        "Balcony Break (airborne)"
+      ],
+      "damageTotal": 16
+    },
+    "four-4": {
+      "wavuId": "Yoshimitsu-4,4",
+      "input": "4,4",
+      "name": "Double Roundhouse",
+      "level": "h,h",
+      "startup": ",i24~25",
+      "displayStartup": "i12 (string)",
+      "block": "-4",
+      "hit": "+4",
+      "ch": null,
+      "damage": ",16",
+      "notes": [
+        "Combo from 1st hit with 4f delay",
+        "Move cannot be delayed"
+      ],
+      "damageTotal": 32
+    },
+    "four-4-4": {
+      "wavuId": "Yoshimitsu-4,4,4",
+      "input": "4,4,4",
+      "name": "Triple Roundhouse Combo",
+      "level": "h,h,h",
+      "startup": ",i24~25",
+      "displayStartup": "i12 (string)",
+      "block": "-4",
+      "hit": "+18a (+9)",
+      "ch": null,
+      "damage": ",20",
+      "notes": [
+        "Balcony Break",
+        "Combo from 2nd CH with 4f delay",
+        "Move cannot be delayed"
+      ],
+      "damageTotal": 52,
+      "video": "https://wavu.wiki/w/images/7/7e/T8-p2-yoshimitsu-4%2C4%2C4.mp4"
+    },
+    "kangaroo": {
+      "wavuId": "Yoshimitsu-4~3",
+      "input": "4~3",
+      "name": "Kangaroo Kick",
+      "level": "m",
+      "startup": "i25~26",
+      "block": "-13",
+      "hit": "+52a (+42)",
+      "ch": null,
+      "damage": "25",
+      "notes": [
+        "Tornado",
+        "Evasive, can go under some mids"
+      ],
+      "damageTotal": 25,
+      "video": "https://wavu.wiki/w/images/3/39/T8-p2-yoshimitsu-4t3.mp4"
+    },
+    "tobi-ushiwaka": {
+      "wavuId": "Yoshimitsu-3~4",
+      "input": "3~4",
+      "name": "Tobi Ushiwaka",
+      "level": "m,m",
+      "startup": "i17~18 i28~29",
+      "block": "-6",
+      "hit": "+3",
+      "ch": null,
+      "damage": "6,22",
+      "notes": [
+        "Jail from 1st attack",
+        "Enter DGF +5 +14 r18 with 1SS.U",
+        "Cannot transition after frame 29"
+      ],
+      "damageTotal": 28,
+      "video": "https://wavu.wiki/w/images/f/f6/T8-p2-yoshimitsu-3t4.mp4"
+    },
+    "soul-stealer": {
+      "wavuId": "Yoshimitsu-1+4",
+      "input": "1+4",
+      "name": "Soul Stealer",
+      "level": "m",
+      "startup": "i6~9",
+      "block": "-20",
+      "hit": "+14c",
+      "ch": null,
+      "damage": "20",
+      "notes": [
+        "Weapon",
+        "70% proration on standing hit",
+        "Recovers 12f faster on hit",
+        "Hit vs BT +11d (FDFT)",
+        "Power up in NSS or Heat",
+        "Can be done from Crouch Level 1"
+      ],
+      "damageTotal": 20
+    },
+    "spirit-shield": {
+      "wavuId": "Yoshimitsu-1+2+3",
+      "input": "1+2+3",
+      "name": "Spirit Shield",
+      "level": "m",
+      "startup": "i22~40",
+      "block": "-8~+10g",
+      "hit": "+0~+18",
+      "ch": "+16~+34",
+      "damage": "0",
+      "notes": [
+        "Weapon",
+        "Can hit grounded when up-close and off-axis"
+      ],
+      "damageTotal": null,
+      "video": "https://wavu.wiki/w/images/5/54/T8-p2-yoshimitsu-1%2B2%2B3.mp4"
+    },
+    "guillotine-crow": {
+      "wavuId": "Yoshimitsu-1+2,P",
+      "input": "1+2,P",
+      "name": "Guillotine Crow Trap",
+      "level": "M,M",
+      "startup": "i15~18 i3~6",
+      "block": "+1c~+4c",
+      "hit": "+14a",
+      "ch": null,
+      "damage": "10,12",
+      "notes": [],
+      "damageTotal": 22
+    },
+    "df1": {
+      "wavuId": "Yoshimitsu-df+1",
+      "input": "df+1",
+      "name": "Tsuka Atemi",
+      "level": "m",
+      "startup": "i13",
+      "block": "-4",
+      "hit": "+5",
+      "ch": null,
+      "damage": "14",
+      "notes": [],
+      "damageTotal": 14
+    },
+    "df1-2": {
+      "wavuId": "Yoshimitsu-df+1,2",
+      "input": "df+1,2",
+      "name": "Tsuka Atemi to Back Knuckle",
+      "level": "m,h",
+      "startup": ",i25~26",
+      "displayStartup": "i13 (string)",
+      "block": "-4",
+      "hit": "+14g",
+      "ch": "+39a",
+      "damage": ",16",
+      "notes": [
+        "Balcony Break",
+        "Combo from 1st CH with 2f delay",
+        "Interrupt with i5 from 1st block",
+        "Move cannot be delayed"
+      ],
+      "damageTotal": 30
+    },
+    "df1-2-1": {
+      "wavuId": "Yoshimitsu-df+1,2,1",
+      "input": "df+1,2,1",
+      "name": "Tsuka Atemi Shredder",
+      "level": "m,h,M",
+      "startup": ",i26~27",
+      "displayStartup": "i13 (string)",
+      "block": "-12",
+      "hit": "+17a (+10)",
+      "ch": null,
+      "damage": ",19",
+      "notes": [
+        "Tornado",
+        "Weapon",
+        "Combo from 2nd CH +66a (+50)",
+        "Interrupt with i1 from 2nd block"
+      ],
+      "damageTotal": 49,
+      "video": "https://wavu.wiki/w/images/b/ba/T8-p2-yoshimitsu-df%2B1%2C2%2C1.mp4"
+    },
+    "df1-4": {
+      "wavuId": "Yoshimitsu-df+1,4",
+      "input": "df+1,4",
+      "name": "Autumn Leaves",
+      "level": "m,m",
+      "startup": ",i17",
+      "displayStartup": "i13 (string)",
+      "block": "-12",
+      "hit": "+4",
+      "ch": null,
+      "damage": ",17",
+      "notes": [
+        "Jail from 1st attack with 2f delay",
+        "Input can be delayed 2f",
+        "Move cannot be delayed",
+        "2nd hit can whiff at certain ranges, -20 on whiff"
+      ],
+      "damageTotal": 31,
+      "video": "https://wavu.wiki/w/images/f/f2/T8-p2-yoshimitsu-df%2B1%2C4.mp4"
+    },
+    "df2": {
+      "wavuId": "Yoshimitsu-df+2",
+      "input": "df+2",
+      "name": "Basic Uppercut",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-7",
+      "hit": "+34a (+24)",
+      "ch": null,
+      "damage": "13",
+      "notes": [
+        "+4s against crouching",
+        "Launches crouching on CH",
+        "Can evade jabs on frames ?~?"
+      ],
+      "damageTotal": 13,
+      "video": "https://wavu.wiki/w/images/e/e2/T8-p2-yoshimitsu-df%2B2.mp4"
+    },
+    "df3": {
+      "wavuId": "Yoshimitsu-df+3",
+      "input": "df+3",
+      "name": "df+3",
+      "level": "m",
+      "startup": "i17~18",
+      "block": "-4",
+      "hit": "+4",
+      "ch": null,
+      "damage": "10",
+      "notes": [],
+      "damageTotal": 10
+    },
+    "df3-1": {
+      "wavuId": "Yoshimitsu-df+3,1",
+      "input": "df+3,1",
+      "name": "Wood Cutter",
+      "level": "m,M",
+      "startup": ",i23~24",
+      "displayStartup": "i17 (string)",
+      "block": "-9",
+      "hit": "+4c",
+      "ch": "+6a",
+      "damage": ",20",
+      "notes": [
+        "Floor Break",
+        "Weapon",
+        "Combo from 1st hit",
+        "Interrupt with i1 from 1st block",
+        "4 chip damage on block",
+        "Power up in NSS or Heat",
+        "Input can be held to transition to d+1*"
+      ],
+      "damageTotal": 30,
+      "video": "https://wavu.wiki/w/images/0/00/T8-p2-yoshimitsu-df%2B3%2C1.mp4"
+    },
+    "df3-nss1": {
+      "wavuId": "Yoshimitsu-df+3,NSS.1",
+      "input": "df+3,NSS.1",
+      "name": "Wood Chopper",
+      "level": "m,M",
+      "startup": ",i23~24",
+      "displayStartup": "i17 (string)",
+      "block": "-9",
+      "hit": "+16a",
+      "ch": "+52a",
+      "damage": ",24",
+      "notes": [
+        "Floor Break",
+        "Weapon",
+        "Combo from 1st hit",
+        "Recovers 1 base health or 6 additional recoverable health on hit",
+        "Recovers 1 base health when remaining recoverable health is 5 or less",
+        "9 chip damage on block",
+        "Input can be held to transition to d+1*",
+        "df+3,H.1: Consumes 90F of remaining Heat time"
+      ],
+      "damageTotal": 34
+    },
+    "df4": {
+      "wavuId": "Yoshimitsu-df+4",
+      "input": "df+4",
+      "name": "Side Kick",
+      "level": "m",
+      "startup": "i12",
+      "block": "-7",
+      "hit": "+4",
+      "ch": null,
+      "damage": "15",
+      "notes": [
+        "Recovers 2f faster on hit or block"
+      ],
+      "damageTotal": 15
+    },
+    "df1plus4": {
+      "wavuId": "Yoshimitsu-df+1+4",
+      "input": "df+1+4",
+      "name": "Gehosen (Simple Input)",
+      "level": "M",
+      "startup": "i20~21",
+      "block": "-17",
+      "hit": "+35a (+25)",
+      "ch": null,
+      "damage": "20",
+      "notes": [
+        "Weapon",
+        "Can be performed in FC",
+        "Recovers 7f faster on hit",
+        "Transition to r34 KIN with 1+2",
+        "Transition to r30 KIN with 1+2 only when performing KIN.f+2 immediately after",
+        "Faster startup and 22 damage with input f,n,d,df+1"
+      ],
+      "damageTotal": 20
+    },
+    "df2plus3": {
+      "wavuId": "Yoshimitsu-df+2+3",
+      "input": "df+2+3",
+      "name": "Flashing Steel (Simple Input)",
+      "level": "m",
+      "startup": "i17~18",
+      "block": "-13",
+      "hit": "+6g",
+      "ch": "+58a (+38)",
+      "damage": "18",
+      "notes": [
+        "Balcony Break",
+        "Weapon",
+        "Can be performed in FC",
+        "Faster startup and 20 damage with input f,n,d,df+2"
+      ],
+      "damageTotal": 18
+    },
+    "f2": {
+      "wavuId": "Yoshimitsu-f+2",
+      "input": "f+2",
+      "name": "Manji Backfist",
+      "level": "h",
+      "startup": "i17~18",
+      "block": "-4",
+      "hit": "+14g",
+      "ch": "+39a",
+      "damage": "18",
+      "notes": [
+        "Balcony Break"
+      ],
+      "damageTotal": 18
+    },
+    "f2-1": {
+      "wavuId": "Yoshimitsu-f+2,1",
+      "input": "f+2,1",
+      "name": "Manji Backfist Shredder",
+      "level": "h,M",
+      "startup": ",i26~27",
+      "displayStartup": "i17 (string)",
+      "block": "-12",
+      "hit": "+17a (+10)",
+      "ch": null,
+      "damage": ",21",
+      "notes": [
+        "Tornado",
+        "Weapon",
+        "Combo from 1st CH +66a (+50)"
+      ],
+      "damageTotal": 39,
+      "video": "https://wavu.wiki/w/images/b/bc/T8-p2-yoshimitsu-f%2B2%2C1.mp4"
+    },
+    "f3": {
+      "wavuId": "Yoshimitsu-f+3",
+      "input": "f+3",
+      "name": "Oni Kick",
+      "level": "h",
+      "startup": "i16~17",
+      "block": "-9",
+      "hit": "+17a (+8)",
+      "ch": null,
+      "damage": "24",
+      "notes": [
+        "Homing",
+        "Balcony Break"
+      ],
+      "damageTotal": 24,
+      "video": "https://wavu.wiki/w/images/e/e0/T8-p2-yoshimitsu-f%2B3.mp4"
+    },
+    "f3-4": {
+      "wavuId": "Yoshimitsu-f+3,4",
+      "input": "f+3,4",
+      "name": "Zig Zag",
+      "level": "h,m",
+      "startup": ",i23~24",
+      "displayStartup": "i16 (string)",
+      "block": "-6",
+      "hit": "+37a (+23)",
+      "ch": null,
+      "damage": ",20",
+      "notes": [
+        "Knee",
+        "2nd hit delayed 18f",
+        "Interrupt with i17 from 1st block"
+      ],
+      "damageTotal": 44,
+      "video": "https://wavu.wiki/w/images/f/fa/T8-p2-yoshimitsu-f%2B3%2C4.mp4"
+    },
+    "f4": {
+      "wavuId": "Yoshimitsu-f+4",
+      "input": "f+4",
+      "name": "Toita Daoshi",
+      "level": "m",
+      "startup": "i18",
+      "block": "-13",
+      "hit": "+21a (+11)",
+      "ch": null,
+      "damage": "20",
+      "notes": [
+        "Balcony Break",
+        "-9 on block after absorbing an attack",
+        "8 chip damage on attack absorption"
+      ],
+      "damageTotal": 20,
+      "video": "https://wavu.wiki/w/images/e/e9/T8-p2-yoshimitsu-f%2B4.mp4"
+    },
+    "f1plus2": {
+      "wavuId": "Yoshimitsu-f+1+2",
+      "input": "f+1+2",
+      "name": "Kuzuryu",
+      "level": "M",
+      "startup": "i20",
+      "block": "-12",
+      "hit": "+8a (-1)",
+      "ch": null,
+      "damage": "23",
+      "notes": [
+        "Heat Engager",
+        "Heat Dash +5, +62a (+42)",
+        "Balcony Break",
+        "Weapon",
+        "4 chip damage on block",
+        "Power up in NSS or Heat (29 damage and extended range)"
+      ],
+      "damageTotal": 23,
+      "video": "https://wavu.wiki/w/images/1/19/T8-p2-yoshimitsu-f%2B1%2B2.mp4"
+    },
+    "f3plus4": {
+      "wavuId": "Yoshimitsu-f+3+4",
+      "input": "f+3+4",
+      "name": "Kamikaze",
+      "level": "m,M,M,M",
+      "startup": "i21~25",
+      "block": "-13~-9",
+      "hit": "-8a (-15)",
+      "ch": null,
+      "damage": "18,3,3,3",
+      "notes": [
+        "Balcony Break",
+        "Floor Break",
+        "Head",
+        "Floor break occurs on 4th hit",
+        "Transition to FLE on hit only",
+        "Attacks after 1st only come out on hit",
+        "Combo from 1st hit does 2,1,1 damage",
+        "Combo does 2 extra damage from FLE.n",
+        "Cancel to r65 BT earliest on frame 10 with b",
+        "Automatically transitions to r55 IND on self-wallsplat",
+        "Total and recovery frames on hit r19 t88"
+      ],
+      "damageTotal": 27,
+      "video": "https://wavu.wiki/w/images/9/9b/T8-p2-yoshimitsu-f%2B3%2B4.mp4"
+    },
+    "ff2": {
+      "wavuId": "Yoshimitsu-f,F+2",
+      "input": "f,F+2",
+      "name": "Sword Smash",
+      "level": "m",
+      "startup": "i15",
+      "block": "-9",
+      "hit": "+4",
+      "ch": null,
+      "damage": "15",
+      "notes": [
+        "Elbow",
+        "Cannot be buffered",
+        "Increased pushback on CH"
+      ],
+      "damageTotal": 15,
+      "video": "https://wavu.wiki/w/images/7/7e/T8-p2-yoshimitsu-f%2Cf%2B2.mp4"
+    },
+    "ff3": {
+      "wavuId": "Yoshimitsu-f,F+3",
+      "input": "f,F+3",
+      "name": "Iwatsubute",
+      "level": "m",
+      "startup": "i23~24",
+      "block": "-4",
+      "hit": "+5",
+      "ch": null,
+      "damage": "20",
+      "notes": [
+        "Enter KIN r25 +3 +12 with 1+2",
+        "Cannot be buffered"
+      ],
+      "damageTotal": 20,
+      "video": "https://wavu.wiki/w/images/b/b0/T8-p2-yoshimitsu-f%2Cf%2B3.mp4"
+    },
+    "ff4": {
+      "wavuId": "Yoshimitsu-f,F+4",
+      "input": "f,F+4",
+      "name": "Fubuki",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-6",
+      "hit": "+37a (+23)",
+      "ch": null,
+      "damage": "20",
+      "notes": [
+        "Balcony Break",
+        "Knee",
+        "Cannot be buffered",
+        "-12 if Yoshimitsu holds back to turn around and block"
+      ],
+      "damageTotal": 20,
+      "video": "https://wavu.wiki/w/images/5/5d/T8-p2-yoshimitsu-f%2Cf%2B4.mp4"
+    },
+    "ff1plus2": {
+      "wavuId": "Yoshimitsu-f,F+1+2",
+      "input": "f,F+1+2",
+      "name": "Solar Kick",
+      "level": "m",
+      "startup": "i22~24",
+      "block": "-8",
+      "hit": "+3c",
+      "ch": null,
+      "damage": "22",
+      "notes": [
+        "Floor Break",
+        "Cannot be buffered",
+        "Visually similar to f,F+3+4"
+      ],
+      "damageTotal": 22,
+      "video": "https://wavu.wiki/w/images/9/9d/T8-p2-yoshimitsu-f%2Cf%2B1%2B2.mp4"
+    },
+    "fff3": {
+      "wavuId": "Yoshimitsu-f,f,F+3",
+      "input": "f,f,F+3",
+      "name": "Manji Kick",
+      "level": "M",
+      "startup": "i22~23",
+      "block": "+5g",
+      "hit": "+13a (+3)",
+      "ch": null,
+      "damage": "30",
+      "notes": [
+        "Balcony Break",
+        "9 chip damage on block",
+        "Enter DGF +7 +15a (+5) r34 with 1SS.U"
+      ],
+      "damageTotal": 30,
+      "video": "https://wavu.wiki/w/images/c/c6/T8-p2-yoshimitsu-f%2Cf%2Cf%2B3.mp4"
+    },
+    "cd1": {
+      "wavuId": "Yoshimitsu-f,n,d,df+1",
+      "input": "f,n,d,df+1",
+      "name": "Gehosen",
+      "level": "M",
+      "startup": "i17~18",
+      "block": "-17",
+      "hit": "+35a (+25a)",
+      "ch": null,
+      "damage": "22",
+      "notes": [
+        "Weapon",
+        "Can be buffered",
+        "Enter KIN r30 with 1+2",
+        "Can be performed from FC"
+      ],
+      "damageTotal": 22,
+      "video": "https://wavu.wiki/w/images/1/11/T8-p2-yoshimitsu-f%2Cn%2Cd%2Cdf%2B1.mp4"
+    },
+    "cd2": {
+      "wavuId": "Yoshimitsu-f,n,d,df+2",
+      "input": "f,n,d,df+2",
+      "name": "Flashing Steel",
+      "level": "m",
+      "startup": "i14~15",
+      "block": "-13",
+      "hit": "+6g",
+      "ch": "+58a (+38)",
+      "damage": "20",
+      "notes": [
+        "Balcony Break",
+        "Weapon",
+        "Can be buffered",
+        "Can be performed in FC"
+      ],
+      "damageTotal": 20,
+      "video": "https://wavu.wiki/w/images/4/4f/T8-p2-yoshimitsu-f%2Cn%2Cd%2Cdf%2B2.mp4"
+    },
+    "b1": {
+      "wavuId": "Yoshimitsu-b+1",
+      "input": "b+1",
+      "name": "b+1",
+      "level": "h",
+      "startup": "i17",
+      "block": "+1",
+      "hit": "+7",
+      "ch": "+12",
+      "damage": "8",
+      "notes": [
+        "Can transition to Spinning Evade with b+3 or b+4"
+      ],
+      "damageTotal": 8
+    },
+    "b1-1": {
+      "wavuId": "Yoshimitsu-b+1,1",
+      "input": "b+1,1",
+      "name": "b+1,1",
+      "level": "h,h",
+      "startup": ",i11~12",
+      "displayStartup": "i17 (string)",
+      "block": "+4",
+      "hit": "+5",
+      "ch": "+10",
+      "damage": ",9",
+      "notes": [
+        "Combo from 1st hit",
+        "Can transition to Spinning Evade with b+3 or b+4"
+      ],
+      "damageTotal": 17
+    },
+    "b2": {
+      "wavuId": "Yoshimitsu-b+2",
+      "input": "b+2",
+      "name": "b+2",
+      "level": "m",
+      "startup": "i14~15",
+      "block": "-9",
+      "hit": "+2",
+      "ch": null,
+      "damage": "12",
+      "notes": [
+        "Enter KIN r27 with 1+2"
+      ],
+      "damageTotal": 12
+    },
+    "b2-1": {
+      "wavuId": "Yoshimitsu-b+2,1",
+      "input": "b+2,1",
+      "name": "Oma Gehosen",
+      "level": "m,M",
+      "startup": ",i27~28",
+      "displayStartup": "i14 (string)",
+      "block": "-17",
+      "hit": "+28a (+18)",
+      "ch": null,
+      "damage": ",20",
+      "notes": [
+        "Weapon",
+        "Combo from 1st CH with 2f delay",
+        "Enter KIN r30 with 1+2",
+        "Input can be delayed 14f"
+      ],
+      "damageTotal": 32,
+      "video": "https://wavu.wiki/w/images/5/57/T8-p2-yoshimitsu-b%2B2%2C1.mp4"
+    },
+    "b2-2": {
+      "wavuId": "Yoshimitsu-b+2,2",
+      "input": "b+2,2",
+      "name": "Oma Kugiuchi",
+      "level": "m,h",
+      "startup": ",i22~23",
+      "displayStartup": "i14 (string)",
+      "block": "-9",
+      "hit": "+2a",
+      "ch": null,
+      "damage": ",21",
+      "notes": [
+        "Heat Engager",
+        "Heat Dash +5, +43d (+35)",
+        "Weapon",
+        "Combo from 1st with 1f delay",
+        "Combo from 1st CH with 7f delay",
+        "Input can be delayed 14f"
+      ],
+      "damageTotal": 33,
+      "video": "https://wavu.wiki/w/images/9/90/T8-p2-yoshimitsu-b%2B2%2C2.mp4"
+    },
+    "thunder-blade": {
+      "wavuId": "Yoshimitsu-b,B+1+4",
+      "input": "b,B+1+4",
+      "name": "Thunder Blade",
+      "level": "m!",
+      "startup": "i59~61",
+      "block": null,
+      "hit": "+2a",
+      "ch": null,
+      "damage": "50",
+      "notes": [
+        "Weapon",
+        "Cannot be buffered",
+        "Poor hitbox, will go over crouching opponents sometimes"
+      ],
+      "damageTotal": 50,
+      "video": "https://wavu.wiki/w/images/0/0f/T8-p2-yoshimitsu-b%2Cb%2B1%2B4.mp4"
+    },
+    "d1": {
+      "wavuId": "Yoshimitsu-d+1",
+      "input": "d+1",
+      "name": "Quick Slash",
+      "level": "M",
+      "startup": "i24~25",
+      "block": "-9",
+      "hit": "+1c",
+      "ch": "+6a",
+      "damage": "15",
+      "notes": [
+        "Floor Break",
+        "Weapon",
+        "4 chip damage on block",
+        "Power up in NSS or Heat"
+      ],
+      "damageTotal": 15,
+      "video": "https://wavu.wiki/w/images/3/38/T8-p2-yoshimitsu-d%2B1.mp4"
+    },
+    "d2": {
+      "wavuId": "Yoshimitsu-d+2",
+      "input": "d+2",
+      "name": "d+2",
+      "level": "M",
+      "startup": "i16~17",
+      "block": "-9~-8",
+      "hit": "+0~+1",
+      "ch": null,
+      "damage": "12",
+      "notes": [
+        "Weapon"
+      ],
+      "damageTotal": 12
+    },
+    "d2-2": {
+      "wavuId": "Yoshimitsu-d+2,2",
+      "input": "d+2,2",
+      "name": "Heshikirimutou",
+      "level": "M,m",
+      "startup": ",i22~23",
+      "displayStartup": "i16 (string)",
+      "block": "-12",
+      "hit": "+7g",
+      "ch": "+28a (+22)",
+      "damage": ",15",
+      "notes": [
+        "Weapon",
+        "Combo from 1st hit with 13f delay",
+        "Input can be delayed 16f",
+        "Move can be delayed 10f",
+        "In 1SS Enter NSS r31 with B"
+      ],
+      "damageTotal": 27
+    },
+    "d2-2-2": {
+      "wavuId": "Yoshimitsu-d+2,2,2",
+      "input": "d+2,2,2",
+      "name": "Heshikiriseibatsu",
+      "level": "M,m,M",
+      "startup": ",i25~27",
+      "displayStartup": "i16 (string)",
+      "block": "-13",
+      "hit": "+16a (+9)",
+      "ch": null,
+      "damage": ",19",
+      "notes": [
+        "Tornado",
+        "Weapon",
+        "Input can be delayed 10f",
+        "Move can be delayed 9f",
+        "Steel pedal"
+      ],
+      "damageTotal": 46,
+      "video": "https://wavu.wiki/w/images/8/8c/T8-p2-yoshimitsu-d%2B2%2C2%2C2.mp4"
+    },
+    "d2-1": {
+      "wavuId": "Yoshimitsu-d+2,1",
+      "input": "d+2,1",
+      "name": "Heshikirigari",
+      "level": "M,h",
+      "startup": ",i27~28",
+      "displayStartup": "i16 (string)",
+      "block": "-9",
+      "hit": "+17a (+8)",
+      "ch": null,
+      "damage": ",23",
+      "notes": [
+        "Balcony Break",
+        "Weapon",
+        "Combo from 1st hit with 8f delay",
+        "Input can be delayed 16f",
+        "Move can be delayed 10f"
+      ],
+      "damageTotal": 35,
+      "video": "https://wavu.wiki/w/images/6/6e/T8-p2-yoshimitsu-d%2B2%2C1.mp4"
+    },
+    "d3": {
+      "wavuId": "Yoshimitsu-d+3",
+      "input": "d+3",
+      "name": "Low Sweep",
+      "level": "L",
+      "startup": "i15~17",
+      "block": "-18~-16",
+      "hit": "-4~-2",
+      "ch": null,
+      "damage": "12",
+      "notes": [
+        "Most commonly impacts on frame 16, except when tracking right"
+      ],
+      "damageTotal": 12
+    },
+    "d4": {
+      "wavuId": "Yoshimitsu-d+4",
+      "input": "d+4",
+      "name": "Toe Check",
+      "level": "l",
+      "startup": "i12",
+      "block": "-15",
+      "hit": "-4",
+      "ch": null,
+      "damage": "6",
+      "notes": [],
+      "damageTotal": 6
+    },
+    "db1": {
+      "wavuId": "Yoshimitsu-db+1",
+      "input": "db+1",
+      "name": "db+1",
+      "level": "L",
+      "startup": "i26~28",
+      "block": "-11~-9",
+      "hit": "+4~+6",
+      "ch": "+7~+9",
+      "damage": "12",
+      "notes": [
+        "Unavailable in NSS"
+      ],
+      "damageTotal": 12
+    },
+    "db1-2": {
+      "wavuId": "Yoshimitsu-db+1,2",
+      "input": "db+1,2",
+      "name": "Nebular Burst",
+      "level": "L,m",
+      "startup": ",i25~26",
+      "displayStartup": "i26 (string)",
+      "block": "-13",
+      "hit": "+0",
+      "ch": "+6g",
+      "damage": ",20",
+      "notes": [
+        "Balcony Break (airborne or CH)",
+        "Combo from 1st with 1f delay",
+        "Combo from 1st CH with 8f delay",
+        "Input can be delayed 8f"
+      ],
+      "damageTotal": 32,
+      "video": "https://wavu.wiki/w/images/0/0f/T8-p2-yoshimitsu-db%2B1%2C2.mp4"
+    },
+    "db2": {
+      "wavuId": "Yoshimitsu-db+2",
+      "input": "db+2",
+      "name": "db+2",
+      "level": "m",
+      "startup": "i15",
+      "block": "-5",
+      "hit": "+6",
+      "ch": null,
+      "damage": "8",
+      "notes": [],
+      "damageTotal": 8
+    },
+    "db2-2": {
+      "wavuId": "Yoshimitsu-db+2,2",
+      "input": "db+2,2",
+      "name": "db+2,2",
+      "level": "m,m",
+      "startup": ",i10~14",
+      "displayStartup": "i15 (string)",
+      "block": "-9~-5",
+      "hit": "+2~+6",
+      "ch": null,
+      "damage": ",7",
+      "notes": [
+        "Combo from 1st hit"
+      ],
+      "damageTotal": 15
+    },
+    "db3": {
+      "wavuId": "Yoshimitsu-db+3",
+      "input": "db+3",
+      "name": "db+3",
+      "level": "l",
+      "startup": "i18~19",
+      "block": "-25",
+      "hit": "-14",
+      "ch": null,
+      "damage": "8",
+      "notes": [],
+      "damageTotal": 8
+    },
+    "db4": {
+      "wavuId": "Yoshimitsu-db+4",
+      "input": "db+4",
+      "name": "Nozuchi Fumi",
+      "level": "L",
+      "startup": "i17",
+      "block": "-12",
+      "hit": "-1",
+      "ch": null,
+      "damage": "14",
+      "notes": [],
+      "damageTotal": 14,
+      "video": "https://wavu.wiki/w/images/e/ec/T8-p2-yoshimitsu-db%2B4.mp4"
+    },
+    "harakiri": {
+      "wavuId": "Yoshimitsu-d+1+4",
+      "input": "d+1+4",
+      "name": "Harakiri",
+      "level": "m!",
+      "startup": "i29~30",
+      "block": null,
+      "hit": "-32a",
+      "ch": null,
+      "damage": "60",
+      "notes": [
+        "Weapon",
+        "60 self damage during 1st recovery frame",
+        "Can connect from the front if the opponent attacks into it"
+      ],
+      "damageTotal": 60,
+      "video": "https://wavu.wiki/w/images/4/46/T8-p2-yoshimitsu-d%2B1%2B4.mp4"
+    },
+    "u1": {
+      "wavuId": "Yoshimitsu-u+1",
+      "input": "u+1",
+      "name": "Helmet Strike",
+      "level": "m",
+      "startup": "i24~25",
+      "block": "-4",
+      "hit": "+5c",
+      "ch": "+50a",
+      "damage": "20",
+      "notes": [
+        "Floor Break",
+        "Weapon"
+      ],
+      "damageTotal": 20,
+      "video": "https://wavu.wiki/w/images/4/4f/T8-p2-yoshimitsu-u%2B1.mp4"
+    },
+    "uf1": {
+      "wavuId": "Yoshimitsu-uf+1",
+      "input": "uf+1",
+      "name": "uf+1",
+      "level": "m",
+      "startup": "i17",
+      "block": "-10",
+      "hit": "+2c",
+      "ch": null,
+      "damage": "10",
+      "notes": [
+        "Weapon",
+        "Good right sidestep tracking",
+        "Transition to KIN -3 +9 r26 with 1+2",
+        "H.uf+1: Consumes 90F of remaining Heat time"
+      ],
+      "damageTotal": 10,
+      "video": "https://wavu.wiki/w/images/7/7a/T8-p2-yoshimitsu-uf%2B1.mp4"
+    },
+    "uf1-1": {
+      "wavuId": "Yoshimitsu-uf+1,1",
+      "input": "uf+1,1",
+      "name": "Kasane Kaishaku",
+      "level": "m,M",
+      "startup": ",i29~30",
+      "displayStartup": "i17 (string)",
+      "block": "-10",
+      "hit": "+9c",
+      "ch": null,
+      "damage": ",17",
+      "notes": [
+        "Floor Break",
+        "Weapon",
+        "Combo from 1st hit with 4f delay",
+        "Input can be delayed 4f",
+        "Move can be delayed 3f",
+        "Interrupt with i6 from 1st block",
+        "Transition to FLE on hit only",
+        "Power up in NSS or Heat"
+      ],
+      "damageTotal": 27,
+      "video": "https://wavu.wiki/w/images/9/99/T8-p2-yoshimitsu-uf%2B1%2C1.mp4"
+    },
+    "uf2": {
+      "wavuId": "Yoshimitsu-uf+2",
+      "input": "uf+2",
+      "name": "Kurama Itto",
+      "level": "L",
+      "startup": "i35~36",
+      "block": "-16",
+      "hit": "+6g",
+      "ch": "+25a",
+      "damage": "25",
+      "notes": [
+        "Weapon",
+        "Cancel to r47 FC with D on frame 27"
+      ],
+      "damageTotal": 25,
+      "video": "https://wavu.wiki/w/images/8/89/T8-p2-yoshimitsu-uf%2B2.mp4"
+    },
+    "uf3": {
+      "wavuId": "Yoshimitsu-uf+3",
+      "input": "uf+3",
+      "name": "Rising Knee",
+      "level": "m",
+      "startup": "i15",
+      "block": "-13",
+      "hit": "+32a (+22)",
+      "ch": null,
+      "damage": "15",
+      "notes": [
+        "Knee",
+        "Can evade jabs at frames 5-7"
+      ],
+      "damageTotal": 15,
+      "video": "https://wavu.wiki/w/images/6/66/T8-p2-yoshimitsu-uf%2B3.mp4"
+    },
+    "uf4": {
+      "wavuId": "Yoshimitsu-uf+4",
+      "input": "uf+4",
+      "name": "Avoiding the Puddle",
+      "level": "m",
+      "startup": "i20~22",
+      "block": "-9",
+      "hit": "+22a",
+      "ch": null,
+      "damage": "21",
+      "notes": [
+        "Homing",
+        "Balcony Break",
+        "Floor Break"
+      ],
+      "damageTotal": 21,
+      "video": "https://wavu.wiki/w/images/4/40/T8-p2-yoshimitsu-uf%2B4.mp4"
+    },
+    "uf3plus4": {
+      "wavuId": "Yoshimitsu-uf+3+4",
+      "input": "uf+3+4",
+      "name": "Poison Wind",
+      "level": "M",
+      "startup": "i31~35",
+      "block": "-16~-12",
+      "hit": "-4a",
+      "ch": null,
+      "damage": "20",
+      "notes": [
+        "Floor Break",
+        "In 1SS cancel to DGF r41 with 1+2 on frame 23",
+        "In 1SS enter FLE r28 with d+1+2",
+        "In 1SS enter IND r28 with d+1+2 (or NSS.d+1+2)",
+        "On hit, transitions to -4a r49 backward jump automatically",
+        "Landing on opponent's head, transitions to -48a (-58) r75 hop automatically, hitting Yoshimitsu during this animation forces him into BT"
+      ],
+      "damageTotal": 20,
+      "video": "https://wavu.wiki/w/images/9/9c/T8-p2-yoshimitsu-uf%2B3%2B4.mp4"
+    },
+    "ub1": {
+      "wavuId": "Yoshimitsu-ub+1",
+      "input": "ub+1",
+      "name": "ub+1",
+      "level": "m",
+      "startup": "i24~25",
+      "block": "-5",
+      "hit": "+4c",
+      "ch": null,
+      "damage": "17",
+      "notes": [
+        "Floor Break",
+        "Weapon",
+        "Performs u+1 with a vertical jump"
+      ],
+      "damageTotal": 17
+    },
+    "ub1plus2": {
+      "wavuId": "Yoshimitsu-ub+1+2",
+      "input": "ub+1+2",
+      "name": "Cleansing Sword Yoshimitsu",
+      "level": "M",
+      "startup": "i24~25",
+      "block": "-8c",
+      "hit": "+27a (+17)",
+      "ch": null,
+      "damage": "25",
+      "notes": [
+        "Balcony Break",
+        "Weapon",
+        "5 chip damage on block",
+        "Power up in NSS or Heat"
+      ],
+      "damageTotal": 25,
+      "video": "https://wavu.wiki/w/images/b/b0/T8-p2-yoshimitsu-ub%2B1%2B2.mp4"
+    },
+    "ub4": {
+      "wavuId": "Yoshimitsu-ub+4",
+      "input": "ub+4",
+      "name": "Avoiding the Puddle",
+      "level": "m",
+      "startup": "i20~22",
+      "block": "-19",
+      "hit": "+12a (+2)",
+      "ch": null,
+      "damage": "17",
+      "notes": [
+        "Balcony Break",
+        "Floor Break"
+      ],
+      "damageTotal": 17
+    },
+    "sword-stab": {
+      "wavuId": "Yoshimitsu-ub+1+3",
+      "input": "ub+1+3",
+      "name": "Sword Stab",
+      "level": "m!",
+      "startup": "i50~52",
+      "block": null,
+      "hit": "-24",
+      "ch": null,
+      "damage": "40",
+      "notes": [
+        "Weapon",
+        "Punishable on close hit with FUFT.3"
+      ],
+      "damageTotal": 40,
+      "video": "https://wavu.wiki/w/images/8/83/T8-p2-yoshimitsu-ub%2B1%2B3.mp4"
+    },
+    "ws1": {
+      "wavuId": "Yoshimitsu-ws1",
+      "input": "ws1",
+      "name": "ws1",
+      "level": "m",
+      "startup": "i13~14",
+      "block": "-10",
+      "hit": "+1",
+      "ch": "+6",
+      "damage": "12",
+      "notes": [],
+      "damageTotal": 12
+    },
+    "ws1-2": {
+      "wavuId": "Yoshimitsu-ws1,2",
+      "input": "ws1,2",
+      "name": "Door Knocker to Back Knuckle",
+      "level": "m,h",
+      "startup": ",i25~26",
+      "displayStartup": "i13 (string)",
+      "block": "-4",
+      "hit": "+14g",
+      "ch": "+39a",
+      "damage": ",18",
+      "notes": [
+        "Balcony Break",
+        "Combos from 1st hit with 4f delay",
+        "Combos from 1st CH with 9f delay",
+        "Input can be delayed 15f",
+        "Move can be delayed 13f"
+      ],
+      "damageTotal": 30
+    },
+    "ws1-2-1": {
+      "wavuId": "Yoshimitsu-ws1,2,1",
+      "input": "ws1,2,1",
+      "name": "Door Knocker Shredder",
+      "level": "m,h,M",
+      "startup": ",i26~27",
+      "displayStartup": "i13 (string)",
+      "block": "-12",
+      "hit": "+17a (+10)",
+      "ch": null,
+      "damage": ",21",
+      "notes": [
+        "Tornado",
+        "Weapon",
+        "Combo from 2nd CH"
+      ],
+      "damageTotal": 51,
+      "video": "https://wavu.wiki/w/images/5/50/T8-p2-yoshimitsu-ws1%2C2%2C1.mp4"
+    },
+    "ws2": {
+      "wavuId": "Yoshimitsu-ws2",
+      "input": "ws2",
+      "name": "Exorcism Fist",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-4",
+      "hit": "+7",
+      "ch": null,
+      "damage": "13",
+      "notes": [
+        "Balcony Break (airborne)"
+      ],
+      "damageTotal": 13
+    },
+    "ws2-1": {
+      "wavuId": "Yoshimitsu-ws2,1",
+      "input": "ws2,1",
+      "name": "Scowling Moon God",
+      "level": "m,m",
+      "startup": ",i27~28",
+      "displayStartup": "i15 (string)",
+      "block": "-3a",
+      "hit": "+36a (+26)",
+      "ch": null,
+      "damage": ",14",
+      "notes": [
+        "Weapon",
+        "Combo from 1st hit with 1f delay"
+      ],
+      "damageTotal": 27,
+      "video": "https://wavu.wiki/w/images/e/ec/T8-p2-yoshimitsu-ws2%2C1.mp4"
+    },
+    "ws3": {
+      "wavuId": "Yoshimitsu-ws3",
+      "input": "ws3",
+      "name": "ws3",
+      "level": "m",
+      "startup": "i16",
+      "block": "-6",
+      "hit": "+3",
+      "ch": null,
+      "damage": "12",
+      "notes": [],
+      "damageTotal": 12
+    },
+    "ws3-2": {
+      "wavuId": "Yoshimitsu-ws3,2",
+      "input": "ws3,2",
+      "name": "Kimon Matagi",
+      "level": "m,m",
+      "startup": ",i32",
+      "displayStartup": "i16 (string)",
+      "block": "-12c",
+      "hit": "+0a",
+      "ch": null,
+      "damage": ",20",
+      "notes": [
+        "Floor Break",
+        "Weapon",
+        "Combo from 1st hit"
+      ],
+      "damageTotal": 32,
+      "video": "https://wavu.wiki/w/images/1/12/T8-p2-yoshimitsu-ws3%2C2.mp4"
+    },
+    "ws4": {
+      "wavuId": "Yoshimitsu-ws4",
+      "input": "ws4",
+      "name": "Toe Smash",
+      "level": "m",
+      "startup": "i11~12",
+      "block": "-6",
+      "hit": "+5",
+      "ch": null,
+      "damage": "14",
+      "notes": [
+        "Enter KIN r24 with 1+2",
+        "Enter NSS r24 with B"
+      ],
+      "damageTotal": 14,
+      "video": "https://wavu.wiki/w/images/7/75/T8-p2-yoshimitsu-ws4.mp4"
+    },
+    "hfc1": {
+      "wavuId": "Yoshimitsu-hFC.1",
+      "input": "hFC.1",
+      "name": "hFC.1",
+      "level": "sl",
+      "startup": "i10",
+      "block": "-5",
+      "hit": "+6",
+      "ch": null,
+      "damage": "5",
+      "notes": [
+        "Transition to r24 with f",
+        "Transition input can be delayed 16f"
+      ],
+      "damageTotal": 5
+    },
+    "hfc2": {
+      "wavuId": "Yoshimitsu-hFC.2",
+      "input": "hFC.2",
+      "name": "hFC.2",
+      "level": "sl",
+      "startup": "i11",
+      "block": "-4",
+      "hit": "+5",
+      "ch": null,
+      "damage": "8",
+      "notes": [],
+      "damageTotal": 8
+    },
+    "knee-cap": {
+      "wavuId": "Yoshimitsu-hFC.df+4",
+      "input": "hFC.df+4",
+      "name": "Knee Cap",
+      "level": "L",
+      "startup": "i18~19",
+      "block": "-26",
+      "hit": "+4c",
+      "ch": "+31a",
+      "damage": "18",
+      "notes": [
+        "Homing",
+        "Enter IND -26 +8c +35a r24 with d+3+4",
+        "Can be done from Crouch Level 1"
+      ],
+      "damageTotal": 18,
+      "video": "https://wavu.wiki/w/images/8/83/T8-p2-yoshimitsu-fc.df%2B4.mp4"
+    },
+    "ss1": {
+      "wavuId": "Yoshimitsu-SS.1",
+      "input": "SS.1",
+      "name": "Inner Palm",
+      "level": "m",
+      "startup": "i17~18",
+      "block": "-9",
+      "hit": "+2",
+      "ch": "+27a (+17)",
+      "damage": "21",
+      "notes": [
+        "Sidestep adds minimum 9f, effective startup i26~27"
+      ],
+      "damageTotal": 21,
+      "video": "https://wavu.wiki/w/images/c/c1/T8-p2-yoshimitsu-ss.1.mp4"
+    },
+    "ss2": {
+      "wavuId": "Yoshimitsu-SS.2",
+      "input": "SS.2",
+      "name": "Shrine",
+      "level": "m",
+      "startup": "i16~17",
+      "block": "-13",
+      "hit": "+28a (+18)",
+      "ch": null,
+      "damage": "22",
+      "notes": [
+        "Tornado",
+        "Sidestep adds minimum 9f, effective startup i25~26"
+      ],
+      "damageTotal": 22,
+      "video": "https://wavu.wiki/w/images/5/5e/T8-p2-yoshimitsu-ss.2.mp4"
+    },
+    "throw-1plus3": {
+      "wavuId": "Yoshimitsu-1+3",
+      "input": "1+3",
+      "name": "Oni Killer",
+      "level": "t",
+      "startup": "i12~14",
+      "block": "-3",
+      "hit": "+1d",
+      "ch": null,
+      "damage": "35",
+      "notes": [
+        "Homing",
+        "Throw break 1 or 2"
+      ],
+      "damageTotal": 35,
+      "video": "https://wavu.wiki/w/images/a/af/T8-p2-yoshimitsu-1%2B3.mp4"
+    },
+    "throw-2plus4": {
+      "wavuId": "Yoshimitsu-2+4",
+      "input": "2+4",
+      "name": "Sword Face Smash",
+      "level": "t",
+      "startup": "i12~14",
+      "block": "+0",
+      "hit": "+1",
+      "ch": null,
+      "damage": "35",
+      "notes": [
+        "Homing",
+        "Floor Break",
+        "Throw break 1 or 2",
+        "Side switch on hit"
+      ],
+      "damageTotal": 35,
+      "video": "https://wavu.wiki/w/images/a/a0/T8-p2-yoshimitsu-2%2B4.mp4"
+    },
+    "rainbow-drop": {
+      "wavuId": "Yoshimitsu-uf+1+2",
+      "input": "uf+1+2",
+      "name": "Rainbow Drop",
+      "level": "t",
+      "startup": "i11",
+      "block": "+0",
+      "hit": "+1",
+      "ch": null,
+      "damage": "40",
+      "notes": [
+        "Floor Break",
+        "Throw break 1+2",
+        "Side switch on break"
+      ],
+      "damageTotal": 40,
+      "video": "https://wavu.wiki/w/images/1/14/T8-p2-yoshimitsu-uf%2B1%2B2.mp4"
+    },
+    "soul-possession": {
+      "wavuId": "Yoshimitsu-qcb,f+2",
+      "input": "qcb,f+2",
+      "name": "Soul Possession",
+      "level": "t",
+      "startup": "i15~16",
+      "block": null,
+      "hit": "+0",
+      "ch": null,
+      "damage": "0",
+      "notes": [
+        "Unbreakable",
+        "Opponent recovers 26 health",
+        "Yoshimitsu loses 35 health"
+      ],
+      "damageTotal": null,
+      "video": "https://wavu.wiki/w/images/1/18/T8-p2-yoshimitsu-qcb%2Cf%2B2.mp4"
+    },
+    "soul-siphon": {
+      "wavuId": "Yoshimitsu-qcf+2",
+      "input": "qcf+2",
+      "name": "Soul Siphon",
+      "level": "t",
+      "startup": "i15~16",
+      "block": "+0",
+      "hit": "+0",
+      "ch": null,
+      "damage": "22",
+      "notes": [
+        "Throw break 1+2",
+        "35 damage as a backthrow",
+        "Yoshimitsu recovers 16 health",
+        "On break:",
+        "* -Opponent recovers 22 health (35 on backthrow)",
+        "* -Yoshimitsu loses 16 health"
+      ],
+      "damageTotal": 22,
+      "video": "https://wavu.wiki/w/images/4/44/T8-p2-yoshimitsu-qcf%2B2.mp4"
+    },
+    "heat-burst": {
+      "wavuId": "Yoshimitsu-2+3",
+      "input": "2+3",
+      "name": "Heat Burst",
+      "level": "m",
+      "startup": "i16",
+      "block": "+1",
+      "hit": "+2c",
+      "ch": null,
+      "damage": "[12;12]",
+      "notes": [
+        "Heat Burst",
+        "Cancel to r45 with b,b on frame 42",
+        "2 chip damage on block",
+        "12 chip damage on hit",
+        "Only deals recoverable damage",
+        "Cannot cause a K.O."
+      ],
+      "damageTotal": 24
+    },
+    "heat-smash": {
+      "wavuId": "Yoshimitsu-H.2+3",
+      "input": "H.2+3",
+      "name": "Divine Sword Kagekiyo",
+      "level": "M,m,m,m",
+      "startup": "i18~19",
+      "block": "+4",
+      "hit": "-3d",
+      "ch": null,
+      "damage": "51",
+      "notes": [
+        "Heat Smash",
+        "Reversal Break",
+        "Balcony Break",
+        "Recovers 4 base health or 14 additional recoverable health on hit",
+        "Enter DGF +10 r29 with U on block",
+        "Transition to attack throw after 1st hit",
+        "9 chip damage on block",
+        "Jail from 1st attack"
+      ],
+      "damageTotal": 51
+    },
+    "rage-art": {
+      "wavuId": "Yoshimitsu-R.df+1+2",
+      "input": "R.df+1+2",
+      "name": "Trailokya Pilgrimage",
+      "level": "m,t",
+      "startup": "i20",
+      "block": "-18",
+      "hit": "+0d",
+      "ch": null,
+      "damage": "55+",
+      "notes": [
+        "Rage Art",
+        "Removes Recoverable Health",
+        "Reversal Break",
+        "Damage increases with lower health, maximum 82",
+        "Freezes match timer on activation and on hit",
+        "Restores recoverable health on hit",
+        "Transition to attack throw on hit",
+        "Consumes Rage"
+      ],
+      "damageTotal": 55
+    },
+    "bt1": {
+      "wavuId": "Yoshimitsu-BT.1",
+      "input": "BT.1",
+      "name": "BT.1",
+      "level": "h",
+      "startup": "i15",
+      "block": "-3",
+      "hit": "+8",
+      "ch": null,
+      "damage": "16",
+      "notes": [
+        "Elbow"
+      ],
+      "damageTotal": 16
+    },
+    "bt2": {
+      "wavuId": "Yoshimitsu-BT.2",
+      "input": "BT.2",
+      "name": "Manji Backfist 2",
+      "level": "h",
+      "startup": "i16~17",
+      "block": "-4",
+      "hit": "+14g",
+      "ch": "+39a",
+      "damage": "18",
+      "notes": [
+        "Balcony Break",
+        "Leads to f+2 extensions"
+      ],
+      "damageTotal": 18
+    },
+    "bt3": {
+      "wavuId": "Yoshimitsu-BT.3",
+      "input": "BT.3",
+      "name": "Perilous Spirit",
+      "level": "m",
+      "startup": "i24~26",
+      "block": "-3~-1",
+      "hit": "+11a",
+      "ch": null,
+      "damage": "20",
+      "notes": [
+        "Floor Break"
+      ],
+      "damageTotal": 20,
+      "video": "https://wavu.wiki/w/images/2/2a/T8-p2-yoshimitsu-bt.3.mp4"
+    },
+    "bt-d1": {
+      "wavuId": "Yoshimitsu-BT.d+1",
+      "input": "BT.d+1",
+      "name": "Shisetsu Genman",
+      "level": "L",
+      "startup": "i17~18",
+      "block": "-13",
+      "hit": "+3",
+      "ch": "+38a",
+      "damage": "20",
+      "notes": [
+        "Weapon"
+      ],
+      "damageTotal": 20,
+      "video": "https://wavu.wiki/w/images/2/2c/T8-p2-yoshimitsu-bt.d%2B1.mp4"
+    },
+    "nss-soul-stealer": {
+      "wavuId": "Yoshimitsu-NSS.1+4",
+      "input": "NSS.1+4",
+      "name": "Soul Stealer",
+      "level": "m",
+      "startup": "i8~11",
+      "block": "-20",
+      "hit": "+14 +64a",
+      "ch": null,
+      "damage": "20",
+      "notes": [
+        "Strong Aerial Tailspin",
+        "Weapon",
+        "Knockdown against BT opponent, +19a (+9)",
+        "4 chip damage on block",
+        "Recovers 1 base health or 6 additional recoverable health on hit",
+        "Can be done from Crouch Level 1",
+        "Crumple stun +14~17 after hit",
+        "H.1+4: Consumes 300F of remaining Heat time"
+      ],
+      "damageTotal": 20
+    },
+    "nss-db1": {
+      "wavuId": "Yoshimitsu-NSS.db+1",
+      "input": "NSS.db+1",
+      "name": "Manji Shagapan",
+      "level": "sl",
+      "startup": "i10",
+      "block": "-5",
+      "hit": "+6",
+      "ch": null,
+      "damage": "5",
+      "notes": [
+        "Transition to r24 with f",
+        "+6c on crouching hit"
+      ],
+      "damageTotal": 5,
+      "video": "https://wavu.wiki/w/images/a/a4/T8-p2-yoshimitsu-nss.db%2B1.mp4"
+    },
+    "nss-d1": {
+      "wavuId": "Yoshimitsu-NSS.d+1",
+      "input": "NSS.d+1",
+      "name": "Quick Chop",
+      "level": "M",
+      "startup": "i24~25",
+      "block": "-9",
+      "hit": "+16a",
+      "ch": "+52a",
+      "damage": "24",
+      "notes": [
+        "Floor Break",
+        "Weapon",
+        "Recovers 1 base health or 6 additional recoverable health on hit",
+        "Recovers 1 base health when remaining recoverable health is 5 or less",
+        "9 chip damage on block",
+        "Input can be held to transition to d+1*",
+        "H.d+1: Consumes 90F of remaining Heat time"
+      ],
+      "damageTotal": 24
+    },
+    "nss-f1plus2": {
+      "wavuId": "Yoshimitsu-NSS.f+1+2",
+      "input": "NSS.f+1+2",
+      "name": "Nine-Headed Dragon",
+      "level": "M",
+      "startup": "i20",
+      "block": "-7",
+      "hit": "+29a (+3)",
+      "ch": null,
+      "damage": "29",
+      "notes": [
+        "Heat Engager",
+        "Heat Dash +5, +62a (+42)",
+        "Balcony Break",
+        "Weapon",
+        "8 chip damage on block",
+        "Recovers 1 base health or 6 additional recoverable health on hit",
+        "Recovers 1 base health when remaining recoverable health is 5 or less",
+        "Extended range",
+        "H.f+1+2: Consumes 270F of heat timer during heat",
+        "Steel pedal"
+      ],
+      "damageTotal": 29
+    },
+    "nss-ub1plus2": {
+      "wavuId": "Yoshimitsu-NSS.ub+1+2",
+      "input": "NSS.ub+1+2",
+      "name": "Soul Blade Yoshimitsu",
+      "level": "M",
+      "startup": "i24~25",
+      "block": "-8c",
+      "hit": "+16a (+6)",
+      "ch": null,
+      "damage": "30",
+      "notes": [
+        "Balcony Break",
+        "Weapon",
+        "12 chip damage on block",
+        "Clean hit 39 damage",
+        "Recovers 1 base health or 6 additional recoverable health on hit",
+        "Recovers 1 base health when remaining recoverable health is 5 or less",
+        "-12c if blocked at tip range",
+        "H.ub+1+2: Consumes 180F of remaining Heat time"
+      ],
+      "damageTotal": 30,
+      "video": "https://wavu.wiki/w/images/3/3d/T8-p2-yoshimitsu-nss.ub%2B1%2B2.mp4"
+    },
+    "nss-u1plus2": {
+      "wavuId": "Yoshimitsu-NSS.u+1+2",
+      "input": "NSS.u+1+2",
+      "name": "Ishiusu Tsubushi",
+      "level": "L",
+      "startup": "i27~29",
+      "block": "+5",
+      "hit": "+21g",
+      "ch": null,
+      "damage": "18",
+      "notes": [
+        "Floor Break",
+        "Can't be low parried",
+        "Opponent recovers crouching"
+      ],
+      "damageTotal": 18,
+      "video": "https://wavu.wiki/w/images/3/37/T8-p2-yoshimitsu-nss.u%2B1%2B2.mp4"
+    },
+    "nss-fc-df3": {
+      "wavuId": "Yoshimitsu-NSS.FC.df+3",
+      "input": "NSS.FC.df+3",
+      "name": "Spinning Cleave",
+      "level": "L",
+      "startup": "i20~21",
+      "block": "-26",
+      "hit": "+67a (+51)",
+      "ch": null,
+      "damage": "12",
+      "notes": [],
+      "damageTotal": 12,
+      "video": "https://wavu.wiki/w/images/0/0f/T8-p2-yoshimitsu-nss.fc.df%2B3.mp4"
+    },
+    "nss-cd1": {
+      "wavuId": "Yoshimitsu-NSS.f,n,d,df+1",
+      "input": "NSS.f,n,d,df+1",
+      "name": "Moonlight",
+      "level": "m",
+      "startup": "i17~18",
+      "block": "-17",
+      "hit": "+35a (+25a)",
+      "ch": null,
+      "damage": "19",
+      "notes": [
+        "Weapon",
+        "Can be buffered",
+        "Enter KIN r30 with 1+2",
+        "Can be performed from FC"
+      ],
+      "damageTotal": 19
+    },
+    "nss-qcf1": {
+      "wavuId": "Yoshimitsu-NSS.qcf+1",
+      "input": "NSS.qcf+1",
+      "name": "Moonsault",
+      "level": "M",
+      "startup": "i53~56",
+      "block": "-8c",
+      "hit": "+5a",
+      "ch": null,
+      "damage": "30",
+      "notes": [
+        "Floor Break",
+        "Can be buffered",
+        "Can be performed in FC"
+      ],
+      "damageTotal": 30
+    },
+    "nss-spirit-spinner": {
+      "wavuId": "Yoshimitsu-NSS.1+2+3",
+      "input": "NSS.1+2+3",
+      "name": "Spirit Spinner",
+      "level": "h",
+      "startup": "i22~40",
+      "block": "-18~+0",
+      "hit": "+26d (-32)",
+      "ch": "+16~+34",
+      "damage": "25",
+      "notes": [
+        "Balcony Break"
+      ],
+      "damageTotal": 25
+    },
+    "kin-1plus2": {
+      "wavuId": "Yoshimitsu-KIN.1+2",
+      "input": "KIN.1+2",
+      "name": "Ashura Blade",
+      "level": "m,m,m,m",
+      "startup": "i12~13 i6~7 i7~8 i11~13",
+      "block": "-6",
+      "hit": "+11a",
+      "ch": null,
+      "damage": "4,4,4,24",
+      "notes": [
+        "Floor Break",
+        "Weapon",
+        "Combos from any hit",
+        "Despite being i12, it always connects on i13 after f,F+3,1+2 on hit"
+      ],
+      "damageTotal": 36,
+      "video": "https://wavu.wiki/w/images/a/a6/T8-p2-yoshimitsu-kin.1%2B2.mp4"
+    },
+    "kin-2": {
+      "wavuId": "Yoshimitsu-KIN.2",
+      "input": "KIN.2",
+      "name": "KIN.2",
+      "level": "m",
+      "startup": "i21~22",
+      "block": "-14",
+      "hit": "+26a (+16)",
+      "ch": null,
+      "damage": "15",
+      "notes": [
+        "Weapon"
+      ],
+      "damageTotal": 15
+    },
+    "kin-2-1plus2": {
+      "wavuId": "Yoshimitsu-KIN.2,1+2",
+      "input": "KIN.2,1+2",
+      "name": "Tenshu Kuzushi",
+      "level": "m,M",
+      "startup": ",i32~34",
+      "displayStartup": "i21 (string)",
+      "block": "-15~-13",
+      "hit": "+2a",
+      "ch": null,
+      "damage": ",30",
+      "notes": [
+        "Balcony Break",
+        "Floor Break",
+        "Weapon",
+        "6 chip damage on block",
+        "Power in NSS or Heat",
+        "-3d on backturned hit"
+      ],
+      "damageTotal": 45,
+      "video": "https://wavu.wiki/w/images/5/54/T8-p2-yoshimitsu-kin.2%2C1%2B2.mp4"
+    },
+    "kin-3": {
+      "wavuId": "Yoshimitsu-KIN.3",
+      "input": "KIN.3",
+      "name": "Shibakari",
+      "level": "L",
+      "startup": "i25~32",
+      "block": "-16~-9",
+      "hit": "+13a",
+      "ch": "+25a",
+      "damage": "17",
+      "notes": [],
+      "damageTotal": 17,
+      "video": "https://wavu.wiki/w/images/4/4f/T8-p2-yoshimitsu-kin.3.mp4"
+    },
+    "kin-4": {
+      "wavuId": "Yoshimitsu-KIN.4",
+      "input": "KIN.4",
+      "name": "Whirlwind",
+      "level": "h",
+      "startup": "i16~17",
+      "block": "+0",
+      "hit": "+20a (+11)",
+      "ch": "+49a",
+      "damage": "23",
+      "notes": [
+        "Homing",
+        "Balcony Break",
+        "Enter KIN +3 +23a (+14) r26 with 1+2",
+        "Enter MED -1 +19a (+10) r28 with 3+4"
+      ],
+      "damageTotal": 23,
+      "video": "https://wavu.wiki/w/images/5/55/T8-p2-yoshimitsu-kin.4.mp4"
+    },
+    "kin-b2": {
+      "wavuId": "Yoshimitsu-KIN.b+2",
+      "input": "KIN.b+2",
+      "name": "KIN.b+2",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-9",
+      "hit": "+2",
+      "ch": null,
+      "damage": "15",
+      "notes": [
+        "Weapon"
+      ],
+      "damageTotal": 15
+    },
+    "kin-b2-1": {
+      "wavuId": "Yoshimitsu-KIN.b+2,1",
+      "input": "KIN.b+2,1",
+      "name": "Ikaruga",
+      "level": "m,M",
+      "startup": ",i23~24",
+      "displayStartup": "i15 (string)",
+      "block": "-12",
+      "hit": "+30a (+20)",
+      "ch": null,
+      "damage": ",19",
+      "notes": [
+        "Tornado",
+        "Weapon",
+        "Combo from 1st hit"
+      ],
+      "damageTotal": 34,
+      "video": "https://wavu.wiki/w/images/9/97/T8-p2-yoshimitsu-kin.b%2B2%2C1.mp4"
+    },
+    "kin-d1": {
+      "wavuId": "Yoshimitsu-KIN.d+1",
+      "input": "KIN.d+1",
+      "name": "Ishigaki Kuzushi",
+      "level": "L",
+      "startup": "i23~24",
+      "block": "-13",
+      "hit": "+3",
+      "ch": "+38a",
+      "damage": "20",
+      "notes": [
+        "Weapon",
+        "Cancel to r34 FC with DB on frame 16"
+      ],
+      "damageTotal": 20,
+      "video": "https://wavu.wiki/w/images/e/ed/T8-p2-yoshimitsu-kin.d%2B1.mp4"
+    },
+    "kin-f1": {
+      "wavuId": "Yoshimitsu-KIN.f+1",
+      "input": "KIN.f+1",
+      "name": "Submission Chakram",
+      "level": "M,M,M",
+      "startup": "i19~20 i6~7 i7~8",
+      "block": "-5",
+      "hit": "-2",
+      "ch": null,
+      "damage": "6,6,10",
+      "notes": [
+        "Weapon",
+        "Combos from any hit",
+        "8 chip damage on block",
+        "Powers in NSS or Heat"
+      ],
+      "damageTotal": 22,
+      "video": "https://wavu.wiki/w/images/5/5b/T8-p2-yoshimitsu-kin.f%2B1.mp4"
+    },
+    "kin-f2": {
+      "wavuId": "Yoshimitsu-KIN.f+2",
+      "input": "KIN.f+2",
+      "name": "Ganto",
+      "level": "h",
+      "startup": "i12~13",
+      "block": "-1",
+      "hit": "+9a (+0)",
+      "ch": null,
+      "damage": "25",
+      "notes": [
+        "Heat Engager",
+        "Heat Dash +5, +43d (+35)",
+        "Homing",
+        "Balcony Break",
+        "Weapon"
+      ],
+      "damageTotal": 25
+    },
+    "kin-f1plus2": {
+      "wavuId": "Yoshimitsu-KIN.f+1+2",
+      "input": "KIN.f+1+2",
+      "name": "Oyashiro Kuzushi",
+      "level": "m",
+      "startup": "i24~25",
+      "block": "+14c",
+      "hit": "+14c",
+      "ch": "+49a",
+      "damage": "20",
+      "notes": [
+        "Weapon",
+        "Transition to FLE on hit or block only",
+        "Power up in NSS or Heat"
+      ],
+      "damageTotal": 20
+    },
+    "kin-soul-stealer": {
+      "wavuId": "Yoshimitsu-KIN.1+4",
+      "input": "KIN.1+4",
+      "name": "Kincho Soul Stealer",
+      "level": "m",
+      "startup": "i10~13",
+      "block": "-20",
+      "hit": "+14c",
+      "ch": null,
+      "damage": "20",
+      "notes": [
+        "Weapon",
+        "70% proration on standing hit",
+        "Recovers 12f faster on hit",
+        "Hit vs BT +11d (FDFT)",
+        "Power up in NSS or Heat",
+        "Can be done from Crouch Level 1"
+      ],
+      "damageTotal": 20
+    },
+    "dgf-1": {
+      "wavuId": "Yoshimitsu-DGF.1",
+      "input": "DGF.1",
+      "name": "Dragonfly Blade",
+      "level": "M",
+      "startup": "i30~31",
+      "block": "-2c",
+      "hit": "+10a",
+      "ch": "+46a",
+      "damage": "22",
+      "notes": [
+        "Floor Break",
+        "Weapon",
+        "11 chip damage on block",
+        "Power up in Heat"
+      ],
+      "damageTotal": 22,
+      "video": "https://wavu.wiki/w/images/c/c3/T8-p2-yoshimitsu-dgf.1.mp4"
+    },
+    "dgf-2": {
+      "wavuId": "Yoshimitsu-DGF.2",
+      "input": "DGF.2",
+      "name": "Dragonfly Fist",
+      "level": "h",
+      "startup": "i16~18",
+      "block": "+4",
+      "hit": "+13s",
+      "ch": null,
+      "damage": "15",
+      "notes": [],
+      "damageTotal": 15
+    },
+    "dgf-3": {
+      "wavuId": "Yoshimitsu-DGF.3",
+      "input": "DGF.3",
+      "name": "Dragonfly Sweep",
+      "level": "L",
+      "startup": "i22~23",
+      "block": "-13",
+      "hit": "+6c",
+      "ch": "+28a",
+      "damage": "18",
+      "notes": [
+        "Airborne attack, can't be low parried"
+      ],
+      "damageTotal": 18,
+      "video": "https://wavu.wiki/w/images/7/71/T8-p2-yoshimitsu-dgf.3.mp4"
+    },
+    "dgf-4": {
+      "wavuId": "Yoshimitsu-DGF.4",
+      "input": "DGF.4",
+      "name": "Dragonfly Twister",
+      "level": "m",
+      "startup": "i18~20",
+      "block": "-4",
+      "hit": "+14g",
+      "ch": null,
+      "damage": "24",
+      "notes": [
+        "Heat Engager",
+        "Heat Dash +5, +62a (+42)",
+        "Balcony Break"
+      ],
+      "damageTotal": 24,
+      "video": "https://wavu.wiki/w/images/6/6a/T8-p2-yoshimitsu-dgf.4.mp4"
+    },
+    "dgf-f2": {
+      "wavuId": "Yoshimitsu-DGF.f+2",
+      "input": "DGF.f+2",
+      "name": "Dragonfly Slash",
+      "level": "h",
+      "startup": "i20~21",
+      "block": "+7",
+      "hit": "+19a (+10)",
+      "ch": "+64a (+44)",
+      "damage": "23",
+      "notes": [
+        "Homing",
+        "Balcony Break",
+        "Weapon"
+      ],
+      "damageTotal": 23,
+      "video": "https://wavu.wiki/w/images/4/4d/T8-p2-yoshimitsu-dgf.f%2B2.mp4"
+    },
+    "dgf-f1plus2": {
+      "wavuId": "Yoshimitsu-DGF.f+1+2",
+      "input": "DGF.f+1+2",
+      "name": "Red Spider Lily",
+      "level": "h,h,h",
+      "startup": "i16~17 i11~12 i11~12",
+      "block": "-2",
+      "hit": "+18a (+9)",
+      "ch": null,
+      "damage": "9,9,18",
+      "notes": [
+        "Homing",
+        "Balcony Break",
+        "Weapon",
+        "Jail from 1st block",
+        "Combo from 1st hit",
+        "9 chip damage on block",
+        "Power up in Heat"
+      ],
+      "damageTotal": 36,
+      "video": "https://wavu.wiki/w/images/c/c9/T8-p2-yoshimitsu-dgf.f%2B1%2B2.mp4"
+    },
+    "dgf-3plus4": {
+      "wavuId": "Yoshimitsu-DGF.3+4",
+      "input": "DGF.3+4",
+      "name": "Spirited Away",
+      "level": "h!,t",
+      "startup": "i20~21",
+      "block": null,
+      "hit": "+0",
+      "ch": null,
+      "damage": "17,18",
+      "notes": [
+        "Floor Break",
+        "Transitions to attack throw on front hit (air hit OK)",
+        "Attack throw recovers standing"
+      ],
+      "damageTotal": 35,
+      "video": "https://wavu.wiki/w/images/2/2e/T8-p2-yoshimitsu-dgf.3%2B4.mp4"
+    },
+    "med-soul-stealer": {
+      "wavuId": "Yoshimitsu-MED.1+4",
+      "input": "MED.1+4",
+      "name": "Meditation Backturned Flash",
+      "level": "m",
+      "startup": "i6~9",
+      "block": "-20",
+      "hit": "+14c",
+      "ch": null,
+      "damage": "20",
+      "notes": [
+        "Weapon",
+        "70% proration on standing hit",
+        "Recovers 12f faster on hit",
+        "Hit vs BT +11d (FDFT)",
+        "Power up in NSS or Heat",
+        "Can be done from Crouch Level 1"
+      ],
+      "damageTotal": 20
+    },
+    "med-3": {
+      "wavuId": "Yoshimitsu-MED.3",
+      "input": "MED.3",
+      "name": "Back Handspring",
+      "level": "m,M",
+      "startup": "i17~28 i28~39",
+      "block": "+2~+13",
+      "hit": "+43a",
+      "ch": null,
+      "damage": "15,15",
+      "notes": [
+        "Floor Break",
+        "BT.d+3 is guaranteed on meaty block",
+        "1st hit only connects if the opponent is close enough"
+      ],
+      "damageTotal": 30,
+      "video": "https://wavu.wiki/w/images/3/30/T8-p2-yoshimitsu-med.3.mp4"
+    },
+    "med-heal": {
+      "wavuId": "Yoshimitsu-MED.1+2",
+      "input": "MED.1+2",
+      "name": "Meditation Healing",
+      "level": "m!",
+      "startup": "i30~34",
+      "block": null,
+      "hit": "-1a",
+      "ch": null,
+      "damage": "10",
+      "notes": [
+        "Recovers 12 base health"
+      ],
+      "damageTotal": 10,
+      "video": "https://wavu.wiki/w/images/9/9e/T8-p2-yoshimitsu-med.1%2B2.mp4"
+    },
+    "fle-1plus2": {
+      "wavuId": "Yoshimitsu-FLE.1+2",
+      "input": "FLE.1+2",
+      "name": "Skull Splitter",
+      "level": "m",
+      "startup": "i18~19",
+      "block": "-9",
+      "hit": "+4",
+      "ch": "+31a (+21)",
+      "damage": "16",
+      "notes": [
+        "Tornado",
+        "Head"
+      ],
+      "damageTotal": 16,
+      "video": "https://wavu.wiki/w/images/5/55/T8-p2-yoshimitsu-fle.1%2B2.mp4"
+    },
+    "fle-2": {
+      "wavuId": "Yoshimitsu-FLE.2",
+      "input": "FLE.2",
+      "name": "Flea > Sliding Headbutt",
+      "level": "L",
+      "startup": "i24~28",
+      "block": "-12~-8",
+      "hit": "+30a",
+      "ch": null,
+      "damage": "20",
+      "notes": [
+        "Side switches on close hit",
+        "Can combo to ws4 on no side switch"
+      ],
+      "damageTotal": 20,
+      "video": "https://wavu.wiki/w/images/b/b9/T8-p2-yoshimitsu-fle.2.mp4"
+    },
+    "fle-3plus4": {
+      "wavuId": "Yoshimitsu-FLE.3+4",
+      "input": "FLE.3+4",
+      "name": "Flea > Kangaroo Kick",
+      "level": "m",
+      "startup": "i25~26",
+      "block": "-13",
+      "hit": "+52a (+42)",
+      "ch": null,
+      "damage": "25",
+      "notes": [
+        "Tornado"
+      ],
+      "damageTotal": 25,
+      "video": "https://wavu.wiki/w/images/a/a2/T8-p2-yoshimitsu-fle.3%2B4.mp4"
+    },
+    "ind-1": {
+      "wavuId": "Yoshimitsu-IND.1",
+      "input": "IND.1",
+      "name": "Indian Stance Storm",
+      "level": "M!",
+      "startup": "i53~55",
+      "block": null,
+      "hit": "+0c~+2c",
+      "ch": null,
+      "damage": "15",
+      "notes": [
+        "Floor Break",
+        "Weapon",
+        "Same animation as the ending of qcf+1"
+      ],
+      "damageTotal": 15,
+      "video": "https://wavu.wiki/w/images/5/57/T8-p2-yoshimitsu-ind.1.mp4"
+    },
+    "ind-2": {
+      "wavuId": "Yoshimitsu-IND.2",
+      "input": "IND.2",
+      "name": "Indian Stance Stone Fists",
+      "level": "m",
+      "startup": "i39~43",
+      "block": "-8~-5",
+      "hit": "+2~+6",
+      "ch": null,
+      "damage": "7",
+      "notes": [
+        "Leads to db+2 extensions",
+        "Greater forward momentum than a standing db+2"
+      ],
+      "damageTotal": 7,
+      "video": "https://wavu.wiki/w/images/d/db/T8-p2-yoshimitsu-ind.2.mp4"
+    },
+    "ind-4": {
+      "wavuId": "Yoshimitsu-IND.4",
+      "input": "IND.4",
+      "name": "Indian Stance Knee Cap",
+      "level": "L",
+      "startup": "i47~48",
+      "block": "-26",
+      "hit": "+4c",
+      "ch": "+31a",
+      "damage": "18",
+      "notes": [
+        "Homing",
+        "Enter IND -26 +8 +35a r24 with d+3+4"
+      ],
+      "damageTotal": 18,
+      "video": "https://wavu.wiki/w/images/c/c8/T8-p2-yoshimitsu-ind.4.mp4"
+    },
+    "ind-3plus4": {
+      "wavuId": "Yoshimitsu-IND.3+4",
+      "input": "IND.3+4",
+      "name": "Indian Tobi Ushiwaka",
+      "level": "m,m",
+      "startup": "i17~18 i10~11",
+      "block": "-6",
+      "hit": "+3",
+      "ch": null,
+      "damage": "6,22",
+      "notes": [
+        "Homing",
+        "Transition to DGF r18 with 1SS.U (+5/+14)"
+      ],
+      "damageTotal": 28,
+      "video": "https://wavu.wiki/w/images/4/4b/T8-p2-yoshimitsu-ind.3%2B4.mp4"
+    },
+    "samurai-cutter": {
+      "wavuId": "Yoshimitsu-FC.DF+1",
+      "input": "FC.DF+1",
+      "name": "Sword Sweep / Samurai Cutter",
+      "level": "l!",
+      "startup": "i26",
+      "block": null,
+      "hit": "+70a (+54)",
+      "ch": null,
+      "damage": "[12;12]",
+      "notes": [
+        "Weapon",
+        "100% recoverable damage",
+        "Cannot be buffered after Heat Dash",
+        "Must hold DF for 5 frames",
+        "i27 effective startup (with FC.db,b+1 input)",
+        "i31 effective startup (with FC.DF+1 input)",
+        "i37 effective startup (FC.db,b+1 from manual crouch)",
+        "i41 effective startup (FC.DF+1 from manual crouch)"
+      ],
+      "damageTotal": 24,
+      "video": "https://wavu.wiki/w/images/5/5f/T8-p2-yoshimitsu-fc.df%2B1.mp4"
+    },
+    "nss-f3plus4": {
+      "wavuId": "Yoshimitsu-NSS.f+3+4",
+      "input": "NSS.f+3+4",
+      "name": "Bull Rush / Chariot Tackle",
+      "level": "m",
+      "startup": "i21~25",
+      "block": "-13~-9",
+      "hit": "+20a (+11)",
+      "ch": null,
+      "damage": "20",
+      "notes": [
+        "Balcony Break",
+        "Head",
+        "Cancel to r55 BT with b",
+        "Enter IND +12a (+3) r29 with d+3+4 on hit",
+        "Automatically recovers to r55 IND on self-wallsplat",
+        "Recovers 12f faster on hit",
+        "+20a on side hit"
+      ],
+      "damageTotal": 20
+    },
+    "b1-x6": {
+      "wavuId": "Yoshimitsu-b+1,1,1,1,1,1",
+      "input": "b+1,1,1,1,1,1",
+      "name": "Slap U Silly",
+      "level": "h,h,h,h,h,h",
+      "startup": ",i11~12",
+      "displayStartup": "i17 (string)",
+      "block": "-73",
+      "hit": "-71",
+      "ch": "-67",
+      "damage": ",16",
+      "damageTotal": 69,
+      "notes": [
+        "Combo from 4th hit",
+        "Combo from 3rd CH"
+      ],
+      "video": "https://wavu.wiki/w/images/a/ac/T8-p2-yoshimitsu-b%2B1%2C1%2C1%2C1%2C1%2C1.mp4"
+    }
+  }
+}

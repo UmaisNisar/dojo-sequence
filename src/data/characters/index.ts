@@ -7,6 +7,7 @@ import { king } from "./king";
 import { dragunov } from "./dragunov";
 import { steve } from "./steve";
 import { hwoarang } from "./hwoarang";
+import { yoshimitsu } from "./yoshimitsu";
 
 /**
  * Character registry. Adding a new character = add a data file and list it here.
@@ -21,6 +22,7 @@ export const characters: Character[] = [
   dragunov,
   steve,
   hwoarang,
+  yoshimitsu,
 ];
 
 export const comingSoon: ComingSoonCharacter[] = [
@@ -33,7 +35,6 @@ export const comingSoon: ComingSoonCharacter[] = [
   { id: "asuka", name: "Asuka Kazama", style: "Kazama-Style Martial Arts", available: false },
   { id: "jun", name: "Jun Kazama", style: "Kazama-Style Martial Arts", available: false },
   { id: "lili", name: "Lili", style: "Freestyle Fighting", available: false },
-  { id: "yoshimitsu", name: "Yoshimitsu", style: "Manji Ninjutsu", available: false },
   { id: "claudio", name: "Claudio Serafino", style: "Sirius Exorcism Arts", available: false },
   { id: "victor", name: "Victor Chevalier", style: "Polyvalent CQC", available: false },
   { id: "azucena", name: "Azucena", style: "Mixed Martial Arts", available: false },

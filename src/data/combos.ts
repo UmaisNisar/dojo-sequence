@@ -7,6 +7,7 @@ import kingCombos from "./characters/king.combos.json";
 import dragunovCombos from "./characters/dragunov.combos.json";
 import steveCombos from "./characters/steve.combos.json";
 import hwoarangCombos from "./characters/hwoarang.combos.json";
+import yoshimitsuCombos from "./characters/yoshimitsu.combos.json";
 
 /**
  * Combo registry. Baked from Wavu's combo pages by
@@ -21,6 +22,7 @@ const combos: Record<string, ComboSet> = {
   dragunov: dragunovCombos as ComboSet,
   steve: steveCombos as ComboSet,
   hwoarang: hwoarangCombos as ComboSet,
+  yoshimitsu: yoshimitsuCombos as ComboSet,
 };
 
 export function getCombos(characterId: string): ComboSet | undefined {

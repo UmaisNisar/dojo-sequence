@@ -1,0 +1,912 @@
+{
+  "characterId": "yoshimitsu",
+  "source": "https://wavu.wiki/t/Yoshimitsu_combos",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-29",
+  "sections": [
+    {
+      "id": "bnb",
+      "label": "Bread and butter",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "Regular launch (e.g. df+2)",
+              "damage": null,
+              "notes": [],
+              "moveKey": "df2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "1+4 d+2,2,B df+1,2,1 T! 1+4 d22",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Pickup launch (e.g. NSS 1+4)",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "d+2,2,B df+1 d+2,2,2 T! 1+4 d22",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Instant Tornado (e.g. low parry)",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "d22b 1 f3+4 d22 f1+2",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "staple",
+      "label": "Staples",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "df+2",
+              "damage": 13,
+              "notes": [],
+              "moveKey": "df2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f,n,d,df+1 df+1 b+2,1,1+2 KIN.b+2,1 T! f,F+1+4*,n",
+              "damage": 59,
+              "recoverable": null,
+              "notes": [
+                "Deals 60 self damage 1 frame afterwards"
+              ]
+            },
+            {
+              "notation": "1+4 d+2,2,B df+1,2,1 T! NSS.1+4 1SS.f+3+4",
+              "damage": 57,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "1+4 d+2,2,B 1 NSS.f+3+4 2,2 T! >NSS.f+3+4 NSS.f+1+2",
+              "damage": 56,
+              "recoverable": null,
+              "notes": [
+                "Requires on-axis or SSL. NSS.f+3+4 after tornado must hit meaty"
+              ]
+            },
+            {
+              "notation": "1+4 d+2,2,B df+1,2,1 T! (b1) 3,2,NSS.1+2",
+              "damage": 54,
+              "recoverable": null,
+              "notes": [
+                "Whiffing b1 instead of dashing after T! spaces correctly so all 3 hits of 3,2,1+2 hit consistently"
+              ]
+            },
+            {
+              "notation": "1+4 d+2,2,B df+1,2,1 T! NSS.1+4 d+2,2,B",
+              "damage": 52,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "f,n,d,df+1 b+2,1,1+2 KIN.b+2,1 T! d+2,2,2",
+              "damage": 51,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "dash d+2,>2,B f+1 NSS f+3+4 d+2,>2,>2 T! b+1 NSS.3,1",
+              "damage": 49,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "1+4 d2,2 md. d2,2,2 T! KIN.(2),1+2*",
+              "damage": 63,
+              "recoverable": null,
+              "notes": [
+                "Last hit guard breaks for a free b+2,2 on standup, or counter-hits wakeup kicks. Hits grounded."
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH ss4",
+              "damage": 27,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "CH kin.4",
+              "damage": 27,
+              "notes": [],
+              "moveKey": "kin-4"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "kin.4 kin.b2,1 T! 3~4u dgf.f1+2",
+              "damage": 49,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "d2,2B df1 d2,2,2 T! ssr NSS.1+4 d2,2",
+              "damage": 48,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "NSS.1+4",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "nss-soul-stealer"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "SSL.1 d+2,2,B 1 f+3+4 2,2 T! NSS.f+3+4 NSS.f+1+2",
+              "damage": 47,
+              "recoverable": null,
+              "notes": [
+                "Doesn't work on Alisa, Jack-8, Jun, Kuma/Panda, Lee, Leroy, Victor, Xiaoyu, Yoshimitsu and Zafina"
+              ]
+            },
+            {
+              "notation": "[+?] SSL.1 d+2,2,B df+1,2,1 T! NSS.3,1,2",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "NSS.FC.df3",
+              "damage": 12,
+              "notes": [],
+              "moveKey": "nss-fc-df3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "uf1+3 1+4 f2,1 3~4u DGF.f1+2",
+              "damage": 50,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "KIN.4,1+2 KIN.b2,1 d2,2b NSS.f1+2",
+              "damage": 46,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "1SS.FC.df1",
+              "damage": 12,
+              "notes": [],
+              "moveKey": "samurai-cutter"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "KIN.4,1+2 KIN.b2,1 d2,2b NSS.f1+2",
+              "damage": 46,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "ws1,2,1 3~4u DGF.f1+2",
+              "damage": 44,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "4~3",
+              "damage": 25,
+              "notes": [],
+              "moveKey": "kangaroo"
+            },
+            {
+              "label": "FLE.3+4",
+              "damage": 25,
+              "notes": [],
+              "moveKey": "fle-3plus4"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "(3)~4 d2,2b df1,2,1 T! (b1) 3,2,1+2",
+              "damage": 54,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "4~3 T! f2,1 3~4u DGF.f1+2",
+              "damage": 53,
+              "recoverable": null,
+              "notes": [
+                "1SS only"
+              ]
+            },
+            {
+              "notation": "(3)~4u dgf.2 dgf.2 dgf.2,4b T! 1+4 d221",
+              "damage": 58,
+              "recoverable": null,
+              "notes": [
+                "1SS only"
+              ]
+            },
+            {
+              "notation": "4~3 T! db1+2,1 f3+4 1 d22 f1+2",
+              "damage": 55,
+              "recoverable": null,
+              "notes": [
+                "NSS only"
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "H.f1+2f",
+              "damage": 20,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "H.b2,2f",
+              "damage": 33,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "H.DGF.4f",
+              "damage": 24,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "H.3,1f",
+              "damage": 37,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "d2,2b 1+4 md d2,2b 1 f3+4 d2,2,2 T! 3,1",
+              "damage": 48,
+              "recoverable": null,
+              "notes": [
+                "Doesn't work on bears"
+              ]
+            },
+            {
+              "notation": "d2,2b d2,2 d2,2 d2,2,2 T! KIN.(2),1+2*",
+              "damage": 61,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mini",
+      "label": "Mini-combos",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "1+4",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "soul-stealer"
+            },
+            {
+              "label": "blocked NSS.KIN.2,1+2*",
+              "damage": 12,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "CH 1SS.1+2+3",
+              "damage": 0,
+              "notes": [],
+              "moveKey": "spirit-shield"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "b+2,2",
+              "damage": 22,
+              "recoverable": null,
+              "notes": [
+                "Heat engager"
+              ]
+            },
+            {
+              "notation": "f,n,d,df+2",
+              "damage": 14,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "b+1",
+              "damage": 7,
+              "notes": [],
+              "moveKey": "b1"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "1SS.1+4",
+              "damage": 21,
+              "recoverable": null,
+              "notes": [
+                "Only off-axis SSL or against Jack-8 and Devil Jin"
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH 2",
+              "damage": 12,
+              "notes": [
+                "Only against certain characters"
+              ],
+              "moveKey": "right"
+            },
+            {
+              "label": "CH b+1",
+              "damage": 9,
+              "notes": [],
+              "moveKey": "b1"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "NSS.1+4",
+              "damage": 24,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "f,F+3,1+2",
+              "damage": 20,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "KIN.f+2",
+              "damage": 17,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH (df+3),1SS.1",
+              "damage": 24,
+              "notes": [],
+              "moveKey": "df3-1"
+            },
+            {
+              "label": "CH (1),1SS.1",
+              "damage": 22,
+              "notes": [],
+              "moveKey": "jab-1"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "1SS.f+1+2",
+              "damage": 18,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "1SS.f,n,d,df+1",
+              "damage": 17,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "NSS.2,1",
+              "damage": 30,
+              "notes": [
+                "Requires forward dash"
+              ],
+              "moveKey": null
+            },
+            {
+              "label": "uf+4",
+              "damage": 21,
+              "notes": [],
+              "moveKey": "uf4"
+            },
+            {
+              "label": "NSS.1+2+3",
+              "damage": 25,
+              "notes": [
+                "Opponent can escape with quick back roll"
+              ],
+              "moveKey": "nss-spirit-spinner"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "NSS.f+1+2",
+              "damage": 23,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "KIN.1+2",
+              "damage": 36,
+              "notes": [],
+              "moveKey": "kin-1plus2"
+            },
+            {
+              "label": "BT.3",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "bt3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "BT.d+1",
+              "damage": 16,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH BT.d+1",
+              "damage": 24,
+              "notes": [],
+              "moveKey": "bt-d1"
+            },
+            {
+              "label": "CH KIN.d+1",
+              "damage": 24,
+              "notes": [],
+              "moveKey": "kin-d1"
+            },
+            {
+              "label": "CH BT.2",
+              "damage": 21,
+              "notes": [],
+              "moveKey": "bt2"
+            },
+            {
+              "label": "CH f+2",
+              "damage": 21,
+              "notes": [],
+              "moveKey": "f2"
+            },
+            {
+              "label": "CH (ws1),2",
+              "damage": 21,
+              "notes": [],
+              "moveKey": "ws1-2"
+            },
+            {
+              "label": "CH (df+1),2",
+              "damage": 19,
+              "notes": [],
+              "moveKey": "df1-2"
+            },
+            {
+              "label": "KIN.3",
+              "damage": 13,
+              "notes": [],
+              "moveKey": "kin-3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "NSS.ub+1+2",
+              "damage": 31,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "NSS.f+1+2",
+              "damage": 23,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "1SS.ub+1+2",
+              "damage": 20,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "1SS.f+1+2",
+              "damage": 18,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "1SS.qcf+1",
+              "damage": 35,
+              "notes": [
+                "Delay followups with a forward dash to increase damage dealt"
+              ],
+              "moveKey": null
+            },
+            {
+              "label": "1+2,P",
+              "damage": 22,
+              "notes": [],
+              "moveKey": "guillotine-crow"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "H.ub+1+2",
+              "damage": 31,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "H.f+1+2",
+              "damage": 23,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "1SS.ub+1+2",
+              "damage": 20,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "1SS.f+1+2",
+              "damage": 18,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "NSS.qcf+1",
+              "damage": 30,
+              "notes": [],
+              "moveKey": "nss-qcf1"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "NSS.f+1+2",
+              "damage": 23,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "ws3,2",
+              "damage": 32,
+              "notes": [],
+              "moveKey": "ws3-2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "d+2",
+              "damage": 8,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "H.KIN.f+2,F",
+              "damage": 30,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "NSS.ub+1+2",
+              "damage": 24,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "NSS.f+1+2",
+              "damage": 18,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "1SS.ub+1+2",
+              "damage": 16,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "1SS.f+1+2",
+              "damage": 14,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall",
+      "label": "Wall",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "Regular carry (30% scaling)",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "d+2,2,2 T! uf+3+4,1SS.d+1+2 FLE.n FLE.f,f FLE.f,f FLE.f,f",
+              "damage": 40,
+              "recoverable": null,
+              "notes": [
+                "only works on-axisr"
+              ]
+            },
+            {
+              "notation": "d+2,2,2 T! >NSS.ub+1+2",
+              "damage": 32,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "d+2,2,2 T! b+1,1,1,1,1",
+              "damage": 27,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "HB 4~3 T! 2 3~4,1SS.U DGF.4",
+              "damage": 27,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "1SS b+2,1,1+2 W! KIN.f+2 3~4,1SS.U DGF.4",
+              "damage": 26,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "NSS.3,2>1+2",
+              "damage": 25,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "2 3~4,1SS.U DGF.4",
+              "damage": 23,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "b+1,1 NSS.f+1+2",
+              "damage": 18,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "d+2,2>2",
+              "damage": 18,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "[varies] 1SS.F+3+4 W! FLE.f,f",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "float",
+      "label": "Float",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "1",
+              "damage": 4,
+              "notes": [],
+              "moveKey": "jab"
+            },
+            {
+              "label": "1+4",
+              "damage": 14,
+              "notes": [],
+              "moveKey": "soul-stealer"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "d+2,2,B f+1 d+2,2,2 T! SSR NSS.1+4 d+2,2",
+              "damage": 42,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "d+2,2,B df+1,2,1 T! NSS.1+4 d+2,2",
+              "damage": 40,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backTurned",
+      "label": "Back-turned opponent",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "df+2 (NSS)",
+              "damage": 13,
+              "notes": [],
+              "moveKey": "df2"
+            },
+            {
+              "label": "f,F+3 KIN.b+2,NSS.1",
+              "damage": 51,
+              "notes": [],
+              "moveKey": "ff3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "NSS.1+4 d+2,2,2 T! f,F+1+2 BT.d+1",
+              "damage": 55,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "df+2 (NSS OK)",
+              "damage": 13,
+              "notes": [],
+              "moveKey": "df2"
+            },
+            {
+              "label": "b+2,1 (NSS OK)",
+              "damage": 32,
+              "notes": [],
+              "moveKey": "b2-1"
+            },
+            {
+              "label": "f,F+3 KIN.b+2,1 (NSS OK)",
+              "damage": 54,
+              "notes": [],
+              "moveKey": "ff3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "3,1 DGF.2,4B T! NSS.1+4 HB f,F+1+2 BT.d+1",
+              "damage": 61,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "3,1 DGF.2,4 T! f,F+1+2 BT.d+1",
+              "damage": 53,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "3,1 DGF.2,4B T! f,F+1+2 BT.df+1+2",
+              "damage": 53,
+              "recoverable": null,
+              "notes": [
+                "Recovers NSS"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
