@@ -44,6 +44,19 @@ describe("damageOf", () => {
     assert.equal(damageOf("45(50)/70,5"), 45);
   });
 
+  /**
+   * Two notations that both looked like sums and were not. Every character's
+   * Heat Burst claimed 24 damage instead of 12 until this was pinned.
+   */
+  test("a bracketed pair is damage; recoverable, not two hits", () => {
+    assert.equal(damageOf("[12;12]"), 12);
+  });
+
+  test("a per-hit range takes its low end", () => {
+    // Devil Jin's Rage Art scales with health: 10-15, then 3-5, then 42-60.
+    assert.equal(damageOf("10-15,3-5,42-60"), 55);
+  });
+
   test("nothing is zero, not NaN", () => {
     assert.equal(damageOf(null), 0);
     assert.equal(damageOf(""), 0);

@@ -1860,7 +1860,7 @@
       "hit": "+2c",
       "ch": null,
       "damage": "[12;12]",
-      "damageTotal": 24,
+      "damageTotal": 12,
       "notes": [
         "+1 on block",
         "Cancel to r45 with b,b on frame 42"

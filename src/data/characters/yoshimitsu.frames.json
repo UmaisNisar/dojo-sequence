@@ -1743,7 +1743,7 @@
         "Only deals recoverable damage",
         "Cannot cause a K.O."
       ],
-      "damageTotal": 24
+      "damageTotal": 12
     },
     "heat-smash": {
       "wavuId": "Yoshimitsu-H.2+3",
@@ -2573,7 +2573,7 @@
         "i37 effective startup (FC.db,b+1 from manual crouch)",
         "i41 effective startup (FC.DF+1 from manual crouch)"
       ],
-      "damageTotal": 24,
+      "damageTotal": 12,
       "video": "https://wavu.wiki/w/images/5/5f/T8-p2-yoshimitsu-fc.df%2B1.mp4"
     },
     "nss-f3plus4": {
