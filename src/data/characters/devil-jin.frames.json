@@ -1,0 +1,2186 @@
+{
+  "characterId": "devil-jin",
+  "game": "Tekken 8",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-29",
+  "sources": [
+    {
+      "name": "Wavu Wiki",
+      "url": "https://wavu.wiki/t/Devil_Jin"
+    },
+    {
+      "name": "TekkenDocs",
+      "url": "https://tekkendocs.com/t8/devil-jin"
+    }
+  ],
+  "moves": {
+    "jab": {
+      "wavuId": "Devil Jin-1",
+      "input": "1",
+      "name": "Jab",
+      "level": "h",
+      "startup": "i10",
+      "block": "+1",
+      "hit": "+8",
+      "ch": null,
+      "damage": "5",
+      "damageTotal": 5,
+      "notes": [
+        "Recovers 2f faster on hit or block (t27 r17)"
+      ]
+    },
+    "jab-1": {
+      "wavuId": "Devil Jin-1,1",
+      "input": "1,1",
+      "name": "Double Jab",
+      "level": "h,h",
+      "startup": ",i15",
+      "displayStartup": "i10 (string)",
+      "block": "-1",
+      "hit": "+8",
+      "ch": null,
+      "damage": ",6",
+      "damageTotal": 11,
+      "notes": [
+        "Jail from 1st attack with 3F delay",
+        "Combo from 1st hit with 3F delay"
+      ]
+    },
+    "flash-claw": {
+      "wavuId": "Devil Jin-1,1,2",
+      "input": "1,1,2",
+      "name": "Flash Claw Combo",
+      "level": "h,h,m",
+      "startup": ",i13~14",
+      "displayStartup": "i10 (string)",
+      "block": "-17",
+      "hit": "+18a (+13)",
+      "ch": null,
+      "damage": ",14",
+      "damageTotal": 25,
+      "notes": [
+        "Balcony Break on airborne hit",
+        "Jail from 1st block with 5F delay",
+        "Combo from 1st hit with 11F delay",
+        "+41? (+3?) on wall hit"
+      ],
+      "video": "https://wavu.wiki/w/images/f/fe/T8-p2-devil_jin-1%2C1%2C2.mp4"
+    },
+    "jab-2": {
+      "wavuId": "Devil Jin-1,2",
+      "input": "1,2",
+      "name": "One Two Strike",
+      "level": "h,h",
+      "startup": ",i10",
+      "displayStartup": "i10 (string)",
+      "block": "-3",
+      "hit": "+8",
+      "ch": null,
+      "damage": ",8",
+      "damageTotal": 13,
+      "notes": [
+        "Jail from 1st hit with 4F delay",
+        "Combo from 1st hit with 4F delay"
+      ],
+      "video": "https://wavu.wiki/w/images/7/75/T8-p2-devil_jin-1%2C2.mp4"
+    },
+    "jab-2-2": {
+      "wavuId": "Devil Jin-1,2,2",
+      "input": "1,2,2",
+      "name": "Back Fist Combo",
+      "level": "h,h,h",
+      "startup": ",i17",
+      "displayStartup": "i10 (string)",
+      "block": "-12",
+      "hit": "+4",
+      "ch": null,
+      "damage": ",12",
+      "damageTotal": 25,
+      "notes": [
+        "Combo from 1st hit with 11F delay",
+        "Jail from 2nd hit with 2F delay",
+        "Move can be delayed 9F",
+        "Input can be delayed 11F"
+      ],
+      "video": "https://wavu.wiki/w/images/0/0e/T8-p2-devil_jin-1%2C2%2C2.mp4"
+    },
+    "jab-2-3": {
+      "wavuId": "Devil Jin-1,2,3",
+      "input": "1,2,3",
+      "name": "1,2,3",
+      "level": "h,h,m",
+      "startup": ",i29~31",
+      "displayStartup": "i10 (string)",
+      "block": "+4",
+      "hit": "+24a",
+      "ch": null,
+      "damage": ",25",
+      "damageTotal": 38,
+      "notes": [
+        "Floor Break",
+        "Input can be delayed 1f",
+        "Move cannot be delayed",
+        "Interrupt with i10 from 2nd block",
+        "Whiffs vs SS, SW from 2nd block"
+      ]
+    },
+    "jab-2-3-4": {
+      "wavuId": "Devil Jin-1,2,3,4",
+      "input": "1,2,3,4",
+      "name": "Shoot the Works",
+      "level": "h,h,m,m",
+      "startup": ",i36~38",
+      "displayStartup": "i10 (string)",
+      "block": "+0~+2",
+      "hit": "+11c~+13c",
+      "ch": null,
+      "damage": ",30",
+      "damageTotal": 68,
+      "notes": [
+        "Floor Break",
+        "Interrupt with i7 from 3rd block",
+        "Whiffs vs SSL, SWL from 3rd block"
+      ],
+      "video": "https://wavu.wiki/w/images/d/d7/T8-p2-devil_jin-1%2C2%2C3%2C4.mp4"
+    },
+    "jab-2-4": {
+      "wavuId": "Devil Jin-1,2,4",
+      "input": "1,2,4",
+      "name": "One Two Knee",
+      "level": "h,h,m",
+      "startup": ",i11",
+      "displayStartup": "i10 (string)",
+      "block": "-10",
+      "hit": "+4",
+      "ch": null,
+      "damage": ",10",
+      "damageTotal": 23,
+      "notes": [
+        "Knee",
+        "Jail from 1st block",
+        "Combo from 1st hit",
+        "Move is delayed 6F",
+        "Input cannot be delayed"
+      ],
+      "video": "https://wavu.wiki/w/images/2/2e/T8-p2-devil_jin-1%2C2%2C4.mp4"
+    },
+    "one-plus-two": {
+      "wavuId": "Devil Jin-1+2",
+      "input": "1+2",
+      "name": "Tsujikaze",
+      "level": "m,m",
+      "startup": "i17 i25~26",
+      "block": "-12",
+      "hit": "+7",
+      "ch": null,
+      "damage": "12,25",
+      "damageTotal": 37,
+      "notes": [
+        "Homing",
+        "Balcony Break",
+        "Interrupt with i1 from 1st block",
+        "1st forces crouching against crouching opponents (opponents recover standing after 2nd hit)"
+      ],
+      "video": "https://wavu.wiki/w/images/5/5d/T8-p2-devil_jin-1%2B2.mp4"
+    },
+    "alaya-setup": {
+      "wavuId": "Devil Jin-1+4",
+      "input": "1+4",
+      "name": "1+4",
+      "level": "SL,h",
+      "startup": "i16~17,i14",
+      "block": "-3",
+      "hit": "+4",
+      "ch": null,
+      "damage": "5,5",
+      "damageTotal": 10,
+      "notes": [
+        "-17 from 1st block"
+      ]
+    },
+    "alaya-setup-2": {
+      "wavuId": "Devil Jin-1+4,2",
+      "input": "1+4,2",
+      "name": "Three Ring Alaya",
+      "level": "SL,h,m",
+      "startup": ",i24~25",
+      "displayStartup": "i16 (string)",
+      "block": "-12",
+      "hit": "+72a (+56)",
+      "ch": null,
+      "damage": ",20",
+      "damageTotal": 30,
+      "notes": [
+        "Tornado",
+        "Combo from 2nd CH",
+        "Interrupt with i4 from 2nd block",
+        "6 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/1/10/T8-p2-devil_jin-1%2B4%2C2.mp4"
+    },
+    "right": {
+      "wavuId": "Devil Jin-2",
+      "input": "2",
+      "name": "2",
+      "level": "h",
+      "startup": "i10",
+      "block": "+0",
+      "hit": "+9",
+      "ch": null,
+      "damage": "9",
+      "damageTotal": 9,
+      "notes": []
+    },
+    "right-2": {
+      "wavuId": "Devil Jin-2,2",
+      "input": "2,2",
+      "name": "Demon Backhand Spin",
+      "level": "h,h",
+      "startup": ",i17",
+      "displayStartup": "i10 (string)",
+      "block": "-13",
+      "hit": "-2",
+      "ch": null,
+      "damage": ",20",
+      "damageTotal": 29,
+      "notes": [
+        "Jail from 1st attack with 2f delay",
+        "Move cannot be delayed"
+      ],
+      "video": "https://wavu.wiki/w/images/4/44/T8-p2-devil_jin-2%2C2.mp4"
+    },
+    "three": {
+      "wavuId": "Devil Jin-3",
+      "input": "3",
+      "name": "3",
+      "level": "m",
+      "startup": "i17~19",
+      "block": "-12",
+      "hit": "-6",
+      "ch": null,
+      "damage": "16",
+      "damageTotal": 16,
+      "notes": []
+    },
+    "three-1": {
+      "wavuId": "Devil Jin-3,1",
+      "input": "3,1",
+      "name": "3,1",
+      "level": "m,h",
+      "startup": ",i29~30",
+      "displayStartup": "i17 (string)",
+      "block": "+2",
+      "hit": "+8",
+      "ch": null,
+      "damage": ",11",
+      "damageTotal": 27,
+      "notes": [
+        "Combo from 1st hit",
+        "Interrupt with i3 from 1st block",
+        "Move cancels 2nd and 3rd active frames of 3"
+      ]
+    },
+    "three-1-2": {
+      "wavuId": "Devil Jin-3,1,2",
+      "input": "3,1,2",
+      "name": "Hell Cyclone",
+      "level": "m,h,M",
+      "startup": ",i25~28",
+      "displayStartup": "i17 (string)",
+      "block": "-11",
+      "hit": "+72a (+56)",
+      "ch": null,
+      "damage": ",20",
+      "damageTotal": 47,
+      "notes": [
+        "Tornado",
+        "Interrupt with i9 from 2nd block",
+        "Whiffs vs SSR from 2nd block",
+        "Move can be delayed 4F",
+        "Input can be delayed 12F"
+      ],
+      "video": "https://wavu.wiki/w/images/1/10/T8-p2-devil_jin-3%2C1%2C2.mp4"
+    },
+    "three-1-4": {
+      "wavuId": "Devil Jin-3,1,4",
+      "input": "3,1,4",
+      "name": "Hell Spiral",
+      "level": "m,h,m",
+      "startup": ",i23~24",
+      "displayStartup": "i17 (string)",
+      "block": "-9",
+      "hit": "+15a (+6)",
+      "ch": "+59a",
+      "damage": ",20",
+      "damageTotal": 47,
+      "notes": [
+        "Balcony Break on normal hit",
+        "Interrupt with i7 from 2nd block",
+        "Whiffs vs SSR, SWR from 2nd block",
+        "Move can be delayed 4F",
+        "Input can be delayed 12F"
+      ],
+      "video": "https://wavu.wiki/w/images/1/15/T8-p2-devil_jin-3%2C1%2C4.mp4"
+    },
+    "four": {
+      "wavuId": "Devil Jin-4",
+      "input": "4",
+      "name": "Last Rites",
+      "level": "h",
+      "startup": "i17~18",
+      "block": "-5",
+      "hit": "+10g",
+      "ch": null,
+      "damage": "24",
+      "damageTotal": 24,
+      "notes": [
+        "Homing",
+        "Balcony Break",
+        "7 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/3/34/T8-p2-devil_jin-4.mp4"
+    },
+    "wheel-of-pain": {
+      "wavuId": "Devil Jin-4~3",
+      "input": "4~3",
+      "name": "Wheel of Pain",
+      "level": "M",
+      "startup": "i29-32",
+      "block": "-7c",
+      "hit": "+14a",
+      "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
+      "notes": [
+        "Floor Break",
+        "Parryable by traditional kick parries",
+        "Effective startup i30"
+      ],
+      "video": "https://wavu.wiki/w/images/0/01/T8-p2-devil_jin-4~3.mp4"
+    },
+    "b1": {
+      "wavuId": "Devil Jin-b+1",
+      "input": "b+1",
+      "name": "b+1",
+      "level": "h",
+      "startup": "i12",
+      "block": "-6",
+      "hit": "+5",
+      "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
+      "notes": [
+        "Tracks SSR/SWR completely"
+      ]
+    },
+    "b1-2": {
+      "wavuId": "Devil Jin-b+1,2",
+      "input": "b+1,2",
+      "name": "Brimstone Strike",
+      "level": "h,m",
+      "startup": ",i23",
+      "displayStartup": "i12 (string)",
+      "block": "-14",
+      "hit": "+23a (+13)",
+      "ch": null,
+      "damage": ",20",
+      "damageTotal": 30,
+      "notes": [
+        "Balcony Break",
+        "Combo from 1st hit with 7f delay",
+        "Interrupt with i8 from 1st block",
+        "Whiffs vs SSL, SSR, SWL, SWR after 1st block",
+        "Input can be delayed by 15f",
+        "Move can be delayed by 10f",
+        "Cancel to r32 with B on frame 17 (-18/-7)"
+      ],
+      "video": "https://wavu.wiki/w/images/1/17/T8-p2-devil_jin-b%2B1%2C2.mp4"
+    },
+    "b1plus2": {
+      "wavuId": "Devil Jin-b+1+2",
+      "input": "b+1+2",
+      "name": "Aratama Strike",
+      "level": "m",
+      "startup": "i20~21",
+      "block": "+3c",
+      "hit": "+7c",
+      "ch": "+24d",
+      "damage": "21",
+      "damageTotal": 21,
+      "notes": [
+        "Spike",
+        "Opponent recovers FDFA on CH",
+        "4 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/9/98/T8-p2-devil_jin-b%2B1%2B2.mp4"
+    },
+    "b1plus3": {
+      "wavuId": "Devil Jin-b+1+3",
+      "input": "b+1+3",
+      "name": "Imperial Wrath",
+      "level": "m",
+      "startup": "i15",
+      "block": "-8",
+      "hit": "+16a (+6)",
+      "ch": null,
+      "damage": "30",
+      "damageTotal": 30,
+      "notes": [
+        "Balcony Break",
+        "50% damage reduction when absorbing attacks",
+        "Devil Jin automatically retaliates on successful power crush",
+        "Reversal Break, -8 on block and 12 chip damage on block after attack absorption",
+        "r34 on hit"
+      ]
+    },
+    "b1plus4": {
+      "wavuId": "Devil Jin-b+1+4",
+      "input": "b+1+4",
+      "name": "Lightning Screw Uppercut",
+      "level": "m!",
+      "startup": "i63~64",
+      "block": null,
+      "hit": "+20a (+10)",
+      "ch": null,
+      "damage": "60",
+      "damageTotal": 60,
+      "notes": [],
+      "video": "https://wavu.wiki/w/images/1/10/T8-p2-devil_jin-b%2B1%2B4.mp4"
+    },
+    "b2": {
+      "wavuId": "Devil Jin-b+2",
+      "input": "b+2",
+      "name": "b+2",
+      "level": "h",
+      "startup": "i14~16",
+      "block": "-13",
+      "hit": "-2",
+      "ch": null,
+      "damage": "11",
+      "damageTotal": 11,
+      "notes": []
+    },
+    "b2-1": {
+      "wavuId": "Devil Jin-b+2,1",
+      "input": "b+2,1",
+      "name": "Rakshasa's Rampage",
+      "level": "h,m",
+      "startup": ",i30-31",
+      "displayStartup": "i14 (string)",
+      "block": "-16",
+      "hit": "+29a (+19)",
+      "ch": null,
+      "damage": ",21",
+      "damageTotal": 32,
+      "notes": [
+        "Tornado",
+        "Interrupt with i13 from 1st block",
+        "Can evade some jab interrupts",
+        "Move cannot be delayed",
+        "Input can be delayed by 1F"
+      ],
+      "video": "https://wavu.wiki/w/images/8/8a/T8-p2-devil_jin-b%2B2%2C1.mp4"
+    },
+    "b2-3": {
+      "wavuId": "Devil Jin-b+2,3",
+      "input": "b+2,3",
+      "name": "Rakshasa's Fury",
+      "level": "h,m",
+      "startup": ",i25~27",
+      "displayStartup": "i14 (string)",
+      "block": "-14",
+      "hit": "+8a (-1)",
+      "ch": null,
+      "damage": ",23",
+      "damageTotal": 34,
+      "notes": [
+        "Heat Engager",
+        "Heat Dash +5, +43d (+35)",
+        "Balcony Break",
+        "Combo from 1st hit",
+        "Interrupt with i7 from 1st block",
+        "Move cannot be delayed"
+      ],
+      "video": "https://wavu.wiki/w/images/e/e6/T8-p2-devil_jin-b%2B2%2C3.mp4"
+    },
+    "b3": {
+      "wavuId": "Devil Jin-b+3",
+      "input": "b+3",
+      "name": "Wicked Jambu Spear",
+      "level": "M",
+      "startup": "i29~32",
+      "block": "-18~-15",
+      "hit": "+10a~+13a",
+      "ch": null,
+      "damage": "24",
+      "damageTotal": 24,
+      "notes": [
+        "Heat Engager",
+        "Heat Dash +5, +43d (+35)",
+        "Balcony Break",
+        "6 chip damage on heat dash",
+        "Backswing blow",
+        "Max distance from opponent when performed at tip range: ~3.82-3.83 (frames 16-19?)"
+      ],
+      "video": "https://wavu.wiki/w/images/f/fe/T8-p2-devil_jin-b%2B3.mp4"
+    },
+    "b4": {
+      "wavuId": "Devil Jin-b+4",
+      "input": "b+4",
+      "name": "Demon Steel Pedal",
+      "level": "M",
+      "startup": "i17~18",
+      "block": "-8",
+      "hit": "+6",
+      "ch": "+30a (+24)",
+      "damage": "20",
+      "damageTotal": 20,
+      "notes": [
+        "Opponent recovers FDFA on grounded hit"
+      ],
+      "video": "https://wavu.wiki/w/images/d/de/T8-p2-devil_jin-b%2B4.mp4"
+    },
+    "bf2": {
+      "wavuId": "Devil Jin-b,f+2",
+      "input": "b,f+2",
+      "name": "b,f+2",
+      "level": "m",
+      "startup": "i15~17",
+      "block": "-9",
+      "hit": "-1",
+      "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
+      "notes": [
+        "Input bufferable",
+        "-1c on hit against crouching opponents"
+      ]
+    },
+    "bf2-1": {
+      "wavuId": "Devil Jin-b,f+2,1",
+      "input": "b,f+2,1",
+      "name": "b,f+2,1",
+      "level": "m,m",
+      "startup": ",i14~15",
+      "displayStartup": "i15 (string)",
+      "block": "-10",
+      "hit": "+1",
+      "ch": null,
+      "damage": ",12",
+      "damageTotal": 24,
+      "notes": [
+        "Elbow",
+        "Jail from 1st block with 6f delay",
+        "Combo from 1st hit with 13f delay",
+        "Move can be delayed by 7f",
+        "Input can be delayed by 13f"
+      ]
+    },
+    "bf2-1-2": {
+      "wavuId": "Devil Jin-b,f+2,1,2",
+      "input": "b,f+2,1,2",
+      "name": "Laser Cannon",
+      "level": "m,m,m",
+      "startup": ",i22~23",
+      "displayStartup": "i15 (string)",
+      "block": "-8",
+      "hit": "+15a (+6)",
+      "ch": "+45a (+0)",
+      "damage": ",24",
+      "damageTotal": 48,
+      "notes": [
+        "Balcony Break",
+        "Combo on 2nd CH with 7f delay",
+        "Interrupt with i8 from 1st block",
+        "Whiffs vs SSR, SWR from 1st block (SSL & SWL inconsistent with less evasive sidesteps)",
+        "Input can be delayed 20f",
+        "Move can be delayed 15f",
+        "7 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/e/ed/T8-p2-devil_jin-b%2Cf%2B2%2C1%2C2.mp4"
+    },
+    "bf2-1-4": {
+      "wavuId": "Devil Jin-b,f+2,1,4",
+      "input": "b,f+2,1,4",
+      "name": "Laser Crush",
+      "level": "m,m,M",
+      "startup": ",i26~29",
+      "displayStartup": "i15 (string)",
+      "block": "-8c",
+      "hit": "+14a",
+      "ch": null,
+      "damage": ",21",
+      "damageTotal": 45,
+      "notes": [
+        "Floor Break",
+        "Interrupt with i13 from 1st block",
+        "Whiffs vs SS, SW from 1st block",
+        "Move can be delayed by 14f",
+        "Input can be delayed by 20f"
+      ],
+      "video": "https://wavu.wiki/w/images/6/68/T8-p2-devil_jin-b%2Cf%2B2%2C1%2C4.mp4"
+    },
+    "bf2-1-df2": {
+      "wavuId": "Devil Jin-b,f+2,1,df+2",
+      "input": "b,f+2,1,df+2",
+      "name": "Laser Scraper",
+      "level": "m,m,m",
+      "startup": ",i18~19",
+      "displayStartup": "i15 (string)",
+      "block": "-13",
+      "hit": "+25a (+8)",
+      "ch": null,
+      "damage": ",20",
+      "damageTotal": 44,
+      "notes": [
+        "Tornado",
+        "Balcony Break on grounded hit only",
+        "Combo on 2nd CH with 11f delay",
+        "Interrupt with i5 from 1st block",
+        "Whiffs vs SSR, SWR from 1st block",
+        "Input can be delayed 20f",
+        "Move can be delayed 14f",
+        "Opponent recovers FDFA on hit"
+      ],
+      "video": "https://wavu.wiki/w/images/3/3d/T8-p2-devil_jin-b%2Cf%2B2%2C1%2Cdf%2B2.mp4"
+    },
+    "bf2-3": {
+      "wavuId": "Devil Jin-b,f+2,3",
+      "input": "b,f+2,3",
+      "name": "Laser Slice",
+      "level": "m,h",
+      "startup": ",i19~20",
+      "displayStartup": "i15 (string)",
+      "block": "-5",
+      "hit": "+16cg",
+      "ch": null,
+      "damage": ",21",
+      "damageTotal": 33,
+      "notes": [
+        "Balcony Break",
+        "Combo from 1st hit with 6F delay",
+        "Interrupt with i4 from 1st block",
+        "Opponent recovers crouching on hit",
+        "Transition to MCR r35 with F on hit (+14)",
+        "* -11 on an empty MCR transition",
+        "Move cannot be delayed",
+        "Input can be delayed by 6F"
+      ],
+      "video": "https://wavu.wiki/w/images/f/fd/T8-p2-devil_jin-b%2Cf%2B2%2C3.mp4"
+    },
+    "bf1plus2": {
+      "wavuId": "Devil Jin-b,f+1+2",
+      "input": "b,f+1+2",
+      "name": "b,f+1+2",
+      "level": "m",
+      "startup": "i25 i6 i6 i6 i6 i6",
+      "block": "-17",
+      "hit": "+31a (-2)",
+      "ch": null,
+      "damage": "6,6,6,6,6,6",
+      "damageTotal": 36,
+      "notes": [
+        "Weapon",
+        "Projectile (unparryable)",
+        "17 damage on hit with scaling",
+        "6 chip damage on block"
+      ]
+    },
+    "d1": {
+      "wavuId": "Devil Jin-d+1",
+      "input": "d+1",
+      "name": "Corpse Thrust",
+      "level": "m",
+      "startup": "i18~19",
+      "block": "-14",
+      "hit": "+20a (+10)",
+      "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
+      "notes": [
+        "Balcony Break",
+        "Damage taken during power crush state is recoverable.",
+        "Reversal Break and -9 on block if an attack is absorbed",
+        "10 chip damage on block after absorbing an attack in power crush state"
+      ],
+      "video": "https://wavu.wiki/w/images/8/88/T8-p2-devil_jin-d%2B1.mp4"
+    },
+    "d2": {
+      "wavuId": "Devil Jin-d+2",
+      "input": "d+2",
+      "name": "Crouch Straight",
+      "level": "sl",
+      "startup": "i11",
+      "block": "-4",
+      "hit": "+7",
+      "ch": null,
+      "damage": "8",
+      "damageTotal": 8,
+      "notes": [
+        "+7c on crouching hit"
+      ]
+    },
+    "d3": {
+      "wavuId": "Devil Jin-d+3",
+      "input": "d+3",
+      "name": "Broken Plate",
+      "level": "L",
+      "startup": "i18~19",
+      "block": "-12",
+      "hit": "-1",
+      "ch": "+7c",
+      "damage": "12",
+      "damageTotal": 12,
+      "notes": [
+        "Pseudo homing"
+      ],
+      "video": "https://wavu.wiki/w/images/3/3b/T8-p2-devil_jin-d%2B3.mp4"
+    },
+    "d4": {
+      "wavuId": "Devil Jin-d+4",
+      "input": "d+4",
+      "name": "Crouch Shin Kick",
+      "level": "l",
+      "startup": "i12",
+      "block": "-15",
+      "hit": "-4",
+      "ch": null,
+      "damage": "6",
+      "damageTotal": 6,
+      "notes": [
+        "-4c on crouching hit"
+      ]
+    },
+    "d3plus4": {
+      "wavuId": "Devil Jin-d+3+4",
+      "input": "d+3+4",
+      "name": "Double Lift Kicks",
+      "level": "m,m",
+      "startup": "i15-16 i15-16",
+      "block": "-15",
+      "hit": "+30a (+20)",
+      "ch": null,
+      "damage": "5,20",
+      "damageTotal": 25,
+      "notes": [],
+      "video": "https://wavu.wiki/w/images/2/2e/T8-p2-devil_jin-d%2B3%2B4.mp4"
+    },
+    "db1": {
+      "wavuId": "Devil Jin-db+1",
+      "input": "db+1",
+      "name": "Crouch Jab",
+      "level": "sl",
+      "startup": "i10",
+      "block": "-5",
+      "hit": "+6",
+      "ch": null,
+      "damage": "5",
+      "damageTotal": 5,
+      "notes": [
+        "Transition to r24 with f",
+        "+6c on crouching hit"
+      ]
+    },
+    "db2": {
+      "wavuId": "Devil Jin-db+2",
+      "input": "db+2",
+      "name": "Malicious Mace",
+      "level": "L",
+      "startup": "i21~22",
+      "block": "-13",
+      "hit": "+3c",
+      "ch": "+26a",
+      "damage": "15",
+      "damageTotal": 15,
+      "notes": [
+        "4 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/d/d3/T8-p2-devil_jin-db%2B2.mp4"
+    },
+    "db3": {
+      "wavuId": "Devil Jin-db+3",
+      "input": "db+3",
+      "name": "Crouch Spin Kick",
+      "level": "L",
+      "startup": "i16",
+      "block": "-17",
+      "hit": "-6",
+      "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
+      "notes": [
+        "-6c on crouching hit"
+      ]
+    },
+    "db1plus2": {
+      "wavuId": "Devil Jin-db+1+2",
+      "input": "db+1+2",
+      "name": "Demon's Spear",
+      "level": "m",
+      "startup": "i23~38",
+      "block": "-9",
+      "hit": "+4",
+      "ch": null,
+      "damage": "15",
+      "damageTotal": 15,
+      "notes": [
+        "Cancel to r27 MCR with F (js27~) at frame 5 onwards",
+        "Balcony Break on air hit"
+      ],
+      "video": "https://wavu.wiki/w/images/a/a2/T8-p2-devil_jin-db%2B1%2B2.mp4"
+    },
+    "db1plus4": {
+      "wavuId": "Devil Jin-db+1+4",
+      "input": "db+1+4",
+      "name": "Hellfire Blast",
+      "level": "h!",
+      "startup": "i32~63",
+      "block": null,
+      "hit": "-30cg~+1cg",
+      "ch": null,
+      "damage": "40",
+      "damageTotal": 40,
+      "notes": [
+        "Balcony Break",
+        "-22cg~-19cg on average",
+        "Forces tech back roll on hit"
+      ],
+      "video": "https://wavu.wiki/w/images/3/3f/T8-p2-devil_jin-ub%2B1%2B2.mp4"
+    },
+    "df1": {
+      "wavuId": "Devil Jin-df+1",
+      "input": "df+1",
+      "name": "df+1",
+      "level": "m",
+      "startup": "i13",
+      "block": "-6",
+      "hit": "+5",
+      "ch": "+9",
+      "damage": "11",
+      "damageTotal": 11,
+      "notes": []
+    },
+    "df1-2": {
+      "wavuId": "Devil Jin-df+1,2",
+      "input": "df+1,2",
+      "name": "Dark Twin Lancer",
+      "level": "m,h",
+      "startup": ",i17",
+      "displayStartup": "i13 (string)",
+      "block": "-9",
+      "hit": "+26a (+16)",
+      "ch": null,
+      "damage": ",20",
+      "damageTotal": 31,
+      "notes": [
+        "Balcony Break",
+        "Combo on 1st hit with 6F delay",
+        "Combo on 1st CH with 10F delay",
+        "Interrupt with i3 from 1st block",
+        "Move can be delayed by 4F",
+        "Input can be delayed by 10F"
+      ],
+      "video": "https://wavu.wiki/w/images/3/36/T8-p2-devil_jin-df%2B1%2C2.mp4"
+    },
+    "df1-4": {
+      "wavuId": "Devil Jin-df+1,4",
+      "input": "df+1,4",
+      "name": "Dark Twin Apparition",
+      "level": "m,m",
+      "startup": ",i20~21",
+      "displayStartup": "i13 (string)",
+      "block": "-13",
+      "hit": "+16cg",
+      "ch": "+31d (+23d)",
+      "damage": ",23",
+      "damageTotal": 34,
+      "notes": [
+        "Balcony Break",
+        "Combo on 1st CH with 10F delay",
+        "Interrupt with i5 from 1st block",
+        "Transition to MCR r33 with F on hit or CH (+16cg/+31d (+23d))",
+        "* -9 on an empty MCR transition on hit",
+        "Move can be delayed by 5F",
+        "Input can be delayed by 10F"
+      ]
+    },
+    "df2": {
+      "wavuId": "Devil Jin-df+2",
+      "input": "df+2",
+      "name": "Bloody Glaive",
+      "level": "m",
+      "startup": "i15",
+      "block": "-9",
+      "hit": "+6",
+      "ch": "+9",
+      "damage": "17",
+      "damageTotal": 17,
+      "notes": [
+        "Transition to MCR r25 with F on hit or CH (+14/+17)",
+        "* -11/-8 on an empty MCR transition",
+        "Has good right sidestep tracking"
+      ],
+      "video": "https://wavu.wiki/w/images/c/ca/T8-p2-devil_jin-df%2B2.mp4"
+    },
+    "df3": {
+      "wavuId": "Devil Jin-df+3",
+      "input": "df+3",
+      "name": "df+3",
+      "level": "m",
+      "startup": "i16~17",
+      "block": "-9",
+      "hit": "+2",
+      "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
+      "notes": [
+        "+2c on hit against crouching opponents"
+      ]
+    },
+    "df3-2": {
+      "wavuId": "Devil Jin-df+3,2",
+      "input": "df+3,2",
+      "name": "df+3,2",
+      "level": "m,m",
+      "startup": ",i19",
+      "displayStartup": "i16 (string)",
+      "block": "-13",
+      "hit": "-7",
+      "ch": null,
+      "damage": ",10",
+      "damageTotal": 22,
+      "notes": [
+        "Combo from 1st hit",
+        "Move cannot be interrupted"
+      ]
+    },
+    "df3-2-4": {
+      "wavuId": "Devil Jin-df+3,2,4",
+      "input": "df+3,2,4",
+      "name": "Rengoku",
+      "level": "m,m,m",
+      "startup": ",i26-27",
+      "displayStartup": "i16 (string)",
+      "block": "-22",
+      "hit": "+18a (+8)",
+      "ch": null,
+      "damage": ",20",
+      "damageTotal": 42,
+      "notes": [
+        "Tornado",
+        "Combo from 2nd CH with 4f delay",
+        "Interrupt with i1 from 1st block",
+        "Jail from 2nd hit with 4F delay",
+        "Enter FLY +36a (+26) with ub_u_uf on hit",
+        "Move can be delayed 16f"
+      ],
+      "video": "https://wavu.wiki/w/images/3/35/T8-p2-devil_jin-df%2B3%2C2%2C4.mp4"
+    },
+    "df4": {
+      "wavuId": "Devil Jin-df+4",
+      "input": "df+4",
+      "name": "df+4",
+      "level": "m",
+      "startup": "i13~14",
+      "block": "-9",
+      "hit": "+2",
+      "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
+      "notes": []
+    },
+    "df4-4": {
+      "wavuId": "Devil Jin-df+4,4",
+      "input": "df+4,4",
+      "name": "Tsunami Kick",
+      "level": "m,m",
+      "startup": ",i13~14",
+      "displayStartup": "i13 (string)",
+      "block": "-15",
+      "hit": "-4c",
+      "ch": null,
+      "damage": ",16",
+      "damageTotal": 26,
+      "notes": [
+        "Floor Break",
+        "Jail from 1st block with 3F delay",
+        "Combo from 1st hit with 10F delay",
+        "Move can be delayed 10F"
+      ],
+      "video": "https://wavu.wiki/w/images/b/b2/T8-p2-devil_jin-df%2B4%2C4.mp4"
+    },
+    "df2plus3": {
+      "wavuId": "Devil Jin-df+2+3",
+      "input": "df+2+3",
+      "name": "White Mountain",
+      "level": "t",
+      "startup": "i12",
+      "block": "-2",
+      "hit": "-6d",
+      "ch": null,
+      "damage": "40",
+      "damageTotal": 40,
+      "notes": [
+        "Floor Break",
+        "Throw break 2",
+        "Can be done from FC"
+      ],
+      "video": "https://wavu.wiki/w/images/2/22/T8-p2-devil_jin-df%2B2%2B3.mp4"
+    },
+    "f2": {
+      "wavuId": "Devil Jin-f+2",
+      "input": "f+2",
+      "name": "893P",
+      "level": "m",
+      "startup": "i17~18",
+      "block": "-8",
+      "hit": "+3",
+      "ch": null,
+      "damage": "14",
+      "damageTotal": 14,
+      "notes": [
+        "Floor Break"
+      ]
+    },
+    "f2-4": {
+      "wavuId": "Devil Jin-f+2,4",
+      "input": "f+2,4",
+      "name": "893P > Knee Kick",
+      "level": "m,m",
+      "startup": ",i15",
+      "displayStartup": "i17 (string)",
+      "block": "-11",
+      "hit": "+0",
+      "ch": "+29a (+23)",
+      "damage": ",17",
+      "damageTotal": 31,
+      "notes": [
+        "Knee",
+        "Jail from 1st block with 3F delay",
+        "Combo from 1st hit with 14F delay",
+        "Move can be delayed 13F",
+        "Input can be delayed by 14F"
+      ],
+      "video": "https://wavu.wiki/w/images/d/d6/T8-p2-devil_jin-f%2B2%2C4.mp4"
+    },
+    "f4": {
+      "wavuId": "Devil Jin-f+4",
+      "input": "f+4",
+      "name": "f+4",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-12",
+      "hit": "-1",
+      "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
+      "notes": []
+    },
+    "f4-3": {
+      "wavuId": "Devil Jin-f+4,3",
+      "input": "f+4,3",
+      "name": "Twisted Samsara",
+      "level": "m,m",
+      "startup": ",i26~27",
+      "displayStartup": "i15 (string)",
+      "block": "-22",
+      "hit": "+18a (+8)",
+      "ch": null,
+      "damage": ",15",
+      "damageTotal": 25,
+      "notes": [
+        "Tornado",
+        "Combo on 1st CH with 3F delay",
+        "Interrupt with i7 from 1st block",
+        "Whiffs vs SSR, SWR from 1st block",
+        "Move can be delayed by 15F",
+        "Enter FLY +36a (+26) with ub_u_uf on hit"
+      ],
+      "video": "https://wavu.wiki/w/images/b/b5/T8-p2-devil_jin-f%2B4%2C3.mp4"
+    },
+    "ff2": {
+      "wavuId": "Devil Jin-f,F+2",
+      "input": "f,F+2",
+      "name": "Demon's Paw",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-8",
+      "hit": "+15a (+6)",
+      "ch": null,
+      "damage": "24",
+      "damageTotal": 24,
+      "notes": [
+        "Heat Engager",
+        "Heat Dash +5, +36a (+26)",
+        "Balcony Break",
+        "i18 startup when unbuffered, and i16 startup when buffered",
+        "7 chip damage on block",
+        "Active frame 1 range: 2.73"
+      ],
+      "video": "https://wavu.wiki/w/images/1/12/T8-p2-devil_jin-f%2Cf%2B2.mp4"
+    },
+    "ff4": {
+      "wavuId": "Devil Jin-f,F+4",
+      "input": "f,F+4",
+      "name": "Demon's Shaft",
+      "level": "m",
+      "startup": "i20~21",
+      "block": "-6",
+      "hit": "+16cg",
+      "ch": "+55a",
+      "damage": "22",
+      "damageTotal": 22,
+      "notes": [
+        "Balcony Break on normal hit",
+        "i23 startup when unbuffered, and i21 startup when buffered",
+        "Active frame 1 range: 3.70"
+      ],
+      "video": "https://wavu.wiki/w/images/8/86/T8-p2-devil_jin-f%2Cf%2B4.mp4"
+    },
+    "fff3": {
+      "wavuId": "Devil Jin-f,f,F+3",
+      "input": "f,f,F+3",
+      "name": "Leaping Side Kick",
+      "level": "m",
+      "startup": "i22~25",
+      "block": "+6~+9",
+      "hit": "+13a (+3)",
+      "ch": null,
+      "damage": "30",
+      "damageTotal": 30,
+      "notes": [
+        "Balcony Break",
+        "9 chip damage on block",
+        "Active frame 1 range: 2.90",
+        "Active frame 2 range: 3.53",
+        "Active frame 3 range: 3.62"
+      ],
+      "video": "https://wavu.wiki/w/images/f/fc/T8-p2-devil_jin-f%2Cf%2Cf%2B3.mp4"
+    },
+    "u4": {
+      "wavuId": "Devil Jin-u+4",
+      "input": "u+4",
+      "name": "Samsara",
+      "level": "m",
+      "startup": "i20~21",
+      "block": "-25",
+      "hit": "+15a (+5)",
+      "ch": null,
+      "damage": "22",
+      "damageTotal": 22,
+      "notes": [
+        "Tornado",
+        "May evade some highs during frames 5-9",
+        "Might evade some mids during frames 7-9",
+        "Increased evasion when performed from crouching state",
+        "Enter FLY +35a (+25) with ub_u_uf on hit"
+      ],
+      "video": "https://wavu.wiki/w/images/d/de/T8-p2-devil_jin-u%2B4.mp4"
+    },
+    "u1plus2": {
+      "wavuId": "Devil Jin-u+1+2",
+      "input": "u+1+2",
+      "name": "Hellfire Cannon",
+      "level": "h",
+      "startup": "i18-35",
+      "block": null,
+      "hit": null,
+      "ch": null,
+      "damage": "27",
+      "damageTotal": 27,
+      "notes": [
+        "Hits airborne opponents only"
+      ],
+      "video": "https://wavu.wiki/w/images/f/f3/T8-p2-devil_jin-u%2B1%2B2.mp4"
+    },
+    "uf1": {
+      "wavuId": "Devil Jin-uf+1",
+      "input": "uf+1",
+      "name": "Infernal Shackle",
+      "level": "h",
+      "startup": "i21~23",
+      "block": "+11~+13 MCR",
+      "hit": "+16~+18 MCR",
+      "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
+      "notes": [
+        "Strong Aerial Tailspin",
+        "Weapon",
+        "Balcony Break on airborne hit",
+        "Projectile (unparryable)",
+        "Transition to MCR r29 on hit or block only",
+        "* -14/-9 on an \"empty\" transition",
+        "r47 opponent hitstun",
+        "2 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/9/9a/T8-p2-devil_jin-uf%2B1.mp4"
+    },
+    "uf2": {
+      "wavuId": "Devil Jin-uf+2",
+      "input": "uf+2",
+      "name": "Decapitating Sword",
+      "level": "h",
+      "startup": "i20~23",
+      "block": "-4",
+      "hit": "+25a",
+      "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
+      "notes": [
+        "Homing",
+        "Balcony break on airborne hit"
+      ],
+      "video": "https://wavu.wiki/w/images/b/bf/T8-p2-devil_jin-uf%2B2.mp4"
+    },
+    "uf3": {
+      "wavuId": "Devil Jin-uf+3",
+      "input": "uf+3",
+      "name": "Reaper's Scythe",
+      "level": "m",
+      "startup": "i28~29",
+      "block": "+3c",
+      "hit": "+13",
+      "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
+      "notes": [
+        "Floor Break"
+      ],
+      "video": "https://wavu.wiki/w/images/f/f0/T8-p2-devil_jin-uf%2B3.mp4"
+    },
+    "uf4": {
+      "wavuId": "Devil Jin-uf+4",
+      "input": "uf+4",
+      "name": "Wraith Kick",
+      "level": "m",
+      "startup": "i18",
+      "block": "-8",
+      "hit": "+11",
+      "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
+      "notes": [
+        "Heat Engager",
+        "Heat Dash +5, +62a (+42)",
+        "Balcony Break",
+        "6 chip damage on heat dash"
+      ],
+      "video": "https://wavu.wiki/w/images/f/f9/T8-p2-devil_jin-uf%2B4.mp4"
+    },
+    "uf3plus4": {
+      "wavuId": "Devil Jin-uf+3+4",
+      "input": "uf+3+4",
+      "name": "Hisou",
+      "level": "m,m",
+      "startup": "i16~17 i13~14",
+      "block": "-16",
+      "hit": "+7cg",
+      "ch": null,
+      "damage": "8,20",
+      "damageTotal": 28,
+      "notes": [
+        "Balcony Break",
+        "Forces tech back roll on hit",
+        "Pseudo homing to SSL/SWL side"
+      ]
+    },
+    "uf3plus4-beam": {
+      "wavuId": "Devil Jin-uf+3+4,1+2",
+      "input": "uf+3+4,H.1+2",
+      "name": "Hisou > Annihilation Beam",
+      "level": "m,m,t",
+      "startup": "i25~50",
+      "displayStartup": "i16 (string)",
+      "block": "-15",
+      "hit": "+0d",
+      "ch": null,
+      "damage": ",20",
+      "damageTotal": 48,
+      "notes": [
+        "Weapon",
+        "Projectile (unparryable)",
+        "4 chip damage on block",
+        "Available only on hit or block",
+        "Unavailable on whiff",
+        "Jail from 1st block",
+        "Shift to r96 attack throw on front-facing hit",
+        "Combo from 1st hit with 13F delay",
+        "Move cannot be delayed",
+        "Input can be delayed by 13F",
+        "Consumes 240F of remaining heat time"
+      ]
+    },
+    "uf1plus2": {
+      "wavuId": "Devil Jin-uf+1+2",
+      "input": "uf+1+2",
+      "name": "Stonehead",
+      "level": "t",
+      "startup": "i12",
+      "block": "+0",
+      "hit": "+25d (+7)",
+      "ch": null,
+      "damage": "35",
+      "damageTotal": 35,
+      "notes": [
+        "Balcony Break",
+        "Throw break 1+2",
+        "Side switch on throw break",
+        "Can be done from FC"
+      ],
+      "video": "https://wavu.wiki/w/images/b/be/T8-p2-devil_jin-uf%2B1%2B2.mp4"
+    },
+    "ws1": {
+      "wavuId": "Devil Jin-ws1",
+      "input": "ws1",
+      "name": "Solo Piston",
+      "level": "m",
+      "startup": "i13~14",
+      "block": "-6",
+      "hit": "+5",
+      "ch": "+9",
+      "damage": "12",
+      "damageTotal": 12,
+      "notes": []
+    },
+    "ws1-1": {
+      "wavuId": "Devil Jin-ws1,1",
+      "input": "ws1,1",
+      "name": "Solo Piston > Infernal Shackle",
+      "level": "m,h",
+      "startup": ",i30~32",
+      "displayStartup": "i13 (string)",
+      "block": "+11 MCR",
+      "hit": "+16 MCR",
+      "ch": null,
+      "damage": ",10",
+      "damageTotal": 22,
+      "notes": [
+        "Strong Aerial Tailspin",
+        "Balcony Break On air hit",
+        "Weapon",
+        "Projectile (unparryable)",
+        "Combo from 1st CH with 1F delay",
+        "Interrupt with i12 from 1st block",
+        "Whiffs vs SSR, SWR from 1st block",
+        "Transition to MCR r29 on block or hit only",
+        "* -14/-9 on an empty MCR transition",
+        "2 chip damage on block",
+        "Move cannot be delayed",
+        "Input can be delayed by 1F"
+      ]
+    },
+    "ws1-2": {
+      "wavuId": "Devil Jin-ws1,2",
+      "input": "ws1,2",
+      "name": "Solo Piston > Bloody Glaive",
+      "level": "m,m",
+      "startup": ",i22",
+      "displayStartup": "i13 (string)",
+      "block": "-11",
+      "hit": "+6",
+      "ch": "+10",
+      "damage": ",15",
+      "damageTotal": 27,
+      "notes": [
+        "Combo from 1st hit with 7F delay",
+        "Combo from 1st CH with 10F delay",
+        "Interrupt with i4 from 1st block",
+        "Transition to MCR r25 with F on hit or CH (+14/+17)",
+        "* -11/-8 on an empty MCR transition",
+        "Move can be delayed 9F",
+        "Input can be delayed 10F"
+      ]
+    },
+    "ws1-4": {
+      "wavuId": "Devil Jin-ws1,4",
+      "input": "ws1,4",
+      "name": "Twin Revival",
+      "level": "m,h",
+      "startup": ",i24~25",
+      "displayStartup": "i13 (string)",
+      "block": "-5",
+      "hit": "+17a (+8)",
+      "ch": null,
+      "damage": ",21",
+      "damageTotal": 33,
+      "notes": [
+        "Balcony Break",
+        "Combo from 1st hit with 4f delay",
+        "Interrupt with i6 from 1st block",
+        "Whiffs vs SSR from 1st block",
+        "Input can be delayed 4f",
+        "Move can be delayed 3f"
+      ],
+      "video": "https://wavu.wiki/w/images/8/8a/T8-p2-devil-jin-ws1%2C4.mp4"
+    },
+    "ws2": {
+      "wavuId": "Devil Jin-ws2",
+      "input": "ws2",
+      "name": "Alaya",
+      "level": "m",
+      "startup": "i14~15",
+      "block": "-12~-11",
+      "hit": "+72a (+56)",
+      "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
+      "notes": [
+        "Tornado",
+        "First active frame range: 2.50",
+        "6 chip damage on block",
+        "Slight jab evasion properties"
+      ],
+      "video": "https://wavu.wiki/w/images/1/13/T8-p2-devil_jin-ws2.mp4"
+    },
+    "ws3": {
+      "wavuId": "Devil Jin-ws3",
+      "input": "ws3",
+      "name": "Organ Wrecker",
+      "level": "m",
+      "startup": "i14",
+      "block": "-11",
+      "hit": "+9",
+      "ch": "+14",
+      "damage": "16",
+      "damageTotal": 16,
+      "notes": [
+        "Knee",
+        "Transition to MCR r25 with F on hit or CH (+14/+23)",
+        "* -12/-3 on an empty MCR transition",
+        "Alternate input: hold 3 then input f,n,d,df+4 or f,n,d,df+3+4",
+        "Jab evasion from frame 1? to 9?"
+      ],
+      "video": "https://wavu.wiki/w/images/9/91/T8-p2-devil_jin-ws3.mp4"
+    },
+    "ws4": {
+      "wavuId": "Devil Jin-ws4",
+      "input": "ws4",
+      "name": "ws4",
+      "level": "m",
+      "startup": "i11~12",
+      "block": "-3",
+      "hit": "+8",
+      "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
+      "notes": []
+    },
+    "ws4-4": {
+      "wavuId": "Devil Jin-ws4,4",
+      "input": "ws4,4",
+      "name": "Wretched Heel",
+      "level": "m,M",
+      "startup": ",i27~28",
+      "displayStartup": "i11 (string)",
+      "block": "-16",
+      "hit": "+7c",
+      "ch": null,
+      "damage": ",20",
+      "damageTotal": 30,
+      "notes": [
+        "Spike",
+        "Combo from 1st hit with 1F delay",
+        "Interrupt with i8 from 1st block",
+        "Input can be delayed by 1F",
+        "Move cannot be delayed"
+      ],
+      "video": "https://wavu.wiki/w/images/e/e3/T8-p2-devil_jin-ws4%2C4.mp4"
+    },
+    "ewgf": {
+      "wavuId": "Devil Jin-f,n,d,df${justFrame}2",
+      "input": "f,n,d,df+2 (just frame)",
+      "name": "Electric Wind God Fist",
+      "level": "h",
+      "startup": "i11~12 (i14+)",
+      "block": "+5",
+      "hit": "+39a (+29)",
+      "ch": null,
+      "damage": "23",
+      "damageTotal": 23,
+      "notes": [
+        "4 chip damage on block",
+        "Can also be performed with f,n,df#2 (i13+)"
+      ],
+      "video": "https://wavu.wiki/w/images/0/09/T8-p2-devil_jin-f%2Cn%2Cd%2Cdf_2.mp4"
+    },
+    "wgf": {
+      "wavuId": "Devil Jin-f,n,d,df+2",
+      "input": "f,n,d,df+2",
+      "name": "Wind God Fist",
+      "level": "h",
+      "startup": "i11~12 (i15+)",
+      "block": "-10",
+      "hit": "+39a (+29)",
+      "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
+      "notes": [
+        "Turns into EWGF (f,n,d,df#2) while in heat",
+        "Consumes 70F of remaining heat time while in heat",
+        "4 chip damage on block while in heat"
+      ],
+      "video": "https://wavu.wiki/w/images/a/ad/T8-p2-devil_jin-f%2Cn%2Cd%2Cdf%2B2.mp4"
+    },
+    "tgf": {
+      "wavuId": "Devil Jin-f,n,d,df+1",
+      "input": "f,n,d,df+1",
+      "name": "Thunder God Fist",
+      "level": "m",
+      "startup": "i22~24",
+      "block": "-16~-14",
+      "hit": "+29a (+19)",
+      "ch": null,
+      "damage": "30",
+      "damageTotal": 30,
+      "notes": [
+        "Active frame 1 range: 2.36",
+        "Active frame 2 range: 2.52"
+      ],
+      "video": "https://wavu.wiki/w/images/f/f2/T8-p2-devil_jin-f%2Cn%2Cd%2Cdf%2B1.mp4"
+    },
+    "spiral": {
+      "wavuId": "Devil Jin-f,n,d,df+1+2",
+      "input": "f,n,d,df+1+2",
+      "name": "Spiral of Madness",
+      "level": "m",
+      "startup": "i26~27",
+      "block": "-5",
+      "hit": "+32d (+24d)",
+      "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
+      "notes": [
+        "Homing",
+        "Balcony Break",
+        "7 chip damage on block",
+        "Opponent recovers FUFA on CH"
+      ],
+      "video": "https://wavu.wiki/w/images/b/b2/T8-p2-devil_jin-f%2Cn%2Cd%2Cdf%2B1%2B2.mp4"
+    },
+    "demons-hoof": {
+      "wavuId": "Devil Jin-f,n,d,df+3",
+      "input": "f,n,d,df+3",
+      "name": "Demon's Hoof",
+      "level": "M",
+      "startup": "i26~28",
+      "block": "-8c",
+      "hit": "+16a",
+      "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
+      "notes": [
+        "Floor Break",
+        "7 chip damage on block",
+        "Active frame 1 range: 3.62",
+        "Active frame 2 range: 3.63?"
+      ],
+      "video": "https://wavu.wiki/w/images/e/e0/T8-p2-devil_jin-f%2Cn%2Cd%2Cdf%2B3.mp4"
+    },
+    "demons-tail": {
+      "wavuId": "Devil Jin-f,n,d,DF+3",
+      "input": "f,n,d,DF+3",
+      "name": "Demon's Tail",
+      "level": "L",
+      "startup": "i33~34",
+      "block": "-23",
+      "hit": "-2a",
+      "ch": null,
+      "damage": "24",
+      "damageTotal": 24,
+      "notes": [
+        "Opponent recovers FDFA on hit",
+        "Active frame 1 range: 3.89",
+        "Hold df for at least 13F after inputting f,n,d,df+3"
+      ],
+      "video": "https://wavu.wiki/w/images/a/ab/T8-p2-devil-jin-f%2Cn%2Cd%2Cdfx%2B3.mp4"
+    },
+    "hellsweep": {
+      "wavuId": "Devil Jin-f,n,d,DF+4",
+      "input": "f,n,d,DF+4",
+      "name": "f,n,d,DF+4",
+      "level": "L",
+      "startup": "i16",
+      "block": "-23c",
+      "hit": "-5c",
+      "ch": null,
+      "damage": "7",
+      "damageTotal": 7,
+      "notes": []
+    },
+    "hellsweep-beam": {
+      "wavuId": "Devil Jin-f,n,d,DF+4,1+2",
+      "input": "f,n,d,DF+4,1+2",
+      "name": "Spinning Demon Hellfire Beam",
+      "level": "L,SM",
+      "startup": ",i29~40",
+      "displayStartup": "i16 (string)",
+      "block": null,
+      "hit": "+58a (+42)",
+      "ch": null,
+      "damage": ",14 (9)",
+      "damageTotal": 21,
+      "notes": [
+        "Tornado",
+        "Available only on hit",
+        "Opponent recovers FUFA on hit",
+        "9 damage with scaling from previous hit"
+      ],
+      "video": "https://wavu.wiki/w/images/7/7f/T8-p2-devil_jin-f%2Cn%2Cd%2Cdf%2B4%2C1%2B2.mp4"
+    },
+    "hellsweep-4": {
+      "wavuId": "Devil Jin-f,n,d,DF+4,4",
+      "input": "f,n,d,DF+4,4",
+      "name": "Spinning Demon Scythe",
+      "level": "L,m",
+      "startup": ",i25~26",
+      "displayStartup": "i16 (string)",
+      "block": "-16",
+      "hit": "+7c",
+      "ch": "+14a",
+      "damage": ",28",
+      "damageTotal": 35,
+      "notes": [
+        "Spike",
+        "Combo from 1st hit"
+      ],
+      "video": "https://wavu.wiki/w/images/e/ed/T8-p2-devil_jin-f%2Cn%2Cd%2Cdf%2B4%2C4.mp4"
+    },
+    "hellsweep-heat": {
+      "wavuId": "Devil Jin-f,n,d,DF+4,H.3",
+      "input": "f,n,d,DF+4,H.3",
+      "name": "Spinning Demon Leviathan",
+      "level": "L,SM",
+      "startup": ",i31",
+      "displayStartup": "i16 (string)",
+      "block": null,
+      "hit": "+72a (+56a)",
+      "ch": null,
+      "damage": ",26 (18)",
+      "damageTotal": 33,
+      "notes": [
+        "Tornado",
+        "Available only on hit",
+        "18 damage with combo scaling from 1st",
+        "Consumes 600F of remaining Heat timer on hit or block or whiff"
+      ]
+    },
+    "fly-1": {
+      "wavuId": "Devil Jin-FLY.1",
+      "input": "FLY.1",
+      "name": "Near Death",
+      "level": "h",
+      "startup": "i18~19",
+      "block": "-3",
+      "hit": "+67a (+47)",
+      "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
+      "notes": [
+        "Strong Aerial Tailspin",
+        "Balcony Break"
+      ],
+      "video": "https://wavu.wiki/w/images/7/75/T8-p2-devil_jin-fly.1.mp4"
+    },
+    "fly-2": {
+      "wavuId": "Devil Jin-FLY.2",
+      "input": "FLY.2",
+      "name": "Infernal Annihilation",
+      "level": "h!,t",
+      "startup": "i36",
+      "block": null,
+      "hit": "+0d",
+      "ch": null,
+      "damage": "20,20",
+      "damageTotal": 40,
+      "notes": [
+        "Floor Break",
+        "Transition to attack throw on front standing or airborne hit",
+        "+1a (-8) on BT hit"
+      ],
+      "video": "https://wavu.wiki/w/images/c/c5/T8-p2-devil_jin-fly.2.mp4"
+    },
+    "fly-3": {
+      "wavuId": "Devil Jin-FLY.3",
+      "input": "FLY.3",
+      "name": "Amara",
+      "level": "M",
+      "startup": "i15~22",
+      "block": "-15~-8",
+      "hit": "+8cg~+15cg",
+      "ch": null,
+      "damage": "30",
+      "damageTotal": 30,
+      "notes": [
+        "Balcony Break",
+        "Spike",
+        "Forces tech back roll on hit",
+        "* Opponent recovers in FC?"
+      ],
+      "video": "https://wavu.wiki/w/images/3/37/T8-p2-devil_jin-fly.3.mp4"
+    },
+    "fly-4": {
+      "wavuId": "Devil Jin-FLY.4",
+      "input": "FLY.4",
+      "name": "FLY.4",
+      "level": "M",
+      "startup": "i20~21",
+      "block": "-29",
+      "hit": "-20s",
+      "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
+      "notes": []
+    },
+    "fly-4-1": {
+      "wavuId": "Devil Jin-FLY.4,1",
+      "input": "FLY.4,1",
+      "name": "Forsaken Soul",
+      "level": "M,h",
+      "startup": ",i40~41",
+      "displayStartup": "i20 (string)",
+      "block": "+1",
+      "hit": "+71a (+51)",
+      "ch": null,
+      "damage": ",20",
+      "damageTotal": 30,
+      "notes": [
+        "Strong Aerial Tailspin",
+        "Balcony Break",
+        "Interrupt with i19 from 1st block",
+        "Whiffs vs SW from 1st block",
+        "+40a (+33) on neutral guard hit from 1st hit"
+      ]
+    },
+    "fly-4-2": {
+      "wavuId": "Devil Jin-FLY.4,2",
+      "input": "FLY.4,2",
+      "name": "FLY.4,2",
+      "level": "M,m",
+      "startup": ",i22~23",
+      "displayStartup": "i20 (string)",
+      "block": "-27",
+      "hit": "+15a (+5)/ +52a (+7)",
+      "ch": null,
+      "damage": ",20 (14)",
+      "damageTotal": 30,
+      "notes": [
+        "Airborne combo from 1st hit (+52a (+7))",
+        "Interrupt with i1 from 1st block"
+      ]
+    },
+    "fly-4-2-1": {
+      "wavuId": "Devil Jin-FLY.4,2,1",
+      "input": "FLY.4,2,1",
+      "name": "FLY.4,2,1",
+      "level": "M,m,m",
+      "startup": ",i22~24",
+      "displayStartup": "i20 (string)",
+      "block": "-16",
+      "hit": "+29a (+19a) / +16a (+9)",
+      "ch": null,
+      "damage": ",20 (14/10)",
+      "damageTotal": 50,
+      "notes": [
+        "Airborne combo from 1st hit with 24F delay (+16a (+9))",
+        "Interrupt with i24 from 2nd block",
+        "Whiffs vs SS, SW from 2nd block",
+        "Move cannot be delayed",
+        "Input is delayed by 24F",
+        "Effective startup i45~47"
+      ]
+    },
+    "fly-1plus2": {
+      "wavuId": "Devil Jin-FLY.1+2",
+      "input": "FLY.1+2",
+      "name": "Infernal Destruction",
+      "level": "M!",
+      "startup": "i50~100",
+      "block": null,
+      "hit": "-72cg~-22cg",
+      "ch": null,
+      "damage": "30",
+      "damageTotal": 30,
+      "notes": [
+        "Balcony Break",
+        "-72c~-56c on average",
+        "Forces tech back roll on hit"
+      ],
+      "video": "https://wavu.wiki/w/images/2/24/T8-p2-devil_jin-fly.1%2B2.mp4"
+    },
+    "fly-f1plus2": {
+      "wavuId": "Devil Jin-FLY.f+1+2",
+      "input": "FLY.f+1+2",
+      "name": "Cross Infernal Destruction",
+      "level": "M!",
+      "startup": "i32~75",
+      "block": null,
+      "hit": "-65cg~-22cg",
+      "ch": null,
+      "damage": "30",
+      "damageTotal": 30,
+      "notes": [
+        "Balcony Break",
+        "-52c~-50c on average?",
+        "Forces tech back roll on hit",
+        "Recovers front-facing when done from BT FLY"
+      ],
+      "video": "https://wavu.wiki/w/images/1/18/T8-p2-devil_jin-fly.f%2B1%2B2.mp4"
+    },
+    "mcr-1": {
+      "wavuId": "Devil Jin-MCR.1",
+      "input": "MCR.1",
+      "name": "Tiger Thrush",
+      "level": "m",
+      "startup": "i22",
+      "block": "+8",
+      "hit": "+20d",
+      "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
+      "notes": [
+        "Spike",
+        "Opponent recovers FDFA on hit",
+        "6 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/7/77/T8-p2-devil_jin-mcr.1.mp4"
+    },
+    "mcr-2": {
+      "wavuId": "Devil Jin-MCR.2",
+      "input": "MCR.2",
+      "name": "MCR.2",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-9",
+      "hit": "-1",
+      "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
+      "notes": [
+        "Homing"
+      ]
+    },
+    "mcr-2-2": {
+      "wavuId": "Devil Jin-MCR.2,2",
+      "input": "MCR.2,2",
+      "name": "Dark Arachnid Twister",
+      "level": "m,M",
+      "startup": ",i24-26",
+      "displayStartup": "i15 (string)",
+      "block": "-14c",
+      "hit": "+2a",
+      "ch": null,
+      "damage": ",20",
+      "damageTotal": 32,
+      "notes": [
+        "Heat Engager",
+        "Heat Dash +5, +43d (+35)",
+        "Floor Break",
+        "Combo from 1st hit with 2F delay",
+        "Opponent recovers FDFA on hit",
+        "Interrupt with i3",
+        "Input can be delayed by 2F",
+        "Move cannot be delayed"
+      ],
+      "video": "https://wavu.wiki/w/images/7/70/T8-p2-devil_jin-mcr.2%2C2.mp4"
+    },
+    "mcr-3": {
+      "wavuId": "Devil Jin-MCR.3",
+      "input": "MCR.3",
+      "name": "Venomous Torment",
+      "level": "SM",
+      "startup": "i23",
+      "block": "-7",
+      "hit": "+70a (+54)",
+      "ch": null,
+      "damage": "26",
+      "damageTotal": 26,
+      "notes": [
+        "Tornado",
+        "7 chip damage on block",
+        "Projectile (unparryable)"
+      ],
+      "video": "https://wavu.wiki/w/images/f/f1/T8-p2-devil_jin-mcr.3.mp4"
+    },
+    "mcr-4": {
+      "wavuId": "Devil Jin-MCR.4",
+      "input": "MCR.4",
+      "name": "MCR.4",
+      "level": "M",
+      "startup": "i20~21",
+      "block": "-29",
+      "hit": "-20s",
+      "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
+      "notes": []
+    },
+    "mcr-4-1": {
+      "wavuId": "Devil Jin-MCR.4,1",
+      "input": "MCR.4,1",
+      "name": "Forsaken Soul",
+      "level": "M,h",
+      "startup": ",i40~41",
+      "displayStartup": "i20 (string)",
+      "block": "+1",
+      "hit": "+71a (+51)",
+      "ch": null,
+      "damage": ",20",
+      "damageTotal": 30,
+      "notes": [
+        "Strong Aerial Tailspin",
+        "Balcony Break",
+        "Interrupt with i19 from 1st block",
+        "Whiffs vs SW from 1st block",
+        "+40a (+33) on neutral guard hit from 1st hit"
+      ]
+    },
+    "mcr-4-2": {
+      "wavuId": "Devil Jin-MCR.4,2",
+      "input": "MCR.4,2",
+      "name": "MCR.4,2",
+      "level": "M,m",
+      "startup": ",i22~23",
+      "displayStartup": "i20 (string)",
+      "block": "-27",
+      "hit": "+15a (+5)/ +52a (+7)",
+      "ch": null,
+      "damage": ",20 (14)",
+      "damageTotal": 30,
+      "notes": [
+        "Airborne combo from 1st hit (+52a (+7))",
+        "Interrupt with i1 from 1st block"
+      ]
+    },
+    "mcr-4-2-1": {
+      "wavuId": "Devil Jin-MCR.4,2,1",
+      "input": "MCR.4,2,1",
+      "name": "MCR.4,2,1",
+      "level": "M,m,m",
+      "startup": ",i22~24",
+      "displayStartup": "i20 (string)",
+      "block": "-16",
+      "hit": "+29a (+19a) / +16a (+9)",
+      "ch": null,
+      "damage": ",20 (14/10)",
+      "damageTotal": 50,
+      "notes": [
+        "Airborne combo from 1st hit with 24F delay (+16a (+9))",
+        "Interrupt with i24 from 2nd block",
+        "Whiffs vs SS, SW from 2nd block",
+        "Move cannot be delayed",
+        "Input is delayed by 24F",
+        "Effective startup i45~47"
+      ]
+    },
+    "mcr-1plus2": {
+      "wavuId": "Devil Jin-MCR.1+2",
+      "input": "MCR.1+2",
+      "name": "Inner Turmoil",
+      "level": "h!",
+      "startup": "i20",
+      "block": null,
+      "hit": "+0",
+      "ch": null,
+      "damage": "12",
+      "damageTotal": 12,
+      "notes": [
+        "Balcony Break (airborne)"
+      ]
+    },
+    "mcr-heat-1plus2": {
+      "wavuId": "Devil Jin-H.MCR.1+2",
+      "input": "H.MCR.1+2",
+      "name": "Inner Purgatory",
+      "level": "h!,t",
+      "startup": "i20",
+      "block": null,
+      "hit": "+0d",
+      "ch": null,
+      "damage": "12,27",
+      "damageTotal": 39,
+      "notes": [
+        "Transition to attack throw on standing or airborne hit",
+        "Consumes 600F of the heat timer"
+      ]
+    },
+    "ss2": {
+      "wavuId": "Devil Jin-SS.2",
+      "input": "SS.2",
+      "name": "Devil Twister",
+      "level": "m",
+      "startup": "i17~18",
+      "block": "-22",
+      "hit": "+72a",
+      "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
+      "notes": [
+        "Transition to Hell's Gate on hit with U",
+        "Sidestep adds 9f, effective move startup: i26"
+      ],
+      "video": "https://wavu.wiki/w/images/b/ba/T8-p2-devil_jin-ss.2.mp4"
+    },
+    "throw-1plus3": {
+      "wavuId": "Devil Jin-1+3",
+      "input": "1+3",
+      "name": "Double High Sweep",
+      "level": "t",
+      "startup": "i12~14",
+      "block": "+0",
+      "hit": "+2d",
+      "ch": null,
+      "damage": "35",
+      "damageTotal": 35,
+      "notes": [
+        "Homing",
+        "Throw break: 1 or 2",
+        "Can be done from FC",
+        "Transition to BT on break"
+      ],
+      "video": "https://wavu.wiki/w/images/7/74/T8-p2-devil_jin-1%2B3.mp4"
+    },
+    "throw-2plus4": {
+      "wavuId": "Devil Jin-2+4",
+      "input": "2+4",
+      "name": "Judgment",
+      "level": "t",
+      "startup": "i12~14",
+      "block": "-3",
+      "hit": "+0d",
+      "ch": null,
+      "damage": "35",
+      "damageTotal": 35,
+      "notes": [
+        "Homing",
+        "Throw break 1 or 2",
+        "Side switch on hit",
+        "Opponent recovers FUFA on hit",
+        "Can be done from FC"
+      ],
+      "video": "https://wavu.wiki/w/images/8/82/T8-p2-devil_jin-2%2B4.mp4"
+    },
+    "obliteration": {
+      "wavuId": "Devil Jin-f,hcf+1+2",
+      "input": "f,hcf+1+2",
+      "name": "Obliteration",
+      "level": "t",
+      "startup": "i12",
+      "block": "-6",
+      "hit": "+0d",
+      "ch": null,
+      "damage": "45",
+      "damageTotal": 45,
+      "notes": [
+        "Throw break 1+2",
+        "Side switch on hit when done on opponent's front and left sides from P1 side",
+        "Sideswap on hit when done on opponent's left side from P2 side",
+        "Can be done from FC"
+      ],
+      "video": "https://wavu.wiki/w/images/c/c3/T8-p2-devil_jin-f%2Chcf%2B1%2B2.mp4"
+    },
+    "complicated-wire": {
+      "wavuId": "Devil Jin-qcb+1+3",
+      "input": "qcb+1+3",
+      "name": "Complicated Wire",
+      "level": "t",
+      "startup": "i12",
+      "block": "-2",
+      "hit": "+0d",
+      "ch": null,
+      "damage": "40",
+      "damageTotal": 40,
+      "notes": [
+        "Throw break 1",
+        "Opponent recovers FUFA on hit",
+        "Can be done from FC"
+      ],
+      "video": "https://wavu.wiki/w/images/e/e2/T8-p2-devil_jin-qcb%2B1%2B3.mp4"
+    },
+    "heat-burst": {
+      "wavuId": "Devil Jin-2+3",
+      "input": "2+3",
+      "name": "Heat Burst",
+      "level": "m",
+      "startup": "i16",
+      "block": "+1",
+      "hit": "+2c",
+      "ch": null,
+      "damage": "[12;12]",
+      "damageTotal": 12,
+      "notes": [
+        "Heat Burst",
+        "Cancel to r45 with b,b on frame 42",
+        "2 chip damage on block",
+        "12 chip damage on hit",
+        "Only deals recoverable damage",
+        "Cannot cause a K.O."
+      ]
+    },
+    "heat-smash": {
+      "wavuId": "Devil Jin-H.2+3",
+      "input": "H.2+3",
+      "name": "Vindictive Helix",
+      "level": "m,h,t",
+      "startup": "i18~28",
+      "block": "+11 MCR",
+      "hit": "+5d",
+      "ch": null,
+      "damage": "20,22,10",
+      "damageTotal": 52,
+      "notes": [
+        "Heat Smash",
+        "Balcony Break",
+        "Jail from 1st attack",
+        "Transition to attack throw on hit",
+        "Transition to MCR r29 on block only",
+        "* -14 on an empty MCR transition",
+        "Cancel to r37 on block with B (+2~+12)",
+        "5 chip damage on block",
+        "+48? (+8?) on wall hit"
+      ]
+    },
+    "rage-art": {
+      "wavuId": "Devil Jin-R.df+1+2",
+      "input": "R.df+1+2",
+      "name": "Devil Dimension: Tainted Chains",
+      "level": "m,t",
+      "startup": "i20",
+      "block": "-18",
+      "hit": "+0d",
+      "ch": null,
+      "damage": "10-15,3-5,42-60",
+      "damageTotal": 55,
+      "notes": [
+        "Rage Art",
+        "Removes Recoverable Health",
+        "Reversal Break",
+        "Damage increases with lower health, maximum 82",
+        "Freezes match timer on activation and on hit",
+        "Restores recoverable health on hit",
+        "Transition to attack throw on hit",
+        "Consumes Rage",
+        "Opponent recovers FDFA on hit"
+      ]
+    },
+    "otg-beam": {
+      "wavuId": "Devil Jin-OTG.d+1+2",
+      "input": "OTG.d+1+2",
+      "name": "Hellfire Incinerator",
+      "level": "L",
+      "startup": "i23~31",
+      "block": "-16~-8",
+      "hit": "+5a~+13a",
+      "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
+      "notes": [
+        "Weapon",
+        "Projectile (unparryable)",
+        "Balcony break on CH",
+        "Typically connects grounded on frames i25~26 of startup at -14~-13/+12a~+13a(+0a~+1a)",
+        "Can be done from Crouch Level 1"
+      ]
+    }
+  }
+}

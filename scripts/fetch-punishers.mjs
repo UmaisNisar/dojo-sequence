@@ -48,6 +48,7 @@ export const WAVU_NAMES = {
   steve: "Steve",
   hwoarang: "Hwoarang",
   yoshimitsu: "Yoshimitsu",
+  "devil-jin": "Devil Jin",
 };
 
 const SECTIONS = {

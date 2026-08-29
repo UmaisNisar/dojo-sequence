@@ -1,0 +1,205 @@
+{
+  "characterId": "devil-jin",
+  "source": "https://wavu.wiki/t/Devil Jin_punishers",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-29",
+  "sections": {
+    "standing": [
+      {
+        "moveKey": "flash-claw",
+        "input": null,
+        "enemy": "-10",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "jab-2-2",
+        "input": null,
+        "enemy": "-10",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "right-2",
+        "input": null,
+        "enemy": "-10",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "b1-2",
+        "input": null,
+        "enemy": "-12",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "df4-4",
+        "input": null,
+        "enemy": "-13",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": null,
+        "input": "f,n,df#2",
+        "enemy": "-13",
+        "frames": null,
+        "damage": "23",
+        "combo": "67",
+        "notes": []
+      },
+      {
+        "moveKey": "ewgf",
+        "input": null,
+        "enemy": "-14",
+        "frames": null,
+        "damage": null,
+        "combo": "67",
+        "notes": []
+      },
+      {
+        "moveKey": "b2-3",
+        "input": null,
+        "enemy": "-14",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "d3plus4",
+        "input": null,
+        "enemy": "-15",
+        "frames": null,
+        "damage": null,
+        "combo": "69",
+        "notes": []
+      },
+      {
+        "moveKey": "uf3plus4",
+        "input": null,
+        "enemy": "-16",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "uf3plus4-beam",
+        "input": null,
+        "enemy": "-16",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ewgf",
+        "input": null,
+        "enemy": "-17",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      }
+    ],
+    "crouching": [
+      {
+        "moveKey": "ws4-4",
+        "input": null,
+        "enemy": "-11",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws1-2",
+        "input": null,
+        "enemy": "-13",
+        "frames": "+6/+14 MCR",
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws1-4",
+        "input": null,
+        "enemy": "-13",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "ws2",
+        "input": null,
+        "enemy": "-14",
+        "frames": null,
+        "damage": null,
+        "combo": "67",
+        "notes": []
+      },
+      {
+        "moveKey": null,
+        "input": "crouch cancel ewgf",
+        "enemy": "-14",
+        "frames": null,
+        "damage": "23",
+        "combo": "67",
+        "notes": []
+      },
+      {
+        "moveKey": "u4",
+        "input": null,
+        "enemy": "-20",
+        "frames": null,
+        "damage": null,
+        "combo": "77",
+        "notes": []
+      },
+      {
+        "moveKey": "ss2",
+        "input": null,
+        "enemy": "-26",
+        "frames": null,
+        "damage": null,
+        "combo": "83",
+        "notes": []
+      }
+    ],
+    "backTurned": [
+      {
+        "moveKey": "jab-2-3-4",
+        "input": null,
+        "enemy": "-10",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "df3-2-4",
+        "input": null,
+        "enemy": "-16",
+        "frames": null,
+        "damage": null,
+        "combo": "83",
+        "notes": []
+      }
+    ],
+    "grounded": []
+  },
+  "whiff": []
+}

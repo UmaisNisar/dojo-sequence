@@ -1,0 +1,1063 @@
+{
+  "characterId": "devil-jin",
+  "source": "https://wavu.wiki/t/Devil Jin_combos",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-29",
+  "sections": [
+    {
+      "id": "bnb",
+      "label": "Bread and butter",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "Regular launch (e.g. d+3+4)",
+              "damage": null,
+              "notes": [],
+              "moveKey": "d3plus4"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "3,1 b,f+2,1,d+2 T! df+3,2,4",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Instant Tornado (e.g. ws2)",
+              "damage": null,
+              "notes": [],
+              "moveKey": "ws2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "3,1 b,f+2,1,2",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "staple",
+      "label": "Staples",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "EWGF",
+              "damage": 23,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "DEWGF 3,1 bf+2,1,d2 T! df+3,2,4",
+              "damage": 52,
+              "recoverable": 34,
+              "notes": [
+                "A recommended BnB for veteran/advanced players",
+                "Good for damage and wall carry."
+              ]
+            },
+            {
+              "notation": "u+1+2 3,1 bf+2,1,d+2 T! df+3,2,4",
+              "damage": 54,
+              "recoverable": 35,
+              "notes": [
+                "Good for damage and wall carry."
+              ]
+            },
+            {
+              "notation": "EWGF 3,1,2 T! dash ssr 31,f,f df+3,2,4",
+              "damage": 53,
+              "recoverable": 34,
+              "notes": [
+                "Good for damage and wall carry."
+              ]
+            },
+            {
+              "notation": "EWGF 3,1,2 T! MCR.4,2,1,UF",
+              "damage": 53,
+              "recoverable": 34,
+              "notes": [
+                "MCR.4,2,1 ender may allow for a wall combo if UF input is skipped.",
+                "Good for damage."
+              ]
+            },
+            {
+              "notation": "u+1+2 3,1,2 T! MCR.4,2,1,UF",
+              "damage": 55,
+              "recoverable": 35,
+              "notes": [
+                "MCR.4,2,1 ender may allow for a wall combo if UF input is skipped.",
+                "Good for damage."
+              ]
+            },
+            {
+              "notation": "u+1+2 iws3f MCR 3 T! ws3 MCR.4,1,1+2",
+              "damage": 59,
+              "recoverable": 38,
+              "notes": [
+                "In order to perform iWS3, 3 should be held in the recovery of the previous action, and once DVJ is actionable, input f,n,d,df,f+1+2.",
+                "Good for damage."
+              ]
+            },
+            {
+              "notation": "u+1+2 uf+1 MCR 3 T! uf1 MCR.4,2,1,UF",
+              "damage": 55,
+              "recoverable": 39,
+              "notes": [
+                "Very simple combo.",
+                "Good for damage."
+              ]
+            },
+            {
+              "notation": "EWGF b+2,1 T! ssr dash 3,1,ff df+3,2,4",
+              "damage": 48,
+              "recoverable": 31,
+              "notes": [
+                "Good for wall carry."
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "d+3+4",
+              "damage": 25,
+              "notes": [],
+              "moveKey": "d3plus4"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+2 2 iWS3,f < MCR.4,1 iWS3,F~MCR.3 T! cd.1,UF / ws3,f~MCR.2,2",
+              "damage": 54,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "3,1,2 T! ws3,F <MCR.4,2,1,UF",
+              "damage": 47,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "3,1,ff 2 df+3,2,4 T! f,n,d,df+1,u (floor breaks)",
+              "damage": 44,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "df+3,2,4 T! ws3,F <MCR.4,2,1,UF",
+              "damage": 44,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "ws2",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "ws2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "dash up, u+1+2 3,1 iWS3,F MCR.4,2,1,UF",
+              "damage": 53,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "WS3F MCR.4,1 iWS3F MCR.4,2,1,UF",
+              "damage": 47,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "dash up, u+1+2 u+1 MCR.4,2,1,UF (easy)",
+              "damage": 43,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "dash up, u+1+2 3,1 b,f+2,1,df+2",
+              "damage": 42,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "U+4",
+              "damage": 22,
+              "notes": [],
+              "moveKey": "u4"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "FLY.1 iWS.3,F MCR.3 T! ws3,F MCR.4,2,1,UF",
+              "damage": 55,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "FLY.1 b+2,1 T! ws3,F <MCR.4,2,1,UF",
+              "damage": 50,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "FLY.1 dash 2 b+2,1 T! SSR dash 3,1,ff df+3,2,4",
+              "damage": 47,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "ss2",
+              "damage": 25,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "u+1+2 DEWGF b+2,1 T! f+3~MCR.4,2,1,UF",
+              "damage": 58,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "u+1+2 u+1 MCR.3 T! iWS3,F <MCR.4,2,1,UF",
+              "damage": 56,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "f,n,d,df+3",
+              "damage": 25,
+              "notes": [],
+              "moveKey": "demons-tail"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "db+1 WS.3,f~MCR.4,1 iWS3,f~MCR.3 T! cd.1,UF / ws3,f~MCR.2,2",
+              "damage": 45,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "1+4,2 T! ws3,F <MCR.4,2,1,UF",
+              "damage": 36,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "1+4 b+2,1 T! dash SSR 3,1,ff df+3,2,4",
+              "damage": 34,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "f,n,d,df+4,1+2",
+              "damage": 16,
+              "notes": [],
+              "moveKey": "hellsweep-beam"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "dash, ws1,1 MCR.4,2,1,UF",
+              "damage": 29,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "dash, ws3~f MCR.4,2,1,UF",
+              "damage": 28,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "(1,2),3",
+              "damage": 25,
+              "notes": [],
+              "moveKey": "jab-2-3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+3,2,4 T! ws3,F MCR.4,2,1,UF",
+              "damage": 44,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH b+4",
+              "damage": 24,
+              "notes": [],
+              "moveKey": "b4"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+3,2,4 T! ws3,F <MCR.4,2,1,UF (floor breaks)",
+              "damage": 44,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "df+1 2 df+3,2,4 T! f,n,d,df+1,u (floor breaks)",
+              "damage": 37,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH uf+3",
+              "damage": 25,
+              "notes": [],
+              "moveKey": "uf3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+1 2 b+2,1 T! MCR.4,2,1,UF (floor breaks)",
+              "damage": 40,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "df+1 2 df+3,2,4 T! f,n,d,df+1,u (floor breaks)",
+              "damage": 37,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH f,F+4",
+              "damage": 26,
+              "notes": [],
+              "moveKey": "ff4"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "3,1,2 T! ws3,F <MCR.4,2,1,UF",
+              "damage": 47,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "df+3,2,4 T! ws3,F <MCR.4,2,1,UF",
+              "damage": 44,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH ws3",
+              "damage": 19,
+              "notes": [],
+              "moveKey": "ws3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "~f MCR.3 u+1+2 iWS3 iWS3 iWS3~f MCR.4,2,1,UF (advanced)",
+              "damage": 54,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "~f MCR.3 u+1+2 3,1 WS3~f MCR.4,2,1,UF",
+              "damage": 52,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "~f MCR.3 u+1+2 iWS3~f MCR.4,1 iWS3~f MCR.2,2",
+              "damage": 50,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "~f MCR.3 WS3~f MCR.4,1 iWS3~f MCR.4,2,1,UF",
+              "damage": 48,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "~f MCR.3 WS3~f MCR.4,1 uf+1 MCR.4,2,1,UF",
+              "damage": 47,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "~f MCR.3 u+1+2 3,1 b,f+2,1,2",
+              "damage": 45,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH MCR.3",
+              "damage": 31,
+              "notes": [],
+              "moveKey": "mcr-3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "dash up, u+1+2 3,1 iWS3~f MCR.4,2,1,UF",
+              "damage": 54,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "dash up, u+1+2 u+1 MCR.4,2,1,UF",
+              "damage": 43,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH (3,1),4",
+              "damage": 24,
+              "notes": [],
+              "moveKey": "three-1-4"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "ws3,F MCR.3 T! ws1,1,F MCR.4,2,1,UF",
+              "damage": 50,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Low Parry",
+              "damage": 0,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "3,1,ff 2 df+3,2,4",
+              "damage": 31,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "3,1 CD~WS3,F <MCR.4,2,1,UF",
+              "damage": 41,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "SSL, CD~WS3, CD~WS3, CD~WS3, CD~WS3,F <MCR.4,2,1,UF",
+              "damage": 48,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mini",
+      "label": "Mini-combos",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "uf+1",
+              "damage": 10,
+              "notes": [],
+              "moveKey": "uf1"
+            },
+            {
+              "label": "(ws1),1",
+              "damage": 10,
+              "notes": [],
+              "moveKey": "ws1-1"
+            },
+            {
+              "label": "CH df+2~f",
+              "damage": 20,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "CH (ws1),2",
+              "damage": 18,
+              "notes": [],
+              "moveKey": "ws1-2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "MCR.2,2 HE",
+              "damage": 22,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "uf+2",
+              "damage": 25,
+              "notes": [],
+              "moveKey": "uf2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "dash b+4",
+              "damage": 16,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "db+2",
+              "damage": 10,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "f,n,d,df+1+2",
+              "damage": 25,
+              "notes": [],
+              "moveKey": "spiral"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "d+1",
+              "damage": 20,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "f,f+2",
+              "damage": 19,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "dash b+4",
+              "damage": 16,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "MCR.1",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "mcr-1"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "b+4",
+              "damage": 16,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH (df+1),4",
+              "damage": 27,
+              "notes": [],
+              "moveKey": "df1-4"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "~f MCR.3 b+4",
+              "damage": 36,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "f,f+2",
+              "damage": 19,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "dash b+4",
+              "damage": 16,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH b+1+2",
+              "damage": 25,
+              "notes": [],
+              "moveKey": "b1plus2"
+            },
+            {
+              "label": "CH db+2",
+              "damage": 18,
+              "notes": [],
+              "moveKey": "db2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "d+1+2",
+              "damage": 20,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "b+4",
+              "damage": 16,
+              "recoverable": null,
+              "notes": [
+                "better oki"
+              ]
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH ws3",
+              "damage": 19,
+              "notes": [],
+              "moveKey": "ws3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "~f MCR.3 T! (launch)",
+              "damage": 18,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "EWGF (launch; hard)",
+              "damage": 16,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "~f MCR.4,2,1+2",
+              "damage": 26,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "~f MCR.1 b+4",
+              "damage": 25,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "b+2,3 HE",
+              "damage": 23,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "~f MCR.2,2 HE",
+              "damage": 22,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "[16, 16] db+1+2** (on block)",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "2,2 (for damage)",
+              "damage": 20,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "1,1,2 (for oki)",
+              "damage": 16,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heat",
+      "label": "Heat",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "EWGF",
+              "damage": 23,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "u+1+2 3,1,ff 2 df+3,2,4 T! dash 2+3 ws3,F MCR.2,2,H.f f,n,d,df+1,u",
+              "damage": 74,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "d+3+4",
+              "damage": 25,
+              "notes": [],
+              "moveKey": "d3plus4"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "3,1,ff 2 df+3,2,4 T! dash 2+3 ws3,F MCR.2,2,H.f f,n,d,df+1,u",
+              "damage": 61,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "ws2",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "ws2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "dash up u+1+2 2+3 ws3,F MCR.2,2,F f,n,d,df+1,u",
+              "damage": 54,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "dash up u+1+2 3,1 b,f+2,1,4,1+2",
+              "damage": 52,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "f,n,d,df+4,1+2",
+              "damage": 16,
+              "notes": [],
+              "moveKey": "hellsweep-beam"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "(b,f+2),1,df+2 2+3 uf+1 MCR.2,2,H.F f,n,d,df+1,u",
+              "damage": 44,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH b+4",
+              "damage": 24,
+              "notes": [],
+              "moveKey": "b4"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+1 2 df+3,2,4 T! dash 2+3 ws3,F MCR.2,2,H.f f,n,d,df+1,u",
+              "damage": 54,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "H.f,n,d,df+1+2,1+2",
+              "damage": 39,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f+3 MCR.4,2,1+2",
+              "damage": 23,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "H.4~3,1+2",
+              "damage": 31,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "H.(b,f+2,1),4,1+2",
+              "damage": 31,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "ws1,1,F MCR.4,2,1+2",
+              "damage": 29,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "H.uf+4,F",
+              "damage": 21,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "H.f,F+2,F",
+              "damage": 24,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "H.b+2,3,F",
+              "damage": 34,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "H.MCR.2,2,F",
+              "damage": 32,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "3,1,2 T! ws1,1~f MCR.4,2,1+2",
+              "damage": 31,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH db+2",
+              "damage": 18,
+              "notes": [],
+              "moveKey": "db2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "ws+4~3,H.1+2",
+              "damage": 28,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "df+3,2,4,U (backturned)",
+              "damage": 42,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "FLY.1 f,n,d,df+4,H.3 T! f+3 MCR.4,2,1,UF",
+              "damage": 46,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backTurned",
+      "label": "Back-turned opponent",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "df+3,2,4,U",
+              "damage": 42,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "FLY.1 f,n,d,df+4,1+2 T! f+3 MCR.4,2,1,UF",
+              "damage": 41,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "1,2,3",
+              "damage": 38,
+              "notes": [],
+              "moveKey": "jab-2-3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "1+4,2 T! ws3f delay MCR.4,2,1,UF",
+              "damage": 36,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "1+4 2 df+3,2,4 T! ws3f MCR.2,2",
+              "damage": 33,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "1+4 b,f+2,1,df+2 T! ws3f MCR.2,2",
+              "damage": 31,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "EWGF",
+              "damage": 23,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "EWGF 3,1,2 T! f+3 MCR.4,2,1,UF",
+              "damage": 53,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
