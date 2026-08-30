@@ -9,6 +9,7 @@ import { steve } from "./steve";
 import { hwoarang } from "./hwoarang";
 import { yoshimitsu } from "./yoshimitsu";
 import { devilJin } from "./devil-jin";
+import { victor } from "./victor";
 
 /**
  * Character registry. Adding a new character = add a data file and list it here.
@@ -25,6 +26,7 @@ export const characters: Character[] = [
   hwoarang,
   yoshimitsu,
   devilJin,
+  victor,
 ];
 
 export const comingSoon: ComingSoonCharacter[] = [
@@ -37,7 +39,6 @@ export const comingSoon: ComingSoonCharacter[] = [
   { id: "jun", name: "Jun Kazama", style: "Kazama-Style Martial Arts", available: false },
   { id: "lili", name: "Lili", style: "Freestyle Fighting", available: false },
   { id: "claudio", name: "Claudio Serafino", style: "Sirius Exorcism Arts", available: false },
-  { id: "victor", name: "Victor Chevalier", style: "Polyvalent CQC", available: false },
   { id: "azucena", name: "Azucena", style: "Mixed Martial Arts", available: false },
 ];
 

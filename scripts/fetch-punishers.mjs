@@ -49,6 +49,7 @@ export const WAVU_NAMES = {
   hwoarang: "Hwoarang",
   yoshimitsu: "Yoshimitsu",
   "devil-jin": "Devil Jin",
+  victor: "Victor",
 };
 
 const SECTIONS = {
@@ -216,6 +217,10 @@ function fromTemplate(text) {
         if (!m || !(m[1] in SECTIONS)) continue;
         for (const raw of entryBlocks(m[2])) {
           const { fields, notes } = parseEntry(raw);
+          /* An empty section — "backTurnedOpponent={{o }}" — leaves a wrapper
+             with no rows inside it, which reads as a leaf entry naming no
+             move. Victor has two of those and they rendered as "?". */
+          if (!fields.moveId && !fields.move) continue;
           sections[SECTIONS[m[1]]].push({
             moveId: fields.moveId ? normalizeId(fields.moveId) : null,
             input: fields.move ?? null,
@@ -236,6 +241,7 @@ function fromTemplate(text) {
     if (block) {
       for (const raw of entryBlocks(block.body)) {
         const { fields, notes } = parseEntry(raw);
+        if (!fields.moveId && !fields.move) continue;
         whiff.push({
           moveId: fields.moveId ? normalizeId(fields.moveId) : null,
           input: fields.move ?? null,

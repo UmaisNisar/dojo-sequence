@@ -1,0 +1,478 @@
+{
+  "characterId": "victor",
+  "source": "https://wavu.wiki/t/Victor_combos",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-30",
+  "sections": [
+    {
+      "id": "bnb",
+      "label": "Bread and butter",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "Regular launch (e.g. df+2/f,f+2)",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+4,2 IAI.4,2 db+1,1~F PRF.2,2 IAI.2 T! b+3,1",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Instant Tornado (e.g. Low Parry, CH db+3)",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "T! df+4,2 IAI.4,2 db+1,1~F PRF.2,2 IAI.2",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "staple",
+      "label": "Staples",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "df+2",
+              "damage": 14,
+              "notes": [],
+              "moveKey": "df2"
+            },
+            {
+              "label": "f,F+2",
+              "damage": 24,
+              "notes": [],
+              "moveKey": "ff2"
+            },
+            {
+              "label": "ws1",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "ws1"
+            },
+            {
+              "label": "CH ws2",
+              "damage": 18,
+              "notes": [],
+              "moveKey": "ws2"
+            },
+            {
+              "label": "CH 1+2",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "one-plus-two"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+4,2 IAI.4,2 db+1,1~F PRF.2,2 IAI.2 T! db+1,1~F PRF.3",
+              "damage": 55,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "df+4,2 IAI.4,2 db+1,1~F PRF.2,2 IAI.2 T! b+3,1",
+              "damage": 56,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "df+4,2 IAI.2 T! df+4,2 IAI.4,2 db+1,1~F PRF.3",
+              "damage": 56,
+              "recoverable": null,
+              "notes": [
+                "Early Tornado makes it easier to adjust for wall carry"
+              ]
+            },
+            {
+              "notation": "df+4,2 IAI.4,2 df+3 db+1,1~F PRF.2,2 IAI.2 T! b+3,1",
+              "damage": 59,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Low Parry",
+              "damage": 0,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "CH wr2",
+              "damage": 25,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "CH db+3",
+              "damage": 24,
+              "notes": [],
+              "moveKey": "db3"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "T! df+4,2 IAI.4,2 db+1,1~F PRF.2,2 IAI.2",
+              "damage": 45,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "T! df+4,2 IAI.4,2 db+1,1~F PRF.2,2 IAI.1,2,2",
+              "damage": 51,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH wr2~3+4 (or D)",
+              "damage": 25,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "T! IAI.4,2 db+1,1~F PRF.2,2 IAI.4,2 db+1,1~F PRF.3",
+              "damage": 52,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mini",
+      "label": "Mini-combos",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "H.b+1+2~F",
+              "damage": 25,
+              "notes": [],
+              "moveKey": null
+            },
+            {
+              "label": "H.f+4,1~F",
+              "damage": 36,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f+1+2",
+              "damage": 22,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH uf+3",
+              "damage": 20,
+              "notes": [],
+              "moveKey": "uf3"
+            },
+            {
+              "label": "(f+2,2),2,2",
+              "damage": 32,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "u+1+2",
+              "damage": 29,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "CH b+4 (or PRF.4)",
+              "damage": 24,
+              "notes": [],
+              "moveKey": "b4"
+            },
+            {
+              "label": "CH b+2",
+              "damage": 0,
+              "notes": [],
+              "moveKey": "b2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "f+4,1",
+              "damage": 24,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "df+3+4",
+              "damage": 22,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "df+4,2",
+              "damage": 21,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wall",
+      "label": "Wall",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "Heat Oki Wall Combo (+8 IAI, 18 chip damage)",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "W! (T!) HB! 1 f+4,2~3+4 (or D) H.IAI.d+2",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Tornado available",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "W! f,F+2 T! 4,3>2",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "W! f,F+2 T! 1 df1 df3+4",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "W! d+1+2 T! 4,3>2",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "W! d+1+2 T! 1 df1 df3+4",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "No tornado",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "W! 4,3>2",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "W! 1, df1, df3+4",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Bear/Jack specific",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "W! df1, 1, df3+4",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "W! 2,1~f PRF 2,2,1+2 (breaks floors, less damage)",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heat",
+      "label": "Heat",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "Regular Launch (e.g. df+2/ws1/CH 1+2)",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df+4,2 IAI.4,2 db+1,1~F PRF.2,2 IAI.2 T! HB! b+3,1",
+              "damage": 54,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "df+4,2 IAI.4,2 HB! db+1,1~F PRF.2,2 IAI.2 T! b+3,1",
+              "damage": 48,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "df+4,2 IAI.4,2 db+1,1~F PRF.2,2 IAI.2 T! HB! db+1,1~F H.PRF.3~F f+1+2 (or u+1+2)",
+              "damage": 68,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        },
+        {
+          "starters": [
+            {
+              "label": "Heat Dash (H.f+1+2~F, H.d+2~F, H.PRF.3~F)",
+              "damage": null,
+              "notes": [],
+              "moveKey": null
+            }
+          ],
+          "routes": [
+            {
+              "notation": "ws2 df+3,4 df+4,2 IAI.4,2 df+3,4,2 T! b+3,1",
+              "damage": 38,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "float",
+      "label": "Float",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "1",
+              "damage": null,
+              "notes": [],
+              "moveKey": "jab"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "df3,4 2,1~f PRF 2,2,1 f,f+2 T! (3+4), IAI 1,2,2",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backTurned",
+      "label": "Back-turned opponent",
+      "groups": [
+        {
+          "starters": [
+            {
+              "label": "df+2",
+              "damage": null,
+              "notes": [],
+              "moveKey": "df2"
+            }
+          ],
+          "routes": [
+            {
+              "notation": "Easy combo: df+2, df4,2 IAI 2 T! df4,2 IAI 1,2,2",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            },
+            {
+              "notation": "Staple: 4,3,2 (Does no chip damage)",
+              "damage": null,
+              "recoverable": null,
+              "notes": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

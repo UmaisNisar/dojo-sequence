@@ -47,6 +47,7 @@ export const WAVU_NAMES = {
   hwoarang: "Hwoarang",
   yoshimitsu: "Yoshimitsu",
   "devil-jin": "Devil Jin",
+  victor: "Victor",
 };
 
 /**
@@ -58,6 +59,8 @@ const SECTIONS = [
   [/^bread\s?n'?\s?butter$/i, "bnb", "Bread and butter"],
   [/^staples?$/i, "staple", "Staples"],
   [/^mini-?combos?$/i, "mini", "Mini-combos"],
+  [/^wall break/i, "wallBreak", "Wall break"],
+  [/^floor break/i, "floorBreak", "Floor break"],
   [/^wall/i, "wall", "Wall"],
   [/^heat/i, "heat", "Heat"],
   [/^rage/i, "rage", "Rage"],
@@ -127,7 +130,10 @@ function takeDamage(text) {
  */
 const isPlaceholder = (text) =>
   !text ||
-  /combo (?:when|for|here)|combo here|big boy|^\?+$|^tbd$|^todo$/i.test(text);
+  // "wall break combo 1, note oddities" — no real notation says "combo 1".
+  /combo (?:when|for|here)|combo here|\bcombo \d|big boy|^\?+$|^tbd$|^todo$/i.test(
+    text,
+  );
 
 const DIRECTIONS = "uf|ub|df|db|ws|fc|ss|bt|f|b|d|u|n";
 function canonicalInput(value) {

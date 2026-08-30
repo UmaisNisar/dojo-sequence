@@ -9,11 +9,12 @@ a strict, ordered curriculum — and then keeps being useful as a reference once
 you know it: **learn → drill → unlock**, plus a searchable movelist, punish
 sheet, combo list and matchup notes.
 
-Ships with complete curricula for **ten characters** — Kazuya, Lars, Bryan,
-Jin, King, Dragunov, Steve, Hwoarang, Yoshimitsu and Devil Jin — plus a
-reference layer built on 1,092 moves of frame data cross-verified against
-[Wavu Wiki](https://wavu.wiki)'s live database (Season 3) and execution tips
-written specifically for leverless/hitbox players.
+Ships with complete curricula for **eleven characters** — Kazuya, Lars,
+Bryan, Jin, King, Dragunov, Steve, Hwoarang, Yoshimitsu, Devil Jin and
+Victor — plus a reference layer built on 1,198 moves of frame data
+cross-verified against [Wavu Wiki](https://wavu.wiki)'s live database
+(Season 3) and execution tips written specifically for leverless/hitbox
+players.
 
 ## Features
 
@@ -36,7 +37,7 @@ written specifically for leverless/hitbox players.
   (launcher, homing, Heat engager, plus on block, launch-punishable…)
 - **Punishers** — "they are -12, what do I hit?", by disadvantage, for
   standing, crouching, back-turned, grounded and whiff punishes
-- **Combos** — 507 routes grouped by the launcher they work from, with damage
+- **Combos** — 537 routes grouped by the launcher they work from, with damage
   and recoverable damage
 - **Matchups** — the other half of the game: the opponent's fast lows, plus
   frames, homing moves and launch-punishable moves, each paired with the

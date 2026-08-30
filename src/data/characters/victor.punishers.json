@@ -1,12 +1,12 @@
 {
-  "characterId": "kazuya",
-  "source": "https://wavu.wiki/t/Kazuya_punishers",
+  "characterId": "victor",
+  "source": "https://wavu.wiki/t/Victor_punishers",
   "gameVersion": "v3.02.01 (Season 3)",
   "verifiedAt": "2026-08-30",
   "sections": {
     "standing": [
       {
-        "moveKey": "flash-punch",
+        "moveKey": "jab-1-2",
         "input": null,
         "enemy": "-10",
         "frames": null,
@@ -15,25 +15,7 @@
         "notes": []
       },
       {
-        "moveKey": "jab-2-2",
-        "input": null,
-        "enemy": "-10",
-        "frames": null,
-        "damage": null,
-        "combo": null,
-        "notes": []
-      },
-      {
-        "moveKey": "b1-2",
-        "input": null,
-        "enemy": "-11",
-        "frames": null,
-        "damage": null,
-        "combo": null,
-        "notes": []
-      },
-      {
-        "moveKey": "one-plus-two",
+        "moveKey": "right-2-2",
         "input": null,
         "enemy": "-12",
         "frames": null,
@@ -42,47 +24,63 @@
         "notes": []
       },
       {
-        "moveKey": "uf1plus2",
-        "input": "uf+1+2",
+        "moveKey": "right-1",
+        "input": null,
         "enemy": "-12",
-        "frames": "+25(+7)",
+        "frames": null,
         "damage": null,
         "combo": null,
-        "notes": [
-          "Only on Rage Arts & Power Crushes"
-        ]
+        "notes": []
       },
       {
-        "moveKey": "ewgf",
+        "moveKey": "three-1plus2",
+        "input": null,
+        "enemy": "-12",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "uf1-1",
         "input": null,
         "enemy": "-13",
         "frames": null,
         "damage": null,
-        "combo": "72",
+        "combo": null,
         "notes": []
       },
       {
-        "moveKey": "db12",
+        "moveKey": "df4-2",
         "input": null,
         "enemy": "-13",
-        "frames": "HE/KND",
+        "frames": null,
         "damage": null,
         "combo": null,
         "notes": []
       },
       {
-        "moveKey": "df1-2",
+        "moveKey": "f4-1",
         "input": null,
-        "enemy": "-15",
-        "frames": "HE/+9",
+        "enemy": "-14",
+        "frames": null,
         "damage": null,
         "combo": null,
         "notes": []
       },
       {
-        "moveKey": "df1-4",
+        "moveKey": "df2",
         "input": null,
         "enemy": "-15",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "b3-1",
+        "input": null,
+        "enemy": "-17",
         "frames": null,
         "damage": null,
         "combo": null,
@@ -91,7 +89,7 @@
     ],
     "crouching": [
       {
-        "moveKey": "ws44",
+        "moveKey": "ws4",
         "input": null,
         "enemy": "-11",
         "frames": null,
@@ -100,73 +98,35 @@
         "notes": []
       },
       {
-        "moveKey": "ws12",
+        "moveKey": "ws1plus2",
+        "input": "ws1+2,F",
+        "enemy": "-13",
+        "frames": null,
+        "damage": null,
+        "combo": null,
+        "notes": []
+      },
+      {
+        "moveKey": "uf1-1",
         "input": null,
         "enemy": "-13",
         "frames": null,
         "damage": null,
-        "combo": "63",
-        "notes": []
-      },
-      {
-        "moveKey": "ws2",
-        "input": null,
-        "enemy": "-16",
-        "frames": null,
-        "damage": null,
-        "combo": "77",
-        "notes": []
-      }
-    ],
-    "backTurned": [
-      {
-        "moveKey": "jab-2-4",
-        "input": null,
-        "enemy": "-10",
-        "frames": null,
-        "damage": null,
         "combo": null,
         "notes": []
       },
       {
-        "moveKey": "right-2",
+        "moveKey": "ws1",
         "input": null,
-        "enemy": "-12",
-        "frames": null,
-        "damage": null,
-        "combo": null,
-        "notes": []
-      },
-      {
-        "moveKey": "b2-2-1plus2",
-        "input": null,
-        "enemy": "-14",
+        "enemy": "-15",
         "frames": null,
         "damage": null,
         "combo": null,
         "notes": []
       }
     ],
+    "backTurned": [],
     "grounded": []
   },
-  "whiff": [
-    {
-      "moveKey": "flash-punch",
-      "input": null,
-      "speed": null,
-      "damage": null,
-      "risk": "-1",
-      "notes": [
-        "Hit confirm last hit."
-      ]
-    },
-    {
-      "moveKey": "ewgf",
-      "input": null,
-      "speed": "i11(~13)",
-      "damage": null,
-      "risk": null,
-      "notes": []
-    }
-  ]
+  "whiff": []
 }

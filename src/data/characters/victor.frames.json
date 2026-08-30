@@ -1,0 +1,1897 @@
+{
+  "characterId": "victor",
+  "game": "Tekken 8",
+  "gameVersion": "v3.02.01 (Season 3)",
+  "verifiedAt": "2026-08-29",
+  "sources": [
+    {
+      "name": "Wavu Wiki",
+      "url": "https://wavu.wiki/t/Victor"
+    },
+    {
+      "name": "TekkenDocs",
+      "url": "https://tekkendocs.com/t8/victor"
+    }
+  ],
+  "moves": {
+    "jab": {
+      "wavuId": "Victor-1",
+      "input": "1",
+      "name": "Jab",
+      "level": "h",
+      "startup": "i10",
+      "block": "+1",
+      "hit": "+8",
+      "ch": null,
+      "damage": "5",
+      "damageTotal": 5,
+      "notes": [
+        "Recovers 2f faster on hit or block (t27 r17)"
+      ]
+    },
+    "jab-1": {
+      "wavuId": "Victor-1,1",
+      "input": "1,1",
+      "name": "1,1",
+      "level": "h,h",
+      "startup": "i16",
+      "displayStartup": "i10 (string)",
+      "block": "-3",
+      "hit": "+8",
+      "ch": null,
+      "damage": ",5",
+      "damageTotal": 10,
+      "notes": [
+        "Weapon",
+        "Combo from 1st hit with 2F delay",
+        "Jail from 1st block with 2F delay"
+      ]
+    },
+    "jab-1-2": {
+      "wavuId": "Victor-1,1,2",
+      "input": "1,1,2",
+      "name": "Double Cabochon Cut",
+      "level": "h,h,h,h",
+      "startup": "i17~18,i9~10",
+      "displayStartup": "i10 (string)",
+      "block": "-12",
+      "hit": "+3",
+      "ch": null,
+      "damage": ",5,7",
+      "damageTotal": 22,
+      "notes": [
+        "Weapon",
+        "Combo from 1st hit",
+        "Jail from 1st block",
+        "Transition to r27 PRF with F (-8/+7)"
+      ],
+      "video": "https://wavu.wiki/w/images/d/df/T8-p2-victor-1%2C1%2C2.mp4"
+    },
+    "jab-2": {
+      "wavuId": "Victor-1,2",
+      "input": "1,2",
+      "name": "Basic Etiquette",
+      "level": "h,h",
+      "startup": "i10",
+      "displayStartup": "i10 (string)",
+      "block": "-3",
+      "hit": "+8",
+      "ch": null,
+      "damage": ",12",
+      "damageTotal": 17,
+      "notes": [
+        "Weapon",
+        "Combo from 1st hit with 2F delay",
+        "Jail from 1st block with 2F delay"
+      ],
+      "video": "https://wavu.wiki/w/images/0/03/T8-p2-victor-1%2C2.mp4"
+    },
+    "jab-2-1": {
+      "wavuId": "Victor-1,2,1",
+      "input": "1,2,1",
+      "name": "Briolette Cut",
+      "level": "h,h,m",
+      "startup": "i26~27",
+      "displayStartup": "i10 (string)",
+      "block": "-12",
+      "hit": "+18a (+1)",
+      "ch": "+72a (+56a)",
+      "damage": ",20",
+      "damageTotal": 37,
+      "notes": [
+        "Tornado",
+        "Balcony Break",
+        "Weapon",
+        "Combo from 2nd CH with 4F delay",
+        "Move can be delayed by 12F"
+      ],
+      "video": "https://wavu.wiki/w/images/7/79/T8-p2-victor-1%2C2%2C1.mp4"
+    },
+    "jab-3": {
+      "wavuId": "Victor-1,3",
+      "input": "1,3",
+      "name": "Basic Manners",
+      "level": "h,L",
+      "startup": "i21~22",
+      "displayStartup": "i10 (string)",
+      "block": "-12",
+      "hit": "-1",
+      "ch": null,
+      "damage": ",11",
+      "damageTotal": 16,
+      "notes": [
+        "Combo from 1st hit with 2F delay",
+        "-1c on crouching hit"
+      ],
+      "video": "https://wavu.wiki/w/images/a/ac/T8-p2-victor-1%2C3.mp4"
+    },
+    "one-plus-two": {
+      "wavuId": "Victor-1+2",
+      "input": "1+2",
+      "name": "Eden",
+      "level": "m",
+      "startup": "i15",
+      "block": "-9",
+      "hit": "+4",
+      "ch": "+46a",
+      "damage": "17",
+      "damageTotal": 17,
+      "notes": [
+        "Weapon"
+      ]
+    },
+    "right": {
+      "wavuId": "Victor-2",
+      "input": "2",
+      "name": "Right Jab",
+      "level": "h",
+      "startup": "i12~13",
+      "block": "-12",
+      "hit": "-2",
+      "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
+      "notes": [
+        "Weapon"
+      ]
+    },
+    "right-1": {
+      "wavuId": "Victor-2,1",
+      "input": "2,1",
+      "name": "Cutlery Etiquette",
+      "level": "h,h",
+      "startup": "i16",
+      "displayStartup": "i12 (string)",
+      "block": "-6",
+      "hit": "+5",
+      "ch": null,
+      "damage": ",12",
+      "damageTotal": 22,
+      "notes": [
+        "Weapon",
+        "Combo from 1st hit with 6F delay",
+        "Transition to PRF with F (-4/+7)",
+        "Move cannot be delayed",
+        "Input can be delayed by 6F"
+      ],
+      "video": "https://wavu.wiki/w/images/f/f9/T8-p2-victor-2%2C1.mp4"
+    },
+    "right-2": {
+      "wavuId": "Victor-2,2",
+      "input": "2,2",
+      "name": "2,2",
+      "level": "h,m,m",
+      "startup": "i17~18,i7",
+      "displayStartup": "i12 (string)",
+      "block": "-10",
+      "hit": "-2",
+      "ch": null,
+      "damage": ",5,5",
+      "damageTotal": 20,
+      "notes": [
+        "Weapon",
+        "Combo from 1st hit with 6F delay",
+        "Move cannot be delayed",
+        "Input can be delayed by 6F",
+        "-10 if last hit whiffs"
+      ]
+    },
+    "right-2-2": {
+      "wavuId": "Victor-2,2,2",
+      "input": "2,2,2",
+      "name": "Crybaby Sophia",
+      "level": "h,m,m,h",
+      "startup": "i22",
+      "displayStartup": "i12 (string)",
+      "block": "-3",
+      "hit": "+4",
+      "ch": null,
+      "damage": ",12",
+      "damageTotal": 32,
+      "notes": [
+        "Strong Aerial Tailspin",
+        "Wall Crush +12g on hit",
+        "Weapon",
+        "Projectile (unparryable)",
+        "Combo from 2nd hit with 8F delay",
+        "Transitions to IAI on hit or block",
+        "Move cannot be delayed",
+        "Input can be delayed by 8F",
+        "4 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/3/33/T8-p2-victor-2%2C2%2C2.mp4"
+    },
+    "three": {
+      "wavuId": "Victor-3",
+      "input": "3",
+      "name": "3",
+      "level": "h",
+      "startup": "i12~13",
+      "block": "-9",
+      "hit": "+2",
+      "ch": null,
+      "damage": "11",
+      "damageTotal": 11,
+      "notes": []
+    },
+    "three-1plus2": {
+      "wavuId": "Victor-3,1+2",
+      "input": "3,1+2",
+      "name": "Good Communication",
+      "level": "h,h,h",
+      "startup": "i19~20,i8~9",
+      "displayStartup": "i12 (string)",
+      "block": "-9",
+      "hit": "+5",
+      "ch": null,
+      "damage": ",9,10",
+      "damageTotal": 30,
+      "notes": [
+        "Combo from 1st hit with 6F delay"
+      ],
+      "video": "https://wavu.wiki/w/images/d/d8/T8-p2-victor-3%2C1%2B2.mp4"
+    },
+    "four": {
+      "wavuId": "Victor-4",
+      "input": "4",
+      "name": "4",
+      "level": "h",
+      "startup": "i13~14",
+      "block": "-9",
+      "hit": "+1",
+      "ch": null,
+      "damage": "15",
+      "damageTotal": 15,
+      "notes": []
+    },
+    "four-3": {
+      "wavuId": "Victor-4,3",
+      "input": "4,3",
+      "name": "4,3",
+      "level": "h,m",
+      "startup": "i23~24",
+      "displayStartup": "i13 (string)",
+      "block": "-10",
+      "hit": "+5",
+      "ch": null,
+      "damage": ",17",
+      "damageTotal": 32,
+      "notes": [
+        "Combo from 1st hit with 7F delay",
+        "Move can be delayed by 7F",
+        "Input can be delayed by 8F"
+      ]
+    },
+    "four-3-2": {
+      "wavuId": "Victor-4,3,2",
+      "input": "4,3,2",
+      "name": "Asterism of Benevolence",
+      "level": "h,m,m",
+      "startup": "i25~26",
+      "displayStartup": "i13 (string)",
+      "block": "-13",
+      "hit": "+34d (+13)",
+      "ch": null,
+      "damage": ",25",
+      "damageTotal": 57,
+      "notes": [
+        "Balcony Break",
+        "Weapon",
+        "Combo from 2nd CH with 10F delay",
+        "7 chip damage on block",
+        "Move can be delayed by 9F",
+        "Input can be delayed by 10F"
+      ],
+      "video": "https://wavu.wiki/w/images/e/e2/T8-p2-victor-4%2C3%2C2.mp4"
+    },
+    "b1": {
+      "wavuId": "Victor-b+1",
+      "input": "b+1",
+      "name": "b+1",
+      "level": "m",
+      "startup": "i14",
+      "block": "-13",
+      "hit": "-3",
+      "ch": null,
+      "damage": "11",
+      "damageTotal": 11,
+      "notes": [
+        "Weapon",
+        "Transition to PRF r25 with F (-5/+5) with 9F delay"
+      ]
+    },
+    "b1-2": {
+      "wavuId": "Victor-b+1,2",
+      "input": "b+1,2",
+      "name": "Vanity Love",
+      "level": "m,h,th",
+      "startup": ",i20",
+      "displayStartup": "i14 (string)",
+      "block": "-8",
+      "hit": "+0",
+      "ch": null,
+      "damage": ",16(15)",
+      "damageTotal": 27,
+      "notes": [
+        "Combo from 1st CH with 10F delay",
+        "Move cannot be interrupted",
+        "Move can be delayed by 9F",
+        "Input can be delayed by 10F",
+        "Side switch after attack throw connects"
+      ],
+      "video": "https://wavu.wiki/w/images/c/c9/T8-p2-victor-b%2B1%2C2.mp4"
+    },
+    "b1plus2": {
+      "wavuId": "Victor-b+1+2",
+      "input": "b+1+2",
+      "name": "Failnaught",
+      "level": "h",
+      "startup": "i19~20",
+      "block": "-9",
+      "hit": "+16cg",
+      "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
+      "notes": [
+        "Balcony Break",
+        "Weapon",
+        "Forces tech back roll on hit",
+        "7 chip damage on block",
+        "+0 and 10 chip damage on block after attack absorption"
+      ],
+      "video": "https://wavu.wiki/w/images/4/4b/T8-p2-victor-b%2B1%2B2.mp4"
+    },
+    "b1plus4": {
+      "wavuId": "Victor-b+1+4",
+      "input": "b+1+4",
+      "name": "Dun Stallion",
+      "level": "m",
+      "startup": "i26~27",
+      "block": "-21",
+      "hit": "+37a (+6)",
+      "ch": null,
+      "damage": "24",
+      "damageTotal": 24,
+      "notes": [
+        "Weapon",
+        "~i5-6 backsway"
+      ],
+      "video": "https://wavu.wiki/w/images/6/61/T8-p2-victor-b%2B1%2B4.mp4"
+    },
+    "b2": {
+      "wavuId": "Victor-b+2",
+      "input": "b+2",
+      "name": "Strobing Memories",
+      "level": "h",
+      "startup": "i10",
+      "block": "-6",
+      "hit": "+5",
+      "ch": "+14",
+      "damage": "5",
+      "damageTotal": 5,
+      "notes": [
+        "Weapon",
+        "Deals recoverable damage only; cannot cause a K.O."
+      ],
+      "video": "https://wavu.wiki/w/images/c/ce/T8-p2-victor-b%2B2.mp4"
+    },
+    "b3": {
+      "wavuId": "Victor-b+3",
+      "input": "b+3",
+      "name": "b+3",
+      "level": "m",
+      "startup": "i17",
+      "block": "-9",
+      "hit": "+4",
+      "ch": null,
+      "damage": "15",
+      "damageTotal": 15,
+      "notes": []
+    },
+    "b3-1": {
+      "wavuId": "Victor-b+3,1",
+      "input": "b+3,1",
+      "name": "Caval",
+      "level": "m,m",
+      "startup": ",i25~26",
+      "displayStartup": "i17 (string)",
+      "block": "-13",
+      "hit": "+21a (+16)",
+      "ch": null,
+      "damage": ",25",
+      "damageTotal": 40,
+      "notes": [
+        "Balcony Break",
+        "Weapon",
+        "Combo from 1st hit with 7F delay",
+        "Interrupt with i2 from 1st block"
+      ]
+    },
+    "b4": {
+      "wavuId": "Victor-b+4",
+      "input": "b+4",
+      "name": "Cordial Circuit",
+      "level": "h",
+      "startup": "i18~19",
+      "block": "-2",
+      "hit": "+14",
+      "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
+      "notes": [
+        "Homing",
+        "Balcony Break",
+        "6 chip damage on block"
+      ]
+    },
+    "montjoie": {
+      "wavuId": "Victor-b,B+2+3",
+      "input": "b,B+2+3",
+      "name": "Montjoie Takemikazuchi",
+      "level": "ub(m)",
+      "startup": "i65~66",
+      "block": null,
+      "hit": "+2a (-8)",
+      "ch": null,
+      "damage": "50",
+      "damageTotal": 50,
+      "notes": [
+        "Balcony Break"
+      ],
+      "video": "https://wavu.wiki/w/images/6/64/T8-p2-victor-b%2Cb%2B2%2B3.mp4"
+    },
+    "d1": {
+      "wavuId": "Victor-d+1",
+      "input": "d+1",
+      "name": "d+1",
+      "level": "L",
+      "startup": "i16",
+      "block": "-17",
+      "hit": "-6",
+      "ch": null,
+      "damage": "7",
+      "damageTotal": 7,
+      "notes": [
+        "Weapon",
+        "Cannot be parried (weapon low)"
+      ]
+    },
+    "d1-1": {
+      "wavuId": "Victor-d+1,1",
+      "input": "d+1,1",
+      "name": "Concave Cut",
+      "level": "L,h",
+      "startup": ",i18",
+      "displayStartup": "i16 (string)",
+      "block": "-7",
+      "hit": "+6",
+      "ch": null,
+      "damage": ",15",
+      "damageTotal": 22,
+      "notes": [
+        "Weapon",
+        "Combo from 1st CH",
+        "Jail on 1st hit",
+        "-26 on 1st block"
+      ],
+      "video": "https://wavu.wiki/w/images/f/fe/T8-p2-victor-d%2B1%2C1.mp4"
+    },
+    "d1plus2": {
+      "wavuId": "Victor-d+1+2",
+      "input": "d+1+2",
+      "name": "Iridescence of Prowess",
+      "level": "SM",
+      "startup": "i19~21",
+      "block": "-9",
+      "hit": "+17a (+10)",
+      "ch": "+35a",
+      "damage": "21",
+      "damageTotal": 21,
+      "notes": [
+        "Tornado",
+        "Weapon",
+        "Projectile",
+        "6 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/d/db/T8-p2-victor-d%2B1%2B2.mp4"
+    },
+    "d2": {
+      "wavuId": "Victor-d+2",
+      "input": "d+2",
+      "name": "Llawfrodedd",
+      "level": "m",
+      "startup": "i18",
+      "block": "+0",
+      "hit": "+4c",
+      "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
+      "notes": [
+        "Heat Engager",
+        "Heat Dash +5, +67a (+50)",
+        "Weapon",
+        "6 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/4/4d/T8-p2-victor-d%2B2.mp4"
+    },
+    "d3": {
+      "wavuId": "Victor-d+3",
+      "input": "d+3",
+      "name": "Good Manners",
+      "level": "L",
+      "startup": "i18~19",
+      "block": "-13",
+      "hit": "-2",
+      "ch": null,
+      "damage": "11",
+      "damageTotal": 11,
+      "notes": [],
+      "video": "https://wavu.wiki/w/images/3/38/T8-p2-victor-d%2B3.mp4"
+    },
+    "d4": {
+      "wavuId": "Victor-d+4",
+      "input": "d+4",
+      "name": "Fine Salute",
+      "level": "L",
+      "startup": "i16",
+      "block": "-13",
+      "hit": "-2",
+      "ch": "+0d",
+      "damage": "10",
+      "damageTotal": 10,
+      "notes": [
+        "Perform Guilty Mariko on counter hit"
+      ],
+      "video": "https://wavu.wiki/w/images/d/dc/T8-p2-victor-d%2B4.mp4"
+    },
+    "db1": {
+      "wavuId": "Victor-db+1",
+      "input": "db+1",
+      "name": "db+1",
+      "level": "m",
+      "startup": "i14~15",
+      "block": "-9",
+      "hit": "-2",
+      "ch": null,
+      "damage": "9",
+      "damageTotal": 9,
+      "notes": [
+        "Weapon"
+      ]
+    },
+    "db1-1": {
+      "wavuId": "Victor-db+1,1",
+      "input": "db+1,1",
+      "name": "Emerald Cut",
+      "level": "m,m",
+      "startup": ",i21~22",
+      "displayStartup": "i14 (string)",
+      "block": "-7",
+      "hit": "+2",
+      "ch": null,
+      "damage": ",9",
+      "damageTotal": 18,
+      "notes": [
+        "Weapon",
+        "Transition to PRF with F (-5/+4)",
+        "Combo from 1st hit"
+      ],
+      "video": "https://wavu.wiki/w/images/8/84/T8-p2-victor-db%2B1%2C1.mp4"
+    },
+    "db2": {
+      "wavuId": "Victor-db+2",
+      "input": "db+2",
+      "name": "Crouch Straight",
+      "level": "sl",
+      "startup": "i11",
+      "block": "-4",
+      "hit": "+7",
+      "ch": null,
+      "damage": "8",
+      "damageTotal": 8,
+      "notes": []
+    },
+    "db3": {
+      "wavuId": "Victor-db+3",
+      "input": "db+3",
+      "name": "Polite Greetings",
+      "level": "h",
+      "startup": "i19~20",
+      "block": "-11",
+      "hit": "+67a (+51a)",
+      "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
+      "notes": [
+        "Tornado",
+        "Balcony Break"
+      ],
+      "video": "https://wavu.wiki/w/images/6/6f/T8-p2-victor-db%2B3.mp4"
+    },
+    "db4": {
+      "wavuId": "Victor-db+4",
+      "input": "db+4",
+      "name": "Welcome Sweep",
+      "level": "l",
+      "startup": "i20~21",
+      "block": "-26",
+      "hit": "+4c",
+      "ch": "+49a",
+      "damage": "17",
+      "damageTotal": 17,
+      "notes": [],
+      "video": "https://wavu.wiki/w/images/1/1e/T8-p2-victor-db%2B4.mp4"
+    },
+    "df1": {
+      "wavuId": "Victor-df+1",
+      "input": "df+1",
+      "name": "df+1",
+      "level": "m",
+      "startup": "i13~14",
+      "block": "-2",
+      "hit": "+4",
+      "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
+      "notes": []
+    },
+    "df1-1": {
+      "wavuId": "Victor-df+1,1",
+      "input": "df+1,1",
+      "name": "Trilliant Cut",
+      "level": "m,h,h",
+      "startup": "i20, i14",
+      "displayStartup": "i13 (string)",
+      "block": "-4",
+      "hit": "+7",
+      "ch": null,
+      "damage": ",7,7",
+      "damageTotal": 24,
+      "notes": [
+        "Weapon",
+        "Combo from 1st hit",
+        "Interrupt with i1 from 1st block"
+      ],
+      "video": "https://wavu.wiki/w/images/0/09/T8-p2-victor-df%2B1%2C1.mp4"
+    },
+    "df2": {
+      "wavuId": "Victor-df+2",
+      "input": "df+2",
+      "name": "Arcadia",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-14",
+      "hit": "+31a (+21)",
+      "ch": null,
+      "damage": "14",
+      "damageTotal": 14,
+      "notes": [
+        "Weapon",
+        "Recovers 3f faster on hit (t48 r32)"
+      ],
+      "video": "https://wavu.wiki/w/images/c/ca/T8-p2-victor-df%2B2.mp4"
+    },
+    "df3": {
+      "wavuId": "Victor-df+3",
+      "input": "df+3",
+      "name": "df+3",
+      "level": "m",
+      "startup": "i16",
+      "block": "-9",
+      "hit": "+2",
+      "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
+      "notes": []
+    },
+    "df3-4": {
+      "wavuId": "Victor-df+3,4",
+      "input": "df+3,4",
+      "name": "df+3,4",
+      "level": "m,m",
+      "startup": "i21",
+      "displayStartup": "i16 (string)",
+      "block": "-9",
+      "hit": "+2",
+      "ch": null,
+      "damage": ",14",
+      "damageTotal": 24,
+      "notes": [
+        "Knee",
+        "Combo from 1st CH",
+        "Interrupt with i1"
+      ]
+    },
+    "df3-4-2": {
+      "wavuId": "Victor-df+3,4,2",
+      "input": "df+3,4,2",
+      "name": "Iridescence of Loyalty",
+      "level": "m,m,sm",
+      "startup": "i32~34",
+      "displayStartup": "i16 (string)",
+      "block": "-9",
+      "hit": "+17a (+10)",
+      "ch": "+35a",
+      "damage": ",23",
+      "damageTotal": 47,
+      "notes": [
+        "Tornado",
+        "Weapon",
+        "Projectile",
+        "Interrupt with i12 from 2nd block",
+        "6 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/0/0b/T8-p2-victor-df%2B3%2C4%2C2.mp4"
+    },
+    "df3plus4": {
+      "wavuId": "Victor-df+3+4",
+      "input": "df+3+4",
+      "name": "Llamrei",
+      "level": "m",
+      "startup": "i14~15",
+      "block": "-17",
+      "hit": "+16a (+11)",
+      "ch": null,
+      "damage": "28",
+      "damageTotal": 28,
+      "notes": [
+        "Balcony Break",
+        "Shoulder"
+      ],
+      "video": "https://wavu.wiki/w/images/b/ba/T8-p2-victor-df%2B3%2B4.mp4"
+    },
+    "df4": {
+      "wavuId": "Victor-df+4",
+      "input": "df+4",
+      "name": "df+4",
+      "level": "m",
+      "startup": "i13~14",
+      "block": "-9",
+      "hit": "+5",
+      "ch": null,
+      "damage": "15",
+      "damageTotal": 15,
+      "notes": [
+        "Knee"
+      ]
+    },
+    "df4-2": {
+      "wavuId": "Victor-df+4,2",
+      "input": "df+4,2",
+      "name": "Selfish Miranda",
+      "level": "m,h",
+      "startup": "i22",
+      "displayStartup": "i13 (string)",
+      "block": "-3",
+      "hit": "+4",
+      "ch": null,
+      "damage": ",16",
+      "damageTotal": 31,
+      "notes": [
+        "Strong Aerial Tailspin",
+        "Wall Crush +12cg on hit, 3 chip damage on block",
+        "Weapon",
+        "Projectile",
+        "Combo from 1st hit",
+        "6 chip damage on block",
+        "Interrupt with i1",
+        "Available on hit or block only",
+        "Transitions to IAI r36 (cannot cancel)"
+      ],
+      "video": "https://wavu.wiki/w/images/7/7f/T8-p2-victor-df%2B4%2C2.mp4"
+    },
+    "f1plus2": {
+      "wavuId": "Victor-f+1+2",
+      "input": "f+1+2",
+      "name": "Durandal",
+      "level": "m",
+      "startup": "i24~25",
+      "block": "+3",
+      "hit": "+1a",
+      "ch": null,
+      "damage": "30",
+      "damageTotal": 30,
+      "notes": [
+        "Balcony Break",
+        "Heat Engager",
+        "Heat Dash +5, +67a (+50)",
+        "Weapon",
+        "9 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/3/3f/T8-p2-victor-f%2B1%2B2.mp4"
+    },
+    "f2": {
+      "wavuId": "Victor-f+2",
+      "input": "f+2",
+      "name": "f+2",
+      "level": "h",
+      "startup": "i13~14",
+      "block": "-11",
+      "hit": "+5",
+      "ch": null,
+      "damage": "10",
+      "damageTotal": 10,
+      "notes": []
+    },
+    "f2-2": {
+      "wavuId": "Victor-f+2,2",
+      "input": "f+2,2",
+      "name": "f+2,2",
+      "level": "h,h",
+      "startup": "i11",
+      "displayStartup": "i13 (string)",
+      "block": "-15",
+      "hit": "-4",
+      "ch": null,
+      "damage": ",10",
+      "damageTotal": 20,
+      "notes": [
+        "Weapon",
+        "Combo from 1st hit"
+      ]
+    },
+    "f2-2-2": {
+      "wavuId": "Victor-f+2,2,2",
+      "input": "f+2,2,2",
+      "name": "Radiant Cut",
+      "level": "h,h,h,m,m",
+      "startup": "i14,i12~13,i7~8",
+      "displayStartup": "i13 (string)",
+      "block": "-13",
+      "hit": "+20a",
+      "ch": null,
+      "damage": ",7,5,20",
+      "damageTotal": 52,
+      "notes": [
+        "Balcony Break",
+        "Weapon",
+        "Combo from 2nd CH"
+      ],
+      "video": "https://wavu.wiki/w/images/4/43/T8-p2-victor-f%2B2%2C2%2C2.mp4"
+    },
+    "f4": {
+      "wavuId": "Victor-f+4",
+      "input": "f+4",
+      "name": "f+4",
+      "level": "m",
+      "startup": "i14",
+      "block": "-10",
+      "hit": "+0",
+      "ch": null,
+      "damage": "15",
+      "damageTotal": 15,
+      "notes": []
+    },
+    "f4-1": {
+      "wavuId": "Victor-f+4,1",
+      "input": "f+4,1",
+      "name": "Carving Cameo",
+      "level": "m,h",
+      "startup": "i23~24",
+      "displayStartup": "i14 (string)",
+      "block": "-4",
+      "hit": "+18a (+9)",
+      "ch": null,
+      "damage": ",21",
+      "damageTotal": 36,
+      "notes": [
+        "Balcony Break",
+        "Heat Engager",
+        "Heat Dash +5, +43d (+35)",
+        "Weapon",
+        "Combo from 1st hit"
+      ],
+      "video": "https://wavu.wiki/w/images/2/2d/T8-p2-victor-f%2B4%2C1.mp4"
+    },
+    "f4-2": {
+      "wavuId": "Victor-f+4,2",
+      "input": "f+4,2",
+      "name": "Carving Intaglio",
+      "level": "m,m",
+      "startup": "i26~27",
+      "displayStartup": "i14 (string)",
+      "block": "-12",
+      "hit": "+5c",
+      "ch": "+7d",
+      "damage": ",20",
+      "damageTotal": 35,
+      "notes": [
+        "Weapon",
+        "Combo from 1st hit",
+        "CH on last hit or wallhit causes FDFA knockdown",
+        "Transition to IAI (-12/+5c/+7a) with D or 3+4"
+      ],
+      "video": "https://wavu.wiki/w/images/e/e4/T8-p2-victor-f%2B4%2C2.mp4"
+    },
+    "ff2": {
+      "wavuId": "Victor-f,F+2",
+      "input": "f,F+2",
+      "name": "Carnwennan",
+      "level": "m",
+      "startup": "i18~20",
+      "block": "-16",
+      "hit": "+33a (+23a)",
+      "ch": null,
+      "damage": "24",
+      "damageTotal": 24,
+      "notes": [
+        "Tornado",
+        "Weapon",
+        "7 chip damage on block",
+        "Jab evasion from frame 6 to 17?"
+      ],
+      "video": "https://wavu.wiki/w/images/4/4f/T8-p2-victor-f%2Cf%2B2.mp4"
+    },
+    "fff2": {
+      "wavuId": "Victor-f,f,F+2",
+      "input": "f,f,F+2",
+      "name": "Asterism of Virtue",
+      "level": "m",
+      "startup": "i18~19",
+      "block": "+2",
+      "hit": "+8cg",
+      "ch": "+61a (+45a)",
+      "damage": "21",
+      "damageTotal": 21,
+      "notes": [
+        "Balcony Break",
+        "Weapon",
+        "Transition to IAI r36 with d or 3+4 (+5/+11cg/+64a (+48a))",
+        "Forces tech back roll on hit",
+        "6 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/3/3f/T8-p2-victor-f%2Cf%2Cf%2B2.mp4"
+    },
+    "fff1plus2": {
+      "wavuId": "Victor-f,f,F+1+2",
+      "input": "f,f,F+1+2",
+      "name": "Tear Drop Cut",
+      "level": "L,L",
+      "startup": "i18, i14~15",
+      "block": "-14",
+      "hit": "+4 IAI",
+      "ch": "+15g IAI",
+      "damage": "10,14",
+      "damageTotal": 24,
+      "notes": [
+        "Weapon",
+        "Transition to IAI r29 on hit (+4/+15g)",
+        "Unparryable (weapon low)"
+      ]
+    },
+    "qcf2": {
+      "wavuId": "Victor-qcf+2",
+      "input": "qcf+2",
+      "name": "Amour Shaft",
+      "level": "h",
+      "startup": "i22",
+      "block": "-3",
+      "hit": "+4",
+      "ch": null,
+      "damage": "16",
+      "damageTotal": 16,
+      "notes": [
+        "Strong Aerial Tailspin",
+        "Wall Crush +12g on hit",
+        "Weapon",
+        "Projectile",
+        "Transition to IAI",
+        "Deals 6 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/6/64/T8-p2-victor-qcf%2B2.mp4"
+    },
+    "u1plus2": {
+      "wavuId": "Victor-u+1+2",
+      "input": "u+1+2",
+      "name": "Caliburnus",
+      "level": "M",
+      "startup": "i31~32",
+      "block": "-20c",
+      "hit": "+1a",
+      "ch": null,
+      "damage": "32",
+      "damageTotal": 32,
+      "notes": [
+        "Weapon",
+        "9 chip damage on block",
+        "Victor teleports overhead on frame 10 and descends downward for the rest of the startup; evades some highs and mids but vulnerable on descent (lows, throws, etc. hit)"
+      ],
+      "video": "https://wavu.wiki/w/images/3/3b/T8-p2-victor-u%2B1%2B2.mp4"
+    },
+    "ub2": {
+      "wavuId": "Victor-ub+2",
+      "input": "ub+2",
+      "name": "Fancy Cut",
+      "level": "m",
+      "startup": "i17~18",
+      "block": "-5",
+      "hit": "+8",
+      "ch": "+32a",
+      "damage": "17",
+      "damageTotal": 17,
+      "notes": [
+        "Weapon",
+        "Balcony Break",
+        "Can be charged",
+        "Transition to PRF -4 +9 with F"
+      ],
+      "video": "https://wavu.wiki/w/images/5/5d/T8-p2-victor-ub%2B2.mp4"
+    },
+    "ub2-charged": {
+      "wavuId": "Victor-ub+2*",
+      "input": "ub+2*",
+      "name": "Fancy Cut (charged)",
+      "level": "m",
+      "startup": "i28~29",
+      "block": "+3",
+      "hit": "+32a",
+      "ch": "+66a (+50)",
+      "damage": "22",
+      "damageTotal": 22,
+      "notes": [
+        "Weapon",
+        "Balcony Break",
+        "Tornado on CH",
+        "Transition to PRF +4 +33a with F"
+      ],
+      "video": "https://wavu.wiki/w/images/6/6a/T8-p2-victor-ub%2B2x.mp4"
+    },
+    "uf1": {
+      "wavuId": "Victor-uf+1",
+      "input": "uf+1",
+      "name": "uf+1",
+      "level": "m",
+      "startup": "i13",
+      "block": "-9",
+      "hit": "+4",
+      "ch": null,
+      "damage": "9",
+      "damageTotal": 9,
+      "notes": [
+        "Weapon"
+      ]
+    },
+    "uf1-1": {
+      "wavuId": "Victor-uf+1,1",
+      "input": "uf+1,1",
+      "name": "Gringolet",
+      "level": "m,m",
+      "startup": ",i25~26",
+      "displayStartup": "i13 (string)",
+      "block": "-14",
+      "hit": "+15gc",
+      "ch": null,
+      "damage": ",21",
+      "damageTotal": 30,
+      "notes": [
+        "Tornado",
+        "Balcony Break",
+        "Weapon",
+        "Combo from 1st hit with 8F delay",
+        "Opponent recovers crouching on hit",
+        "Transition to PRF (-10/+19gc) with F",
+        "Cancel to IAI (-9/+4) with D or 3+4"
+      ],
+      "video": "https://wavu.wiki/w/images/3/3f/T8-p2-victor-uf%2B1%2C1.mp4"
+    },
+    "uf2": {
+      "wavuId": "Victor-uf+2",
+      "input": "uf+2",
+      "name": "Marquise Cut",
+      "level": "m",
+      "startup": "i19~20",
+      "block": "-9",
+      "hit": "+7",
+      "ch": null,
+      "damage": "15",
+      "damageTotal": 15,
+      "notes": [
+        "Homing",
+        "Weapon"
+      ],
+      "video": "https://wavu.wiki/w/images/3/30/T8-p2-victor-uf%2B2.mp4"
+    },
+    "uf3": {
+      "wavuId": "Victor-uf+3",
+      "input": "uf+3",
+      "name": "Peaceful Shoes",
+      "level": "m",
+      "startup": "i18~19",
+      "block": "-9",
+      "hit": "+3",
+      "ch": "+36d",
+      "damage": "17",
+      "damageTotal": 17,
+      "notes": [],
+      "video": "https://wavu.wiki/w/images/1/13/T8-p2-victor-uf%2B3.mp4"
+    },
+    "uf4": {
+      "wavuId": "Victor-uf+4",
+      "input": "uf+4",
+      "name": "Chatoyant Courage",
+      "level": "m,sm",
+      "startup": "i15~17, i28~30",
+      "block": "-19",
+      "hit": "+73a (+57a)",
+      "ch": null,
+      "damage": "12,16",
+      "damageTotal": 28,
+      "notes": [
+        "Tornado",
+        "Followup available only on 1st hit"
+      ],
+      "video": "https://wavu.wiki/w/images/1/10/T8-p2-victor-uf%2B4.mp4"
+    },
+    "uf1plus2": {
+      "wavuId": "Victor-uf+1+2",
+      "input": "uf+1+2",
+      "name": "Romancing Chaser",
+      "level": "t",
+      "startup": "i12~14",
+      "block": "-3",
+      "hit": "-4",
+      "ch": null,
+      "damage": "40",
+      "damageTotal": 40,
+      "notes": [
+        "Floor Break",
+        "Throw break: 1+2",
+        "Opponent recovery on hit: FUFA"
+      ],
+      "video": "https://wavu.wiki/w/images/f/fb/T8-p2-victor-uf%2B1%2B2.mp4"
+    },
+    "ws1": {
+      "wavuId": "Victor-ws1",
+      "input": "ws1",
+      "name": "Oval Cut",
+      "level": "m",
+      "startup": "i15~16",
+      "block": "-16",
+      "hit": "+53a",
+      "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
+      "notes": [
+        "Weapon"
+      ],
+      "video": "https://wavu.wiki/w/images/4/45/T8-p2-victor-ws1.mp4"
+    },
+    "ws1plus2": {
+      "wavuId": "Victor-ws1+2",
+      "input": "ws1+2",
+      "name": "Pearly Gates",
+      "level": "m,m",
+      "startup": "i13~14,i9~10",
+      "block": "-8",
+      "hit": "+8",
+      "ch": null,
+      "damage": "10,12",
+      "damageTotal": 22,
+      "notes": [
+        "Weapon",
+        "Transition to PRF (-8/+8) with F"
+      ],
+      "video": "https://wavu.wiki/w/images/5/5c/T8-p2-victor-ws1%2B2.mp4"
+    },
+    "ws2": {
+      "wavuId": "Victor-ws2",
+      "input": "ws2",
+      "name": "Baguette Cut",
+      "level": "m",
+      "startup": "i14~15",
+      "block": "-8",
+      "hit": "+6",
+      "ch": "+35a (+25)",
+      "damage": "15",
+      "damageTotal": 15,
+      "notes": [
+        "Weapon"
+      ],
+      "video": "https://wavu.wiki/w/images/7/70/T8-p2-victor-ws2.mp4"
+    },
+    "ws3": {
+      "wavuId": "Victor-ws3",
+      "input": "ws3",
+      "name": "ws3",
+      "level": "h",
+      "startup": "i14~15",
+      "block": "-14",
+      "hit": "+6",
+      "ch": null,
+      "damage": "16",
+      "damageTotal": 16,
+      "notes": []
+    },
+    "ws3-2": {
+      "wavuId": "Victor-ws3,2",
+      "input": "ws3,2",
+      "name": "Iridescence of Faith",
+      "level": "h,sm",
+      "startup": ",i30~32",
+      "displayStartup": "i14 (string)",
+      "block": "-9",
+      "hit": "+17a (+10a)",
+      "ch": "+35a",
+      "damage": ",23",
+      "damageTotal": 39,
+      "notes": [
+        "Tornado",
+        "Weapon",
+        "Projectile",
+        "Combo from 1st hit",
+        "6 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/5/57/T8-p2-victor-ws3%2C2.mp4"
+    },
+    "ws4": {
+      "wavuId": "Victor-ws4",
+      "input": "ws4",
+      "name": "Praise Smash",
+      "level": "m",
+      "startup": "i11~12",
+      "block": "-6",
+      "hit": "+5",
+      "ch": null,
+      "damage": "16",
+      "damageTotal": 16,
+      "notes": [],
+      "video": "https://wavu.wiki/w/images/7/74/T8-p2-victor-ws4.mp4"
+    },
+    "hfc1plus2": {
+      "wavuId": "Victor-hFC.1+2",
+      "input": "hFC.1+2",
+      "name": "Shangri-La",
+      "level": "l,h",
+      "startup": "i16,i10~11",
+      "block": "-23, -13",
+      "hit": "+0",
+      "ch": null,
+      "damage": "10,10",
+      "damageTotal": 20,
+      "notes": [
+        "Weapon",
+        "Not parryable (weapon low and weapon high)",
+        "Can be done from Crouch Level 1",
+        "Transition to PRF (-17 / +6) with F"
+      ],
+      "video": "https://wavu.wiki/w/images/1/1d/T8-p2-victor-fc.1%2B2.mp4"
+    },
+    "iai-1": {
+      "wavuId": "Victor-IAI.1",
+      "input": "IAI.1",
+      "name": "IAI.1",
+      "level": "m",
+      "startup": "i13~14",
+      "block": "-9",
+      "hit": "+4",
+      "ch": null,
+      "damage": "9",
+      "damageTotal": 9,
+      "notes": [
+        "Weapon"
+      ]
+    },
+    "iai-1-1": {
+      "wavuId": "Victor-IAI.1,1",
+      "input": "IAI.1,1",
+      "name": "Spumador",
+      "level": "m,m",
+      "startup": ",i25~26",
+      "displayStartup": "i13 (string)",
+      "block": "-14",
+      "hit": "+15g",
+      "ch": null,
+      "damage": ",21",
+      "damageTotal": 30,
+      "notes": [
+        "Tornado",
+        "Balcony Break",
+        "Weapon",
+        "Combo from 1st hit with 9F delay",
+        "Move can be delayed by 10F",
+        "Input can be delayed by 11F",
+        "Opponent recovers crouching on hit",
+        "Transition to PRF with F (-10/+19gc)",
+        "Cancel to IAI with D or 3+4 (-9/+4)"
+      ],
+      "video": "https://wavu.wiki/w/images/4/48/T8-p2-victor-iai.1%2C1.mp4"
+    },
+    "iai-1-2": {
+      "wavuId": "Victor-IAI.1,2",
+      "input": "IAI.1,2",
+      "name": "IAI.1,2",
+      "level": "m,m",
+      "startup": ",i22~24",
+      "displayStartup": "i13 (string)",
+      "block": "-19",
+      "hit": "+25a (+10)",
+      "ch": "+25a (+10)",
+      "damage": ",15",
+      "damageTotal": 24,
+      "notes": [
+        "Weapon",
+        "Combo from 1st hit",
+        "Hit Confirmable 11F",
+        "6 chip damage on block"
+      ]
+    },
+    "iai-1-2-2": {
+      "wavuId": "Victor-IAI.1,2,2",
+      "input": "IAI.1,2,2",
+      "name": "Clarent",
+      "level": "m,m,m",
+      "startup": ",i23~24",
+      "displayStartup": "i13 (string)",
+      "block": "-18c",
+      "hit": "+8a (-27)",
+      "ch": "+8a (-27)",
+      "damage": ",16",
+      "damageTotal": 40,
+      "notes": [
+        "Spike",
+        "Weapon",
+        "Combo from 1st hit",
+        "9 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/d/d1/T8-p2-victor-iai.1%2C2%2C2.mp4"
+    },
+    "iai-1plus2": {
+      "wavuId": "Victor-IAI.1+2",
+      "input": "IAI.1+2",
+      "name": "Hauteclaire",
+      "level": "h",
+      "startup": "i20~21",
+      "block": "+3",
+      "hit": "+20 (-6)",
+      "ch": "+21a",
+      "damage": "30",
+      "damageTotal": 30,
+      "notes": [
+        "Homing",
+        "Weapon",
+        "12 chip damage on block",
+        "Opponent is FUFA on CH"
+      ],
+      "video": "https://wavu.wiki/w/images/a/a0/T8-p2-victor-iai.1%2B2.mp4"
+    },
+    "iai-1-1plus2": {
+      "wavuId": "Victor-IAI.1,1+2",
+      "input": "IAI.1,1+2",
+      "name": "Chastiefol",
+      "level": "m,h",
+      "startup": ",i20~21",
+      "displayStartup": "i13 (string)",
+      "block": "+3",
+      "hit": "+20a (-6)",
+      "ch": "+21a",
+      "damage": ",23",
+      "damageTotal": 32,
+      "notes": [
+        "Homing",
+        "Weapon",
+        "Combo from 1st hit",
+        "Deals 9 chip damage on block",
+        "Hit confirmable 11F",
+        "Opponent is FUFA on CH"
+      ],
+      "video": "https://wavu.wiki/w/images/7/79/T8-p2-victor-iai.1%2C1%2B2.mp4"
+    },
+    "iai-2": {
+      "wavuId": "Victor-IAI.2",
+      "input": "IAI.2",
+      "name": "Almace",
+      "level": "m",
+      "startup": "i16~17",
+      "block": "-9",
+      "hit": "+15 (+5)",
+      "ch": "+26a",
+      "damage": "23",
+      "damageTotal": 23,
+      "notes": [
+        "Balcony Break",
+        "Tornado",
+        "Weapon",
+        "9 chip damage on block",
+        "FUFA knockdown on CH"
+      ],
+      "video": "https://wavu.wiki/w/images/c/c6/T8-p2-victor-iai.2.mp4"
+    },
+    "iai-3": {
+      "wavuId": "Victor-IAI.3",
+      "input": "IAI.3",
+      "name": "Sequence",
+      "level": "m,th(m)",
+      "startup": "i17",
+      "block": "-13",
+      "hit": "+25 (+10)",
+      "ch": null,
+      "damage": "13 (25)",
+      "damageTotal": 13,
+      "notes": [
+        "Knee"
+      ],
+      "video": "https://wavu.wiki/w/images/c/cc/T8-p2-victor-iai.3.mp4"
+    },
+    "iai-4": {
+      "wavuId": "Victor-IAI.4",
+      "input": "IAI.4",
+      "name": "IAI.4",
+      "level": "L",
+      "startup": "i18~19",
+      "block": "-12",
+      "hit": "+4",
+      "ch": "+9",
+      "damage": "17",
+      "damageTotal": 17,
+      "notes": []
+    },
+    "iai-4-2": {
+      "wavuId": "Victor-IAI.4,2",
+      "input": "IAI.4,2",
+      "name": "Murgleys",
+      "level": "L,h",
+      "startup": ",i26~27",
+      "displayStartup": "i18 (string)",
+      "block": "-5",
+      "hit": "+26 (+0)",
+      "ch": "+55a (+35a)",
+      "damage": ",20",
+      "damageTotal": 37,
+      "notes": [
+        "Strong Aerial Tailspin",
+        "Balcony Break",
+        "Weapon",
+        "Combo from 1st CH",
+        "8 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/4/43/T8-p2-victor-iai.4%2C2.mp4"
+    },
+    "iai-d1": {
+      "wavuId": "Victor-IAI.d+1",
+      "input": "IAI.d+1",
+      "name": "Passelande",
+      "level": "M",
+      "startup": "i18",
+      "block": "±0",
+      "hit": "+24a (+9)",
+      "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
+      "notes": [
+        "Heat Engager",
+        "Heat Dash +5, +42a (+27)",
+        "Balcony Break",
+        "Weapon",
+        "7 chip damage on block"
+      ]
+    },
+    "iai-d1plus2": {
+      "wavuId": "Victor-IAI.d+1+2",
+      "input": "IAI.d+1+2",
+      "name": "Espee Aventureuse",
+      "level": "l,l",
+      "startup": "i20~21,i14~15",
+      "block": "-29",
+      "hit": "-3",
+      "ch": null,
+      "damage": "10,20",
+      "damageTotal": 30,
+      "notes": [
+        "Weapon",
+        "Unparryable (weapon low,low)"
+      ],
+      "video": "https://wavu.wiki/w/images/9/95/T8-p2-victor-iai.d%2B1%2B2.mp4"
+    },
+    "iai-d2": {
+      "wavuId": "Victor-IAI.d+2",
+      "input": "IAI.d+2",
+      "name": "Rhongomyniad",
+      "level": "M,M,SM",
+      "startup": "i23~24, i6, i7",
+      "block": "+4",
+      "hit": "+0 (-7)",
+      "ch": null,
+      "damage": "31",
+      "damageTotal": 31,
+      "notes": [
+        "Weapon",
+        "Projectile",
+        "Transition to IAI",
+        "Deals 6 chip damage on block"
+      ],
+      "video": "https://wavu.wiki/w/images/c/c1/T8-p2-victor-iai.d%2B2.mp4"
+    },
+    "iai-parry": {
+      "wavuId": "Victor-IAI.P.f",
+      "input": "IAI.P.f",
+      "name": "Gwen",
+      "level": "m",
+      "startup": "i16~17",
+      "block": null,
+      "hit": "+60a (+44)",
+      "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
+      "notes": [
+        "Balcony Break",
+        "Tornado"
+      ]
+    },
+    "prf-1": {
+      "wavuId": "Victor-PRF.1",
+      "input": "PRF.1",
+      "name": "Maceration",
+      "level": "L",
+      "startup": "i19~20",
+      "block": "-12",
+      "hit": "+4c",
+      "ch": "+14g",
+      "damage": "15",
+      "damageTotal": 15,
+      "notes": [
+        "Weapon",
+        "Unparryable (weapon low)"
+      ],
+      "video": "https://wavu.wiki/w/images/4/4c/T8-p2-victor-prf.1.mp4"
+    },
+    "prf-1plus2": {
+      "wavuId": "Victor-PRF.1+2",
+      "input": "PRF.1+2",
+      "name": "Hengroen",
+      "level": "m",
+      "startup": "i25~27",
+      "block": "+6",
+      "hit": "+14a",
+      "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
+      "notes": [
+        "Balcony Break",
+        "Weapon",
+        "7 chip damage on block",
+        "Transition to IAI (+6/+14a) on hit or block with D"
+      ],
+      "video": "https://wavu.wiki/w/images/a/ae/T8-p2-victor-prf.1%2B2.mp4"
+    },
+    "prf-2": {
+      "wavuId": "Victor-PRF.2",
+      "input": "PRF.2",
+      "name": "PRF.2",
+      "level": "m",
+      "startup": "i12~13",
+      "block": "-8",
+      "hit": "+1",
+      "ch": "+1",
+      "damage": "9",
+      "damageTotal": 9,
+      "notes": [
+        "Weapon"
+      ]
+    },
+    "prf-2-2": {
+      "wavuId": "Victor-PRF.2,2",
+      "input": "PRF.2,2",
+      "name": "PRF.2,2",
+      "level": "m,m",
+      "startup": ",i13~14",
+      "displayStartup": "i12 (string)",
+      "block": "-4 IAI",
+      "hit": "+5 IAI",
+      "ch": null,
+      "damage": ",13",
+      "damageTotal": 22,
+      "notes": [
+        "Weapon",
+        "Combo from 1st hit",
+        "Transition to IAI (Cannot cancel)"
+      ]
+    },
+    "prf-2-2-1": {
+      "wavuId": "Victor-PRF.2,2,1",
+      "input": "PRF.2,2,1",
+      "name": "Top Note",
+      "level": "m,m,h",
+      "startup": ",i12~13",
+      "displayStartup": "i12 (string)",
+      "block": "-1",
+      "hit": "+12",
+      "ch": "+55a",
+      "damage": ",20",
+      "damageTotal": 42,
+      "notes": [
+        "Strong Aerial Tailspin",
+        "Balcony Break",
+        "Weapon",
+        "Combo from 2nd CH"
+      ],
+      "video": "https://wavu.wiki/w/images/d/d0/T8-p2-victor-prf.2%2C2%2C1.mp4"
+    },
+    "prf-2-2-1plus2": {
+      "wavuId": "Victor-PRF.2,2,1+2",
+      "input": "PRF.2,2,1+2",
+      "name": "Last Note",
+      "level": "m,m,m",
+      "startup": ",i12",
+      "displayStartup": "i12 (string)",
+      "block": "-13",
+      "hit": "+7d",
+      "ch": null,
+      "damage": ",31",
+      "damageTotal": 53,
+      "notes": [
+        "Weapon",
+        "Combo from 2nd CH"
+      ],
+      "video": "https://wavu.wiki/w/images/c/cb/T8-p2-victor-prf.2%2C2%2C1%2B2.mp4"
+    },
+    "prf-3": {
+      "wavuId": "Victor-PRF.3",
+      "input": "PRF.3",
+      "name": "Flying Gentleman",
+      "level": "m",
+      "startup": "i15~17",
+      "block": "-8",
+      "hit": "+15c",
+      "ch": null,
+      "damage": "21",
+      "damageTotal": 21,
+      "notes": [
+        "Heat Engager",
+        "Heat Dash +5, +43d (+35)",
+        "Balcony Break",
+        "Knee",
+        "Forces tech backroll on hit"
+      ],
+      "video": "https://wavu.wiki/w/images/0/07/T8-p2-victor-prf.3.mp4"
+    },
+    "prf-4": {
+      "wavuId": "Victor-PRF.4",
+      "input": "PRF.4",
+      "name": "Cordial Circuit",
+      "level": "h",
+      "startup": "i18~19",
+      "block": "-2",
+      "hit": "+14",
+      "ch": null,
+      "damage": "20",
+      "damageTotal": 20,
+      "notes": [
+        "Homing",
+        "Balcony Break",
+        "6 chip damage on block"
+      ]
+    },
+    "prf-b2": {
+      "wavuId": "Victor-PRF.b+2",
+      "input": "PRF.b+2",
+      "name": "Strobing Memories",
+      "level": "h",
+      "startup": "i10",
+      "block": "-6",
+      "hit": "+5",
+      "ch": "+14",
+      "damage": "5",
+      "damageTotal": 5,
+      "notes": [
+        "Weapon",
+        "Deals recoverable damage only; cannot cause a K.O."
+      ],
+      "video": "https://wavu.wiki/w/images/c/ce/T8-p2-victor-b%2B2.mp4"
+    },
+    "ss1plus2": {
+      "wavuId": "Victor-SS.1+2",
+      "input": "SS.1+2",
+      "name": "Dandy Blow",
+      "level": "m",
+      "startup": "i18~19",
+      "block": "-9",
+      "hit": "+15 (+5)",
+      "ch": null,
+      "damage": "25",
+      "damageTotal": 25,
+      "notes": [
+        "Balcony Break"
+      ],
+      "video": "https://wavu.wiki/w/images/8/8b/T8-p2-victor-ss.1%2B2.mp4"
+    },
+    "throw-1plus3": {
+      "wavuId": "Victor-1+3",
+      "input": "1+3",
+      "name": "One Night Miracle",
+      "level": "t",
+      "startup": "i12~14",
+      "block": "-3",
+      "hit": "-2",
+      "ch": null,
+      "damage": "35",
+      "damageTotal": 35,
+      "notes": [
+        "Homing",
+        "Throw break: 1 or 2",
+        "Opponent recovery on hit: FDFT"
+      ]
+    },
+    "throw-2plus4": {
+      "wavuId": "Victor-2+4",
+      "input": "2+4",
+      "name": "Je Te Veux",
+      "level": "t",
+      "startup": "i12~14",
+      "block": "-3",
+      "hit": "-4",
+      "ch": null,
+      "damage": "35",
+      "damageTotal": 35,
+      "notes": [
+        "Homing",
+        "Throw break: 1 or 2",
+        "Opponent recovery on hit: opp. side FDFT off-axis to the right"
+      ]
+    },
+    "ch-d4": {
+      "wavuId": "Victor-CH.d+4",
+      "input": "CH.d+4",
+      "name": "Guilty Mariko",
+      "level": "L,t",
+      "startup": "i16",
+      "block": null,
+      "hit": null,
+      "ch": "+0d",
+      "damage": "12,18",
+      "damageTotal": 30,
+      "notes": []
+    },
+    "ch-db4": {
+      "wavuId": "Victor-CH.db+4",
+      "input": "CH.db+4",
+      "name": "Musk-Scented Natasha",
+      "level": "l,th",
+      "startup": "i20~21",
+      "block": null,
+      "hit": null,
+      "ch": "+49a",
+      "damage": "20,4",
+      "damageTotal": 24,
+      "notes": []
+    },
+    "heat-burst": {
+      "wavuId": "Victor-2+3",
+      "input": "2+3",
+      "name": "Heat Burst",
+      "level": "m",
+      "startup": "i16",
+      "block": "+1",
+      "hit": "+2c",
+      "ch": null,
+      "damage": "[12;12]",
+      "damageTotal": 12,
+      "notes": [
+        "Heat Burst",
+        "Cancel to r45 with b,b on frame 42",
+        "2 chip damage on block",
+        "12 chip damage on hit",
+        "Only deals recoverable damage",
+        "Cannot cause a K.O."
+      ]
+    },
+    "heat-smash": {
+      "wavuId": "Victor-H.2+3",
+      "input": "H.2+3",
+      "name": "Élimination Samouraï",
+      "level": "L,M",
+      "startup": "i20, i39~40",
+      "block": "-14",
+      "hit": "+5d",
+      "ch": null,
+      "damage": "39,(25)",
+      "damageTotal": 39,
+      "notes": [
+        "Heat Smash",
+        "Balcony Break",
+        "Shift to attack throw on 1st hit (39dmg)",
+        "+7a (-3) from 2nd hit",
+        "Alternate input: H.R1",
+        "8 chip damage on block"
+      ]
+    },
+    "heat-monsieur": {
+      "wavuId": "Victor-H.db+1+2",
+      "input": "H.db+1+2",
+      "name": "Monsieur Samurai",
+      "level": "m",
+      "startup": "i28~29",
+      "block": "+6",
+      "hit": "+6a (-4)",
+      "ch": null,
+      "damage": "30",
+      "damageTotal": 30,
+      "notes": [
+        "Weapon",
+        "Transition to IAI",
+        "9 chip damage on block",
+        "Consumes 270F of remaining Heat time"
+      ]
+    },
+    "heat-excalibur": {
+      "wavuId": "Victor-H.u+1+2",
+      "input": "H.u+1+2",
+      "name": "Excalibur",
+      "level": "M",
+      "startup": "i31~32",
+      "block": "-4",
+      "hit": "+0a (-1)",
+      "ch": null,
+      "damage": "46",
+      "damageTotal": 46,
+      "notes": [
+        "Balcony Break",
+        "Weapon",
+        "Victor teleports overhead on frame 10 and descends downward for the rest of the startup; evades some highs and mids but vulnerable on descent (lows, throws, etc. hit)",
+        "15 chip damage on block",
+        "Consumes 450F of remaining Heat time"
+      ],
+      "video": "https://wavu.wiki/w/images/4/4d/T8-p2-victor-h.u%2B1%2B2.mp4"
+    },
+    "heat-iai-d2": {
+      "wavuId": "Victor-H.IAI.d+2",
+      "input": "H.IAI.d+2",
+      "name": "Longinus",
+      "level": "M,M,M,SM,SM",
+      "startup": "i23~24, i6, i4, i3, i4",
+      "block": "+5",
+      "hit": "+20 (+2)",
+      "ch": null,
+      "damage": "45",
+      "damageTotal": 45,
+      "notes": [
+        "Weapon",
+        "Projectile",
+        "Transition to IAI",
+        "10 chip damage on block",
+        "Consumes 210F of remaining Heat time"
+      ]
+    },
+    "rage-art": {
+      "wavuId": "Victor-R.df+1+2",
+      "input": "R.df+1+2",
+      "name": "Coup de Chevalier",
+      "level": "m,t",
+      "startup": "i20",
+      "block": "-18",
+      "hit": "+0d",
+      "ch": null,
+      "damage": "55+",
+      "damageTotal": 55,
+      "notes": [
+        "Rage Art",
+        "Removes Recoverable Health",
+        "Reversal Break",
+        "Damage increases with lower health, maximum 82",
+        "Freezes match timer on activation and on hit",
+        "Restores recoverable health on hit",
+        "Transition to attack throw on hit",
+        "Consumes Rage"
+      ]
+    }
+  }
+}

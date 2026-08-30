@@ -9,6 +9,7 @@ import stevePunishers from "./characters/steve.punishers.json";
 import hwoarangPunishers from "./characters/hwoarang.punishers.json";
 import yoshimitsuPunishers from "./characters/yoshimitsu.punishers.json";
 import devilJinPunishers from "./characters/devil-jin.punishers.json";
+import victorPunishers from "./characters/victor.punishers.json";
 
 /**
  * Punish-sheet registry. Each file is Wavu Wiki's curated punisher table for
@@ -31,6 +32,7 @@ const punishers: Record<string, PunishSet> = {
   hwoarang: hwoarangPunishers as PunishSet,
   yoshimitsu: yoshimitsuPunishers as PunishSet,
   "devil-jin": devilJinPunishers as PunishSet,
+  victor: victorPunishers as PunishSet,
 };
 
 export function getPunishers(characterId: string): PunishSet | undefined {

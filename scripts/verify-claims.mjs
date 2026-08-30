@@ -69,9 +69,13 @@ const conditional = (note) =>
  *   "13f effective punish"   — what this move is worth as a punisher
  *   "effective startup i26"  — startup INCLUDING the sidestep in front of it,
  *                              which is not the row's own value
+ *   "~i5-6 backsway"         — when an evasive property is ACTIVE, which has
+ *                              nothing to do with when the move hits
  */
 const aboutAnotherMeasure = (note) =>
-  /^\s*interrupt with\b|actual startup|effective (?:startup|punish)/i.test(note);
+  /^\s*interrupt with\b|actual startup|effective (?:startup|punish)|backsway/i.test(
+    note,
+  );
 
 /**
  * True when n falls inside any figure the startup string states.
